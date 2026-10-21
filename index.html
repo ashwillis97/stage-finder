@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Stage Finder</title>
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Hanken+Grotesk:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a programme-style list. Each show is a ticket stub (start date) beside the details, grouped under month headings. */
+:root {
+  --bg: #f2f3f7;
+  --surface: #ffffff;
+  --fg: #151832;
+  --muted: #5d6280;
+  --line: #d9dbe6;
+  --accent: #7a1f4b;
+  --accent-fg: #ffffff;
+  --accent-soft: #f1e1ea;
+  --live: #1f6b4a;
+  --live-soft: #dcf0e6;
+  --font-display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "DM Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12142a; --surface: #1b1e3a; --fg: #eceef8; --muted: #a2a7c6; --line: #31355a;
+    --accent: #e08ab3; --accent-fg: #1a0b13; --accent-soft: #3a2133;
+    --live: #7fd6aa; --live-soft: #1d3a31;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12142a; --surface: #1b1e3a; --fg: #eceef8; --muted: #a2a7c6; --line: #31355a;
+  --accent: #e08ab3; --accent-fg: #1a0b13; --accent-soft: #3a2133;
+  --live: #7fd6aa; --live-soft: #1d3a31;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font-body); font-size: 16px; line-height: 1.45;
+  padding-block: 28px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+header { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 20px; }
+h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(30px, 6vw, 44px); line-height: 1.05; letter-spacing: -0.02em; margin: 0; text-wrap: balance; }
+.sub { color: var(--muted); font-size: 14px; margin: 6px 0 0; }
+.refresh-box { display: flex; align-items: center; gap: 12px; }
+.stamp { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+button, input { font: inherit; color: inherit; }
+button:focus-visible, input:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 6px; border: 1.5px solid var(--accent); background: var(--accent); color: var(--accent-fg); font-weight: 600; text-decoration: none; cursor: pointer; }
+.btn.ghost { background: transparent; color: var(--accent); }
+.btn:hover { filter: brightness(1.08); }
+.btn[disabled] { opacity: .6; cursor: progress; }
+.spin { display: inline-block; width: 14px; height: 14px; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; }
+.loading .spin { animation: rot .7s linear infinite; }
+@keyframes rot { to { transform: rotate(360deg); } }
+.notice { border: 1px dashed var(--accent); background: var(--accent-soft); color: var(--fg); padding: 10px 14px; border-radius: 6px; font-size: 14px; }
+.notice[hidden] { display: none; }
+.controls { display: flex; flex-direction: column; gap: 12px; }
+.search-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.field { flex: 1 1 240px; min-width: 0; }
+.field.date { flex: 0 1 190px; }
+.field label { display: block; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+.field input { width: 100%; min-height: 44px; padding: 0 12px; border: 1.5px solid var(--line); border-radius: 6px; background: var(--surface); }
+.field select { width: 100%; min-height: 44px; padding: 0 10px; border: 1.5px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--fg); font: inherit; }
+.field.venue { flex: 1 1 220px; }
+.coverage { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); padding: 0 16px; }
+.coverage summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; font-weight: 600; font-size: 14px; }
+.coverage .cov { display: flex; flex-direction: column; gap: 10px; padding: 0 0 16px; font-size: 14px; color: var(--muted); }
+.coverage h4 { margin: 0 0 4px; font-family: var(--font-display); font-size: 14px; color: var(--fg); }
+.coverage ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 2px; }
+.count { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+h2 { font-family: var(--font-display); font-size: 15px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 10px 0 0; }
+.list { display: flex; flex-direction: column; gap: 12px; }
+.group { display: flex; flex-direction: column; gap: 12px; }
+.row { display: grid; grid-template-columns: 92px minmax(0, 1fr) auto; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.stub { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 14px 8px; border-right: 2px dashed var(--line); background: var(--accent-soft); text-align: center; }
+.stub .dow { font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.stub .day { font-family: var(--font-display); font-weight: 700; font-size: 34px; line-height: 1; }
+.stub .mon { font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); font-weight: 500; }
+.info { padding: 14px 16px; min-width: 0; display: flex; flex-direction: column; gap: 4px; justify-content: center; }
+.info h3 { font-family: var(--font-display); font-size: 20px; font-weight: 700; line-height: 1.2; margin: 0; overflow-wrap: anywhere; text-wrap: balance; }
+.venue { font-weight: 600; font-size: 15px; }
+.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 14px; color: var(--muted); }
+.meta .run { font-family: var(--font-mono); font-size: 13px; }
+.tag { font-size: 12px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); }
+.tag.live { background: var(--live-soft); color: var(--live); border-color: transparent; font-weight: 600; }
+.act { display: flex; align-items: center; padding: 14px 16px 14px 0; }
+.empty, .error { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 28px 20px; text-align: center; color: var(--muted); }
+.empty strong, .error strong { display: block; color: var(--fg); font-family: var(--font-display); font-size: 20px; margin-bottom: 4px; }
+@media (max-width: 600px) {
+  .row { grid-template-columns: 76px minmax(0, 1fr); }
+  .act { grid-column: 1 / -1; padding: 0 16px 16px; }
+  .act .btn { width: 100%; }
+  .stub .day { font-size: 30px; }
+  .refresh-box { width: 100%; justify-content: space-between; }
+}
+@media (prefers-reduced-motion: reduce) { .loading .spin { animation-duration: 2s; } }
+</style>
+
+<div class="wrap" id="app">
+  <header>
+    <div>
+      <h1>Stage Finder</h1>
+      <p class="sub">What's on across your theatres, soonest first.</p>
+    </div>
+    <div class="refresh-box">
+      <span class="stamp" id="stamp" aria-live="polite">Loading listings</span>
+      <button class="btn ghost" id="refresh" type="button"><span class="spin" aria-hidden="true"></span><span id="refreshLabel">Refresh</span></button>
+    </div>
+  </header>
+
+  <div class="notice" id="sample" hidden>These are example listings from made-up theatres.</div>
+
+  <div class="controls">
+    <div class="search-row">
+      <div class="field">
+        <label for="q">Search</label>
+        <input id="q" type="search" placeholder="Show title, theatre or genre" autocomplete="off">
+      </div>
+      <div class="field venue">
+        <label for="venue">Theatre</label>
+        <select id="venue"><option value="">All theatres</option></select>
+      </div>
+      <div class="field date">
+        <label for="from">On or after</label>
+        <input id="from" type="date">
+      </div>
+    </div>
+    <div class="count" id="count"></div>
+  </div>
+
+  <details class="coverage" id="coverage" hidden><summary>Venues with missing or partial listings</summary><div class="cov" id="covBody"></div></details>
+
+  <div class="list" id="list"><div class="empty"><strong>Loading</strong>Fetching the latest listings.</div></div>
+</div>
+
+<script>
+(function () {
+  var shows = [], coverage = null, loadedOnce = false;
+  var $ = function (id) { return document.getElementById(id); };
+  var MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var MON3 = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  var DOW3 = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+
+  function parse(s) { var p = s.split("-"); return new Date(+p[0], +p[1] - 1, +p[2]); }
+  function iso(d) { return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); }
+  function esc(s) { var d = document.createElement("div"); d.textContent = s == null ? "" : String(s); return d.innerHTML.replace(/"/g, "&quot;"); }
+  function safeUrl(u) { return /^https?:\/\//i.test(u || "") ? u : "#"; }
+  var todayIso = iso(new Date());
+
+  function runText(s) {
+    var a = parse(s.start), b = parse(s.end);
+    var left = a.getDate() + " " + MON3[a.getMonth()];
+    var right = b.getDate() + " " + MON3[b.getMonth()] + (b.getFullYear() !== a.getFullYear() ? " " + b.getFullYear() : "");
+    return s.start === s.end ? left : left + " to " + right;
+  }
+
+  function buildVenues() {
+    var counts = {};
+    shows.forEach(function (s) { if (s.end >= todayIso) counts[s.theatre] = (counts[s.theatre] || 0) + 1; });
+    var names = Object.keys(counts).sort();
+    var cur = $("venue").value;
+    $("venue").innerHTML = '<option value="">All theatres</option>' + names.map(function (n) {
+      return '<option value="' + esc(n) + '">' + esc(n) + " (" + counts[n] + ")</option>";
+    }).join("");
+    $("venue").value = names.indexOf(cur) >= 0 ? cur : "";
+  }
+
+  function renderCoverage() {
+    var box = $("coverage");
+    if (!coverage) { box.hidden = true; return; }
+    var none = coverage.none || [], part = coverage.partial || {}, html = "";
+    if (none.length) html += "<div><h4>No listings found</h4><ul>" + none.map(function (n) { return "<li>" + esc(n) + "</li>"; }).join("") + "</ul></div>";
+    var pk = Object.keys(part);
+    if (pk.length) html += "<div><h4>Incomplete</h4><ul>" + pk.map(function (n) { return "<li><strong>" + esc(n) + ":</strong> " + esc(part[n]) + "</li>"; }).join("") + "</ul></div>";
+    box.hidden = !html; $("covBody").innerHTML = html;
+  }
+
+  function render() {
+    var q = $("q").value.trim().toLowerCase();
+    var from = $("from").value;
+    var v = $("venue").value;
+    var rows = shows.filter(function (s) {
+      if (s.end < todayIso) return false;
+      if (from && s.end < from) return false;
+      if (v && s.theatre !== v) return false;
+      if (q && (s.title + " " + s.theatre + " " + (s.genre || "")).toLowerCase().indexOf(q) < 0) return false;
+      return true;
+    }).sort(function (a, b) {
+      return a.start < b.start ? -1 : a.start > b.start ? 1 : a.title.localeCompare(b.title);
+    });
+    $("count").textContent = rows.length + (rows.length === 1 ? " show" : " shows") + (v || q || from ? " match" : " on or coming up");
+    if (!rows.length) {
+      $("list").innerHTML = '<div class="empty"><strong>No shows found</strong>Try clearing the search, the date or a theatre filter.</div>';
+      return;
+    }
+    var html = "", lastKey = "";
+    rows.forEach(function (s) {
+      var d = parse(s.start);
+      var running = s.start <= todayIso;
+      var key = running ? "Now on" : MONTHS[d.getMonth()] + " " + d.getFullYear();
+      if (key !== lastKey) {
+        if (lastKey) html += "</div>";
+        html += '<div class="group"><h2>' + esc(key) + "</h2>";
+        lastKey = key;
+      }
+      html += '<article class="row">' +
+        '<div class="stub"><span class="dow">' + DOW3[d.getDay()] + '</span><span class="day">' + d.getDate() + '</span><span class="mon">' + MON3[d.getMonth()] + "</span></div>" +
+        '<div class="info"><h3>' + esc(s.title) + '</h3><div class="venue">' + esc(s.theatre) + "</div>" +
+        '<div class="meta"><span class="run">' + esc(runText(s)) + "</span>" +
+        (s.genre ? '<span class="tag">' + esc(s.genre) + "</span>" : "") +
+        (running ? '<span class="tag live">Now on</span>' : "") + "</div></div>" +
+        '<div class="act"><a class="btn" href="' + esc(safeUrl(s.url)) + '" target="_blank" rel="noopener noreferrer">Show page &#8599;</a></div>' +
+        "</article>";
+    });
+    html += "</div>";
+    $("list").innerHTML = html;
+  }
+
+  function stamp(t) {
+    var d = new Date(t);
+    if (isNaN(d)) { $("stamp").textContent = ""; return; }
+    $("stamp").textContent = "Updated " + d.getDate() + " " + MON3[d.getMonth()] + ", " + String(d.getHours()).padStart(2, "0") + ":" + String(d.getMinutes()).padStart(2, "0");
+  }
+
+  function load() {
+    var btn = $("refresh");
+    btn.disabled = true; $("app").classList.add("loading"); $("refreshLabel").textContent = "Refreshing";
+    return fetch("shows.json", { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error("status " + r.status); return r.json(); })
+      .then(function (data) {
+        shows = Array.isArray(data.shows) ? data.shows : [];
+        $("sample").hidden = !data.sample;
+        coverage = data.coverage || null; buildVenues(); renderCoverage(); render(); stamp(data.updated); loadedOnce = true;
+      })
+      .catch(function () {
+        if (!loadedOnce) {
+          $("list").innerHTML = '<div class="error"><strong>Listings did not load</strong>Check your connection, then press Refresh.</div>';
+          $("count").textContent = "";
+        } else {
+          $("stamp").textContent = "Refresh failed, showing earlier list";
+        }
+      })
+      .then(function () {
+        btn.disabled = false; $("app").classList.remove("loading"); $("refreshLabel").textContent = "Refresh";
+      });
+  }
+
+  $("refresh").addEventListener("click", load);
+  $("q").addEventListener("input", render);
+  $("from").addEventListener("input", render);
+  $("venue").addEventListener("change", render);
+  load();
+})();
+</script>
+
+</body>
+</html>

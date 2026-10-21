@@ -1,0 +1,3268 @@
+{
+ "sample": false,
+ "updated": "2026-10-21T11:40:00+01:00",
+ "coverage": {
+  "none": [
+   "Elite Cinema and Theatre",
+   "Winding Wheel Theatre"
+  ],
+  "partial": {
+   "Theatre Royal Nottingham": "Only 2 shows found; the venue's site could not be read in full.",
+   "Royal Concert Hall": "Only 2 shows found; the venue's site could not be read in full.",
+   "Birmingham Hippodrome": "Showing 16 of 37 listings.",
+   "The Rep": "Showing the first 20 shows; later ones are missing.",
+   "The Alexandra Theatre": "Showing 24 of 64 listings.",
+   "Buxton Opera House": "Listings after 6 Nov 2026 are missing.",
+   "Lichfield Garrick": "Shows after 22 Jan 2027 are not included.",
+   "Derby Theatre": "May be missing a few later shows.",
+   "Repton 400 Hall Theatre": "One show found; its link goes to the Derby Live show page.",
+   "Vaillant Live": "Its own events page did not load for me, so these links go to Visit Derby; darts and snooker left out.",
+   "De Montfort Hall": "Listings run to the end of January 2027. Genres are my own labels.",
+   "Century Theatre": "Open mic nights and heritage tours left out.",
+   "Palace Theatre Mansfield": "Theatre category only. Workshops and screenings left out.",
+   "Wolverhampton Grand Theatre": "Workshops and members events left out. The page only gave me part of the later listings."
+  }
+ },
+ "shows": [
+  {
+   "title": "East is East",
+   "theatre": "Derby Theatre",
+   "genre": "Theatre",
+   "start": "2026-10-20",
+   "end": "2026-10-24",
+   "url": "https://derbytheatre.co.uk/event/east-is-east/"
+  },
+  {
+   "title": "LGBTQTeeHee! 10-week comedy course",
+   "theatre": "The Rep",
+   "genre": "Workshop",
+   "start": "2026-10-20",
+   "end": "2026-11-24",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/lgbtqteehee-10-week-comedy-course/"
+  },
+  {
+   "title": "On Your Bike Baffo",
+   "theatre": "Curve Theatre",
+   "genre": "Theatre",
+   "start": "2026-10-20",
+   "end": "2026-10-20",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/on-your-bike-baffo/"
+  },
+  {
+   "title": "RBO x Met Opera: Macbeth",
+   "theatre": "Bonington Theatre",
+   "genre": "Opera",
+   "start": "2026-10-20",
+   "end": "2026-10-20",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/rbo-x-met-opera-macbeth-cert-tbc/"
+  },
+  {
+   "title": "The Curious Incident of the Dog in the Night-time",
+   "theatre": "Curve Theatre",
+   "genre": "Theatre",
+   "start": "2026-10-20",
+   "end": "2026-10-24",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/the-curious-incident-of-the-dog-in-the-night-time-2/"
+  },
+  {
+   "title": "The Haunting of Widow's Leap Farm",
+   "theatre": "Lichfield Garrick",
+   "genre": "Drama",
+   "start": "2026-10-20",
+   "end": "2026-10-20",
+   "url": "https://www.lichfieldgarrick.com/events/the-haunting-of-widows-leap-farm"
+  },
+  {
+   "title": "The Snowman",
+   "theatre": "The Rep",
+   "genre": "Family",
+   "start": "2026-10-20",
+   "end": "2026-11-01",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/the-snowman-2026/"
+  },
+  {
+   "title": "Bad Immigrant",
+   "theatre": "Curve Theatre",
+   "genre": "Theatre",
+   "start": "2026-10-21",
+   "end": "2026-10-21",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/bad-immigrant/"
+  },
+  {
+   "title": "Blood Brothers",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Musical",
+   "start": "2026-10-21",
+   "end": "2026-10-24",
+   "url": "https://www.birminghamhippodrome.com/calendar/blood-brothers-five/"
+  },
+  {
+   "title": "Dracula",
+   "theatre": "Lichfield Garrick",
+   "genre": "Drama",
+   "start": "2026-10-21",
+   "end": "2026-10-24",
+   "url": "https://www.lichfieldgarrick.com/events/dracula"
+  },
+  {
+   "title": "Halloween in Concert",
+   "theatre": "Buxton Opera House",
+   "genre": "Music",
+   "start": "2026-10-21",
+   "end": "2026-10-21",
+   "url": "https://buxtonoperahouse.org.uk/events/halloween-in-concert-2026/"
+  },
+  {
+   "title": "Hannah East - Express Yourself",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2026-10-21",
+   "end": "2026-10-21",
+   "url": "https://nottinghamplayhouse.co.uk/events/hannah-east/"
+  },
+  {
+   "title": "JEEZUS!",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Musical",
+   "start": "2026-10-21",
+   "end": "2026-10-24",
+   "url": "https://www.birminghamhippodrome.com/calendar/rewrites-jeezus/"
+  },
+  {
+   "title": "Jonathan Pie - The End of the World According to Jonathan Pie",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Comedy",
+   "start": "2026-10-21",
+   "end": "2026-10-21",
+   "url": "https://www.atgtickets.com/shows/jonathan-pie-the-end-of-the-world-according-to-jonathan-pie/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Made You Look",
+   "theatre": "The Rep",
+   "genre": "Theatre",
+   "start": "2026-10-21",
+   "end": "2026-10-22",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/made-you-look/"
+  },
+  {
+   "title": "Philharmonia: Seong-Jin Cho Plays Tchaikovsky",
+   "theatre": "De Montfort Hall",
+   "genre": "Classical",
+   "start": "2026-10-21",
+   "end": "2026-10-21",
+   "url": "https://www.demontforthall.co.uk/event/philharmonia-seong-jin-cho-plays-tchaikovsky"
+  },
+  {
+   "title": "Rat Pack Live",
+   "theatre": "Lichfield Garrick",
+   "genre": "Music",
+   "start": "2026-10-21",
+   "end": "2026-10-21",
+   "url": "https://www.lichfieldgarrick.com/events/rat-pack-live"
+  },
+  {
+   "title": "Scottish Ballet: These Violent Delights + Recorded Q&A",
+   "theatre": "Bonington Theatre",
+   "genre": "Dance",
+   "start": "2026-10-21",
+   "end": "2026-10-21",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/scottish-ballet-these-violent-delights-15-recorded-qa/"
+  },
+  {
+   "title": "Shaun Ryder – Happy Mondays, & Fridays, & Saturdays, & Sundays",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Entertainment",
+   "start": "2026-10-21",
+   "end": "2026-10-21",
+   "url": "https://brewhouse.co.uk/events/shaun-ryder-happy-mondays-fridays-saturdays-sundays"
+  },
+  {
+   "title": "The Trial of Romeo Oscar",
+   "theatre": "New Vic Theatre",
+   "genre": "Drama",
+   "start": "2026-10-21",
+   "end": "2026-10-31",
+   "url": "https://www.newvictheatre.org.uk/productions/the-trial-of-romeo-oscar/"
+  },
+  {
+   "title": "An Evening with Katherine Ryan: Firstborn Daughter",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Comedy",
+   "start": "2026-10-22",
+   "end": "2026-10-22",
+   "url": "https://www.oldrep.co.uk/event-details/348331AJDDNVVLRVPBVLGJBNJJVLVCQKQ/an-evening-with-katherine-ryan-firstborn-daughter/"
+  },
+  {
+   "title": "Eddi Reader",
+   "theatre": "Lichfield Garrick",
+   "genre": "Music",
+   "start": "2026-10-22",
+   "end": "2026-10-22",
+   "url": "https://www.lichfieldgarrick.com/events/eddi-reader"
+  },
+  {
+   "title": "Jazz Steps: Gilad Atzmon's Organology Trio",
+   "theatre": "Bonington Theatre",
+   "genre": "Jazz",
+   "start": "2026-10-22",
+   "end": "2026-10-22",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/jazz-steps-gilad-atzmons-organology-trio/"
+  },
+  {
+   "title": "Josh Pugh: Ha Ha, Yeah Sound",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2026-10-22",
+   "end": "2026-10-22",
+   "url": "https://nottinghamplayhouse.co.uk/events/joshpugh/"
+  },
+  {
+   "title": "Kevin Bloody Wilson - Fair Dinkum Funny",
+   "theatre": "De Montfort Hall",
+   "genre": "Comedy",
+   "start": "2026-10-22",
+   "end": "2026-10-22",
+   "url": "https://www.demontforthall.co.uk/event/kevin-bloody-wilson"
+  },
+  {
+   "title": "My Life with Kenneth Williams",
+   "theatre": "Palace Theatre Mansfield",
+   "genre": "Comedy",
+   "start": "2026-10-22",
+   "end": "2026-10-22",
+   "url": "https://www.mansfield.gov.uk/palacetheatre/events/event/38/my-life-with-kenneth-williams"
+  },
+  {
+   "title": "Of Mice and Men",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Theatre",
+   "start": "2026-10-22",
+   "end": "2026-10-22",
+   "url": "https://brewhouse.co.uk/events/of-mice-and-men"
+  },
+  {
+   "title": "Russell Howard - Don't Tell The Algorithm",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Comedy",
+   "start": "2026-10-22",
+   "end": "2026-10-25",
+   "url": "https://www.atgtickets.com/shows/russell-howard-dont-tell-the-algorithm/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "The ELO Experience - Electric Light Orchestra",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Concert",
+   "start": "2026-10-22",
+   "end": "2026-10-22",
+   "url": "https://www.atgtickets.com/shows/the-elo-experience-electric-light-orchestra/regent-theatre/"
+  },
+  {
+   "title": "Evan King's Elvis Tour 2026",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Tribute",
+   "start": "2026-10-23",
+   "end": "2026-10-23",
+   "url": "https://www.oldrep.co.uk/event-details/320731ALCMQRNJKLLPKBHRPNRNGVMRVKQ/evan-kings-elvis-tour-2026/"
+  },
+  {
+   "title": "Gary Delaney: Gary On Laughing",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Comedy",
+   "start": "2026-10-23",
+   "end": "2026-10-23",
+   "url": "https://www.atgtickets.com/shows/gary-delaney-gary-on-laughing/regent-theatre/"
+  },
+  {
+   "title": "Have Your Passport Ready / F.E.A.R. (double bill)",
+   "theatre": "Curve Theatre",
+   "genre": "Theatre",
+   "start": "2026-10-23",
+   "end": "2026-10-23",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/double-bill-f-e-a-r-get-your-passport-ready/"
+  },
+  {
+   "title": "Ivo Graham: Orange Crush",
+   "theatre": "Lichfield Garrick",
+   "genre": "Comedy",
+   "start": "2026-10-23",
+   "end": "2026-10-23",
+   "url": "https://www.lichfieldgarrick.com/events/ivo-graham-orange-crush"
+  },
+  {
+   "title": "Lido - A Love Story",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Theatre",
+   "start": "2026-10-23",
+   "end": "2026-10-23",
+   "url": "https://nottinghamplayhouse.co.uk/events/lido-a-love-story/"
+  },
+  {
+   "title": "Mercury",
+   "theatre": "Palace Theatre Mansfield",
+   "genre": "Tribute",
+   "start": "2026-10-23",
+   "end": "2026-10-23",
+   "url": "https://www.mansfield.gov.uk/palacetheatre/events/event/35/mercury"
+  },
+  {
+   "title": "Nashville Live",
+   "theatre": "Buxton Opera House",
+   "genre": "Music",
+   "start": "2026-10-23",
+   "end": "2026-10-23",
+   "url": "https://buxtonoperahouse.org.uk/events/nashville-live-2026/"
+  },
+  {
+   "title": "Northern Ballet - Cinderella",
+   "theatre": "Theatre Royal Nottingham",
+   "genre": "Dance",
+   "start": "2026-10-23",
+   "end": "2026-10-24",
+   "url": "https://www.trch.co.uk/whats-on/nb-cinderella-1hfr"
+  },
+  {
+   "title": "Nothing is Wrong: A Work-In-Progress Double Bill",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Theatre",
+   "start": "2026-10-23",
+   "end": "2026-10-23",
+   "url": "https://nottinghamplayhouse.co.uk/events/nothing-is-wrong-a-work-in-progress-double-bill/"
+  },
+  {
+   "title": "Orpheus and Eurydice",
+   "theatre": "Buxton Opera House",
+   "genre": "Opera",
+   "start": "2026-10-23",
+   "end": "2026-10-23",
+   "url": "https://buxtonoperahouse.org.uk/events/eto-presents-orpheus-and-eurydice-2026/"
+  },
+  {
+   "title": "Paul Merton & Suki Webster's Improv Show",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2026-10-23",
+   "end": "2026-10-23",
+   "url": "https://nottinghamplayhouse.co.uk/events/paul-merton-suki-websters-improv-show/"
+  },
+  {
+   "title": "Pre Theatre Talk (Orpheus & Eurydice)",
+   "theatre": "Buxton Opera House",
+   "genre": "Talk",
+   "start": "2026-10-23",
+   "end": "2026-10-23",
+   "url": "https://buxtonoperahouse.org.uk/events/pre-theatre-talk-orpheus-eurydice/"
+  },
+  {
+   "title": "Sensation ABBA Tribute Band",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Music",
+   "start": "2026-10-23",
+   "end": "2026-10-23",
+   "url": "https://brewhouse.co.uk/events/sensation-abba-tribute-band"
+  },
+  {
+   "title": "Word Up 80s",
+   "theatre": "Bonington Theatre",
+   "genre": "Music",
+   "start": "2026-10-23",
+   "end": "2026-10-23",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/word-up-80s-3/"
+  },
+  {
+   "title": "Alfie Moore: Acopalypse Now",
+   "theatre": "Lichfield Garrick",
+   "genre": "Comedy",
+   "start": "2026-10-24",
+   "end": "2026-10-24",
+   "url": "https://www.lichfieldgarrick.com/events/alfie-moore-acopalypse-now"
+  },
+  {
+   "title": "Bongo's Bingo Halloween Special",
+   "theatre": "Vaillant Live",
+   "genre": "Variety",
+   "start": "2026-10-24",
+   "end": "2026-10-24",
+   "url": "https://www.visitderby.co.uk/events/bongos-bingo-halloween-special"
+  },
+  {
+   "title": "Double Bill: Ariadne | Dido & Aeneas",
+   "theatre": "Buxton Opera House",
+   "genre": "Opera",
+   "start": "2026-10-24",
+   "end": "2026-10-24",
+   "url": "https://buxtonoperahouse.org.uk/events/eto-presents-dido-and-aeneas-ariadne-2026/"
+  },
+  {
+   "title": "I Was A Teenage Bisexual",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Drama",
+   "start": "2026-10-24",
+   "end": "2026-10-24",
+   "url": "https://nottinghamplayhouse.co.uk/events/i-was-a-teenage-bisexual/"
+  },
+  {
+   "title": "Ice Age Adventure Live",
+   "theatre": "Lichfield Garrick",
+   "genre": "Family",
+   "start": "2026-10-24",
+   "end": "2026-10-24",
+   "url": "https://www.lichfieldgarrick.com/events/ice-age-adventure-live"
+  },
+  {
+   "title": "Kiell Smith-Bynoe's Kool Story Bro",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2026-10-24",
+   "end": "2026-10-24",
+   "url": "https://nottinghamplayhouse.co.uk/events/kiell-smith-bynoes-kool-story-bro/"
+  },
+  {
+   "title": "Matilda the Musical",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Musical",
+   "start": "2026-10-24",
+   "end": "2026-10-24",
+   "url": "https://brewhouse.co.uk/events/matilda-the-musical"
+  },
+  {
+   "title": "Pre Theatre Talk (Ariadne | Dido & Aeneas)",
+   "theatre": "Buxton Opera House",
+   "genre": "Talk",
+   "start": "2026-10-24",
+   "end": "2026-10-24",
+   "url": "https://buxtonoperahouse.org.uk/events/pre-theatre-talk-ariadne-dido-aeneas/"
+  },
+  {
+   "title": "Ram Comedy Club",
+   "theatre": "Derby Theatre",
+   "genre": "Comedy",
+   "start": "2026-10-24",
+   "end": "2026-10-24",
+   "url": "https://derbytheatre.co.uk/event/ram-comedy-club-2/"
+  },
+  {
+   "title": "The Brown Suite",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Dance",
+   "start": "2026-10-24",
+   "end": "2026-10-24",
+   "url": "https://www.atgtickets.com/shows/the-brown-suite/regent-theatre/"
+  },
+  {
+   "title": "The Comedy Store Oct 2026 (16+)",
+   "theatre": "Palace Theatre Mansfield",
+   "genre": "Comedy",
+   "start": "2026-10-24",
+   "end": "2026-10-24",
+   "url": "https://www.mansfield.gov.uk/palacetheatre/events/event/64/the-comedy-store-oct-2026-16-"
+  },
+  {
+   "title": "The D-Day Juniors: Back Home",
+   "theatre": "Century Theatre",
+   "genre": "Music",
+   "start": "2026-10-24",
+   "end": "2026-10-24",
+   "url": "https://centurytheatre.co.uk/whats-on/the-d-day-juniors-back-home-3/"
+  },
+  {
+   "title": "Daniel Kitson - Thrum",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2026-10-25",
+   "end": "2026-10-25",
+   "url": "https://nottinghamplayhouse.co.uk/events/daniel-kitson/"
+  },
+  {
+   "title": "Halloween in Concert",
+   "theatre": "De Montfort Hall",
+   "genre": "Music",
+   "start": "2026-10-25",
+   "end": "2026-10-25",
+   "url": "https://www.demontforthall.co.uk/event/halloween-in-concert"
+  },
+  {
+   "title": "James Haskell - Hask Unfiltered",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "Talk",
+   "start": "2026-10-25",
+   "end": "2026-10-25",
+   "url": "https://www.grandtheatre.co.uk/whats-on/james-haskell-hask-unfiltered/"
+  },
+  {
+   "title": "Kathakali",
+   "theatre": "Lichfield Garrick",
+   "genre": "Dance",
+   "start": "2026-10-25",
+   "end": "2026-10-25",
+   "url": "https://www.lichfieldgarrick.com/events/kathakali-dance"
+  },
+  {
+   "title": "Tez Ilyas: Tez Things I Hate About You",
+   "theatre": "Derby Theatre",
+   "genre": "Comedy",
+   "start": "2026-10-25",
+   "end": "2026-10-25",
+   "url": "https://derbytheatre.co.uk/event/tez-ilyas-tez-things-i-hate-about-you/"
+  },
+  {
+   "title": "That'll Be The Day",
+   "theatre": "Buxton Opera House",
+   "genre": "Music",
+   "start": "2026-10-25",
+   "end": "2026-10-25",
+   "url": "https://buxtonoperahouse.org.uk/events/thatll-be-the-day-2026-2/"
+  },
+  {
+   "title": "The Bon Jovi Experience",
+   "theatre": "Lichfield Garrick",
+   "genre": "Music",
+   "start": "2026-10-25",
+   "end": "2026-10-25",
+   "url": "https://www.lichfieldgarrick.com/events/the-bon-jovi-experience"
+  },
+  {
+   "title": "The Witch Who Couldn't Sleep",
+   "theatre": "Lichfield Garrick",
+   "genre": "Family",
+   "start": "2026-10-25",
+   "end": "2026-10-25",
+   "url": "https://www.lichfieldgarrick.com/events/the-witch-who-couldnt-sleep"
+  },
+  {
+   "title": "Harry Enfield and No Chums",
+   "theatre": "De Montfort Hall",
+   "genre": "Comedy",
+   "start": "2026-10-26",
+   "end": "2026-10-26",
+   "url": "https://www.demontforthall.co.uk/event/harry-enfield"
+  },
+  {
+   "title": "Jersey Boys",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Musical",
+   "start": "2026-10-26",
+   "end": "2026-10-31",
+   "url": "https://www.atgtickets.com/shows/jersey-boys/regent-theatre/"
+  },
+  {
+   "title": "Larry Dean: Hellbent",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2026-10-26",
+   "end": "2026-10-26",
+   "url": "https://nottinghamplayhouse.co.uk/events/larry-dean/"
+  },
+  {
+   "title": "Ministry of Science Live",
+   "theatre": "Lichfield Garrick",
+   "genre": "Family",
+   "start": "2026-10-26",
+   "end": "2026-10-26",
+   "url": "https://www.lichfieldgarrick.com/events/ministry-of-science"
+  },
+  {
+   "title": "Spectrum Youth Theatre",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Theatre",
+   "start": "2026-10-26",
+   "end": "2026-10-30",
+   "url": "https://brewhouse.co.uk/events/spectrum-youth-theatre"
+  },
+  {
+   "title": "Taylormania - The End of an Era",
+   "theatre": "Buxton Opera House",
+   "genre": "Music",
+   "start": "2026-10-26",
+   "end": "2026-10-26",
+   "url": "https://buxtonoperahouse.org.uk/events/taylormania-2026/"
+  },
+  {
+   "title": "The Tale of the Loneliest Whale",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Children's",
+   "start": "2026-10-26",
+   "end": "2026-10-26",
+   "url": "https://nottinghamplayhouse.co.uk/events/the-tale-of-the-loneliest-whale/"
+  },
+  {
+   "title": "Aardman in Concert with Live Orchestra",
+   "theatre": "De Montfort Hall",
+   "genre": "Family",
+   "start": "2026-10-27",
+   "end": "2026-10-27",
+   "url": "https://www.demontforthall.co.uk/event/aardman-in-concert"
+  },
+  {
+   "title": "Blood Brothers",
+   "theatre": "Curve Theatre",
+   "genre": "Musical",
+   "start": "2026-10-27",
+   "end": "2026-10-31",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/blood-brothers-2/"
+  },
+  {
+   "title": "Cats",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Musical",
+   "start": "2026-10-27",
+   "end": "2026-11-07",
+   "url": "https://www.birminghamhippodrome.com/calendar/cats-two/"
+  },
+  {
+   "title": "Francis Rossi",
+   "theatre": "Buxton Opera House",
+   "genre": "Music",
+   "start": "2026-10-27",
+   "end": "2026-10-27",
+   "url": "https://buxtonoperahouse.org.uk/events/francis-rossi-2026/"
+  },
+  {
+   "title": "Harry Enfield and No Chums",
+   "theatre": "Vaillant Live",
+   "genre": "Comedy",
+   "start": "2026-10-27",
+   "end": "2026-10-27",
+   "url": "https://www.visitderby.co.uk/events-1/harry-enfield-and-no-chums"
+  },
+  {
+   "title": "Ice Age Adventure Live",
+   "theatre": "Palace Theatre Mansfield",
+   "genre": "Family",
+   "start": "2026-10-27",
+   "end": "2026-10-27",
+   "url": "https://www.mansfield.gov.uk/palacetheatre/events/event/28/ice-age-adventure-live"
+  },
+  {
+   "title": "Lemn Sissay - Let the Light Pour In LIVE",
+   "theatre": "Curve Theatre",
+   "genre": "Talk",
+   "start": "2026-10-27",
+   "end": "2026-10-27",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/lemn-sissay-let-the-light-pour-in-live/"
+  },
+  {
+   "title": "Mamma Mia!",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "Musical",
+   "start": "2026-10-27",
+   "end": "2026-11-07",
+   "url": "https://www.grandtheatre.co.uk/whats-on/mamma-mia/"
+  },
+  {
+   "title": "Michael Rosen – Nice!",
+   "theatre": "Lichfield Garrick",
+   "genre": "Talk",
+   "start": "2026-10-27",
+   "end": "2026-10-27",
+   "url": "https://www.lichfieldgarrick.com/events/michael-rosen-nice"
+  },
+  {
+   "title": "Of Mice & Men",
+   "theatre": "Lichfield Garrick",
+   "genre": "Drama",
+   "start": "2026-10-27",
+   "end": "2026-10-27",
+   "url": "https://www.lichfieldgarrick.com/events/of-mice-men"
+  },
+  {
+   "title": "Paranormal Activity",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Play",
+   "start": "2026-10-27",
+   "end": "2026-10-31",
+   "url": "https://www.atgtickets.com/shows/paranormal-activity/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Play in a Day (6-8 year olds)",
+   "theatre": "The Rep",
+   "genre": "Workshop",
+   "start": "2026-10-27",
+   "end": "2026-10-27",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/play-in-a-day-6-8-year-olds/"
+  },
+  {
+   "title": "The Amazing Bubble Man",
+   "theatre": "Lichfield Garrick",
+   "genre": "Family",
+   "start": "2026-10-27",
+   "end": "2026-10-27",
+   "url": "https://www.lichfieldgarrick.com/events/the-amazing-bubble-man"
+  },
+  {
+   "title": "The Void",
+   "theatre": "The Rep",
+   "genre": "Theatre",
+   "start": "2026-10-27",
+   "end": "2026-10-28",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/the-void/"
+  },
+  {
+   "title": "The Wind in the Willows",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Family",
+   "start": "2026-10-27",
+   "end": "2026-10-27",
+   "url": "https://brewhouse.co.uk/events/the-wind-in-the-willows"
+  },
+  {
+   "title": "We Will Rock You",
+   "theatre": "Derby Theatre",
+   "genre": "Musical",
+   "start": "2026-10-27",
+   "end": "2026-10-31",
+   "url": "https://derbytheatre.co.uk/event/we-will-rock-you/"
+  },
+  {
+   "title": "Dave Rowntree",
+   "theatre": "Buxton Opera House",
+   "genre": "Talk",
+   "start": "2026-10-28",
+   "end": "2026-10-28",
+   "url": "https://buxtonoperahouse.org.uk/events/dave-rowntree-no-one-you-know-2026/"
+  },
+  {
+   "title": "Elif Shafak - In One Brief Moment All Eternity",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Talk",
+   "start": "2026-10-28",
+   "end": "2026-10-28",
+   "url": "https://www.oldrep.co.uk/event-details/345131ATGCVGBMMJVQCLQMKDHSDCDLVQT/elif-shafak-in-one-brief-moment-all-eternity/"
+  },
+  {
+   "title": "Kaine: Better Together",
+   "theatre": "Curve Theatre",
+   "genre": "Music",
+   "start": "2026-10-28",
+   "end": "2026-10-28",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/kaine-better-together/"
+  },
+  {
+   "title": "Kevin Bloody Wilson (16+)",
+   "theatre": "Palace Theatre Mansfield",
+   "genre": "Comedy",
+   "start": "2026-10-28",
+   "end": "2026-10-28",
+   "url": "https://www.mansfield.gov.uk/palacetheatre/events/event/31/kevin-bloody-wilson-16-"
+  },
+  {
+   "title": "Monologue and Audition Support Workshop",
+   "theatre": "The Rep",
+   "genre": "Workshop",
+   "start": "2026-10-28",
+   "end": "2026-10-28",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/monologue-and-audition-support-workshop/"
+  },
+  {
+   "title": "Play in a Day (9-11 year olds)",
+   "theatre": "The Rep",
+   "genre": "Workshop",
+   "start": "2026-10-28",
+   "end": "2026-10-28",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/play-in-a-day-9-11-year-olds/"
+  },
+  {
+   "title": "Post-show Ghost Tour Paranormal Activity",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Event",
+   "start": "2026-10-28",
+   "end": "2026-10-30",
+   "url": "https://www.atgtickets.com/shows/post-show-ghost-tour-paranormal-activity/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Ruby Wax: Absolutely Famous",
+   "theatre": "Buxton Opera House",
+   "genre": "Comedy",
+   "start": "2026-10-28",
+   "end": "2026-10-28",
+   "url": "https://buxtonoperahouse.org.uk/events/ruby-wax-absolutely-famous-2026/"
+  },
+  {
+   "title": "Scarred for Life: A Folk Horror Special",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Comedy",
+   "start": "2026-10-28",
+   "end": "2026-10-28",
+   "url": "https://brewhouse.co.uk/events/scarred-for-life-a-folk-horror-special"
+  },
+  {
+   "title": "The Legends of American Country Show",
+   "theatre": "Lichfield Garrick",
+   "genre": "Music",
+   "start": "2026-10-28",
+   "end": "2026-10-28",
+   "url": "https://www.lichfieldgarrick.com/events/the-legends-of-american-country-show"
+  },
+  {
+   "title": "Adam Garcia's Emerald Storm",
+   "theatre": "Lichfield Garrick",
+   "genre": "Dance",
+   "start": "2026-10-29",
+   "end": "2026-10-29",
+   "url": "https://www.lichfieldgarrick.com/events/emerald-storm"
+  },
+  {
+   "title": "Baby Disco",
+   "theatre": "Lichfield Garrick",
+   "genre": "Family",
+   "start": "2026-10-29",
+   "end": "2026-10-29",
+   "url": "https://www.lichfieldgarrick.com/events/baby-disco"
+  },
+  {
+   "title": "Baby Disco – Creative Burntwood",
+   "theatre": "Lichfield Garrick",
+   "genre": "Family",
+   "start": "2026-10-29",
+   "end": "2026-10-29",
+   "url": "https://www.lichfieldgarrick.com/events/baby-disco-creative-burntwood"
+  },
+  {
+   "title": "Des Coleman",
+   "theatre": "Buxton Opera House",
+   "genre": "Music",
+   "start": "2026-10-29",
+   "end": "2026-10-29",
+   "url": "https://buxtonoperahouse.org.uk/events/des-coleman-2026/"
+  },
+  {
+   "title": "Ghost Story - Storytelling workshop",
+   "theatre": "The Rep",
+   "genre": "Workshop",
+   "start": "2026-10-29",
+   "end": "2026-10-29",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/ghost-story-storytelling-workshop/"
+  },
+  {
+   "title": "Made You Look - Workshop",
+   "theatre": "The Rep",
+   "genre": "Workshop",
+   "start": "2026-10-29",
+   "end": "2026-10-29",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/made-you-look-workshop/"
+  },
+  {
+   "title": "Once Upon a Time in Sokoto",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Drama",
+   "start": "2026-10-29",
+   "end": "2026-10-31",
+   "url": "https://nottinghamplayhouse.co.uk/events/once-upon-a-time-in-sokoto/"
+  },
+  {
+   "title": "Paul Smith",
+   "theatre": "Vaillant Live",
+   "genre": "Comedy",
+   "start": "2026-10-29",
+   "end": "2026-10-30",
+   "url": "https://www.visitderby.co.uk/events/paul-smith-1"
+  },
+  {
+   "title": "Phil Wang",
+   "theatre": "Buxton Opera House",
+   "genre": "Comedy",
+   "start": "2026-10-29",
+   "end": "2026-10-29",
+   "url": "https://buxtonoperahouse.org.uk/events/phil-wang-oh-no-2026/"
+  },
+  {
+   "title": "The Haunted Bride",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Theatre",
+   "start": "2026-10-29",
+   "end": "2026-10-29",
+   "url": "https://brewhouse.co.uk/events/the-haunted-bride"
+  },
+  {
+   "title": "The Legends in Vegas - After Hours",
+   "theatre": "De Montfort Hall",
+   "genre": "Music",
+   "start": "2026-10-29",
+   "end": "2026-10-29",
+   "url": "https://www.demontforthall.co.uk/event/the-legends-vegas"
+  },
+  {
+   "title": "The Makings of a Murderer: The Undercover Detective",
+   "theatre": "Palace Theatre Mansfield",
+   "genre": "Talk",
+   "start": "2026-10-29",
+   "end": "2026-10-29",
+   "url": "https://www.mansfield.gov.uk/palacetheatre/events/event/69/the-makings-of-a-murderer-the-undercover-detective"
+  },
+  {
+   "title": "The Turn of the Screw",
+   "theatre": "The Rep",
+   "genre": "Theatre",
+   "start": "2026-10-29",
+   "end": "2026-10-31",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/turn-of-the-screw/"
+  },
+  {
+   "title": "Close Enough to Touch",
+   "theatre": "Derby Theatre",
+   "genre": "Theatre",
+   "start": "2026-10-30",
+   "end": "2026-10-30",
+   "url": "https://derbytheatre.co.uk/event/close-enough-to-touch/"
+  },
+  {
+   "title": "Darkling",
+   "theatre": "The Rep",
+   "genre": "Theatre",
+   "start": "2026-10-30",
+   "end": "2026-10-31",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/darkling/"
+  },
+  {
+   "title": "Lindisfarne",
+   "theatre": "Lichfield Garrick",
+   "genre": "Music",
+   "start": "2026-10-30",
+   "end": "2026-10-30",
+   "url": "https://www.lichfieldgarrick.com/events/lindisfarne"
+  },
+  {
+   "title": "Michael Rosen",
+   "theatre": "Buxton Opera House",
+   "genre": "Talk",
+   "start": "2026-10-30",
+   "end": "2026-10-30",
+   "url": "https://buxtonoperahouse.org.uk/events/michael-rosen-nice-2026/"
+  },
+  {
+   "title": "Michael Starring Ben",
+   "theatre": "De Montfort Hall",
+   "genre": "Tribute",
+   "start": "2026-10-30",
+   "end": "2026-10-30",
+   "url": "https://www.demontforthall.co.uk/event/michael-starring-ben"
+  },
+  {
+   "title": "Off-Key",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Drama",
+   "start": "2026-10-30",
+   "end": "2026-10-31",
+   "url": "https://www.birminghamhippodrome.com/calendar/offkey/"
+  },
+  {
+   "title": "The Floyd Effect",
+   "theatre": "Buxton Opera House",
+   "genre": "Music",
+   "start": "2026-10-30",
+   "end": "2026-10-30",
+   "url": "https://buxtonoperahouse.org.uk/events/the-floyd-effect/"
+  },
+  {
+   "title": "The Melsons",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Folk Music",
+   "start": "2026-10-30",
+   "end": "2026-10-30",
+   "url": "https://brewhouse.co.uk/events/the-melsons"
+  },
+  {
+   "title": "The Simon and Garfunkel Story",
+   "theatre": "Palace Theatre Mansfield",
+   "genre": "Music",
+   "start": "2026-10-30",
+   "end": "2026-10-30",
+   "url": "https://www.mansfield.gov.uk/palacetheatre/events/event/75/the-simon-and-garfunkel-story"
+  },
+  {
+   "title": "Young Community Drop-In Session",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Workshop",
+   "start": "2026-10-30",
+   "end": "2026-10-30",
+   "url": "https://www.birminghamhippodrome.com/calendar/young-community-drop-in-session-8/"
+  },
+  {
+   "title": "ATG INSPIRE Academy",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Education",
+   "start": "2026-10-31",
+   "end": "2026-10-31",
+   "url": "https://www.atgtickets.com/shows/atg-inspire-academy/regent-theatre/"
+  },
+  {
+   "title": "Chris Ramsey: Here Man",
+   "theatre": "De Montfort Hall",
+   "genre": "Comedy",
+   "start": "2026-10-31",
+   "end": "2026-10-31",
+   "url": "https://www.demontforthall.co.uk/event/chris-ramsey-here-man"
+  },
+  {
+   "title": "Halloween in Concert",
+   "theatre": "Lichfield Garrick",
+   "genre": "Music",
+   "start": "2026-10-31",
+   "end": "2026-10-31",
+   "url": "https://www.lichfieldgarrick.com/events/halloween-in-concert"
+  },
+  {
+   "title": "Leo Sayer",
+   "theatre": "Buxton Opera House",
+   "genre": "Music",
+   "start": "2026-10-31",
+   "end": "2026-10-31",
+   "url": "https://buxtonoperahouse.org.uk/events/leo-sayer-cant-stop-loving-you-2026/"
+  },
+  {
+   "title": "Motown's Greatest Hits - How Sweet it is",
+   "theatre": "Palace Theatre Mansfield",
+   "genre": "Music",
+   "start": "2026-10-31",
+   "end": "2026-10-31",
+   "url": "https://www.mansfield.gov.uk/palacetheatre/events/event/36/motown-s-greatest-hits-how-sweet-it-is"
+  },
+  {
+   "title": "Nearly Dan",
+   "theatre": "Buxton Opera House",
+   "genre": "Music",
+   "start": "2026-10-31",
+   "end": "2026-10-31",
+   "url": "https://buxtonoperahouse.org.uk/events/the-spirit-and-sound-of-steely-dan-nearly-dan-in-concert-2026/"
+  },
+  {
+   "title": "Theatre Tours - Birmingham",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Tour",
+   "start": "2026-10-31",
+   "end": "2026-11-07",
+   "url": "https://www.atgtickets.com/shows/theatre-tours-birmingham/"
+  },
+  {
+   "title": "Bookends: Mozart and Britten",
+   "theatre": "Buxton Opera House",
+   "genre": "Classical",
+   "start": "2026-11-01",
+   "end": "2026-11-01",
+   "url": "https://buxtonoperahouse.org.uk/events/bookends-mozart-and-britten-buxton-musical-society/"
+  },
+  {
+   "title": "Buxton Firework Spectacular",
+   "theatre": "Buxton Opera House",
+   "genre": "Family",
+   "start": "2026-11-01",
+   "end": "2026-11-01",
+   "url": "https://buxtonoperahouse.org.uk/events/buxton-firework-spectacular-2026/"
+  },
+  {
+   "title": "K-Pop Live",
+   "theatre": "Lichfield Garrick",
+   "genre": "Music",
+   "start": "2026-11-01",
+   "end": "2026-11-01",
+   "url": "https://www.lichfieldgarrick.com/events/kpop-live"
+  },
+  {
+   "title": "Open Mic Night",
+   "theatre": "Buxton Opera House",
+   "genre": "Music",
+   "start": "2026-11-01",
+   "end": "2026-11-01",
+   "url": "https://buxtonoperahouse.org.uk/events/buxton-opera-house-creates-youth-board-presents-open-mic-night/"
+  },
+  {
+   "title": "The Illegal Eagles",
+   "theatre": "Buxton Opera House",
+   "genre": "Music",
+   "start": "2026-11-01",
+   "end": "2026-11-01",
+   "url": "https://buxtonoperahouse.org.uk/events/the-illegal-eagles-hotel-california-2026/"
+  },
+  {
+   "title": "The Music of Zimmer vs Williams",
+   "theatre": "De Montfort Hall",
+   "genre": "Classical",
+   "start": "2026-11-01",
+   "end": "2026-11-01",
+   "url": "https://www.demontforthall.co.uk/event/the-music-of-zimmer-vs-williams"
+  },
+  {
+   "title": "Jersey Boys",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Musical",
+   "start": "2026-11-02",
+   "end": "2026-11-21",
+   "url": "https://www.atgtickets.com/shows/jersey-boys/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Pride & Prejudice* (*sort of)",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2026-11-02",
+   "end": "2026-11-07",
+   "url": "https://nottinghamplayhouse.co.uk/events/pride-prejudice-sort-of/"
+  },
+  {
+   "title": "Shakespeare Schools Theatre Festival",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Drama",
+   "start": "2026-11-02",
+   "end": "2026-11-02",
+   "url": "https://www.oldrep.co.uk/event-details/354331ACPLDBBJDHKHMMBRKQRLMPKQRVS/shakespeare-schools-theatre-festival/"
+  },
+  {
+   "title": "Mean Girls",
+   "theatre": "Royal Concert Hall",
+   "genre": "Musical",
+   "start": "2026-11-03",
+   "end": "2026-11-07",
+   "url": "https://www.trch.co.uk/whats-on/mean-girls-6qcb"
+  },
+  {
+   "title": "Rich Hall: Chin Music",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Comedy",
+   "start": "2026-11-03",
+   "end": "2026-11-03",
+   "url": "https://brewhouse.co.uk/events/chin-music"
+  },
+  {
+   "title": "The Nutcracker (New English Ballet Theatre)",
+   "theatre": "Lichfield Garrick",
+   "genre": "Dance",
+   "start": "2026-11-03",
+   "end": "2026-11-04",
+   "url": "https://www.lichfieldgarrick.com/events/the-nutcracker"
+  },
+  {
+   "title": "The Stylistics",
+   "theatre": "De Montfort Hall",
+   "genre": "Music",
+   "start": "2026-11-03",
+   "end": "2026-11-03",
+   "url": "https://www.demontforthall.co.uk/event/the-stylistics"
+  },
+  {
+   "title": "Access Forum",
+   "theatre": "The Rep",
+   "genre": "Talk",
+   "start": "2026-11-04",
+   "end": "2026-11-04",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/audience-accessibility-forum/"
+  },
+  {
+   "title": "Chitty Chitty Bang Bang",
+   "theatre": "Derby Theatre",
+   "genre": "Musical",
+   "start": "2026-11-04",
+   "end": "2026-11-08",
+   "url": "https://derbytheatre.co.uk/event/chitty-chitty-bang-bang/"
+  },
+  {
+   "title": "Chris Packham's World of Wonder: A Planet on the Edge",
+   "theatre": "De Montfort Hall",
+   "genre": "Talk",
+   "start": "2026-11-04",
+   "end": "2026-11-04",
+   "url": "https://www.demontforthall.co.uk/event/chris-packham"
+  },
+  {
+   "title": "Priscilla, Queen of the Desert the Musical",
+   "theatre": "Palace Theatre Mansfield",
+   "genre": "Musical",
+   "start": "2026-11-04",
+   "end": "2026-11-08",
+   "url": "https://www.mansfield.gov.uk/palacetheatre/events/event/41/priscilla-queen-of-the-desert-the-musical-"
+  },
+  {
+   "title": "The Rachel Parris Songbook",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Comedy",
+   "start": "2026-11-04",
+   "end": "2026-11-04",
+   "url": "https://www.oldrep.co.uk/event-details/341931ALNRGNVHNTJQGKHMSPHDSJRHBPJ/the-rachel-parris-songbook/"
+  },
+  {
+   "title": "The Stylistics",
+   "theatre": "Buxton Opera House",
+   "genre": "Music",
+   "start": "2026-11-04",
+   "end": "2026-11-04",
+   "url": "https://buxtonoperahouse.org.uk/events/the-stylistics-2026/"
+  },
+  {
+   "title": "Ed Patrick: Numb and Number",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Comedy",
+   "start": "2026-11-05",
+   "end": "2026-11-05",
+   "url": "https://brewhouse.co.uk/events/ed-patrick-numb-and-number"
+  },
+  {
+   "title": "Golden Boy (NT Live)",
+   "theatre": "Buxton Opera House",
+   "genre": "Theatre",
+   "start": "2026-11-05",
+   "end": "2026-11-05",
+   "url": "https://buxtonoperahouse.org.uk/events/nt-live-golden-boy-2026-15-tbc/"
+  },
+  {
+   "title": "How The Double Helix Was Really Discovered, And What Happens Next (Erasmus Darwin Memorial Lecture)",
+   "theatre": "Lichfield Garrick",
+   "genre": "Talk",
+   "start": "2026-11-05",
+   "end": "2026-11-05",
+   "url": "https://www.lichfieldgarrick.com/events/darwin-lecture"
+  },
+  {
+   "title": "National Theatre Live: Golden Boy",
+   "theatre": "Lichfield Garrick",
+   "genre": "Theatre",
+   "start": "2026-11-05",
+   "end": "2026-11-05",
+   "url": "https://www.lichfieldgarrick.com/events/nt-golden-boy"
+  },
+  {
+   "title": "Simon Brodkin - Unleashed",
+   "theatre": "De Montfort Hall",
+   "genre": "Comedy",
+   "start": "2026-11-05",
+   "end": "2026-11-05",
+   "url": "https://www.demontforthall.co.uk/event/simon-brodkin"
+  },
+  {
+   "title": "Christmas In Ireland",
+   "theatre": "Lichfield Garrick",
+   "genre": "Music",
+   "start": "2026-11-06",
+   "end": "2026-11-07",
+   "url": "https://www.lichfieldgarrick.com/events/christmas-in-ireland"
+  },
+  {
+   "title": "Coffee, Cake and Cadenzas",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Event",
+   "start": "2026-11-06",
+   "end": "2027-06-11",
+   "url": "https://www.atgtickets.com/shows/coffee-cake-and-cadenzas/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Festival of Remembrance",
+   "theatre": "Century Theatre",
+   "genre": "Music",
+   "start": "2026-11-06",
+   "end": "2026-11-06",
+   "url": "https://centurytheatre.co.uk/whats-on/festival-of-remembrance/"
+  },
+  {
+   "title": "Floyd in the Flesh",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Music",
+   "start": "2026-11-06",
+   "end": "2026-11-06",
+   "url": "https://brewhouse.co.uk/events/floyd-in-the-flesh-2"
+  },
+  {
+   "title": "Hope all's well",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Comedy",
+   "start": "2026-11-06",
+   "end": "2026-11-06",
+   "url": "https://www.oldrep.co.uk/event-details/319131AKQKVLRMMBNMCQNRCQMRLHNPHGK/hope-alls-well/"
+  },
+  {
+   "title": "Nova Brass",
+   "theatre": "Buxton Opera House",
+   "genre": "Music",
+   "start": "2026-11-06",
+   "end": "2026-11-06",
+   "url": "https://buxtonoperahouse.org.uk/events/coffee-concert-november-2026/"
+  },
+  {
+   "title": "Simon Brodkin: Unleashed",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Comedy",
+   "start": "2026-11-06",
+   "end": "2026-11-06",
+   "url": "https://www.atgtickets.com/shows/simon-brodkin-unleashed/regent-theatre/"
+  },
+  {
+   "title": "The Proclaimers",
+   "theatre": "De Montfort Hall",
+   "genre": "Music",
+   "start": "2026-11-06",
+   "end": "2026-11-06",
+   "url": "https://www.demontforthall.co.uk/event/the-proclaimers"
+  },
+  {
+   "title": "Top Hat Open Mic Night",
+   "theatre": "Lichfield Garrick",
+   "genre": "Music",
+   "start": "2026-11-06",
+   "end": "2026-11-06",
+   "url": "https://www.lichfieldgarrick.com/events/top-hat-open-mic"
+  },
+  {
+   "title": "Birmingham Drag & Burlesque Festival: The Follies Grandé",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Cabaret",
+   "start": "2026-11-07",
+   "end": "2026-11-07",
+   "url": "https://www.oldrep.co.uk/event-details/322331AGDCNJKTGBVHBKCQNKMBLNQRLST/birmingham-drag-burlesque-festival-the-follies-grande/"
+  },
+  {
+   "title": "Jo Bannon - The Dirty Work",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Dance",
+   "start": "2026-11-07",
+   "end": "2026-11-07",
+   "url": "https://www.birminghamhippodrome.com/calendar/fabric-the-dirty-work/"
+  },
+  {
+   "title": "Little Journey",
+   "theatre": "Curve Theatre",
+   "genre": "Family",
+   "start": "2026-11-07",
+   "end": "2026-11-07",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/little-journey/"
+  },
+  {
+   "title": "Mark Watson: Before It Overtakes Us",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Comedy",
+   "start": "2026-11-07",
+   "end": "2026-11-07",
+   "url": "https://brewhouse.co.uk/events/mark-watson-before-it-overtakes-us"
+  },
+  {
+   "title": "The Nutcracker",
+   "theatre": "Vaillant Live",
+   "genre": "Dance",
+   "start": "2026-11-07",
+   "end": "2026-11-07",
+   "url": "https://www.visitderby.co.uk/events-1/the-nutcracker"
+  },
+  {
+   "title": "Tom Davis: Spudgun",
+   "theatre": "De Montfort Hall",
+   "genre": "Comedy",
+   "start": "2026-11-07",
+   "end": "2026-11-07",
+   "url": "https://www.demontforthall.co.uk/event/tom-davis"
+  },
+  {
+   "title": "Behind The Scenes Tours",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Tour",
+   "start": "2026-11-08",
+   "end": "2026-11-08",
+   "url": "https://www.birminghamhippodrome.com/calendar/behind-the-scenes-tours-4/"
+  },
+  {
+   "title": "Shine on Stage",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Variety",
+   "start": "2026-11-08",
+   "end": "2026-11-08",
+   "url": "https://www.oldrep.co.uk/event-details/355931ABNBGLTVDMRHPMBGTQVNTVMGNTC/shine-on-stage/"
+  },
+  {
+   "title": "Joe Lycett & Friends",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Comedy",
+   "start": "2026-11-09",
+   "end": "2026-11-09",
+   "url": "https://www.oldrep.co.uk/event-details/350931ATSDGKJRMGJPBMBGVGRVKMBJPDK/joe-lycett-friends/"
+  },
+  {
+   "title": "The Nature of Forgetting",
+   "theatre": "Curve Theatre",
+   "genre": "Theatre",
+   "start": "2026-11-09",
+   "end": "2026-11-10",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/the-nature-of-forgetting/"
+  },
+  {
+   "title": "August Wilson's Fences",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Drama",
+   "start": "2026-11-10",
+   "end": "2026-11-14",
+   "url": "https://nottinghamplayhouse.co.uk/events/fences/"
+  },
+  {
+   "title": "Bellowhead",
+   "theatre": "De Montfort Hall",
+   "genre": "Music",
+   "start": "2026-11-10",
+   "end": "2026-11-10",
+   "url": "https://www.demontforthall.co.uk/event/bellowhead"
+  },
+  {
+   "title": "Bill Bailey: Vaudevillean",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Comedy",
+   "start": "2026-11-10",
+   "end": "2026-11-10",
+   "url": "https://www.atgtickets.com/shows/bill-bailey-vaudevillean/regent-theatre/"
+  },
+  {
+   "title": "Christmas Carol Goes Wrong",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "Comedy",
+   "start": "2026-11-10",
+   "end": "2026-11-14",
+   "url": "https://www.grandtheatre.co.uk/whats-on/a-christmas-carol-goes-wrong/"
+  },
+  {
+   "title": "Harry Redknapp - My Life in Football",
+   "theatre": "Vaillant Live",
+   "genre": "Talk",
+   "start": "2026-11-10",
+   "end": "2026-11-10",
+   "url": "https://www.visitderby.co.uk/events-1/harry-redknapp-my-life-in-football"
+  },
+  {
+   "title": "Othello",
+   "theatre": "Derby Theatre",
+   "genre": "Theatre",
+   "start": "2026-11-10",
+   "end": "2026-11-14",
+   "url": "https://derbytheatre.co.uk/event/othello/"
+  },
+  {
+   "title": "The D-Day Darlings – Victorious",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Music",
+   "start": "2026-11-10",
+   "end": "2026-11-10",
+   "url": "https://brewhouse.co.uk/events/d-day-darlings"
+  },
+  {
+   "title": "The Royal Opera: Carmen",
+   "theatre": "Bonington Theatre",
+   "genre": "Opera",
+   "start": "2026-11-10",
+   "end": "2026-11-15",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/the-royal-opera-carmen-cert-tbc/"
+  },
+  {
+   "title": "A Celtic Christmas",
+   "theatre": "Palace Theatre Mansfield",
+   "genre": "Music",
+   "start": "2026-11-11",
+   "end": "2026-11-11",
+   "url": "https://www.mansfield.gov.uk/palacetheatre/events/event/2/a-celtic-christmas"
+  },
+  {
+   "title": "Alex McAleer – Mind Reader",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Illusionist",
+   "start": "2026-11-11",
+   "end": "2026-11-11",
+   "url": "https://brewhouse.co.uk/events/alex-mcaleer-mind-reader"
+  },
+  {
+   "title": "National Theatre Live: Golden Boy",
+   "theatre": "Bonington Theatre",
+   "genre": "Theatre",
+   "start": "2026-11-11",
+   "end": "2026-11-20",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/national-theatre-live-golden-boy-cert-tbc/"
+  },
+  {
+   "title": "Philharmonia: Manfred Honeck and Emanuel Ax",
+   "theatre": "De Montfort Hall",
+   "genre": "Classical",
+   "start": "2026-11-11",
+   "end": "2026-11-11",
+   "url": "https://www.demontforthall.co.uk/event/philharmonia-manfred-honeck-and-emanuel-ax"
+  },
+  {
+   "title": "Tez Ilyas: Tez Things I Hate About You",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Comedy",
+   "start": "2026-11-11",
+   "end": "2026-11-11",
+   "url": "https://www.oldrep.co.uk/event-details/333531AHNRVHPSLKDHHGVGTPSLCVGRPMG/tez-ilyas-tez-things-i-hate-about-you/"
+  },
+  {
+   "title": "The Littlest Yak",
+   "theatre": "Curve Theatre",
+   "genre": "Family",
+   "start": "2026-11-11",
+   "end": "2026-11-13",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/the-littlest-yak/"
+  },
+  {
+   "title": "Voices in Motion: Applied Theatre, Migration, Multilingualism and Empowerment through Practice-as-Research",
+   "theatre": "Derby Theatre",
+   "genre": "Talk",
+   "start": "2026-11-11",
+   "end": "2026-11-11",
+   "url": "https://derbytheatre.co.uk/festival/voices-in-motion-ma-symposium-2026/"
+  },
+  {
+   "title": "Alice Marshall: Parenthood's Profound Impact on Creativity & Expression",
+   "theatre": "Derby Theatre",
+   "genre": "Talk",
+   "start": "2026-11-12",
+   "end": "2026-11-12",
+   "url": "https://derbytheatre.co.uk/event/alice-marshall-parenthoods-profound-impact-on-creativity-expression/"
+  },
+  {
+   "title": "Dr Paul Whickman: Blasphemy & Politics in Romantic Literature",
+   "theatre": "Derby Theatre",
+   "genre": "Talk",
+   "start": "2026-11-12",
+   "end": "2026-11-12",
+   "url": "https://derbytheatre.co.uk/event/dr-paul-whickman-blasphemy-politics-in-romantic-literature/"
+  },
+  {
+   "title": "My Mountain Life",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Talk",
+   "start": "2026-11-12",
+   "end": "2026-11-12",
+   "url": "https://brewhouse.co.uk/events/my-mountain-life"
+  },
+  {
+   "title": "Phil Wang: Uh Oh",
+   "theatre": "De Montfort Hall",
+   "genre": "Comedy",
+   "start": "2026-11-12",
+   "end": "2026-11-12",
+   "url": "https://www.demontforthall.co.uk/event/phil-wang"
+  },
+  {
+   "title": "She Was There",
+   "theatre": "Derby Theatre",
+   "genre": "Theatre",
+   "start": "2026-11-12",
+   "end": "2026-11-12",
+   "url": "https://derbytheatre.co.uk/event/she-was-there/"
+  },
+  {
+   "title": "The Nottingham Guild Of Magicians: An Evening of Magic",
+   "theatre": "Bonington Theatre",
+   "genre": "Magic",
+   "start": "2026-11-12",
+   "end": "2026-11-12",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/the-nottingham-guild-of-magicians-an-evening-of-magic/"
+  },
+  {
+   "title": "The Ultimate MOD Revue",
+   "theatre": "Palace Theatre Mansfield",
+   "genre": "Music",
+   "start": "2026-11-12",
+   "end": "2026-11-12",
+   "url": "https://www.mansfield.gov.uk/palacetheatre/events/event/79/the-ultimate-mod-revue"
+  },
+  {
+   "title": "An Evening with Fergal Keane",
+   "theatre": "Derby Theatre",
+   "genre": "Talk",
+   "start": "2026-11-13",
+   "end": "2026-11-13",
+   "url": "https://derbytheatre.co.uk/event/an-evening-with-fergal-keane/"
+  },
+  {
+   "title": "An Evening with Yvette Fielding",
+   "theatre": "Vaillant Live",
+   "genre": "Talk",
+   "start": "2026-11-13",
+   "end": "2026-11-13",
+   "url": "https://www.visitderby.co.uk/events-1/an-evening-with-yvette-fielding"
+  },
+  {
+   "title": "Cannonball Quintet",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Music",
+   "start": "2026-11-13",
+   "end": "2026-11-13",
+   "url": "https://brewhouse.co.uk/events/cannonball-quintet"
+  },
+  {
+   "title": "Christmas Memories",
+   "theatre": "Palace Theatre Mansfield",
+   "genre": "Music",
+   "start": "2026-11-13",
+   "end": "2026-11-13",
+   "url": "https://www.mansfield.gov.uk/palacetheatre/events/event/13/christmas-memories"
+  },
+  {
+   "title": "Christmas in Ireland",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Concert",
+   "start": "2026-11-13",
+   "end": "2026-11-13",
+   "url": "https://www.atgtickets.com/shows/christmas-in-ireland/regent-theatre/"
+  },
+  {
+   "title": "Critical Care",
+   "theatre": "Derby Theatre",
+   "genre": "Theatre",
+   "start": "2026-11-13",
+   "end": "2026-11-13",
+   "url": "https://derbytheatre.co.uk/event/critical-care/"
+  },
+  {
+   "title": "Niall Hickman: Wolverhampton Wanderers FC - A History of the Club",
+   "theatre": "Derby Theatre",
+   "genre": "Talk",
+   "start": "2026-11-13",
+   "end": "2026-11-13",
+   "url": "https://derbytheatre.co.uk/event/niall-hickman-wolverhampton-wanderers-fc-a-history-of-the-club/"
+  },
+  {
+   "title": "QWEEN UK",
+   "theatre": "Bonington Theatre",
+   "genre": "Music",
+   "start": "2026-11-13",
+   "end": "2026-11-14",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/qween-uk-2/"
+  },
+  {
+   "title": "The Borrowers",
+   "theatre": "New Vic Theatre",
+   "genre": "Family",
+   "start": "2026-11-13",
+   "end": "2027-01-23",
+   "url": "https://www.newvictheatre.org.uk/productions/the-borrowers-2/"
+  },
+  {
+   "title": "A Good Neet Aht",
+   "theatre": "Derby Theatre",
+   "genre": "Theatre",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "url": "https://derbytheatre.co.uk/event/a-good-neet-aht/"
+  },
+  {
+   "title": "Bye Bye Baby",
+   "theatre": "Century Theatre",
+   "genre": "Music",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "url": "https://centurytheatre.co.uk/whats-on/bye-bye-baby-4/"
+  },
+  {
+   "title": "I'm Sorry I Haven't A Clue",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Comedy",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "url": "https://www.birminghamhippodrome.com/calendar/im-sorry-i-havent-a-clue-two/"
+  },
+  {
+   "title": "Katzeye: The Tribute Experience",
+   "theatre": "De Montfort Hall",
+   "genre": "Tribute",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "url": "https://www.demontforthall.co.uk/event/katzeye"
+  },
+  {
+   "title": "The Searchers & Hollies Experience",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Music",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "url": "https://brewhouse.co.uk/events/the-searchers-hollies-experience-2"
+  },
+  {
+   "title": "Unplugged Live",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Music",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "url": "https://www.birminghamhippodrome.com/calendar/unplugged-live/"
+  },
+  {
+   "title": "Ānartam: An Evening of South Asian Classical Dance & Music",
+   "theatre": "Curve Theatre",
+   "genre": "Dance",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/anartam-an-evening-of-south-asian-classical-dance-music-2/"
+  },
+  {
+   "title": "Dylan Moran - Looking For Trouble",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2026-11-15",
+   "end": "2026-11-15",
+   "url": "https://nottinghamplayhouse.co.uk/events/dylan-moran/"
+  },
+  {
+   "title": "Introducing Eva May and Friends",
+   "theatre": "Derby Theatre",
+   "genre": "Music",
+   "start": "2026-11-15",
+   "end": "2026-11-15",
+   "url": "https://derbytheatre.co.uk/event/introducing-eva-may-and-friends/"
+  },
+  {
+   "title": "Leicester Symphony Orchestra: Rhapsody in Blue",
+   "theatre": "De Montfort Hall",
+   "genre": "Classical",
+   "start": "2026-11-15",
+   "end": "2026-11-15",
+   "url": "https://www.demontforthall.co.uk/event/lso-rhapsody-in-blue"
+  },
+  {
+   "title": "The Australian Pink Floyd",
+   "theatre": "De Montfort Hall",
+   "genre": "Tribute",
+   "start": "2026-11-16",
+   "end": "2026-11-16",
+   "url": "https://www.demontforthall.co.uk/event/the-australian-pink-floyd"
+  },
+  {
+   "title": "Legally Blonde",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Musical",
+   "start": "2026-11-17",
+   "end": "2026-11-21",
+   "url": "https://www.atgtickets.com/shows/legally-blonde/regent-theatre/"
+  },
+  {
+   "title": "Private Peaceful",
+   "theatre": "Curve Theatre",
+   "genre": "Theatre",
+   "start": "2026-11-17",
+   "end": "2026-11-19",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/private-peaceful-2/"
+  },
+  {
+   "title": "The Rachel Parris Songbook",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2026-11-17",
+   "end": "2026-11-17",
+   "url": "https://nottinghamplayhouse.co.uk/events/the-rachel-parris-songbook/"
+  },
+  {
+   "title": "East 17 with Special Guest Blazin' Squad",
+   "theatre": "De Montfort Hall",
+   "genre": "Music",
+   "start": "2026-11-18",
+   "end": "2026-11-18",
+   "url": "https://www.demontforthall.co.uk/event/east-17-blazin-squad"
+  },
+  {
+   "title": "Peter Pan",
+   "theatre": "The Rep",
+   "genre": "Panto",
+   "start": "2026-11-18",
+   "end": "2027-01-17",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/peter-pan/"
+  },
+  {
+   "title": "The Manfreds: Get Your Kicks On Tour '26",
+   "theatre": "New Vic Theatre",
+   "genre": "Music",
+   "start": "2026-11-18",
+   "end": "2026-11-18",
+   "url": "https://www.newvictheatre.org.uk/productions/the-manfreds-get-your-kicks-on-tour-26/"
+  },
+  {
+   "title": "Uncovering Ancient Egypt with Bettany Hughes",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Talk",
+   "start": "2026-11-18",
+   "end": "2026-11-18",
+   "url": "https://nottinghamplayhouse.co.uk/events/uncovering-ancient-egypt-with-bettany-hughes/"
+  },
+  {
+   "title": "Daniel Foxx: How Lovely 2026 Tour",
+   "theatre": "Derby Theatre",
+   "genre": "Comedy",
+   "start": "2026-11-19",
+   "end": "2026-11-19",
+   "url": "https://derbytheatre.co.uk/event/daniel-foxx-how-lovely/"
+  },
+  {
+   "title": "Jazz Steps: Andrew Wood's Hammerhead",
+   "theatre": "Bonington Theatre",
+   "genre": "Jazz",
+   "start": "2026-11-19",
+   "end": "2026-11-19",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/jazz-steps-andrew-woods-hammerhead/"
+  },
+  {
+   "title": "Jonathan Pie",
+   "theatre": "Vaillant Live",
+   "genre": "Comedy",
+   "start": "2026-11-19",
+   "end": "2026-11-19",
+   "url": "https://www.visitderby.co.uk/events-1/jonathan-pie"
+  },
+  {
+   "title": "Laura Smyth - Born Aggy",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2026-11-19",
+   "end": "2026-11-19",
+   "url": "https://nottinghamplayhouse.co.uk/events/laura-smyth/"
+  },
+  {
+   "title": "W*NKERNOMICS",
+   "theatre": "De Montfort Hall",
+   "genre": "Comedy",
+   "start": "2026-11-19",
+   "end": "2026-11-19",
+   "url": "https://www.demontforthall.co.uk/event/wnkernomics"
+  },
+  {
+   "title": "Bill Bailey: Vaudevillean",
+   "theatre": "Vaillant Live",
+   "genre": "Comedy",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "url": "https://www.visitderby.co.uk/events-1/bill-bailey-vaudevillean"
+  },
+  {
+   "title": "Christmas in Ireland",
+   "theatre": "De Montfort Hall",
+   "genre": "Music",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "url": "https://www.demontforthall.co.uk/event/christmas-in-ireland"
+  },
+  {
+   "title": "Fatiha El-Ghorri: Cockney Stacking Doll",
+   "theatre": "Derby Theatre",
+   "genre": "Comedy",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "url": "https://derbytheatre.co.uk/event/fatiha-el-ghorri-cockney-stacking-doll/"
+  },
+  {
+   "title": "Robin Hood (2026 Pantomime)",
+   "theatre": "Lichfield Garrick",
+   "genre": "Pantomime",
+   "start": "2026-11-20",
+   "end": "2027-01-10",
+   "url": "https://www.lichfieldgarrick.com/events/robin-hood-2026"
+  },
+  {
+   "title": "Silvia Gribaudi - GRACES",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Dance",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "url": "https://www.birminghamhippodrome.com/calendar/fabric-graces/"
+  },
+  {
+   "title": "Sindhu Vee - Swanky",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "url": "https://nottinghamplayhouse.co.uk/events/sindhu-vee/"
+  },
+  {
+   "title": "The Nutcracker 2026",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Ballet",
+   "start": "2026-11-20",
+   "end": "2026-12-12",
+   "url": "https://www.birminghamhippodrome.com/calendar/brb-nutcracker-26/"
+  },
+  {
+   "title": "We Three Kings – of Country",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Music",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "url": "https://brewhouse.co.uk/events/we-three-kings-of-country"
+  },
+  {
+   "title": "An Evening With Vidya Patel",
+   "theatre": "The Rep",
+   "genre": "Dance",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/an-evening-with-vidya-patel/"
+  },
+  {
+   "title": "Bangla Month Presents: Comedy Special with SMASHBengali",
+   "theatre": "The Rep",
+   "genre": "Comedy",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/bangla-month-presents-comedy-special-with-smashbengali/"
+  },
+  {
+   "title": "Beauty and the Beast",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Pantomime",
+   "start": "2026-11-21",
+   "end": "2026-12-31",
+   "url": "https://www.oldrep.co.uk/event-details/327731AMJCDGSVNSNQCHQDGNQVVMMSLDL/beauty-and-the-beast/"
+  },
+  {
+   "title": "Charlie and the Chocolate Factory",
+   "theatre": "Curve Theatre",
+   "genre": "Musical",
+   "start": "2026-11-21",
+   "end": "2027-01-16",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/charlie-and-the-chocolate-factory/"
+  },
+  {
+   "title": "Cinderella",
+   "theatre": "Palace Theatre Mansfield",
+   "genre": "Pantomime",
+   "start": "2026-11-21",
+   "end": "2027-01-03",
+   "url": "https://www.mansfield.gov.uk/palacetheatre/events/event/14/cinderella"
+  },
+  {
+   "title": "Ginger Johnson",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "url": "https://nottinghamplayhouse.co.uk/events/ginger-johnson/"
+  },
+  {
+   "title": "Kaine: Festival of Choirs",
+   "theatre": "Curve Theatre",
+   "genre": "Music",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/kaine-festival-of-choirs/"
+  },
+  {
+   "title": "LOL Comedy Club",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Comedy",
+   "start": "2026-11-21",
+   "end": "2026-12-31",
+   "url": "https://www.atgtickets.com/shows/lol-comedy-club/the-piano-bar-regent-theatre/"
+  },
+  {
+   "title": "Midge Ure: A Man Of Two Worlds",
+   "theatre": "Vaillant Live",
+   "genre": "Music",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "url": "https://www.visitderby.co.uk/events-1/midge-ure-a-man-of-two-worlds"
+  },
+  {
+   "title": "Sam Campbell: Kid Giblet",
+   "theatre": "De Montfort Hall",
+   "genre": "Comedy",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "url": "https://www.demontforthall.co.uk/event/sam-campbell"
+  },
+  {
+   "title": "Alison Moyet",
+   "theatre": "De Montfort Hall",
+   "genre": "Music",
+   "start": "2026-11-22",
+   "end": "2026-11-22",
+   "url": "https://www.demontforthall.co.uk/event/alison-moyet"
+  },
+  {
+   "title": "Christmas in Ireland",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Concert",
+   "start": "2026-11-23",
+   "end": "2026-11-23",
+   "url": "https://www.atgtickets.com/shows/christmas-in-ireland/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "That'll Be Christmas",
+   "theatre": "De Montfort Hall",
+   "genre": "Music",
+   "start": "2026-11-23",
+   "end": "2026-11-23",
+   "url": "https://www.demontforthall.co.uk/event/thatll-be-christmas"
+  },
+  {
+   "title": "Charlie and the Chocolate Factory",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Family",
+   "start": "2026-11-24",
+   "end": "2026-11-28",
+   "url": "https://brewhouse.co.uk/events/charlie-and-the-chocolate-factory"
+  },
+  {
+   "title": "Dirty Dancing",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Musical",
+   "start": "2026-11-24",
+   "end": "2026-11-28",
+   "url": "https://www.atgtickets.com/shows/dirty-dancing/regent-theatre/"
+  },
+  {
+   "title": "Lichfield College Performing Arts Showcase",
+   "theatre": "Lichfield Garrick",
+   "genre": "Performing Arts",
+   "start": "2026-11-24",
+   "end": "2026-11-25",
+   "url": "https://www.lichfieldgarrick.com/events/performing-arts-showcase"
+  },
+  {
+   "title": "Dr John Cooper Clarke",
+   "theatre": "De Montfort Hall",
+   "genre": "Poetry",
+   "start": "2026-11-25",
+   "end": "2026-11-25",
+   "url": "https://www.demontforthall.co.uk/event/dr-john-cooper-clarke"
+  },
+  {
+   "title": "Jools Holland (with special guest Roachford)",
+   "theatre": "Royal Concert Hall",
+   "genre": "Music",
+   "start": "2026-11-25",
+   "end": "2026-11-25",
+   "url": "https://www.trch.co.uk/whats-on/jools-holland-z9w4"
+  },
+  {
+   "title": "The Music of Fleetwood Mac by Candlelight",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Concert",
+   "start": "2026-11-25",
+   "end": "2026-11-25",
+   "url": "https://www.atgtickets.com/shows/the-music-of-fleetwood-mac-by-candlelight/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Backstage Tours",
+   "theatre": "The Rep",
+   "genre": "Tour",
+   "start": "2026-11-26",
+   "end": "2027-01-09",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/birmingham-rep-backstage-tours/"
+  },
+  {
+   "title": "Jools Holland and His Rhythm and Blues Orchestra",
+   "theatre": "De Montfort Hall",
+   "genre": "Music",
+   "start": "2026-11-26",
+   "end": "2026-11-26",
+   "url": "https://www.demontforthall.co.uk/event/jools-holland"
+  },
+  {
+   "title": "Vivienne Franzmann & Frauke Requardt - Anatomy Of Survival",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Dance",
+   "start": "2026-11-26",
+   "end": "2026-11-26",
+   "url": "https://www.birminghamhippodrome.com/calendar/fabric-anatomy-of-survival/"
+  },
+  {
+   "title": "Young Rep and The Company Showcase",
+   "theatre": "The Rep",
+   "genre": "Theatre",
+   "start": "2026-11-26",
+   "end": "2026-11-26",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/young-rep-and-the-company-showcase-2/"
+  },
+  {
+   "title": "Aladdin",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Pantomime",
+   "start": "2026-11-27",
+   "end": "2027-01-16",
+   "url": "https://nottinghamplayhouse.co.uk/events/aladdin/"
+  },
+  {
+   "title": "Birmingham Royal Ballet - Pre Performance Talk",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Talk",
+   "start": "2026-11-27",
+   "end": "2026-11-27",
+   "url": "https://www.birminghamhippodrome.com/calendar/brb-pre-performance-talk-5/"
+  },
+  {
+   "title": "Chris Ramsey",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Comedy",
+   "start": "2026-11-27",
+   "end": "2026-11-27",
+   "url": "https://www.atgtickets.com/shows/chris-ramsey/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Coalville Comedy Club",
+   "theatre": "Century Theatre",
+   "genre": "Comedy",
+   "start": "2026-11-27",
+   "end": "2026-11-27",
+   "url": "https://centurytheatre.co.uk/whats-on/coalville-comedy-club-2/"
+  },
+  {
+   "title": "Into The Shadows",
+   "theatre": "Lichfield Garrick",
+   "genre": "Theatre",
+   "start": "2026-11-27",
+   "end": "2026-11-28",
+   "url": "https://www.lichfieldgarrick.com/events/into-the-shadows"
+  },
+  {
+   "title": "LGBTQTeeHee Comedy Festival 2026",
+   "theatre": "The Rep",
+   "genre": "Comedy",
+   "start": "2026-11-27",
+   "end": "2026-11-28",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/lgbtqteehee-comedy-festival-2026/"
+  },
+  {
+   "title": "Step Into Christmas",
+   "theatre": "De Montfort Hall",
+   "genre": "Music",
+   "start": "2026-11-27",
+   "end": "2026-11-27",
+   "url": "https://www.demontforthall.co.uk/event/step-into-christmas"
+  },
+  {
+   "title": "The Railway Children",
+   "theatre": "Derby Theatre",
+   "genre": "Family",
+   "start": "2026-11-27",
+   "end": "2027-01-02",
+   "url": "https://derbytheatre.co.uk/event/the-railway-children/"
+  },
+  {
+   "title": "Austentatious: An Improvised Jane Austen Novel",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Comedy",
+   "start": "2026-11-28",
+   "end": "2026-11-28",
+   "url": "https://www.atgtickets.com/shows/austentatious-an-improvised-jane-austen-novel/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Jack and the Beanstalk",
+   "theatre": "Theatre Royal Nottingham",
+   "genre": "Pantomime",
+   "start": "2026-11-28",
+   "end": "2027-01-03",
+   "url": "https://www.trch.co.uk/whats-on/jack-and-the-beanstalk-n2df"
+  },
+  {
+   "title": "Miss Americana - A Tribute to Taylor Swift",
+   "theatre": "De Montfort Hall",
+   "genre": "Tribute",
+   "start": "2026-11-28",
+   "end": "2026-11-28",
+   "url": "https://www.demontforthall.co.uk/event/miss-americana"
+  },
+  {
+   "title": "Treasure Island",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "Pantomime",
+   "start": "2026-11-28",
+   "end": "2027-01-03",
+   "url": "https://www.grandtheatre.co.uk/whats-on/treasure-island/"
+  },
+  {
+   "title": "Adam Rowe: Fashionism",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Comedy",
+   "start": "2026-11-29",
+   "end": "2026-11-29",
+   "url": "https://www.atgtickets.com/shows/adam-rowe-fashionism/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Andrew Lloyd Webber's Starlight Express - Live On Stage",
+   "theatre": "Bonington Theatre",
+   "genre": "Musical",
+   "start": "2026-11-29",
+   "end": "2026-12-10",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/andrew-lloyd-webbers-starlight-express-live-on-stage/"
+  },
+  {
+   "title": "Bardi Symphony Orchestra: 40th Anniversary Concert",
+   "theatre": "De Montfort Hall",
+   "genre": "Classical",
+   "start": "2026-11-29",
+   "end": "2026-11-29",
+   "url": "https://www.demontforthall.co.uk/event/bardi-40th-anniversary-concert"
+  },
+  {
+   "title": "Desford Colliery Band: Christmas Extravaganza",
+   "theatre": "Century Theatre",
+   "genre": "Music",
+   "start": "2026-11-29",
+   "end": "2026-11-29",
+   "url": "https://centurytheatre.co.uk/whats-on/desford-colliery-band-christmas-extravaganza/"
+  },
+  {
+   "title": "GIANT - The Play",
+   "theatre": "Bonington Theatre",
+   "genre": "Theatre",
+   "start": "2026-11-29",
+   "end": "2026-12-07",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/giant-the-play-15/"
+  },
+  {
+   "title": "Daisy and the Trouble with Christmas",
+   "theatre": "Curve Theatre",
+   "genre": "Family",
+   "start": "2026-11-30",
+   "end": "2027-01-03",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/daisy-and-the-trouble-with-christmas/"
+  },
+  {
+   "title": "Spend, Spend, Spend Eric!",
+   "theatre": "New Vic Theatre",
+   "genre": "Theatre",
+   "start": "2026-11-30",
+   "end": "2026-12-12",
+   "url": "https://www.newvictheatre.org.uk/productions/spend-spend-spend-eric/"
+  },
+  {
+   "title": "The Australian Pink Floyd",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Concert",
+   "start": "2026-11-30",
+   "end": "2026-11-30",
+   "url": "https://www.atgtickets.com/shows/the-australian-pink-floyd/regent-theatre/"
+  },
+  {
+   "title": "Are You Even Indian",
+   "theatre": "Curve Theatre",
+   "genre": "Theatre",
+   "start": "2026-12-01",
+   "end": "2026-12-03",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/are-you-even-indian/"
+  },
+  {
+   "title": "Ocean Colour Scene",
+   "theatre": "Vaillant Live",
+   "genre": "Music",
+   "start": "2026-12-01",
+   "end": "2026-12-01",
+   "url": "https://www.visitderby.co.uk/events-1/ocean-colour-scene"
+  },
+  {
+   "title": "The Royal Ballet: The Nutcracker",
+   "theatre": "Bonington Theatre",
+   "genre": "Dance",
+   "start": "2026-12-01",
+   "end": "2026-12-01",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/the-royal-ballet-the-nutcracker-u/"
+  },
+  {
+   "title": "James B Partridge - The Big Christmas Assembly 2026",
+   "theatre": "De Montfort Hall",
+   "genre": "Comedy",
+   "start": "2026-12-02",
+   "end": "2026-12-02",
+   "url": "https://www.demontforthall.co.uk/event/james-b-partridge"
+  },
+  {
+   "title": "Midwinter Revels",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Music",
+   "start": "2026-12-02",
+   "end": "2026-12-02",
+   "url": "https://brewhouse.co.uk/events/midwinter-revels"
+  },
+  {
+   "title": "The Damned - Final Damnation 50",
+   "theatre": "Vaillant Live",
+   "genre": "Music",
+   "start": "2026-12-02",
+   "end": "2026-12-02",
+   "url": "https://www.visitderby.co.uk/events-1/the-damned-final-damnation-50"
+  },
+  {
+   "title": "Cinderella",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Children's",
+   "start": "2026-12-03",
+   "end": "2027-01-02",
+   "url": "https://nottinghamplayhouse.co.uk/events/cinderella-neville/"
+  },
+  {
+   "title": "Comedy Crackers",
+   "theatre": "De Montfort Hall",
+   "genre": "Comedy",
+   "start": "2026-12-03",
+   "end": "2026-12-03",
+   "url": "https://www.demontforthall.co.uk/event/comedy-crackers"
+  },
+  {
+   "title": "Jazz Steps: Hejira",
+   "theatre": "Bonington Theatre",
+   "genre": "Jazz",
+   "start": "2026-12-03",
+   "end": "2026-12-03",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/jazz-steps-hejira/"
+  },
+  {
+   "title": "The Ugly Duckling",
+   "theatre": "The Rep",
+   "genre": "Family",
+   "start": "2026-12-03",
+   "end": "2027-01-10",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/the-ugly-duckling/"
+  },
+  {
+   "title": "A Christmas Carol (Creative Burntwood)",
+   "theatre": "Lichfield Garrick",
+   "genre": "Theatre",
+   "start": "2026-12-04",
+   "end": "2026-12-04",
+   "url": "https://www.lichfieldgarrick.com/events/a-christmas-carol-creative-burntwood"
+  },
+  {
+   "title": "A Shoddy Nativity",
+   "theatre": "Lichfield Garrick",
+   "genre": "Family",
+   "start": "2026-12-04",
+   "end": "2027-01-03",
+   "url": "https://www.lichfieldgarrick.com/events/a-shoddy-nativity"
+  },
+  {
+   "title": "Catholic Schools Carol Concert in Aid of MENPHYS",
+   "theatre": "De Montfort Hall",
+   "genre": "Music",
+   "start": "2026-12-04",
+   "end": "2026-12-04",
+   "url": "https://www.demontforthall.co.uk/event/catholic-schools-carol-concert-menphys"
+  },
+  {
+   "title": "A Christmas Wassail @ Hartlebury Castle",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Music",
+   "start": "2026-12-05",
+   "end": "2026-12-05",
+   "url": "https://www.oldrep.co.uk/event-details/349331AMGLRPHRJNNNVQBVDLGKHBMNQJS/a-christmas-wassail-hartlebury-castle/"
+  },
+  {
+   "title": "Andre Rieu's 2026 Christmas Concert: Let it Snow",
+   "theatre": "Bonington Theatre",
+   "genre": "Music",
+   "start": "2026-12-05",
+   "end": "2026-12-09",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/andre-rieus-2026-christmas-concert-let-it-snow-cert-tbc/"
+  },
+  {
+   "title": "Birmingham Royal Ballet - Class on Stage",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Dance",
+   "start": "2026-12-05",
+   "end": "2026-12-05",
+   "url": "https://www.birminghamhippodrome.com/calendar/class-on-stage-4/"
+  },
+  {
+   "title": "CBeebies Panto 2026: Treasure Island",
+   "theatre": "Bonington Theatre",
+   "genre": "Family",
+   "start": "2026-12-05",
+   "end": "2026-12-06",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/cbeebies-panto-2026-treasure-island-u/"
+  },
+  {
+   "title": "Edward's African Safari",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Dance",
+   "start": "2026-12-05",
+   "end": "2026-12-05",
+   "url": "https://brewhouse.co.uk/events/edwards-african-safari"
+  },
+  {
+   "title": "Goldilocks and the Three Bears",
+   "theatre": "Century Theatre",
+   "genre": "Pantomime",
+   "start": "2026-12-05",
+   "end": "2026-12-13",
+   "url": "https://centurytheatre.co.uk/whats-on/goldilocks/"
+  },
+  {
+   "title": "Goldilocks and the Three Bears (Adults Only)",
+   "theatre": "Century Theatre",
+   "genre": "Pantomime",
+   "start": "2026-12-05",
+   "end": "2026-12-12",
+   "url": "https://centurytheatre.co.uk/whats-on/goldilocks-and-the-three-bears-adults-only-performance/"
+  },
+  {
+   "title": "Miriam's Full English LIVE",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Talk",
+   "start": "2026-12-05",
+   "end": "2026-12-05",
+   "url": "https://www.atgtickets.com/shows/miriams-full-english-live/regent-theatre/"
+  },
+  {
+   "title": "One Tiny Penguin",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Family",
+   "start": "2026-12-05",
+   "end": "2027-01-03",
+   "url": "https://www.birminghamhippodrome.com/calendar/one-tiny-penguin/"
+  },
+  {
+   "title": "The Bootleg Beatles",
+   "theatre": "De Montfort Hall",
+   "genre": "Tribute",
+   "start": "2026-12-05",
+   "end": "2026-12-05",
+   "url": "https://www.demontforthall.co.uk/event/the-bootleg-beatles"
+  },
+  {
+   "title": "The Owl and the Pussycat",
+   "theatre": "Derby Theatre",
+   "genre": "Family",
+   "start": "2026-12-05",
+   "end": "2027-01-09",
+   "url": "https://derbytheatre.co.uk/event/the-owl-and-the-pussycat/"
+  },
+  {
+   "title": "A Christmas Wassail @ Holy Trinity Parish Church",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Music",
+   "start": "2026-12-06",
+   "end": "2026-12-06",
+   "url": "https://www.oldrep.co.uk/event-details/351331ATTBDTDGCPRPKSQVVPLQRSCGTLT/a-christmas-wassail-holy-trinity-parish-church/"
+  },
+  {
+   "title": "Bonington Jazz Company Xmas Special... Jeanie Barton",
+   "theatre": "Bonington Theatre",
+   "genre": "Jazz",
+   "start": "2026-12-06",
+   "end": "2026-12-06",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/bonington-jazz-company-xmas-special-jeanie-barton/"
+  },
+  {
+   "title": "Goldilocks and the Three Bears (Accessible)",
+   "theatre": "Century Theatre",
+   "genre": "Pantomime",
+   "start": "2026-12-06",
+   "end": "2026-12-06",
+   "url": "https://centurytheatre.co.uk/whats-on/goldilocks-and-the-three-bears-accessible-performance/"
+  },
+  {
+   "title": "Scrooge Live to Film",
+   "theatre": "Derby Theatre",
+   "genre": "Music",
+   "start": "2026-12-06",
+   "end": "2026-12-06",
+   "url": "https://derbytheatre.co.uk/event/scrooge-live-to-film/"
+  },
+  {
+   "title": "What's Love Got To Do With It? A Tribute To Tina Turner",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Concert",
+   "start": "2026-12-06",
+   "end": "2026-12-06",
+   "url": "https://www.atgtickets.com/shows/whats-love-got-to-do-with-it-a-tribute-to-tina-turner/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "A Christmas Wassail @ Highbury Hall",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Music",
+   "start": "2026-12-07",
+   "end": "2026-12-08",
+   "url": "https://www.oldrep.co.uk/event-details/351531AHVTSTHKHDNVKTCSCKVCNCVCHJV/a-christmas-wassail-highbury-hall/"
+  },
+  {
+   "title": "An evening with Joe Lycett & Friends with The Full Fatt Sound",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Comedy",
+   "start": "2026-12-07",
+   "end": "2026-12-07",
+   "url": "https://www.atgtickets.com/shows/an-evening-with-joe-lycett-and-friends-with-the-full-fatt-sound/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Christmas Music by Candlelight 2026",
+   "theatre": "Curve Theatre",
+   "genre": "Music",
+   "start": "2026-12-07",
+   "end": "2026-12-07",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/christmas-music-by-candlelight-2026/"
+  },
+  {
+   "title": "Christmas Sign & Sing 2026",
+   "theatre": "Derby Theatre",
+   "genre": "Music",
+   "start": "2026-12-07",
+   "end": "2026-12-07",
+   "url": "https://derbytheatre.co.uk/event/christmas-sign-sing-2026/"
+  },
+  {
+   "title": "An Orchestral Tribute to Tim Burton & Dark Fantasy by Moonlight",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Concert",
+   "start": "2026-12-08",
+   "end": "2026-12-08",
+   "url": "https://www.atgtickets.com/shows/an-orchestral-tribute-to-tim-burton-and-dark-fantasy-by-moonlight/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Barbara Nice's Christmas Cracker",
+   "theatre": "Derby Theatre",
+   "genre": "Comedy",
+   "start": "2026-12-08",
+   "end": "2026-12-08",
+   "url": "https://derbytheatre.co.uk/event/barbara-nices-christmas-cracker/"
+  },
+  {
+   "title": "Christmas Memories",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Music",
+   "start": "2026-12-08",
+   "end": "2026-12-08",
+   "url": "https://brewhouse.co.uk/events/christmas-memories-2026"
+  },
+  {
+   "title": "All Killa No Filla: Live At Christmas!",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Comedy",
+   "start": "2026-12-09",
+   "end": "2026-12-09",
+   "url": "https://www.atgtickets.com/shows/all-killa-no-filla-live-at-christmas/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Nottingham Playhouse Choir Christmas Concert 2026",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Music",
+   "start": "2026-12-09",
+   "end": "2026-12-09",
+   "url": "https://nottinghamplayhouse.co.uk/events/nottingham-playhouse-choir-christmas-concert-2026/"
+  },
+  {
+   "title": "Tale Trail to The Borrowers",
+   "theatre": "New Vic Theatre",
+   "genre": "Family",
+   "start": "2026-12-09",
+   "end": "2026-12-24",
+   "url": "https://www.newvictheatre.org.uk/productions/tale-trail-to-the-borrowers/"
+  },
+  {
+   "title": "Home Alone In Concert",
+   "theatre": "Vaillant Live",
+   "genre": "Music",
+   "start": "2026-12-10",
+   "end": "2026-12-10",
+   "url": "https://www.visitderby.co.uk/events/home-alone-in-concert"
+  },
+  {
+   "title": "Kaine: Winter Voices",
+   "theatre": "Curve Theatre",
+   "genre": "Music",
+   "start": "2026-12-10",
+   "end": "2026-12-10",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/kaine-winter-voices/"
+  },
+  {
+   "title": "We Three Kings - of Rock n Roll!",
+   "theatre": "Bonington Theatre",
+   "genre": "Music",
+   "start": "2026-12-10",
+   "end": "2026-12-11",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/we-three-kings-of-rock-n-roll-2/"
+  },
+  {
+   "title": "Festivities with Friends",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Entertainment",
+   "start": "2026-12-11",
+   "end": "2026-12-11",
+   "url": "https://brewhouse.co.uk/events/festivities-with-friends-3"
+  },
+  {
+   "title": "Snow White (Pantomime)",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Pantomime",
+   "start": "2026-12-11",
+   "end": "2027-01-03",
+   "url": "https://www.atgtickets.com/shows/snow-white-pantomime/regent-theatre/"
+  },
+  {
+   "title": "The ELO Experience - Electric Light Orchestra",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Concert",
+   "start": "2026-12-11",
+   "end": "2026-12-11",
+   "url": "https://www.atgtickets.com/shows/the-elo-experience-electric-light-orchestra/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "A Christmas Story (Creative Burntwood)",
+   "theatre": "Lichfield Garrick",
+   "genre": "Theatre",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "url": "https://www.lichfieldgarrick.com/events/a-christmas-story-creative-burntwood"
+  },
+  {
+   "title": "A Christmas Wassail @ Coughton Court",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Music",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "url": "https://www.oldrep.co.uk/event-details/349531APNBMNVKGMNNDJKSJDCTCNQQKVK/a-christmas-wassail-coughton-court/"
+  },
+  {
+   "title": "Beauty and the Beast",
+   "theatre": "De Montfort Hall",
+   "genre": "Pantomime",
+   "start": "2026-12-12",
+   "end": "2027-01-03",
+   "url": "https://www.demontforthall.co.uk/event/beauty-and-the-beast"
+  },
+  {
+   "title": "James B Partridge - The Big Christmas Assembly 2026",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Family",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "url": "https://www.atgtickets.com/shows/james-b-partridge-the-big-christmas-assembly-2026/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "The Snowman + Live Brass Band",
+   "theatre": "Bonington Theatre",
+   "genre": "Family",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/the-snowman-u-live-brass-band-2/"
+  },
+  {
+   "title": "We Will Rock You (School Edition)",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Musical",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "url": "https://brewhouse.co.uk/events/we-will-rock-you"
+  },
+  {
+   "title": "The Comedy Store 2026",
+   "theatre": "Derby Theatre",
+   "genre": "Comedy",
+   "start": "2026-12-13",
+   "end": "2026-12-13",
+   "url": "https://derbytheatre.co.uk/event/the-comedy-store-dec26/"
+  },
+  {
+   "title": "Mean Girls",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Musical",
+   "start": "2026-12-14",
+   "end": "2027-01-02",
+   "url": "https://www.atgtickets.com/shows/mean-girls/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Nottingham Keyboard / Organ Society presents - The 2026 Christmas Special",
+   "theatre": "Bonington Theatre",
+   "genre": "Music",
+   "start": "2026-12-14",
+   "end": "2026-12-14",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/nottingham-keyboard-organ-society-presents-the-2026-christmas-special/"
+  },
+  {
+   "title": "The Albion Christmas Band",
+   "theatre": "New Vic Theatre",
+   "genre": "Music",
+   "start": "2026-12-14",
+   "end": "2026-12-14",
+   "url": "https://www.newvictheatre.org.uk/productions/the-albion-christmas-band-4/"
+  },
+  {
+   "title": "Scrooge Cirque Extravaganza",
+   "theatre": "Vaillant Live",
+   "genre": "Family",
+   "start": "2026-12-16",
+   "end": "2026-12-16",
+   "url": "https://www.visitderby.co.uk/events-1/scrooge-cirque-extravaganza"
+  },
+  {
+   "title": "The Style Councillors 'Café Bleu' Tour",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Music",
+   "start": "2026-12-16",
+   "end": "2026-12-16",
+   "url": "https://brewhouse.co.uk/events/the-style-councillors-cafe-bleu-tour"
+  },
+  {
+   "title": "FTM Dance - A Tale as Old as Time",
+   "theatre": "De Montfort Hall",
+   "genre": "Dance",
+   "start": "2026-12-17",
+   "end": "2026-12-17",
+   "url": "https://www.demontforthall.co.uk/event/ftm-dance"
+  },
+  {
+   "title": "Rat Pack Reprise",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Music",
+   "start": "2026-12-17",
+   "end": "2026-12-17",
+   "url": "https://brewhouse.co.uk/events/rat-pack-reprise"
+  },
+  {
+   "title": "A Christmas Carol: One-Man Performance",
+   "theatre": "Century Theatre",
+   "genre": "Drama",
+   "start": "2026-12-18",
+   "end": "2026-12-18",
+   "url": "https://centurytheatre.co.uk/whats-on/a-christmas-carol-one-man-performance/"
+  },
+  {
+   "title": "Word Up 80's!",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Music",
+   "start": "2026-12-18",
+   "end": "2026-12-18",
+   "url": "https://brewhouse.co.uk/events/word-up-80s"
+  },
+  {
+   "title": "Milton Jones & Guests!",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Comedy",
+   "start": "2026-12-19",
+   "end": "2026-12-19",
+   "url": "https://brewhouse.co.uk/events/milton-jones"
+  },
+  {
+   "title": "Singing for the Soul Showcase",
+   "theatre": "Century Theatre",
+   "genre": "Music",
+   "start": "2026-12-19",
+   "end": "2026-12-19",
+   "url": "https://centurytheatre.co.uk/whats-on/singing-for-the-soul-showcase/"
+  },
+  {
+   "title": "Sleeping Beauty",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Panto",
+   "start": "2026-12-19",
+   "end": "2027-01-31",
+   "url": "https://www.birminghamhippodrome.com/calendar/sleeping-beauty/"
+  },
+  {
+   "title": "The Froncysyllte Male Voice Choir",
+   "theatre": "New Vic Theatre",
+   "genre": "Music",
+   "start": "2026-12-19",
+   "end": "2026-12-19",
+   "url": "https://www.newvictheatre.org.uk/productions/the-froncysyllte-male-voice-choir-6/"
+  },
+  {
+   "title": "The West End sings... The Christmas Mixtape",
+   "theatre": "Repton 400 Hall Theatre",
+   "genre": "Music",
+   "start": "2026-12-19",
+   "end": "2026-12-19",
+   "url": "https://www.derbylive.co.uk/whats-on/the-west-end-sings-the-christmas-mixtape/"
+  },
+  {
+   "title": "Flying High... Beauty & the Beast",
+   "theatre": "Bonington Theatre",
+   "genre": "Family",
+   "start": "2026-12-20",
+   "end": "2026-12-22",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/flying-high-beauty-the-beast/"
+  },
+  {
+   "title": "Showaddywaddy's Christmas Cracker",
+   "theatre": "Vaillant Live",
+   "genre": "Music",
+   "start": "2026-12-20",
+   "end": "2026-12-20",
+   "url": "https://www.visitderby.co.uk/events-1/showaddywaddys-christmas-cracker"
+  },
+  {
+   "title": "The D-Day Darlings: A Christmas to Remember",
+   "theatre": "Century Theatre",
+   "genre": "Music",
+   "start": "2026-12-20",
+   "end": "2026-12-20",
+   "url": "https://centurytheatre.co.uk/whats-on/the-d-day-darlings-a-christmas-to-remember/"
+  },
+  {
+   "title": "Robyn & the Book Monster",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Family",
+   "start": "2026-12-21",
+   "end": "2026-12-24",
+   "url": "https://brewhouse.co.uk/events/robyn-the-book-monster"
+  },
+  {
+   "title": "The Puppet Folk Experience - Christmas Show",
+   "theatre": "Bonington Theatre",
+   "genre": "Family",
+   "start": "2026-12-23",
+   "end": "2026-12-23",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/the-puppet-folk-experience-christmas-show/"
+  },
+  {
+   "title": "Let's All Dance: The Nutcracker",
+   "theatre": "Bonington Theatre",
+   "genre": "Dance",
+   "start": "2026-12-29",
+   "end": "2026-12-29",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/lets-all-dance-the-nutcracker/"
+  },
+  {
+   "title": "Snow White (Pantomime) - Relaxed Performance",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Pantomime",
+   "start": "2026-12-30",
+   "end": "2026-12-30",
+   "url": "https://www.atgtickets.com/shows/snow-white-pantomime-relaxed-performance/regent-theatre/"
+  },
+  {
+   "title": "The Silence of the Lambs",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Play",
+   "start": "2027-01-05",
+   "end": "2027-01-09",
+   "url": "https://www.atgtickets.com/shows/the-silence-of-the-lambs/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "The Pasadena Roof Orchestra",
+   "theatre": "New Vic Theatre",
+   "genre": "Music",
+   "start": "2027-01-07",
+   "end": "2027-01-07",
+   "url": "https://www.newvictheatre.org.uk/productions/the-pasadena-roof-orchestra-celebrating-the-music-of-the-roaring-twenties-30s/"
+  },
+  {
+   "title": "Independent Comedy Festival Gala Preview Show",
+   "theatre": "De Montfort Hall",
+   "genre": "Comedy",
+   "start": "2027-01-08",
+   "end": "2027-01-08",
+   "url": "https://www.demontforthall.co.uk/event/icf-gala-preview-show"
+  },
+  {
+   "title": "The Elvis Years",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "Tribute",
+   "start": "2027-01-08",
+   "end": "2027-01-08",
+   "url": "https://www.grandtheatre.co.uk/whats-on/the-elvis-years-2/"
+  },
+  {
+   "title": "Greg Davies - Full Fat Legend",
+   "theatre": "De Montfort Hall",
+   "genre": "Comedy",
+   "start": "2027-01-09",
+   "end": "2027-01-10",
+   "url": "https://www.demontforthall.co.uk/event/greg-davies"
+  },
+  {
+   "title": "What's Love Got To Do With It?",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "Music",
+   "start": "2027-01-10",
+   "end": "2027-01-10",
+   "url": "https://www.grandtheatre.co.uk/whats-on/whats-love-got-to-do-with-it-2/"
+  },
+  {
+   "title": "Agatha Christie's The Hollow",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Play",
+   "start": "2027-01-12",
+   "end": "2027-01-16",
+   "url": "https://www.atgtickets.com/shows/agatha-christies-the-hollow/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Frozen the Musical",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Musical",
+   "start": "2027-01-12",
+   "end": "2027-01-16",
+   "url": "https://brewhouse.co.uk/events/frozen-the-musical"
+  },
+  {
+   "title": "Murder, She Didn't Write",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "Comedy",
+   "start": "2027-01-13",
+   "end": "2027-01-13",
+   "url": "https://www.grandtheatre.co.uk/whats-on/murder-she-didnt-write-2/"
+  },
+  {
+   "title": "Xuefei Yang",
+   "theatre": "New Vic Theatre",
+   "genre": "Classical",
+   "start": "2027-01-13",
+   "end": "2027-01-13",
+   "url": "https://www.newvictheatre.org.uk/productions/xuefei-yang/"
+  },
+  {
+   "title": "Being Mr Wickham",
+   "theatre": "Curve Theatre",
+   "genre": "Theatre",
+   "start": "2027-01-14",
+   "end": "2027-01-16",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/being-mr-wickham/"
+  },
+  {
+   "title": "Supreme Queen",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "Tribute",
+   "start": "2027-01-14",
+   "end": "2027-01-14",
+   "url": "https://www.grandtheatre.co.uk/whats-on/supreme-queen-3/"
+  },
+  {
+   "title": "Swinging at the Cotton Club",
+   "theatre": "Derby Theatre",
+   "genre": "Music",
+   "start": "2027-01-14",
+   "end": "2027-01-14",
+   "url": "https://derbytheatre.co.uk/event/swinging-at-the-cotton-club-2027/"
+  },
+  {
+   "title": "The Complete Works of Jane Austen, Abridged",
+   "theatre": "Bonington Theatre",
+   "genre": "Comedy",
+   "start": "2027-01-14",
+   "end": "2027-01-14",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/the-complete-works-of-jane-austen-abridged/"
+  },
+  {
+   "title": "The Picture of Dorian Gray - A New Musical",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Musical",
+   "start": "2027-01-14",
+   "end": "2027-01-15",
+   "url": "https://www.oldrep.co.uk/event-details/345731ADJNQVPHQHBRVMPCLRHJVQKKGPH/the-picture-of-dorian-gray-a-new-musical/"
+  },
+  {
+   "title": "Gary Delaney: Gary On Laughing",
+   "theatre": "Derby Theatre",
+   "genre": "Comedy",
+   "start": "2027-01-15",
+   "end": "2027-01-15",
+   "url": "https://derbytheatre.co.uk/event/gary-delaney-gary-on-laughing/"
+  },
+  {
+   "title": "National Theatre Live: Hay Fever",
+   "theatre": "Bonington Theatre",
+   "genre": "Theatre",
+   "start": "2027-01-15",
+   "end": "2027-01-28",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/national-theatre-live-hay-fever-12a-tbc/"
+  },
+  {
+   "title": "1984",
+   "theatre": "Derby Theatre",
+   "genre": "Theatre",
+   "start": "2027-01-16",
+   "end": "2027-01-17",
+   "url": "https://derbytheatre.co.uk/event/1984-ktco/"
+  },
+  {
+   "title": "Blackout – Fear Loves An Audience",
+   "theatre": "Lichfield Garrick",
+   "genre": "Theatre",
+   "start": "2027-01-16",
+   "end": "2027-01-16",
+   "url": "https://www.lichfieldgarrick.com/events/blackout-fear-loves-an-audience"
+  },
+  {
+   "title": "LOL Comedy Club 2027",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Comedy",
+   "start": "2027-01-16",
+   "end": "2027-12-31",
+   "url": "https://www.atgtickets.com/shows/lol-comedy-club-2027/the-piano-bar-regent-theatre/"
+  },
+  {
+   "title": "Mayor of Gedling's Pantomime: Mack and the Beanstalk",
+   "theatre": "Bonington Theatre",
+   "genre": "Pantomime",
+   "start": "2027-01-16",
+   "end": "2027-01-16",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/mayor-of-gedlings-pantomime-mack-and-the-beanstalk/"
+  },
+  {
+   "title": "Puss in Boots",
+   "theatre": "Palace Theatre Mansfield",
+   "genre": "Pantomime",
+   "start": "2027-01-16",
+   "end": "2027-01-24",
+   "url": "https://www.mansfield.gov.uk/palacetheatre/events/event/109990/puss-in-boots"
+  },
+  {
+   "title": "Secrets of the Selkie Sea (Creative Burntwood)",
+   "theatre": "Lichfield Garrick",
+   "genre": "Family",
+   "start": "2027-01-16",
+   "end": "2027-01-16",
+   "url": "https://www.lichfieldgarrick.com/events/secrets-of-the-selkie-sea-creative-burntwood"
+  },
+  {
+   "title": "The Greatest Love of All is Never Too Much",
+   "theatre": "Derby Theatre",
+   "genre": "Music",
+   "start": "2027-01-16",
+   "end": "2027-01-17",
+   "url": "https://derbytheatre.co.uk/event/the-greatest-love-of-all-is-never-too-much/"
+  },
+  {
+   "title": "The Noise Next Door: Comedy, Improvised",
+   "theatre": "Century Theatre",
+   "genre": "Comedy",
+   "start": "2027-01-16",
+   "end": "2027-01-16",
+   "url": "https://centurytheatre.co.uk/whats-on/the-noise-next-door-comedy-improvised/"
+  },
+  {
+   "title": "What's Love Got To Do With It",
+   "theatre": "Vaillant Live",
+   "genre": "Music",
+   "start": "2027-01-16",
+   "end": "2027-01-16",
+   "url": "https://www.visitderby.co.uk/events-1/whats-love-got-to-do-with-it-1"
+  },
+  {
+   "title": "NT Encore: Hay Fever",
+   "theatre": "Lichfield Garrick",
+   "genre": "Theatre",
+   "start": "2027-01-17",
+   "end": "2027-01-17",
+   "url": "https://www.lichfieldgarrick.com/events/hay-fever"
+  },
+  {
+   "title": "The Best of Frankie Valli and the Four Seasons starring Matt Terry",
+   "theatre": "Lichfield Garrick",
+   "genre": "Music",
+   "start": "2027-01-17",
+   "end": "2027-01-17",
+   "url": "https://www.lichfieldgarrick.com/events/the-best-of-frankie-valli"
+  },
+  {
+   "title": "The Night Sky Show, A Sky Full of Hope",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Event",
+   "start": "2027-01-17",
+   "end": "2027-01-17",
+   "url": "https://www.atgtickets.com/shows/the-night-sky-show-a-sky-full-of-hope/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "027 Dance: Love Stories",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Dance",
+   "start": "2027-01-18",
+   "end": "2027-01-30",
+   "url": "https://www.atgtickets.com/shows/027-dance-love-stories/regent-theatre/"
+  },
+  {
+   "title": "Dirty Dancing",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Musical",
+   "start": "2027-01-19",
+   "end": "2027-01-23",
+   "url": "https://www.atgtickets.com/shows/dirty-dancing/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Murder, She Didn't Write",
+   "theatre": "Lichfield Garrick",
+   "genre": "Comedy",
+   "start": "2027-01-19",
+   "end": "2027-01-19",
+   "url": "https://www.lichfieldgarrick.com/events/murder-she-didnt-write"
+  },
+  {
+   "title": "Robin Hood the Pantomime",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Pantomime",
+   "start": "2027-01-19",
+   "end": "2027-01-19",
+   "url": "https://brewhouse.co.uk/events/robin-hood-the-pantomime-2"
+  },
+  {
+   "title": "SIX",
+   "theatre": "Curve Theatre",
+   "genre": "Musical",
+   "start": "2027-01-19",
+   "end": "2027-01-23",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/six-4/"
+  },
+  {
+   "title": "The D-Day Darlings",
+   "theatre": "Lichfield Garrick",
+   "genre": "Music",
+   "start": "2027-01-20",
+   "end": "2027-01-20",
+   "url": "https://www.lichfieldgarrick.com/events/d-day-darlings"
+  },
+  {
+   "title": "The Importance of Being Oscar",
+   "theatre": "Derby Theatre",
+   "genre": "Theatre",
+   "start": "2027-01-20",
+   "end": "2027-01-21",
+   "url": "https://derbytheatre.co.uk/event/the-importance-of-being-oscar/"
+  },
+  {
+   "title": "The Bluejays",
+   "theatre": "New Vic Theatre",
+   "genre": "Music",
+   "start": "2027-01-21",
+   "end": "2027-01-21",
+   "url": "https://www.newvictheatre.org.uk/productions/the-bluejays-8/"
+  },
+  {
+   "title": "Mettle",
+   "theatre": "Lichfield Garrick",
+   "genre": "Theatre",
+   "start": "2027-01-22",
+   "end": "2027-01-22",
+   "url": "https://www.lichfieldgarrick.com/events/mettle"
+  },
+  {
+   "title": "Paul Smith: Happy",
+   "theatre": "De Montfort Hall",
+   "genre": "Comedy",
+   "start": "2027-01-22",
+   "end": "2027-01-22",
+   "url": "https://www.demontforthall.co.uk/event/paul-smith-happy"
+  },
+  {
+   "title": "The Space Explorers Academy",
+   "theatre": "Derby Theatre",
+   "genre": "Family",
+   "start": "2027-01-22",
+   "end": "2027-01-22",
+   "url": "https://derbytheatre.co.uk/event/space-explorers/"
+  },
+  {
+   "title": "Tinderella: The Outrageous Adult Panto",
+   "theatre": "Lichfield Garrick",
+   "genre": "Pantomime",
+   "start": "2027-01-22",
+   "end": "2027-01-23",
+   "url": "https://www.lichfieldgarrick.com/events/tinderella"
+  },
+  {
+   "title": "What Wood Victoria Do",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Entertainment",
+   "start": "2027-01-22",
+   "end": "2027-01-22",
+   "url": "https://brewhouse.co.uk/events/what-wood-victoria-do"
+  },
+  {
+   "title": "The Mercians",
+   "theatre": "De Montfort Hall",
+   "genre": "Music",
+   "start": "2027-01-23",
+   "end": "2027-01-23",
+   "url": "https://www.demontforthall.co.uk/event/the-mercians"
+  },
+  {
+   "title": "Wired for Sound: The Cliff Richard Show",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Music",
+   "start": "2027-01-23",
+   "end": "2027-01-23",
+   "url": "https://brewhouse.co.uk/events/wired-for-sound-the-cliff-richard-show"
+  },
+  {
+   "title": "Luther Live & Velvet Voices",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Concert",
+   "start": "2027-01-24",
+   "end": "2027-01-24",
+   "url": "https://www.atgtickets.com/shows/luther-live-and-velvet-voices/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Punch 2027",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Drama",
+   "start": "2027-01-25",
+   "end": "2027-02-06",
+   "url": "https://nottinghamplayhouse.co.uk/events/punch-2027/"
+  },
+  {
+   "title": "Joe Lycett & Friends",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Comedy",
+   "start": "2027-01-26",
+   "end": "2027-01-26",
+   "url": "https://www.oldrep.co.uk/event-details/351131ACSPPGKBDTBBHKCHBRDSQVJGKDL/joe-lycett-friends/"
+  },
+  {
+   "title": "RBO x Met Opera: La Fanciulla Del West",
+   "theatre": "Bonington Theatre",
+   "genre": "Opera",
+   "start": "2027-01-26",
+   "end": "2027-01-26",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/rbo-x-met-opera-la-fanciulla-del-west-cert-tbc/"
+  },
+  {
+   "title": "The Other Side of Murder",
+   "theatre": "Derby Theatre",
+   "genre": "Theatre",
+   "start": "2027-01-26",
+   "end": "2027-01-30",
+   "url": "https://derbytheatre.co.uk/event/the-other-side-of-murder/"
+  },
+  {
+   "title": "All Things McCartney",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Music",
+   "start": "2027-01-28",
+   "end": "2027-01-28",
+   "url": "https://brewhouse.co.uk/events/all-things-mccartney"
+  },
+  {
+   "title": "Soul Brothers Syndicate",
+   "theatre": "New Vic Theatre",
+   "genre": "Music",
+   "start": "2027-01-28",
+   "end": "2027-01-29",
+   "url": "https://www.newvictheatre.org.uk/productions/soul-brothers-syndicate-featuring-darrell-smith-judith-ude-grace-curran/"
+  },
+  {
+   "title": "A Thousand Splendid Suns",
+   "theatre": "The Rep",
+   "genre": "Theatre",
+   "start": "2027-01-29",
+   "end": "2027-02-13",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/a-thousand-splendid-suns-2027/"
+  },
+  {
+   "title": "The Umbrella Man",
+   "theatre": "Brewhouse Arts Centre",
+   "genre": "Entertainment",
+   "start": "2027-01-29",
+   "end": "2027-01-29",
+   "url": "https://brewhouse.co.uk/events/the-umbrella-man"
+  },
+  {
+   "title": "Abi Clarke - Just Tell Me When It's Over",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2027-01-30",
+   "end": "2027-01-30",
+   "url": "https://nottinghamplayhouse.co.uk/events/abi-clarke-just-tell-me-when-its-over/"
+  },
+  {
+   "title": "MHTT Presents Sleeping Beauty",
+   "theatre": "Palace Theatre Mansfield",
+   "genre": "Pantomime",
+   "start": "2027-01-30",
+   "end": "2027-02-06",
+   "url": "https://www.mansfield.gov.uk/palacetheatre/events/event/129986/mhtt-presents-sleeping-beauty"
+  },
+  {
+   "title": "Michael Starring Ben",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "Tribute",
+   "start": "2027-01-30",
+   "end": "2027-01-30",
+   "url": "https://www.grandtheatre.co.uk/whats-on/michael-starring-ben-3/"
+  },
+  {
+   "title": "The Fleetwood Mac Experience",
+   "theatre": "New Vic Theatre",
+   "genre": "Music",
+   "start": "2027-01-30",
+   "end": "2027-01-30",
+   "url": "https://www.newvictheatre.org.uk/productions/the-fleetwood-mac-experience-3/"
+  },
+  {
+   "title": "Titanic Tales",
+   "theatre": "Century Theatre",
+   "genre": "Talk",
+   "start": "2027-01-30",
+   "end": "2027-01-30",
+   "url": "https://centurytheatre.co.uk/whats-on/titanic-tales/"
+  }
+ ]
+}

@@ -1,0 +1,227 @@
+[
+ {
+  "venue": "Derby Theatre",
+  "url": "https://www.derbytheatre.co.uk/whats-on/",
+  "file": "derby-theatre-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 150224,
+  "final_url": "https://derbytheatre.co.uk/whats-on/"
+ },
+ {
+  "venue": "Vaillant Live",
+  "url": "https://vaillantlive.co.uk/events/",
+  "file": "vaillant-live-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 314813,
+  "final_url": "https://vaillantlive.co.uk/events/"
+ },
+ {
+  "venue": "Brewhouse Arts Centre",
+  "url": "https://www.brewhouse.co.uk/whats-on/",
+  "file": "brewhouse-1.html",
+  "status": 403,
+  "error": null,
+  "bytes": 80671,
+  "final_url": "https://www.brewhouse.co.uk/whats-on/"
+ },
+ {
+  "venue": "Lichfield Garrick",
+  "url": "https://www.lichfieldgarrick.com/whats-on/",
+  "file": "lichfield-garrick-1.html",
+  "status": 403,
+  "error": null,
+  "bytes": 6923,
+  "final_url": "https://www.lichfieldgarrick.com/whats-on/"
+ },
+ {
+  "venue": "Buxton Opera House",
+  "url": "https://www.buxtonoperahouse.org.uk/whats-on/",
+  "file": "buxton-opera-house-1.html",
+  "status": 403,
+  "error": null,
+  "bytes": 7121,
+  "final_url": "https://www.buxtonoperahouse.org.uk/whats-on/"
+ },
+ {
+  "venue": "Theatre Royal Nottingham / Royal Concert Hall",
+  "url": "https://www.trch.co.uk/whats-on/",
+  "file": "trch-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 302175,
+  "final_url": "https://www.trch.co.uk/whats-on"
+ },
+ {
+  "venue": "Nottingham Playhouse",
+  "url": "https://www.nottinghamplayhouse.co.uk/whats-on/",
+  "file": "nottingham-playhouse-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 1375740,
+  "final_url": "https://nottinghamplayhouse.co.uk/whats-on/"
+ },
+ {
+  "venue": "Bonington Theatre",
+  "url": "https://www.boningtontheatre.co.uk/whats-on/",
+  "file": "bonington-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 452458,
+  "final_url": "https://www.boningtontheatre.co.uk/whats-on/"
+ },
+ {
+  "venue": "Curve Theatre",
+  "url": "https://www.curveonline.co.uk/whats-on/",
+  "file": "curve-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 509974,
+  "final_url": "https://www.curveonline.co.uk/whats-on/"
+ },
+ {
+  "venue": "De Montfort Hall",
+  "url": "https://www.demontforthall.co.uk/whats-on/",
+  "file": "de-montfort-hall-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 141875,
+  "final_url": "https://www.demontforthall.co.uk/whats-on/"
+ },
+ {
+  "venue": "De Montfort Hall",
+  "url": "https://www.demontforthall.co.uk/whats-on/page/2/",
+  "file": "de-montfort-hall-2.html",
+  "status": 200,
+  "error": null,
+  "bytes": 141837,
+  "final_url": "https://www.demontforthall.co.uk/whats-on/page/2/"
+ },
+ {
+  "venue": "De Montfort Hall",
+  "url": "https://www.demontforthall.co.uk/whats-on/page/3/",
+  "file": "de-montfort-hall-3.html",
+  "status": 200,
+  "error": null,
+  "bytes": 142141,
+  "final_url": "https://www.demontforthall.co.uk/whats-on/page/3/"
+ },
+ {
+  "venue": "Century Theatre",
+  "url": "https://centurytheatre.co.uk/whats-on/",
+  "file": "century-theatre-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 155993,
+  "final_url": "https://centurytheatre.co.uk/whats-on/"
+ },
+ {
+  "venue": "Palace Theatre Mansfield",
+  "url": "https://www.mansfield.gov.uk/palacetheatre/events?filter%5B10%5D=Theatre",
+  "file": "palace-mansfield-1.html",
+  "status": 503,
+  "error": null,
+  "bytes": 543,
+  "final_url": "https://www.mansfield.gov.uk/palacetheatre/events?filter%5B10%5D=Theatre"
+ },
+ {
+  "venue": "Palace Theatre Mansfield",
+  "url": "https://www.mansfield.gov.uk/palacetheatre/events?filter%5B10%5D=Theatre&page=2",
+  "file": "palace-mansfield-2.html",
+  "status": 503,
+  "error": null,
+  "bytes": 543,
+  "final_url": "https://www.mansfield.gov.uk/palacetheatre/events?filter%5B10%5D=Theatre&page=2"
+ },
+ {
+  "venue": "Palace Theatre Mansfield",
+  "url": "https://www.mansfield.gov.uk/palacetheatre/events?filter%5B10%5D=Theatre&page=3",
+  "file": "palace-mansfield-3.html",
+  "status": 503,
+  "error": null,
+  "bytes": 543,
+  "final_url": "https://www.mansfield.gov.uk/palacetheatre/events?filter%5B10%5D=Theatre&page=3"
+ },
+ {
+  "venue": "Birmingham Hippodrome",
+  "url": "https://www.birminghamhippodrome.com/whats-on/",
+  "file": "hippodrome-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 248003,
+  "final_url": "https://www.birminghamhippodrome.com/whats-on/"
+ },
+ {
+  "venue": "The Rep",
+  "url": "https://www.birmingham-rep.co.uk/whats-on/",
+  "file": "the-rep-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 239026,
+  "final_url": "https://www.birmingham-rep.co.uk/whats-on/"
+ },
+ {
+  "venue": "The Alexandra Theatre",
+  "url": "https://www.atgtickets.com/venues/alexandra-theatre-birmingham/",
+  "file": "alexandra-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 986847,
+  "final_url": "https://www.atgtickets.com/venues/the-alexandra-theatre-birmingham/whats-on/"
+ },
+ {
+  "venue": "The Old Rep Theatre",
+  "url": "https://www.oldrep.co.uk/whats-on/",
+  "file": "old-rep-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 70147,
+  "final_url": "https://www.oldrep.co.uk/whats-on/"
+ },
+ {
+  "venue": "Wolverhampton Grand Theatre",
+  "url": "https://www.grandtheatre.co.uk/whats-on/",
+  "file": "wolverhampton-grand-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 190007,
+  "final_url": "https://www.grandtheatre.co.uk/whats-on/"
+ },
+ {
+  "venue": "Wolverhampton Grand Theatre",
+  "url": "https://www.grandtheatre.co.uk/whats-on/page/2/",
+  "file": "wolverhampton-grand-2.html",
+  "status": 200,
+  "error": null,
+  "bytes": 189015,
+  "final_url": "https://www.grandtheatre.co.uk/whats-on/page/2/"
+ },
+ {
+  "venue": "Regent Theatre Stoke",
+  "url": "https://www.atgtickets.com/venues/regent-theatre-stoke-on-trent/",
+  "file": "regent-stoke-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 1163766,
+  "final_url": "https://www.atgtickets.com/venues/"
+ },
+ {
+  "venue": "New Vic Theatre",
+  "url": "https://www.newvictheatre.org.uk/whats-on/",
+  "file": "new-vic-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 175798,
+  "final_url": "https://www.newvictheatre.org.uk/whats-on/"
+ },
+ {
+  "venue": "Winding Wheel Theatre",
+  "url": "https://chesterfieldtheatres.co.uk/events/",
+  "file": "winding-wheel-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 237917,
+  "final_url": "https://chesterfieldtheatres.co.uk/events/"
+ }
+]

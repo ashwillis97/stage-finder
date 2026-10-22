@@ -1,6 +1,6 @@
 {
  "sample": false,
- "updated": "2026-10-21T11:40:00+01:00",
+ "updated": "2026-10-22T07:35+01:00",
  "coverage": {
   "none": [
    "Elite Cinema and Theatre",
@@ -11,16 +11,15 @@
    "Royal Concert Hall": "Only 2 shows found; the venue's site could not be read in full.",
    "Birmingham Hippodrome": "Showing 16 of 37 listings.",
    "The Rep": "Showing the first 20 shows; later ones are missing.",
-   "The Alexandra Theatre": "Showing 24 of 64 listings.",
-   "Buxton Opera House": "Listings after 6 Nov 2026 are missing.",
-   "Lichfield Garrick": "Shows after 22 Jan 2027 are not included.",
-   "Derby Theatre": "May be missing a few later shows.",
-   "Repton 400 Hall Theatre": "One show found; its link goes to the Derby Live show page.",
-   "Vaillant Live": "Its own events page did not load for me, so these links go to Visit Derby; darts and snooker left out.",
-   "De Montfort Hall": "Listings run to the end of January 2027. Genres are my own labels.",
-   "Century Theatre": "Open mic nights and heritage tours left out.",
-   "Palace Theatre Mansfield": "Theatre category only. Workshops and screenings left out.",
-   "Wolverhampton Grand Theatre": "Workshops and members events left out. The page only gave me part of the later listings."
+   "The Alexandra Theatre": "Not updated automatically yet, so these listings may be out of date.",
+   "Buxton Opera House": "Not updated automatically yet, so these listings may be out of date.",
+   "Lichfield Garrick": "Not updated automatically yet, so these listings may be out of date.",
+   "Repton 400 Hall Theatre": "Not updated automatically yet, so these listings may be out of date.",
+   "Palace Theatre Mansfield": "Not updated automatically yet, so these listings may be out of date.",
+   "Wolverhampton Grand Theatre": "Workshops and members events left out. The page only gave me part of the later listings.",
+   "Brewhouse Arts Centre": "Not updated automatically yet, so these listings may be out of date.",
+   "Regent Theatre Stoke": "Not updated automatically yet, so these listings may be out of date.",
+   "New Vic Theatre": "Not updated automatically yet, so these listings may be out of date."
   }
  },
  "shows": [
@@ -33,30 +32,6 @@
    "url": "https://derbytheatre.co.uk/event/east-is-east/"
   },
   {
-   "title": "LGBTQTeeHee! 10-week comedy course",
-   "theatre": "The Rep",
-   "genre": "Workshop",
-   "start": "2026-10-20",
-   "end": "2026-11-24",
-   "url": "https://www.birmingham-rep.co.uk/whats-on/lgbtqteehee-10-week-comedy-course/"
-  },
-  {
-   "title": "On Your Bike Baffo",
-   "theatre": "Curve Theatre",
-   "genre": "Theatre",
-   "start": "2026-10-20",
-   "end": "2026-10-20",
-   "url": "https://www.curveonline.co.uk/whats-on/shows/on-your-bike-baffo/"
-  },
-  {
-   "title": "RBO x Met Opera: Macbeth",
-   "theatre": "Bonington Theatre",
-   "genre": "Opera",
-   "start": "2026-10-20",
-   "end": "2026-10-20",
-   "url": "https://www.boningtontheatre.co.uk/whatson-event/rbo-x-met-opera-macbeth-cert-tbc/"
-  },
-  {
    "title": "The Curious Incident of the Dog in the Night-time",
    "theatre": "Curve Theatre",
    "genre": "Theatre",
@@ -65,33 +40,9 @@
    "url": "https://www.curveonline.co.uk/whats-on/shows/the-curious-incident-of-the-dog-in-the-night-time-2/"
   },
   {
-   "title": "The Haunting of Widow's Leap Farm",
-   "theatre": "Lichfield Garrick",
-   "genre": "Drama",
-   "start": "2026-10-20",
-   "end": "2026-10-20",
-   "url": "https://www.lichfieldgarrick.com/events/the-haunting-of-widows-leap-farm"
-  },
-  {
-   "title": "The Snowman",
-   "theatre": "The Rep",
-   "genre": "Family",
-   "start": "2026-10-20",
-   "end": "2026-11-01",
-   "url": "https://www.birmingham-rep.co.uk/whats-on/the-snowman-2026/"
-  },
-  {
-   "title": "Bad Immigrant",
-   "theatre": "Curve Theatre",
-   "genre": "Theatre",
-   "start": "2026-10-21",
-   "end": "2026-10-21",
-   "url": "https://www.curveonline.co.uk/whats-on/shows/bad-immigrant/"
-  },
-  {
    "title": "Blood Brothers",
    "theatre": "Birmingham Hippodrome",
-   "genre": "Musical",
+   "genre": "Musicals",
    "start": "2026-10-21",
    "end": "2026-10-24",
    "url": "https://www.birminghamhippodrome.com/calendar/blood-brothers-five/"
@@ -105,36 +56,12 @@
    "url": "https://www.lichfieldgarrick.com/events/dracula"
   },
   {
-   "title": "Halloween in Concert",
-   "theatre": "Buxton Opera House",
-   "genre": "Music",
-   "start": "2026-10-21",
-   "end": "2026-10-21",
-   "url": "https://buxtonoperahouse.org.uk/events/halloween-in-concert-2026/"
-  },
-  {
-   "title": "Hannah East - Express Yourself",
-   "theatre": "Nottingham Playhouse",
-   "genre": "Comedy",
-   "start": "2026-10-21",
-   "end": "2026-10-21",
-   "url": "https://nottinghamplayhouse.co.uk/events/hannah-east/"
-  },
-  {
    "title": "JEEZUS!",
    "theatre": "Birmingham Hippodrome",
-   "genre": "Musical",
+   "genre": "Musicals",
    "start": "2026-10-21",
    "end": "2026-10-24",
    "url": "https://www.birminghamhippodrome.com/calendar/rewrites-jeezus/"
-  },
-  {
-   "title": "Jonathan Pie - The End of the World According to Jonathan Pie",
-   "theatre": "The Alexandra Theatre",
-   "genre": "Comedy",
-   "start": "2026-10-21",
-   "end": "2026-10-21",
-   "url": "https://www.atgtickets.com/shows/jonathan-pie-the-end-of-the-world-according-to-jonathan-pie/the-alexandra-theatre-birmingham/"
   },
   {
    "title": "Made You Look",
@@ -145,36 +72,12 @@
    "url": "https://www.birmingham-rep.co.uk/whats-on/made-you-look/"
   },
   {
-   "title": "Philharmonia: Seong-Jin Cho Plays Tchaikovsky",
-   "theatre": "De Montfort Hall",
-   "genre": "Classical",
+   "title": "The Choir Of Man",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "",
    "start": "2026-10-21",
-   "end": "2026-10-21",
-   "url": "https://www.demontforthall.co.uk/event/philharmonia-seong-jin-cho-plays-tchaikovsky"
-  },
-  {
-   "title": "Rat Pack Live",
-   "theatre": "Lichfield Garrick",
-   "genre": "Music",
-   "start": "2026-10-21",
-   "end": "2026-10-21",
-   "url": "https://www.lichfieldgarrick.com/events/rat-pack-live"
-  },
-  {
-   "title": "Scottish Ballet: These Violent Delights + Recorded Q&A",
-   "theatre": "Bonington Theatre",
-   "genre": "Dance",
-   "start": "2026-10-21",
-   "end": "2026-10-21",
-   "url": "https://www.boningtontheatre.co.uk/whatson-event/scottish-ballet-these-violent-delights-15-recorded-qa/"
-  },
-  {
-   "title": "Shaun Ryder – Happy Mondays, & Fridays, & Saturdays, & Sundays",
-   "theatre": "Brewhouse Arts Centre",
-   "genre": "Entertainment",
-   "start": "2026-10-21",
-   "end": "2026-10-21",
-   "url": "https://brewhouse.co.uk/events/shaun-ryder-happy-mondays-fridays-saturdays-sundays"
+   "end": "2026-10-24",
+   "url": "https://www.grandtheatre.co.uk/whats-on/the-choir-of-man/"
   },
   {
    "title": "The Trial of Romeo Oscar",
@@ -201,9 +104,9 @@
    "url": "https://www.lichfieldgarrick.com/events/eddi-reader"
   },
   {
-   "title": "Jazz Steps: Gilad Atzmon's Organology Trio",
+   "title": "Jazz Steps: Gilad Atzmon’s Organology Trio",
    "theatre": "Bonington Theatre",
-   "genre": "Jazz",
+   "genre": "",
    "start": "2026-10-22",
    "end": "2026-10-22",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/jazz-steps-gilad-atzmons-organology-trio/"
@@ -257,12 +160,44 @@
    "url": "https://www.atgtickets.com/shows/the-elo-experience-electric-light-orchestra/regent-theatre/"
   },
   {
+   "title": "The ELO Show",
+   "theatre": "Royal Concert Hall",
+   "genre": "Music",
+   "start": "2026-10-22",
+   "end": "2026-10-22",
+   "url": "https://www.trch.co.uk/whats-on/the-elo-show-lv4g"
+  },
+  {
+   "title": "The Snowman™",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2026-10-22",
+   "end": "2026-11-01",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/the-snowman-2026/"
+  },
+  {
+   "title": "Alison Moyet",
+   "theatre": "Royal Concert Hall",
+   "genre": "Music",
+   "start": "2026-10-23",
+   "end": "2026-10-23",
+   "url": "https://www.trch.co.uk/whats-on/alison-moyet-sv72"
+  },
+  {
    "title": "Evan King's Elvis Tour 2026",
    "theatre": "The Old Rep Theatre",
-   "genre": "Tribute",
+   "genre": "Live-Music",
    "start": "2026-10-23",
    "end": "2026-10-23",
    "url": "https://www.oldrep.co.uk/event-details/320731ALCMQRNJKLLPKBHRPNRNGVMRVKQ/evan-kings-elvis-tour-2026/"
+  },
+  {
+   "title": "F.E.A.R.",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2026-10-23",
+   "end": "2026-10-23",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/have-your-passport-ready/"
   },
   {
    "title": "Gary Delaney: Gary On Laughing",
@@ -273,9 +208,9 @@
    "url": "https://www.atgtickets.com/shows/gary-delaney-gary-on-laughing/regent-theatre/"
   },
   {
-   "title": "Have Your Passport Ready / F.E.A.R. (double bill)",
+   "title": "Have Your Passport Ready",
    "theatre": "Curve Theatre",
-   "genre": "Theatre",
+   "genre": "",
    "start": "2026-10-23",
    "end": "2026-10-23",
    "url": "https://www.curveonline.co.uk/whats-on/shows/double-bill-f-e-a-r-get-your-passport-ready/"
@@ -287,14 +222,6 @@
    "start": "2026-10-23",
    "end": "2026-10-23",
    "url": "https://www.lichfieldgarrick.com/events/ivo-graham-orange-crush"
-  },
-  {
-   "title": "Lido - A Love Story",
-   "theatre": "Nottingham Playhouse",
-   "genre": "Theatre",
-   "start": "2026-10-23",
-   "end": "2026-10-23",
-   "url": "https://nottinghamplayhouse.co.uk/events/lido-a-love-story/"
   },
   {
    "title": "Mercury",
@@ -317,13 +244,13 @@
    "theatre": "Theatre Royal Nottingham",
    "genre": "Dance",
    "start": "2026-10-23",
-   "end": "2026-10-24",
+   "end": "2026-10-23",
    "url": "https://www.trch.co.uk/whats-on/nb-cinderella-1hfr"
   },
   {
-   "title": "Nothing is Wrong: A Work-In-Progress Double Bill",
+   "title": "Nothing is Wrong : A Work-In-Progress Double Bill",
    "theatre": "Nottingham Playhouse",
-   "genre": "Theatre",
+   "genre": "amplify",
    "start": "2026-10-23",
    "end": "2026-10-23",
    "url": "https://nottinghamplayhouse.co.uk/events/nothing-is-wrong-a-work-in-progress-double-bill/"
@@ -337,7 +264,7 @@
    "url": "https://buxtonoperahouse.org.uk/events/eto-presents-orpheus-and-eurydice-2026/"
   },
   {
-   "title": "Paul Merton & Suki Webster's Improv Show",
+   "title": "Paul Merton & Suki Webster’s Improv Show",
    "theatre": "Nottingham Playhouse",
    "genre": "Comedy",
    "start": "2026-10-23",
@@ -377,12 +304,20 @@
    "url": "https://www.lichfieldgarrick.com/events/alfie-moore-acopalypse-now"
   },
   {
+   "title": "An Evening with Kellys Heroes",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2026-10-24",
+   "end": "2026-10-24",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/an-evening-with-kellys-heroes-2/"
+  },
+  {
    "title": "Bongo's Bingo Halloween Special",
    "theatre": "Vaillant Live",
    "genre": "Variety",
    "start": "2026-10-24",
    "end": "2026-10-24",
-   "url": "https://www.visitderby.co.uk/events/bongos-bingo-halloween-special"
+   "url": "https://vaillantlive.co.uk/event/bongos-bingo-halloween-special/170/"
   },
   {
    "title": "Double Bill: Ariadne | Dido & Aeneas",
@@ -393,14 +328,6 @@
    "url": "https://buxtonoperahouse.org.uk/events/eto-presents-dido-and-aeneas-ariadne-2026/"
   },
   {
-   "title": "I Was A Teenage Bisexual",
-   "theatre": "Nottingham Playhouse",
-   "genre": "Drama",
-   "start": "2026-10-24",
-   "end": "2026-10-24",
-   "url": "https://nottinghamplayhouse.co.uk/events/i-was-a-teenage-bisexual/"
-  },
-  {
    "title": "Ice Age Adventure Live",
    "theatre": "Lichfield Garrick",
    "genre": "Family",
@@ -409,7 +336,7 @@
    "url": "https://www.lichfieldgarrick.com/events/ice-age-adventure-live"
   },
   {
-   "title": "Kiell Smith-Bynoe's Kool Story Bro",
+   "title": "Kiell Smith-Bynoe’s Kool Story Bro",
    "theatre": "Nottingham Playhouse",
    "genre": "Comedy",
    "start": "2026-10-24",
@@ -423,6 +350,14 @@
    "start": "2026-10-24",
    "end": "2026-10-24",
    "url": "https://brewhouse.co.uk/events/matilda-the-musical"
+  },
+  {
+   "title": "Michael Portillo",
+   "theatre": "Royal Concert Hall",
+   "genre": "Talks",
+   "start": "2026-10-24",
+   "end": "2026-10-24",
+   "url": "https://www.trch.co.uk/whats-on/michael-portillo-6t1b"
   },
   {
    "title": "Pre Theatre Talk (Ariadne | Dido & Aeneas)",
@@ -465,7 +400,7 @@
    "url": "https://centurytheatre.co.uk/whats-on/the-d-day-juniors-back-home-3/"
   },
   {
-   "title": "Daniel Kitson - Thrum",
+   "title": "Daniel Kitson – Thrum",
    "theatre": "Nottingham Playhouse",
    "genre": "Comedy",
    "start": "2026-10-25",
@@ -473,12 +408,20 @@
    "url": "https://nottinghamplayhouse.co.uk/events/daniel-kitson/"
   },
   {
-   "title": "Halloween in Concert",
+   "title": "Halloween In Concert",
    "theatre": "De Montfort Hall",
    "genre": "Music",
    "start": "2026-10-25",
    "end": "2026-10-25",
    "url": "https://www.demontforthall.co.uk/event/halloween-in-concert"
+  },
+  {
+   "title": "Harry Enfield: And No Chums!",
+   "theatre": "Royal Concert Hall",
+   "genre": "Comedy",
+   "start": "2026-10-25",
+   "end": "2026-10-25",
+   "url": "https://www.trch.co.uk/whats-on/harry-enfield-2026-tlvc"
   },
   {
    "title": "James Haskell - Hask Unfiltered",
@@ -495,6 +438,14 @@
    "start": "2026-10-25",
    "end": "2026-10-25",
    "url": "https://www.lichfieldgarrick.com/events/kathakali-dance"
+  },
+  {
+   "title": "Sunday Piano Series",
+   "theatre": "Royal Concert Hall",
+   "genre": "Classical Music",
+   "start": "2026-10-25",
+   "end": "2026-10-25",
+   "url": "https://www.trch.co.uk/whats-on/sunday-piano-series-vadym-kholodenko-rvl7"
   },
   {
    "title": "Tez Ilyas: Tez Things I Hate About You",
@@ -529,7 +480,7 @@
    "url": "https://www.lichfieldgarrick.com/events/the-witch-who-couldnt-sleep"
   },
   {
-   "title": "Harry Enfield and No Chums",
+   "title": "Harry Enfield And No Chums",
    "theatre": "De Montfort Hall",
    "genre": "Comedy",
    "start": "2026-10-26",
@@ -577,15 +528,23 @@
    "url": "https://buxtonoperahouse.org.uk/events/taylormania-2026/"
   },
   {
+   "title": "The Princess Proms",
+   "theatre": "Royal Concert Hall",
+   "genre": "Family",
+   "start": "2026-10-26",
+   "end": "2026-10-26",
+   "url": "https://www.trch.co.uk/whats-on/the-princess-proms-qhst"
+  },
+  {
    "title": "The Tale of the Loneliest Whale",
    "theatre": "Nottingham Playhouse",
-   "genre": "Children's",
+   "genre": "Children's Theatre",
    "start": "2026-10-26",
    "end": "2026-10-26",
    "url": "https://nottinghamplayhouse.co.uk/events/the-tale-of-the-loneliest-whale/"
   },
   {
-   "title": "Aardman in Concert with Live Orchestra",
+   "title": "Aardman In Concert With Live Orchestra",
    "theatre": "De Montfort Hall",
    "genre": "Family",
    "start": "2026-10-27",
@@ -603,10 +562,26 @@
   {
    "title": "Cats",
    "theatre": "Birmingham Hippodrome",
-   "genre": "Musical",
+   "genre": "Musicals",
    "start": "2026-10-27",
    "end": "2026-11-07",
    "url": "https://www.birminghamhippodrome.com/calendar/cats-two/"
+  },
+  {
+   "title": "Century Signers Club",
+   "theatre": "Century Theatre",
+   "genre": "",
+   "start": "2026-10-27",
+   "end": "2026-10-27",
+   "url": "https://centurytheatre.co.uk/whats-on/century-signers-club-22/"
+  },
+  {
+   "title": "Community Chat",
+   "theatre": "Century Theatre",
+   "genre": "",
+   "start": "2026-10-27",
+   "end": "2026-10-27",
+   "url": "https://centurytheatre.co.uk/whats-on/82495/"
   },
   {
    "title": "Francis Rossi",
@@ -622,7 +597,7 @@
    "genre": "Comedy",
    "start": "2026-10-27",
    "end": "2026-10-27",
-   "url": "https://www.visitderby.co.uk/events-1/harry-enfield-and-no-chums"
+   "url": "https://vaillantlive.co.uk/event/harry-enfield-and-no-chums/103/"
   },
   {
    "title": "Ice Age Adventure Live",
@@ -641,7 +616,7 @@
    "url": "https://www.curveonline.co.uk/whats-on/shows/lemn-sissay-let-the-light-pour-in-live/"
   },
   {
-   "title": "Mamma Mia!",
+   "title": "MAMMA MIA!",
    "theatre": "Wolverhampton Grand Theatre",
    "genre": "Musical",
    "start": "2026-10-27",
@@ -673,9 +648,9 @@
    "url": "https://www.atgtickets.com/shows/paranormal-activity/the-alexandra-theatre-birmingham/"
   },
   {
-   "title": "Play in a Day (6-8 year olds)",
+   "title": "Play in a Day 6-8 year olds",
    "theatre": "The Rep",
-   "genre": "Workshop",
+   "genre": "",
    "start": "2026-10-27",
    "end": "2026-10-27",
    "url": "https://www.birmingham-rep.co.uk/whats-on/play-in-a-day-6-8-year-olds/"
@@ -687,6 +662,22 @@
    "start": "2026-10-27",
    "end": "2026-10-27",
    "url": "https://www.lichfieldgarrick.com/events/the-amazing-bubble-man"
+  },
+  {
+   "title": "The Proclaimers",
+   "theatre": "Royal Concert Hall",
+   "genre": "Music",
+   "start": "2026-10-27",
+   "end": "2026-10-27",
+   "url": "https://www.trch.co.uk/whats-on/the-proclaimers-n25f"
+  },
+  {
+   "title": "The Royal Ballet: Manon (Cert TBC)",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2026-10-27",
+   "end": "2026-11-01",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/the-royal-ballet-manon-cert-tbc/"
   },
   {
    "title": "The Void",
@@ -707,7 +698,7 @@
   {
    "title": "We Will Rock You",
    "theatre": "Derby Theatre",
-   "genre": "Musical",
+   "genre": "Musical Theatre",
    "start": "2026-10-27",
    "end": "2026-10-31",
    "url": "https://derbytheatre.co.uk/event/we-will-rock-you/"
@@ -729,6 +720,14 @@
    "url": "https://www.oldrep.co.uk/event-details/345131ATGCVGBMMJVQCLQMKDHSDCDLVQT/elif-shafak-in-one-brief-moment-all-eternity/"
   },
   {
+   "title": "Hocus Pocus Live Experience",
+   "theatre": "Bonington Theatre",
+   "genre": "Tribute",
+   "start": "2026-10-28",
+   "end": "2026-10-28",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/hocus-pocus-live-experience/"
+  },
+  {
    "title": "Kaine: Better Together",
    "theatre": "Curve Theatre",
    "genre": "Music",
@@ -745,17 +744,17 @@
    "url": "https://www.mansfield.gov.uk/palacetheatre/events/event/31/kevin-bloody-wilson-16-"
   },
   {
-   "title": "Monologue and Audition Support Workshop",
-   "theatre": "The Rep",
-   "genre": "Workshop",
+   "title": "Nottingham Operatic Society: Chess The Musical",
+   "theatre": "Theatre Royal Nottingham",
+   "genre": "Family",
    "start": "2026-10-28",
    "end": "2026-10-28",
-   "url": "https://www.birmingham-rep.co.uk/whats-on/monologue-and-audition-support-workshop/"
+   "url": "https://www.trch.co.uk/whats-on/nottingham-operatic-society-chess-the-musical-fjyq"
   },
   {
-   "title": "Play in a Day (9-11 year olds)",
+   "title": "Play in a Day 9-11 year olds",
    "theatre": "The Rep",
-   "genre": "Workshop",
+   "genre": "",
    "start": "2026-10-28",
    "end": "2026-10-28",
    "url": "https://www.birmingham-rep.co.uk/whats-on/play-in-a-day-9-11-year-olds/"
@@ -825,36 +824,12 @@
    "url": "https://buxtonoperahouse.org.uk/events/des-coleman-2026/"
   },
   {
-   "title": "Ghost Story - Storytelling workshop",
-   "theatre": "The Rep",
-   "genre": "Workshop",
-   "start": "2026-10-29",
-   "end": "2026-10-29",
-   "url": "https://www.birmingham-rep.co.uk/whats-on/ghost-story-storytelling-workshop/"
-  },
-  {
-   "title": "Made You Look - Workshop",
-   "theatre": "The Rep",
-   "genre": "Workshop",
-   "start": "2026-10-29",
-   "end": "2026-10-29",
-   "url": "https://www.birmingham-rep.co.uk/whats-on/made-you-look-workshop/"
-  },
-  {
-   "title": "Once Upon a Time in Sokoto",
-   "theatre": "Nottingham Playhouse",
-   "genre": "Drama",
-   "start": "2026-10-29",
-   "end": "2026-10-31",
-   "url": "https://nottinghamplayhouse.co.uk/events/once-upon-a-time-in-sokoto/"
-  },
-  {
    "title": "Paul Smith",
    "theatre": "Vaillant Live",
    "genre": "Comedy",
    "start": "2026-10-29",
-   "end": "2026-10-30",
-   "url": "https://www.visitderby.co.uk/events/paul-smith-1"
+   "end": "2026-10-29",
+   "url": "https://vaillantlive.co.uk/event/paul-smith/123/"
   },
   {
    "title": "Phil Wang",
@@ -865,6 +840,14 @@
    "url": "https://buxtonoperahouse.org.uk/events/phil-wang-oh-no-2026/"
   },
   {
+   "title": "Sinfonia of London",
+   "theatre": "Royal Concert Hall",
+   "genre": "Classical Music",
+   "start": "2026-10-29",
+   "end": "2026-10-29",
+   "url": "https://www.trch.co.uk/whats-on/sinfonia-of-london-oct-26-9gy5"
+  },
+  {
    "title": "The Haunted Bride",
    "theatre": "Brewhouse Arts Centre",
    "genre": "Theatre",
@@ -873,7 +856,7 @@
    "url": "https://brewhouse.co.uk/events/the-haunted-bride"
   },
   {
-   "title": "The Legends in Vegas - After Hours",
+   "title": "The Legends In Vegas - After Hours",
    "theatre": "De Montfort Hall",
    "genre": "Music",
    "start": "2026-10-29",
@@ -945,6 +928,22 @@
    "url": "https://www.birminghamhippodrome.com/calendar/offkey/"
   },
   {
+   "title": "Paul Smith",
+   "theatre": "Vaillant Live",
+   "genre": "Comedy",
+   "start": "2026-10-30",
+   "end": "2026-10-30",
+   "url": "https://vaillantlive.co.uk/event/paul-smith/124/"
+  },
+  {
+   "title": "Rebel Witch Productions: Fertile Soil",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2026-10-30",
+   "end": "2026-10-30",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/rebel-witch-productions-fertile-soil/"
+  },
+  {
    "title": "The Floyd Effect",
    "theatre": "Buxton Opera House",
    "genre": "Music",
@@ -961,6 +960,14 @@
    "url": "https://brewhouse.co.uk/events/the-melsons"
   },
   {
+   "title": "The Shamrocks",
+   "theatre": "Royal Concert Hall",
+   "genre": "Music",
+   "start": "2026-10-30",
+   "end": "2026-10-30",
+   "url": "https://www.trch.co.uk/whats-on/the-shamrock-tenors-1hjr"
+  },
+  {
    "title": "The Simon and Garfunkel Story",
    "theatre": "Palace Theatre Mansfield",
    "genre": "Music",
@@ -971,7 +978,7 @@
   {
    "title": "Young Community Drop-In Session",
    "theatre": "Birmingham Hippodrome",
-   "genre": "Workshop",
+   "genre": "Workshops & Talks",
    "start": "2026-10-30",
    "end": "2026-10-30",
    "url": "https://www.birminghamhippodrome.com/calendar/young-community-drop-in-session-8/"
@@ -1025,12 +1032,28 @@
    "url": "https://buxtonoperahouse.org.uk/events/the-spirit-and-sound-of-steely-dan-nearly-dan-in-concert-2026/"
   },
   {
+   "title": "Nerina Pallot – Solo Tour + Support",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2026-10-31",
+   "end": "2026-10-31",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/nerina-pallot-solo-tour/"
+  },
+  {
    "title": "Theatre Tours - Birmingham",
    "theatre": "The Alexandra Theatre",
    "genre": "Tour",
    "start": "2026-10-31",
    "end": "2026-11-07",
    "url": "https://www.atgtickets.com/shows/theatre-tours-birmingham/"
+  },
+  {
+   "title": "Bonington Jazz Company… Vernon Fuller- Breezin’ By!",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2026-11-01",
+   "end": "2026-11-01",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/bonington-jazz-company-vernon-fuller-breezin-by/"
   },
   {
    "title": "Bookends: Mozart and Britten",
@@ -1065,6 +1088,14 @@
    "url": "https://buxtonoperahouse.org.uk/events/buxton-opera-house-creates-youth-board-presents-open-mic-night/"
   },
   {
+   "title": "The Blindboy Podcast Live",
+   "theatre": "Theatre Royal Nottingham",
+   "genre": "Talks",
+   "start": "2026-11-01",
+   "end": "2026-11-01",
+   "url": "https://www.trch.co.uk/whats-on/the-blindboy-podcast-live-91t5"
+  },
+  {
    "title": "The Illegal Eagles",
    "theatre": "Buxton Opera House",
    "genre": "Music",
@@ -1073,7 +1104,7 @@
    "url": "https://buxtonoperahouse.org.uk/events/the-illegal-eagles-hotel-california-2026/"
   },
   {
-   "title": "The Music of Zimmer vs Williams",
+   "title": "The Music Of Zimmer Vs Williams",
    "theatre": "De Montfort Hall",
    "genre": "Classical",
    "start": "2026-11-01",
@@ -1089,12 +1120,12 @@
    "url": "https://www.atgtickets.com/shows/jersey-boys/the-alexandra-theatre-birmingham/"
   },
   {
-   "title": "Pride & Prejudice* (*sort of)",
-   "theatre": "Nottingham Playhouse",
-   "genre": "Comedy",
+   "title": "Nottingham Organ Society…David Harrild (In the Bar!)",
+   "theatre": "Bonington Theatre",
+   "genre": "",
    "start": "2026-11-02",
-   "end": "2026-11-07",
-   "url": "https://nottinghamplayhouse.co.uk/events/pride-prejudice-sort-of/"
+   "end": "2026-11-02",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/nottingham-organ-society-david-harrild-in-the-bar/"
   },
   {
    "title": "Shakespeare Schools Theatre Festival",
@@ -1105,11 +1136,19 @@
    "url": "https://www.oldrep.co.uk/event-details/354331ACPLDBBJDHKHMMBRKQRLMPKQRVS/shakespeare-schools-theatre-festival/"
   },
   {
+   "title": "High Society",
+   "theatre": "Theatre Royal Nottingham",
+   "genre": "Musical Theatre",
+   "start": "2026-11-03",
+   "end": "2026-11-03",
+   "url": "https://www.trch.co.uk/whats-on/high-society-r4w7"
+  },
+  {
    "title": "Mean Girls",
    "theatre": "Royal Concert Hall",
-   "genre": "Musical",
+   "genre": "Musical Theatre",
    "start": "2026-11-03",
-   "end": "2026-11-07",
+   "end": "2026-11-03",
    "url": "https://www.trch.co.uk/whats-on/mean-girls-6qcb"
   },
   {
@@ -1147,15 +1186,15 @@
   {
    "title": "Chitty Chitty Bang Bang",
    "theatre": "Derby Theatre",
-   "genre": "Musical",
+   "genre": "Musical Theatre",
    "start": "2026-11-04",
    "end": "2026-11-08",
    "url": "https://derbytheatre.co.uk/event/chitty-chitty-bang-bang/"
   },
   {
-   "title": "Chris Packham's World of Wonder: A Planet on the Edge",
+   "title": "Chris Packham’S World Of Wonder: A Planet On The Edge",
    "theatre": "De Montfort Hall",
-   "genre": "Talk",
+   "genre": "",
    "start": "2026-11-04",
    "end": "2026-11-04",
    "url": "https://www.demontforthall.co.uk/event/chris-packham"
@@ -1171,7 +1210,7 @@
   {
    "title": "The Rachel Parris Songbook",
    "theatre": "The Old Rep Theatre",
-   "genre": "Comedy",
+   "genre": "Live-Music",
    "start": "2026-11-04",
    "end": "2026-11-04",
    "url": "https://www.oldrep.co.uk/event-details/341931ALNRGNVHNTJQGKHMSPHDSJRHBPJ/the-rachel-parris-songbook/"
@@ -1209,6 +1248,14 @@
    "url": "https://www.lichfieldgarrick.com/events/darwin-lecture"
   },
   {
+   "title": "Jazz Steps: Claire Martin & Jim Mullen",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2026-11-05",
+   "end": "2026-11-05",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/jazz-steps-claire-martin-jim-mullen/"
+  },
+  {
    "title": "National Theatre Live: Golden Boy",
    "theatre": "Lichfield Garrick",
    "genre": "Theatre",
@@ -1239,6 +1286,14 @@
    "start": "2026-11-06",
    "end": "2027-06-11",
    "url": "https://www.atgtickets.com/shows/coffee-cake-and-cadenzas/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Comedy Hotspot",
+   "theatre": "Bonington Theatre",
+   "genre": "Comedy",
+   "start": "2026-11-06",
+   "end": "2026-11-06",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/comedy-hotspot-16/"
   },
   {
    "title": "Festival of Remembrance",
@@ -1299,7 +1354,7 @@
   {
    "title": "Birmingham Drag & Burlesque Festival: The Follies Grandé",
    "theatre": "The Old Rep Theatre",
-   "genre": "Cabaret",
+   "genre": "Comedy",
    "start": "2026-11-07",
    "end": "2026-11-07",
    "url": "https://www.oldrep.co.uk/event-details/322331AGDCNJKTGBVHBKCQNKMBLNQRLST/birmingham-drag-burlesque-festival-the-follies-grande/"
@@ -1307,7 +1362,7 @@
   {
    "title": "Jo Bannon - The Dirty Work",
    "theatre": "Birmingham Hippodrome",
-   "genre": "Dance",
+   "genre": "Ballet & Dance",
    "start": "2026-11-07",
    "end": "2026-11-07",
    "url": "https://www.birminghamhippodrome.com/calendar/fabric-the-dirty-work/"
@@ -1334,7 +1389,7 @@
    "genre": "Dance",
    "start": "2026-11-07",
    "end": "2026-11-07",
-   "url": "https://www.visitderby.co.uk/events-1/the-nutcracker"
+   "url": "https://vaillantlive.co.uk/event/the-nutcracker/139/"
   },
   {
    "title": "Tom Davis: Spudgun",
@@ -1347,7 +1402,7 @@
   {
    "title": "Behind The Scenes Tours",
    "theatre": "Birmingham Hippodrome",
-   "genre": "Tour",
+   "genre": "Events & Venue Tours",
    "start": "2026-11-08",
    "end": "2026-11-08",
    "url": "https://www.birminghamhippodrome.com/calendar/behind-the-scenes-tours-4/"
@@ -1355,10 +1410,18 @@
   {
    "title": "Shine on Stage",
    "theatre": "The Old Rep Theatre",
-   "genre": "Variety",
+   "genre": "Dance",
    "start": "2026-11-08",
    "end": "2026-11-08",
    "url": "https://www.oldrep.co.uk/event-details/355931ABNBGLTVDMRHPMBGTQVNTVMGNTC/shine-on-stage/"
+  },
+  {
+   "title": "Aladdin Open Rehearsal",
+   "theatre": "Nottingham Playhouse",
+   "genre": "",
+   "start": "2026-11-09",
+   "end": "2026-11-09",
+   "url": "https://nottinghamplayhouse.co.uk/events/aladdin-open-rehearsal/"
   },
   {
    "title": "Joe Lycett & Friends",
@@ -1377,7 +1440,7 @@
    "url": "https://www.curveonline.co.uk/whats-on/shows/the-nature-of-forgetting/"
   },
   {
-   "title": "August Wilson's Fences",
+   "title": "August Wilson’s Fences",
    "theatre": "Nottingham Playhouse",
    "genre": "Drama",
    "start": "2026-11-10",
@@ -1414,7 +1477,7 @@
    "genre": "Talk",
    "start": "2026-11-10",
    "end": "2026-11-10",
-   "url": "https://www.visitderby.co.uk/events-1/harry-redknapp-my-life-in-football"
+   "url": "https://vaillantlive.co.uk/event/harry-redknapp-my-life-in-football/142/"
   },
   {
    "title": "Othello",
@@ -1433,9 +1496,9 @@
    "url": "https://brewhouse.co.uk/events/d-day-darlings"
   },
   {
-   "title": "The Royal Opera: Carmen",
+   "title": "The Royal Opera: Carmen (Cert TBC)",
    "theatre": "Bonington Theatre",
-   "genre": "Opera",
+   "genre": "",
    "start": "2026-11-10",
    "end": "2026-11-15",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/the-royal-opera-carmen-cert-tbc/"
@@ -1457,15 +1520,15 @@
    "url": "https://brewhouse.co.uk/events/alex-mcaleer-mind-reader"
   },
   {
-   "title": "National Theatre Live: Golden Boy",
+   "title": "National Theatre Live: Golden Boy (Cert TBC)",
    "theatre": "Bonington Theatre",
-   "genre": "Theatre",
+   "genre": "",
    "start": "2026-11-11",
    "end": "2026-11-20",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/national-theatre-live-golden-boy-cert-tbc/"
   },
   {
-   "title": "Philharmonia: Manfred Honeck and Emanuel Ax",
+   "title": "Philharmonia: Manfred Honeck And Emanuel Ax",
    "theatre": "De Montfort Hall",
    "genre": "Classical",
    "start": "2026-11-11",
@@ -1489,28 +1552,12 @@
    "url": "https://www.curveonline.co.uk/whats-on/shows/the-littlest-yak/"
   },
   {
-   "title": "Voices in Motion: Applied Theatre, Migration, Multilingualism and Empowerment through Practice-as-Research",
-   "theatre": "Derby Theatre",
-   "genre": "Talk",
-   "start": "2026-11-11",
-   "end": "2026-11-11",
-   "url": "https://derbytheatre.co.uk/festival/voices-in-motion-ma-symposium-2026/"
-  },
-  {
-   "title": "Alice Marshall: Parenthood's Profound Impact on Creativity & Expression",
+   "title": "Alice Marshall: Parenthood’s Profound Impact on Creativity & Expression",
    "theatre": "Derby Theatre",
    "genre": "Talk",
    "start": "2026-11-12",
    "end": "2026-11-12",
    "url": "https://derbytheatre.co.uk/event/alice-marshall-parenthoods-profound-impact-on-creativity-expression/"
-  },
-  {
-   "title": "Dr Paul Whickman: Blasphemy & Politics in Romantic Literature",
-   "theatre": "Derby Theatre",
-   "genre": "Talk",
-   "start": "2026-11-12",
-   "end": "2026-11-12",
-   "url": "https://derbytheatre.co.uk/event/dr-paul-whickman-blasphemy-politics-in-romantic-literature/"
   },
   {
    "title": "My Mountain Life",
@@ -1553,22 +1600,6 @@
    "url": "https://www.mansfield.gov.uk/palacetheatre/events/event/79/the-ultimate-mod-revue"
   },
   {
-   "title": "An Evening with Fergal Keane",
-   "theatre": "Derby Theatre",
-   "genre": "Talk",
-   "start": "2026-11-13",
-   "end": "2026-11-13",
-   "url": "https://derbytheatre.co.uk/event/an-evening-with-fergal-keane/"
-  },
-  {
-   "title": "An Evening with Yvette Fielding",
-   "theatre": "Vaillant Live",
-   "genre": "Talk",
-   "start": "2026-11-13",
-   "end": "2026-11-13",
-   "url": "https://www.visitderby.co.uk/events-1/an-evening-with-yvette-fielding"
-  },
-  {
    "title": "Cannonball Quintet",
    "theatre": "Brewhouse Arts Centre",
    "genre": "Music",
@@ -1593,22 +1624,6 @@
    "url": "https://www.atgtickets.com/shows/christmas-in-ireland/regent-theatre/"
   },
   {
-   "title": "Critical Care",
-   "theatre": "Derby Theatre",
-   "genre": "Theatre",
-   "start": "2026-11-13",
-   "end": "2026-11-13",
-   "url": "https://derbytheatre.co.uk/event/critical-care/"
-  },
-  {
-   "title": "Niall Hickman: Wolverhampton Wanderers FC - A History of the Club",
-   "theatre": "Derby Theatre",
-   "genre": "Talk",
-   "start": "2026-11-13",
-   "end": "2026-11-13",
-   "url": "https://derbytheatre.co.uk/event/niall-hickman-wolverhampton-wanderers-fc-a-history-of-the-club/"
-  },
-  {
    "title": "QWEEN UK",
    "theatre": "Bonington Theatre",
    "genre": "Music",
@@ -1625,14 +1640,6 @@
    "url": "https://www.newvictheatre.org.uk/productions/the-borrowers-2/"
   },
   {
-   "title": "A Good Neet Aht",
-   "theatre": "Derby Theatre",
-   "genre": "Theatre",
-   "start": "2026-11-14",
-   "end": "2026-11-14",
-   "url": "https://derbytheatre.co.uk/event/a-good-neet-aht/"
-  },
-  {
    "title": "Bye Bye Baby",
    "theatre": "Century Theatre",
    "genre": "Music",
@@ -1641,9 +1648,17 @@
    "url": "https://centurytheatre.co.uk/whats-on/bye-bye-baby-4/"
   },
   {
+   "title": "CQ Earlies",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "url": "https://www.curveonline.co.uk/whats-on/workshops/cq-earlies-2026/"
+  },
+  {
    "title": "I'm Sorry I Haven't A Clue",
    "theatre": "Birmingham Hippodrome",
-   "genre": "Comedy",
+   "genre": "Comedy & Spoken Word",
    "start": "2026-11-14",
    "end": "2026-11-14",
    "url": "https://www.birminghamhippodrome.com/calendar/im-sorry-i-havent-a-clue-two/"
@@ -1667,7 +1682,7 @@
   {
    "title": "Unplugged Live",
    "theatre": "Birmingham Hippodrome",
-   "genre": "Music",
+   "genre": "Opera & Music",
    "start": "2026-11-14",
    "end": "2026-11-14",
    "url": "https://www.birminghamhippodrome.com/calendar/unplugged-live/"
@@ -1681,7 +1696,7 @@
    "url": "https://www.curveonline.co.uk/whats-on/shows/anartam-an-evening-of-south-asian-classical-dance-music-2/"
   },
   {
-   "title": "Dylan Moran - Looking For Trouble",
+   "title": "Dylan Moran – LOOKING FOR TROUBLE",
    "theatre": "Nottingham Playhouse",
    "genre": "Comedy",
    "start": "2026-11-15",
@@ -1689,15 +1704,7 @@
    "url": "https://nottinghamplayhouse.co.uk/events/dylan-moran/"
   },
   {
-   "title": "Introducing Eva May and Friends",
-   "theatre": "Derby Theatre",
-   "genre": "Music",
-   "start": "2026-11-15",
-   "end": "2026-11-15",
-   "url": "https://derbytheatre.co.uk/event/introducing-eva-may-and-friends/"
-  },
-  {
-   "title": "Leicester Symphony Orchestra: Rhapsody in Blue",
+   "title": "Leicester Symphony Orchestra: Lord Mayor Of Leicester'S Concert Rhapsody In Blue",
    "theatre": "De Montfort Hall",
    "genre": "Classical",
    "start": "2026-11-15",
@@ -1711,6 +1718,14 @@
    "start": "2026-11-16",
    "end": "2026-11-16",
    "url": "https://www.demontforthall.co.uk/event/the-australian-pink-floyd"
+  },
+  {
+   "title": "Creative Choreography with Jamaal O'Driscoll",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2026-11-17",
+   "end": "2026-11-17",
+   "url": "https://www.curveonline.co.uk/whats-on/workshops/creative-choreography-with-jamaal-odriscoll/"
   },
   {
    "title": "Legally Blonde",
@@ -1737,7 +1752,7 @@
    "url": "https://nottinghamplayhouse.co.uk/events/the-rachel-parris-songbook/"
   },
   {
-   "title": "East 17 with Special Guest Blazin' Squad",
+   "title": "East 17 With Special Guest Blazin' Squad",
    "theatre": "De Montfort Hall",
    "genre": "Music",
    "start": "2026-11-18",
@@ -1769,17 +1784,9 @@
    "url": "https://nottinghamplayhouse.co.uk/events/uncovering-ancient-egypt-with-bettany-hughes/"
   },
   {
-   "title": "Daniel Foxx: How Lovely 2026 Tour",
-   "theatre": "Derby Theatre",
-   "genre": "Comedy",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://derbytheatre.co.uk/event/daniel-foxx-how-lovely/"
-  },
-  {
-   "title": "Jazz Steps: Andrew Wood's Hammerhead",
+   "title": "Jazz Steps: Andrew Wood’s Hammerhead",
    "theatre": "Bonington Theatre",
-   "genre": "Jazz",
+   "genre": "",
    "start": "2026-11-19",
    "end": "2026-11-19",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/jazz-steps-andrew-woods-hammerhead/"
@@ -1790,10 +1797,10 @@
    "genre": "Comedy",
    "start": "2026-11-19",
    "end": "2026-11-19",
-   "url": "https://www.visitderby.co.uk/events-1/jonathan-pie"
+   "url": "https://vaillantlive.co.uk/event/jonathan-pie/113/"
   },
   {
-   "title": "Laura Smyth - Born Aggy",
+   "title": "Laura Smyth – Born Aggy",
    "theatre": "Nottingham Playhouse",
    "genre": "Comedy",
    "start": "2026-11-19",
@@ -1801,9 +1808,9 @@
    "url": "https://nottinghamplayhouse.co.uk/events/laura-smyth/"
   },
   {
-   "title": "W*NKERNOMICS",
+   "title": "W*Nkernomics – Show_V4.1_Final _Usethis",
    "theatre": "De Montfort Hall",
-   "genre": "Comedy",
+   "genre": "",
    "start": "2026-11-19",
    "end": "2026-11-19",
    "url": "https://www.demontforthall.co.uk/event/wnkernomics"
@@ -1814,23 +1821,15 @@
    "genre": "Comedy",
    "start": "2026-11-20",
    "end": "2026-11-20",
-   "url": "https://www.visitderby.co.uk/events-1/bill-bailey-vaudevillean"
+   "url": "https://vaillantlive.co.uk/event/bill-bailey%3a-vaudevillean/110/"
   },
   {
-   "title": "Christmas in Ireland",
+   "title": "Christmas In Ireland",
    "theatre": "De Montfort Hall",
    "genre": "Music",
    "start": "2026-11-20",
    "end": "2026-11-20",
    "url": "https://www.demontforthall.co.uk/event/christmas-in-ireland"
-  },
-  {
-   "title": "Fatiha El-Ghorri: Cockney Stacking Doll",
-   "theatre": "Derby Theatre",
-   "genre": "Comedy",
-   "start": "2026-11-20",
-   "end": "2026-11-20",
-   "url": "https://derbytheatre.co.uk/event/fatiha-el-ghorri-cockney-stacking-doll/"
   },
   {
    "title": "Robin Hood (2026 Pantomime)",
@@ -1843,13 +1842,13 @@
   {
    "title": "Silvia Gribaudi - GRACES",
    "theatre": "Birmingham Hippodrome",
-   "genre": "Dance",
+   "genre": "Ballet & Dance",
    "start": "2026-11-20",
    "end": "2026-11-20",
    "url": "https://www.birminghamhippodrome.com/calendar/fabric-graces/"
   },
   {
-   "title": "Sindhu Vee - Swanky",
+   "title": "Sindhu Vee – Swanky",
    "theatre": "Nottingham Playhouse",
    "genre": "Comedy",
    "start": "2026-11-20",
@@ -1859,7 +1858,7 @@
   {
    "title": "The Nutcracker 2026",
    "theatre": "Birmingham Hippodrome",
-   "genre": "Ballet",
+   "genre": "Ballet & Dance, Family & Pantomime",
    "start": "2026-11-20",
    "end": "2026-12-12",
    "url": "https://www.birminghamhippodrome.com/calendar/brb-nutcracker-26/"
@@ -1891,7 +1890,7 @@
   {
    "title": "Beauty and the Beast",
    "theatre": "The Old Rep Theatre",
-   "genre": "Pantomime",
+   "genre": "Family",
    "start": "2026-11-21",
    "end": "2026-12-31",
    "url": "https://www.oldrep.co.uk/event-details/327731AMJCDGSVNSNQCHQDGNQVVMMSLDL/beauty-and-the-beast/"
@@ -1942,7 +1941,7 @@
    "genre": "Music",
    "start": "2026-11-21",
    "end": "2026-11-21",
-   "url": "https://www.visitderby.co.uk/events-1/midge-ure-a-man-of-two-worlds"
+   "url": "https://vaillantlive.co.uk/event/midge-ure%3a-a-man-of-two-worlds/126/"
   },
   {
    "title": "Sam Campbell: Kid Giblet",
@@ -1969,7 +1968,7 @@
    "url": "https://www.atgtickets.com/shows/christmas-in-ireland/the-alexandra-theatre-birmingham/"
   },
   {
-   "title": "That'll Be Christmas",
+   "title": "That'Ll Be Christmas",
    "theatre": "De Montfort Hall",
    "genre": "Music",
    "start": "2026-11-23",
@@ -2009,14 +2008,6 @@
    "url": "https://www.demontforthall.co.uk/event/dr-john-cooper-clarke"
   },
   {
-   "title": "Jools Holland (with special guest Roachford)",
-   "theatre": "Royal Concert Hall",
-   "genre": "Music",
-   "start": "2026-11-25",
-   "end": "2026-11-25",
-   "url": "https://www.trch.co.uk/whats-on/jools-holland-z9w4"
-  },
-  {
    "title": "The Music of Fleetwood Mac by Candlelight",
    "theatre": "The Alexandra Theatre",
    "genre": "Concert",
@@ -2025,15 +2016,7 @@
    "url": "https://www.atgtickets.com/shows/the-music-of-fleetwood-mac-by-candlelight/the-alexandra-theatre-birmingham/"
   },
   {
-   "title": "Backstage Tours",
-   "theatre": "The Rep",
-   "genre": "Tour",
-   "start": "2026-11-26",
-   "end": "2027-01-09",
-   "url": "https://www.birmingham-rep.co.uk/whats-on/birmingham-rep-backstage-tours/"
-  },
-  {
-   "title": "Jools Holland and His Rhythm and Blues Orchestra",
+   "title": "Jools Holland And His Rhythm And Blues Orchestra",
    "theatre": "De Montfort Hall",
    "genre": "Music",
    "start": "2026-11-26",
@@ -2043,7 +2026,7 @@
   {
    "title": "Vivienne Franzmann & Frauke Requardt - Anatomy Of Survival",
    "theatre": "Birmingham Hippodrome",
-   "genre": "Dance",
+   "genre": "Ballet & Dance",
    "start": "2026-11-26",
    "end": "2026-11-26",
    "url": "https://www.birminghamhippodrome.com/calendar/fabric-anatomy-of-survival/"
@@ -2067,7 +2050,7 @@
   {
    "title": "Birmingham Royal Ballet - Pre Performance Talk",
    "theatre": "Birmingham Hippodrome",
-   "genre": "Talk",
+   "genre": "Ballet & Dance, Exhibitions & Visual Arts, Workshops & Talks",
    "start": "2026-11-27",
    "end": "2026-11-27",
    "url": "https://www.birminghamhippodrome.com/calendar/brb-pre-performance-talk-5/"
@@ -2129,15 +2112,7 @@
    "url": "https://www.atgtickets.com/shows/austentatious-an-improvised-jane-austen-novel/the-alexandra-theatre-birmingham/"
   },
   {
-   "title": "Jack and the Beanstalk",
-   "theatre": "Theatre Royal Nottingham",
-   "genre": "Pantomime",
-   "start": "2026-11-28",
-   "end": "2027-01-03",
-   "url": "https://www.trch.co.uk/whats-on/jack-and-the-beanstalk-n2df"
-  },
-  {
-   "title": "Miss Americana - A Tribute to Taylor Swift",
+   "title": "Miss Americana - A Tribute To Taylor Swift",
    "theatre": "De Montfort Hall",
    "genre": "Tribute",
    "start": "2026-11-28",
@@ -2161,15 +2136,15 @@
    "url": "https://www.atgtickets.com/shows/adam-rowe-fashionism/the-alexandra-theatre-birmingham/"
   },
   {
-   "title": "Andrew Lloyd Webber's Starlight Express - Live On Stage",
+   "title": "Andrew Lloyd Webber’s Starlight Express – Live On Stage (Cert TBC)",
    "theatre": "Bonington Theatre",
-   "genre": "Musical",
+   "genre": "",
    "start": "2026-11-29",
    "end": "2026-12-10",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/andrew-lloyd-webbers-starlight-express-live-on-stage/"
   },
   {
-   "title": "Bardi Symphony Orchestra: 40th Anniversary Concert",
+   "title": "Bardi Symphony Orchestra: 40Th Anniversary Concert",
    "theatre": "De Montfort Hall",
    "genre": "Classical",
    "start": "2026-11-29",
@@ -2183,14 +2158,6 @@
    "start": "2026-11-29",
    "end": "2026-11-29",
    "url": "https://centurytheatre.co.uk/whats-on/desford-colliery-band-christmas-extravaganza/"
-  },
-  {
-   "title": "GIANT - The Play",
-   "theatre": "Bonington Theatre",
-   "genre": "Theatre",
-   "start": "2026-11-29",
-   "end": "2026-12-07",
-   "url": "https://www.boningtontheatre.co.uk/whatson-event/giant-the-play-15/"
   },
   {
    "title": "Daisy and the Trouble with Christmas",
@@ -2217,6 +2184,14 @@
    "url": "https://www.atgtickets.com/shows/the-australian-pink-floyd/regent-theatre/"
   },
   {
+   "title": "Wicker (Cert 15 TBC)",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2026-11-30",
+   "end": "2026-12-09",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/wicker-cert-15-tbc/"
+  },
+  {
    "title": "Are You Even Indian",
    "theatre": "Curve Theatre",
    "genre": "Theatre",
@@ -2230,15 +2205,7 @@
    "genre": "Music",
    "start": "2026-12-01",
    "end": "2026-12-01",
-   "url": "https://www.visitderby.co.uk/events-1/ocean-colour-scene"
-  },
-  {
-   "title": "The Royal Ballet: The Nutcracker",
-   "theatre": "Bonington Theatre",
-   "genre": "Dance",
-   "start": "2026-12-01",
-   "end": "2026-12-01",
-   "url": "https://www.boningtontheatre.co.uk/whatson-event/the-royal-ballet-the-nutcracker-u/"
+   "url": "https://vaillantlive.co.uk/event/ocean-colour-scene/102/"
   },
   {
    "title": "James B Partridge - The Big Christmas Assembly 2026",
@@ -2262,15 +2229,7 @@
    "genre": "Music",
    "start": "2026-12-02",
    "end": "2026-12-02",
-   "url": "https://www.visitderby.co.uk/events-1/the-damned-final-damnation-50"
-  },
-  {
-   "title": "Cinderella",
-   "theatre": "Nottingham Playhouse",
-   "genre": "Children's",
-   "start": "2026-12-03",
-   "end": "2027-01-02",
-   "url": "https://nottinghamplayhouse.co.uk/events/cinderella-neville/"
+   "url": "https://vaillantlive.co.uk/event/the-damned-final-damnation-50/143/"
   },
   {
    "title": "Comedy Crackers",
@@ -2313,7 +2272,7 @@
    "url": "https://www.lichfieldgarrick.com/events/a-shoddy-nativity"
   },
   {
-   "title": "Catholic Schools Carol Concert in Aid of MENPHYS",
+   "title": "Catholic Schools Carol Concert In Aid Of Menphys",
    "theatre": "De Montfort Hall",
    "genre": "Music",
    "start": "2026-12-04",
@@ -2323,34 +2282,18 @@
   {
    "title": "A Christmas Wassail @ Hartlebury Castle",
    "theatre": "The Old Rep Theatre",
-   "genre": "Music",
+   "genre": "Variety",
    "start": "2026-12-05",
    "end": "2026-12-05",
    "url": "https://www.oldrep.co.uk/event-details/349331AMGLRPHRJNNNVQBVDLGKHBMNQJS/a-christmas-wassail-hartlebury-castle/"
   },
   {
-   "title": "Andre Rieu's 2026 Christmas Concert: Let it Snow",
+   "title": "André Rieu’s 2026 Christmas Concert: Let it Snow (Cert TBC)",
    "theatre": "Bonington Theatre",
-   "genre": "Music",
+   "genre": "Classical",
    "start": "2026-12-05",
    "end": "2026-12-09",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/andre-rieus-2026-christmas-concert-let-it-snow-cert-tbc/"
-  },
-  {
-   "title": "Birmingham Royal Ballet - Class on Stage",
-   "theatre": "Birmingham Hippodrome",
-   "genre": "Dance",
-   "start": "2026-12-05",
-   "end": "2026-12-05",
-   "url": "https://www.birminghamhippodrome.com/calendar/class-on-stage-4/"
-  },
-  {
-   "title": "CBeebies Panto 2026: Treasure Island",
-   "theatre": "Bonington Theatre",
-   "genre": "Family",
-   "start": "2026-12-05",
-   "end": "2026-12-06",
-   "url": "https://www.boningtontheatre.co.uk/whatson-event/cbeebies-panto-2026-treasure-island-u/"
   },
   {
    "title": "Edward's African Safari",
@@ -2369,7 +2312,7 @@
    "url": "https://centurytheatre.co.uk/whats-on/goldilocks/"
   },
   {
-   "title": "Goldilocks and the Three Bears (Adults Only)",
+   "title": "Goldilocks and the Three Bears – Adults Only Performance",
    "theatre": "Century Theatre",
    "genre": "Pantomime",
    "start": "2026-12-05",
@@ -2387,7 +2330,7 @@
   {
    "title": "One Tiny Penguin",
    "theatre": "Birmingham Hippodrome",
-   "genre": "Family",
+   "genre": "Family & Pantomime, Musicals",
    "start": "2026-12-05",
    "end": "2027-01-03",
    "url": "https://www.birminghamhippodrome.com/calendar/one-tiny-penguin/"
@@ -2401,44 +2344,28 @@
    "url": "https://www.demontforthall.co.uk/event/the-bootleg-beatles"
   },
   {
-   "title": "The Owl and the Pussycat",
-   "theatre": "Derby Theatre",
-   "genre": "Family",
-   "start": "2026-12-05",
-   "end": "2027-01-09",
-   "url": "https://derbytheatre.co.uk/event/the-owl-and-the-pussycat/"
-  },
-  {
    "title": "A Christmas Wassail @ Holy Trinity Parish Church",
    "theatre": "The Old Rep Theatre",
-   "genre": "Music",
+   "genre": "Variety",
    "start": "2026-12-06",
    "end": "2026-12-06",
    "url": "https://www.oldrep.co.uk/event-details/351331ATTBDTDGCPRPKSQVVPLQRSCGTLT/a-christmas-wassail-holy-trinity-parish-church/"
   },
   {
-   "title": "Bonington Jazz Company Xmas Special... Jeanie Barton",
+   "title": "Bonington Jazz Company Xmas Special… Jeanie Barton",
    "theatre": "Bonington Theatre",
-   "genre": "Jazz",
+   "genre": "",
    "start": "2026-12-06",
    "end": "2026-12-06",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/bonington-jazz-company-xmas-special-jeanie-barton/"
   },
   {
-   "title": "Goldilocks and the Three Bears (Accessible)",
+   "title": "Goldilocks and the Three Bears- Accessible Performance",
    "theatre": "Century Theatre",
    "genre": "Pantomime",
    "start": "2026-12-06",
    "end": "2026-12-06",
    "url": "https://centurytheatre.co.uk/whats-on/goldilocks-and-the-three-bears-accessible-performance/"
-  },
-  {
-   "title": "Scrooge Live to Film",
-   "theatre": "Derby Theatre",
-   "genre": "Music",
-   "start": "2026-12-06",
-   "end": "2026-12-06",
-   "url": "https://derbytheatre.co.uk/event/scrooge-live-to-film/"
   },
   {
    "title": "What's Love Got To Do With It? A Tribute To Tina Turner",
@@ -2451,7 +2378,7 @@
   {
    "title": "A Christmas Wassail @ Highbury Hall",
    "theatre": "The Old Rep Theatre",
-   "genre": "Music",
+   "genre": "Variety",
    "start": "2026-12-07",
    "end": "2026-12-08",
    "url": "https://www.oldrep.co.uk/event-details/351531AHVTSTHKHDNVKTCSCKVCNCVCHJV/a-christmas-wassail-highbury-hall/"
@@ -2473,28 +2400,12 @@
    "url": "https://www.curveonline.co.uk/whats-on/shows/christmas-music-by-candlelight-2026/"
   },
   {
-   "title": "Christmas Sign & Sing 2026",
-   "theatre": "Derby Theatre",
-   "genre": "Music",
-   "start": "2026-12-07",
-   "end": "2026-12-07",
-   "url": "https://derbytheatre.co.uk/event/christmas-sign-sing-2026/"
-  },
-  {
    "title": "An Orchestral Tribute to Tim Burton & Dark Fantasy by Moonlight",
    "theatre": "The Alexandra Theatre",
    "genre": "Concert",
    "start": "2026-12-08",
    "end": "2026-12-08",
    "url": "https://www.atgtickets.com/shows/an-orchestral-tribute-to-tim-burton-and-dark-fantasy-by-moonlight/the-alexandra-theatre-birmingham/"
-  },
-  {
-   "title": "Barbara Nice's Christmas Cracker",
-   "theatre": "Derby Theatre",
-   "genre": "Comedy",
-   "start": "2026-12-08",
-   "end": "2026-12-08",
-   "url": "https://derbytheatre.co.uk/event/barbara-nices-christmas-cracker/"
   },
   {
    "title": "Christmas Memories",
@@ -2511,6 +2422,14 @@
    "start": "2026-12-09",
    "end": "2026-12-09",
    "url": "https://www.atgtickets.com/shows/all-killa-no-filla-live-at-christmas/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Making it Up Double Bill Autumn 2026",
+   "theatre": "Nottingham Playhouse",
+   "genre": "community",
+   "start": "2026-12-09",
+   "end": "2026-12-09",
+   "url": "https://nottinghamplayhouse.co.uk/events/making-it-up-double-bill-2026/"
   },
   {
    "title": "Nottingham Playhouse Choir Christmas Concert 2026",
@@ -2534,7 +2453,7 @@
    "genre": "Music",
    "start": "2026-12-10",
    "end": "2026-12-10",
-   "url": "https://www.visitderby.co.uk/events/home-alone-in-concert"
+   "url": "https://vaillantlive.co.uk/event/home-alone-in-concert/133/"
   },
   {
    "title": "Kaine: Winter Voices",
@@ -2545,9 +2464,17 @@
    "url": "https://www.curveonline.co.uk/whats-on/shows/kaine-winter-voices/"
   },
   {
-   "title": "We Three Kings - of Rock n Roll!",
+   "title": "Nottingham Playhouse Business Club December 2026",
+   "theatre": "Nottingham Playhouse",
+   "genre": "",
+   "start": "2026-12-10",
+   "end": "2026-12-10",
+   "url": "https://nottinghamplayhouse.co.uk/events/nottingham-playhouse-business-club-december-2026/"
+  },
+  {
+   "title": "We Three Kings – of Rock n Roll!",
    "theatre": "Bonington Theatre",
-   "genre": "Music",
+   "genre": "",
    "start": "2026-12-10",
    "end": "2026-12-11",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/we-three-kings-of-rock-n-roll-2/"
@@ -2587,13 +2514,13 @@
   {
    "title": "A Christmas Wassail @ Coughton Court",
    "theatre": "The Old Rep Theatre",
-   "genre": "Music",
+   "genre": "Variety",
    "start": "2026-12-12",
    "end": "2026-12-12",
    "url": "https://www.oldrep.co.uk/event-details/349531APNBMNVKGMNNDJKSJDCTCNQQKVK/a-christmas-wassail-coughton-court/"
   },
   {
-   "title": "Beauty and the Beast",
+   "title": "Beauty And The Beast",
    "theatre": "De Montfort Hall",
    "genre": "Pantomime",
    "start": "2026-12-12",
@@ -2609,9 +2536,9 @@
    "url": "https://www.atgtickets.com/shows/james-b-partridge-the-big-christmas-assembly-2026/the-alexandra-theatre-birmingham/"
   },
   {
-   "title": "The Snowman + Live Brass Band",
+   "title": "The Snowman (U) + Live Brass Band",
    "theatre": "Bonington Theatre",
-   "genre": "Family",
+   "genre": "",
    "start": "2026-12-12",
    "end": "2026-12-12",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/the-snowman-u-live-brass-band-2/"
@@ -2625,14 +2552,6 @@
    "url": "https://brewhouse.co.uk/events/we-will-rock-you"
   },
   {
-   "title": "The Comedy Store 2026",
-   "theatre": "Derby Theatre",
-   "genre": "Comedy",
-   "start": "2026-12-13",
-   "end": "2026-12-13",
-   "url": "https://derbytheatre.co.uk/event/the-comedy-store-dec26/"
-  },
-  {
    "title": "Mean Girls",
    "theatre": "The Alexandra Theatre",
    "genre": "Musical",
@@ -2641,9 +2560,9 @@
    "url": "https://www.atgtickets.com/shows/mean-girls/the-alexandra-theatre-birmingham/"
   },
   {
-   "title": "Nottingham Keyboard / Organ Society presents - The 2026 Christmas Special",
+   "title": "Nottingham Keyboard / Organ Society presents — The 2026 Christmas Special",
    "theatre": "Bonington Theatre",
-   "genre": "Music",
+   "genre": "Christmas",
    "start": "2026-12-14",
    "end": "2026-12-14",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/nottingham-keyboard-organ-society-presents-the-2026-christmas-special/"
@@ -2660,9 +2579,17 @@
    "title": "Scrooge Cirque Extravaganza",
    "theatre": "Vaillant Live",
    "genre": "Family",
+   "start": "2026-12-15",
+   "end": "2026-12-15",
+   "url": "https://vaillantlive.co.uk/event/scrooge-cirque-extravaganza/155/"
+  },
+  {
+   "title": "Scrooge Cirque Extravaganza",
+   "theatre": "Vaillant Live",
+   "genre": "Family",
    "start": "2026-12-16",
    "end": "2026-12-16",
-   "url": "https://www.visitderby.co.uk/events-1/scrooge-cirque-extravaganza"
+   "url": "https://vaillantlive.co.uk/event/scrooge-cirque-extravaganza/156/"
   },
   {
    "title": "The Style Councillors 'Café Bleu' Tour",
@@ -2673,7 +2600,7 @@
    "url": "https://brewhouse.co.uk/events/the-style-councillors-cafe-bleu-tour"
   },
   {
-   "title": "FTM Dance - A Tale as Old as Time",
+   "title": "Ftm Dance - A Tale As Old As Time",
    "theatre": "De Montfort Hall",
    "genre": "Dance",
    "start": "2026-12-17",
@@ -2695,6 +2622,30 @@
    "start": "2026-12-18",
    "end": "2026-12-18",
    "url": "https://centurytheatre.co.uk/whats-on/a-christmas-carol-one-man-performance/"
+  },
+  {
+   "title": "Bongo's Bingo Christmas Special",
+   "theatre": "Vaillant Live",
+   "genre": "Christmas",
+   "start": "2026-12-18",
+   "end": "2026-12-18",
+   "url": "https://vaillantlive.co.uk/event/bongos-bingo-christmas-special/172/"
+  },
+  {
+   "title": "Carl Hutchinson",
+   "theatre": "Vaillant Live",
+   "genre": "",
+   "start": "2026-12-18",
+   "end": "2026-12-18",
+   "url": "https://vaillantlive.co.uk/event/carl-hutchinson/158/"
+  },
+  {
+   "title": "It’s a Wonderful Life (U)- 80th Anniversary",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2026-12-18",
+   "end": "2026-12-23",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/its-a-wonderful-life-u-80th-anniversary/"
   },
   {
    "title": "Word Up 80's!",
@@ -2723,7 +2674,7 @@
   {
    "title": "Sleeping Beauty",
    "theatre": "Birmingham Hippodrome",
-   "genre": "Panto",
+   "genre": "Family & Pantomime",
    "start": "2026-12-19",
    "end": "2027-01-31",
    "url": "https://www.birminghamhippodrome.com/calendar/sleeping-beauty/"
@@ -2745,9 +2696,9 @@
    "url": "https://www.derbylive.co.uk/whats-on/the-west-end-sings-the-christmas-mixtape/"
   },
   {
-   "title": "Flying High... Beauty & the Beast",
+   "title": "Flying High… Beauty & the Beast",
    "theatre": "Bonington Theatre",
-   "genre": "Family",
+   "genre": "",
    "start": "2026-12-20",
    "end": "2026-12-22",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/flying-high-beauty-the-beast/"
@@ -2758,7 +2709,7 @@
    "genre": "Music",
    "start": "2026-12-20",
    "end": "2026-12-20",
-   "url": "https://www.visitderby.co.uk/events-1/showaddywaddys-christmas-cracker"
+   "url": "https://vaillantlive.co.uk/event/showaddywaddys-christmas-cracker/144/"
   },
   {
    "title": "The D-Day Darlings: A Christmas to Remember",
@@ -2777,17 +2728,17 @@
    "url": "https://brewhouse.co.uk/events/robyn-the-book-monster"
   },
   {
-   "title": "The Puppet Folk Experience - Christmas Show",
+   "title": "The Puppet Folk Experience — Christmas Show",
    "theatre": "Bonington Theatre",
-   "genre": "Family",
+   "genre": "Tribute",
    "start": "2026-12-23",
    "end": "2026-12-23",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/the-puppet-folk-experience-christmas-show/"
   },
   {
-   "title": "Let's All Dance: The Nutcracker",
+   "title": "Let’s All Dance: The Nutcracker",
    "theatre": "Bonington Theatre",
-   "genre": "Dance",
+   "genre": "",
    "start": "2026-12-29",
    "end": "2026-12-29",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/lets-all-dance-the-nutcracker/"
@@ -2817,6 +2768,14 @@
    "url": "https://www.newvictheatre.org.uk/productions/the-pasadena-roof-orchestra-celebrating-the-music-of-the-roaring-twenties-30s/"
   },
   {
+   "title": "Aladdin Set Tour & On Stage Talk",
+   "theatre": "Nottingham Playhouse",
+   "genre": "",
+   "start": "2027-01-08",
+   "end": "2027-01-08",
+   "url": "https://nottinghamplayhouse.co.uk/events/aladdin-set-tour/"
+  },
+  {
    "title": "Independent Comedy Festival Gala Preview Show",
    "theatre": "De Montfort Hall",
    "genre": "Comedy",
@@ -2839,6 +2798,14 @@
    "start": "2027-01-09",
    "end": "2027-01-10",
    "url": "https://www.demontforthall.co.uk/event/greg-davies"
+  },
+  {
+   "title": "Curve Tours",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-01-10",
+   "end": "2027-02-27",
+   "url": "https://www.curveonline.co.uk/whats-on/workshops/curve-tours/"
   },
   {
    "title": "What's Love Got To Do With It?",
@@ -2897,14 +2864,6 @@
    "url": "https://www.grandtheatre.co.uk/whats-on/supreme-queen-3/"
   },
   {
-   "title": "Swinging at the Cotton Club",
-   "theatre": "Derby Theatre",
-   "genre": "Music",
-   "start": "2027-01-14",
-   "end": "2027-01-14",
-   "url": "https://derbytheatre.co.uk/event/swinging-at-the-cotton-club-2027/"
-  },
-  {
    "title": "The Complete Works of Jane Austen, Abridged",
    "theatre": "Bonington Theatre",
    "genre": "Comedy",
@@ -2915,34 +2874,18 @@
   {
    "title": "The Picture of Dorian Gray - A New Musical",
    "theatre": "The Old Rep Theatre",
-   "genre": "Musical",
+   "genre": "Drama",
    "start": "2027-01-14",
    "end": "2027-01-15",
    "url": "https://www.oldrep.co.uk/event-details/345731ADJNQVPHQHBRVMPCLRHJVQKKGPH/the-picture-of-dorian-gray-a-new-musical/"
   },
   {
-   "title": "Gary Delaney: Gary On Laughing",
-   "theatre": "Derby Theatre",
-   "genre": "Comedy",
-   "start": "2027-01-15",
-   "end": "2027-01-15",
-   "url": "https://derbytheatre.co.uk/event/gary-delaney-gary-on-laughing/"
-  },
-  {
-   "title": "National Theatre Live: Hay Fever",
+   "title": "National Theatre Live: Hay Fever (12A TBC)",
    "theatre": "Bonington Theatre",
-   "genre": "Theatre",
+   "genre": "",
    "start": "2027-01-15",
    "end": "2027-01-28",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/national-theatre-live-hay-fever-12a-tbc/"
-  },
-  {
-   "title": "1984",
-   "theatre": "Derby Theatre",
-   "genre": "Theatre",
-   "start": "2027-01-16",
-   "end": "2027-01-17",
-   "url": "https://derbytheatre.co.uk/event/1984-ktco/"
   },
   {
    "title": "Blackout – Fear Loves An Audience",
@@ -2961,7 +2904,7 @@
    "url": "https://www.atgtickets.com/shows/lol-comedy-club-2027/the-piano-bar-regent-theatre/"
   },
   {
-   "title": "Mayor of Gedling's Pantomime: Mack and the Beanstalk",
+   "title": "Mayor of Gedling’s Pantomime: Mack and the Beanstalk",
    "theatre": "Bonington Theatre",
    "genre": "Pantomime",
    "start": "2027-01-16",
@@ -2985,14 +2928,6 @@
    "url": "https://www.lichfieldgarrick.com/events/secrets-of-the-selkie-sea-creative-burntwood"
   },
   {
-   "title": "The Greatest Love of All is Never Too Much",
-   "theatre": "Derby Theatre",
-   "genre": "Music",
-   "start": "2027-01-16",
-   "end": "2027-01-17",
-   "url": "https://derbytheatre.co.uk/event/the-greatest-love-of-all-is-never-too-much/"
-  },
-  {
    "title": "The Noise Next Door: Comedy, Improvised",
    "theatre": "Century Theatre",
    "genre": "Comedy",
@@ -3006,7 +2941,7 @@
    "genre": "Music",
    "start": "2027-01-16",
    "end": "2027-01-16",
-   "url": "https://www.visitderby.co.uk/events-1/whats-love-got-to-do-with-it-1"
+   "url": "https://vaillantlive.co.uk/event/whats-love-got-to-do-with-it/108/"
   },
   {
    "title": "NT Encore: Hay Fever",
@@ -3081,14 +3016,6 @@
    "url": "https://www.lichfieldgarrick.com/events/d-day-darlings"
   },
   {
-   "title": "The Importance of Being Oscar",
-   "theatre": "Derby Theatre",
-   "genre": "Theatre",
-   "start": "2027-01-20",
-   "end": "2027-01-21",
-   "url": "https://derbytheatre.co.uk/event/the-importance-of-being-oscar/"
-  },
-  {
    "title": "The Bluejays",
    "theatre": "New Vic Theatre",
    "genre": "Music",
@@ -3109,16 +3036,8 @@
    "theatre": "De Montfort Hall",
    "genre": "Comedy",
    "start": "2027-01-22",
-   "end": "2027-01-22",
+   "end": "2027-07-07",
    "url": "https://www.demontforthall.co.uk/event/paul-smith-happy"
-  },
-  {
-   "title": "The Space Explorers Academy",
-   "theatre": "Derby Theatre",
-   "genre": "Family",
-   "start": "2027-01-22",
-   "end": "2027-01-22",
-   "url": "https://derbytheatre.co.uk/event/space-explorers/"
   },
   {
    "title": "Tinderella: The Outrageous Adult Panto",
@@ -3161,14 +3080,6 @@
    "url": "https://www.atgtickets.com/shows/luther-live-and-velvet-voices/the-alexandra-theatre-birmingham/"
   },
   {
-   "title": "Punch 2027",
-   "theatre": "Nottingham Playhouse",
-   "genre": "Drama",
-   "start": "2027-01-25",
-   "end": "2027-02-06",
-   "url": "https://nottinghamplayhouse.co.uk/events/punch-2027/"
-  },
-  {
    "title": "Joe Lycett & Friends",
    "theatre": "The Old Rep Theatre",
    "genre": "Comedy",
@@ -3177,20 +3088,20 @@
    "url": "https://www.oldrep.co.uk/event-details/351131ACSPPGKBDTBBHKCHBRDSQVJGKDL/joe-lycett-friends/"
   },
   {
-   "title": "RBO x Met Opera: La Fanciulla Del West",
+   "title": "Punch 2027 Curtain Raiser",
+   "theatre": "Nottingham Playhouse",
+   "genre": "",
+   "start": "2027-01-26",
+   "end": "2027-01-26",
+   "url": "https://nottinghamplayhouse.co.uk/events/punch-2027-curtain-raiser/"
+  },
+  {
+   "title": "RBO x Met Opera: La Fanciulla Del West (Cert TBC)",
    "theatre": "Bonington Theatre",
-   "genre": "Opera",
+   "genre": "",
    "start": "2027-01-26",
    "end": "2027-01-26",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/rbo-x-met-opera-la-fanciulla-del-west-cert-tbc/"
-  },
-  {
-   "title": "The Other Side of Murder",
-   "theatre": "Derby Theatre",
-   "genre": "Theatre",
-   "start": "2027-01-26",
-   "end": "2027-01-30",
-   "url": "https://derbytheatre.co.uk/event/the-other-side-of-murder/"
   },
   {
    "title": "All Things McCartney",
@@ -3225,7 +3136,7 @@
    "url": "https://brewhouse.co.uk/events/the-umbrella-man"
   },
   {
-   "title": "Abi Clarke - Just Tell Me When It's Over",
+   "title": "Abi Clarke – Just Tell Me When It’s Over",
    "theatre": "Nottingham Playhouse",
    "genre": "Comedy",
    "start": "2027-01-30",
@@ -3263,6 +3174,1070 @@
    "start": "2027-01-30",
    "end": "2027-01-30",
    "url": "https://centurytheatre.co.uk/whats-on/titanic-tales/"
+  },
+  {
+   "title": "Dynamo",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Variety",
+   "start": "2027-02-01",
+   "end": "2027-02-05",
+   "url": "https://www.oldrep.co.uk/event-details/343731ABBVDVTQCJLTDMTRLDNTGGNGQMK/dynamo/"
+  },
+  {
+   "title": "Pride and Prejudice* (*sort of)",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-02-01",
+   "end": "2027-02-06",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/pride-and-prejudice-sort-of/"
+  },
+  {
+   "title": "The Illegal Eagles",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "",
+   "start": "2027-02-01",
+   "end": "2027-02-01",
+   "url": "https://www.grandtheatre.co.uk/whats-on/illegal-eagles/"
+  },
+  {
+   "title": "An Evening With The Fast Show",
+   "theatre": "De Montfort Hall",
+   "genre": "",
+   "start": "2027-02-02",
+   "end": "2027-02-02",
+   "url": "https://www.demontforthall.co.uk/event/an-evening-with-the-fast-show"
+  },
+  {
+   "title": "Hamza Yassin: My Life Behind The Lens",
+   "theatre": "De Montfort Hall",
+   "genre": "",
+   "start": "2027-02-03",
+   "end": "2027-02-03",
+   "url": "https://www.demontforthall.co.uk/event/hamza-yassin"
+  },
+  {
+   "title": "The Classic Rock Show",
+   "theatre": "De Montfort Hall",
+   "genre": "",
+   "start": "2027-02-04",
+   "end": "2027-02-04",
+   "url": "https://www.demontforthall.co.uk/event/the-classic-rock-show"
+  },
+  {
+   "title": "Varna Ballet - The Nutcracker",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "",
+   "start": "2027-02-04",
+   "end": "2027-02-04",
+   "url": "https://www.grandtheatre.co.uk/whats-on/the-nutcracker-2/"
+  },
+  {
+   "title": "Murder Trial Tonight V - Death In The Family",
+   "theatre": "De Montfort Hall",
+   "genre": "",
+   "start": "2027-02-05",
+   "end": "2027-02-05",
+   "url": "https://www.demontforthall.co.uk/event/murder-trial-tonight-v"
+  },
+  {
+   "title": "Varna Ballet - Swan Lake",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "",
+   "start": "2027-02-05",
+   "end": "2027-02-06",
+   "url": "https://www.grandtheatre.co.uk/whats-on/swan-lake-2/"
+  },
+  {
+   "title": "Dan Tiernan: Quartz and All",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2027-02-06",
+   "end": "2027-02-06",
+   "url": "https://nottinghamplayhouse.co.uk/events/dan-tiernan-quartz-and-all/"
+  },
+  {
+   "title": "Souvenir – A Tribute to Orchestral Manoeuvres in the Dark",
+   "theatre": "Bonington Theatre",
+   "genre": "Tribute",
+   "start": "2027-02-06",
+   "end": "2027-02-06",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/souvenir-a-tribute-to-orchestral-manoeuvres-in-the-dark/"
+  },
+  {
+   "title": "The Magic Of Motown",
+   "theatre": "De Montfort Hall",
+   "genre": "",
+   "start": "2027-02-06",
+   "end": "2027-02-06",
+   "url": "https://www.demontforthall.co.uk/event/the-magic-of-motown"
+  },
+  {
+   "title": "Varna Ballet - Snow White",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "",
+   "start": "2027-02-06",
+   "end": "2027-02-06",
+   "url": "https://www.grandtheatre.co.uk/whats-on/snow-white-2/"
+  },
+  {
+   "title": "The Royal Opera: Götterdämmerung (Cert TBC)",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2027-02-07",
+   "end": "2027-02-07",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/the-royal-opera-gotterdammerung-cert-tbc/"
+  },
+  {
+   "title": "Paranormal Activity",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "",
+   "start": "2027-02-09",
+   "end": "2027-02-13",
+   "url": "https://www.grandtheatre.co.uk/whats-on/paranormal-activity/"
+  },
+  {
+   "title": "Philharmonia: Santtu Conducts Beethoven And Reich",
+   "theatre": "De Montfort Hall",
+   "genre": "Classical",
+   "start": "2027-02-10",
+   "end": "2027-02-10",
+   "url": "https://www.demontforthall.co.uk/event/philharmonia-santtu-conducts-beethoven-and-reich"
+  },
+  {
+   "title": "The Great Baldini and Peter Clifford present: Holmes and Watson and The Curious Case of the Masked Magician",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2027-02-10",
+   "end": "2027-02-10",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/the-great-baldini-and-peter-clifford-present-holmes-and-watson-and-the-curious-case-of-the-masked-magician/"
+  },
+  {
+   "title": "Jazz Steps: Soft Machine",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2027-02-11",
+   "end": "2027-02-11",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/jazz-steps-soft-machine/"
+  },
+  {
+   "title": "All Things McCartney",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2027-02-12",
+   "end": "2027-02-12",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/all-things-mccartney-2/"
+  },
+  {
+   "title": "An Evening with Melvyn Hayes",
+   "theatre": "Century Theatre",
+   "genre": "",
+   "start": "2027-02-12",
+   "end": "2027-02-12",
+   "url": "https://centurytheatre.co.uk/whats-on/an-evening-with-melvyn-hayes/"
+  },
+  {
+   "title": "Sins",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Classical-Theatre",
+   "start": "2027-02-12",
+   "end": "2027-02-13",
+   "url": "https://www.oldrep.co.uk/event-details/340131ADDRDLBHKDGDRNPCCQTLBVVRKBH/sins/"
+  },
+  {
+   "title": "Sky Full Of Stars: A Tribute To Coldplay",
+   "theatre": "De Montfort Hall",
+   "genre": "Tribute",
+   "start": "2027-02-12",
+   "end": "2027-02-12",
+   "url": "https://www.demontforthall.co.uk/event/sky-full-of-stars"
+  },
+  {
+   "title": "Jason Fox - Embrace The Chaos",
+   "theatre": "De Montfort Hall",
+   "genre": "",
+   "start": "2027-02-13",
+   "end": "2027-02-13",
+   "url": "https://www.demontforthall.co.uk/event/jason-fox"
+  },
+  {
+   "title": "Savage",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-02-13",
+   "end": "2027-03-06",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/savage/"
+  },
+  {
+   "title": "The Motown Gospel Choir with Rachel Modest",
+   "theatre": "Century Theatre",
+   "genre": "",
+   "start": "2027-02-13",
+   "end": "2027-02-13",
+   "url": "https://centurytheatre.co.uk/whats-on/the-motown-gospel-choir-with-rachel-modest/"
+  },
+  {
+   "title": "Science Museum & UK Space Agency: Space Explorers Academy",
+   "theatre": "Nottingham Playhouse",
+   "genre": "",
+   "start": "2027-02-15",
+   "end": "2027-02-15",
+   "url": "https://nottinghamplayhouse.co.uk/events/science-museum-uk-space-agency-space-explorers-academy/"
+  },
+  {
+   "title": "Susan Calman: Tall Tales",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2027-02-15",
+   "end": "2027-02-15",
+   "url": "https://nottinghamplayhouse.co.uk/events/susan-calman-tall-tales/"
+  },
+  {
+   "title": "Annie",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "",
+   "start": "2027-02-16",
+   "end": "2027-02-21",
+   "url": "https://www.grandtheatre.co.uk/whats-on/annie/"
+  },
+  {
+   "title": "The Good, The Bad And The Rugby",
+   "theatre": "De Montfort Hall",
+   "genre": "",
+   "start": "2027-02-16",
+   "end": "2027-02-16",
+   "url": "https://www.demontforthall.co.uk/event/the-good-the-bad-and-the-rugby"
+  },
+  {
+   "title": "The Ronnie Scott’s Soho Songbook",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Music",
+   "start": "2027-02-16",
+   "end": "2027-02-16",
+   "url": "https://nottinghamplayhouse.co.uk/events/ronnie-scotts-soho-songbook/"
+  },
+  {
+   "title": "Cirque Enchantment",
+   "theatre": "De Montfort Hall",
+   "genre": "",
+   "start": "2027-02-17",
+   "end": "2027-02-17",
+   "url": "https://www.demontforthall.co.uk/event/cirque-enchantment"
+  },
+  {
+   "title": "Alice Roberts: From Cell To Civilisation",
+   "theatre": "De Montfort Hall",
+   "genre": "",
+   "start": "2027-02-18",
+   "end": "2027-02-18",
+   "url": "https://www.demontforthall.co.uk/event/alice-roberts"
+  },
+  {
+   "title": "A Night at the Musicals – Sandy Smith and Sophie Mairi",
+   "theatre": "Bonington Theatre",
+   "genre": "Musical",
+   "start": "2027-02-19",
+   "end": "2027-02-19",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/a-night-at-the-musicals-sandy-smith-and-sophie-mairi/"
+  },
+  {
+   "title": "Clinton Baptiste: Spectral Intercourse",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2027-02-19",
+   "end": "2027-02-19",
+   "url": "https://nottinghamplayhouse.co.uk/events/clinton-baptiste/"
+  },
+  {
+   "title": "Earth Calling Bear-stronaut",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Children's Theatre",
+   "start": "2027-02-19",
+   "end": "2027-02-19",
+   "url": "https://nottinghamplayhouse.co.uk/events/earth-calling-bear-stronaut-2/"
+  },
+  {
+   "title": "Hadestown",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-02-19",
+   "end": "2027-03-06",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/hadestown/"
+  },
+  {
+   "title": "Maisie Adam: Whatsherface",
+   "theatre": "De Montfort Hall",
+   "genre": "",
+   "start": "2027-02-19",
+   "end": "2027-02-19",
+   "url": "https://www.demontforthall.co.uk/event/maisie-adam"
+  },
+  {
+   "title": "Banff Mountain Film Festival",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Film",
+   "start": "2027-02-20",
+   "end": "2027-02-20",
+   "url": "https://nottinghamplayhouse.co.uk/events/banff-film-festival/"
+  },
+  {
+   "title": "Comedy Club 4 Kids",
+   "theatre": "De Montfort Hall",
+   "genre": "Comedy",
+   "start": "2027-02-20",
+   "end": "2027-02-20",
+   "url": "https://www.demontforthall.co.uk/event/comedy-club-4-kids"
+  },
+  {
+   "title": "Ed Gamble: Fresh Hell",
+   "theatre": "De Montfort Hall",
+   "genre": "",
+   "start": "2027-02-20",
+   "end": "2027-02-20",
+   "url": "https://www.demontforthall.co.uk/event/ed-gamble"
+  },
+  {
+   "title": "Matinees of Murders and Mysteries presents… The Scottish Detective, David Swindle",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2027-02-21",
+   "end": "2027-02-21",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/matinees-of-murders-and-mysteries-presents-the-scottish-detective-david-swindle/"
+  },
+  {
+   "title": "Banff Mountain Film Festival World Tour 2027",
+   "theatre": "De Montfort Hall",
+   "genre": "",
+   "start": "2027-02-23",
+   "end": "2027-09-15",
+   "url": "https://www.demontforthall.co.uk/event/banff-mountain-film-festival-world-tour-2027"
+  },
+  {
+   "title": "Everybody's Talking About Jamie",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "",
+   "start": "2027-02-23",
+   "end": "2027-02-27",
+   "url": "https://www.grandtheatre.co.uk/whats-on/everybodys-talking-about-jamie/"
+  },
+  {
+   "title": "The Royal Opera: Così fan tutte (Cert TBC)",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2027-02-23",
+   "end": "2027-02-23",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/the-royal-opera-cosi-fan-tutte-cert-tbc/"
+  },
+  {
+   "title": "Birdcatcher",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Drama",
+   "start": "2027-02-25",
+   "end": "2027-02-27",
+   "url": "https://nottinghamplayhouse.co.uk/events/birdcatcher/"
+  },
+  {
+   "title": "Tap Factory - Reloaded",
+   "theatre": "De Montfort Hall",
+   "genre": "",
+   "start": "2027-02-25",
+   "end": "2027-02-25",
+   "url": "https://www.demontforthall.co.uk/event/tap-factory-reloaded"
+  },
+  {
+   "title": "Coalville Comedy Club",
+   "theatre": "Century Theatre",
+   "genre": "Comedy",
+   "start": "2027-02-26",
+   "end": "2027-02-26",
+   "url": "https://centurytheatre.co.uk/whats-on/coalville-comedy-club-3/"
+  },
+  {
+   "title": "Legend – The Music Of Bob Marley",
+   "theatre": "De Montfort Hall",
+   "genre": "",
+   "start": "2027-02-26",
+   "end": "2027-02-26",
+   "url": "https://www.demontforthall.co.uk/event/legend-the-music-of-bob-marley"
+  },
+  {
+   "title": "The Amy Winehouse Band",
+   "theatre": "De Montfort Hall",
+   "genre": "",
+   "start": "2027-02-27",
+   "end": "2027-02-27",
+   "url": "https://www.demontforthall.co.uk/event/the-amy-winehouse-band"
+  },
+  {
+   "title": "The King's Speech",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Drama",
+   "start": "2027-02-27",
+   "end": "2027-03-06",
+   "url": "https://www.oldrep.co.uk/event-details/333931APSDRKTLKNMHMNMMNVCJCSRGNCL/the-kings-speech/"
+  },
+  {
+   "title": "Elkie Brooks - The Long Farewell Tour",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "",
+   "start": "2027-02-28",
+   "end": "2027-02-28",
+   "url": "https://www.grandtheatre.co.uk/whats-on/elkie-brooks-the-long-farewell-tour/"
+  },
+  {
+   "title": "A Shoddy Detective and The Art of Deception",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "",
+   "start": "2027-03-01",
+   "end": "2027-03-01",
+   "url": "https://www.grandtheatre.co.uk/whats-on/a-shoddy-detective-and-the-art-of-deception/"
+  },
+  {
+   "title": "Giovanni - Unstoppable",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "",
+   "start": "2027-03-02",
+   "end": "2027-03-02",
+   "url": "https://www.grandtheatre.co.uk/whats-on/giovanni-unstoppable/"
+  },
+  {
+   "title": "Attention All Shipping: A Celebration of the Shipping Forecast",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2027-03-03",
+   "end": "2027-03-03",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/attention-all-shipping-a-celebration-of-the-shipping-forecast/"
+  },
+  {
+   "title": "Queenz - Battle of the Divas",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "",
+   "start": "2027-03-03",
+   "end": "2027-03-03",
+   "url": "https://www.grandtheatre.co.uk/whats-on/queenz-battle-of-the-divas/"
+  },
+  {
+   "title": "QUO CONNECTION",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2027-03-05",
+   "end": "2027-03-05",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/quo-connection/"
+  },
+  {
+   "title": "Music from Stage & Screen presented by The Renaissance Big Band",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2027-03-06",
+   "end": "2027-03-06",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/music-from-stage-screen-presented-by-the-renaissance-big-band/"
+  },
+  {
+   "title": "Annie",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-03-09",
+   "end": "2027-03-14",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/annie-3/"
+  },
+  {
+   "title": "Expendable Curtain Raiser",
+   "theatre": "Nottingham Playhouse",
+   "genre": "",
+   "start": "2027-03-09",
+   "end": "2027-03-09",
+   "url": "https://nottinghamplayhouse.co.uk/events/expendable-curtain-raiser/"
+  },
+  {
+   "title": "ABBA Sensation",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2027-03-12",
+   "end": "2027-03-12",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/abba-sensation-4/"
+  },
+  {
+   "title": "The Bacchae",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Drama",
+   "start": "2027-03-12",
+   "end": "2027-03-12",
+   "url": "https://nottinghamplayhouse.co.uk/events/the-bacchae/"
+  },
+  {
+   "title": "Punch",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-03-16",
+   "end": "2027-03-20",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/punch/"
+  },
+  {
+   "title": "Retro Feva 90’s – The Ultimate 90’s Show",
+   "theatre": "Century Theatre",
+   "genre": "",
+   "start": "2027-03-20",
+   "end": "2027-03-20",
+   "url": "https://centurytheatre.co.uk/whats-on/retro-feva-90s-the-ultimate-90s-show/"
+  },
+  {
+   "title": "The Very Hungry Caterpillar",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-03-22",
+   "end": "2027-03-24",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/the-very-hungry-caterpillar-3/"
+  },
+  {
+   "title": "The Royal Ballet: Alice’s Adventures in Wonderland (Cert TBC)",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2027-03-23",
+   "end": "2027-03-28",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/rbo-alices-adventures-in-wonderland-cert-tbc/"
+  },
+  {
+   "title": "Legends of Motown",
+   "theatre": "Bonington Theatre",
+   "genre": "Tribute",
+   "start": "2027-03-24",
+   "end": "2027-03-25",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/legends-of-motown-4/"
+  },
+  {
+   "title": "Beatles Complete -A Tribute To The Fab Four",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Live-Music",
+   "start": "2027-03-26",
+   "end": "2027-03-26",
+   "url": "https://www.oldrep.co.uk/event-details/339931ALHKCDJCLQRTNQCHMLBKBTQCGQR/beatles-complete-a-tribute-to-the-fab-four/"
+  },
+  {
+   "title": "Just For One Day: The Live Aid Musical",
+   "theatre": "Curve Theatre",
+   "genre": "Musical",
+   "start": "2027-03-27",
+   "end": "2027-04-10",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/just-for-one-day/"
+  },
+  {
+   "title": "Goldilocks",
+   "theatre": "Curve Theatre",
+   "genre": "Pantomime",
+   "start": "2027-03-30",
+   "end": "2027-03-31",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/goldilocks-2/"
+  },
+  {
+   "title": "Copper Studios: Bring It On- The Musical",
+   "theatre": "Bonington Theatre",
+   "genre": "Musical",
+   "start": "2027-03-31",
+   "end": "2027-04-03",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/copper-studios-bring-it-on-the-musical/"
+  },
+  {
+   "title": "Tatty MacLeod",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2027-03-31",
+   "end": "2027-03-31",
+   "url": "https://nottinghamplayhouse.co.uk/events/tatty-macleod-2/"
+  },
+  {
+   "title": "Copper Studios: Stranger Sings! – The Parody Musical",
+   "theatre": "Bonington Theatre",
+   "genre": "Musical",
+   "start": "2027-04-01",
+   "end": "2027-04-04",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/copper-studios-stranger-sings-the-parody-musical/"
+  },
+  {
+   "title": "Jon Culshaw: Me, Myself & Others",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2027-04-01",
+   "end": "2027-04-01",
+   "url": "https://nottinghamplayhouse.co.uk/events/jon-culshaw-me-myself-others/"
+  },
+  {
+   "title": "ELO Again",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Music",
+   "start": "2027-04-02",
+   "end": "2027-04-02",
+   "url": "https://nottinghamplayhouse.co.uk/events/elo-again-2/"
+  },
+  {
+   "title": "Rhys James: Chop Logic",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2027-04-03",
+   "end": "2027-04-03",
+   "url": "https://nottinghamplayhouse.co.uk/events/rhys-james/"
+  },
+  {
+   "title": "1971 The Show",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Live-Music",
+   "start": "2027-04-04",
+   "end": "2027-04-04",
+   "url": "https://www.oldrep.co.uk/event-details/342531ARDPGRVRCVBNQMBRBSMCQNQQSQC/1971-the-show/"
+  },
+  {
+   "title": "The King's Speech",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-04-06",
+   "end": "2027-04-10",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/the-kings-speech/"
+  },
+  {
+   "title": "Boyband Legends",
+   "theatre": "Bonington Theatre",
+   "genre": "Tribute",
+   "start": "2027-04-10",
+   "end": "2027-04-10",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/boysbands-legends/"
+  },
+  {
+   "title": "Jon Culshaw: Me, Myself & Others",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-04-11",
+   "end": "2027-04-11",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/jon-culshaw-me-myself-others/"
+  },
+  {
+   "title": "Jersey Boys",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-04-13",
+   "end": "2027-04-24",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/jersey-boys-2/"
+  },
+  {
+   "title": "Blondish – Blondie Tribute",
+   "theatre": "Bonington Theatre",
+   "genre": "Tribute",
+   "start": "2027-04-16",
+   "end": "2027-04-16",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/blondish-blondie-tribute-2/"
+  },
+  {
+   "title": "Julian Clary: Fully Dilated",
+   "theatre": "Nottingham Playhouse",
+   "genre": "",
+   "start": "2027-04-16",
+   "end": "2027-04-16",
+   "url": "https://nottinghamplayhouse.co.uk/events/julian-clary-2/"
+  },
+  {
+   "title": "The Last Wild",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-04-16",
+   "end": "2027-04-17",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/the-last-wild/"
+  },
+  {
+   "title": "Tina Live – Simply The Best Tribute To Tina Turner",
+   "theatre": "Century Theatre",
+   "genre": "Tribute",
+   "start": "2027-04-16",
+   "end": "2027-04-16",
+   "url": "https://centurytheatre.co.uk/whats-on/tina-live-simply-the-best-tribute-to-tina-turner/"
+  },
+  {
+   "title": "Showstopper -The Improvised Musical",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Musical",
+   "start": "2027-04-17",
+   "end": "2027-04-17",
+   "url": "https://nottinghamplayhouse.co.uk/events/showstopper/"
+  },
+  {
+   "title": "Romeo and Juliet Curtain Raiser",
+   "theatre": "Nottingham Playhouse",
+   "genre": "",
+   "start": "2027-04-20",
+   "end": "2027-04-20",
+   "url": "https://nottinghamplayhouse.co.uk/events/romeo-and-juliet-curtain-raiser/"
+  },
+  {
+   "title": "Myra's Story",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-04-21",
+   "end": "2027-04-21",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/myras-story/"
+  },
+  {
+   "title": "Black is the Color of my Voice",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-04-22",
+   "end": "2027-04-23",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/black-is-the-color-of-my-voice/"
+  },
+  {
+   "title": "ELO Encounter - 10th Anniversary Tour",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Live-Music",
+   "start": "2027-04-24",
+   "end": "2027-04-24",
+   "url": "https://www.oldrep.co.uk/event-details/283331ABKMPRJHNCJSGSJJCVMTTDVNBMK/elo-encounter-10th-anniversary-tour/"
+  },
+  {
+   "title": "The Royal Ballet: Swan Lake (Cert TBC)",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2027-04-25",
+   "end": "2027-04-25",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/the-royal-ballet-swan-lake-cert-tbc/"
+  },
+  {
+   "title": "Crime and Punishment",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-04-26",
+   "end": "2027-04-29",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/crime-and-punishment/"
+  },
+  {
+   "title": "Jurassic",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-04-30",
+   "end": "2027-04-30",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/jurassic/"
+  },
+  {
+   "title": "Laura Newman - Ark At She",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-05-01",
+   "end": "2027-05-01",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/laura-newman-ark-at-she/"
+  },
+  {
+   "title": "Signatures and the Black British Dance Platform",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-05-05",
+   "end": "2027-05-05",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/signatures-and-the-black-british-dance-platform-3/"
+  },
+  {
+   "title": "The Royal Opera: Tosca (Cert TBC)",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2027-05-05",
+   "end": "2027-05-09",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/the-royal-opera-tosca-cert-tbc/"
+  },
+  {
+   "title": "Eurovision Your Decision",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Live-Music",
+   "start": "2027-05-06",
+   "end": "2027-05-06",
+   "url": "https://www.oldrep.co.uk/event-details/351931AJRMDDPCQQBPHLVTNBQGBLKRCKM/eurovision-your-decision/"
+  },
+  {
+   "title": "Deeply Rooted Dance Theater",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-05-07",
+   "end": "2027-05-08",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/deeply-rooted-dance-theater/"
+  },
+  {
+   "title": "The Carpenters Experience",
+   "theatre": "Century Theatre",
+   "genre": "Tribute",
+   "start": "2027-05-08",
+   "end": "2027-05-08",
+   "url": "https://centurytheatre.co.uk/whats-on/the-carpenters-experience-4/"
+  },
+  {
+   "title": "Starlight Express",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-05-09",
+   "end": "2027-05-22",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/starlight-express/"
+  },
+  {
+   "title": "Paul Zerdin: Shut Your Mouth",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-05-14",
+   "end": "2027-05-14",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/paul-zerdin-shut-your-mouth/"
+  },
+  {
+   "title": "What A Feeling - Live!",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Live-Music",
+   "start": "2027-05-14",
+   "end": "2027-05-14",
+   "url": "https://www.oldrep.co.uk/event-details/357131ADBKBGBQTGMQTLKGDPPMRJQGQTL/what-a-feeling-live/"
+  },
+  {
+   "title": "Al Murray: All You Need is Guv",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2027-05-16",
+   "end": "2027-05-16",
+   "url": "https://nottinghamplayhouse.co.uk/events/al-murray-all-you-need-is-guv/"
+  },
+  {
+   "title": "Ed Byrne – No Dramas",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2027-05-20",
+   "end": "2027-05-20",
+   "url": "https://nottinghamplayhouse.co.uk/events/ed-byrne-no-dramas/"
+  },
+  {
+   "title": "Cycles",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-05-25",
+   "end": "2027-05-25",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/cycles/"
+  },
+  {
+   "title": "The Royal Ballet: Romeo & Juliet (Cert TBC)",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2027-05-25",
+   "end": "2027-05-30",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/the-royal-ballet-romeo-juliet-cert-tbc/"
+  },
+  {
+   "title": "Johannes Radebe: Finally Home",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-05-27",
+   "end": "2027-05-29",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/johannes-radebe-finally-home/"
+  },
+  {
+   "title": "Dirty Dancing",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-06-01",
+   "end": "2027-06-05",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/dirty-dancing/"
+  },
+  {
+   "title": "Be My Baby: The Musical Curtain Raiser",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Musical",
+   "start": "2027-06-03",
+   "end": "2027-06-03",
+   "url": "https://nottinghamplayhouse.co.uk/events/be-my-baby-the-musical-curtain-raiser/"
+  },
+  {
+   "title": "Paranormal Activity",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-06-08",
+   "end": "2027-06-12",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/paranormal-activity/"
+  },
+  {
+   "title": "Emmeline Pankhurst – Angel or Anarchist? + Post-Show Q&A",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2027-06-12",
+   "end": "2027-06-12",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/emmeline-pankhurst-angel-or-anarchist-post-show-qa/"
+  },
+  {
+   "title": "An Evening of Mediumship with Psychic Tony Stockwell",
+   "theatre": "Century Theatre",
+   "genre": "",
+   "start": "2027-06-14",
+   "end": "2027-06-14",
+   "url": "https://centurytheatre.co.uk/whats-on/an-evening-of-mediumship-with-psychic-tony-stockwell/"
+  },
+  {
+   "title": "Everybody's Talking About Jamie",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-06-14",
+   "end": "2027-06-19",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/everybodys-talking-about-jamie-2/"
+  },
+  {
+   "title": "UnderCover Cliff",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2027-06-19",
+   "end": "2027-06-19",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/undercover-cliff-2/"
+  },
+  {
+   "title": "Love's Labour's Lost @ Middleton Hall",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Comedy",
+   "start": "2027-06-27",
+   "end": "2027-06-27",
+   "url": "https://www.oldrep.co.uk/event-details/356731ACSDKKNBBRVVTBJSSKCNVPRHGLB/loves-labours-lost-middleton-hall/"
+  },
+  {
+   "title": "Love's Labour's Lost @ Alveston Manor",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Comedy",
+   "start": "2027-07-03",
+   "end": "2027-07-03",
+   "url": "https://www.oldrep.co.uk/event-details/356331ALJBSHLRQNBNLMRKNSRDQCRJRHS/loves-labours-lost-alveston-manor/"
+  },
+  {
+   "title": "The Full Monty",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-07-05",
+   "end": "2027-07-10",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/the-full-monty-2/"
+  },
+  {
+   "title": "Love's Labour's Lost @ Selly Manor",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Comedy",
+   "start": "2027-07-07",
+   "end": "2027-07-08",
+   "url": "https://www.oldrep.co.uk/event-details/356531AHTSGMSLBLCMDRJCDTNKHCVGCPK/loves-labours-lost-selly-manor/"
+  },
+  {
+   "title": "Love's Labour's Lost @ Harvington Hall",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Comedy",
+   "start": "2027-07-10",
+   "end": "2027-07-11",
+   "url": "https://www.oldrep.co.uk/event-details/356131AVHBCMPPSCJNJMNDJVCLNVMTBTQ/loves-labours-lost-harvington-hall/"
+  },
+  {
+   "title": "Strangers on a Train",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-07-13",
+   "end": "2027-07-17",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/strangers-on-a-train/"
+  },
+  {
+   "title": "MC Hammersmith – Ice Ice Nepo Baby",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2027-07-14",
+   "end": "2027-07-14",
+   "url": "https://nottinghamplayhouse.co.uk/events/mc-hammersmith/"
+  },
+  {
+   "title": "Go Your Own Way",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Music",
+   "start": "2027-07-15",
+   "end": "2027-07-15",
+   "url": "https://nottinghamplayhouse.co.uk/events/go-your-own-way-2/"
+  },
+  {
+   "title": "Stuart Mitchell: Life Support",
+   "theatre": "The Old Rep Theatre",
+   "genre": "Comedy",
+   "start": "2027-07-21",
+   "end": "2027-07-21",
+   "url": "https://www.oldrep.co.uk/event-details/336731AVRDLBTBTHVHNHNVLSNSVPNSKBS/stuart-mitchell-life-support/"
+  },
+  {
+   "title": "The Cliff Richard Story",
+   "theatre": "Century Theatre",
+   "genre": "",
+   "start": "2027-07-24",
+   "end": "2027-07-24",
+   "url": "https://centurytheatre.co.uk/whats-on/the-cliff-richards-story/"
+  },
+  {
+   "title": "Misfits Together",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-09-04",
+   "end": "2027-10-02",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/misfits-together/"
+  },
+  {
+   "title": "Billy Fury meets Elvis Presley",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2027-09-10",
+   "end": "2027-09-10",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/billy-fury-meets-elvis-presley/"
+  },
+  {
+   "title": "Frock with laughter",
+   "theatre": "Century Theatre",
+   "genre": "",
+   "start": "2027-09-10",
+   "end": "2027-09-11",
+   "url": "https://centurytheatre.co.uk/whats-on/frock-with-laughter-2/"
+  },
+  {
+   "title": "Lee Mead – The Colours of My Life",
+   "theatre": "Century Theatre",
+   "genre": "",
+   "start": "2027-09-23",
+   "end": "2027-09-23",
+   "url": "https://centurytheatre.co.uk/whats-on/lee-mead-the-colours-of-my-life/"
+  },
+  {
+   "title": "Scummy Mummies: On the Edge",
+   "theatre": "Nottingham Playhouse",
+   "genre": "",
+   "start": "2027-10-07",
+   "end": "2027-10-07",
+   "url": "https://nottinghamplayhouse.co.uk/events/scummy-mummies-on-the-edge/"
+  },
+  {
+   "title": "Count Arthur Strong’s ‘And it’s Goodnight From Me!’",
+   "theatre": "Nottingham Playhouse",
+   "genre": "Comedy",
+   "start": "2027-10-09",
+   "end": "2027-10-09",
+   "url": "https://nottinghamplayhouse.co.uk/events/count-arthur-strongs-and-its-goodnight-from-me/"
+  },
+  {
+   "title": "Tom Davis: Spudgun 2026 Tour",
+   "theatre": "Nottingham Playhouse",
+   "genre": "",
+   "start": "2027-10-10",
+   "end": "2027-10-10",
+   "url": "https://nottinghamplayhouse.co.uk/events/tom-davis-spudgun-2026-tour/"
+  },
+  {
+   "title": "The Signatures Northern Soul Live, featuring the Flirtations",
+   "theatre": "Century Theatre",
+   "genre": "",
+   "start": "2027-10-16",
+   "end": "2027-10-16",
+   "url": "https://centurytheatre.co.uk/whats-on/the-signatures-northern-soul-live-featuring-the-flirtations/"
+  },
+  {
+   "title": "Operation Mincemeat",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-10-19",
+   "end": "2027-10-23",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/operation-mincemeat/"
+  },
+  {
+   "title": "Hairspray",
+   "theatre": "Curve Theatre",
+   "genre": "",
+   "start": "2027-11-08",
+   "end": "2027-11-13",
+   "url": "https://www.curveonline.co.uk/whats-on/shows/hairspray-3/"
   }
  ]
 }

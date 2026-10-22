@@ -1,6 +1,16 @@
 [
  {
+  "url": "https://a.ad.gt/api/v1/u/matches/747?url=https%3A%2F%2Fwww.forestlive.com%2Fcannockchaseforest&ref=",
+  "status": 200,
+  "type": "application/javascript"
+ },
+ {
   "url": "https://global.ketchcdn.com/web/v3/ip",
+  "status": 200,
+  "type": "application/json"
+ },
+ {
+  "url": "https://global.ketchcdn.com/web/v3/config/live_nation/forestlive_com/production/usa/en-GB/config.json?hash=6580244883220693107",
   "status": 200,
   "type": "application/json"
  },
@@ -10,19 +20,9 @@
   "type": "application/json; charset=UTF-8"
  },
  {
-  "url": "https://global.ketchcdn.com/web/v3/config/live_nation/forestlive_com/production/usa/en-GB/config.json?hash=6580244883220693107",
-  "status": 200,
-  "type": "application/json"
- },
- {
-  "url": "https://analytics.google.com/g/collect?v=2&tid=G-TSJTRNFWS7&gtm=45je6al0h2v9134210211za20ozb812861878zd812861878xf1&_p=1792670292895&_gaz=1&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&tcfd=10000&gdid=dN2JhM2&_eu=EAAAAGA&cid=969873025.1792670293&frm=0&ir=1&pscdl=noapi&rcb=18&sr=1280x900&tt=nfqkk7ro&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&gaf=2&_s=1&tag_exp=115616985~115938465~115938469~118897920~118897930~119860443~120213116~120385423~120469145~120469153~121246026~121246034&sid=1792670293&sct=1&seg=0&dl=https%3A%2F%2Fwww.forestlive.com%2Fcannockchaseforest&dt=Cannock%20Chase%20Forest&en=page_view&_fv=2&_nsi=1&_ss=1&ep.state_ga_cookie=false&ep.consent_state_analytics_storage=true&ep.state_analytics_and_ga_cookie=&ep.view_source=false&ep.login_status=false&ep.content_group=landing&epn.event_time=1792670293&ep.action_source=website&ep.artist_genres=&ep.page_country=United%20Kingdom&ep.page_language=en-GB&ep.page_name=Cannock%20Chase%20Forest&ep.page_type=landing&up.state_ga_cookie=false&up.consent_state_analytics_storage=true&up.login_status=false&up.state_analytics_and_ga_cookie=&tfd=1557",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-TSJTRNFWS7&gtm=45je6ak1v9134210211za20ozb812861878zd812861878xf1&_p=1792671300661&_gaz=1&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&tcfd=10000&gdid=dN2JhM2&_eu=EAAAAGA&cid=1163883603.1792671301&frm=0&ir=1&pscdl=noapi&rcb=7&sr=1280x900&tt=nfqkk7ro&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&gaf=2&_s=1&tag_exp=115616986~115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034&sid=1792671301&sct=1&seg=0&dl=https%3A%2F%2Fwww.forestlive.com%2Fcannockchaseforest&dt=Cannock%20Chase%20Forest&en=page_view&_fv=2&_nsi=1&_ss=1&ep.state_ga_cookie=false&ep.consent_state_analytics_storage=true&ep.state_analytics_and_ga_cookie=&ep.view_source=false&ep.login_status=false&ep.content_group=landing&epn.event_time=1792671301&ep.action_source=website&ep.artist_genres=&ep.page_country=United%20Kingdom&ep.page_language=en-GB&ep.page_name=Cannock%20Chase%20Forest&ep.page_type=landing&up.state_ga_cookie=false&up.consent_state_analytics_storage=true&up.login_status=false&up.state_analytics_and_ga_cookie=&tfd=1777",
   "status": 204,
   "type": "text/plain"
- },
- {
-  "url": "https://a.ad.gt/api/v1/u/matches/747?url=https%3A%2F%2Fwww.forestlive.com%2Fcannockchaseforest&ref=",
-  "status": 200,
-  "type": "application/javascript"
  },
  {
   "url": "https://connect.facebook.net/signals/config/1318968241969551?v=2.9.427&r=stable&domain=www.forestlive.com&optin_meta_enabled_capi=true&hme=766752a074f0cb0756dd3275a46fdecbcfe3de1ab8f573546734b619e44d384f&ex_m=118%2C241%2C171%2C27%2C82%2C83%2C162%2C78%2C77%2C11%2C181%2C102%2C20%2C153%2C141%2C46%2C85%2C90%2C149%2C176%2C183%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C115%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C37%2C55%2C163%2C87%2C126%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C124%2C160%2C164%2C53%2C125%2C29%2C26%2C133%2C79%2C43%2C166%2C165%2C167%2C157%2C155%2C30%2C42%2C66%2C123%2C178%2C80%2C21%2C128%2C93%2C76%2C23%2C97%2C98%2C130%2C96%2C151%2C150%2C154%2C109%2C177%2C180%2C41%2C56%2C127%2C54%2C161%2C72%2C185%2C110%2C184%2C210%2C255%2C84%2C274%2C273%2C272%2C14%2C25%2C28%2C40%2C62%2C117%2C68%2C10%2C73%2C111%2C112%2C113%2C119%2C144%2C38%2C36%2C146%2C147%2C148%2C143%2C142%2C172%2C86%2C175%2C173%2C174%2C57%2C69%2C67%2C137%2C19%2C179%2C52%2C324%2C325%2C326%2C323%2C340%2C362%2C248%2C237%2C70%2C238%2C236%2C365%2C356%2C59%2C249%2C121%2C145%2C92%2C135%2C61%2C134%2C140%2C139%2C65%2C74%2C168%2C88%2C89%2C129%2C44%2C39%2C60%2C63%2C114%2C182%2C1%2C138%2C16%2C136%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C132%2C101%2C100%2C187%2C188%2C106%2C107%2C9%2C116%2C186%2C58%2C158%2C99%2C91%2C81%2C131%2C120%2C169%2C50%2C159%2C0%2C94%2C152%2C156%2C170%2C45%2C122%2C13%2C189",
@@ -30,39 +30,19 @@
   "type": "application/x-javascript; charset=utf-8"
  },
  {
-  "url": "https://global.ketchcdn.com/web/v3/consent/live_nation/get",
-  "status": 200,
-  "type": "application/json"
- },
- {
-  "url": "https://analytics.tiktok.com/api/v2/pixel",
-  "status": 200,
-  "type": ""
- },
- {
-  "url": "https://analytics.tiktok.com/api/v2/pixel",
-  "status": 200,
-  "type": ""
- },
- {
-  "url": "https://analytics.tiktok.com/api/v2/pixel",
-  "status": 200,
-  "type": ""
- },
- {
   "url": "https://8347d761-7b38-45f0-b0a8-34b664f7c00f.prmutv.co/v2.0/pxid?k=25d8de23-8921-4b59-aae4-de79460f0d24",
   "status": 200,
   "type": "application/json"
  },
  {
-  "url": "https://analytics.google.com/g/collect?v=2&tid=G-ZN5Y6FQ1RQ&gtm=45je6al0h2v9101308084za20ozb812861878zd812861878xf1&_p=1792670292895&_gaz=1&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&tcfd=10000&gdid=dN2JhM2&_eu=AAAAACAC&cid=969873025.1792670293&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=7&sr=1280x900&tt=nfqkk7ro&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&_s=1&tag_exp=115616986~115938465~115938468~118897920~118897930~119860443~120213116~120385423~120469145~120469153~121246026~121246034&sid=1792670293&sct=1&seg=0&dl=https%3A%2F%2Fwww.forestlive.com%2Fcannockchaseforest&dt=Cannock%20Chase%20Forest&en=page_view&_fv=1&_ss=1&ep.state_ga_cookie=false&ep.consent_state_analytics_storage=true&ep.state_analytics_and_ga_cookie=&ep.view_source=false&ep.login_status=false&ep.content_group=landing&epn.event_time=1792670293&ep.action_source=website&ep.artist_genres=&ep.page_country=United%20Kingdom&ep.page_language=en-GB&ep.page_name=Cannock%20Chase%20Forest&ep.page_type=landing&up.state_ga_cookie=false&up.consent_state_analytics_storage=true&up.login_status=false&up.state_analytics_and_ga_cookie=&tfd=1935",
-  "status": 204,
-  "type": "text/plain"
- },
- {
-  "url": "https://api.permutive.com/v2.0/geoip?include=geo&include=isp&include=ip_hash&k=25d8de23-8921-4b59-aae4-de79460f0d24",
+  "url": "https://global.ketchcdn.com/web/v3/consent/live_nation/get",
   "status": 200,
   "type": "application/json"
+ },
+ {
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-ZN5Y6FQ1RQ&gtm=45je6ak1v9101308084za20ozb812861878zd812861878xf1&_p=1792671300661&_gaz=1&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&tcfd=10000&gdid=dN2JhM2&_eu=AAAAACAC&cid=1163883603.1792671301&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=1&sr=1280x900&tt=nfqkk7ro&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&_s=1&tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034&sid=1792671301&sct=1&seg=0&dl=https%3A%2F%2Fwww.forestlive.com%2Fcannockchaseforest&dt=Cannock%20Chase%20Forest&en=page_view&_fv=1&_ss=1&ep.state_ga_cookie=false&ep.consent_state_analytics_storage=true&ep.state_analytics_and_ga_cookie=&ep.view_source=false&ep.login_status=false&ep.content_group=landing&epn.event_time=1792671301&ep.action_source=website&ep.artist_genres=&ep.page_country=United%20Kingdom&ep.page_language=en-GB&ep.page_name=Cannock%20Chase%20Forest&ep.page_type=landing&up.state_ga_cookie=false&up.consent_state_analytics_storage=true&up.login_status=false&up.state_analytics_and_ga_cookie=&tfd=2130",
+  "status": 204,
+  "type": "text/plain"
  },
  {
   "url": "https://a.ad.gt/api/v1/identity?v=2",
@@ -70,24 +50,34 @@
   "type": "application/json"
  },
  {
-  "url": "https://d.turn.com/r/dd/id/L2NzaWQvMS9jaWQvMTc0ODI0MTY1OC90LzA/url/https%3A%2F%2Fids.ad.gt%2Fapi%2Fv1%2Famo_match%3Fturn_id%3D%24!%7BTURN_UUID%7D%26id%3DAU1D0200001792670293EEPXVUA2R2NW",
+  "url": "https://pixel.tapad.com/idsync/ex/receive?partner_id=3185&partner_device_id=AU1D0200001792671301PANJO5RMPDZJ&partner_url=https://ids.ad.gt%2Fapi%2Fv1%2Ftapad_match%3Fid%3DAU1D0200001792671301PANJO5RMPDZJ%26tapad_id%3D%24%7BTA_DEVICE_ID%7D&gdpr=0",
   "status": 302,
   "type": ""
  },
  {
-  "url": "https://pixel.tapad.com/idsync/ex/receive?partner_id=3185&partner_device_id=AU1D0200001792670293EEPXVUA2R2NW&partner_url=https://ids.ad.gt%2Fapi%2Fv1%2Ftapad_match%3Fid%3DAU1D0200001792670293EEPXVUA2R2NW%26tapad_id%3D%24%7BTA_DEVICE_ID%7D&gdpr=0",
+  "url": "https://d.turn.com/r/dd/id/L2NzaWQvMS9jaWQvMTc0ODI0MTY1OC90LzA/url/https%3A%2F%2Fids.ad.gt%2Fapi%2Fv1%2Famo_match%3Fturn_id%3D%24!%7BTURN_UUID%7D%26id%3DAU1D0200001792671301PANJO5RMPDZJ",
   "status": 302,
   "type": ""
  },
  {
-  "url": "https://match.adsrvr.org/track/cmf/generic?ttd_pid=tapad&ttd_tpi=1&ttd_puid=9ae7a545-3ac8-4582-bba8-9d926450f9ce%252Chttps%25253A%25252F%25252Fids.ad.gt%25252Fapi%25252Fv1%25252Ftapad_match%25253Fid%25253DAU1D0200001792670293EEPXVUA2R2NW%252526tapad_id%25253D9ae7a545-3ac8-4582-bba8-9d926450f9ce%252C&gdpr=0&gdpr_consent=",
+  "url": "https://match.adsrvr.org/track/cmf/generic?ttd_pid=tapad&ttd_tpi=1&ttd_puid=58f98e71-e0e4-4024-81ee-eeb3913c673d%252Chttps%25253A%25252F%25252Fids.ad.gt%25252Fapi%25252Fv1%25252Ftapad_match%25253Fid%25253DAU1D0200001792671301PANJO5RMPDZJ%252526tapad_id%25253D58f98e71-e0e4-4024-81ee-eeb3913c673d%252C&gdpr=0&gdpr_consent=",
   "status": 302,
   "type": ""
  },
  {
-  "url": "https://sync.go.sonobi.com/us?https://ids.ad.gt/api/v1/son_match?id=AU1D0200001792670293EEPXVUA2R2NW&uid=[UID]&gdpr=0",
+  "url": "https://secure.adnxs.com/getuid?https://ids.ad.gt/api/v1/match?id=AU1D0200001792671301PANJO5RMPDZJ&adnxs_id=$UID&gdpr=0",
+  "status": 307,
+  "type": "text/html; charset=utf-8"
+ },
+ {
+  "url": "https://sync.go.sonobi.com/us?https://ids.ad.gt/api/v1/son_match?id=AU1D0200001792671301PANJO5RMPDZJ&uid=[UID]&gdpr=0",
   "status": 302,
   "type": "text/plain; charset=utf8"
+ },
+ {
+  "url": "https://u.openx.net/w/1.0/cm?id=998eaf06-9905-4eae-9e26-9fac75960c53&r=https%3A%2F%2Fids.ad.gt%2Fapi%2Fv1%2Fopenx%3Fopenx_id%3D%7BOPENX_ID%7D%26id%3DAU1D0200001792671301PANJO5RMPDZJ%26auid%3DAU1D0200001792671301PANJO5RMPDZJ&gdpr=0",
+  "status": 302,
+  "type": "text/plain; charset=utf-8"
  },
  {
   "url": "https://p.ad.gt/api/v1/p/747",
@@ -95,8 +85,123 @@
   "type": "application/javascript"
  },
  {
-  "url": "https://pixel.tapad.com/idsync/ex/receive?partner_id=1830&partner_device_id=907e37f4-b4fd-4321-b02f-7faa8500b60f&ttd_puid=9ae7a545-3ac8-4582-bba8-9d926450f9ce%2Chttps%253A%252F%252Fids.ad.gt%252Fapi%252Fv1%252Ftapad_match%253Fid%253DAU1D0200001792670293EEPXVUA2R2NW%2526tapad_id%253D9ae7a545-3ac8-4582-bba8-9d926450f9ce%2C",
+  "url": "https://secure.adnxs.com/bounce?%2Fgetuid%3Fhttps%3A%2F%2Fids.ad.gt%2Fapi%2Fv1%2Fmatch%3Fid%3DAU1D0200001792671301PANJO5RMPDZJ%26adnxs_id%3D%24UID%26gdpr%3D0",
   "status": 302,
+  "type": "text/html; charset=utf-8"
+ },
+ {
+  "url": "https://pixel.tapad.com/idsync/ex/receive?partner_id=1830&partner_device_id=7e2ba75a-7d7e-4516-816a-779d02529142&ttd_puid=58f98e71-e0e4-4024-81ee-eeb3913c673d%2Chttps%253A%252F%252Fids.ad.gt%252Fapi%252Fv1%252Ftapad_match%253Fid%253DAU1D0200001792671301PANJO5RMPDZJ%2526tapad_id%253D58f98e71-e0e4-4024-81ee-eeb3913c673d%2C",
+  "status": 302,
+  "type": ""
+ },
+ {
+  "url": "https://u.openx.net/w/1.0/cm?cc=1&id=998eaf06-9905-4eae-9e26-9fac75960c53&r=https%3A%2F%2Fids.ad.gt%2Fapi%2Fv1%2Fopenx%3Fopenx_id%3D%7BOPENX_ID%7D%26id%3DAU1D0200001792671301PANJO5RMPDZJ%26auid%3DAU1D0200001792671301PANJO5RMPDZJ&gdpr=0",
+  "status": 302,
+  "type": "image/gif"
+ },
+ {
+  "url": "https://ad.360yield.com/ux?&publisher_dmp_id=15&r=https%3A%2F%2Fids.ad.gt%2Fapi%2Fv1%2Fimpr_match%3Fid%3DAU1D0200001792671301PANJO5RMPDZJ%26impr_uid%3D%7BPUB_USER_ID%7D&gdpr=0",
+  "status": 302,
+  "type": ""
+ },
+ {
+  "url": "https://ad.360yield.com/ul_cb/ux?&publisher_dmp_id=15&r=https%3A%2F%2Fids.ad.gt%2Fapi%2Fv1%2Fimpr_match%3Fid%3DAU1D0200001792671301PANJO5RMPDZJ%26impr_uid%3D%7BPUB_USER_ID%7D&gdpr=0",
+  "status": 302,
+  "type": ""
+ },
+ {
+  "url": "https://ids.ad.gt/api/v1/g_match?id=AU1D0200001792671301PANJO5RMPDZJ&gdpr=0&google_gid=CAESEK3_0lxdyh_PcO0L5m9uHUk&google_cver=1",
+  "status": 200,
+  "type": "image/gif"
+ },
+ {
+  "url": "https://ids.ad.gt/api/v1/son_match?id=AU1D0200001792671301PANJO5RMPDZJ&uid=cabc4196-d1b1-4c31-9e9b-cf7251ef44c2&gdpr=0",
+  "status": 200,
+  "type": "image/gif"
+ },
+ {
+  "url": "https://ids.ad.gt/api/v1/match?id=AU1D0200001792671301PANJO5RMPDZJ&adnxs_id=8035785290510499846&gdpr=0",
+  "status": 200,
+  "type": "image/gif"
+ },
+ {
+  "url": "https://a.ad.gt/api/v1/collect",
+  "status": 204,
+  "type": ""
+ },
+ {
+  "url": "https://ids.ad.gt/api/v1/t_match?tdid=7e2ba75a-7d7e-4516-816a-779d02529142&id=AU1D0200001792671301PANJO5RMPDZJ",
+  "status": 200,
+  "type": "image/gif"
+ },
+ {
+  "url": "https://ids.ad.gt/api/v1/tapad_match?id=AU1D0200001792671301PANJO5RMPDZJ&tapad_id=58f98e71-e0e4-4024-81ee-eeb3913c673d",
+  "status": 200,
+  "type": "image/gif"
+ },
+ {
+  "url": "https://ids.ad.gt/api/v1/amo_match?turn_id=7227128621228308659&id=AU1D0200001792671301PANJO5RMPDZJ",
+  "status": 200,
+  "type": "image/gif"
+ },
+ {
+  "url": "https://ids.ad.gt/api/v1/openx?openx_id=ddef6dff-cb6a-4d5f-b3c9-bc049a494499&id=AU1D0200001792671301PANJO5RMPDZJ&auid=AU1D0200001792671301PANJO5RMPDZJ&gdpr=0",
+  "status": 200,
+  "type": "image/gif"
+ },
+ {
+  "url": "https://api.permutive.com/v2.0/geoip?include=geo&include=isp&include=ip_hash&k=25d8de23-8921-4b59-aae4-de79460f0d24",
+  "status": 200,
+  "type": "application/json"
+ },
+ {
+  "url": "https://pixels.ad.gt/api/v1/getpixels?tagger_id=34f9c5879fd0b2ef8aebb62934d5696c&url=https%3A%2F%2Fwww.forestlive.com%2Fcannockchaseforest&code=%27none%27",
+  "status": 204,
+  "type": ""
+ },
+ {
+  "url": "https://ids.ad.gt/api/v1/impr_match?id=AU1D0200001792671301PANJO5RMPDZJ&impr_uid=ae821de5-d9e1-41d4-acd2-f0d1d01e5edf",
+  "status": 200,
+  "type": "image/gif"
+ },
+ {
+  "url": "https://a.ad.gt/api/v1/u/matches/747?_it=0",
+  "status": 200,
+  "type": "application/javascript"
+ },
+ {
+  "url": "https://ids4.ad.gt/api/v1/ip_match?id=AU1D0200001792671301PANJO5RMPDZJ",
+  "status": 200,
+  "type": "text/html; charset=utf-8"
+ },
+ {
+  "url": "https://id.hadronid.net/v1/hadron.json?_it=0&partner_id=747&sync=1&domain=www.forestlive.com&url=https://www.forestlive.com/cannockchaseforest&v=06",
+  "status": 200,
+  "type": "application/json; charset=utf8"
+ },
+ {
+  "url": "https://seg.ad.gt/api/v2/segments?url=https%253A%252F%252Fwww.forestlive.com%252Fcannockchaseforest&partner_id=747&tagger_id=34f9c5879fd0b2ef8aebb62934d5696c&au_id=AU1D0200001792671301PANJO5RMPDZJ",
+  "status": 200,
+  "type": "application/json"
+ },
+ {
+  "url": "https://global.ketchcdn.com/web/v3/consent/live_nation/update",
+  "status": 200,
+  "type": "application/json"
+ },
+ {
+  "url": "https://api.permutive.com/adv/v4/segment?k=25d8de23-8921-4b59-aae4-de79460f0d24",
+  "status": 200,
+  "type": "application/json"
+ },
+ {
+  "url": "https://analytics.tiktok.com/api/v2/pixel",
+  "status": 200,
+  "type": ""
+ },
+ {
+  "url": "https://analytics.tiktok.com/api/v2/pixel",
+  "status": 200,
   "type": ""
  },
  {
@@ -105,33 +210,58 @@
   "type": ""
  },
  {
-  "url": "https://secure.adnxs.com/getuid?https://ids.ad.gt/api/v1/match?id=AU1D0200001792670293EEPXVUA2R2NW&adnxs_id=$UID&gdpr=0",
-  "status": 307,
-  "type": "text/html; charset=utf-8"
- },
- {
-  "url": "https://api.permutive.com/adv/v4/segment?k=25d8de23-8921-4b59-aae4-de79460f0d24",
+  "url": "https://ids.ad.gt/api/v1/halo_match?id=AU1D0200001792671301PANJO5RMPDZJ&halo_id=060ixdiju6a65999a9796989e9e99986666uokuwi0e0y666e6260646m6m666400",
   "status": 200,
-  "type": "application/json"
+  "type": "image/gif"
  },
  {
-  "url": "https://secure.adnxs.com/bounce?%2Fgetuid%3Fhttps%3A%2F%2Fids.ad.gt%2Fapi%2Fv1%2Fmatch%3Fid%3DAU1D0200001792670293EEPXVUA2R2NW%26adnxs_id%3D%24UID%26gdpr%3D0",
-  "status": 302,
-  "type": "text/html; charset=utf-8"
- },
- {
-  "url": "https://u.openx.net/w/1.0/cm?id=998eaf06-9905-4eae-9e26-9fac75960c53&r=https%3A%2F%2Fids.ad.gt%2Fapi%2Fv1%2Fopenx%3Fopenx_id%3D%7BOPENX_ID%7D%26id%3DAU1D0200001792670293EEPXVUA2R2NW%26auid%3DAU1D0200001792670293EEPXVUA2R2NW&gdpr=0",
-  "status": 302,
-  "type": "text/plain; charset=utf-8"
- },
- {
-  "url": "https://analytics.tiktok.com/api/v2/pixel/act",
+  "url": "https://analytics.tiktok.com/api/v2/pixel",
   "status": 200,
   "type": ""
  },
  {
-  "url": "https://ad.360yield.com/ux?&publisher_dmp_id=15&r=https%3A%2F%2Fids.ad.gt%2Fapi%2Fv1%2Fimpr_match%3Fid%3DAU1D0200001792670293EEPXVUA2R2NW%26impr_uid%3D%7BPUB_USER_ID%7D&gdpr=0",
-  "status": 302,
+  "url": "https://analytics.tiktok.com/api/v2/pixel",
+  "status": 200,
+  "type": ""
+ },
+ {
+  "url": "https://analytics.tiktok.com/api/v2/pixel",
+  "status": 200,
+  "type": ""
+ },
+ {
+  "url": "https://analytics.tiktok.com/api/v2/pixel",
+  "status": 200,
+  "type": ""
+ },
+ {
+  "url": "https://analytics.tiktok.com/api/v2/pixel",
+  "status": 200,
+  "type": ""
+ },
+ {
+  "url": "https://analytics.tiktok.com/api/v2/pixel",
+  "status": 200,
+  "type": ""
+ },
+ {
+  "url": "https://analytics.tiktok.com/api/v2/pixel",
+  "status": 200,
+  "type": ""
+ },
+ {
+  "url": "https://analytics.tiktok.com/api/v2/pixel",
+  "status": 200,
+  "type": ""
+ },
+ {
+  "url": "https://analytics.tiktok.com/api/v2/pixel",
+  "status": 200,
+  "type": ""
+ },
+ {
+  "url": "https://analytics.tiktok.com/api/v2/pixel",
+  "status": 200,
   "type": ""
  },
  {
@@ -140,103 +270,8 @@
   "type": "application/x-javascript; charset=utf-8"
  },
  {
-  "url": "https://ad.360yield.com/ul_cb/ux?&publisher_dmp_id=15&r=https%3A%2F%2Fids.ad.gt%2Fapi%2Fv1%2Fimpr_match%3Fid%3DAU1D0200001792670293EEPXVUA2R2NW%26impr_uid%3D%7BPUB_USER_ID%7D&gdpr=0",
-  "status": 302,
-  "type": ""
- },
- {
-  "url": "https://u.openx.net/w/1.0/cm?cc=1&id=998eaf06-9905-4eae-9e26-9fac75960c53&r=https%3A%2F%2Fids.ad.gt%2Fapi%2Fv1%2Fopenx%3Fopenx_id%3D%7BOPENX_ID%7D%26id%3DAU1D0200001792670293EEPXVUA2R2NW%26auid%3DAU1D0200001792670293EEPXVUA2R2NW&gdpr=0",
-  "status": 302,
-  "type": "image/gif"
- },
- {
-  "url": "https://ids.ad.gt/api/v1/g_match?id=AU1D0200001792670293EEPXVUA2R2NW&gdpr=0&google_gid=CAESEHNm2mNc_awA3ysMpUEwz_Y&google_cver=1",
-  "status": 200,
-  "type": "image/gif"
- },
- {
-  "url": "https://ids.ad.gt/api/v1/impr_match?id=AU1D0200001792670293EEPXVUA2R2NW&impr_uid=c6f767e4-ccaf-4235-bd20-318ba3c7f716",
-  "status": 200,
-  "type": "image/gif"
- },
- {
-  "url": "https://ids.ad.gt/api/v1/t_match?tdid=907e37f4-b4fd-4321-b02f-7faa8500b60f&id=AU1D0200001792670293EEPXVUA2R2NW",
-  "status": 200,
-  "type": "image/gif"
- },
- {
-  "url": "https://ids.ad.gt/api/v1/match?id=AU1D0200001792670293EEPXVUA2R2NW&adnxs_id=863953740293620239&gdpr=0",
-  "status": 200,
-  "type": "image/gif"
- },
- {
-  "url": "https://ids.ad.gt/api/v1/amo_match?turn_id=3913694076925478440&id=AU1D0200001792670293EEPXVUA2R2NW",
-  "status": 200,
-  "type": "image/gif"
- },
- {
-  "url": "https://ids.ad.gt/api/v1/tapad_match?id=AU1D0200001792670293EEPXVUA2R2NW&tapad_id=9ae7a545-3ac8-4582-bba8-9d926450f9ce",
-  "status": 200,
-  "type": "image/gif"
- },
- {
-  "url": "https://ids.ad.gt/api/v1/son_match?id=AU1D0200001792670293EEPXVUA2R2NW&uid=ad8c27c7-aab1-4018-bc0c-57e98d36b6d4&gdpr=0",
-  "status": 200,
-  "type": "image/gif"
- },
- {
-  "url": "https://ids4.ad.gt/api/v1/ip_match?id=AU1D0200001792670293EEPXVUA2R2NW",
-  "status": 200,
-  "type": "text/html; charset=utf-8"
- },
- {
-  "url": "https://global.ketchcdn.com/web/v3/consent/live_nation/update",
-  "status": 200,
-  "type": "application/json"
- },
- {
   "url": "https://analytics.tiktok.com/api/v2/pixel",
   "status": 200,
-  "type": ""
- },
- {
-  "url": "https://analytics.tiktok.com/api/v2/pixel",
-  "status": 200,
-  "type": ""
- },
- {
-  "url": "https://analytics.tiktok.com/api/v2/pixel",
-  "status": 200,
-  "type": ""
- },
- {
-  "url": "https://analytics.tiktok.com/api/v2/pixel",
-  "status": 200,
-  "type": ""
- },
- {
-  "url": "https://analytics.tiktok.com/api/v2/pixel",
-  "status": 200,
-  "type": ""
- },
- {
-  "url": "https://analytics.tiktok.com/api/v2/pixel",
-  "status": 200,
-  "type": ""
- },
- {
-  "url": "https://analytics.tiktok.com/api/v2/pixel",
-  "status": 200,
-  "type": ""
- },
- {
-  "url": "https://seg.ad.gt/api/v2/segments?url=https%253A%252F%252Fwww.forestlive.com%252Fcannockchaseforest&partner_id=747&tagger_id=34f9c5879fd0b2ef8aebb62934d5696c&au_id=AU1D0200001792670293EEPXVUA2R2NW",
-  "status": 200,
-  "type": "application/json"
- },
- {
-  "url": "https://a.ad.gt/api/v1/collect",
-  "status": 204,
   "type": ""
  },
  {
@@ -255,48 +290,13 @@
   "type": "application/json"
  },
  {
-  "url": "https://cdn.jsdelivr.net/npm/meta-capi-param-builder-clientjs/dist/clientParamBuilder.bundle.js",
-  "status": 200,
-  "type": "application/javascript; charset=utf-8"
- },
- {
-  "url": "https://analytics.tiktok.com/api/v2/pixel",
-  "status": 200,
-  "type": ""
- },
- {
-  "url": "https://pixels.ad.gt/api/v1/getpixels?tagger_id=34f9c5879fd0b2ef8aebb62934d5696c&url=https%3A%2F%2Fwww.forestlive.com%2Fcannockchaseforest&code=%27none%27",
-  "status": 204,
-  "type": ""
- },
- {
   "url": "https://sl-11a463aaedf44600a99367660fd6fa70.ecs.us-east-1.on.aws/events?cee=no",
   "status": 200,
   "type": "application/json"
  },
  {
-  "url": "https://analytics.tiktok.com/api/v2/pixel",
+  "url": "https://sl-11a463aaedf44600a99367660fd6fa70.ecs.us-east-1.on.aws/events?cee=no",
   "status": 200,
-  "type": ""
- },
- {
-  "url": "https://analytics.tiktok.com/api/v2/pixel",
-  "status": 200,
-  "type": ""
- },
- {
-  "url": "https://analytics.tiktok.com/api/v2/pixel",
-  "status": 200,
-  "type": ""
- },
- {
-  "url": "https://analytics.tiktok.com/api/v2/pixel",
-  "status": 200,
-  "type": ""
- },
- {
-  "url": "https://ids.ad.gt/api/v1/openx?openx_id=c0e67698-aba1-4788-a989-21199d4fb31b&id=AU1D0200001792670293EEPXVUA2R2NW&auid=AU1D0200001792670293EEPXVUA2R2NW&gdpr=0",
-  "status": 200,
-  "type": "image/gif"
+  "type": "application/json"
  }
 ]

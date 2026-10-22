@@ -299,11 +299,35 @@ def read_newvic():
     return out
 
 
+WW_CATS = {"Christmas & New Year", "Comedy", "Community & Amateur", "Dance", "Drama & Musical Theatre", "Family & Panto", "Music",
+           "Opera, Orchestral, Choral", "Psychic & Magic", "Schools", "Talks", "Variety & Cabaret"}
+
+
+def read_winding_wheel():
+    out = []
+    day = re.compile(r"^(Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?,?\s+\d")
+    for c in select_all("winding-wheel", "a.show-list-item"):
+        t = c.select_one(".show-list-item__title")
+        parts = [p.strip() for p in c.get_text("|", strip=True).split("|") if p.strip()]
+        date = next((p for p in parts if day.match(p)), None)
+        if not (t and date and c.get("href")):
+            continue
+        if not any("Winding Wheel" in p for p in parts):
+            continue
+        tags = [p for p in parts if p not in ("Info & Tickets", "Theatre Tokens", "Accessible", "Winding Wheel Theatre") and p != text(t) and p != date and not day.match(p)]
+        cats = [g for g in tags if g in WW_CATS]
+        genre = next((g for g in cats if g != "Community & Amateur"), cats[0] if cats else "")
+        if "Cinema" in tags:
+            continue
+        out.append(row(text(t), "Winding Wheel Theatre", parse_dates(date), absu("https://chesterfieldtheatres.co.uk", c["href"]), genre))
+    return out
+
+
 READERS = {
     "De Montfort Hall": read_dmh, "Wolverhampton Grand Theatre": read_grand, "Century Theatre": read_century,
     "The Old Rep Theatre": read_oldrep, "Curve Theatre": read_curve, "Derby Theatre": read_derby,
     "Nottingham Playhouse": read_playhouse, "The Rep": read_rep, "Birmingham Hippodrome": read_hippodrome,
-    "TRCH": read_trch, "The Alexandra Theatre": read_alexandra, "Regent Theatre Stoke": read_regent, "New Vic Theatre": read_newvic, "Bonington Theatre": read_bonington, "Vaillant Live": read_vaillant,
+    "TRCH": read_trch, "The Alexandra Theatre": read_alexandra, "Regent Theatre Stoke": read_regent, "New Vic Theatre": read_newvic, "Winding Wheel Theatre": read_winding_wheel, "Bonington Theatre": read_bonington, "Vaillant Live": read_vaillant,
 }
 
 GENRE_HINTS = [(r"tribute|story of|legends|experience", "Tribute"), (r"orchestra|philharmon|symphony|concert", "Classical"),

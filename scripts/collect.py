@@ -256,6 +256,9 @@ def each(prefix):
 DATE_IN_TEXT = re.compile(r"(Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?,?\s+\d{1,2}\s+[A-Z][a-z]{2}")
 
 
+BADGE = re.compile(r"^(sold out|low availability|selling fast|last tickets|few tickets left|new|on sale now|just announced)$", re.I)
+
+
 def read_atg(prefix, theatre):
     out = []
     for s in each(prefix):
@@ -263,7 +266,7 @@ def read_atg(prefix, theatre):
             links = [a["href"] for a in c.find_all("a", href=True) if "/shows/" in a["href"] and not a["href"].rstrip("/").endswith("calendar")]
             if not links:
                 continue
-            parts = [p.strip() for p in c.get_text("|", strip=True).split("|") if p.strip()]
+            parts = [p.strip() for p in c.get_text("|", strip=True).split("|") if p.strip() and not BADGE.match(p.strip())]
             date = next((p for p in parts if DATE_IN_TEXT.match(p)), None)
             if not date or not parts:
                 continue

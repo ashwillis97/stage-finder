@@ -24,6 +24,10 @@ with sync_playwright() as p:
         for i, url in enumerate(v["urls"], 1):
             entry = {"venue": v["name"], "url": url, "file": None, "status": None, "error": None, "bytes": 0}
             page = ctx.new_page()
+            seen = []
+            if v.get("js"):
+                page.on("response", lambda r, seen=seen: seen.append({"url": r.url, "status": r.status, "type": r.headers.get("content-type", "")})
+                        if ("json" in r.headers.get("content-type", "") or "api" in r.url.lower()) else None)
             try:
                 resp = page.goto(url, wait_until="domcontentloaded", timeout=45000)
                 entry["status"] = resp.status if resp else None
@@ -35,6 +39,8 @@ with sync_playwright() as p:
                 for _ in range(6):
                     page.mouse.wheel(0, 2500)
                     time.sleep(0.7)
+                if v.get("js"):
+                    time.sleep(8)
                 html = page.content()
                 name = f"{v['slug']}-{i}.html"
                 (out / name).write_text(html, encoding="utf-8")
@@ -44,6 +50,8 @@ with sync_playwright() as p:
             except Exception as e:
                 entry["error"] = re.sub(r"\s+", " ", str(e))[:300]
             finally:
+                if seen:
+                    (out / f"{v['slug']}-network.json").write_text(json.dumps(seen[:60], indent=1))
                 page.close()
             print(entry, flush=True)
             report.append(entry)

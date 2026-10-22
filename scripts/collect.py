@@ -82,6 +82,10 @@ def files(prefix):
     return sorted(p.name for p in SNAP.glob(prefix + "-*.html"))
 
 
+def select_all(prefix, css):
+    return [x for f in files(prefix) for x in soup(f).select(css)]
+
+
 def absu(base, href):
     from urllib.parse import urljoin
     return urljoin(base, href) if href else ""
@@ -120,7 +124,7 @@ def read_grand():
 
 def read_century():
     out = []
-    for c in soup("century-theatre-1.html").select("div[data-start-date]"):
+    for c in select_all("century-theatre", "div[data-start-date]"):
         a = c.select_one("a.event_box")
         t = c.select_one(".title")
         if not (a and t):
@@ -133,7 +137,7 @@ def read_century():
 
 def read_oldrep():
     out = []
-    for c in soup("old-rep-1.html").select(".eventwrapper"):
+    for c in select_all("old-rep", ".eventwrapper"):
         a = c.select_one("a[href]")
         t = c.select_one("h4")
         d = c.select_one(".date")
@@ -146,7 +150,7 @@ def read_oldrep():
 
 def read_curve():
     out = []
-    for c in soup("curve-1.html").select("article.listing__item"):
+    for c in select_all("curve", "article.listing__item"):
         a = c.select_one("a[href]")
         t = c.select_one(".media__title")
         d = c.select_one(".show__date")
@@ -157,7 +161,7 @@ def read_curve():
 
 def read_derby():
     out = []
-    for c in soup("derby-theatre-1.html").select("div.card--event"):
+    for c in select_all("derby-theatre", "div.card--event"):
         a = c.select_one("a.card-link")
         t = c.select_one("h3")
         d = c.select_one(".date")
@@ -168,7 +172,7 @@ def read_derby():
 
 def read_playhouse():
     out = []
-    for t in soup("nottingham-playhouse-1.html").select(".image-text-card-title"):
+    for t in select_all("nottingham-playhouse", ".image-text-card-title"):
         box = t.parent
         a = t.select_one("a")
         d = box.select_one(".image-text-card-date")
@@ -179,7 +183,7 @@ def read_playhouse():
 
 def read_rep():
     out = []
-    for c in soup("the-rep-1.html").select(".c-event-card"):
+    for c in select_all("the-rep", ".c-event-card"):
         a = c.select_one("a.c-event-card__link")
         t = c.select_one(".c-event-card__title")
         d = c.select_one(".c-event-card__daterange")
@@ -190,7 +194,7 @@ def read_rep():
 
 def read_hippodrome():
     out = []
-    for c in soup("hippodrome-1.html").select(".performance-listing"):
+    for c in select_all("hippodrome", ".performance-listing"):
         a = c.select_one("a.performance-listing-permalink")
         t = c.select_one(".performance-listing-title")
         d = c.select_one(".performance-listing-date")
@@ -201,7 +205,7 @@ def read_hippodrome():
 
 def read_trch():
     out = []
-    for c in soup("trch-1.html").select("li.eventCard"):
+    for c in select_all("trch", "li.eventCard"):
         a = c.select_one("a.desc")
         t = c.select_one(".title")
         d = c.select_one(".top-date .start")
@@ -218,7 +222,7 @@ FILM = re.compile(r"\((U|PG|12A?|15|18)\)\s*$")
 
 def read_bonington():
     out = []
-    for c in soup("bonington-1.html").select("li.WhatsonItem"):
+    for c in select_all("bonington", "li.WhatsonItem"):
         a = c.select_one("h3 a")
         d = c.select_one(".DateText")
         if not (a and d):
@@ -231,7 +235,7 @@ def read_bonington():
 
 def read_vaillant():
     out = []
-    for c in soup("vaillant-live-1.html").select("div.item"):
+    for c in select_all("vaillant-live", "div.item"):
         a = c.select_one("a.title")
         mo, dy = c.select_one(".mini-date-container .month"), c.select_one(".mini-date-container .day")
         if not (a and mo and dy):
@@ -242,11 +246,61 @@ def read_vaillant():
     return out
 
 
+def each(prefix):
+    for f in files(prefix):
+        s = soup(f)
+        if s is not None:
+            yield s
+
+
+DATE_IN_TEXT = re.compile(r"(Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?,?\s+\d{1,2}\s+[A-Z][a-z]{2}")
+
+
+def read_atg(prefix, theatre):
+    out = []
+    for s in each(prefix):
+        for c in s.select("div.MuiPaper-root"):
+            links = [a["href"] for a in c.find_all("a", href=True) if "/shows/" in a["href"] and not a["href"].rstrip("/").endswith("calendar")]
+            if not links:
+                continue
+            parts = [p.strip() for p in c.get_text("|", strip=True).split("|") if p.strip()]
+            date = next((p for p in parts if DATE_IN_TEXT.match(p)), None)
+            if not date or not parts:
+                continue
+            title = parts[0]
+            genre = parts[2] if len(parts) > 2 and not DATE_IN_TEXT.match(parts[2]) else ""
+            if re.search(r"tour|gift|voucher|hospitality|experience package", title, re.I):
+                continue
+            out.append(row(title, theatre, parse_dates(date), absu("https://www.atgtickets.com", links[0]), genre))
+    return out
+
+
+def read_alexandra():
+    return read_atg("alexandra", "The Alexandra Theatre")
+
+
+def read_regent():
+    return read_atg("regent-stoke", "Regent Theatre Stoke")
+
+
+def read_newvic():
+    out = []
+    for s in each("new-vic"):
+        for c in s.select("div.col-sm-6:has(.feature__content.event)"):
+            body = c.select_one(".feature__content.event")
+            a = body.select_one("a[href]")
+            d = body.select_one("h2")
+            parts = [p.strip() for p in c.get_text("|", strip=True).split("|") if p.strip()]
+            if a and d and parts:
+                out.append(row(parts[0], "New Vic Theatre", parse_dates(text(d)), a["href"]))
+    return out
+
+
 READERS = {
     "De Montfort Hall": read_dmh, "Wolverhampton Grand Theatre": read_grand, "Century Theatre": read_century,
     "The Old Rep Theatre": read_oldrep, "Curve Theatre": read_curve, "Derby Theatre": read_derby,
     "Nottingham Playhouse": read_playhouse, "The Rep": read_rep, "Birmingham Hippodrome": read_hippodrome,
-    "TRCH": read_trch, "Bonington Theatre": read_bonington, "Vaillant Live": read_vaillant,
+    "TRCH": read_trch, "The Alexandra Theatre": read_alexandra, "Regent Theatre Stoke": read_regent, "New Vic Theatre": read_newvic, "Bonington Theatre": read_bonington, "Vaillant Live": read_vaillant,
 }
 
 GENRE_HINTS = [(r"tribute|story of|legends|experience", "Tribute"), (r"orchestra|philharmon|symphony|concert", "Classical"),

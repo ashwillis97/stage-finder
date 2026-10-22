@@ -347,7 +347,7 @@ def main():
     part = cov.setdefault("partial", {})
     auto_note = "Not updated automatically yet, so these listings may be out of date."
     scraped = set(fresh)
-    keep_notes = {"Birmingham Hippodrome", "The Rep", "Theatre Royal Nottingham", "Royal Concert Hall", "Wolverhampton Grand Theatre"}
+    keep_notes = {"Theatre Royal Nottingham", "Royal Concert Hall"}
     for t in list(part):
         if t in scraped and t not in keep_notes:
             del part[t]

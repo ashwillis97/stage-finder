@@ -1,6 +1,6 @@
 {
  "sample": false,
- "updated": "2026-10-22T07:49+01:00",
+ "updated": "2026-10-22T08:04+01:00",
  "coverage": {
   "none": [
    "Elite Cinema and Theatre",
@@ -11,15 +11,12 @@
    "Royal Concert Hall": "Only the first page of the venue's listings is read, so later shows may be missing.",
    "Birmingham Hippodrome": "Only the first 16 listings on the page are read, so later shows may be missing.",
    "The Rep": "Only the first page of listings is read, so later shows may be missing.",
-   "The Alexandra Theatre": "Not updated automatically yet, so these listings may be out of date.",
    "Buxton Opera House": "Not updated automatically yet, so these listings may be out of date.",
    "Lichfield Garrick": "Not updated automatically yet, so these listings may be out of date.",
    "Repton 400 Hall Theatre": "Not updated automatically yet, so these listings may be out of date.",
    "Palace Theatre Mansfield": "Not updated automatically yet, so these listings may be out of date.",
    "Wolverhampton Grand Theatre": "Only the first two pages of listings are read, so later shows may be missing.",
-   "Brewhouse Arts Centre": "Not updated automatically yet, so these listings may be out of date.",
-   "Regent Theatre Stoke": "Not updated automatically yet, so these listings may be out of date.",
-   "New Vic Theatre": "Not updated automatically yet, so these listings may be out of date."
+   "Brewhouse Arts Centre": "Not updated automatically yet, so these listings may be out of date."
   }
  },
  "shows": [
@@ -490,7 +487,7 @@
   {
    "title": "Jersey Boys",
    "theatre": "Regent Theatre Stoke",
-   "genre": "Musical",
+   "genre": "Musicals",
    "start": "2026-10-26",
    "end": "2026-10-31",
    "url": "https://www.atgtickets.com/shows/jersey-boys/regent-theatre/"
@@ -642,7 +639,7 @@
   {
    "title": "Paranormal Activity",
    "theatre": "The Alexandra Theatre",
-   "genre": "Play",
+   "genre": "Plays",
    "start": "2026-10-27",
    "end": "2026-10-31",
    "url": "https://www.atgtickets.com/shows/paranormal-activity/the-alexandra-theatre-birmingham/"
@@ -758,14 +755,6 @@
    "start": "2026-10-28",
    "end": "2026-10-28",
    "url": "https://www.birmingham-rep.co.uk/whats-on/play-in-a-day-9-11-year-olds/"
-  },
-  {
-   "title": "Post-show Ghost Tour Paranormal Activity",
-   "theatre": "The Alexandra Theatre",
-   "genre": "Event",
-   "start": "2026-10-28",
-   "end": "2026-10-30",
-   "url": "https://www.atgtickets.com/shows/post-show-ghost-tour-paranormal-activity/the-alexandra-theatre-birmingham/"
   },
   {
    "title": "Ruby Wax: Absolutely Famous",
@@ -986,7 +975,7 @@
   {
    "title": "ATG INSPIRE Academy",
    "theatre": "Regent Theatre Stoke",
-   "genre": "Education",
+   "genre": "Regent Theatre, Stoke-on-Trent",
    "start": "2026-10-31",
    "end": "2026-10-31",
    "url": "https://www.atgtickets.com/shows/atg-inspire-academy/regent-theatre/"
@@ -1038,14 +1027,6 @@
    "start": "2026-10-31",
    "end": "2026-10-31",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/nerina-pallot-solo-tour/"
-  },
-  {
-   "title": "Theatre Tours - Birmingham",
-   "theatre": "The Alexandra Theatre",
-   "genre": "Tour",
-   "start": "2026-10-31",
-   "end": "2026-11-07",
-   "url": "https://www.atgtickets.com/shows/theatre-tours-birmingham/"
   },
   {
    "title": "Bonington Jazz Company… Vernon Fuller- Breezin’ By!",
@@ -1114,7 +1095,7 @@
   {
    "title": "Jersey Boys",
    "theatre": "The Alexandra Theatre",
-   "genre": "Musical",
+   "genre": "Musicals",
    "start": "2026-11-02",
    "end": "2026-11-21",
    "url": "https://www.atgtickets.com/shows/jersey-boys/the-alexandra-theatre-birmingham/"
@@ -1282,7 +1263,7 @@
   {
    "title": "Coffee, Cake and Cadenzas",
    "theatre": "The Alexandra Theatre",
-   "genre": "Event",
+   "genre": "Events",
    "start": "2026-11-06",
    "end": "2027-06-11",
    "url": "https://www.atgtickets.com/shows/coffee-cake-and-cadenzas/the-alexandra-theatre-birmingham/"
@@ -1440,6 +1421,14 @@
    "url": "https://www.oldrep.co.uk/event-details/350931ATSDGKJRMGJPBMBGVGRVKMBJPDK/joe-lycett-friends/"
   },
   {
+   "title": "Sam Campbell",
+   "theatre": "Theatre Royal Nottingham",
+   "genre": "Comedy",
+   "start": "2026-11-09",
+   "end": "2026-11-09",
+   "url": "https://www.trch.co.uk/whats-on/sam-campbell-tgkc"
+  },
+  {
    "title": "The Nature of Forgetting",
    "theatre": "Curve Theatre",
    "genre": "Theatre",
@@ -1488,6 +1477,22 @@
    "url": "https://vaillantlive.co.uk/event/harry-redknapp-my-life-in-football/142/"
   },
   {
+   "title": "Leo Sayer – Can’t Stop Loving You!",
+   "theatre": "Theatre Royal Nottingham",
+   "genre": "Music",
+   "start": "2026-11-10",
+   "end": "2026-11-10",
+   "url": "https://www.trch.co.uk/whats-on/leo-sayer-flgq"
+  },
+  {
+   "title": "Northern Soul Orchestrated",
+   "theatre": "Royal Concert Hall",
+   "genre": "Music",
+   "start": "2026-11-10",
+   "end": "2026-11-10",
+   "url": "https://www.trch.co.uk/whats-on/northern-soul-orchestrated-4rr3"
+  },
+  {
    "title": "Othello",
    "theatre": "Derby Theatre",
    "genre": "Theatre",
@@ -1526,6 +1531,14 @@
    "start": "2026-11-11",
    "end": "2026-11-11",
    "url": "https://brewhouse.co.uk/events/alex-mcaleer-mind-reader"
+  },
+  {
+   "title": "Jack Savoretti",
+   "theatre": "Royal Concert Hall",
+   "genre": "Music",
+   "start": "2026-11-11",
+   "end": "2026-11-11",
+   "url": "https://www.trch.co.uk/whats-on/jack-savoretti-xrw6"
   },
   {
    "title": "National Theatre Live: Golden Boy (Cert TBC)",
@@ -1568,6 +1581,14 @@
    "url": "https://derbytheatre.co.uk/event/alice-marshall-parenthoods-profound-impact-on-creativity-expression/"
   },
   {
+   "title": "Ballet Black at 25",
+   "theatre": "Theatre Royal Nottingham",
+   "genre": "Dance",
+   "start": "2026-11-12",
+   "end": "2026-11-12",
+   "url": "https://www.trch.co.uk/whats-on/ballet-black-at-25-hfnz"
+  },
+  {
    "title": "My Mountain Life",
    "theatre": "Brewhouse Arts Centre",
    "genre": "Talk",
@@ -1592,6 +1613,14 @@
    "url": "https://derbytheatre.co.uk/event/she-was-there/"
   },
   {
+   "title": "The Music of James Bond",
+   "theatre": "Royal Concert Hall",
+   "genre": "Music",
+   "start": "2026-11-12",
+   "end": "2026-11-12",
+   "url": "https://www.trch.co.uk/whats-on/the-music-of-james-bond-5p7n"
+  },
+  {
    "title": "The Nottingham Guild Of Magicians: An Evening of Magic",
    "theatre": "Bonington Theatre",
    "genre": "Magic",
@@ -1606,6 +1635,14 @@
    "start": "2026-11-12",
    "end": "2026-11-12",
    "url": "https://www.mansfield.gov.uk/palacetheatre/events/event/79/the-ultimate-mod-revue"
+  },
+  {
+   "title": "An Evening with Harry Redknapp",
+   "theatre": "Theatre Royal Nottingham",
+   "genre": "Talks",
+   "start": "2026-11-13",
+   "end": "2026-11-13",
+   "url": "https://www.trch.co.uk/whats-on/an-evening-with-harry-redknapp-r697"
   },
   {
    "title": "Cannonball Quintet",
@@ -1664,6 +1701,22 @@
    "url": "https://www.curveonline.co.uk/whats-on/workshops/cq-earlies-2026/"
   },
   {
+   "title": "Chris Ramsey - Here Man",
+   "theatre": "Royal Concert Hall",
+   "genre": "Comedy",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "url": "https://www.trch.co.uk/whats-on/chris-ramsey-5gqn"
+  },
+  {
+   "title": "Dame Judi Dench",
+   "theatre": "Theatre Royal Nottingham",
+   "genre": "Talks",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "url": "https://www.trch.co.uk/whats-on/dame-judi-dench-tp9c"
+  },
+  {
    "title": "I'm Sorry I Haven't A Clue",
    "theatre": "Birmingham Hippodrome",
    "genre": "Comedy & Spoken Word",
@@ -1720,12 +1773,28 @@
    "url": "https://www.demontforthall.co.uk/event/lso-rhapsody-in-blue"
   },
   {
+   "title": "Adam Garcia's Emerald Storm",
+   "theatre": "Theatre Royal Nottingham",
+   "genre": "Dance",
+   "start": "2026-11-16",
+   "end": "2026-11-16",
+   "url": "https://www.trch.co.uk/whats-on/emerald-storm-fltq"
+  },
+  {
    "title": "The Australian Pink Floyd",
    "theatre": "De Montfort Hall",
    "genre": "Tribute",
    "start": "2026-11-16",
    "end": "2026-11-16",
    "url": "https://www.demontforthall.co.uk/event/the-australian-pink-floyd"
+  },
+  {
+   "title": "W*nkernomics",
+   "theatre": "Royal Concert Hall",
+   "genre": "Comedy",
+   "start": "2026-11-16",
+   "end": "2026-11-16",
+   "url": "https://www.trch.co.uk/whats-on/wankernomics-5jcn"
   },
   {
    "title": "Creative Choreography with Jamaal O'Driscoll",
@@ -1738,7 +1807,7 @@
   {
    "title": "Legally Blonde",
    "theatre": "Regent Theatre Stoke",
-   "genre": "Musical",
+   "genre": "Musicals",
    "start": "2026-11-17",
    "end": "2026-11-21",
    "url": "https://www.atgtickets.com/shows/legally-blonde/regent-theatre/"
@@ -1752,12 +1821,28 @@
    "url": "https://www.curveonline.co.uk/whats-on/shows/private-peaceful-2/"
   },
   {
+   "title": "Sinfonia Viva",
+   "theatre": "Royal Concert Hall",
+   "genre": "Classical Music",
+   "start": "2026-11-17",
+   "end": "2026-11-17",
+   "url": "https://www.trch.co.uk/whats-on/sinfonia-viva-nov-26-jb7y"
+  },
+  {
    "title": "The Rachel Parris Songbook",
    "theatre": "Nottingham Playhouse",
    "genre": "Comedy",
    "start": "2026-11-17",
    "end": "2026-11-17",
    "url": "https://nottinghamplayhouse.co.uk/events/the-rachel-parris-songbook/"
+  },
+  {
+   "title": "Del Amitri",
+   "theatre": "Royal Concert Hall",
+   "genre": "Music",
+   "start": "2026-11-18",
+   "end": "2026-11-18",
+   "url": "https://www.trch.co.uk/whats-on/del-amitri-c461"
   },
   {
    "title": "East 17 With Special Guest Blazin' Squad",
@@ -1768,6 +1853,14 @@
    "url": "https://www.demontforthall.co.uk/event/east-17-blazin-squad"
   },
   {
+   "title": "Opera North - Eugene Onegin",
+   "theatre": "Theatre Royal Nottingham",
+   "genre": "Opera",
+   "start": "2026-11-18",
+   "end": "2026-11-18",
+   "url": "https://www.trch.co.uk/whats-on/opera-north-eugene-onegin-rwj7"
+  },
+  {
    "title": "Peter Pan",
    "theatre": "The Rep",
    "genre": "Panto",
@@ -1776,9 +1869,9 @@
    "url": "https://www.birmingham-rep.co.uk/whats-on/peter-pan/"
   },
   {
-   "title": "The Manfreds: Get Your Kicks On Tour '26",
+   "title": "The Manfreds: Get Your Kicks On Tour ’26",
    "theatre": "New Vic Theatre",
-   "genre": "Music",
+   "genre": "",
    "start": "2026-11-18",
    "end": "2026-11-18",
    "url": "https://www.newvictheatre.org.uk/productions/the-manfreds-get-your-kicks-on-tour-26/"
@@ -1816,12 +1909,36 @@
    "url": "https://nottinghamplayhouse.co.uk/events/laura-smyth/"
   },
   {
+   "title": "Nish Kumar: Angry Humour From a Really Nice Guy",
+   "theatre": "Royal Concert Hall",
+   "genre": "Comedy",
+   "start": "2026-11-19",
+   "end": "2026-11-19",
+   "url": "https://www.trch.co.uk/whats-on/nish-kumar-hdbz"
+  },
+  {
+   "title": "Opera North - Rigoletto",
+   "theatre": "Theatre Royal Nottingham",
+   "genre": "Opera",
+   "start": "2026-11-19",
+   "end": "2026-11-19",
+   "url": "https://www.trch.co.uk/whats-on/opera-north-rigoletto-ldvg"
+  },
+  {
    "title": "W*Nkernomics – Show_V4.1_Final _Usethis",
    "theatre": "De Montfort Hall",
    "genre": "",
    "start": "2026-11-19",
    "end": "2026-11-19",
    "url": "https://www.demontforthall.co.uk/event/wnkernomics"
+  },
+  {
+   "title": "Bellowhead Burlesque 20th Anniversary Tour",
+   "theatre": "Royal Concert Hall",
+   "genre": "Music",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "url": "https://www.trch.co.uk/whats-on/bellowhead-52tn"
   },
   {
    "title": "Bill Bailey: Vaudevillean",
@@ -1838,6 +1955,14 @@
    "start": "2026-11-20",
    "end": "2026-11-20",
    "url": "https://www.demontforthall.co.uk/event/christmas-in-ireland"
+  },
+  {
+   "title": "Live at Lunch: Opera North Trio",
+   "theatre": "Theatre Royal Nottingham",
+   "genre": "Music",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "url": "https://www.trch.co.uk/whats-on/live-at-lunch-opera-north-trio-tvfc"
   },
   {
    "title": "Robin Hood (2026 Pantomime)",
@@ -1960,12 +2085,36 @@
    "url": "https://www.demontforthall.co.uk/event/sam-campbell"
   },
   {
+   "title": "Unite the Scene",
+   "theatre": "Royal Concert Hall",
+   "genre": "Dance",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "url": "https://www.trch.co.uk/whats-on/unite-the-scene-1byr"
+  },
+  {
    "title": "Alison Moyet",
    "theatre": "De Montfort Hall",
    "genre": "Music",
    "start": "2026-11-22",
    "end": "2026-11-22",
    "url": "https://www.demontforthall.co.uk/event/alison-moyet"
+  },
+  {
+   "title": "Ben Folds",
+   "theatre": "Royal Concert Hall",
+   "genre": "Music",
+   "start": "2026-11-22",
+   "end": "2026-11-22",
+   "url": "https://www.trch.co.uk/whats-on/ben-folds-6r8b"
+  },
+  {
+   "title": "Sunday Piano Series",
+   "theatre": "Royal Concert Hall",
+   "genre": "Classical Music",
+   "start": "2026-11-22",
+   "end": "2026-11-22",
+   "url": "https://www.trch.co.uk/whats-on/sunday-piano-series-madeleine-brown-zqx4"
   },
   {
    "title": "Christmas in Ireland",
@@ -1984,6 +2133,14 @@
    "url": "https://www.demontforthall.co.uk/event/thatll-be-christmas"
   },
   {
+   "title": "The Holiday In Concert",
+   "theatre": "Royal Concert Hall",
+   "genre": "Film",
+   "start": "2026-11-23",
+   "end": "2026-11-23",
+   "url": "https://www.trch.co.uk/whats-on/the-holiday-in-concert-dyz9"
+  },
+  {
    "title": "Charlie and the Chocolate Factory",
    "theatre": "Brewhouse Arts Centre",
    "genre": "Family",
@@ -1994,7 +2151,7 @@
   {
    "title": "Dirty Dancing",
    "theatre": "Regent Theatre Stoke",
-   "genre": "Musical",
+   "genre": "Musicals",
    "start": "2026-11-24",
    "end": "2026-11-28",
    "url": "https://www.atgtickets.com/shows/dirty-dancing/regent-theatre/"
@@ -2016,6 +2173,14 @@
    "url": "https://www.demontforthall.co.uk/event/dr-john-cooper-clarke"
   },
   {
+   "title": "Jools Holland",
+   "theatre": "Royal Concert Hall",
+   "genre": "Music",
+   "start": "2026-11-25",
+   "end": "2026-11-25",
+   "url": "https://www.trch.co.uk/whats-on/jools-holland-z9w4"
+  },
+  {
    "title": "The Music of Fleetwood Mac by Candlelight",
    "theatre": "The Alexandra Theatre",
    "genre": "Concert",
@@ -2032,6 +2197,14 @@
    "url": "https://www.demontforthall.co.uk/event/jools-holland"
   },
   {
+   "title": "Man in the Mirror - A Tribute to Michael Jackson",
+   "theatre": "Royal Concert Hall",
+   "genre": "Music",
+   "start": "2026-11-26",
+   "end": "2026-11-26",
+   "url": "https://www.trch.co.uk/whats-on/man-in-the-mirror-s3t2"
+  },
+  {
    "title": "Vivienne Franzmann & Frauke Requardt - Anatomy Of Survival",
    "theatre": "Birmingham Hippodrome",
    "genre": "Ballet & Dance",
@@ -2046,6 +2219,14 @@
    "start": "2026-11-26",
    "end": "2026-11-26",
    "url": "https://www.birmingham-rep.co.uk/whats-on/young-rep-and-the-company-showcase-2/"
+  },
+  {
+   "title": "Aardman in Concert - Live with Orchestra",
+   "theatre": "Royal Concert Hall",
+   "genre": "Family",
+   "start": "2026-11-27",
+   "end": "2026-11-27",
+   "url": "https://www.trch.co.uk/whats-on/aardman-in-concert-13cr"
   },
   {
    "title": "Aladdin",
@@ -2120,12 +2301,28 @@
    "url": "https://www.atgtickets.com/shows/austentatious-an-improvised-jane-austen-novel/the-alexandra-theatre-birmingham/"
   },
   {
+   "title": "Jack and the Beanstalk",
+   "theatre": "Theatre Royal Nottingham",
+   "genre": "Family",
+   "start": "2026-11-28",
+   "end": "2026-11-28",
+   "url": "https://www.trch.co.uk/whats-on/jack-and-the-beanstalk-n2df"
+  },
+  {
    "title": "Miss Americana - A Tribute To Taylor Swift",
    "theatre": "De Montfort Hall",
    "genre": "Tribute",
    "start": "2026-11-28",
    "end": "2026-11-28",
    "url": "https://www.demontforthall.co.uk/event/miss-americana"
+  },
+  {
+   "title": "Nottingham Youth Orchestra",
+   "theatre": "Royal Concert Hall",
+   "genre": "Classical Music",
+   "start": "2026-11-28",
+   "end": "2026-11-28",
+   "url": "https://www.trch.co.uk/whats-on/nottingham-youth-orchestra-xyb6"
   },
   {
    "title": "Treasure Island",
@@ -2168,6 +2365,14 @@
    "url": "https://centurytheatre.co.uk/whats-on/desford-colliery-band-christmas-extravaganza/"
   },
   {
+   "title": "Jonathan Pie: The End of The World According to Jonathan Pie",
+   "theatre": "Royal Concert Hall",
+   "genre": "Comedy",
+   "start": "2026-11-29",
+   "end": "2026-11-29",
+   "url": "https://www.trch.co.uk/whats-on/jonathan-pie-ql2t"
+  },
+  {
    "title": "Daisy and the Trouble with Christmas",
    "theatre": "Curve Theatre",
    "genre": "Family",
@@ -2190,6 +2395,14 @@
    "start": "2026-11-30",
    "end": "2026-11-30",
    "url": "https://www.atgtickets.com/shows/the-australian-pink-floyd/regent-theatre/"
+  },
+  {
+   "title": "Tony Hadley - The Christmas Big Band Tour",
+   "theatre": "Royal Concert Hall",
+   "genre": "Music",
+   "start": "2026-11-30",
+   "end": "2026-11-30",
+   "url": "https://www.trch.co.uk/whats-on/tony-hadley-rwm7"
   },
   {
    "title": "Wicker (Cert 15 TBC)",
@@ -2216,12 +2429,28 @@
    "url": "https://vaillantlive.co.uk/event/ocean-colour-scene/102/"
   },
   {
+   "title": "The Australian Pink Floyd",
+   "theatre": "Royal Concert Hall",
+   "genre": "Music",
+   "start": "2026-12-01",
+   "end": "2026-12-01",
+   "url": "https://www.trch.co.uk/whats-on/the-australian-pink-floyd-fylq"
+  },
+  {
    "title": "James B Partridge - The Big Christmas Assembly 2026",
    "theatre": "De Montfort Hall",
    "genre": "Comedy",
    "start": "2026-12-02",
    "end": "2026-12-02",
    "url": "https://www.demontforthall.co.uk/event/james-b-partridge"
+  },
+  {
+   "title": "Level 42",
+   "theatre": "Royal Concert Hall",
+   "genre": "Music",
+   "start": "2026-12-02",
+   "end": "2026-12-02",
+   "url": "https://www.trch.co.uk/whats-on/level-42-tz6c"
   },
   {
    "title": "Midwinter Revels",
@@ -2238,6 +2467,14 @@
    "start": "2026-12-02",
    "end": "2026-12-02",
    "url": "https://vaillantlive.co.uk/event/the-damned-final-damnation-50/143/"
+  },
+  {
+   "title": "Adam Rowe: Fashionism",
+   "theatre": "Royal Concert Hall",
+   "genre": "Comedy",
+   "start": "2026-12-03",
+   "end": "2026-12-03",
+   "url": "https://www.trch.co.uk/whats-on/adam-rowe-rhr7"
   },
   {
    "title": "Comedy Crackers",
@@ -2288,6 +2525,14 @@
    "url": "https://www.demontforthall.co.uk/event/catholic-schools-carol-concert-menphys"
   },
   {
+   "title": "The Muppet Christmas Carol",
+   "theatre": "Royal Concert Hall",
+   "genre": "Family",
+   "start": "2026-12-04",
+   "end": "2026-12-04",
+   "url": "https://www.trch.co.uk/whats-on/the-muppet-christmas-carol-4qq3"
+  },
+  {
    "title": "A Christmas Wassail @ Hartlebury Castle",
    "theatre": "The Old Rep Theatre",
    "genre": "Variety",
@@ -2334,6 +2579,14 @@
    "start": "2026-12-05",
    "end": "2026-12-05",
    "url": "https://www.atgtickets.com/shows/miriams-full-english-live/regent-theatre/"
+  },
+  {
+   "title": "Nottingham Harmonic Choir – Messiah",
+   "theatre": "Royal Concert Hall",
+   "genre": "Classical Music",
+   "start": "2026-12-05",
+   "end": "2026-12-05",
+   "url": "https://www.trch.co.uk/whats-on/messiah-5lrn"
   },
   {
    "title": "One Tiny Penguin",
@@ -2408,6 +2661,14 @@
    "url": "https://www.curveonline.co.uk/whats-on/shows/christmas-music-by-candlelight-2026/"
   },
   {
+   "title": "Live at Lunch: Christmas with the NTU Chamber Choir",
+   "theatre": "Royal Concert Hall",
+   "genre": "Music",
+   "start": "2026-12-07",
+   "end": "2026-12-07",
+   "url": "https://www.trch.co.uk/whats-on/live-at-lunch-ntu-chamber-choir-myvx"
+  },
+  {
    "title": "An Orchestral Tribute to Tim Burton & Dark Fantasy by Moonlight",
    "theatre": "The Alexandra Theatre",
    "genre": "Concert",
@@ -2456,6 +2717,14 @@
    "url": "https://www.newvictheatre.org.uk/productions/tale-trail-to-the-borrowers/"
   },
   {
+   "title": "The Big Christmas Sing A-Long",
+   "theatre": "Royal Concert Hall",
+   "genre": "Music",
+   "start": "2026-12-09",
+   "end": "2026-12-09",
+   "url": "https://www.trch.co.uk/whats-on/the-big-christmas-sing-a-long-7kc8"
+  },
+  {
    "title": "Home Alone In Concert",
    "theatre": "Vaillant Live",
    "genre": "Music",
@@ -2470,6 +2739,14 @@
    "start": "2026-12-10",
    "end": "2026-12-10",
    "url": "https://www.curveonline.co.uk/whats-on/shows/kaine-winter-voices/"
+  },
+  {
+   "title": "Love Actually in Concert",
+   "theatre": "Royal Concert Hall",
+   "genre": "Film",
+   "start": "2026-12-10",
+   "end": "2026-12-10",
+   "url": "https://www.trch.co.uk/whats-on/love-actually-in-concert-4993"
   },
   {
    "title": "Nottingham Playhouse Business Club December 2026",
@@ -2494,6 +2771,14 @@
    "start": "2026-12-11",
    "end": "2026-12-11",
    "url": "https://brewhouse.co.uk/events/festivities-with-friends-3"
+  },
+  {
+   "title": "Live at Christmas",
+   "theatre": "Royal Concert Hall",
+   "genre": "Comedy",
+   "start": "2026-12-11",
+   "end": "2026-12-11",
+   "url": "https://www.trch.co.uk/whats-on/live-at-christmas-7bs8"
   },
   {
    "title": "Snow White (Pantomime)",
@@ -2528,6 +2813,14 @@
    "url": "https://www.oldrep.co.uk/event-details/349531APNBMNVKGMNNDJKSJDCTCNQQKVK/a-christmas-wassail-coughton-court/"
   },
   {
+   "title": "Beanbag Music Club - The Night Before Christmas",
+   "theatre": "Royal Concert Hall",
+   "genre": "Family",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "url": "https://www.trch.co.uk/whats-on/beanbag-music-club-the-night-before-christmas-fw2q"
+  },
+  {
    "title": "Beauty And The Beast",
    "theatre": "De Montfort Hall",
    "genre": "Pantomime",
@@ -2536,12 +2829,28 @@
    "url": "https://www.demontforthall.co.uk/event/beauty-and-the-beast"
   },
   {
+   "title": "Guided Tour",
+   "theatre": "Theatre Royal Nottingham",
+   "genre": "Tours",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "url": "https://www.trch.co.uk/whats-on/guided-tours-dec-26-qkht"
+  },
+  {
    "title": "James B Partridge - The Big Christmas Assembly 2026",
    "theatre": "The Alexandra Theatre",
    "genre": "Family",
    "start": "2026-12-12",
    "end": "2026-12-12",
    "url": "https://www.atgtickets.com/shows/james-b-partridge-the-big-christmas-assembly-2026/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "The Bootleg Beatles in Concert",
+   "theatre": "Royal Concert Hall",
+   "genre": "Music",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "url": "https://www.trch.co.uk/whats-on/the-bootleg-beatles-8w6s"
   },
   {
    "title": "The Snowman (U) + Live Brass Band",
@@ -2560,9 +2869,25 @@
    "url": "https://brewhouse.co.uk/events/we-will-rock-you"
   },
   {
+   "title": "The Snowman",
+   "theatre": "Royal Concert Hall",
+   "genre": "Family",
+   "start": "2026-12-13",
+   "end": "2026-12-13",
+   "url": "https://www.trch.co.uk/whats-on/the-snowman-j52y"
+  },
+  {
+   "title": "Marley was Dead",
+   "theatre": "Royal Concert Hall",
+   "genre": "Comedy",
+   "start": "2026-12-14",
+   "end": "2026-12-14",
+   "url": "https://www.trch.co.uk/whats-on/marley-was-dead-16jr"
+  },
+  {
    "title": "Mean Girls",
    "theatre": "The Alexandra Theatre",
-   "genre": "Musical",
+   "genre": "Musicals",
    "start": "2026-12-14",
    "end": "2027-01-02",
    "url": "https://www.atgtickets.com/shows/mean-girls/the-alexandra-theatre-birmingham/"
@@ -2582,6 +2907,14 @@
    "start": "2026-12-14",
    "end": "2026-12-14",
    "url": "https://www.newvictheatre.org.uk/productions/the-albion-christmas-band-4/"
+  },
+  {
+   "title": "James B Partridge",
+   "theatre": "Royal Concert Hall",
+   "genre": "Comedy",
+   "start": "2026-12-15",
+   "end": "2026-12-15",
+   "url": "https://www.trch.co.uk/whats-on/james-b-partridge-hn5z"
   },
   {
    "title": "Scrooge Cirque Extravaganza",
@@ -2744,6 +3077,14 @@
    "url": "https://www.boningtontheatre.co.uk/whatson-event/the-puppet-folk-experience-christmas-show/"
   },
   {
+   "title": "Upfront Comedy Christmas Special",
+   "theatre": "The Rep",
+   "genre": "Comedy",
+   "start": "2026-12-23",
+   "end": "2026-12-23",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/upfront-comedy-christmas-special/"
+  },
+  {
    "title": "Let’s All Dance: The Nutcracker",
    "theatre": "Bonington Theatre",
    "genre": "",
@@ -2762,15 +3103,15 @@
   {
    "title": "The Silence of the Lambs",
    "theatre": "The Alexandra Theatre",
-   "genre": "Play",
+   "genre": "Plays",
    "start": "2027-01-05",
    "end": "2027-01-09",
    "url": "https://www.atgtickets.com/shows/the-silence-of-the-lambs/the-alexandra-theatre-birmingham/"
   },
   {
-   "title": "The Pasadena Roof Orchestra",
+   "title": "The Pasadena Roof Orchestra: Celebrating the Music of The Roaring Twenties & ‘30s",
    "theatre": "New Vic Theatre",
-   "genre": "Music",
+   "genre": "Classical",
    "start": "2027-01-07",
    "end": "2027-01-07",
    "url": "https://www.newvictheatre.org.uk/productions/the-pasadena-roof-orchestra-celebrating-the-music-of-the-roaring-twenties-30s/"
@@ -2826,7 +3167,7 @@
   {
    "title": "Agatha Christie's The Hollow",
    "theatre": "The Alexandra Theatre",
-   "genre": "Play",
+   "genre": "Plays",
    "start": "2027-01-12",
    "end": "2027-01-16",
    "url": "https://www.atgtickets.com/shows/agatha-christies-the-hollow/the-alexandra-theatre-birmingham/"
@@ -2906,7 +3247,7 @@
   {
    "title": "LOL Comedy Club 2027",
    "theatre": "Regent Theatre Stoke",
-   "genre": "Comedy",
+   "genre": "The Piano Bar, Regent Theatre",
    "start": "2027-01-16",
    "end": "2027-12-31",
    "url": "https://www.atgtickets.com/shows/lol-comedy-club-2027/the-piano-bar-regent-theatre/"
@@ -2918,6 +3259,14 @@
    "start": "2027-01-16",
    "end": "2027-01-16",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/mayor-of-gedlings-pantomime-mack-and-the-beanstalk/"
+  },
+  {
+   "title": "NT Live: Golden Boy",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-01-16",
+   "end": "2027-01-16",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/nt-live-golden-boy/"
   },
   {
    "title": "Puss in Boots",
@@ -2970,7 +3319,7 @@
   {
    "title": "The Night Sky Show, A Sky Full of Hope",
    "theatre": "The Alexandra Theatre",
-   "genre": "Event",
+   "genre": "Events",
    "start": "2027-01-17",
    "end": "2027-01-17",
    "url": "https://www.atgtickets.com/shows/the-night-sky-show-a-sky-full-of-hope/the-alexandra-theatre-birmingham/"
@@ -2978,7 +3327,7 @@
   {
    "title": "027 Dance: Love Stories",
    "theatre": "Regent Theatre Stoke",
-   "genre": "Dance",
+   "genre": "Regent Theatre, Stoke-on-Trent",
    "start": "2027-01-18",
    "end": "2027-01-30",
    "url": "https://www.atgtickets.com/shows/027-dance-love-stories/regent-theatre/"
@@ -2986,7 +3335,7 @@
   {
    "title": "Dirty Dancing",
    "theatre": "The Alexandra Theatre",
-   "genre": "Musical",
+   "genre": "Musicals",
    "start": "2027-01-19",
    "end": "2027-01-23",
    "url": "https://www.atgtickets.com/shows/dirty-dancing/the-alexandra-theatre-birmingham/"
@@ -3014,6 +3363,14 @@
    "start": "2027-01-19",
    "end": "2027-01-23",
    "url": "https://www.curveonline.co.uk/whats-on/shows/six-4/"
+  },
+  {
+   "title": "Fly, You Fools!",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-01-20",
+   "end": "2027-01-23",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/fly-you-fools/"
   },
   {
    "title": "The D-Day Darlings",
@@ -3120,9 +3477,17 @@
    "url": "https://brewhouse.co.uk/events/all-things-mccartney"
   },
   {
-   "title": "Soul Brothers Syndicate",
+   "title": "Queen by Candlelight",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Concert",
+   "start": "2027-01-28",
+   "end": "2027-01-28",
+   "url": "https://www.atgtickets.com/shows/queen-by-candlelight/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Soul Brothers Syndicate featuring Darrell Smith, Judith Ude & Grace Curran",
    "theatre": "New Vic Theatre",
-   "genre": "Music",
+   "genre": "",
    "start": "2027-01-28",
    "end": "2027-01-29",
    "url": "https://www.newvictheatre.org.uk/productions/soul-brothers-syndicate-featuring-darrell-smith-judith-ude-grace-curran/"
@@ -3152,6 +3517,14 @@
    "url": "https://nottinghamplayhouse.co.uk/events/abi-clarke-just-tell-me-when-its-over/"
   },
   {
+   "title": "Comedy Night At The Rep (January Edition)",
+   "theatre": "The Rep",
+   "genre": "Comedy",
+   "start": "2027-01-30",
+   "end": "2027-01-30",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/comedy-night-at-the-rep-january-edition/"
+  },
+  {
    "title": "MHTT Presents Sleeping Beauty",
    "theatre": "Palace Theatre Mansfield",
    "genre": "Pantomime",
@@ -3168,6 +3541,14 @@
    "url": "https://www.grandtheatre.co.uk/whats-on/michael-starring-ben-3/"
   },
   {
+   "title": "The Dinosaur That Pooped",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Family",
+   "start": "2027-01-30",
+   "end": "2027-01-30",
+   "url": "https://www.atgtickets.com/shows/the-dinosaur-that-pooped/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "The Fleetwood Mac Experience",
    "theatre": "New Vic Theatre",
    "genre": "Music",
@@ -3182,6 +3563,14 @@
    "start": "2027-01-30",
    "end": "2027-01-30",
    "url": "https://centurytheatre.co.uk/whats-on/titanic-tales/"
+  },
+  {
+   "title": "Ed Gamble - Fresh Hell",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Comedy",
+   "start": "2027-01-31",
+   "end": "2027-01-31",
+   "url": "https://www.atgtickets.com/shows/ed-gamble-fresh-hell/the-alexandra-theatre-birmingham/"
   },
   {
    "title": "Dynamo",
@@ -3224,6 +3613,22 @@
    "url": "https://www.demontforthall.co.uk/event/hamza-yassin"
   },
   {
+   "title": "Chains",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-02-04",
+   "end": "2027-02-20",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/chains/"
+  },
+  {
+   "title": "Murder, She Didn't Write",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Plays",
+   "start": "2027-02-04",
+   "end": "2027-02-04",
+   "url": "https://www.atgtickets.com/shows/murder-she-didnt-write/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "The Classic Rock Show",
    "theatre": "De Montfort Hall",
    "genre": "",
@@ -3248,6 +3653,14 @@
    "url": "https://www.demontforthall.co.uk/event/murder-trial-tonight-v"
   },
   {
+   "title": "São Paulo Dance Company",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Ballet & Dance",
+   "start": "2027-02-05",
+   "end": "2027-02-06",
+   "url": "https://www.birminghamhippodrome.com/calendar/sao-paulo-dance-company/"
+  },
+  {
    "title": "Varna Ballet - Swan Lake",
    "theatre": "Wolverhampton Grand Theatre",
    "genre": "",
@@ -3264,12 +3677,28 @@
    "url": "https://nottinghamplayhouse.co.uk/events/dan-tiernan-quartz-and-all/"
   },
   {
+   "title": "Gladstone Girls",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2027-02-06",
+   "end": "2027-02-27",
+   "url": "https://www.newvictheatre.org.uk/productions/gladstone-girls/"
+  },
+  {
    "title": "Souvenir – A Tribute to Orchestral Manoeuvres in the Dark",
    "theatre": "Bonington Theatre",
    "genre": "Tribute",
    "start": "2027-02-06",
    "end": "2027-02-06",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/souvenir-a-tribute-to-orchestral-manoeuvres-in-the-dark/"
+  },
+  {
+   "title": "Thank You For The Music",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Concert",
+   "start": "2027-02-06",
+   "end": "2027-02-06",
+   "url": "https://www.atgtickets.com/shows/thank-you-for-the-music/the-alexandra-theatre-birmingham/"
   },
   {
    "title": "The Magic Of Motown",
@@ -3288,6 +3717,22 @@
    "url": "https://www.grandtheatre.co.uk/whats-on/snow-white-2/"
   },
   {
+   "title": "Romesh Ranganathan Will Change Your Life",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Comedy",
+   "start": "2027-02-07",
+   "end": "2027-02-07",
+   "url": "https://www.atgtickets.com/shows/romesh-ranganathan-will-change-your-life/regent-theatre/"
+  },
+  {
+   "title": "The Rocket Man - A Tribute to Sir Elton John",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Concert",
+   "start": "2027-02-07",
+   "end": "2027-02-07",
+   "url": "https://www.atgtickets.com/shows/the-rocket-man-a-tribute-to-sir-elton-john/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "The Royal Opera: Götterdämmerung (Cert TBC)",
    "theatre": "Bonington Theatre",
    "genre": "",
@@ -3296,12 +3741,36 @@
    "url": "https://www.boningtontheatre.co.uk/whatson-event/the-royal-opera-gotterdammerung-cert-tbc/"
   },
   {
+   "title": "Matthew Bourne's Cinderella",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Ballet & Dance",
+   "start": "2027-02-09",
+   "end": "2027-02-13",
+   "url": "https://www.birminghamhippodrome.com/calendar/matthew-bournes-cinderella-two/"
+  },
+  {
    "title": "Paranormal Activity",
    "theatre": "Wolverhampton Grand Theatre",
    "genre": "",
    "start": "2027-02-09",
    "end": "2027-02-13",
    "url": "https://www.grandtheatre.co.uk/whats-on/paranormal-activity/"
+  },
+  {
+   "title": "Strangers on a Train",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Plays",
+   "start": "2027-02-09",
+   "end": "2027-02-13",
+   "url": "https://www.atgtickets.com/shows/strangers-on-a-train/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "The Silence of the Lambs",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Plays",
+   "start": "2027-02-09",
+   "end": "2027-02-13",
+   "url": "https://www.atgtickets.com/shows/the-silence-of-the-lambs/regent-theatre/"
   },
   {
    "title": "Philharmonia: Santtu Conducts Beethoven And Reich",
@@ -3326,6 +3795,14 @@
    "start": "2027-02-11",
    "end": "2027-02-11",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/jazz-steps-soft-machine/"
+  },
+  {
+   "title": "Pagrav Dance Company presents Aunusthan – a celebration of Kathak in diaspora",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2027-02-11",
+   "end": "2027-02-11",
+   "url": "https://www.newvictheatre.org.uk/productions/aunusthan-a-celebration-of-neo-classical-indian-dance-and-music/"
   },
   {
    "title": "All Things McCartney",
@@ -3384,6 +3861,14 @@
    "url": "https://centurytheatre.co.uk/whats-on/the-motown-gospel-choir-with-rachel-modest/"
   },
   {
+   "title": "Buddy Holly & The Cricketers: The Rock ‘n’ Roll Legends Show",
+   "theatre": "New Vic Theatre",
+   "genre": "Tribute",
+   "start": "2027-02-15",
+   "end": "2027-02-15",
+   "url": "https://www.newvictheatre.org.uk/productions/buddy-holly-the-cricketers-the-rock-n-roll-legends-show/"
+  },
+  {
    "title": "Science Museum & UK Space Agency: Space Explorers Academy",
    "theatre": "Nottingham Playhouse",
    "genre": "",
@@ -3406,6 +3891,30 @@
    "start": "2027-02-16",
    "end": "2027-02-21",
    "url": "https://www.grandtheatre.co.uk/whats-on/annie/"
+  },
+  {
+   "title": "Christmas Carol Goes Wrong",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Plays",
+   "start": "2027-02-16",
+   "end": "2027-02-20",
+   "url": "https://www.atgtickets.com/shows/christmas-carol-goes-wrong/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Ministry of Science LIVE - Science Saved The World",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Family",
+   "start": "2027-02-16",
+   "end": "2027-02-16",
+   "url": "https://www.atgtickets.com/shows/ministry-of-science-live-science-saved-the-world/regent-theatre/"
+  },
+  {
+   "title": "Punch",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-02-16",
+   "end": "2027-02-20",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/punch/"
   },
   {
    "title": "The Good, The Bad And The Rugby",
@@ -3432,6 +3941,14 @@
    "url": "https://www.demontforthall.co.uk/event/cirque-enchantment"
   },
   {
+   "title": "The Littlest Yak",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-02-17",
+   "end": "2027-02-18",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/the-littlest-yak/"
+  },
+  {
    "title": "Alice Roberts: From Cell To Civilisation",
    "theatre": "De Montfort Hall",
    "genre": "",
@@ -3446,6 +3963,14 @@
    "start": "2027-02-19",
    "end": "2027-02-19",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/a-night-at-the-musicals-sandy-smith-and-sophie-mairi/"
+  },
+  {
+   "title": "An Evening Without Kate Bush",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-02-19",
+   "end": "2027-02-20",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/an-evening-without-kate-bush-2/"
   },
   {
    "title": "Clinton Baptiste: Spectral Intercourse",
@@ -3488,6 +4013,14 @@
    "url": "https://nottinghamplayhouse.co.uk/events/banff-film-festival/"
   },
   {
+   "title": "Birmingham Royal Ballet - The Maiden of Venice",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Ballet & Dance",
+   "start": "2027-02-20",
+   "end": "2027-02-27",
+   "url": "https://www.birminghamhippodrome.com/calendar/brb-the-maiden-of-venice/"
+  },
+  {
    "title": "Comedy Club 4 Kids",
    "theatre": "De Montfort Hall",
    "genre": "Comedy",
@@ -3504,12 +4037,36 @@
    "url": "https://www.demontforthall.co.uk/event/ed-gamble"
   },
   {
+   "title": "Jack Dee: Jack's Joke Show",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-02-21",
+   "end": "2027-02-21",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/jack-dee-jacks-joke-show/"
+  },
+  {
    "title": "Matinees of Murders and Mysteries presents… The Scottish Detective, David Swindle",
    "theatre": "Bonington Theatre",
    "genre": "",
    "start": "2027-02-21",
    "end": "2027-02-21",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/matinees-of-murders-and-mysteries-presents-the-scottish-detective-david-swindle/"
+  },
+  {
+   "title": "Vanessa Williams: Live in Concert",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Events, Concert",
+   "start": "2027-02-21",
+   "end": "2027-02-21",
+   "url": "https://www.atgtickets.com/shows/vanessa-williams-live-in-concert/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Hejira – Celebrating Joni Mitchell",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2027-02-22",
+   "end": "2027-02-22",
+   "url": "https://www.newvictheatre.org.uk/productions/hejira-celebrating-joni-mitchell/"
   },
   {
    "title": "Banff Mountain Film Festival World Tour 2027",
@@ -3528,6 +4085,14 @@
    "url": "https://www.grandtheatre.co.uk/whats-on/everybodys-talking-about-jamie/"
   },
   {
+   "title": "Shen Yun",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Dance",
+   "start": "2027-02-23",
+   "end": "2027-02-23",
+   "url": "https://www.atgtickets.com/shows/shen-yun/regent-theatre/"
+  },
+  {
    "title": "The Royal Opera: Così fan tutte (Cert TBC)",
    "theatre": "Bonington Theatre",
    "genre": "",
@@ -3542,6 +4107,14 @@
    "start": "2027-02-25",
    "end": "2027-02-27",
    "url": "https://nottinghamplayhouse.co.uk/events/birdcatcher/"
+  },
+  {
+   "title": "Nathan Carter",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Concert",
+   "start": "2027-02-25",
+   "end": "2027-02-25",
+   "url": "https://www.atgtickets.com/shows/nathan-carter/the-alexandra-theatre-birmingham/"
   },
   {
    "title": "Tap Factory - Reloaded",
@@ -3566,6 +4139,38 @@
    "start": "2027-02-26",
    "end": "2027-02-26",
    "url": "https://www.demontforthall.co.uk/event/legend-the-music-of-bob-marley"
+  },
+  {
+   "title": "Maisie Adam - Whatsherface",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Comedy",
+   "start": "2027-02-26",
+   "end": "2027-02-26",
+   "url": "https://www.atgtickets.com/shows/maisie-adam-whatsherface/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Tap Factory",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Dance",
+   "start": "2027-02-26",
+   "end": "2027-02-26",
+   "url": "https://www.atgtickets.com/shows/tap-factory/regent-theatre/"
+  },
+  {
+   "title": "Comedy Night At The Rep (February Edition)",
+   "theatre": "The Rep",
+   "genre": "Comedy",
+   "start": "2027-02-27",
+   "end": "2027-02-27",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/comedy-night-at-the-rep-february-edition/"
+  },
+  {
+   "title": "Giovanni - Unstoppable",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Dance",
+   "start": "2027-02-27",
+   "end": "2027-02-27",
+   "url": "https://www.atgtickets.com/shows/giovanni-unstoppable/the-alexandra-theatre-birmingham/"
   },
   {
    "title": "The Amy Winehouse Band",
@@ -3608,12 +4213,28 @@
    "url": "https://www.grandtheatre.co.uk/whats-on/a-shoddy-detective-and-the-art-of-deception/"
   },
   {
+   "title": "The Mousetrap",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Plays",
+   "start": "2027-03-01",
+   "end": "2027-03-06",
+   "url": "https://www.atgtickets.com/shows/the-mousetrap/regent-theatre/"
+  },
+  {
    "title": "Giovanni - Unstoppable",
    "theatre": "Wolverhampton Grand Theatre",
    "genre": "",
    "start": "2027-03-02",
    "end": "2027-03-02",
    "url": "https://www.grandtheatre.co.uk/whats-on/giovanni-unstoppable/"
+  },
+  {
+   "title": "Victoria Wood's dinnerladies",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Drama",
+   "start": "2027-03-02",
+   "end": "2027-03-06",
+   "url": "https://www.birminghamhippodrome.com/calendar/victoria-woods-dinner-ladies/"
   },
   {
    "title": "Attention All Shipping: A Celebration of the Shipping Forecast",
@@ -3632,6 +4253,38 @@
    "url": "https://www.grandtheatre.co.uk/whats-on/queenz-battle-of-the-divas/"
   },
   {
+   "title": "Room on the Broom",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Family & Pantomime",
+   "start": "2027-03-03",
+   "end": "2027-03-07",
+   "url": "https://www.birminghamhippodrome.com/calendar/room-on-the-broom-two/"
+  },
+  {
+   "title": "Steve Knightley with Daniel Salvatore",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2027-03-03",
+   "end": "2027-03-03",
+   "url": "https://www.newvictheatre.org.uk/productions/steve-knightley-with-daniel-salvatore/"
+  },
+  {
+   "title": "Lemn Sissay",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2027-03-05",
+   "end": "2027-03-05",
+   "url": "https://www.newvictheatre.org.uk/productions/lemn-sissay/"
+  },
+  {
+   "title": "On sale Fri 23 Oct 2026",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Henning Wehn - Acid Wehn",
+   "start": "2027-03-05",
+   "end": "2027-03-05",
+   "url": "https://www.atgtickets.com/shows/henning-wehn-acid-wehn/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "QUO CONNECTION",
    "theatre": "Bonington Theatre",
    "genre": "",
@@ -3648,12 +4301,52 @@
    "url": "https://www.boningtontheatre.co.uk/whatson-event/music-from-stage-screen-presented-by-the-renaissance-big-band/"
   },
   {
+   "title": "The Blockheads",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2027-03-06",
+   "end": "2027-03-06",
+   "url": "https://www.newvictheatre.org.uk/productions/the-blockheads-2/"
+  },
+  {
+   "title": "An Evening with Sir David Jason",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Talk",
+   "start": "2027-03-07",
+   "end": "2027-03-07",
+   "url": "https://www.atgtickets.com/shows/an-evening-with-sir-david-jason/regent-theatre/"
+  },
+  {
+   "title": "Lost In Music - One Night at the Disco",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Concert",
+   "start": "2027-03-07",
+   "end": "2027-03-07",
+   "url": "https://www.atgtickets.com/shows/lost-in-music-one-night-at-the-disco/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "The Good, The Bad & The Rugby",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Talk",
+   "start": "2027-03-08",
+   "end": "2027-03-08",
+   "url": "https://www.atgtickets.com/shows/the-good-the-bad-and-the-rugby/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "Annie",
    "theatre": "Curve Theatre",
    "genre": "",
    "start": "2027-03-09",
    "end": "2027-03-14",
    "url": "https://www.curveonline.co.uk/whats-on/shows/annie-3/"
+  },
+  {
+   "title": "Back to the Future The Musical",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Musicals",
+   "start": "2027-03-09",
+   "end": "2027-04-10",
+   "url": "https://www.birminghamhippodrome.com/calendar/back-to-the-future-the-musical/"
   },
   {
    "title": "Expendable Curtain Raiser",
@@ -3664,12 +4357,52 @@
    "url": "https://nottinghamplayhouse.co.uk/events/expendable-curtain-raiser/"
   },
   {
+   "title": "Alan Carr: Have I Said Too Much?",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Comedy",
+   "start": "2027-03-11",
+   "end": "2027-03-11",
+   "url": "https://www.atgtickets.com/shows/alan-carr-have-i-said-too-much/regent-theatre/"
+  },
+  {
+   "title": "Horrible Histories: Barmy Britain",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Family",
+   "start": "2027-03-11",
+   "end": "2027-03-13",
+   "url": "https://www.atgtickets.com/shows/horrible-histories-barmy-britain/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Kane Brown",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2027-03-11",
+   "end": "2027-03-11",
+   "url": "https://www.newvictheatre.org.uk/productions/kane-brown/"
+  },
+  {
    "title": "ABBA Sensation",
    "theatre": "Bonington Theatre",
    "genre": "",
    "start": "2027-03-12",
    "end": "2027-03-12",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/abba-sensation-4/"
+  },
+  {
+   "title": "ATG INSPIRE Academy 2026 – 2027 Autumn & Spring Term",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Regent Theatre, Stoke-on-Trent",
+   "start": "2027-03-12",
+   "end": "2027-03-12",
+   "url": "https://www.atgtickets.com/shows/atg-inspire-academy-2026-2027-autumn-and-spring-term/regent-theatre/"
+  },
+  {
+   "title": "P.P. Arnold",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2027-03-12",
+   "end": "2027-03-12",
+   "url": "https://www.newvictheatre.org.uk/productions/p-p-arnold/"
   },
   {
    "title": "The Bacchae",
@@ -3680,6 +4413,46 @@
    "url": "https://nottinghamplayhouse.co.uk/events/the-bacchae/"
   },
   {
+   "title": "Lindisfarne",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2027-03-13",
+   "end": "2027-03-13",
+   "url": "https://www.newvictheatre.org.uk/productions/lindisfarne-2/"
+  },
+  {
+   "title": "The Brummie Ensemble's Easter Pantomime",
+   "theatre": "The Rep",
+   "genre": "Pantomime",
+   "start": "2027-03-13",
+   "end": "2027-03-13",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/the-brummie-ensembles-easter-pantomime/"
+  },
+  {
+   "title": "The Dinosaur That Pooped",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Family",
+   "start": "2027-03-13",
+   "end": "2027-03-13",
+   "url": "https://www.atgtickets.com/shows/the-dinosaur-that-pooped/regent-theatre/"
+  },
+  {
+   "title": "The Best of Mike Oldfield's Tubular Bells I II & III",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Concert",
+   "start": "2027-03-14",
+   "end": "2027-03-14",
+   "url": "https://www.atgtickets.com/shows/the-best-of-mike-oldfields-tubular-bells-i-ii-and-iii/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Heathers the Musical",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Musicals",
+   "start": "2027-03-16",
+   "end": "2027-03-20",
+   "url": "https://www.atgtickets.com/shows/heathers-the-musical/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "Punch",
    "theatre": "Curve Theatre",
    "genre": "",
@@ -3688,12 +4461,36 @@
    "url": "https://www.curveonline.co.uk/whats-on/shows/punch/"
   },
   {
+   "title": "Tape Face: 20",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-03-19",
+   "end": "2027-03-19",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/tape-face-20/"
+  },
+  {
    "title": "Retro Feva 90’s – The Ultimate 90’s Show",
    "theatre": "Century Theatre",
    "genre": "",
    "start": "2027-03-20",
    "end": "2027-03-20",
    "url": "https://centurytheatre.co.uk/whats-on/retro-feva-90s-the-ultimate-90s-show/"
+  },
+  {
+   "title": "Phil Wang: UH OH",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Comedy",
+   "start": "2027-03-21",
+   "end": "2027-03-21",
+   "url": "https://www.atgtickets.com/shows/phil-wang-uh-oh/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Pride and Prejudice* (*sort of)",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Plays",
+   "start": "2027-03-22",
+   "end": "2027-03-27",
+   "url": "https://www.atgtickets.com/shows/pride-and-prejudice-sort-of/the-alexandra-theatre-birmingham/"
   },
   {
    "title": "The Very Hungry Caterpillar",
@@ -3728,6 +4525,14 @@
    "url": "https://www.oldrep.co.uk/event-details/339931ALHKCDJCLQRTNQCHMLBKBTQCGQR/beatles-complete-a-tribute-to-the-fab-four/"
   },
   {
+   "title": "Comedy Night At The Rep (March Edition)",
+   "theatre": "The Rep",
+   "genre": "Comedy",
+   "start": "2027-03-27",
+   "end": "2027-03-27",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/comedy-night-at-the-rep-march-edition/"
+  },
+  {
    "title": "Just For One Day: The Live Aid Musical",
    "theatre": "Curve Theatre",
    "genre": "Musical",
@@ -3736,12 +4541,36 @@
    "url": "https://www.curveonline.co.uk/whats-on/shows/just-for-one-day/"
   },
   {
+   "title": "'Phantoms of the Popera' starring G4",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Concert",
+   "start": "2027-03-29",
+   "end": "2027-03-29",
+   "url": "https://www.atgtickets.com/shows/phantoms-of-the-popera-starring-g4/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Cirque: The Greatest Show",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Events",
+   "start": "2027-03-30",
+   "end": "2027-03-30",
+   "url": "https://www.atgtickets.com/shows/cirque-the-greatest-show/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "Goldilocks",
    "theatre": "Curve Theatre",
    "genre": "Pantomime",
    "start": "2027-03-30",
    "end": "2027-03-31",
    "url": "https://www.curveonline.co.uk/whats-on/shows/goldilocks-2/"
+  },
+  {
+   "title": "Martin Taylor: Stories and Strings",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2027-03-30",
+   "end": "2027-03-30",
+   "url": "https://www.newvictheatre.org.uk/productions/martin-taylor-stories-and-strings/"
   },
   {
    "title": "Copper Studios: Bring It On- The Musical",
@@ -3758,6 +4587,14 @@
    "start": "2027-03-31",
    "end": "2027-03-31",
    "url": "https://nottinghamplayhouse.co.uk/events/tatty-macleod-2/"
+  },
+  {
+   "title": "Bianca Del Rio",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Comedy",
+   "start": "2027-04-01",
+   "end": "2027-04-01",
+   "url": "https://www.atgtickets.com/shows/bianca-del-rio/the-alexandra-theatre-birmingham/"
   },
   {
    "title": "Copper Studios: Stranger Sings! – The Parody Musical",
@@ -3784,12 +4621,36 @@
    "url": "https://nottinghamplayhouse.co.uk/events/elo-again-2/"
   },
   {
+   "title": "Shoot From The Hip",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Comedy",
+   "start": "2027-04-02",
+   "end": "2027-04-02",
+   "url": "https://www.atgtickets.com/shows/shoot-from-the-hip/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "The Elves and The Shoemaker",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-04-02",
+   "end": "2027-04-04",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/the-elves-the-shoemaker/"
+  },
+  {
    "title": "Rhys James: Chop Logic",
    "theatre": "Nottingham Playhouse",
    "genre": "Comedy",
    "start": "2027-04-03",
    "end": "2027-04-03",
    "url": "https://nottinghamplayhouse.co.uk/events/rhys-james/"
+  },
+  {
+   "title": "Seven Drunken Nights - A Tribute to The Dubliners",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Concert",
+   "start": "2027-04-03",
+   "end": "2027-04-03",
+   "url": "https://www.atgtickets.com/shows/seven-drunken-nights-a-tribute-to-the-dubliners/regent-theatre/"
   },
   {
    "title": "1971 The Show",
@@ -3800,12 +4661,44 @@
    "url": "https://www.oldrep.co.uk/event-details/342531ARDPGRVRCVBNQMBRBSMCQNQQSQC/1971-the-show/"
   },
   {
+   "title": "Jazz Sabbath",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2027-04-05",
+   "end": "2027-04-05",
+   "url": "https://www.newvictheatre.org.uk/productions/jazz-sabbath/"
+  },
+  {
    "title": "The King's Speech",
    "theatre": "Curve Theatre",
    "genre": "",
    "start": "2027-04-06",
    "end": "2027-04-10",
    "url": "https://www.curveonline.co.uk/whats-on/shows/the-kings-speech/"
+  },
+  {
+   "title": "Crime and Punishment",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-04-07",
+   "end": "2027-04-10",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/crime-and-punishment/"
+  },
+  {
+   "title": "Dear Zoo Live!",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Family & Pantomime",
+   "start": "2027-04-08",
+   "end": "2027-04-11",
+   "url": "https://www.birminghamhippodrome.com/calendar/dear-zoo-live-three/"
+  },
+  {
+   "title": "Lost Voice Guy: The Cerebral Palsy Puppet",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-04-08",
+   "end": "2027-04-08",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/lost-voice-guy-the-cerebral-palsy-puppet/"
   },
   {
    "title": "Boyband Legends",
@@ -3816,12 +4709,44 @@
    "url": "https://www.boningtontheatre.co.uk/whatson-event/boysbands-legends/"
   },
   {
+   "title": "Scott Bennett: Stuff",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Comedy",
+   "start": "2027-04-10",
+   "end": "2027-04-10",
+   "url": "https://www.atgtickets.com/shows/scott-bennett-stuff/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "Jon Culshaw: Me, Myself & Others",
    "theatre": "Curve Theatre",
    "genre": "",
    "start": "2027-04-11",
    "end": "2027-04-11",
    "url": "https://www.curveonline.co.uk/whats-on/shows/jon-culshaw-me-myself-others/"
+  },
+  {
+   "title": "Andy Fairweather Low & The Low Riders",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2027-04-12",
+   "end": "2027-04-12",
+   "url": "https://www.newvictheatre.org.uk/productions/andy-fairweather-low-the-low-riders-2/"
+  },
+  {
+   "title": "Before I Go To Sleep",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Plays",
+   "start": "2027-04-13",
+   "end": "2027-04-17",
+   "url": "https://www.atgtickets.com/shows/before-i-go-to-sleep/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Hadestown",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Musicals",
+   "start": "2027-04-13",
+   "end": "2027-04-17",
+   "url": "https://www.birminghamhippodrome.com/calendar/hadestown/"
   },
   {
    "title": "Jersey Boys",
@@ -3832,12 +4757,52 @@
    "url": "https://www.curveonline.co.uk/whats-on/shows/jersey-boys-2/"
   },
   {
+   "title": "The Uncrackable Case",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-04-14",
+   "end": "2027-04-15",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/the-uncrackable-case/"
+  },
+  {
+   "title": "Fundraising Dinner at Hadestown",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Events & Venue Tours",
+   "start": "2027-04-15",
+   "end": "2027-04-15",
+   "url": "https://www.birminghamhippodrome.com/calendar/fundraising-gala-at-hadestown/"
+  },
+  {
+   "title": "Joe Lycett",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Comedy",
+   "start": "2027-04-15",
+   "end": "2027-04-15",
+   "url": "https://www.atgtickets.com/shows/joe-lycett/regent-theatre/"
+  },
+  {
    "title": "Blondish – Blondie Tribute",
    "theatre": "Bonington Theatre",
    "genre": "Tribute",
    "start": "2027-04-16",
    "end": "2027-04-16",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/blondish-blondie-tribute-2/"
+  },
+  {
+   "title": "Carl Hutchinson - Fine Whine",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Regent Theatre, Stoke-on-Trent",
+   "start": "2027-04-16",
+   "end": "2027-04-16",
+   "url": "https://www.atgtickets.com/shows/carl-hutchinson-fine-whine/regent-theatre/"
+  },
+  {
+   "title": "Disney Princess - The Concert",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Concert",
+   "start": "2027-04-16",
+   "end": "2027-04-16",
+   "url": "https://www.atgtickets.com/shows/disney-princess-the-concert/regent-theatre/"
   },
   {
    "title": "Julian Clary: Fully Dilated",
@@ -3864,6 +4829,14 @@
    "url": "https://centurytheatre.co.uk/whats-on/tina-live-simply-the-best-tribute-to-tina-turner/"
   },
   {
+   "title": "Codebreakers – The Story of Enigma",
+   "theatre": "The Rep",
+   "genre": "Tribute",
+   "start": "2027-04-17",
+   "end": "2027-04-17",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/codebreakers-the-story-of-enigma/"
+  },
+  {
    "title": "Showstopper -The Improvised Musical",
    "theatre": "Nottingham Playhouse",
    "genre": "Musical",
@@ -3872,12 +4845,36 @@
    "url": "https://nottinghamplayhouse.co.uk/events/showstopper/"
   },
   {
+   "title": "Johannes Radebe - Finally Home",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Ballet & Dance",
+   "start": "2027-04-18",
+   "end": "2027-04-18",
+   "url": "https://www.birminghamhippodrome.com/calendar/johannes-radebe/"
+  },
+  {
+   "title": "Cloudbusting: The Kate Bush Song Book",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2027-04-20",
+   "end": "2027-04-20",
+   "url": "https://www.newvictheatre.org.uk/productions/cloudbusting-the-kate-bush-songbbok/"
+  },
+  {
    "title": "Romeo and Juliet Curtain Raiser",
    "theatre": "Nottingham Playhouse",
    "genre": "",
    "start": "2027-04-20",
    "end": "2027-04-20",
    "url": "https://nottinghamplayhouse.co.uk/events/romeo-and-juliet-curtain-raiser/"
+  },
+  {
+   "title": "Savage",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Drama, Musicals",
+   "start": "2027-04-20",
+   "end": "2027-04-24",
+   "url": "https://www.birminghamhippodrome.com/calendar/savage/"
   },
   {
    "title": "Myra's Story",
@@ -3896,12 +4893,44 @@
    "url": "https://www.curveonline.co.uk/whats-on/shows/black-is-the-color-of-my-voice/"
   },
   {
+   "title": "Midsomer Murders: The Killings at Badger's Drift",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Plays",
+   "start": "2027-04-23",
+   "end": "2027-04-24",
+   "url": "https://www.atgtickets.com/shows/midsomer-murders-the-killings-at-badgers-drift/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "What Wood Victoria Do?",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-04-23",
+   "end": "2027-04-24",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/what-wood-victoria-do/"
+  },
+  {
    "title": "ELO Encounter - 10th Anniversary Tour",
    "theatre": "The Old Rep Theatre",
    "genre": "Live-Music",
    "start": "2027-04-24",
    "end": "2027-04-24",
    "url": "https://www.oldrep.co.uk/event-details/283331ABKMPRJHNCJSGSJJCVMTTDVNBMK/elo-encounter-10th-anniversary-tour/"
+  },
+  {
+   "title": "Pulman & Stilgoe - Hooray for Hollywood",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-04-24",
+   "end": "2027-04-24",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/pulman-stilgoe-hooray-for-hollywood/"
+  },
+  {
+   "title": "Pip and Posy",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-04-25",
+   "end": "2027-04-25",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/pip-and-posy/"
   },
   {
    "title": "The Royal Ballet: Swan Lake (Cert TBC)",
@@ -3920,6 +4949,30 @@
    "url": "https://www.curveonline.co.uk/whats-on/shows/crime-and-punishment/"
   },
   {
+   "title": "It's a Sin",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Ballet & Dance",
+   "start": "2027-04-27",
+   "end": "2027-05-01",
+   "url": "https://www.birminghamhippodrome.com/calendar/rambert-dance-its-a-sin/"
+  },
+  {
+   "title": "Send In The Clowns: NANCIES!",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-04-28",
+   "end": "2027-05-01",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/send-in-the-clowns-nancies/"
+  },
+  {
+   "title": "Comedy Night At The Rep (April Edition)",
+   "theatre": "The Rep",
+   "genre": "Comedy",
+   "start": "2027-04-30",
+   "end": "2027-04-30",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/comedy-night-at-the-rep-april-edition/"
+  },
+  {
    "title": "Jurassic",
    "theatre": "Curve Theatre",
    "genre": "",
@@ -3934,6 +4987,22 @@
    "start": "2027-05-01",
    "end": "2027-05-01",
    "url": "https://www.curveonline.co.uk/whats-on/shows/laura-newman-ark-at-she/"
+  },
+  {
+   "title": "Pretty Woman The Musical",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Musicals",
+   "start": "2027-05-04",
+   "end": "2027-05-15",
+   "url": "https://www.atgtickets.com/shows/pretty-woman-the-musical/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Alan Carr",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Comedy & Spoken Word",
+   "start": "2027-05-05",
+   "end": "2027-05-07",
+   "url": "https://www.birminghamhippodrome.com/calendar/alan-carr-have-i-said-too-much/"
   },
   {
    "title": "Signatures and the Black British Dance Platform",
@@ -3960,12 +5029,36 @@
    "url": "https://www.oldrep.co.uk/event-details/351931AJRMDDPCQQBPHLVTNBQGBLKRCKM/eurovision-your-decision/"
   },
   {
+   "title": "Al Murray: All You Need Is Guv",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Comedy",
+   "start": "2027-05-07",
+   "end": "2027-05-07",
+   "url": "https://www.atgtickets.com/shows/al-murray-all-you-need-is-guv/regent-theatre/"
+  },
+  {
+   "title": "Are You Even Indian?",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-05-07",
+   "end": "2027-05-08",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/are-you-even-indian/"
+  },
+  {
    "title": "Deeply Rooted Dance Theater",
    "theatre": "Curve Theatre",
    "genre": "",
    "start": "2027-05-07",
    "end": "2027-05-08",
    "url": "https://www.curveonline.co.uk/whats-on/shows/deeply-rooted-dance-theater/"
+  },
+  {
+   "title": "Grimeboy",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-05-08",
+   "end": "2027-05-22",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/grimeboy/"
   },
   {
    "title": "The Carpenters Experience",
@@ -3984,6 +5077,30 @@
    "url": "https://www.curveonline.co.uk/whats-on/shows/starlight-express/"
   },
   {
+   "title": "Singin' In The Rain",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Musicals",
+   "start": "2027-05-11",
+   "end": "2027-05-15",
+   "url": "https://www.birminghamhippodrome.com/calendar/singin-in-the-rain-three/"
+  },
+  {
+   "title": "That'll Be The Day",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Concert",
+   "start": "2027-05-11",
+   "end": "2027-05-11",
+   "url": "https://www.atgtickets.com/shows/thatll-be-the-day/regent-theatre/"
+  },
+  {
+   "title": "Steeleye Span",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2027-05-12",
+   "end": "2027-05-12",
+   "url": "https://www.newvictheatre.org.uk/productions/steeleye-span-3/"
+  },
+  {
    "title": "Paul Zerdin: Shut Your Mouth",
    "theatre": "Curve Theatre",
    "genre": "",
@@ -4000,12 +5117,52 @@
    "url": "https://www.oldrep.co.uk/event-details/357131ADBKBGBQTGMQTLKGDPPMRJQGQTL/what-a-feeling-live/"
   },
   {
+   "title": "Johannes Radebe: Finally Home",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Dance",
+   "start": "2027-05-15",
+   "end": "2027-05-15",
+   "url": "https://www.atgtickets.com/shows/johannes-radebe-finally-home/regent-theatre/"
+  },
+  {
+   "title": "Team Viking",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-05-15",
+   "end": "2027-05-15",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/team-viking/"
+  },
+  {
    "title": "Al Murray: All You Need is Guv",
    "theatre": "Nottingham Playhouse",
    "genre": "Comedy",
    "start": "2027-05-16",
    "end": "2027-05-16",
    "url": "https://nottinghamplayhouse.co.uk/events/al-murray-all-you-need-is-guv/"
+  },
+  {
+   "title": "Briana Corrigan of The Beautiful South",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2027-05-17",
+   "end": "2027-05-17",
+   "url": "https://www.newvictheatre.org.uk/productions/briana-corrigan/"
+  },
+  {
+   "title": "Everybody's Talking About Jamie",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Musicals",
+   "start": "2027-05-18",
+   "end": "2027-05-22",
+   "url": "https://www.atgtickets.com/shows/everybodys-talking-about-jamie/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Jesus Christ Superstar",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Musicals",
+   "start": "2027-05-18",
+   "end": "2027-06-05",
+   "url": "https://www.birminghamhippodrome.com/calendar/jesus-christ-superstar-three/"
   },
   {
    "title": "Ed Byrne – No Dramas",
@@ -4016,12 +5173,52 @@
    "url": "https://nottinghamplayhouse.co.uk/events/ed-byrne-no-dramas/"
   },
   {
+   "title": "The Glad Game",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-05-21",
+   "end": "2027-05-22",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/the-glad-game/"
+  },
+  {
+   "title": "Count Arthur Strong",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Comedy",
+   "start": "2027-05-23",
+   "end": "2027-05-23",
+   "url": "https://www.atgtickets.com/shows/count-arthur-strong/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Grease",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Musicals",
+   "start": "2027-05-24",
+   "end": "2027-05-29",
+   "url": "https://www.atgtickets.com/shows/grease/regent-theatre/"
+  },
+  {
+   "title": "Madula",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2027-05-24",
+   "end": "2027-05-24",
+   "url": "https://www.newvictheatre.org.uk/productions/madula/"
+  },
+  {
    "title": "Cycles",
    "theatre": "Curve Theatre",
    "genre": "",
    "start": "2027-05-25",
    "end": "2027-05-25",
    "url": "https://www.curveonline.co.uk/whats-on/shows/cycles/"
+  },
+  {
+   "title": "Let the Whale Die",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-05-25",
+   "end": "2027-05-26",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/let-the-whale-die/"
   },
   {
    "title": "The Royal Ballet: Romeo & Juliet (Cert TBC)",
@@ -4032,12 +5229,44 @@
    "url": "https://www.boningtontheatre.co.uk/whatson-event/the-royal-ballet-romeo-juliet-cert-tbc/"
   },
   {
+   "title": "On sale Fri 23 Oct 2026",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Jimmy Carr: Killing Jokes",
+   "start": "2027-05-26",
+   "end": "2027-05-26",
+   "url": "https://www.atgtickets.com/shows/jimmy-carr-killing-jokes/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "Johannes Radebe: Finally Home",
    "theatre": "Curve Theatre",
    "genre": "",
    "start": "2027-05-27",
    "end": "2027-05-29",
    "url": "https://www.curveonline.co.uk/whats-on/shows/johannes-radebe-finally-home/"
+  },
+  {
+   "title": "Comedy Night At The Rep (May Edition)",
+   "theatre": "The Rep",
+   "genre": "Comedy",
+   "start": "2027-05-29",
+   "end": "2027-05-29",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/comedy-night-at-the-rep-may-edition/"
+  },
+  {
+   "title": "Ed Gamble - Fresh Hell",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Comedy",
+   "start": "2027-05-30",
+   "end": "2027-05-30",
+   "url": "https://www.atgtickets.com/shows/ed-gamble-fresh-hell/regent-theatre/"
+  },
+  {
+   "title": "The Very Hungry Caterpillar Show",
+   "theatre": "The Rep",
+   "genre": "",
+   "start": "2027-05-30",
+   "end": "2027-05-30",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/the-very-hungry-caterpillar-show/"
   },
   {
    "title": "Dirty Dancing",
@@ -4064,6 +5293,22 @@
    "url": "https://www.curveonline.co.uk/whats-on/shows/paranormal-activity/"
   },
   {
+   "title": "Victoria Wood’s dinnerladies",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Plays",
+   "start": "2027-06-08",
+   "end": "2027-06-12",
+   "url": "https://www.atgtickets.com/shows/victoria-woods-dinnerladies/regent-theatre/"
+  },
+  {
+   "title": "Joe Lycett: Do You Really Lycett? Is It, Is It Wicked? We’re Lovin’ It, Lovin’ It, Lovin’ It, We’re Lovin’ It Lycett",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Comedy & Spoken Word",
+   "start": "2027-06-09",
+   "end": "2027-06-12",
+   "url": "https://www.birminghamhippodrome.com/calendar/joe-lycett-do-you-really-lycett/"
+  },
+  {
    "title": "Emmeline Pankhurst – Angel or Anarchist? + Post-Show Q&A",
    "theatre": "Bonington Theatre",
    "genre": "",
@@ -4088,6 +5333,14 @@
    "url": "https://www.curveonline.co.uk/whats-on/shows/everybodys-talking-about-jamie-2/"
   },
   {
+   "title": "BMOS presents Shrek The Musical",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Musicals",
+   "start": "2027-06-15",
+   "end": "2027-06-19",
+   "url": "https://www.atgtickets.com/shows/bmos-presents-shrek-the-musical/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "UnderCover Cliff",
    "theatre": "Bonington Theatre",
    "genre": "",
@@ -4096,12 +5349,44 @@
    "url": "https://www.boningtontheatre.co.uk/whatson-event/undercover-cliff-2/"
   },
   {
+   "title": "Just For One Day - The Live Aid Musical",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Musicals",
+   "start": "2027-06-22",
+   "end": "2027-07-03",
+   "url": "https://www.atgtickets.com/shows/just-for-one-day-the-live-aid-musical/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Comedy Night At The Rep (June Edition)",
+   "theatre": "The Rep",
+   "genre": "Comedy",
+   "start": "2027-06-26",
+   "end": "2027-06-26",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/comedy-night-at-the-rep-june-edition/"
+  },
+  {
    "title": "Love's Labour's Lost @ Middleton Hall",
    "theatre": "The Old Rep Theatre",
    "genre": "Comedy",
    "start": "2027-06-27",
    "end": "2027-06-27",
    "url": "https://www.oldrep.co.uk/event-details/356731ACSDKKNBBRVVTBJSSKCNVPRHGLB/loves-labours-lost-middleton-hall/"
+  },
+  {
+   "title": "The Full Monty",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Drama, Musicals",
+   "start": "2027-06-28",
+   "end": "2027-07-03",
+   "url": "https://www.birminghamhippodrome.com/calendar/the-full-monty-two/"
+  },
+  {
+   "title": "Regent Theatre Academy Showcase 2027",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Events",
+   "start": "2027-07-01",
+   "end": "2027-07-01",
+   "url": "https://www.atgtickets.com/shows/regent-theatre-academy-showcase-2027/regent-theatre/"
   },
   {
    "title": "Love's Labour's Lost @ Alveston Manor",
@@ -4160,6 +5445,14 @@
    "url": "https://nottinghamplayhouse.co.uk/events/go-your-own-way-2/"
   },
   {
+   "title": "Pretty Woman The Musical",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Musicals",
+   "start": "2027-07-20",
+   "end": "2027-07-24",
+   "url": "https://www.atgtickets.com/shows/pretty-woman-the-musical/regent-theatre/"
+  },
+  {
    "title": "Stuart Mitchell: Life Support",
    "theatre": "The Old Rep Theatre",
    "genre": "Comedy",
@@ -4174,6 +5467,38 @@
    "start": "2027-07-24",
    "end": "2027-07-24",
    "url": "https://centurytheatre.co.uk/whats-on/the-cliff-richards-story/"
+  },
+  {
+   "title": "Chicago",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Musicals",
+   "start": "2027-07-27",
+   "end": "2027-08-07",
+   "url": "https://www.birminghamhippodrome.com/calendar/chicago/"
+  },
+  {
+   "title": "Goldilocks and the Three Bears",
+   "theatre": "The Rep",
+   "genre": "Pantomime",
+   "start": "2027-08-02",
+   "end": "2027-08-04",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/goldilocks-and-the-three-bears/"
+  },
+  {
+   "title": "Starlight Express",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Musicals",
+   "start": "2027-08-11",
+   "end": "2027-09-11",
+   "url": "https://www.birminghamhippodrome.com/calendar/starlight-express/"
+  },
+  {
+   "title": "Operation Mincemeat: A New Musical",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Musicals",
+   "start": "2027-08-24",
+   "end": "2027-08-28",
+   "url": "https://www.atgtickets.com/shows/operation-mincemeat-a-new-musical/the-alexandra-theatre-birmingham/"
   },
   {
    "title": "Misfits Together",
@@ -4208,6 +5533,22 @@
    "url": "https://centurytheatre.co.uk/whats-on/lee-mead-the-colours-of-my-life/"
   },
   {
+   "title": "What's Love Got To Do With It? A Tribute To Tina Turner",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Concert",
+   "start": "2027-09-26",
+   "end": "2027-09-26",
+   "url": "https://www.atgtickets.com/shows/whats-love-got-to-do-with-it-a-tribute-to-tina-turner/regent-theatre/"
+  },
+  {
+   "title": "Six",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Musicals, Family",
+   "start": "2027-09-28",
+   "end": "2027-10-02",
+   "url": "https://www.atgtickets.com/shows/six/regent-theatre/"
+  },
+  {
    "title": "Scummy Mummies: On the Edge",
    "theatre": "Nottingham Playhouse",
    "genre": "",
@@ -4240,6 +5581,14 @@
    "url": "https://centurytheatre.co.uk/whats-on/the-signatures-northern-soul-live-featuring-the-flirtations/"
   },
   {
+   "title": "Grease",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Musicals",
+   "start": "2027-10-18",
+   "end": "2027-10-23",
+   "url": "https://www.atgtickets.com/shows/grease/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "Operation Mincemeat",
    "theatre": "Curve Theatre",
    "genre": "",
@@ -4249,11 +5598,75 @@
   },
   {
    "title": "Hairspray",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Musicals",
+   "start": "2027-10-26",
+   "end": "2027-10-30",
+   "url": "https://www.birminghamhippodrome.com/calendar/hairspray-two/"
+  },
+  {
+   "title": "The Truth",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Plays",
+   "start": "2027-11-02",
+   "end": "2027-11-06",
+   "url": "https://www.atgtickets.com/shows/the-truth/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Hairspray",
    "theatre": "Curve Theatre",
    "genre": "",
    "start": "2027-11-08",
    "end": "2027-11-13",
    "url": "https://www.curveonline.co.uk/whats-on/shows/hairspray-3/"
+  },
+  {
+   "title": "Chicago The Musical",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Musicals",
+   "start": "2027-11-15",
+   "end": "2027-11-20",
+   "url": "https://www.atgtickets.com/shows/chicago-the-musical/regent-theatre/"
+  },
+  {
+   "title": "Joe Lycett",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Comedy",
+   "start": "2027-11-23",
+   "end": "2027-11-26",
+   "url": "https://www.atgtickets.com/shows/joe-lycett/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "On sale Fri 23 Oct 2026",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Jimmy Carr: Killing Jokes",
+   "start": "2027-12-01",
+   "end": "2027-12-01",
+   "url": "https://www.atgtickets.com/shows/jimmy-carr-killing-jokes/regent-theatre/"
+  },
+  {
+   "title": "Sister Act",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Musicals",
+   "start": "2027-12-07",
+   "end": "2028-01-02",
+   "url": "https://www.atgtickets.com/shows/sister-act/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Tom Allen: Totally",
+   "theatre": "Regent Theatre Stoke",
+   "genre": "Comedy",
+   "start": "2028-01-06",
+   "end": "2028-01-06",
+   "url": "https://www.atgtickets.com/shows/tom-allen-totally/regent-theatre/"
+  },
+  {
+   "title": "Tom Allen: Totally",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Comedy & Spoken Word",
+   "start": "2028-02-05",
+   "end": "2028-02-05",
+   "url": "https://www.birminghamhippodrome.com/calendar/tom-allen-totally/"
   }
  ]
 }

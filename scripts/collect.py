@@ -330,6 +330,8 @@ READERS = {
     "TRCH": read_trch, "The Alexandra Theatre": read_alexandra, "Regent Theatre Stoke": read_regent, "New Vic Theatre": read_newvic, "Winding Wheel Theatre": read_winding_wheel, "Bonington Theatre": read_bonington, "Vaillant Live": read_vaillant,
 }
 
+REMOVED = {"Repton 400 Hall Theatre", "Elite Cinema and Theatre"}  # venues the owner dropped
+
 GENRE_HINTS = [(r"tribute|story of|legends|experience", "Tribute"), (r"orchestra|philharmon|symphony|concert", "Classical"),
                (r"comedy|stand.?up|live at", "Comedy"), (r"musical", "Musical"), (r"panto|cinderella|beauty and the beast|puss in boots|goldilocks|treasure island|jack and the beanstalk", "Pantomime"),
                (r"christmas|carol", "Christmas")]
@@ -338,7 +340,7 @@ GENRE_HINTS = [(r"tribute|story of|legends|experience", "Tribute"), (r"orchestra
 def main():
     path = ROOT / "shows.json"
     data = json.loads(path.read_text(encoding="utf-8"))
-    old = data["shows"]
+    old = [r for r in data["shows"] if r["theatre"] not in REMOVED]
     old_genre = {(r["title"].lower(), r["theatre"]): r.get("genre", "") for r in old}
     fresh, stale = {}, []
     for name, fn in READERS.items():
@@ -379,7 +381,9 @@ def main():
         part[t] = auto_note
     for t in stale:
         pass
-    cov["none"] = [n for n in cov.get("none", []) if n not in scraped]
+    cov["none"] = [n for n in cov.get("none", []) if n not in scraped and n not in REMOVED]
+    for t in REMOVED:
+        part.pop(t, None)
     data["sample"] = False
     data["updated"] = dt.datetime.now(ZoneInfo("Europe/London")).isoformat(timespec="minutes")
     path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")

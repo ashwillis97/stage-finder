@@ -81,7 +81,22 @@ h2 { font-family: var(--font-display); font-weight: 400; font-size: 26px; letter
 .act { display: flex; align-items: center; padding: 14px 16px 14px 0; }
 .empty, .error { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 28px 20px; text-align: center; color: var(--muted); }
 .empty strong, .error strong { display: block; color: var(--fg); font-family: var(--font-display); font-weight: 400; font-size: 28px; letter-spacing: .04em; margin-bottom: 4px; }
+.near { display: grid; grid-template-columns: minmax(0, 1.3fr) auto minmax(0, 1.4fr) minmax(0, 1fr); gap: 12px; align-items: end; border: 1px solid var(--line); border-radius: 8px; padding: 12px; background: var(--surface); }
+.near .field input, .near .field select { background: var(--bg); }
+.pcrow { display: flex; gap: 8px; }
+.pcrow input { flex: 1; min-width: 0; }
+.btn.ghost { background: transparent; color: var(--accent); }
+.near .btn { min-height: 44px; }
+.field.range input { padding: 0; min-height: 44px; border: 0; background: transparent; accent-color: var(--accent); }
+.field.range label span { color: var(--fg); }
+.nearmsg { grid-column: 1 / -1; font-size: 14px; color: var(--muted); min-height: 0; }
+.nearmsg:empty { display: none; }
+.nearmsg button { background: none; border: 0; padding: 0 0 0 8px; color: var(--accent); text-decoration: underline; cursor: pointer; font-size: 14px; }
+.dist { color: var(--accent); font-weight: 600; }
 @media (max-width: 720px) {
+  .near { grid-template-columns: 1fr 1fr; }
+  .near .pcfield, .near .field.range, .near .locate { grid-column: 1 / -1; }
+  .near .locate .btn { width: 100%; }
   .search-row { grid-template-columns: 1fr 1fr; }
   .search-row .field:nth-child(1), .search-row .field:nth-child(2) { grid-column: 1 / -1; }
 }
@@ -124,6 +139,22 @@ h2 { font-family: var(--font-display); font-weight: 400; font-size: 26px; letter
         <input id="to" type="date">
       </div>
     </div>
+    <div class="near" id="near">
+      <div class="field pcfield">
+        <label for="pc">Near a postcode</label>
+        <div class="pcrow"><input id="pc" type="text" placeholder="e.g. DE1 3NF" autocomplete="postal-code" enterkeyhint="go"><button class="btn ghost" id="pcgo" type="button">FIND</button></div>
+      </div>
+      <div class="locate"><button class="btn ghost" id="locate" type="button">USE MY LOCATION</button></div>
+      <div class="field range">
+        <label for="radius">Within <span id="radiusVal">25 miles</span></label>
+        <input id="radius" type="range" min="5" max="100" step="5" value="25" disabled>
+      </div>
+      <div class="field">
+        <label for="sort">Sort by</label>
+        <select id="sort" disabled><option value="date">Soonest first</option><option value="near">Nearest first</option></select>
+      </div>
+      <div class="nearmsg" id="nearMsg" aria-live="polite"></div>
+    </div>
     <div class="count" id="count"></div>
   </div>
 
@@ -134,23 +165,23 @@ h2 { font-family: var(--font-display); font-weight: 400; font-size: 26px; letter
 
 <script>
 (function () {
-  var shows = [], coverage = null;
+  var shows = [], coverage = null, user = null;
   var $ = function (id) { return document.getElementById(id); };
   var MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
   var MON3 = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   var DOW3 = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
   var PLACE = {
-    "Derby Theatre": ["Derby Theatre", "Derby"], "Vaillant Live": ["Vaillant Live", "Derby"],
-    "Brewhouse Arts Centre": ["Brewhouse Arts Centre", "Burton-on-Trent"], "Lichfield Garrick": ["Lichfield Garrick", "Lichfield"],
-    "Buxton Opera House": ["Buxton Opera House", "Buxton"], "Theatre Royal Nottingham": ["Theatre Royal", "Nottingham"],
-    "Royal Concert Hall": ["Royal Concert Hall", "Nottingham"], "Nottingham Playhouse": ["Nottingham Playhouse", "Nottingham"],
-    "Bonington Theatre": ["Bonington Theatre", "Arnold"], "Curve Theatre": ["Curve Theatre", "Leicester"],
-    "De Montfort Hall": ["De Montfort Hall", "Leicester"], "Century Theatre": ["Century Theatre", "Coalville"],
-    "Palace Theatre Mansfield": ["Palace Theatre", "Mansfield"], "Birmingham Hippodrome": ["Birmingham Hippodrome", "Birmingham"],
-    "The Rep": ["The Rep", "Birmingham"], "The Alexandra Theatre": ["The Alexandra Theatre", "Birmingham"],
-    "The Old Rep Theatre": ["The Old Rep Theatre", "Birmingham"], "Wolverhampton Grand Theatre": ["Wolverhampton Grand Theatre", "Wolverhampton"],
-    "Regent Theatre Stoke": ["Regent Theatre", "Stoke-on-Trent"], "New Vic Theatre": ["New Vic Theatre", "Newcastle-under-Lyme"],
-    "Winding Wheel Theatre": ["Winding Wheel Theatre", "Chesterfield"]
+    "Derby Theatre": ["Derby Theatre", "Derby", 52.9253, -1.4778], "Vaillant Live": ["Vaillant Live", "Derby", 52.9246, -1.4786],
+    "Brewhouse Arts Centre": ["Brewhouse Arts Centre", "Burton-on-Trent", 52.8044, -1.6381], "Lichfield Garrick": ["Lichfield Garrick", "Lichfield", 52.6827, -1.8294],
+    "Buxton Opera House": ["Buxton Opera House", "Buxton", 53.2591, -1.9112], "Theatre Royal Nottingham": ["Theatre Royal", "Nottingham", 52.9546, -1.1514],
+    "Royal Concert Hall": ["Royal Concert Hall", "Nottingham", 52.9544, -1.1509], "Nottingham Playhouse": ["Nottingham Playhouse", "Nottingham", 52.9506, -1.1618],
+    "Bonington Theatre": ["Bonington Theatre", "Arnold", 53.0031, -1.1335], "Curve Theatre": ["Curve Theatre", "Leicester", 52.6376, -1.131],
+    "De Montfort Hall": ["De Montfort Hall", "Leicester", 52.6226, -1.1235], "Century Theatre": ["Century Theatre", "Coalville", 52.7234, -1.3692],
+    "Palace Theatre Mansfield": ["Palace Theatre", "Mansfield", 53.1426, -1.1987], "Birmingham Hippodrome": ["Birmingham Hippodrome", "Birmingham", 52.4743, -1.8957],
+    "The Rep": ["The Rep", "Birmingham", 52.4797, -1.9094], "The Alexandra Theatre": ["The Alexandra Theatre", "Birmingham", 52.4756, -1.8995],
+    "The Old Rep Theatre": ["The Old Rep Theatre", "Birmingham", 52.4768, -1.8997], "Wolverhampton Grand Theatre": ["Wolverhampton Grand Theatre", "Wolverhampton", 52.5838, -2.1257],
+    "Regent Theatre Stoke": ["Regent Theatre", "Stoke-on-Trent", 53.0287, -2.1755], "New Vic Theatre": ["New Vic Theatre", "Newcastle-under-Lyme", 53.009, -2.2308],
+    "Winding Wheel Theatre": ["Winding Wheel Theatre", "Chesterfield", 53.2354, -1.4224]
   };
 
   function parse(s) { var p = s.split("-"); return new Date(+p[0], +p[1] - 1, +p[2]); }
@@ -161,6 +192,13 @@ h2 { font-family: var(--font-display); font-weight: 400; font-size: 26px; letter
   function cityOf(t) { return PLACE[t] ? PLACE[t][1] : ""; }
   function label(t) { return cityOf(t) ? nameOf(t) + ", " + cityOf(t) : nameOf(t); }
   var todayIso = iso(new Date());
+
+  function miles(a, b, c, d) {
+    var R = 3958.8, t = Math.PI / 180, dl = (c - a) * t, dn = (d - b) * t;
+    var x = Math.sin(dl / 2) * Math.sin(dl / 2) + Math.cos(a * t) * Math.cos(c * t) * Math.sin(dn / 2) * Math.sin(dn / 2);
+    return 2 * R * Math.asin(Math.sqrt(x));
+  }
+  function dist(t) { return user && PLACE[t] && PLACE[t][2] != null ? miles(user.lat, user.lng, PLACE[t][2], PLACE[t][3]) : null; }
 
   function runText(s) {
     var a = parse(s.start), b = parse(s.end);
@@ -193,7 +231,9 @@ h2 { font-family: var(--font-display); font-weight: 400; font-size: 26px; letter
   function render() {
     var q = $("q").value.trim().toLowerCase();
     var from = $("from").value, to = $("to").value, v = $("venue").value;
+    var radius = +$("radius").value, near = !!user && $("sort").value === "near";
     var rows = shows.filter(function (s) {
+      if (user) { var dd = dist(s.theatre); if (dd == null || dd > radius) return false; }
       if (s.end < todayIso) return false;
       if (from && s.end < from) return false;
       if (to && s.start > to) return false;
@@ -201,28 +241,29 @@ h2 { font-family: var(--font-display); font-weight: 400; font-size: 26px; letter
       if (q && (s.title + " " + label(s.theatre) + " " + (s.genre || "")).toLowerCase().indexOf(q) < 0) return false;
       return true;
     }).sort(function (a, b) {
+      if (near) { var da = Math.round(dist(a.theatre)), db = Math.round(dist(b.theatre)); if (da !== db) return da - db; }
       return a.start < b.start ? -1 : a.start > b.start ? 1 : a.title.localeCompare(b.title);
     });
-    var filtered = v || q || from || to;
+    var filtered = v || q || from || to || user;
     $("count").textContent = rows.length + (rows.length === 1 ? " show" : " shows") + (filtered ? " match" : " on or coming up");
     if (!rows.length) {
-      $("list").innerHTML = '<div class="empty"><strong>No shows found</strong>Try clearing the search, the dates or the theatre.</div>';
+      $("list").innerHTML = '<div class="empty"><strong>No shows found</strong>' + (user ? "Try a bigger distance, or clear the other filters." : "Try clearing the search, the dates or the theatre.") + "</div>";
       return;
     }
     var html = "", lastKey = "";
     rows.forEach(function (s) {
       var d = parse(s.start);
       var running = s.start <= todayIso;
-      var key = running ? "Now on" : MONTHS[d.getMonth()] + " " + d.getFullYear();
+      var key = near ? "Nearest first" : running ? "Now on" : MONTHS[d.getMonth()] + " " + d.getFullYear();
       if (key !== lastKey) {
         if (lastKey) html += "</div>";
         html += '<div class="group"><h2>' + esc(key.toUpperCase()) + "</h2>";
         lastKey = key;
       }
-      var city = cityOf(s.theatre);
+      var city = cityOf(s.theatre), dm = dist(s.theatre);
       html += '<article class="row">' +
         '<div class="stub"><span class="dow">' + DOW3[d.getDay()] + '</span><span class="day">' + d.getDate() + '</span><span class="mon">' + MON3[d.getMonth()] + "</span></div>" +
-        '<div class="info"><h3>' + esc(s.title) + '</h3><div class="venue">' + esc(nameOf(s.theatre)) + (city ? ", <span>" + esc(city) + "</span>" : "") + "</div>" +
+        '<div class="info"><h3>' + esc(s.title) + '</h3><div class="venue">' + esc(nameOf(s.theatre)) + (city ? ", <span>" + esc(city) + "</span>" : "") + (dm != null ? ' <span class="dist">' + Math.round(dm) + " mi</span>" : "") + "</div>" +
         '<div class="meta"><span class="run">' + esc(runText(s)) + "</span>" +
         (s.genre ? '<span class="tag">' + esc(s.genre) + "</span>" : "") +
         (running ? '<span class="tag live">Now on</span>' : "") + "</div></div>" +
@@ -249,6 +290,39 @@ h2 { font-family: var(--font-display); font-weight: 400; font-size: 26px; letter
       $("list").innerHTML = '<div class="error"><strong>Listings did not load</strong>Check your connection and reload the page.</div>';
     });
 
+  function setUser(lat, lng, text) {
+    user = { lat: lat, lng: lng };
+    $("radius").disabled = false; $("sort").disabled = false;
+    $("nearMsg").innerHTML = esc(text) + ' <button type="button" id="clearLoc">Clear location</button>';
+    $("clearLoc").addEventListener("click", clearUser);
+    render();
+  }
+  function clearUser() {
+    user = null; $("radius").disabled = true; $("sort").disabled = true; $("sort").value = "date";
+    $("nearMsg").textContent = ""; $("pc").value = ""; render();
+  }
+  function findPostcode() {
+    var pc = $("pc").value.replace(/\s+/g, " ").trim();
+    if (!pc) { $("nearMsg").textContent = "Enter a postcode first."; return; }
+    $("nearMsg").textContent = "Looking up " + pc + "...";
+    fetch("https://api.postcodes.io/postcodes/" + encodeURIComponent(pc))
+      .then(function (r) { if (r.status === 404) throw new Error("nf"); if (!r.ok) throw new Error("http"); return r.json(); })
+      .then(function (j) { setUser(j.result.latitude, j.result.longitude, "Showing theatres near " + j.result.postcode + "."); })
+      .catch(function (e) { $("nearMsg").textContent = e.message === "nf" ? "That postcode was not recognised. Check it and try again." : "The postcode lookup is not available right now. Try again, or use your location."; });
+  }
+  function locate() {
+    if (!navigator.geolocation) { $("nearMsg").textContent = "Your browser can't share its location. Enter a postcode instead."; return; }
+    $("nearMsg").textContent = "Finding your location...";
+    navigator.geolocation.getCurrentPosition(
+      function (pos) { setUser(pos.coords.latitude, pos.coords.longitude, "Showing theatres near your location."); },
+      function () { $("nearMsg").textContent = "Location was not shared. Enter a postcode instead."; },
+      { timeout: 10000, maximumAge: 300000 });
+  }
+  $("pcgo").addEventListener("click", findPostcode);
+  $("pc").addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); findPostcode(); } });
+  $("locate").addEventListener("click", locate);
+  $("radius").addEventListener("input", function () { $("radiusVal").textContent = $("radius").value + " miles"; render(); });
+  $("sort").addEventListener("change", render);
   ["q", "from", "to"].forEach(function (id) { $(id).addEventListener("input", render); });
   $("venue").addEventListener("change", render);
 })();

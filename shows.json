@@ -1,6 +1,6 @@
 {
  "sample": false,
- "updated": "2026-10-22T07:35+01:00",
+ "updated": "2026-10-22T07:49+01:00",
  "coverage": {
   "none": [
    "Elite Cinema and Theatre",
@@ -40,44 +40,12 @@
    "url": "https://www.curveonline.co.uk/whats-on/shows/the-curious-incident-of-the-dog-in-the-night-time-2/"
   },
   {
-   "title": "Blood Brothers",
-   "theatre": "Birmingham Hippodrome",
-   "genre": "Musicals",
-   "start": "2026-10-21",
-   "end": "2026-10-24",
-   "url": "https://www.birminghamhippodrome.com/calendar/blood-brothers-five/"
-  },
-  {
    "title": "Dracula",
    "theatre": "Lichfield Garrick",
    "genre": "Drama",
    "start": "2026-10-21",
    "end": "2026-10-24",
    "url": "https://www.lichfieldgarrick.com/events/dracula"
-  },
-  {
-   "title": "JEEZUS!",
-   "theatre": "Birmingham Hippodrome",
-   "genre": "Musicals",
-   "start": "2026-10-21",
-   "end": "2026-10-24",
-   "url": "https://www.birminghamhippodrome.com/calendar/rewrites-jeezus/"
-  },
-  {
-   "title": "Made You Look",
-   "theatre": "The Rep",
-   "genre": "Theatre",
-   "start": "2026-10-21",
-   "end": "2026-10-22",
-   "url": "https://www.birmingham-rep.co.uk/whats-on/made-you-look/"
-  },
-  {
-   "title": "The Choir Of Man",
-   "theatre": "Wolverhampton Grand Theatre",
-   "genre": "",
-   "start": "2026-10-21",
-   "end": "2026-10-24",
-   "url": "https://www.grandtheatre.co.uk/whats-on/the-choir-of-man/"
   },
   {
    "title": "The Trial of Romeo Oscar",
@@ -96,12 +64,28 @@
    "url": "https://www.oldrep.co.uk/event-details/348331AJDDNVVLRVPBVLGJBNJJVLVCQKQ/an-evening-with-katherine-ryan-firstborn-daughter/"
   },
   {
+   "title": "Blood Brothers",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Musicals",
+   "start": "2026-10-22",
+   "end": "2026-10-24",
+   "url": "https://www.birminghamhippodrome.com/calendar/blood-brothers-five/"
+  },
+  {
    "title": "Eddi Reader",
    "theatre": "Lichfield Garrick",
    "genre": "Music",
    "start": "2026-10-22",
    "end": "2026-10-22",
    "url": "https://www.lichfieldgarrick.com/events/eddi-reader"
+  },
+  {
+   "title": "JEEZUS!",
+   "theatre": "Birmingham Hippodrome",
+   "genre": "Musicals",
+   "start": "2026-10-22",
+   "end": "2026-10-24",
+   "url": "https://www.birminghamhippodrome.com/calendar/rewrites-jeezus/"
   },
   {
    "title": "Jazz Steps: Gilad Atzmon’s Organology Trio",
@@ -128,6 +112,14 @@
    "url": "https://www.demontforthall.co.uk/event/kevin-bloody-wilson"
   },
   {
+   "title": "Made You Look",
+   "theatre": "The Rep",
+   "genre": "Theatre",
+   "start": "2026-10-22",
+   "end": "2026-10-22",
+   "url": "https://www.birmingham-rep.co.uk/whats-on/made-you-look/"
+  },
+  {
    "title": "My Life with Kenneth Williams",
    "theatre": "Palace Theatre Mansfield",
    "genre": "Comedy",
@@ -150,6 +142,14 @@
    "start": "2026-10-22",
    "end": "2026-10-25",
    "url": "https://www.atgtickets.com/shows/russell-howard-dont-tell-the-algorithm/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "The Choir Of Man",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "",
+   "start": "2026-10-22",
+   "end": "2026-10-24",
+   "url": "https://www.grandtheatre.co.uk/whats-on/the-choir-of-man/"
   },
   {
    "title": "The ELO Experience - Electric Light Orchestra",
@@ -1414,6 +1414,14 @@
    "start": "2026-11-08",
    "end": "2026-11-08",
    "url": "https://www.oldrep.co.uk/event-details/355931ABNBGLTVDMRHPMBGTQVNTVMGNTC/shine-on-stage/"
+  },
+  {
+   "title": "Tom Davis: Spudgun",
+   "theatre": "Theatre Royal Nottingham",
+   "genre": "Comedy",
+   "start": "2026-11-08",
+   "end": "2026-11-08",
+   "url": "https://www.trch.co.uk/whats-on/tom-davis-btsd"
   },
   {
    "title": "Aladdin Open Rehearsal",
@@ -3582,6 +3590,14 @@
    "start": "2027-02-28",
    "end": "2027-02-28",
    "url": "https://www.grandtheatre.co.uk/whats-on/elkie-brooks-the-long-farewell-tour/"
+  },
+  {
+   "title": "Jimeoin - Ballyhoo",
+   "theatre": "De Montfort Hall",
+   "genre": "",
+   "start": "2027-02-28",
+   "end": "2027-02-28",
+   "url": "https://www.demontforthall.co.uk/event/jimeoin-ballyhoo"
   },
   {
    "title": "A Shoddy Detective and The Art of Deception",

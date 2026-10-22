@@ -3,7 +3,9 @@
  "updated": "2026-10-22T08:04+01:00",
  "coverage": {
   "none": [
-   "Winding Wheel Theatre"
+   "Winding Wheel Theatre",
+   "Motorpoint Arena Nottingham",
+   "Big Top Arena"
   ],
   "partial": {
    "Theatre Royal Nottingham": "Only the first page of the venue's listings is read, so later shows may be missing.",
@@ -14,7 +16,8 @@
    "Lichfield Garrick": "Not updated automatically yet, so these listings may be out of date.",
    "Palace Theatre Mansfield": "Not updated automatically yet, so these listings may be out of date.",
    "Wolverhampton Grand Theatre": "Only the first two pages of listings are read, so later shows may be missing.",
-   "Brewhouse Arts Centre": "Not updated automatically yet, so these listings may be out of date."
+   "Brewhouse Arts Centre": "Not updated automatically yet, so these listings may be out of date.",
+   "Forest Live Cannock Chase": "Only the four shows announced so far; added by hand and not updated automatically yet."
   }
  },
  "shows": [
@@ -5347,6 +5350,22 @@
    "url": "https://www.atgtickets.com/shows/just-for-one-day-the-live-aid-musical/the-alexandra-theatre-birmingham/"
   },
   {
+   "title": "Ronan Keating & Blue + Germein Sisters",
+   "theatre": "Forest Live Cannock Chase",
+   "genre": "Concert",
+   "start": "2027-06-23",
+   "end": "2027-06-23",
+   "url": "https://www.forestlive.com/ronankeatingandblue#cannock-chase-forest"
+  },
+  {
+   "title": "Pete Tong Ibiza Classics + Sam Divine + Gina Breeze",
+   "theatre": "Forest Live Cannock Chase",
+   "genre": "Concert",
+   "start": "2027-06-24",
+   "end": "2027-06-24",
+   "url": "https://www.forestlive.com/petetongibizaclassics"
+  },
+  {
    "title": "Comedy Night At The Rep (June Edition)",
    "theatre": "The Rep",
    "genre": "Comedy",
@@ -5355,12 +5374,28 @@
    "url": "https://www.birmingham-rep.co.uk/whats-on/comedy-night-at-the-rep-june-edition/"
   },
   {
+   "title": "Madness + Scouting For Girls",
+   "theatre": "Forest Live Cannock Chase",
+   "genre": "Concert",
+   "start": "2027-06-26",
+   "end": "2027-06-26",
+   "url": "https://www.forestlive.com/madness#cannock-chase-forest"
+  },
+  {
    "title": "Love's Labour's Lost @ Middleton Hall",
    "theatre": "The Old Rep Theatre",
    "genre": "Comedy",
    "start": "2027-06-27",
    "end": "2027-06-27",
    "url": "https://www.oldrep.co.uk/event-details/356731ACSDKKNBBRVVTBJSSKCNVPRHGLB/loves-labours-lost-middleton-hall/"
+  },
+  {
+   "title": "Rudimental + MJ Cole + Charlie Tee",
+   "theatre": "Forest Live Cannock Chase",
+   "genre": "Concert",
+   "start": "2027-06-27",
+   "end": "2027-06-27",
+   "url": "https://www.forestlive.com/rudimental"
   },
   {
    "title": "The Full Monty",

@@ -55,7 +55,8 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
 .field { min-width: 0; }
 .field label { display: block; font-family: var(--font-display); font-size: 15px; letter-spacing: .1em; color: var(--muted); margin-bottom: 3px; }
 .field input, .field select { width: 100%; min-height: 44px; padding: 0 12px; border: 1.5px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--fg); }
-.field input[type="date"] { padding: 0 8px; }
+.field input[type="date"] { -webkit-appearance: none; appearance: none; display: block; width: 100%; max-width: 100%; min-width: 0; padding: 0 8px; font-size: 16px; line-height: 1.2; text-align: left; }
+.field input[type="date"]::-webkit-date-and-time-value { text-align: left; }
 .count { font-family: var(--font-small); font-weight: 500; font-size: 16px; letter-spacing: .05em; color: var(--muted); }
 .coverage { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); padding: 0 16px; }
 .coverage summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; font-weight: 600; font-size: 14px; }
@@ -81,22 +82,23 @@ h2 { font-family: var(--font-display); font-weight: 400; font-size: 26px; letter
 .act { display: flex; align-items: center; padding: 14px 16px 14px 0; }
 .empty, .error { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 28px 20px; text-align: center; color: var(--muted); }
 .empty strong, .error strong { display: block; color: var(--fg); font-family: var(--font-display); font-weight: 400; font-size: 28px; letter-spacing: .04em; margin-bottom: 4px; }
-.near { display: grid; grid-template-columns: minmax(0, 1.3fr) auto minmax(0, 1.4fr) minmax(0, 1fr); gap: 12px; align-items: end; border: 1px solid var(--line); border-radius: 8px; padding: 12px; background: var(--surface); }
-.near .field input, .near .field select { background: var(--bg); }
-.pcrow { display: flex; gap: 8px; }
-.pcrow input { flex: 1; min-width: 0; }
+.near { display: flex; flex-direction: column; gap: 8px; }
+.near-main { display: flex; flex-wrap: wrap; gap: 8px; }
+.pcrow { flex: 1 1 260px; display: flex; gap: 8px; min-width: 0; }
+.pcrow input { flex: 1; min-width: 0; min-height: 44px; padding: 0 12px; border: 1.5px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--fg); }
 .btn.ghost { background: transparent; color: var(--accent); }
 .near .btn { min-height: 44px; }
-.field.range input { padding: 0; min-height: 44px; border: 0; background: transparent; accent-color: var(--accent); }
+.near-opts { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 12px; align-items: end; }
+.near-opts[hidden] { display: none; }
+.near-opts .field select { min-height: 40px; }
+.field.range input { padding: 0; min-height: 40px; border: 0; background: transparent; accent-color: var(--accent); }
 .field.range label span { color: var(--fg); }
-.nearmsg { grid-column: 1 / -1; font-size: 14px; color: var(--muted); min-height: 0; }
+.nearmsg { font-size: 14px; color: var(--muted); }
 .nearmsg:empty { display: none; }
 .nearmsg button { background: none; border: 0; padding: 0 0 0 8px; color: var(--accent); text-decoration: underline; cursor: pointer; font-size: 14px; }
 .dist { color: var(--accent); font-weight: 600; }
 @media (max-width: 720px) {
-  .near { grid-template-columns: 1fr 1fr; }
-  .near .pcfield, .near .field.range, .near .locate { grid-column: 1 / -1; }
-  .near .locate .btn { width: 100%; }
+  .near-main > .btn { flex: 1 1 100%; min-height: 38px; }
   .search-row { grid-template-columns: 1fr 1fr; }
   .search-row .field:nth-child(1), .search-row .field:nth-child(2) { grid-column: 1 / -1; }
 }
@@ -140,18 +142,19 @@ h2 { font-family: var(--font-display); font-weight: 400; font-size: 26px; letter
       </div>
     </div>
     <div class="near" id="near">
-      <div class="field pcfield">
-        <label for="pc">Near a postcode</label>
-        <div class="pcrow"><input id="pc" type="text" placeholder="e.g. DE1 3NF" autocomplete="postal-code" enterkeyhint="go"><button class="btn ghost" id="pcgo" type="button">FIND</button></div>
+      <div class="near-main">
+        <div class="pcrow"><input id="pc" type="text" aria-label="Postcode" placeholder="Near a postcode, e.g. DE1 3NF" autocomplete="postal-code" enterkeyhint="go"><button class="btn ghost" id="pcgo" type="button">FIND</button></div>
+        <button class="btn ghost" id="locate" type="button">USE MY LOCATION</button>
       </div>
-      <div class="locate"><button class="btn ghost" id="locate" type="button">USE MY LOCATION</button></div>
-      <div class="field range">
-        <label for="radius">Within <span id="radiusVal">25 miles</span></label>
-        <input id="radius" type="range" min="5" max="100" step="5" value="25" disabled>
-      </div>
-      <div class="field">
-        <label for="sort">Sort by</label>
-        <select id="sort" disabled><option value="date">Soonest first</option><option value="near">Nearest first</option></select>
+      <div class="near-opts" id="nearOpts" hidden>
+        <div class="field range">
+          <label for="radius">Within <span id="radiusVal">25 miles</span></label>
+          <input id="radius" type="range" min="5" max="100" step="5" value="25">
+        </div>
+        <div class="field">
+          <label for="sort">Sort by</label>
+          <select id="sort"><option value="date">Soonest</option><option value="near">Nearest</option></select>
+        </div>
       </div>
       <div class="nearmsg" id="nearMsg" aria-live="polite"></div>
     </div>
@@ -295,13 +298,13 @@ h2 { font-family: var(--font-display); font-weight: 400; font-size: 26px; letter
 
   function setUser(lat, lng, text) {
     user = { lat: lat, lng: lng };
-    $("radius").disabled = false; $("sort").disabled = false;
+    $("nearOpts").hidden = false;
     $("nearMsg").innerHTML = esc(text) + ' <button type="button" id="clearLoc">Clear location</button>';
     $("clearLoc").addEventListener("click", clearUser);
     render();
   }
   function clearUser() {
-    user = null; $("radius").disabled = true; $("sort").disabled = true; $("sort").value = "date";
+    user = null; $("nearOpts").hidden = true; $("sort").value = "date";
     $("nearMsg").textContent = ""; $("pc").value = ""; render();
   }
   function findPostcode() {

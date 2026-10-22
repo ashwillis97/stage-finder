@@ -323,11 +323,34 @@ def read_winding_wheel():
     return out
 
 
+def read_forest_live():
+    out = []
+    raw = (SNAP / "forest-live-cannock-1.html").read_text(encoding="utf-8")
+    i = raw.find("contentListItemsV2")
+    seg = raw[i:i + 20000].replace('\\"', '"').replace("\\u0026", "&") if i >= 0 else ""
+    for title, sub, url, date in re.findall(
+            r'"title":"([^"]*)","subtitle":"([^"]*)","caption":"[^"]*","ctaLabel":"[^"]*","ctaUrl":"([^"]*)"[^\]]*?"label":"(\d{1,2} [A-Za-z]+ \d{4})"', seg):
+        out.append(row(f"{title} {sub}".strip(), "Forest Live Cannock Chase", parse_dates(date), absu("https://www.forestlive.com", url), "Concert"))
+    return out
+
+
+def read_big_top():
+    s = soup("big-top-arena-1.html")
+    if s is None:
+        return []
+    t = re.sub(r"\s+", " ", s.get_text(" | ", strip=True))
+    m = re.search(r"what's on \| (.+?) \| ([A-Z]+ \d+(?:ST|ND|RD|TH)? ?- ?[A-Z]+ \d+(?:ST|ND|RD|TH)? 20\d\d)", t)
+    link = next((a["href"] for a in s.find_all("a", href=True) if "tickets" in a["href"]), "")
+    if not m or not link:
+        return []
+    return [row(m.group(1).title(), "Big Top Arena", parse_dates(m.group(2)), link, "Musical")]
+
+
 READERS = {
     "De Montfort Hall": read_dmh, "Wolverhampton Grand Theatre": read_grand, "Century Theatre": read_century,
     "The Old Rep Theatre": read_oldrep, "Curve Theatre": read_curve, "Derby Theatre": read_derby,
     "Nottingham Playhouse": read_playhouse, "The Rep": read_rep, "Birmingham Hippodrome": read_hippodrome,
-    "TRCH": read_trch, "The Alexandra Theatre": read_alexandra, "Regent Theatre Stoke": read_regent, "New Vic Theatre": read_newvic, "Winding Wheel Theatre": read_winding_wheel, "Bonington Theatre": read_bonington, "Vaillant Live": read_vaillant,
+    "TRCH": read_trch, "The Alexandra Theatre": read_alexandra, "Regent Theatre Stoke": read_regent, "New Vic Theatre": read_newvic, "Winding Wheel Theatre": read_winding_wheel, "Forest Live Cannock Chase": read_forest_live, "Big Top Arena": read_big_top, "Bonington Theatre": read_bonington, "Vaillant Live": read_vaillant,
 }
 
 REMOVED = {"Repton 400 Hall Theatre", "Elite Cinema and Theatre"}  # venues the owner dropped

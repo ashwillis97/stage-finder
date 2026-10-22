@@ -26,8 +26,18 @@ with sync_playwright() as p:
             page = ctx.new_page()
             seen = []
             if v.get("js"):
-                page.on("response", lambda r, seen=seen: seen.append({"url": r.url, "status": r.status, "type": r.headers.get("content-type", "")})
-                        if ("json" in r.headers.get("content-type", "") or "api" in r.url.lower()) else None)
+                def on_resp(r, seen=seen):
+                    ct = r.headers.get("content-type", "")
+                    if "json" in ct or "api" in r.url.lower():
+                        item = {"url": r.url, "status": r.status, "type": ct}
+                        noisy = re.search(r"google|doubleclick|braze|termly|ketch|permutive|ad\.gt|facebook|analytics|hotjar|cookie|consent", r.url)
+                        if "json" in ct and r.status == 200 and not noisy:
+                            try:
+                                item["body"] = r.text()[:400000]
+                            except Exception:
+                                pass
+                        seen.append(item)
+                page.on("response", on_resp)
             try:
                 resp = page.goto(url, wait_until="domcontentloaded", timeout=45000)
                 entry["status"] = resp.status if resp else None
@@ -52,6 +62,8 @@ with sync_playwright() as p:
             finally:
                 if seen:
                     (out / f"{v['slug']}-network.json").write_text(json.dumps(seen[:60], indent=1))
+                    for n, item in enumerate([s for s in seen if s.get("body")][:5], 1):
+                        (out / f"{v['slug']}-api-{n}.json").write_text(item["body"], encoding="utf-8")
                 page.close()
             print(entry, flush=True)
             report.append(entry)

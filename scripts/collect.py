@@ -346,7 +346,7 @@ def read_big_top():
     return [row(m.group(1).title(), "Big Top Arena", parse_dates(m.group(2)), link, "Musical")]
 
 
-SPORT = re.compile(r"\bvs?\b|panthers|netball|hockey|boxing|wrestling|darts|snooker|basketball|ice hockey", re.I)
+SPORT = re.compile(r"\bvs?\b|panthers|netball|hockey|boxing|wrestling|darts|snooker|basketball|ice hockey|eihl|play-?offs?", re.I)
 
 
 def read_motorpoint():

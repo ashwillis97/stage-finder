@@ -346,11 +346,25 @@ def read_big_top():
     return [row(m.group(1).title(), "Big Top Arena", parse_dates(m.group(2)), link, "Musical")]
 
 
+SPORT = re.compile(r"\bvs?\b|panthers|netball|hockey|boxing|wrestling|darts|snooker|basketball|ice hockey", re.I)
+
+
+def read_motorpoint():
+    out = []
+    for c in select_all("motorpoint-arena", 'a[class*="EventCard"][class*="__item"]'):
+        t = c.select_one('[class*="card__title"]')
+        d = c.select_one('[class*="card__date"]')
+        if not (t and d) or SPORT.search(text(t)):
+            continue
+        out.append(row(text(t).title() if text(t).isupper() else text(t), "Motorpoint Arena Nottingham", parse_dates(text(d)), c["href"]))
+    return out
+
+
 READERS = {
     "De Montfort Hall": read_dmh, "Wolverhampton Grand Theatre": read_grand, "Century Theatre": read_century,
     "The Old Rep Theatre": read_oldrep, "Curve Theatre": read_curve, "Derby Theatre": read_derby,
     "Nottingham Playhouse": read_playhouse, "The Rep": read_rep, "Birmingham Hippodrome": read_hippodrome,
-    "TRCH": read_trch, "The Alexandra Theatre": read_alexandra, "Regent Theatre Stoke": read_regent, "New Vic Theatre": read_newvic, "Winding Wheel Theatre": read_winding_wheel, "Forest Live Cannock Chase": read_forest_live, "Big Top Arena": read_big_top, "Bonington Theatre": read_bonington, "Vaillant Live": read_vaillant,
+    "TRCH": read_trch, "The Alexandra Theatre": read_alexandra, "Regent Theatre Stoke": read_regent, "New Vic Theatre": read_newvic, "Winding Wheel Theatre": read_winding_wheel, "Forest Live Cannock Chase": read_forest_live, "Big Top Arena": read_big_top, "Motorpoint Arena Nottingham": read_motorpoint, "Bonington Theatre": read_bonington, "Vaillant Live": read_vaillant,
 }
 
 REMOVED = {"Repton 400 Hall Theatre", "Elite Cinema and Theatre"}  # venues the owner dropped

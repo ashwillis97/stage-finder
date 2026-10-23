@@ -51,6 +51,15 @@ with sync_playwright() as p:
                     time.sleep(0.7)
                 if v.get("js"):
                     time.sleep(8)
+                if v.get("js"):
+                    for n, fr in enumerate([f for f in page.frames if f != page.main_frame], 1):
+                        try:
+                            fh = fr.content()
+                            if len(fh) > 2000 and "googletagmanager" not in fr.url:
+                                (out / f"{v['slug']}-frame-{n}.html").write_text(fh, encoding="utf-8")
+                                print("  frame", n, fr.url[:100], len(fh), flush=True)
+                        except Exception as e:
+                            print("  frame error", str(e)[:100], flush=True)
                 html = page.content()
                 name = f"{v['slug']}-{i}.html"
                 (out / name).write_text(html, encoding="utf-8")

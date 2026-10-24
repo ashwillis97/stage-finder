@@ -1,174 +1,211 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Stage Finder</title>
+<title>Curtain Call | What's on at theatres across the Midlands</title>
+<meta name="description" content="Search theatre shows, comedy, music and pantomime at venues across the Midlands. Find something on near you and go straight to the tickets.">
+<meta name="theme-color" content="#150d21">
+<meta property="og:title" content="Curtain Call | What's on at theatres across the Midlands">
+<meta property="og:description" content="Search theatre shows, comedy, music and pantomime at venues across the Midlands, all in one place.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23150d21'/%3E%3Cpath d='M20 14h24l-6 16h-12z' fill='%23ffb547'/%3E%3Cpath d='M24 34h16l10 18H14z' fill='%23ffb547' opacity='.45'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@500;600&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@500;600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
 <style>
-/* Layout: a programme-style list. Each show is a ticket stub (start date) beside the details, grouped under month headings. */
+/* Evening out: deep plum stage, warm amber spotlight. Hero with search, quick filters, then a list of ticket-stub cards. */
 :root {
-  --bg: #0b0e13;
-  --surface: #141922;
-  --fg: #e9edf3;
-  --muted: #8d98a8;
-  --line: #263041;
-  --accent: #4da3ff;
-  --accent-fg: #04101f;
-  --accent-soft: #112238;
-  --live: #7cc0ff;
-  --live-soft: #14304d;
+  --bg: #150d21;
+  --surface: #211432;
+  --surface-2: #2b1a40;
+  --line: #3b2757;
+  --fg: #f7f1ff;
+  --muted: #b9abd1;
+  --accent: #ffb547;
+  --accent-fg: #2b1700;
+  --rose: #ff8fb0;
   --font-display: "Bebas Neue", "Oswald", "Arial Narrow", Impact, sans-serif;
   --font-body: "Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
   --font-small: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
   color-scheme: dark;
 }
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg: #eceff3; --surface: #ffffff; --fg: #0d1117; --muted: #5b6676; --line: #d3d9e2;
-    --accent: #1457b8; --accent-fg: #ffffff; --accent-soft: #e1ecfa;
-    --live: #1457b8; --live-soft: #dbe8f9;
-    color-scheme: light;
-  }
-}
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body {
-  margin: 0; background: var(--bg); color: var(--fg);
-  font-family: var(--font-body); font-size: 16px; line-height: 1.45;
-  padding-block: 28px 56px;
+  margin: 0; color: var(--fg); font-family: var(--font-body); font-size: 16px; line-height: 1.5;
+  background-color: var(--bg);
+  background-image: radial-gradient(900px 420px at 12% -8%, rgba(132, 56, 176, .42), transparent 62%), radial-gradient(700px 360px at 92% 0%, rgba(255, 181, 71, .13), transparent 60%);
+  background-repeat: no-repeat;
+  padding-block: 0 48px;
   padding-left: max(16px, env(safe-area-inset-left, 0px));
   padding-right: max(16px, env(safe-area-inset-right, 0px));
 }
-.wrap { max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
-h1 { font-family: var(--font-display); font-weight: 400; font-size: clamp(44px, 9vw, 68px); line-height: .95; letter-spacing: .02em; margin: 0; }
-.sub { color: var(--muted); font-size: 14px; margin: 8px 0 0; }
-.stamp { font-family: var(--font-small); font-weight: 500; font-size: 15px; letter-spacing: .04em; color: var(--muted); }
+.wrap { max-width: 880px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
 button, input, select { font: inherit; color: inherit; }
-button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
-.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 18px; border-radius: 6px; border: 1.5px solid var(--accent); background: var(--accent); color: var(--accent-fg); font-family: var(--font-display); font-size: 19px; letter-spacing: .06em; line-height: 1; text-decoration: none; white-space: nowrap; }
-.btn:hover { filter: brightness(1.1); }
-.controls { display: flex; flex-direction: column; gap: 12px; }
-.search-row { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr) minmax(0, .8fr) minmax(0, .8fr); gap: 10px; }
-.field { min-width: 0; }
-.field label { display: block; font-family: var(--font-display); font-size: 15px; letter-spacing: .1em; color: var(--muted); margin-bottom: 3px; }
-.field input, .field select { width: 100%; min-height: 44px; padding: 0 12px; border: 1.5px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--fg); }
-.field input[type="date"] { -webkit-appearance: none; appearance: none; display: block; width: 100%; max-width: 100%; min-width: 0; padding: 0 8px; font-size: 16px; line-height: 1.2; text-align: left; }
-.field input[type="date"]::-webkit-date-and-time-value { text-align: left; }
-.count { font-family: var(--font-small); font-weight: 500; font-size: 16px; letter-spacing: .05em; color: var(--muted); }
-.coverage { border: 1px solid var(--line); border-radius: 8px; background: var(--surface); padding: 0 16px; }
-.coverage summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; font-weight: 600; font-size: 14px; }
-.cov { display: flex; flex-direction: column; gap: 10px; padding: 0 0 16px; font-size: 14px; color: var(--muted); }
-.cov h4 { margin: 0 0 4px; font-family: var(--font-display); font-weight: 400; font-size: 18px; letter-spacing: .06em; color: var(--fg); }
-.cov ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 2px; }
+button { cursor: pointer; }
+:focus-visible { outline: 3px solid #ffd28a; outline-offset: 2px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.brand { display: flex; align-items: center; gap: 10px; padding-top: max(18px, env(safe-area-inset-top, 0px)); font-family: var(--font-display); font-size: 26px; letter-spacing: .06em; }
+.brand svg { width: 28px; height: 28px; flex: none; }
+.hero { display: flex; flex-direction: column; gap: 10px; padding-top: 14px; }
+h1 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: clamp(46px, 9vw, 76px); line-height: .94; letter-spacing: .015em; text-wrap: balance; }
+h1 em { font-style: normal; color: var(--accent); }
+.lede { margin: 0; color: var(--muted); font-size: 17px; max-width: 46ch; }
+
+.search { position: relative; }
+.search svg { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px; color: var(--muted); pointer-events: none; }
+.search input { width: 100%; min-height: 56px; padding: 0 16px 0 46px; font-size: 17px; border: 2px solid var(--line); border-radius: 14px; background: var(--surface); color: var(--fg); }
+.search input::placeholder { color: var(--muted); }
+.search input:focus { border-color: var(--accent); outline: none; box-shadow: 0 0 0 4px rgba(255, 181, 71, .2); }
+
+.filters { display: flex; flex-direction: column; gap: 14px; }
+.group-label { font-family: var(--font-small); font-weight: 600; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+.chips { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; min-height: 42px; padding: 0 16px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--surface); color: var(--fg); font-weight: 500; font-size: 15px; white-space: nowrap; }
+.chip:hover { border-color: var(--accent); }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-fg); font-weight: 700; }
+.where { display: flex; flex-wrap: wrap; gap: 8px; }
+.where select { flex: 1 1 200px; min-width: 0; min-height: 42px; padding: 0 12px; border: 1.5px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--fg); font-size: 15px; }
+.dates { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.dates[hidden], .panel[hidden] { display: none; }
+.dates label, .panel label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 3px; }
+.dates input { -webkit-appearance: none; appearance: none; display: block; width: 100%; min-width: 0; min-height: 46px; padding: 0 10px; font-size: 16px; text-align: left; border: 1.5px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--fg); }
+.dates input::-webkit-date-and-time-value { text-align: left; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 12px; }
+.panel p { margin: 0; font-size: 14px; color: var(--muted); }
+.pcrow { display: flex; gap: 8px; }
+.pcrow input { flex: 1; min-width: 0; min-height: 46px; padding: 0 12px; font-size: 16px; border: 1.5px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--fg); }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 0 18px; border-radius: 10px; border: 1.5px solid var(--accent); background: var(--accent); color: var(--accent-fg); font-weight: 700; font-size: 15px; text-decoration: none; white-space: nowrap; }
+.btn:hover { filter: brightness(1.08); }
+.btn.ghost { background: transparent; color: var(--accent); }
+.opts { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 14px; align-items: end; }
+.opts[hidden] { display: none; }
+.opts input[type="range"] { width: 100%; accent-color: var(--accent); min-height: 40px; }
+.opts select { width: 100%; min-height: 42px; padding: 0 10px; border: 1.5px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--fg); }
+.linkbtn { background: none; border: 0; padding: 0; color: var(--accent); text-decoration: underline; font-size: inherit; }
+
+.resultbar { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; border-top: 1px solid var(--line); padding-top: 16px; }
+.count { font-family: var(--font-display); font-size: 28px; letter-spacing: .05em; }
+.count small { font-family: var(--font-body); font-size: 14px; letter-spacing: 0; color: var(--muted); margin-left: 8px; }
+
 .list, .group { display: flex; flex-direction: column; gap: 12px; }
-h2 { font-family: var(--font-display); font-weight: 400; font-size: 26px; letter-spacing: .08em; color: var(--muted); margin: 12px 0 0; }
-.row { display: grid; grid-template-columns: 92px minmax(0, 1fr) auto; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
-.stub { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 14px 8px; border-right: 2px dashed var(--line); background: var(--accent-soft); text-align: center; }
-.stub .dow, .stub .mon { font-family: var(--font-small); font-weight: 600; font-size: 15px; letter-spacing: .1em; text-transform: uppercase; }
+h2 { margin: 14px 0 0; font-family: var(--font-display); font-weight: 400; font-size: 28px; letter-spacing: .08em; color: var(--accent); }
+.card { display: grid; grid-template-columns: 88px minmax(0, 1fr) auto; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.stub { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 12px 6px; background: var(--surface-2); border-right: 2px dashed var(--line); text-align: center; }
+.stub .dow, .stub .mon { font-family: var(--font-small); font-weight: 600; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; }
 .stub .dow { color: var(--muted); }
 .stub .mon { color: var(--accent); }
 .stub .day { font-family: var(--font-display); font-size: 44px; line-height: .95; }
-.info { padding: 14px 16px; min-width: 0; display: flex; flex-direction: column; gap: 4px; justify-content: center; }
-.info h3 { font-family: var(--font-display); font-weight: 400; font-size: 30px; letter-spacing: .03em; line-height: 1.02; margin: 0; overflow-wrap: anywhere; }
+.info { padding: 14px 16px; min-width: 0; display: flex; flex-direction: column; gap: 3px; justify-content: center; }
+.info h3 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 30px; line-height: 1.02; letter-spacing: .03em; overflow-wrap: anywhere; }
 .venue { font-weight: 600; font-size: 15px; }
 .venue span { color: var(--muted); font-weight: 400; }
-.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 14px; color: var(--muted); }
-.meta .run { font-family: var(--font-small); font-weight: 500; font-size: 17px; letter-spacing: .04em; color: var(--fg); opacity: .8; }
-.tag { font-size: 12px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); }
-.tag.live { background: var(--live-soft); color: var(--live); border-color: transparent; font-weight: 600; }
+.when { font-size: 15px; color: var(--muted); }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.tag { font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: var(--surface-2); color: var(--muted); }
+.tag.live { background: rgba(255, 143, 176, .16); color: var(--rose); }
+.tag.near { background: rgba(255, 181, 71, .16); color: var(--accent); }
 .act { display: flex; align-items: center; padding: 14px 16px 14px 0; }
-.empty, .error { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 28px 20px; text-align: center; color: var(--muted); }
-.empty strong, .error strong { display: block; color: var(--fg); font-family: var(--font-display); font-weight: 400; font-size: 28px; letter-spacing: .04em; margin-bottom: 4px; }
-.near { display: flex; flex-direction: column; gap: 8px; }
-.near-main { display: flex; flex-wrap: wrap; gap: 8px; }
-.pcrow { flex: 1 1 260px; display: flex; gap: 8px; min-width: 0; }
-.pcrow input { flex: 1; min-width: 0; min-height: 44px; padding: 0 12px; border: 1.5px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--fg); }
-.btn.ghost { background: transparent; color: var(--accent); }
-.near .btn { min-height: 44px; }
-.near-opts { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 12px; align-items: end; }
-.near-opts[hidden] { display: none; }
-.near-opts .field select { min-height: 40px; }
-.field.range input { padding: 0; min-height: 40px; border: 0; background: transparent; accent-color: var(--accent); }
-.field.range label span { color: var(--fg); }
-.nearmsg { font-size: 14px; color: var(--muted); }
-.nearmsg:empty { display: none; }
-.nearmsg button { background: none; border: 0; padding: 0 0 0 8px; color: var(--accent); text-decoration: underline; cursor: pointer; font-size: 14px; }
-.dist { color: var(--accent); font-weight: 600; }
-@media (max-width: 720px) {
-  .near-main > .btn { flex: 1 1 100%; min-height: 38px; }
-  .search-row { grid-template-columns: 1fr 1fr; }
-  .search-row .field:nth-child(1), .search-row .field:nth-child(2) { grid-column: 1 / -1; }
-}
+.more { align-self: center; margin-top: 8px; min-height: 50px; padding: 0 28px; }
+.empty { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 36px 20px; text-align: center; color: var(--muted); display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.empty strong { font-family: var(--font-display); font-weight: 400; font-size: 32px; letter-spacing: .04em; color: var(--fg); }
+
+footer { border-top: 1px solid var(--line); padding-top: 22px; display: flex; flex-direction: column; gap: 12px; color: var(--muted); font-size: 14px; }
+footer p { margin: 0; max-width: 70ch; }
+footer details { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 0 14px; }
+footer summary { min-height: 46px; display: flex; align-items: center; cursor: pointer; color: var(--fg); font-weight: 600; }
+footer details div { padding-bottom: 14px; display: flex; flex-direction: column; gap: 8px; }
+
 @media (max-width: 600px) {
-  body { padding-block: 20px 40px; }
-  .row { grid-template-columns: 64px minmax(0, 1fr); }
-  .stub { padding: 10px 4px; grid-row: 1 / span 2; }
+  .brand { font-size: 24px; }
+  .lede { font-size: 16px; }
+  .card { grid-template-columns: 66px minmax(0, 1fr); }
+  .stub { grid-row: 1 / span 2; padding: 10px 4px; }
   .stub .day { font-size: 34px; }
-  .info { padding: 10px 12px 4px; gap: 3px; }
-  .info h3 { font-size: 25px; }
-  .venue { font-size: 14px; }
-  .act { grid-column: 2; padding: 4px 12px 12px; }
-  .btn { min-height: 34px; padding: 0 14px; font-size: 17px; }
+  .info { padding: 12px 14px 4px; }
+  .info h3 { font-size: 26px; }
+  .act { grid-column: 2; padding: 4px 14px 14px; }
+  .act .btn { min-height: 40px; padding: 0 16px; font-size: 14px; }
+  .opts { grid-template-columns: 1fr; }
+  .count { font-size: 24px; }
 }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
 </style>
 </head>
 <body>
-<div class="wrap" id="app">
-  <header>
-    <h1>Stage Finder</h1>
-    <p class="sub">What's on across your theatres, soonest first. <span class="stamp" id="stamp" aria-live="polite"></span></p>
+<div class="wrap">
+  <div class="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M20 14h24l-6 16h-12z" fill="#ffb547"/><path d="M24 34h16l10 18H14z" fill="#ffb547" opacity=".45"/></svg><span>Curtain Call</span></div>
+
+  <header class="hero">
+    <h1>What's on at the <em>theatre?</em></h1>
+    <p class="lede" id="lede">Shows, comedy, music and pantomime at venues across the Midlands, all in one place.</p>
   </header>
 
-  <div class="controls">
-    <div class="search-row">
-      <div class="field">
-        <label for="q">Search</label>
-        <input id="q" type="search" placeholder="Show, theatre or genre" autocomplete="off">
-      </div>
-      <div class="field">
-        <label for="venue">Theatre</label>
-        <select id="venue"><option value="">All theatres</option></select>
-      </div>
-      <div class="field">
-        <label for="from">From</label>
-        <input id="from" type="date">
-      </div>
-      <div class="field">
-        <label for="to">To</label>
-        <input id="to" type="date">
-      </div>
-    </div>
-    <div class="near" id="near">
-      <div class="near-main">
-        <div class="pcrow"><input id="pc" type="text" aria-label="Postcode" placeholder="Near a postcode, e.g. DE1 3NF" autocomplete="postal-code" enterkeyhint="go"><button class="btn ghost" id="pcgo" type="button">FIND</button></div>
-        <button class="btn ghost" id="locate" type="button">USE MY LOCATION</button>
-      </div>
-      <div class="near-opts" id="nearOpts" hidden>
-        <div class="field range">
-          <label for="radius">Within <span id="radiusVal">25 miles</span></label>
-          <input id="radius" type="range" min="5" max="100" step="5" value="25">
-        </div>
-        <div class="field">
-          <label for="sort">Sort by</label>
-          <select id="sort"><option value="date">Soonest</option><option value="near">Nearest</option></select>
-        </div>
-      </div>
-      <div class="nearmsg" id="nearMsg" aria-live="polite"></div>
-    </div>
-    <div class="count" id="count"></div>
+  <div class="search">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <label class="sr" for="q">Search shows, artists or venues</label>
+    <input id="q" type="search" placeholder="Search shows, artists or venues" autocomplete="off" enterkeyhint="search">
   </div>
 
-  <details class="coverage" id="coverage" hidden><summary>Venues with missing or partial listings</summary><div class="cov" id="covBody"></div></details>
+  <section class="filters" aria-label="Filter shows">
+    <div>
+      <p class="group-label" id="lblWhen">When</p>
+      <div class="chips" id="whenChips" role="group" aria-labelledby="lblWhen"></div>
+    </div>
+    <div class="dates" id="dates" hidden>
+      <div><label for="from">From</label><input id="from" type="date"></div>
+      <div><label for="to">To</label><input id="to" type="date"></div>
+    </div>
+    <div>
+      <p class="group-label" id="lblWhat">What</p>
+      <div class="chips" id="catChips" role="group" aria-labelledby="lblWhat"></div>
+    </div>
+    <div>
+      <p class="group-label" id="lblWhere">Where</p>
+      <div class="where" role="group" aria-labelledby="lblWhere">
+        <label class="sr" for="venue">Venue</label>
+        <select id="venue"><option value="">All venues</option></select>
+        <button class="chip" id="nearBtn" type="button" aria-pressed="false" aria-expanded="false" aria-controls="nearPanel">Near me</button>
+      </div>
+    </div>
+    <div class="panel" id="nearPanel" hidden>
+      <p>Enter your postcode or share your location to see shows close to you.</p>
+      <div class="pcrow">
+        <label class="sr" for="pc">Your postcode</label>
+        <input id="pc" type="text" placeholder="Your postcode, e.g. DE1 3NF" autocomplete="postal-code" enterkeyhint="go">
+        <button class="btn" id="pcgo" type="button">Find</button>
+      </div>
+      <button class="btn ghost" id="locate" type="button">Use my current location</button>
+      <div class="opts" id="opts" hidden>
+        <div><label for="radius">Show venues within <strong id="radiusVal">25 miles</strong></label><input id="radius" type="range" min="5" max="100" step="5" value="25"></div>
+        <div><label for="sort">Order by</label><select id="sort"><option value="date">Date</option><option value="near">Distance</option></select></div>
+      </div>
+      <p id="nearMsg" aria-live="polite"></p>
+    </div>
+  </section>
 
-  <div class="list" id="list"><div class="empty"><strong>Loading</strong>Fetching the latest listings.</div></div>
+  <div class="resultbar">
+    <div class="count" id="count" aria-live="polite"></div>
+    <button class="linkbtn" id="clear" type="button" hidden>Clear all filters</button>
+  </div>
+
+  <main class="list" id="list"><div class="empty"><strong>Loading shows</strong>One moment please.</div></main>
+
+  <footer>
+    <p>Listings are collected from each venue's own website and checked several times a day. Dates, times and availability can change, so please confirm with the venue before you book or travel.</p>
+    <details id="about" hidden><summary>About these listings</summary><div id="aboutBody"></div></details>
+    <p id="stamp"></p>
+  </footer>
 </div>
+<noscript><p style="padding:24px;text-align:center">Curtain Call needs JavaScript to show listings. Please turn it on and reload the page.</p></noscript>
 
 <script>
 (function () {
-  var shows = [], coverage = null, user = null;
+  var shows = [], coverage = null, user = null, visible = 40;
+  var F = { q: "", venue: "", cat: "", when: "any" };
   var $ = function (id) { return document.getElementById(id); };
   var MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
   var MON3 = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
@@ -189,15 +226,18 @@ h2 { font-family: var(--font-display); font-weight: 400; font-size: 26px; letter
     "Forest Live Cannock Chase": ["Forest Live", "Cannock Chase", 52.7450, -1.9800],
     "Big Top Arena": ["Big Top Arena", "Trentham, Stoke-on-Trent", 52.9560, -2.1840]
   };
+  var WHEN = [["any","Any day"],["today","Today"],["weekend","This weekend"],["week","Next 7 days"],["month","Next 30 days"],["custom","Pick dates"]];
+  var CATS = [["theatre","Theatre & drama"],["musical","Musicals"],["comedy","Comedy"],["music","Music"],["dance","Dance"],["family","Family & panto"],["talks","Talks & more"]];
 
   function parse(s) { var p = s.split("-"); return new Date(+p[0], +p[1] - 1, +p[2]); }
   function iso(d) { return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); }
+  function addDays(d, n) { var x = new Date(d.getFullYear(), d.getMonth(), d.getDate() + n); return x; }
   function esc(s) { var d = document.createElement("div"); d.textContent = s == null ? "" : String(s); return d.innerHTML.replace(/"/g, "&quot;"); }
   function safeUrl(u) { return /^https?:\/\//i.test(u || "") ? u : "#"; }
   function nameOf(t) { return PLACE[t] ? PLACE[t][0] : t; }
   function cityOf(t) { return PLACE[t] ? PLACE[t][1] : ""; }
   function label(t) { return cityOf(t) ? nameOf(t) + ", " + cityOf(t) : nameOf(t); }
-  var todayIso = iso(new Date());
+  var now = new Date(), todayIso = iso(now), todayD = parse(todayIso);
 
   function miles(a, b, c, d) {
     var R = 3958.8, t = Math.PI / 180, dl = (c - a) * t, dn = (d - b) * t;
@@ -206,131 +246,198 @@ h2 { font-family: var(--font-display); font-weight: 400; font-size: 26px; letter
   }
   function dist(t) { return user && PLACE[t] && PLACE[t][2] != null ? miles(user.lat, user.lng, PLACE[t][2], PLACE[t][3]) : null; }
 
-  function runText(s) {
-    var a = parse(s.start), b = parse(s.end);
-    var left = a.getDate() + " " + MON3[a.getMonth()];
-    var right = b.getDate() + " " + MON3[b.getMonth()] + (b.getFullYear() !== a.getFullYear() ? " " + b.getFullYear() : "");
-    return s.start === s.end ? left : left + " to " + right;
+  /* ---- categories: the venues label shows in many different ways, so group them into a few clear types ---- */
+  function bucket(s) {
+    var g = (s.genre || "").toLowerCase(), t = (s.title || "").toLowerCase();
+    function test(x) {
+      if (/panto|family|children|kids/.test(x)) return "family";
+      if (/drama & musical/.test(x)) return "theatre";
+      if (/musical/.test(x)) return "musical";
+      if (/comedy|cabaret|variety|magic|stand.?up/.test(x)) return "comedy";
+      if (/dance|ballet/.test(x)) return "dance";
+      if (/music|concert|tribute|classical|orchestra|opera|choral|christmas|band|live in concert/.test(x)) return "music";
+      if (/theatre|drama|play|schools|community|season/.test(x)) return "theatre";
+      if (/talk|poetry|event|exhibition/.test(x)) return "talks";
+      return "";
+    }
+    var b = test(g);
+    if (!b) b = test(t.replace(/theatre/g, ""));
+    if (!b && /beauty and the beast|cinderella|aladdin|jack and the beanstalk|puss in boots|goldilocks|treasure island|sleeping beauty|peter pan|snow white|robin hood|dick whittington|mother goose|mamma mia|blood brothers|we will rock you|hairspray|chitty|jersey boys|dirty dancing|elf/.test(t)) {
+      b = /mamma mia|blood brothers|we will rock you|hairspray|chitty|jersey boys|dirty dancing|elf/.test(t) ? "musical" : "family";
+    }
+    return b || "talks";
+  }
+  function catName(k) { for (var i = 0; i < CATS.length; i++) if (CATS[i][0] === k) return CATS[i][1]; return ""; }
+
+  /* ---- dates ---- */
+  function whenRange() {
+    var w = F.when;
+    if (w === "today") return [todayIso, todayIso];
+    if (w === "week") return [todayIso, iso(addDays(todayD, 6))];
+    if (w === "month") return [todayIso, iso(addDays(todayD, 29))];
+    if (w === "weekend") {
+      var dow = todayD.getDay();
+      if (dow === 6) return [todayIso, iso(addDays(todayD, 1))];
+      if (dow === 0) return [todayIso, todayIso];
+      if (dow === 5) return [todayIso, iso(addDays(todayD, 2))];
+      var fri = addDays(todayD, 5 - dow);
+      return [iso(fri), iso(addDays(fri, 2))];
+    }
+    if (w === "custom") return [$("from").value || "0000-00-00", $("to").value || "9999-99-99"];
+    return null;
+  }
+  function dayText(d) { return DOW3[d.getDay()] + " " + d.getDate() + " " + MON3[d.getMonth()]; }
+  function whenText(s) {
+    var a = parse(s.start), b = parse(s.end), yr = b.getFullYear() !== todayD.getFullYear() ? " " + b.getFullYear() : "";
+    if (s.start === s.end) return s.start === todayIso ? "Today" : dayText(a) + yr;
+    if (s.start <= todayIso) return "On now, until " + dayText(b) + yr;
+    if (a.getMonth() === b.getMonth() && a.getFullYear() === b.getFullYear()) return DOW3[a.getDay()] + " " + a.getDate() + " to " + dayText(b) + yr;
+    return dayText(a) + " to " + dayText(b) + yr;
   }
 
+  /* ---- controls ---- */
+  function pressed(btn, on) { btn.setAttribute("aria-pressed", on ? "true" : "false"); }
+  function buildChips() {
+    $("whenChips").innerHTML = WHEN.map(function (w) { return '<button type="button" class="chip" data-when="' + w[0] + '" aria-pressed="' + (F.when === w[0]) + '">' + w[1] + "</button>"; }).join("");
+    var have = {}; shows.forEach(function (s) { if (s.end >= todayIso) have[bucket(s)] = true; });
+    $("catChips").innerHTML = '<button type="button" class="chip" data-cat="" aria-pressed="' + (F.cat === "") + '">All types</button>' +
+      CATS.filter(function (c) { return have[c[0]]; }).map(function (c) { return '<button type="button" class="chip" data-cat="' + c[0] + '" aria-pressed="' + (F.cat === c[0]) + '">' + c[1] + "</button>"; }).join("");
+  }
   function buildVenues() {
     var counts = {};
     shows.forEach(function (s) { if (s.end >= todayIso) counts[s.theatre] = (counts[s.theatre] || 0) + 1; });
     var names = Object.keys(counts).sort(function (a, b) { return label(a).localeCompare(label(b)); });
-    var cur = $("venue").value;
-    $("venue").innerHTML = '<option value="">All theatres</option>' + names.map(function (n) {
-      return '<option value="' + esc(n) + '">' + esc(label(n)) + " (" + counts[n] + ")</option>";
-    }).join("");
-    $("venue").value = names.indexOf(cur) >= 0 ? cur : "";
+    $("venue").innerHTML = '<option value="">All venues</option>' + names.map(function (n) { return '<option value="' + esc(n) + '">' + esc(label(n)) + "</option>"; }).join("");
+    $("lede").textContent = "Shows, comedy, music and pantomime at " + names.length + " venues across the Midlands, all in one place.";
+  }
+  function buildAbout() {
+    var none = (coverage && coverage.none) || [], part = (coverage && coverage.partial) || {}, old = [], inc = [];
+    Object.keys(part).forEach(function (k) { (/not updated automatically/i.test(part[k]) ? old : inc).push(label(k)); });
+    var h = "";
+    if (old.length) h += "<p>These venues are not updated automatically yet, so their listings may be out of date: " + esc(old.join("; ")) + ".</p>";
+    if (inc.length) h += "<p>These venues may have more shows than we can show: " + esc(inc.join("; ")) + ".</p>";
+    if (none.length) h += "<p>We could not find listings for: " + esc(none.map(label).join("; ")) + ".</p>";
+    $("about").hidden = !h; $("aboutBody").innerHTML = h;
   }
 
-  function renderCoverage() {
-    var box = $("coverage");
-    if (!coverage) { box.hidden = true; return; }
-    var none = coverage.none || [], part = coverage.partial || {}, html = "";
-    if (none.length) html += "<div><h4>No listings found</h4><ul>" + none.map(function (n) { return "<li>" + esc(label(n)) + "</li>"; }).join("") + "</ul></div>";
-    var pk = Object.keys(part);
-    if (pk.length) html += "<div><h4>Incomplete</h4><ul>" + pk.map(function (n) { return "<li><strong>" + esc(label(n)) + ":</strong> " + esc(part[n]) + "</li>"; }).join("") + "</ul></div>";
-    box.hidden = !html; $("covBody").innerHTML = html;
-  }
-
-  function render() {
-    var q = $("q").value.trim().toLowerCase();
-    var from = $("from").value, to = $("to").value, v = $("venue").value;
-    var radius = +$("radius").value, near = !!user && $("sort").value === "near";
+  /* ---- results ---- */
+  function filtered() {
+    var q = F.q.trim().toLowerCase(), r = whenRange(), radius = +$("radius").value;
     var rows = shows.filter(function (s) {
-      if (user) { var dd = dist(s.theatre); if (dd == null || dd > radius) return false; }
       if (s.end < todayIso) return false;
-      if (from && s.end < from) return false;
-      if (to && s.start > to) return false;
-      if (v && s.theatre !== v) return false;
+      if (r && (s.end < r[0] || s.start > r[1])) return false;
+      if (F.venue && s.theatre !== F.venue) return false;
+      if (F.cat && bucket(s) !== F.cat) return false;
+      if (user) { var dd = dist(s.theatre); if (dd == null || dd > radius) return false; }
       if (q && (s.title + " " + label(s.theatre) + " " + (s.genre || "")).toLowerCase().indexOf(q) < 0) return false;
       return true;
-    }).sort(function (a, b) {
-      if (near) { var da = Math.round(dist(a.theatre)), db = Math.round(dist(b.theatre)); if (da !== db) return da - db; }
+    });
+    var byNear = !!user && $("sort").value === "near";
+    rows.sort(function (a, b) {
+      if (byNear) { var da = Math.round(dist(a.theatre)), db = Math.round(dist(b.theatre)); if (da !== db) return da - db; }
       return a.start < b.start ? -1 : a.start > b.start ? 1 : a.title.localeCompare(b.title);
     });
-    var filtered = v || q || from || to || user;
-    $("count").textContent = rows.length + (rows.length === 1 ? " show" : " shows") + (filtered ? " match" : " on or coming up");
-    if (!rows.length) {
-      $("list").innerHTML = '<div class="empty"><strong>No shows found</strong>' + (user ? "Try a bigger distance, or clear the other filters." : "Try clearing the search, the dates or the theatre.") + "</div>";
+    return { rows: rows, byNear: byNear };
+  }
+  function anyFilter() { return F.q || F.venue || F.cat || F.when !== "any" || user; }
+  function render() {
+    var res = filtered(), rows = res.rows, n = rows.length;
+    $("count").innerHTML = n + (n === 1 ? " show" : " shows") + (user ? "<small>within " + $("radius").value + " miles</small>" : "");
+    $("clear").hidden = !anyFilter();
+    if (!n) {
+      $("list").innerHTML = '<div class="empty"><strong>Nothing matches yet</strong>Try a different day or type of show' + (user ? ", or increase the distance" : "") + ".<button class=\"btn ghost\" id=\"clear2\" type=\"button\">Clear all filters</button></div>";
+      $("clear2").addEventListener("click", clearAll);
       return;
     }
-    var html = "", lastKey = "";
-    rows.forEach(function (s) {
-      var d = parse(s.start);
-      var running = s.start <= todayIso;
-      var key = near ? "Nearest first" : running ? "Now on" : MONTHS[d.getMonth()] + " " + d.getFullYear();
-      if (key !== lastKey) {
-        if (lastKey) html += "</div>";
-        html += '<div class="group"><h2>' + esc(key.toUpperCase()) + "</h2>";
-        lastKey = key;
-      }
-      var city = cityOf(s.theatre), dm = dist(s.theatre);
-      html += '<article class="row">' +
-        '<div class="stub"><span class="dow">' + DOW3[d.getDay()] + '</span><span class="day">' + d.getDate() + '</span><span class="mon">' + MON3[d.getMonth()] + "</span></div>" +
-        '<div class="info"><h3>' + esc(s.title) + '</h3><div class="venue">' + esc(nameOf(s.theatre)) + (city ? ", <span>" + esc(city) + "</span>" : "") + (dm != null ? ' <span class="dist">' + Math.round(dm) + " mi</span>" : "") + "</div>" +
-        '<div class="meta"><span class="run">' + esc(runText(s)) + "</span>" +
-        (s.genre ? '<span class="tag">' + esc(s.genre) + "</span>" : "") +
-        (running ? '<span class="tag live">Now on</span>' : "") + "</div></div>" +
-        '<div class="act"><a class="btn" href="' + esc(safeUrl(s.url)) + '" target="_blank" rel="noopener noreferrer">VIEW SHOW</a></div>' +
-        "</article>";
+    var html = "", lastKey = "", shown = rows.slice(0, visible);
+    shown.forEach(function (s) {
+      var d = parse(s.start), running = s.start <= todayIso;
+      var key = res.byNear ? "Nearest first" : running ? "On now" : MONTHS[d.getMonth()] + " " + d.getFullYear();
+      if (key !== lastKey) { if (lastKey) html += "</div>"; html += '<div class="group"><h2>' + esc(key.toUpperCase()) + "</h2>"; lastKey = key; }
+      var city = cityOf(s.theatre), dm = dist(s.theatre), cat = catName(bucket(s));
+      var sd = running && s.start !== s.end ? parse(s.end) : d, until = sd !== d;
+      html += '<article class="card"><div class="stub"><span class="dow">' + (until ? "Until" : DOW3[sd.getDay()]) + '</span><span class="day">' + sd.getDate() + '</span><span class="mon">' + MON3[sd.getMonth()] + "</span></div>" +
+        '<div class="info"><h3>' + esc(s.title) + '</h3><div class="venue">' + esc(nameOf(s.theatre)) + (city ? ", <span>" + esc(city) + "</span>" : "") + '</div><div class="when">' + esc(whenText(s)) + "</div>" +
+        '<div class="tags">' + (cat ? '<span class="tag">' + esc(cat) + "</span>" : "") + (running && s.start !== s.end ? '<span class="tag live">On now</span>' : "") + (dm != null ? '<span class="tag near">' + Math.round(dm) + " miles away</span>" : "") + "</div></div>" +
+        '<div class="act"><a class="btn" href="' + esc(safeUrl(s.url)) + '" target="_blank" rel="noopener noreferrer" aria-label="Tickets and info for ' + esc(s.title) + '">Tickets &amp; info</a></div></article>';
     });
     html += "</div>";
+    if (n > shown.length) html += '<button class="btn ghost more" id="more" type="button">Show more (' + (n - shown.length) + " left)</button>";
     $("list").innerHTML = html;
+    var m = $("more"); if (m) m.addEventListener("click", function () { visible += 40; render(); });
+  }
+  function refresh() { visible = 40; render(); }
+  function clearAll() {
+    F = { q: "", venue: "", cat: "", when: "any" };
+    $("q").value = ""; $("venue").value = ""; $("from").value = ""; $("to").value = ""; $("dates").hidden = true;
+    clearUser(true); buildChips(); refresh();
   }
 
-  function stamp(t) {
-    var d = new Date(t);
-    $("stamp").textContent = isNaN(d) ? "" : "Updated " + d.getDate() + " " + MON3[d.getMonth()] + ", " + String(d.getHours()).padStart(2, "0") + ":" + String(d.getMinutes()).padStart(2, "0");
+  /* ---- near me ---- */
+  function setUser(lat, lng, text, shortLabel) {
+    user = { lat: lat, lng: lng };
+    $("opts").hidden = false; $("nearMsg").innerHTML = esc(text) + ' <button class="linkbtn" type="button" id="clearLoc">Remove</button>';
+    $("clearLoc").addEventListener("click", function () { clearUser(); refresh(); });
+    $("nearBtn").textContent = shortLabel; pressed($("nearBtn"), true);
+    refresh();
   }
+  function clearUser(silent) {
+    user = null; $("opts").hidden = true; $("sort").value = "date"; $("nearMsg").textContent = ""; $("pc").value = "";
+    $("nearBtn").textContent = "Near me"; pressed($("nearBtn"), false);
+  }
+  function findPostcode() {
+    var pc = $("pc").value.replace(/\s+/g, " ").trim();
+    if (!pc) { $("nearMsg").textContent = "Please enter a postcode."; return; }
+    $("nearMsg").textContent = "Looking up " + pc + "...";
+    fetch("https://api.postcodes.io/postcodes/" + encodeURIComponent(pc))
+      .then(function (r) { if (r.status === 404) throw new Error("nf"); if (!r.ok) throw new Error("http"); return r.json(); })
+      .then(function (j) { setUser(j.result.latitude, j.result.longitude, "Showing venues near " + j.result.postcode + ".", "Near " + j.result.postcode); })
+      .catch(function (e) { $("nearMsg").textContent = e.message === "nf" ? "We couldn't find that postcode. Please check it and try again." : "The postcode search isn't working right now. Please try again, or use your location."; });
+  }
+  function locate() {
+    if (!navigator.geolocation) { $("nearMsg").textContent = "Your browser can't share its location. Please enter a postcode instead."; return; }
+    $("nearMsg").textContent = "Finding your location...";
+    navigator.geolocation.getCurrentPosition(
+      function (pos) { setUser(pos.coords.latitude, pos.coords.longitude, "Showing venues near your current location.", "Near me"); },
+      function () { $("nearMsg").textContent = "We couldn't get your location. You can enter a postcode instead."; },
+      { timeout: 10000, maximumAge: 300000 });
+  }
+
+  /* ---- events ---- */
+  $("whenChips").addEventListener("click", function (e) {
+    var b = e.target.closest("[data-when]"); if (!b) return;
+    F.when = b.getAttribute("data-when"); $("dates").hidden = F.when !== "custom"; buildChips(); refresh();
+  });
+  $("catChips").addEventListener("click", function (e) {
+    var b = e.target.closest(".chip"); if (!b) return;
+    F.cat = b.getAttribute("data-cat"); buildChips(); refresh();
+  });
+  $("q").addEventListener("input", function () { F.q = $("q").value; refresh(); });
+  $("venue").addEventListener("change", function () { F.venue = $("venue").value; refresh(); });
+  $("from").addEventListener("input", refresh); $("to").addEventListener("input", refresh);
+  $("nearBtn").addEventListener("click", function () {
+    var open = $("nearPanel").hidden; $("nearPanel").hidden = !open; $("nearBtn").setAttribute("aria-expanded", open ? "true" : "false");
+    if (open && !user) $("pc").focus();
+  });
+  $("pcgo").addEventListener("click", findPostcode);
+  $("pc").addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); findPostcode(); } });
+  $("locate").addEventListener("click", locate);
+  $("radius").addEventListener("input", function () { $("radiusVal").textContent = $("radius").value + " miles"; refresh(); });
+  $("sort").addEventListener("change", refresh);
+  $("clear").addEventListener("click", clearAll);
 
   fetch("shows.json", { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error("status " + r.status); return r.json(); })
     .then(function (data) {
-      shows = Array.isArray(data.shows) ? data.shows : [];
-      coverage = data.coverage || null;
-      buildVenues(); renderCoverage(); render(); stamp(data.updated);
+      shows = Array.isArray(data.shows) ? data.shows : []; coverage = data.coverage || null;
+      buildChips(); buildVenues(); buildAbout(); render();
+      var d = new Date(data.updated);
+      $("stamp").textContent = isNaN(d) ? "" : "Listings last checked " + d.getDate() + " " + MONTHS[d.getMonth()] + " at " + String(d.getHours()).padStart(2, "0") + ":" + String(d.getMinutes()).padStart(2, "0") + ".";
     })
     .catch(function () {
-      $("list").innerHTML = '<div class="error"><strong>Listings did not load</strong>Check your connection and reload the page.</div>';
+      $("list").innerHTML = '<div class="empty"><strong>We couldn\'t load the shows</strong>Please check your connection and reload the page.</div>';
     });
-
-  function setUser(lat, lng, text) {
-    user = { lat: lat, lng: lng };
-    $("nearOpts").hidden = false;
-    $("nearMsg").innerHTML = esc(text) + ' <button type="button" id="clearLoc">Clear location</button>';
-    $("clearLoc").addEventListener("click", clearUser);
-    render();
-  }
-  function clearUser() {
-    user = null; $("nearOpts").hidden = true; $("sort").value = "date";
-    $("nearMsg").textContent = ""; $("pc").value = ""; render();
-  }
-  function findPostcode() {
-    var pc = $("pc").value.replace(/\s+/g, " ").trim();
-    if (!pc) { $("nearMsg").textContent = "Enter a postcode first."; return; }
-    $("nearMsg").textContent = "Looking up " + pc + "...";
-    fetch("https://api.postcodes.io/postcodes/" + encodeURIComponent(pc))
-      .then(function (r) { if (r.status === 404) throw new Error("nf"); if (!r.ok) throw new Error("http"); return r.json(); })
-      .then(function (j) { setUser(j.result.latitude, j.result.longitude, "Showing theatres near " + j.result.postcode + "."); })
-      .catch(function (e) { $("nearMsg").textContent = e.message === "nf" ? "That postcode was not recognised. Check it and try again." : "The postcode lookup is not available right now. Try again, or use your location."; });
-  }
-  function locate() {
-    if (!navigator.geolocation) { $("nearMsg").textContent = "Your browser can't share its location. Enter a postcode instead."; return; }
-    $("nearMsg").textContent = "Finding your location...";
-    navigator.geolocation.getCurrentPosition(
-      function (pos) { setUser(pos.coords.latitude, pos.coords.longitude, "Showing theatres near your location."); },
-      function () { $("nearMsg").textContent = "Location was not shared. Enter a postcode instead."; },
-      { timeout: 10000, maximumAge: 300000 });
-  }
-  $("pcgo").addEventListener("click", findPostcode);
-  $("pc").addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); findPostcode(); } });
-  $("locate").addEventListener("click", locate);
-  $("radius").addEventListener("input", function () { $("radiusVal").textContent = $("radius").value + " miles"; render(); });
-  $("sort").addEventListener("change", render);
-  ["q", "from", "to"].forEach(function (id) { $(id).addEventListener("input", render); });
-  $("venue").addEventListener("change", render);
+  buildChips();
 })();
 </script>
 </body>

@@ -1,4 +1,4 @@
-# Stage Finder
+# Curtain Call
 
 A date-sorted listing of shows across Midlands theatres, with search, a theatre filter and a link to each show's page.
 

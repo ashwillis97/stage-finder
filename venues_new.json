@@ -32,17 +32,6 @@
    ]
   },
   {
-   "name": "Aylesbury Waterside Theatre",
-   "city": "Aylesbury",
-   "postcode": "HP20 1UG",
-   "guess": true,
-   "reader": "atg",
-   "slug": "aylesbury-waterside-theatre-aylesbury",
-   "urls": [
-    "https://www.atgtickets.com/venues/aylesbury-waterside-theatre/whats-on/"
-   ]
-  },
-  {
    "name": "The Anvil",
    "city": "Basingstoke",
    "postcode": "RG21 7QR",
@@ -283,17 +272,6 @@
    ]
   },
   {
-   "name": "Theatre Royal Brighton",
-   "city": "Brighton",
-   "postcode": "BN1 1SD",
-   "guess": true,
-   "reader": "atg",
-   "slug": "theatre-royal-brighton-brighton",
-   "urls": [
-    "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
-   ]
-  },
-  {
    "name": "Bristol Beacon",
    "city": "Bristol",
    "postcode": "BS1 5AR",
@@ -301,17 +279,6 @@
    "slug": "bristol-beacon-bristol",
    "urls": [
     "https://bristolbeacon.org/whats-on/"
-   ]
-  },
-  {
-   "name": "Bristol Hippodrome",
-   "city": "Bristol",
-   "postcode": "BS1 4UZ",
-   "guess": true,
-   "reader": "atg",
-   "slug": "bristol-hippodrome-bristol",
-   "urls": [
-    "https://www.atgtickets.com/venues/bristol-hippodrome/whats-on/"
    ]
   },
   {
@@ -376,16 +343,6 @@
    ]
   },
   {
-   "name": "Utilita Arena Cardiff",
-   "city": "Cardiff",
-   "postcode": "CF10 2EQ",
-   "guess": true,
-   "slug": "utilita-arena-cardiff-cardiff",
-   "urls": [
-    "https://www.utilitaarenacardiff.co.uk/whats-on/"
-   ]
-  },
-  {
    "name": "Wales Millennium Centre",
    "city": "Cardiff",
    "postcode": "CF10 5AL",
@@ -403,16 +360,6 @@
    "slug": "the-central-theatre-chatham",
    "urls": [
     "https://www.medway.gov.uk/centraltheatre"
-   ]
-  },
-  {
-   "name": "Cheltenham Town Hall",
-   "city": "Cheltenham",
-   "postcode": "GL50 1QA",
-   "guess": true,
-   "slug": "cheltenham-town-hall-cheltenham",
-   "urls": [
-    "https://www.cheltenhamtownhall.org.uk/whats-on/"
    ]
   },
   {
@@ -546,17 +493,6 @@
    ]
   },
   {
-   "name": "Edinburgh Playhouse",
-   "city": "Edinburgh",
-   "postcode": "EH1 3AA",
-   "guess": true,
-   "reader": "atg",
-   "slug": "edinburgh-playhouse-edinburgh",
-   "urls": [
-    "https://www.atgtickets.com/venues/edinburgh-playhouse/whats-on/"
-   ]
-  },
-  {
    "name": "O2 Academy Edinburgh",
    "city": "Edinburgh",
    "postcode": "EH1 3JT",
@@ -644,37 +580,6 @@
    "slug": "glasgow-royal-concert-hall-glasgow",
    "urls": [
     "https://www.glasgowlife.org.uk/whats-on/venues/glasgow-royal-concert-hall"
-   ]
-  },
-  {
-   "name": "King's Theatre Glasgow",
-   "city": "Glasgow",
-   "postcode": "G2 3JN",
-   "guess": true,
-   "reader": "atg",
-   "slug": "king-s-theatre-glasgow-glasgow",
-   "urls": [
-    "https://www.atgtickets.com/venues/kings-theatre-glasgow/whats-on/"
-   ]
-  },
-  {
-   "name": "OVO Hydro",
-   "city": "Glasgow",
-   "postcode": "G3 8YW",
-   "guess": true,
-   "slug": "ovo-hydro-glasgow",
-   "urls": [
-    "https://www.ovohydro.com/whats-on/"
-   ]
-  },
-  {
-   "name": "SEC Armadillo",
-   "city": "Glasgow",
-   "postcode": "G3 8YW",
-   "guess": true,
-   "slug": "sec-armadillo-glasgow",
-   "urls": [
-    "https://www.sec.co.uk/whats-on"
    ]
   },
   {
@@ -788,16 +693,6 @@
    ]
   },
   {
-   "name": "Lancaster Grand Theatre",
-   "city": "Lancaster",
-   "postcode": "LA1 1NL",
-   "guess": true,
-   "slug": "lancaster-grand-theatre-lancaster",
-   "urls": [
-    "https://www.lancastergrand.co.uk/whats-on/"
-   ]
-  },
-  {
    "name": "First Direct Arena",
    "city": "Leeds",
    "postcode": "LS2 8BY",
@@ -855,17 +750,6 @@
    "slug": "everyman-theatre-liverpool",
    "urls": [
     "https://www.everymanplayhouse.com/whats-on"
-   ]
-  },
-  {
-   "name": "Liverpool Empire",
-   "city": "Liverpool",
-   "postcode": "L1 1JE",
-   "guess": true,
-   "reader": "atg",
-   "slug": "liverpool-empire-liverpool",
-   "urls": [
-    "https://www.atgtickets.com/venues/liverpool-empire/whats-on/"
    ]
   },
   {
@@ -937,16 +821,6 @@
    "slug": "ambassadors-theatre-london",
    "urls": [
     "https://www.theambassadorstheatre.co.uk/"
-   ]
-  },
-  {
-   "name": "Apollo Theatre",
-   "city": "London",
-   "postcode": "W1D 7EZ",
-   "guess": true,
-   "slug": "apollo-theatre-london",
-   "urls": [
-    "https://www.nimaxtheatres.com/"
    ]
   },
   {
@@ -1059,17 +933,9 @@
    "slug": "fortune-theatre-london",
    "urls": [
     "https://www.nimaxtheatres.com/"
-   ]
-  },
-  {
-   "name": "Garrick Theatre",
-   "city": "London",
-   "postcode": "WC2H 0HH",
-   "guess": true,
-   "slug": "garrick-theatre-london",
-   "urls": [
-    "https://www.nimaxtheatres.com/"
-   ]
+   ],
+   "reader": "jsonld",
+   "match": "Fortune Theatre"
   },
   {
    "name": "Gielgud Theatre",
@@ -1100,17 +966,6 @@
    "slug": "hackney-empire-london",
    "urls": [
     "https://www.hackneyempire.co.uk/whats-on"
-   ]
-  },
-  {
-   "name": "Harold Pinter Theatre",
-   "city": "London",
-   "postcode": "SW1Y 4DN",
-   "guess": true,
-   "reader": "atg",
-   "slug": "harold-pinter-theatre-london",
-   "urls": [
-    "https://www.atgtickets.com/venues/harold-pinter-theatre/whats-on/"
    ]
   },
   {
@@ -1161,17 +1016,6 @@
    "slug": "lyric-hammersmith-theatre-london",
    "urls": [
     "https://lyric.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "New Wimbledon Theatre",
-   "city": "London",
-   "postcode": "SW19 1QG",
-   "guess": true,
-   "reader": "atg",
-   "slug": "new-wimbledon-theatre-london",
-   "urls": [
-    "https://www.atgtickets.com/venues/new-wimbledon-theatre/whats-on/"
    ]
   },
   {
@@ -1235,16 +1079,6 @@
    ]
   },
   {
-   "name": "Palace Theatre",
-   "city": "London",
-   "postcode": "W1D 5AY",
-   "guess": true,
-   "slug": "palace-theatre-london",
-   "urls": [
-    "https://www.nimaxtheatres.com/"
-   ]
-  },
-  {
    "name": "Peacock Theatre",
    "city": "London",
    "postcode": "WC2A 2HT",
@@ -1262,18 +1096,9 @@
    "slug": "phoenix-theatre-london",
    "urls": [
     "https://www.nimaxtheatres.com/"
-   ]
-  },
-  {
-   "name": "Piccadilly Theatre",
-   "city": "London",
-   "postcode": "W1D 7DY",
-   "guess": true,
-   "reader": "atg",
-   "slug": "piccadilly-theatre-london",
-   "urls": [
-    "https://www.atgtickets.com/venues/piccadilly-theatre/whats-on/"
-   ]
+   ],
+   "reader": "jsonld",
+   "match": "Phoenix Theatre"
   },
   {
    "name": "Playhouse Theatre",
@@ -1283,7 +1108,9 @@
    "slug": "playhouse-theatre-london",
    "urls": [
     "https://www.nimaxtheatres.com/"
-   ]
+   ],
+   "reader": "jsonld",
+   "match": "Playhouse Theatre"
   },
   {
    "name": "Prince Edward Theatre",
@@ -1357,17 +1184,6 @@
    ]
   },
   {
-   "name": "Savoy Theatre",
-   "city": "London",
-   "postcode": "WC2R 0ET",
-   "guess": true,
-   "reader": "atg",
-   "slug": "savoy-theatre-london",
-   "urls": [
-    "https://www.atgtickets.com/venues/savoy-theatre/whats-on/"
-   ]
-  },
-  {
    "name": "Shaftesbury Theatre",
    "city": "London",
    "postcode": "WC2H 8DP",
@@ -1395,17 +1211,9 @@
    "slug": "st-martin-s-theatre-london",
    "urls": [
     "https://www.nimaxtheatres.com/"
-   ]
-  },
-  {
-   "name": "The O2 Arena",
-   "city": "London",
-   "postcode": "SE10 0DX",
-   "guess": true,
-   "slug": "the-o2-arena-london",
-   "urls": [
-    "https://www.theo2.co.uk/events"
-   ]
+   ],
+   "reader": "jsonld",
+   "match": "St Martin"
   },
   {
    "name": "The Old Vic",
@@ -1428,17 +1236,6 @@
    ]
   },
   {
-   "name": "Trafalgar Theatre",
-   "city": "London",
-   "postcode": "SW1A 2DY",
-   "guess": true,
-   "reader": "atg",
-   "slug": "trafalgar-theatre-london",
-   "urls": [
-    "https://www.atgtickets.com/venues/trafalgar-theatre/whats-on/"
-   ]
-  },
-  {
    "name": "Troubadour Wembley Park Theatre",
    "city": "London",
    "postcode": "HA9 0SP",
@@ -1456,16 +1253,6 @@
    "slug": "troxy-london",
    "urls": [
     "https://troxy.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Vaudeville Theatre",
-   "city": "London",
-   "postcode": "WC2R 0NH",
-   "guess": true,
-   "slug": "vaudeville-theatre-london",
-   "urls": [
-    "https://www.nimaxtheatres.com/"
    ]
   },
   {
@@ -1550,28 +1337,6 @@
    ]
   },
   {
-   "name": "Opera House Manchester",
-   "city": "Manchester",
-   "postcode": "M3 3HP",
-   "guess": true,
-   "reader": "atg",
-   "slug": "opera-house-manchester-manchester",
-   "urls": [
-    "https://www.atgtickets.com/venues/opera-house-manchester/whats-on/"
-   ]
-  },
-  {
-   "name": "Palace Theatre Manchester",
-   "city": "Manchester",
-   "postcode": "M1 6FT",
-   "guess": true,
-   "reader": "atg",
-   "slug": "palace-theatre-manchester-manchester",
-   "urls": [
-    "https://www.atgtickets.com/venues/palace-theatre-manchester/whats-on/"
-   ]
-  },
-  {
    "name": "Middlesbrough Town Hall",
    "city": "Middlesbrough",
    "postcode": "TS1 2QJ",
@@ -1579,17 +1344,6 @@
    "slug": "middlesbrough-town-hall-middlesbrough",
    "urls": [
     "https://www.middlesbroughtownhall.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Milton Keynes Theatre",
-   "city": "Milton Keynes",
-   "postcode": "MK9 3NZ",
-   "guess": true,
-   "reader": "atg",
-   "slug": "milton-keynes-theatre-milton-keynes",
-   "urls": [
-    "https://www.atgtickets.com/venues/milton-keynes-theatre/whats-on/"
    ]
   },
   {
@@ -1663,17 +1417,6 @@
    ]
   },
   {
-   "name": "New Theatre Oxford",
-   "city": "Oxford",
-   "postcode": "OX1 1NF",
-   "guess": true,
-   "reader": "atg",
-   "slug": "new-theatre-oxford-oxford",
-   "urls": [
-    "https://www.atgtickets.com/venues/new-theatre-oxford/whats-on/"
-   ]
-  },
-  {
    "name": "Perth Theatre and Concert Hall",
    "city": "Perth",
    "postcode": "PH1 5HZ",
@@ -1731,17 +1474,6 @@
    "slug": "preston-guild-hall-preston",
    "urls": [
     "https://www.prestonguildhall.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Richmond Theatre",
-   "city": "Richmond",
-   "postcode": "TW9 1QJ",
-   "guess": true,
-   "reader": "atg",
-   "slug": "richmond-theatre-richmond",
-   "urls": [
-    "https://www.atgtickets.com/venues/richmond-theatre/whats-on/"
    ]
   },
   {
@@ -1886,17 +1618,6 @@
    ]
   },
   {
-   "name": "Sunderland Empire",
-   "city": "Sunderland",
-   "postcode": "SR1 3EX",
-   "guess": true,
-   "reader": "atg",
-   "slug": "sunderland-empire-sunderland",
-   "urls": [
-    "https://www.atgtickets.com/venues/sunderland-empire/whats-on/"
-   ]
-  },
-  {
    "name": "Brangwyn Hall",
    "city": "Swansea",
    "postcode": "SA1 4PE",
@@ -1924,17 +1645,6 @@
    "slug": "swansea-grand-theatre-swansea",
    "urls": [
     "https://www.swanseagrand.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Princess Theatre",
-   "city": "Torquay",
-   "postcode": "TQ1 3DZ",
-   "guess": true,
-   "reader": "atg",
-   "slug": "princess-theatre-torquay",
-   "urls": [
-    "https://www.atgtickets.com/venues/princess-theatre-torquay/whats-on/"
    ]
   },
   {
@@ -2016,17 +1726,6 @@
    "slug": "worcester-arena-worcester",
    "urls": [
     "https://www.haloleisure.org.uk/centres/worcester-arena"
-   ]
-  },
-  {
-   "name": "Grand Opera House York",
-   "city": "York",
-   "postcode": "YO1 9SW",
-   "guess": true,
-   "reader": "atg",
-   "slug": "grand-opera-house-york-york",
-   "urls": [
-    "https://www.atgtickets.com/venues/grand-opera-house-york/whats-on/"
    ]
   },
   {

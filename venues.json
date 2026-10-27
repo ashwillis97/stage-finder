@@ -1,203 +1,497 @@
 {
-  "note": "urls marked guess=true are unverified and may 404 on the first run",
-  "venues": [
-    {
-      "name": "Derby Theatre",
-      "slug": "derby-theatre",
-      "urls": [
-        "https://www.derbytheatre.co.uk/whats-on/"
-      ]
-    },
-    {
-      "name": "Vaillant Live",
-      "slug": "vaillant-live",
-      "urls": [
-        "https://vaillantlive.co.uk/events/"
-      ],
-      "js": true
-    },
-    {
-      "name": "Brewhouse Arts Centre",
-      "slug": "brewhouse",
-      "urls": [
-        "https://www.brewhouse.co.uk/whats-on/"
-      ],
-      "guess": true
-    },
-    {
-      "name": "Lichfield Garrick",
-      "slug": "lichfield-garrick",
-      "urls": [
-        "https://www.lichfieldgarrick.com/whats-on/"
-      ],
-      "guess": true
-    },
-    {
-      "name": "Buxton Opera House",
-      "slug": "buxton-opera-house",
-      "urls": [
-        "https://www.buxtonoperahouse.org.uk/whats-on/"
-      ],
-      "guess": true
-    },
-    {
-      "name": "Theatre Royal Nottingham / Royal Concert Hall",
-      "slug": "trch",
-      "urls": [
-        "https://www.trch.co.uk/whats-on",
-        "https://www.trch.co.uk/whats-on?p54_page=2",
-        "https://www.trch.co.uk/whats-on?p54_page=3",
-        "https://www.trch.co.uk/whats-on?p54_page=4",
-        "https://www.trch.co.uk/whats-on?p54_page=5",
-        "https://www.trch.co.uk/whats-on?p54_page=6"
-      ]
-    },
-    {
-      "name": "Nottingham Playhouse",
-      "slug": "nottingham-playhouse",
-      "urls": [
-        "https://nottinghamplayhouse.co.uk/whats-on/",
-        "https://nottinghamplayhouse.co.uk/whats-on/page/2"
-      ]
-    },
-    {
-      "name": "Bonington Theatre",
-      "slug": "bonington",
-      "urls": [
-        "https://www.boningtontheatre.co.uk/whats-on/",
-        "https://www.boningtontheatre.co.uk/whats-on/?&event-page=2",
-        "https://www.boningtontheatre.co.uk/whats-on/?&event-page=3"
-      ]
-    },
-    {
-      "name": "Curve Theatre",
-      "slug": "curve",
-      "urls": [
-        "https://www.curveonline.co.uk/whats-on/"
-      ]
-    },
-    {
-      "name": "De Montfort Hall",
-      "slug": "de-montfort-hall",
-      "urls": [
-        "https://www.demontforthall.co.uk/whats-on/",
-        "https://www.demontforthall.co.uk/whats-on/page/2/",
-        "https://www.demontforthall.co.uk/whats-on/page/3/"
-      ]
-    },
-    {
-      "name": "Century Theatre",
-      "slug": "century-theatre",
-      "urls": [
-        "https://centurytheatre.co.uk/whats-on/"
-      ]
-    },
-    {
-      "name": "Palace Theatre Mansfield",
-      "slug": "palace-mansfield",
-      "urls": [
-        "https://www.mansfield.gov.uk/palacetheatre/events?filter%5B10%5D=Theatre",
-        "https://www.mansfield.gov.uk/palacetheatre/events?filter%5B10%5D=Theatre&page=2",
-        "https://www.mansfield.gov.uk/palacetheatre/events?filter%5B10%5D=Theatre&page=3"
-      ]
-    },
-    {
-      "name": "Birmingham Hippodrome",
-      "slug": "hippodrome",
-      "urls": [
-        "https://www.birminghamhippodrome.com/whats-on/",
-        "https://www.birminghamhippodrome.com/whats-on/page/2/",
-        "https://www.birminghamhippodrome.com/whats-on/page/3/"
-      ]
-    },
-    {
-      "name": "The Rep",
-      "slug": "the-rep",
-      "urls": [
-        "https://www.birmingham-rep.co.uk/whats-on/",
-        "https://www.birmingham-rep.co.uk/whats-on/page/2/",
-        "https://www.birmingham-rep.co.uk/whats-on/page/3/"
-      ]
-    },
-    {
-      "name": "The Alexandra Theatre",
-      "slug": "alexandra",
-      "urls": [
-        "https://www.atgtickets.com/venues/the-alexandra-theatre-birmingham/whats-on/",
-        "https://www.atgtickets.com/venues/the-alexandra-theatre-birmingham/whats-on/?page=2",
-        "https://www.atgtickets.com/venues/the-alexandra-theatre-birmingham/whats-on/?page=3"
-      ]
-    },
-    {
-      "name": "The Old Rep Theatre",
-      "slug": "old-rep",
-      "urls": [
-        "https://www.oldrep.co.uk/whats-on/"
-      ]
-    },
-    {
-      "name": "Wolverhampton Grand Theatre",
-      "slug": "wolverhampton-grand",
-      "urls": [
-        "https://www.grandtheatre.co.uk/whats-on/",
-        "https://www.grandtheatre.co.uk/whats-on/page/2/",
-        "https://www.grandtheatre.co.uk/whats-on/page/3/",
-        "https://www.grandtheatre.co.uk/whats-on/page/4/",
-        "https://www.grandtheatre.co.uk/whats-on/page/5/"
-      ]
-    },
-    {
-      "name": "Regent Theatre Stoke",
-      "slug": "regent-stoke",
-      "urls": [
-        "https://www.atgtickets.com/venues/regent-theatre/whats-on/",
-        "https://www.atgtickets.com/venues/regent-theatre/whats-on/?page=2",
-        "https://www.atgtickets.com/venues/regent-theatre/whats-on/?page=3"
-      ],
-      "guess": true
-    },
-    {
-      "name": "New Vic Theatre",
-      "slug": "new-vic",
-      "urls": [
-        "https://www.newvictheatre.org.uk/whats-on/",
-        "https://www.newvictheatre.org.uk/whats-on/page/2/",
-        "https://www.newvictheatre.org.uk/whats-on/page/3/",
-        "https://www.newvictheatre.org.uk/whats-on/page/4/",
-        "https://www.newvictheatre.org.uk/whats-on/page/5/"
-      ]
-    },
-    {
-      "name": "Winding Wheel Theatre",
-      "slug": "winding-wheel",
-      "urls": [
-        "https://chesterfieldtheatres.co.uk/events/"
-      ],
-      "js": true
-    },
-    {
-      "name": "Motorpoint Arena Nottingham",
-      "slug": "motorpoint-arena",
-      "urls": [
-        "https://www.motorpointarenanottingham.com/whats-on/"
-      ],
-      "js": true
-    },
-    {
-      "name": "Forest Live Cannock Chase",
-      "slug": "forest-live-cannock",
-      "urls": [
-        "https://www.forestlive.com/cannockchaseforest"
-      ],
-      "js": true
-    },
-    {
-      "name": "Big Top Arena",
-      "slug": "big-top-arena",
-      "urls": [
-        "https://bigtoparena.com"
-      ],
-      "js": true
-    }
-  ]
+ "note": "urls marked guess=true are unverified and may 404 on the first run",
+ "venues": [
+  {
+   "name": "Derby Theatre",
+   "slug": "derby-theatre",
+   "urls": [
+    "https://www.derbytheatre.co.uk/whats-on/"
+   ]
+  },
+  {
+   "name": "Vaillant Live",
+   "slug": "vaillant-live",
+   "urls": [
+    "https://vaillantlive.co.uk/events/"
+   ],
+   "js": true
+  },
+  {
+   "name": "Brewhouse Arts Centre",
+   "slug": "brewhouse",
+   "urls": [
+    "https://www.brewhouse.co.uk/whats-on/"
+   ],
+   "guess": true
+  },
+  {
+   "name": "Lichfield Garrick",
+   "slug": "lichfield-garrick",
+   "urls": [
+    "https://www.lichfieldgarrick.com/whats-on/"
+   ],
+   "guess": true
+  },
+  {
+   "name": "Buxton Opera House",
+   "slug": "buxton-opera-house",
+   "urls": [
+    "https://www.buxtonoperahouse.org.uk/whats-on/"
+   ],
+   "guess": true
+  },
+  {
+   "name": "Theatre Royal Nottingham / Royal Concert Hall",
+   "slug": "trch",
+   "urls": [
+    "https://www.trch.co.uk/whats-on",
+    "https://www.trch.co.uk/whats-on?p54_page=2",
+    "https://www.trch.co.uk/whats-on?p54_page=3",
+    "https://www.trch.co.uk/whats-on?p54_page=4",
+    "https://www.trch.co.uk/whats-on?p54_page=5",
+    "https://www.trch.co.uk/whats-on?p54_page=6"
+   ]
+  },
+  {
+   "name": "Nottingham Playhouse",
+   "slug": "nottingham-playhouse",
+   "urls": [
+    "https://nottinghamplayhouse.co.uk/whats-on/",
+    "https://nottinghamplayhouse.co.uk/whats-on/page/2"
+   ]
+  },
+  {
+   "name": "Bonington Theatre",
+   "slug": "bonington",
+   "urls": [
+    "https://www.boningtontheatre.co.uk/whats-on/",
+    "https://www.boningtontheatre.co.uk/whats-on/?&event-page=2",
+    "https://www.boningtontheatre.co.uk/whats-on/?&event-page=3"
+   ]
+  },
+  {
+   "name": "Curve Theatre",
+   "slug": "curve",
+   "urls": [
+    "https://www.curveonline.co.uk/whats-on/"
+   ]
+  },
+  {
+   "name": "De Montfort Hall",
+   "slug": "de-montfort-hall",
+   "urls": [
+    "https://www.demontforthall.co.uk/whats-on/",
+    "https://www.demontforthall.co.uk/whats-on/page/2/",
+    "https://www.demontforthall.co.uk/whats-on/page/3/"
+   ]
+  },
+  {
+   "name": "Century Theatre",
+   "slug": "century-theatre",
+   "urls": [
+    "https://centurytheatre.co.uk/whats-on/"
+   ]
+  },
+  {
+   "name": "Palace Theatre Mansfield",
+   "slug": "palace-mansfield",
+   "urls": [
+    "https://www.mansfield.gov.uk/palacetheatre/events?filter%5B10%5D=Theatre",
+    "https://www.mansfield.gov.uk/palacetheatre/events?filter%5B10%5D=Theatre&page=2",
+    "https://www.mansfield.gov.uk/palacetheatre/events?filter%5B10%5D=Theatre&page=3"
+   ]
+  },
+  {
+   "name": "Birmingham Hippodrome",
+   "slug": "hippodrome",
+   "urls": [
+    "https://www.birminghamhippodrome.com/whats-on/",
+    "https://www.birminghamhippodrome.com/whats-on/page/2/",
+    "https://www.birminghamhippodrome.com/whats-on/page/3/"
+   ]
+  },
+  {
+   "name": "The Rep",
+   "slug": "the-rep",
+   "urls": [
+    "https://www.birmingham-rep.co.uk/whats-on/",
+    "https://www.birmingham-rep.co.uk/whats-on/page/2/",
+    "https://www.birmingham-rep.co.uk/whats-on/page/3/"
+   ]
+  },
+  {
+   "name": "The Alexandra Theatre",
+   "slug": "alexandra",
+   "urls": [
+    "https://www.atgtickets.com/venues/the-alexandra-theatre-birmingham/whats-on/",
+    "https://www.atgtickets.com/venues/the-alexandra-theatre-birmingham/whats-on/?page=2",
+    "https://www.atgtickets.com/venues/the-alexandra-theatre-birmingham/whats-on/?page=3"
+   ]
+  },
+  {
+   "name": "The Old Rep Theatre",
+   "slug": "old-rep",
+   "urls": [
+    "https://www.oldrep.co.uk/whats-on/"
+   ]
+  },
+  {
+   "name": "Wolverhampton Grand Theatre",
+   "slug": "wolverhampton-grand",
+   "urls": [
+    "https://www.grandtheatre.co.uk/whats-on/",
+    "https://www.grandtheatre.co.uk/whats-on/page/2/",
+    "https://www.grandtheatre.co.uk/whats-on/page/3/",
+    "https://www.grandtheatre.co.uk/whats-on/page/4/",
+    "https://www.grandtheatre.co.uk/whats-on/page/5/"
+   ]
+  },
+  {
+   "name": "Regent Theatre Stoke",
+   "slug": "regent-stoke",
+   "urls": [
+    "https://www.atgtickets.com/venues/regent-theatre/whats-on/",
+    "https://www.atgtickets.com/venues/regent-theatre/whats-on/?page=2",
+    "https://www.atgtickets.com/venues/regent-theatre/whats-on/?page=3"
+   ],
+   "guess": true
+  },
+  {
+   "name": "New Vic Theatre",
+   "slug": "new-vic",
+   "urls": [
+    "https://www.newvictheatre.org.uk/whats-on/",
+    "https://www.newvictheatre.org.uk/whats-on/page/2/",
+    "https://www.newvictheatre.org.uk/whats-on/page/3/",
+    "https://www.newvictheatre.org.uk/whats-on/page/4/",
+    "https://www.newvictheatre.org.uk/whats-on/page/5/"
+   ]
+  },
+  {
+   "name": "Winding Wheel Theatre",
+   "slug": "winding-wheel",
+   "urls": [
+    "https://chesterfieldtheatres.co.uk/events/"
+   ],
+   "js": true
+  },
+  {
+   "name": "Motorpoint Arena Nottingham",
+   "slug": "motorpoint-arena",
+   "urls": [
+    "https://www.motorpointarenanottingham.com/whats-on/"
+   ],
+   "js": true
+  },
+  {
+   "name": "Forest Live Cannock Chase",
+   "slug": "forest-live-cannock",
+   "urls": [
+    "https://www.forestlive.com/cannockchaseforest"
+   ],
+   "js": true
+  },
+  {
+   "name": "Big Top Arena",
+   "slug": "big-top-arena",
+   "urls": [
+    "https://bigtoparena.com"
+   ],
+   "js": true
+  },
+  {
+   "name": "Aylesbury Waterside Theatre",
+   "city": "Aylesbury",
+   "postcode": "HP20 1UG",
+   "reader": "atg",
+   "slug": "aylesbury-waterside-theatre-aylesbury",
+   "urls": [
+    "https://www.atgtickets.com/venues/aylesbury-waterside-theatre/whats-on/"
+   ]
+  },
+  {
+   "name": "Theatre Royal Brighton",
+   "city": "Brighton",
+   "postcode": "BN1 1SD",
+   "reader": "atg",
+   "slug": "theatre-royal-brighton-brighton",
+   "urls": [
+    "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
+   ]
+  },
+  {
+   "name": "Bristol Hippodrome",
+   "city": "Bristol",
+   "postcode": "BS1 4UZ",
+   "reader": "atg",
+   "slug": "bristol-hippodrome-bristol",
+   "urls": [
+    "https://www.atgtickets.com/venues/bristol-hippodrome/whats-on/"
+   ]
+  },
+  {
+   "name": "Utilita Arena Cardiff",
+   "city": "Cardiff",
+   "postcode": "CF10 2EQ",
+   "slug": "utilita-arena-cardiff-cardiff",
+   "urls": [
+    "https://www.utilitaarenacardiff.co.uk/whats-on/"
+   ],
+   "reader": "jsonld"
+  },
+  {
+   "name": "Cheltenham Town Hall",
+   "city": "Cheltenham",
+   "postcode": "GL50 1QA",
+   "slug": "cheltenham-town-hall-cheltenham",
+   "urls": [
+    "https://www.cheltenhamtownhall.org.uk/whats-on/"
+   ],
+   "reader": "jsonld"
+  },
+  {
+   "name": "Edinburgh Playhouse",
+   "city": "Edinburgh",
+   "postcode": "EH1 3AA",
+   "reader": "atg",
+   "slug": "edinburgh-playhouse-edinburgh",
+   "urls": [
+    "https://www.atgtickets.com/venues/edinburgh-playhouse/whats-on/"
+   ]
+  },
+  {
+   "name": "King's Theatre Glasgow",
+   "city": "Glasgow",
+   "postcode": "G2 3JN",
+   "reader": "atg",
+   "slug": "king-s-theatre-glasgow-glasgow",
+   "urls": [
+    "https://www.atgtickets.com/venues/kings-theatre-glasgow/whats-on/"
+   ]
+  },
+  {
+   "name": "OVO Hydro",
+   "city": "Glasgow",
+   "postcode": "G3 8YW",
+   "slug": "ovo-hydro-glasgow",
+   "urls": [
+    "https://www.ovohydro.com/whats-on/"
+   ],
+   "reader": "jsonld"
+  },
+  {
+   "name": "SEC Armadillo",
+   "city": "Glasgow",
+   "postcode": "G3 8YW",
+   "slug": "sec-armadillo-glasgow",
+   "urls": [
+    "https://www.sec.co.uk/whats-on"
+   ],
+   "reader": "jsonld"
+  },
+  {
+   "name": "Lancaster Grand Theatre",
+   "city": "Lancaster",
+   "postcode": "LA1 1NL",
+   "slug": "lancaster-grand-theatre-lancaster",
+   "urls": [
+    "https://www.lancastergrand.co.uk/whats-on/"
+   ],
+   "reader": "jsonld"
+  },
+  {
+   "name": "Liverpool Empire",
+   "city": "Liverpool",
+   "postcode": "L1 1JE",
+   "reader": "atg",
+   "slug": "liverpool-empire-liverpool",
+   "urls": [
+    "https://www.atgtickets.com/venues/liverpool-empire/whats-on/"
+   ]
+  },
+  {
+   "name": "Apollo Theatre",
+   "city": "London",
+   "postcode": "W1D 7EZ",
+   "slug": "apollo-theatre-london",
+   "urls": [
+    "https://www.nimaxtheatres.com/"
+   ],
+   "reader": "jsonld",
+   "match": "Apollo Theatre"
+  },
+  {
+   "name": "Garrick Theatre",
+   "city": "London",
+   "postcode": "WC2H 0HH",
+   "slug": "garrick-theatre-london",
+   "urls": [
+    "https://www.nimaxtheatres.com/"
+   ],
+   "reader": "jsonld",
+   "match": "Garrick Theatre"
+  },
+  {
+   "name": "Harold Pinter Theatre",
+   "city": "London",
+   "postcode": "SW1Y 4DN",
+   "reader": "atg",
+   "slug": "harold-pinter-theatre-london",
+   "urls": [
+    "https://www.atgtickets.com/venues/harold-pinter-theatre/whats-on/"
+   ]
+  },
+  {
+   "name": "New Wimbledon Theatre",
+   "city": "London",
+   "postcode": "SW19 1QG",
+   "reader": "atg",
+   "slug": "new-wimbledon-theatre-london",
+   "urls": [
+    "https://www.atgtickets.com/venues/new-wimbledon-theatre/whats-on/"
+   ]
+  },
+  {
+   "name": "Palace Theatre",
+   "city": "London",
+   "postcode": "W1D 5AY",
+   "slug": "palace-theatre-london",
+   "urls": [
+    "https://www.nimaxtheatres.com/"
+   ],
+   "reader": "jsonld",
+   "match": "Palace Theatre"
+  },
+  {
+   "name": "Piccadilly Theatre",
+   "city": "London",
+   "postcode": "W1D 7DY",
+   "reader": "atg",
+   "slug": "piccadilly-theatre-london",
+   "urls": [
+    "https://www.atgtickets.com/venues/piccadilly-theatre/whats-on/"
+   ]
+  },
+  {
+   "name": "Savoy Theatre",
+   "city": "London",
+   "postcode": "WC2R 0ET",
+   "reader": "atg",
+   "slug": "savoy-theatre-london",
+   "urls": [
+    "https://www.atgtickets.com/venues/savoy-theatre/whats-on/"
+   ]
+  },
+  {
+   "name": "The O2 Arena",
+   "city": "London",
+   "postcode": "SE10 0DX",
+   "slug": "the-o2-arena-london",
+   "urls": [
+    "https://www.theo2.co.uk/events"
+   ],
+   "reader": "jsonld"
+  },
+  {
+   "name": "Trafalgar Theatre",
+   "city": "London",
+   "postcode": "SW1A 2DY",
+   "reader": "atg",
+   "slug": "trafalgar-theatre-london",
+   "urls": [
+    "https://www.atgtickets.com/venues/trafalgar-theatre/whats-on/"
+   ]
+  },
+  {
+   "name": "Vaudeville Theatre",
+   "city": "London",
+   "postcode": "WC2R 0NH",
+   "slug": "vaudeville-theatre-london",
+   "urls": [
+    "https://www.nimaxtheatres.com/"
+   ],
+   "reader": "jsonld",
+   "match": "Vaudeville"
+  },
+  {
+   "name": "Opera House Manchester",
+   "city": "Manchester",
+   "postcode": "M3 3HP",
+   "reader": "atg",
+   "slug": "opera-house-manchester-manchester",
+   "urls": [
+    "https://www.atgtickets.com/venues/opera-house-manchester/whats-on/"
+   ]
+  },
+  {
+   "name": "Palace Theatre Manchester",
+   "city": "Manchester",
+   "postcode": "M1 6FT",
+   "reader": "atg",
+   "slug": "palace-theatre-manchester-manchester",
+   "urls": [
+    "https://www.atgtickets.com/venues/palace-theatre-manchester/whats-on/"
+   ]
+  },
+  {
+   "name": "Milton Keynes Theatre",
+   "city": "Milton Keynes",
+   "postcode": "MK9 3NZ",
+   "reader": "atg",
+   "slug": "milton-keynes-theatre-milton-keynes",
+   "urls": [
+    "https://www.atgtickets.com/venues/milton-keynes-theatre/whats-on/"
+   ]
+  },
+  {
+   "name": "New Theatre Oxford",
+   "city": "Oxford",
+   "postcode": "OX1 1NF",
+   "reader": "atg",
+   "slug": "new-theatre-oxford-oxford",
+   "urls": [
+    "https://www.atgtickets.com/venues/new-theatre-oxford/whats-on/"
+   ]
+  },
+  {
+   "name": "Richmond Theatre",
+   "city": "Richmond",
+   "postcode": "TW9 1QJ",
+   "reader": "atg",
+   "slug": "richmond-theatre-richmond",
+   "urls": [
+    "https://www.atgtickets.com/venues/richmond-theatre/whats-on/"
+   ]
+  },
+  {
+   "name": "Sunderland Empire",
+   "city": "Sunderland",
+   "postcode": "SR1 3EX",
+   "reader": "atg",
+   "slug": "sunderland-empire-sunderland",
+   "urls": [
+    "https://www.atgtickets.com/venues/sunderland-empire/whats-on/"
+   ]
+  },
+  {
+   "name": "Princess Theatre",
+   "city": "Torquay",
+   "postcode": "TQ1 3DZ",
+   "reader": "atg",
+   "slug": "princess-theatre-torquay",
+   "urls": [
+    "https://www.atgtickets.com/venues/princess-theatre-torquay/whats-on/"
+   ]
+  },
+  {
+   "name": "Grand Opera House York",
+   "city": "York",
+   "postcode": "YO1 9SW",
+   "reader": "atg",
+   "slug": "grand-opera-house-york-york",
+   "urls": [
+    "https://www.atgtickets.com/venues/grand-opera-house-york/whats-on/"
+   ]
+  }
+ ]
 }

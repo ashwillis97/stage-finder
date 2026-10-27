@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Curtain Call | What's on at theatres across the Midlands</title>
-<meta name="description" content="Search theatre shows, comedy, music and pantomime at venues across the Midlands. Find something on near you and go straight to the tickets.">
+<title>Curtain Call | What's on at theatres across the UK</title>
+<meta name="description" content="Search theatre shows, comedy, music and pantomime at venues across the UK. Find something on near you and go straight to the tickets.">
 <meta name="theme-color" content="#150d21">
-<meta property="og:title" content="Curtain Call | What's on at theatres across the Midlands">
-<meta property="og:description" content="Search theatre shows, comedy, music and pantomime at venues across the Midlands, all in one place.">
+<meta property="og:title" content="Curtain Call | What's on at theatres across the UK">
+<meta property="og:description" content="Search theatre shows, comedy, music and pantomime at venues across the UK, all in one place.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23150d21'/%3E%3Cpath d='M20 14h24l-6 16h-12z' fill='%23ffb547'/%3E%3Cpath d='M24 34h16l10 18H14z' fill='%23ffb547' opacity='.45'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -164,7 +164,7 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
 
   <header class="hero">
     <h1>What's on at the <em>theatre?</em></h1>
-    <p class="lede" id="lede">Shows, comedy, music and pantomime at venues across the Midlands, all in one place.</p>
+    <p class="lede" id="lede">Shows, comedy, music and pantomime at venues across the UK, all in one place.</p>
   </header>
 
   <section class="suggest" aria-labelledby="sgTitle">
@@ -338,7 +338,7 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
     shows.forEach(function (s) { if (s.end >= todayIso) counts[s.theatre] = (counts[s.theatre] || 0) + 1; });
     var names = Object.keys(counts).sort(function (a, b) { return label(a).localeCompare(label(b)); });
     $("venue").innerHTML = '<option value="">All venues</option>' + names.map(function (n) { return '<option value="' + esc(n) + '">' + esc(label(n)) + "</option>"; }).join("");
-    $("lede").textContent = "Shows, comedy, music and pantomime at " + names.length + " venues across the Midlands, all in one place.";
+    $("lede").textContent = "Shows, comedy, music and pantomime at " + names.length + " venues across the UK, all in one place.";
   }
   function buildAbout() {
     var none = (coverage && coverage.none) || [], part = (coverage && coverage.partial) || {}, old = [], inc = [];

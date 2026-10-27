@@ -379,6 +379,63 @@ for _v in _venue_files():  # venues flagged reader=atg need no custom code
         READERS[_v["name"]] = (lambda s=_v["slug"], n=_v["name"]: read_atg(s, n))
 
 
+def _ld_date(s):
+    if not s:
+        return None
+    s = str(s).strip()
+    try:
+        return dt.datetime.fromisoformat(s.replace("Z", "+00:00")).date()
+    except ValueError:
+        pass
+    for f in ("%B %d, %Y %I:%M %p", "%B %d, %Y", "%d %B %Y"):
+        try:
+            return dt.datetime.strptime(s, f).date()
+        except ValueError:
+            pass
+    return None
+
+
+def read_jsonld(prefix, theatre, match=None, fallback_url=""):
+    """Venues that publish schema.org Event data: one row per title, spanning its first to last date."""
+    found = []
+    for f in files(prefix):
+        s = soup(f)
+        for tag in (s.find_all("script", type="application/ld+json") if s else []):
+            try:
+                data = json.loads(tag.string or "")
+            except ValueError:
+                continue
+            stack = [data]
+            while stack:
+                o = stack.pop()
+                if isinstance(o, list):
+                    stack.extend(o)
+                elif isinstance(o, dict):
+                    t = o.get("@type")
+                    t = " ".join(t) if isinstance(t, list) else str(t)
+                    if "Event" in t and o.get("name"):
+                        found.append(o)
+                    stack.extend(v for v in o.values() if isinstance(v, (list, dict)))
+    groups = {}
+    for o in found:
+        loc = o.get("location")
+        if match and isinstance(loc, dict) and loc.get("name") and match.lower() not in str(loc["name"]).lower():
+            continue
+        a = _ld_date(o.get("startDate"))
+        b = _ld_date(o.get("endDate")) or a
+        if not a:
+            continue
+        g = groups.setdefault(re.sub(r"\s+", " ", o["name"]).strip(), {"a": a, "b": b, "url": o.get("url") or ""})
+        g["a"], g["b"] = min(g["a"], a), max(g["b"], b or a)
+        g["url"] = g["url"] or o.get("url") or ""
+    return [row(t, theatre, (g["a"], max(g["a"], g["b"])), g["url"] or fallback_url) for t, g in groups.items()]
+
+
+for _v in _venue_files():
+    if _v.get("reader") == "jsonld" and _v["name"] not in READERS:
+        READERS[_v["name"]] = (lambda s=_v["slug"], n=_v["name"], m=_v.get("match"), u=_v["urls"][0]: read_jsonld(s, n, m, u))
+
+
 def geocode_places():
     """Look up each configured venue's postcode (postcodes.io) so near-me search knows where it is."""
     import urllib.request

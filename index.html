@@ -132,6 +132,29 @@ footer details div { padding-bottom: 14px; display: flex; flex-direction: column
   .opts { grid-template-columns: 1fr; }
   .count { font-size: 24px; }
 }
+
+.suggest { border: 1.5px dashed var(--line); border-radius: 14px; padding: 22px 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 20px; }
+.suggest strong { display: block; font-family: var(--font-display); font-weight: 400; font-size: 28px; letter-spacing: .04em; }
+.suggest p { margin: 2px 0 0; color: var(--muted); font-size: 15px; max-width: 46ch; }
+.suggest .btns { display: flex; flex-wrap: wrap; gap: 8px; }
+dialog { background: var(--surface); color: var(--fg); border: 1px solid var(--line); border-radius: 16px; padding: 0; width: min(520px, calc(100% - 32px)); max-height: calc(100% - 32px); overflow: auto; }
+dialog::backdrop { background: rgba(10, 5, 18, .75); }
+.dlg { padding: 22px; display: flex; flex-direction: column; gap: 16px; }
+.dlg-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.dlg h2 { margin: 0; font-size: 34px; letter-spacing: .05em; color: var(--fg); }
+.dlg-x { flex: none; width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid var(--line); background: transparent; color: var(--fg); font-size: 22px; line-height: 1; }
+.dlg p { margin: 0; color: var(--muted); font-size: 15px; }
+.tabs { display: flex; gap: 8px; }
+.field { display: flex; flex-direction: column; gap: 5px; }
+.field label { font-size: 14px; font-weight: 600; }
+.field input { min-height: 48px; padding: 0 12px; font-size: 16px; border: 1.5px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--fg); }
+.field input:focus { border-color: var(--accent); outline: none; box-shadow: 0 0 0 4px rgba(255, 181, 71, .2); }
+.field .err { color: var(--rose); font-size: 13px; min-height: 0; }
+.field .err:empty { display: none; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.fine { font-size: 13px !important; }
+.thanks { text-align: center; padding: 18px 0 6px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.thanks strong { font-family: var(--font-display); font-weight: 400; font-size: 34px; letter-spacing: .04em; color: var(--accent); }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
 </style>
 </head>
@@ -193,6 +216,13 @@ footer details div { padding-bottom: 14px; display: flex; flex-direction: column
   </div>
 
   <main class="list" id="list"><div class="empty"><strong>Loading shows</strong>One moment please.</div></main>
+
+  <section class="suggest" aria-labelledby="sgTitle">
+    <div><strong id="sgTitle">Can't find something?</strong><p>If a theatre or show is missing, tell us and we'll look into adding it.</p></div>
+    <div class="btns" id="sgBtns"></div>
+  </section>
+
+  <dialog id="dlg" aria-labelledby="dlgTitle"><div class="dlg" id="dlgBody"></div></dialog>
 
   <footer>
     <p>Listings are collected from each venue's own website and checked several times a day. Dates, times and availability can change, so please confirm with the venue before you book or travel.</p>
@@ -425,6 +455,69 @@ footer details div { padding-bottom: 14px; display: flex; flex-direction: column
   $("radius").addEventListener("input", function () { $("radiusVal").textContent = $("radius").value + " miles"; refresh(); });
   $("sort").addEventListener("change", refresh);
   $("clear").addEventListener("click", clearAll);
+
+  /* ---- "something's missing" forms: our own styled form that sends answers to a Google Form ---- */
+  var SUGGEST = {
+    venue: {
+      tab: "A missing venue", title: "Suggest a venue",
+      intro: "Know a theatre or venue we don't cover? Give us the basics and we'll look into adding it.",
+      formId: "1FAIpQLSffB1YzxIds5XE-BzIcZzvN4byMo-1IKdD9mQEWEfex7JIp1w",
+      fields: [
+        { id: "name", label: "Venue name", entry: "entry.2062760536", placeholder: "e.g. The Old Rep Theatre", required: true },
+        { id: "town", label: "Town or city", entry: "entry.529208172", placeholder: "e.g. Birmingham", required: true },
+        { id: "link", label: "Link to their what's on page", entry: "entry.1934876299", placeholder: "e.g. www.theirtheatre.co.uk/whats-on", required: true, url: true }
+      ]
+    }
+    /* show: { ... } is added here once its Google Form is ready */
+  };
+  var sgKeys = Object.keys(SUGGEST), sgCur = sgKeys[0], sgOpened = 0, sgBtn = null;
+
+  function sgCount() { try { return +(localStorage.getItem("cc-sg-" + iso(new Date())) || 0); } catch (e) { return 0; } }
+  function sgBump() { try { localStorage.setItem("cc-sg-" + iso(new Date()), String(sgCount() + 1)); } catch (e) {} }
+
+  function sgRender(done) {
+    var cfg = SUGGEST[sgCur], h = '<div class="dlg-head"><h2 id="dlgTitle">' + esc(cfg.title) + '</h2><button class="dlg-x" id="dlgX" type="button" aria-label="Close">&times;</button></div>';
+    if (sgKeys.length > 1) h += '<div class="tabs" role="group" aria-label="What are you suggesting?">' + sgKeys.map(function (k) { return '<button type="button" class="chip" data-sg="' + k + '" aria-pressed="' + (k === sgCur) + '">' + esc(SUGGEST[k].tab) + "</button>"; }).join("") + "</div>";
+    if (done) {
+      h += '<div class="thanks"><strong>Thank you!</strong><p>We have your suggestion and will take a look. New venues and shows are added by hand, so it may take a little while.</p><button class="btn" id="sgClose" type="button">Close</button></div>';
+    } else {
+      h += "<p>" + esc(cfg.intro) + '</p><form id="sgForm" novalidate>' + cfg.fields.map(function (f) {
+        return '<div class="field"><label for="sg-' + f.id + '">' + esc(f.label) + (f.required ? "" : " (optional)") + '</label><input id="sg-' + f.id + '" type="text" placeholder="' + esc(f.placeholder || "") + '" autocomplete="off"' + (f.url ? ' inputmode="url" autocapitalize="off"' : "") + '><div class="err" id="err-' + f.id + '" role="alert"></div></div>';
+      }).join("") + '<div class="hp" aria-hidden="true"><label for="sg-website">Leave this empty</label><input id="sg-website" type="text" tabindex="-1" autocomplete="off"></div><p class="fine">We only use what you type here to decide what to add. We don\'t ask for your name or email.</p><button class="btn" id="sgSend" type="submit">Send suggestion</button><p id="sgMsg" aria-live="polite"></p></form>';
+    }
+    $("dlgBody").innerHTML = h;
+    $("dlgX").addEventListener("click", sgClose);
+    Array.prototype.forEach.call($("dlgBody").querySelectorAll(".field input"), function (i) { i.addEventListener("input", function () { var e = i.parentNode.querySelector(".err"); if (e) e.textContent = ""; }); });
+    if (done) $("sgClose").addEventListener("click", sgClose);
+    else $("sgForm").addEventListener("submit", sgSubmit);
+    var tabs = $("dlgBody").querySelectorAll("[data-sg]");
+    Array.prototype.forEach.call(tabs, function (b) { b.addEventListener("click", function () { sgCur = b.getAttribute("data-sg"); sgRender(false); }); });
+  }
+  function sgOpen(key, btn) { sgCur = key; sgBtn = btn || null; sgOpened = Date.now(); sgRender(false); var d = $("dlg"); if (d.showModal) d.showModal(); else d.setAttribute("open", ""); }
+  function sgClose() { var d = $("dlg"); if (d.close) d.close(); else d.removeAttribute("open"); if (sgBtn) sgBtn.focus(); }
+  function sgSubmit(e) {
+    e.preventDefault();
+    var cfg = SUGGEST[sgCur], vals = {}, ok = true;
+    cfg.fields.forEach(function (f) {
+      var v = $("sg-" + f.id).value.replace(/\s+/g, " ").trim(), msg = "";
+      if (f.required && !v) msg = "Please fill this in.";
+      else if (f.url && v && (!/\./.test(v) || /\s/.test(v))) msg = "Please enter a web address, like www.example.co.uk.";
+      $("err-" + f.id).textContent = msg; if (msg) ok = false;
+      if (f.url && v && !/^https?:\/\//i.test(v)) v = "https://" + v;
+      vals[f.entry] = v.slice(0, 500);
+    });
+    if (!ok) { var first = $("dlgBody").querySelector(".err:not(:empty)"); if (first) first.parentNode.querySelector("input").focus(); return; }
+    /* bots: filled-in trap field or instant submit get a normal-looking thank-you but nothing is sent */
+    if ($("sg-website").value || Date.now() - sgOpened < 2500 || sgCount() >= 5) { sgRender(true); return; }
+    $("sgSend").disabled = true; $("sgSend").textContent = "Sending..."; $("sgMsg").textContent = "";
+    var body = new URLSearchParams(vals);
+    fetch("https://docs.google.com/forms/d/e/" + cfg.formId + "/formResponse", { method: "POST", mode: "no-cors", body: body })
+      .then(function () { sgBump(); sgRender(true); })
+      .catch(function () { $("sgSend").disabled = false; $("sgSend").textContent = "Send suggestion"; $("sgMsg").textContent = "Sorry, that didn't send. Please check your connection and try again."; });
+  }
+  $("sgBtns").innerHTML = sgKeys.map(function (k, i) { return '<button type="button" class="btn ' + (i ? "ghost" : "") + '" data-open="' + k + '">' + esc(SUGGEST[k].title) + "</button>"; }).join("");
+  $("sgBtns").addEventListener("click", function (e) { var b = e.target.closest("[data-open]"); if (b) sgOpen(b.getAttribute("data-open"), b); });
+  $("dlg").addEventListener("click", function (e) { if (e.target === $("dlg")) sgClose(); });
 
   fetch("shows.json", { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error("status " + r.status); return r.json(); })

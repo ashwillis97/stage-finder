@@ -133,7 +133,7 @@ footer details div { padding-bottom: 14px; display: flex; flex-direction: column
   .count { font-size: 24px; }
 }
 
-.suggest { border: 1.5px dashed var(--line); border-radius: 14px; padding: 22px 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 20px; }
+.suggest { margin: 0 0 18px; background: var(--surface); border: 1.5px solid var(--accent); border-radius: 14px; padding: 22px 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 20px; }
 .suggest strong { display: block; font-family: var(--font-display); font-weight: 400; font-size: 28px; letter-spacing: .04em; }
 .suggest p { margin: 2px 0 0; color: var(--muted); font-size: 15px; max-width: 46ch; }
 .suggest .btns { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -166,6 +166,11 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
     <h1>What's on at the <em>theatre?</em></h1>
     <p class="lede" id="lede">Shows, comedy, music and pantomime at venues across the Midlands, all in one place.</p>
   </header>
+
+  <section class="suggest" aria-labelledby="sgTitle">
+    <div><strong id="sgTitle">Something missing?</strong><p>Help us grow Curtain Call. Tell us about a venue or show we don't list yet.</p></div>
+    <div class="btns" id="sgBtns"></div>
+  </section>
 
   <div class="search">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
@@ -216,11 +221,6 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
   </div>
 
   <main class="list" id="list"><div class="empty"><strong>Loading shows</strong>One moment please.</div></main>
-
-  <section class="suggest" aria-labelledby="sgTitle">
-    <div><strong id="sgTitle">Can't find something?</strong><p>If a theatre or show is missing, tell us and we'll look into adding it.</p></div>
-    <div class="btns" id="sgBtns"></div>
-  </section>
 
   <dialog id="dlg" aria-labelledby="dlgTitle"><div class="dlg" id="dlgBody"></div></dialog>
 
@@ -467,8 +467,18 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
         { id: "town", label: "Town or city", entry: "entry.529208172", placeholder: "e.g. Birmingham", required: true },
         { id: "link", label: "Link to their what's on page", entry: "entry.1934876299", placeholder: "e.g. www.theirtheatre.co.uk/whats-on", required: true, url: true }
       ]
+    },
+    show: {
+      tab: "A missing show", title: "Suggest a show",
+      intro: "Know of a show that isn't listed? Tell us where and when and we'll look into adding it.",
+      formId: "1FAIpQLSdLqPYyG-J3eVZR2ERSlwnNvwSXMjVuVhRijdVT-TOd3WXR-g",
+      fields: [
+        { id: "name", label: "Show name", entry: "entry.2062760536", placeholder: "e.g. The Mousetrap", required: true },
+        { id: "venue", label: "Venue", entry: "entry.529208172", placeholder: "e.g. Birmingham Hippodrome", required: true },
+        { id: "dates", label: "Dates", entry: "entry.1968608802", placeholder: "e.g. 3 to 8 March 2027", required: true },
+        { id: "link", label: "Link to the show page", entry: "entry.1934876299", placeholder: "e.g. www.theirtheatre.co.uk/show", required: true, url: true }
+      ]
     }
-    /* show: { ... } is added here once its Google Form is ready */
   };
   var sgKeys = Object.keys(SUGGEST), sgCur = sgKeys[0], sgOpened = 0, sgBtn = null;
 

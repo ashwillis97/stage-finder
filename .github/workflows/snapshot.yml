@@ -2,6 +2,12 @@ name: Snapshot venue pages
 
 on:
   workflow_dispatch:
+    inputs:
+      which:
+        description: "existing = the live venues; new = the pending venues in venues_new.json"
+        default: existing
+        type: choice
+        options: [existing, new]
 
 permissions:
   contents: write
@@ -9,7 +15,7 @@ permissions:
 jobs:
   snapshot:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -17,7 +23,7 @@ jobs:
           python-version: "3.12"
       - run: pip install playwright
       - run: playwright install --with-deps chromium
-      - run: python scripts/snapshot.py
+      - run: python scripts/snapshot.py ${{ inputs.which == 'new' && 'new' || '' }}
       - name: Save snapshots
         run: |
           git config user.name "github-actions[bot]"

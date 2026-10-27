@@ -10,7 +10,15 @@ from playwright.sync_api import sync_playwright
 root = pathlib.Path(__file__).resolve().parent.parent
 out = root / "snapshots"
 out.mkdir(exist_ok=True)
-venues = json.loads((root / "venues.json").read_text())["venues"]
+NEW = len(sys.argv) > 1 and sys.argv[1] == "new"
+venues = json.loads((root / ("venues_new.json" if NEW else "venues.json")).read_text())["venues"]
+
+
+def slim(html):
+    """Bulk run: drop scripts (except data blocks), styles and svg so 200 pages stay small."""
+    html = re.sub(r"<script\b(?![^>]*(?:ld\+json|application/json))[^>]*>.*?</script>", "", html, flags=re.S | re.I)
+    html = re.sub(r"<(style|svg|noscript)\b.*?</\1>", "", html, flags=re.S | re.I)
+    return html
 report = []
 
 with sync_playwright() as p:
@@ -39,14 +47,14 @@ with sync_playwright() as p:
                         seen.append(item)
                 page.on("response", on_resp)
             try:
-                resp = page.goto(url, wait_until="domcontentloaded", timeout=45000)
+                resp = page.goto(url, wait_until="domcontentloaded", timeout=30000 if NEW else 45000)
                 entry["status"] = resp.status if resp else None
                 try:
-                    page.wait_for_load_state("networkidle", timeout=20000)
+                    page.wait_for_load_state("networkidle", timeout=6000 if NEW else 20000)
                 except Exception:
                     pass
                 # scroll to trigger lazy-loaded lists
-                for _ in range(6):
+                for _ in range(3 if NEW else 6):
                     page.mouse.wheel(0, 2500)
                     time.sleep(0.7)
                 if v.get("js"):
@@ -61,6 +69,8 @@ with sync_playwright() as p:
                         except Exception as e:
                             print("  frame error", str(e)[:100], flush=True)
                 html = page.content()
+                if NEW:
+                    html = slim(html)
                 name = f"{v['slug']}-{i}.html"
                 (out / name).write_text(html, encoding="utf-8")
                 entry["file"] = name
@@ -78,6 +88,6 @@ with sync_playwright() as p:
             report.append(entry)
     browser.close()
 
-(out / "_report.json").write_text(json.dumps(report, indent=1))
+(out / ("_report_new.json" if NEW else "_report.json")).write_text(json.dumps(report, indent=1))
 failed = [r for r in report if not r["file"]]
 print(f"{len(report) - len(failed)} pages saved, {len(failed)} failed")

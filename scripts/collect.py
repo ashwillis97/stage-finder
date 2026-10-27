@@ -367,6 +367,38 @@ READERS = {
     "TRCH": read_trch, "The Alexandra Theatre": read_alexandra, "Regent Theatre Stoke": read_regent, "New Vic Theatre": read_newvic, "Winding Wheel Theatre": read_winding_wheel, "Forest Live Cannock Chase": read_forest_live, "Big Top Arena": read_big_top, "Motorpoint Arena Nottingham": read_motorpoint, "Bonington Theatre": read_bonington, "Vaillant Live": read_vaillant,
 }
 
+def _venue_files():
+    for f in ("venues.json", "venues_new.json"):
+        fp = ROOT / f
+        if fp.exists():
+            yield from json.loads(fp.read_text(encoding="utf-8"))["venues"]
+
+
+for _v in _venue_files():  # venues flagged reader=atg need no custom code
+    if _v.get("reader") == "atg" and _v["name"] not in READERS:
+        READERS[_v["name"]] = (lambda s=_v["slug"], n=_v["name"]: read_atg(s, n))
+
+
+def geocode_places():
+    """Look up each configured venue's postcode (postcodes.io) so near-me search knows where it is."""
+    import urllib.request
+    todo = [v for v in _venue_files() if v.get("postcode")]
+    places = {}
+    for i in range(0, len(todo), 100):
+        batch = todo[i:i + 100]
+        try:
+            req = urllib.request.Request("https://api.postcodes.io/postcodes", data=json.dumps({"postcodes": [v["postcode"] for v in batch]}).encode(), headers={"Content-Type": "application/json"})
+            res = json.loads(urllib.request.urlopen(req, timeout=30).read())["result"]
+        except Exception as e:
+            print("geocode failed:", repr(e))
+            continue
+        for v, r in zip(batch, res):
+            hit = r.get("result")
+            if hit and hit.get("latitude"):
+                places[v["name"]] = [v.get("city", ""), round(hit["latitude"], 4), round(hit["longitude"], 4)]
+    return places
+
+
 REMOVED = {"Repton 400 Hall Theatre", "Elite Cinema and Theatre"}  # venues the owner dropped
 
 GENRE_HINTS = [(r"tribute|story of|legends|experience", "Tribute"), (r"orchestra|philharmon|symphony|concert", "Classical"),
@@ -421,6 +453,9 @@ def main():
     cov["none"] = [n for n in cov.get("none", []) if n not in scraped and n not in REMOVED]
     for t in REMOVED:
         part.pop(t, None)
+    places = geocode_places()
+    if places:
+        data["places"] = places
     data["sample"] = False
     data["updated"] = dt.datetime.now(ZoneInfo("Europe/London")).isoformat(timespec="minutes")
     path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")

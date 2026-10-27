@@ -1,6 +1,6 @@
 {
  "sample": false,
- "updated": "2026-10-27T07:11+00:00",
+ "updated": "2026-10-27T13:12+00:00",
  "coverage": {
   "none": [],
   "partial": {
@@ -140,14 +140,6 @@
    "start": "2026-10-27",
    "end": "2026-10-31",
    "url": "https://www.atgtickets.com/shows/paranormal-activity/the-alexandra-theatre-birmingham/"
-  },
-  {
-   "title": "Play in a Day 6-8 year olds",
-   "theatre": "The Rep",
-   "genre": "",
-   "start": "2026-10-27",
-   "end": "2026-10-27",
-   "url": "https://www.birmingham-rep.co.uk/whats-on/play-in-a-day-6-8-year-olds/"
   },
   {
    "title": "The Amazing Bubble Man",
@@ -1388,6 +1380,14 @@
    "start": "2026-11-15",
    "end": "2026-11-15",
    "url": "https://nottinghamplayhouse.co.uk/events/dylan-moran/"
+  },
+  {
+   "title": "Karl Bushby",
+   "theatre": "Theatre Royal Nottingham",
+   "genre": "Talks",
+   "start": "2026-11-15",
+   "end": "2026-11-15",
+   "url": "https://www.trch.co.uk/whats-on/karl-bushby-1bvr"
   },
   {
    "title": "Leicester Symphony Orchestra: Lord Mayor Of Leicester'S Concert Rhapsody In Blue",
@@ -3910,14 +3910,6 @@
    "url": "https://www.trch.co.uk/whats-on/strasbourg-philharmonic-feb-27-7v18"
   },
   {
-   "title": "Cirque: The Greatest Show",
-   "theatre": "Royal Concert Hall",
-   "genre": "Family",
-   "start": "2027-02-13",
-   "end": "2027-02-13",
-   "url": "https://www.trch.co.uk/whats-on/cirque-the-greatest-show-fpwq"
-  },
-  {
    "title": "Jason Fox - Embrace The Chaos",
    "theatre": "De Montfort Hall",
    "genre": "",
@@ -4806,9 +4798,9 @@
    "url": "https://www.oldrep.co.uk/event-details/339931ALHKCDJCLQRTNQCHMLBKBTQCGQR/beatles-complete-a-tribute-to-the-fab-four/"
   },
   {
-   "title": "Pre-sale",
+   "title": "Showaddywaddy",
    "theatre": "Regent Theatre Stoke",
-   "genre": "Showaddywaddy",
+   "genre": "Concert",
    "start": "2027-03-26",
    "end": "2027-03-26",
    "url": "https://www.atgtickets.com/shows/showaddywaddy/regent-theatre/"
@@ -5044,6 +5036,14 @@
    "start": "2027-04-08",
    "end": "2027-04-08",
    "url": "https://www.birmingham-rep.co.uk/whats-on/lost-voice-guy-the-cerebral-palsy-puppet/"
+  },
+  {
+   "title": "Tim Vine - Sillypun Valley",
+   "theatre": "Winding Wheel Theatre",
+   "genre": "Comedy",
+   "start": "2027-04-08",
+   "end": "2027-04-08",
+   "url": "https://chesterfieldtheatres.co.uk/events/tim-vine-sillypun-valley/"
   },
   {
    "title": "Romesh Ranganathan",
@@ -5438,6 +5438,14 @@
    "url": "https://www.curveonline.co.uk/whats-on/shows/jurassic/"
   },
   {
+   "title": "Buddy’s Winter Dance Party",
+   "theatre": "Bonington Theatre",
+   "genre": "",
+   "start": "2027-05-01",
+   "end": "2027-05-01",
+   "url": "https://www.boningtontheatre.co.uk/whatson-event/buddys-winter-dance-party-3/"
+  },
+  {
    "title": "Laura Newman - Ark At She",
    "theatre": "Curve Theatre",
    "genre": "",
@@ -5758,6 +5766,14 @@
    "url": "https://www.birmingham-rep.co.uk/whats-on/let-the-whale-die/"
   },
   {
+   "title": "On sale Fri 30 Oct 2026",
+   "theatre": "The Alexandra Theatre",
+   "genre": "That'll Be The Day",
+   "start": "2027-05-25",
+   "end": "2027-05-25",
+   "url": "https://www.atgtickets.com/shows/thatll-be-the-day/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "The Royal Ballet: Romeo & Juliet (Cert TBC)",
    "theatre": "Bonington Theatre",
    "genre": "",
@@ -5772,6 +5788,14 @@
    "start": "2027-05-26",
    "end": "2027-05-26",
    "url": "https://www.atgtickets.com/shows/jimmy-carr-killing-jokes/the-alexandra-theatre-birmingham/"
+  },
+  {
+   "title": "Jack Dee: Jack’s Joke Show",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2027-05-27",
+   "end": "2027-05-27",
+   "url": "https://www.newvictheatre.org.uk/productions/jack-dee-jacks-joke-show/"
   },
   {
    "title": "Johannes Radebe: Finally Home",
@@ -6534,9 +6558,9 @@
    "url": "https://www.grandtheatre.co.uk/whats-on/tom-allen-totally/"
   },
   {
-   "title": "Pre-sale",
+   "title": "An Inspector Calls",
    "theatre": "The Alexandra Theatre",
-   "genre": "An Inspector Calls",
+   "genre": "Plays",
    "start": "2028-02-08",
    "end": "2028-02-12",
    "url": "https://www.atgtickets.com/shows/an-inspector-calls/the-alexandra-theatre-birmingham/"
@@ -6548,6 +6572,22 @@
    "start": "2028-03-27",
    "end": "2028-04-01",
    "url": "https://www.grandtheatre.co.uk/whats-on/hairspray-2/"
+  },
+  {
+   "title": "An Inspector Calls",
+   "theatre": "Wolverhampton Grand Theatre",
+   "genre": "",
+   "start": "2028-05-09",
+   "end": "2028-05-13",
+   "url": "https://www.grandtheatre.co.uk/whats-on/an-inspector-calls-2/"
+  },
+  {
+   "title": "Join Us At Motorpoint Arena Nottingham",
+   "theatre": "Motorpoint Arena Nottingham",
+   "genre": "",
+   "start": "2030-12-31",
+   "end": "2030-12-31",
+   "url": "https://tickets.motorpointarenanottingham.com/shows/show.aspx?sh=MANFAST23"
   }
  ]
 }

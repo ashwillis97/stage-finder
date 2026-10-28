@@ -10,8 +10,12 @@ from playwright.sync_api import sync_playwright
 root = pathlib.Path(__file__).resolve().parent.parent
 out = root / "snapshots"
 out.mkdir(exist_ok=True)
-NEW = len(sys.argv) > 1 and sys.argv[1] == "new"
+NEW = len(sys.argv) > 1 and sys.argv[1] in ("new", "retry")
+RETRY = len(sys.argv) > 1 and sys.argv[1] == "retry"
 venues = json.loads((root / ("venues_new.json" if NEW else "venues.json")).read_text())["venues"]
+
+if RETRY:
+    venues = [v for v in venues if v.get("retry")]
 
 
 def slim(html):

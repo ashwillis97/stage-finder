@@ -336,11 +336,11 @@
    "city": "Cardiff",
    "postcode": "CF10 1FA",
    "guess": true,
-   "reader": "atg",
    "slug": "new-theatre-cardiff-cardiff",
    "urls": [
-    "https://www.atgtickets.com/venues/new-theatre-cardiff/whats-on/"
-   ]
+    "https://trafalgartickets.com/new-theatre-cardiff/en-GB/whats-on"
+   ],
+   "retry": true
   },
   {
    "name": "Wales Millennium Centre",
@@ -787,11 +787,11 @@
    "city": "London",
    "postcode": "WC2R 0NS",
    "guess": true,
-   "reader": "atg",
    "slug": "adelphi-theatre-london",
    "urls": [
-    "https://www.atgtickets.com/venues/adelphi-theatre/whats-on/"
-   ]
+    "https://lwtheatres.co.uk/whats-on/?event-venue=adelphi-theatre"
+   ],
+   "retry": true
   },
   {
    "name": "Aldwych Theatre",
@@ -1607,17 +1607,6 @@
    ]
   },
   {
-   "name": "Victoria Hall",
-   "city": "Stoke-on-Trent",
-   "postcode": "ST1 3AD",
-   "guess": true,
-   "reader": "atg",
-   "slug": "victoria-hall-stoke-on-trent",
-   "urls": [
-    "https://www.atgtickets.com/venues/victoria-hall-stoke-on-trent/whats-on/"
-   ]
-  },
-  {
    "name": "Brangwyn Hall",
    "city": "Swansea",
    "postcode": "SA1 4PE",
@@ -1695,17 +1684,6 @@
    "slug": "theatre-royal-winchester-winchester",
    "urls": [
     "https://www.theatreroyalwinchester.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Woking Theatre",
-   "city": "Woking",
-   "postcode": "GU21 6GQ",
-   "guess": true,
-   "reader": "atg",
-   "slug": "woking-theatre-woking",
-   "urls": [
-    "https://www.atgtickets.com/venues/new-victoria-theatre-woking/whats-on/"
    ]
   },
   {

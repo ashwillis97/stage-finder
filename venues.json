@@ -492,6 +492,26 @@
    "urls": [
     "https://www.atgtickets.com/venues/grand-opera-house-york/whats-on/"
    ]
+  },
+  {
+   "name": "Victoria Hall",
+   "city": "Stoke-on-Trent",
+   "postcode": "ST1 3AD",
+   "reader": "atg",
+   "slug": "victoria-hall-stoke-on-trent",
+   "urls": [
+    "https://www.atgtickets.com/venues/victoria-hall/whats-on/"
+   ]
+  },
+  {
+   "name": "Woking Theatre",
+   "city": "Woking",
+   "postcode": "GU21 6GQ",
+   "reader": "atg",
+   "slug": "woking-theatre-woking",
+   "urls": [
+    "https://www.atgtickets.com/venues/woking-theatre/whats-on/"
+   ]
   }
  ]
 }

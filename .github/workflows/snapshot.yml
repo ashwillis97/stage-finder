@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
     inputs:
       which:
-        description: "existing = the live venues; new = the pending venues in venues_new.json"
+        description: "existing = the live venues; new = all pending venues in venues_new.json; retry = only pending venues flagged retry"
         default: existing
         type: choice
-        options: [existing, new]
+        options: [existing, new, retry]
 
 permissions:
   contents: write
@@ -23,7 +23,7 @@ jobs:
           python-version: "3.12"
       - run: pip install playwright
       - run: playwright install --with-deps chromium
-      - run: python scripts/snapshot.py ${{ inputs.which == 'new' && 'new' || '' }}
+      - run: python scripts/snapshot.py ${{ inputs.which == 'new' && 'new' || inputs.which == 'retry' && 'retry' || '' }}
       - name: Save snapshots
         run: |
           git config user.name "github-actions[bot]"

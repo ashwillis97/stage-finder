@@ -65,7 +65,13 @@ h1 em { font-style: normal; color: var(--accent); }
 .chips { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
 .chips::-webkit-scrollbar { display: none; }
 .chip { flex: none; min-height: 42px; padding: 0 16px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--surface); color: var(--fg); font-weight: 500; font-size: 15px; white-space: nowrap; }
-.venue-in { min-height: 42px; flex: 1 1 180px; min-width: 0; padding: 0 14px; font-size: 16px; border: 1.5px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--fg); }
+.vbox { position: relative; flex: 1 1 180px; min-width: 0; }
+.vsug { position: absolute; z-index: 20; left: 0; right: 0; top: calc(100% + 6px); margin: 0; padding: 6px; list-style: none; max-height: 280px; overflow: auto; background: var(--surface-2); border: 1.5px solid var(--line); border-radius: 14px; box-shadow: 0 12px 30px rgba(0,0,0,.45); }
+.vsug li { padding: 11px 12px; border-radius: 10px; font-size: 16px; cursor: pointer; }
+.vsug li:hover, .vsug li[aria-selected="true"] { background: var(--line); }
+.vsug .none { color: var(--muted); cursor: default; }
+.vclear { position: absolute; right: 4px; top: 0; width: 42px; height: 42px; border: 0; background: transparent; color: var(--muted); font-size: 22px; }
+.venue-in { width: 100%; min-height: 42px; padding: 0 14px; font-size: 16px; border: 1.5px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--fg); }
 .venue-in:focus { border-color: var(--accent); outline: none; }
 #regionChips { margin-bottom: 8px; }
 .chip:hover { border-color: var(--accent); }
@@ -199,8 +205,7 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
       <div class="chips" id="regionChips" role="group" aria-label="Region"></div>
       <div class="where" role="group" aria-labelledby="lblWhere">
         <label class="sr" for="venue">Search for a venue</label>
-        <input id="venue" class="venue-in" type="text" list="venueList" placeholder="Any venue" autocomplete="off">
-        <datalist id="venueList"></datalist>
+        <div class="vbox"><input id="venue" class="venue-in" type="text" placeholder="Any venue" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="venueSug" aria-autocomplete="list"><button type="button" class="vclear" id="vclear" aria-label="Clear venue" hidden>&times;</button><ul id="venueSug" class="vsug" role="listbox" hidden></ul></div>
         <button class="chip" id="nearBtn" type="button" aria-pressed="false" aria-expanded="false" aria-controls="nearPanel">Near me</button>
       </div>
     </div>
@@ -353,9 +358,15 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
     $("lede").textContent = "Shows, comedy, music and pantomime at " + venueNames.length + " venues across the UK, all in one place.";
   }
   function venueLabel(n) { return label(n); }
-  function fillVenueList() {
-    $("venueList").innerHTML = venueNames.filter(function (n) { return !F.region || regionOf(n) === F.region; }).map(function (n) { return '<option value="' + esc(venueLabel(n)) + '"></option>'; }).join("");
+  function fillVenueList() { showSug(false); }
+  function showSug(open) {
+    var box = $("venueSug"), v = $("venue").value.trim().toLowerCase();
+    var list = venueNames.filter(function (n) { return (!F.region || regionOf(n) === F.region) && (!v || label(n).toLowerCase().indexOf(v) >= 0); });
+    if (!open) { box.hidden = true; $("venue").setAttribute("aria-expanded", "false"); return; }
+    box.innerHTML = list.length ? list.slice(0, 30).map(function (n) { return '<li role="option" data-v="' + esc(n) + '">' + esc(label(n)) + "</li>"; }).join("") : '<li class="none">No venues match</li>';
+    box.hidden = false; $("venue").setAttribute("aria-expanded", "true");
   }
+  function pickVenue(n) { F.venue = n; $("venue").value = n ? label(n) : ""; $("vclear").hidden = !n; showSug(false); refresh(); }
   function buildAbout() {
     var none = (coverage && coverage.none) || [], part = (coverage && coverage.partial) || {}, old = [], inc = [];
     Object.keys(part).forEach(function (k) { (/not updated automatically/i.test(part[k]) ? old : inc).push(label(k)); });
@@ -416,7 +427,7 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
   function refresh() { visible = 40; render(); }
   function clearAll() {
     F = { q: "", venue: "", region: "", cat: "", when: "any" };
-    $("q").value = ""; $("venue").value = ""; buildVenues(); $("from").value = ""; $("to").value = ""; $("dates").hidden = true;
+    $("q").value = ""; $("venue").value = ""; $("vclear").hidden = true; buildVenues(); $("from").value = ""; $("to").value = ""; $("dates").hidden = true;
     clearUser(true); buildChips(); refresh();
   }
 
@@ -462,13 +473,21 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
   $("q").addEventListener("input", function () { F.q = $("q").value; refresh(); });
   $("venue").addEventListener("input", function () {
     var v = $("venue").value.trim().toLowerCase(), hit = "";
-    if (v) venueNames.forEach(function (n) { if (venueLabel(n).toLowerCase() === v || label(n).toLowerCase() === v) hit = n; });
+    if (v) venueNames.forEach(function (n) { if (label(n).toLowerCase() === v) hit = n; });
+    $("vclear").hidden = !$("venue").value;
+    showSug(true);
     if (hit !== F.venue) { F.venue = hit; refresh(); }
   });
+  $("venue").addEventListener("focus", function () { showSug(true); });
+  $("venue").addEventListener("keydown", function (e) { if (e.key === "Escape") showSug(false); if (e.key === "Enter") { var f = $("venueSug").querySelector("li[data-v]"); if (f && !F.venue) { e.preventDefault(); pickVenue(f.getAttribute("data-v")); } } });
+  $("venueSug").addEventListener("mousedown", function (e) { e.preventDefault(); });
+  $("venueSug").addEventListener("click", function (e) { var li = e.target.closest("li[data-v]"); if (li) pickVenue(li.getAttribute("data-v")); });
+  $("vclear").addEventListener("click", function () { pickVenue(""); $("venue").focus(); });
+  document.addEventListener("click", function (e) { if (!e.target.closest(".vbox")) showSug(false); });
   $("regionChips").addEventListener("click", function (e) {
     var b = e.target.closest("[data-region]"); if (!b) return;
     F.region = b.getAttribute("data-region");
-    if (F.venue && F.region && regionOf(F.venue) !== F.region) { F.venue = ""; $("venue").value = ""; }
+    if (F.venue && F.region && regionOf(F.venue) !== F.region) { F.venue = ""; $("venue").value = ""; $("vclear").hidden = true; }
     buildVenues(); refresh();
   });
   $("from").addEventListener("input", refresh); $("to").addEventListener("input", refresh);

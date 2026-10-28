@@ -52,9 +52,10 @@
    "guess": true,
    "slug": "blackburn-king-george-s-hall-blackburn",
    "urls": [
-    "https://www.blackburn.gov.uk/king-georges-hall"
+    "https://bwdvenues.com/whats-on/"
    ],
-   "reader": "generic"
+   "reader": "generic",
+   "retry": true
   },
   {
    "name": "Blackpool Grand Theatre",

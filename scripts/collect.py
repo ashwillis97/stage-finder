@@ -561,6 +561,22 @@ def merge_runs(rows):
 
 
 
+def region_of(hit):
+    """Group postcodes.io areas into the few regions shown on the site."""
+    country, reg = hit.get("country") or "", hit.get("region") or ""
+    if country in ("Scotland", "Wales"):
+        return country
+    if country == "Northern Ireland":
+        return "Northern Ireland"
+    if reg == "London":
+        return "London"
+    if reg in ("East Midlands", "West Midlands"):
+        return "Midlands"
+    if reg in ("North East", "North West", "Yorkshire and The Humber"):
+        return "North"
+    return "South & East"
+
+
 def geocode_places():
     """Look up each configured venue's postcode (postcodes.io) so near-me search knows where it is."""
     import urllib.request
@@ -577,7 +593,7 @@ def geocode_places():
         for v, r in zip(batch, res):
             hit = r.get("result")
             if hit and hit.get("latitude"):
-                places[v["name"]] = [v.get("city", ""), round(hit["latitude"], 4), round(hit["longitude"], 4)]
+                places[v["name"]] = [v.get("city", ""), round(hit["latitude"], 4), round(hit["longitude"], 4), region_of(hit)]
     return places
 
 

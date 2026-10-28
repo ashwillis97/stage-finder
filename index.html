@@ -65,6 +65,9 @@ h1 em { font-style: normal; color: var(--accent); }
 .chips { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
 .chips::-webkit-scrollbar { display: none; }
 .chip { flex: none; min-height: 42px; padding: 0 16px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--surface); color: var(--fg); font-weight: 500; font-size: 15px; white-space: nowrap; }
+.venue-in { min-height: 42px; flex: 1 1 180px; min-width: 0; padding: 0 14px; font-size: 16px; border: 1.5px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--fg); }
+.venue-in:focus { border-color: var(--accent); outline: none; }
+#regionChips { margin-bottom: 8px; }
 .chip:hover { border-color: var(--accent); }
 .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-fg); font-weight: 700; }
 .where { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -193,9 +196,11 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
     </div>
     <div>
       <p class="group-label" id="lblWhere">Where</p>
+      <div class="chips" id="regionChips" role="group" aria-label="Region"></div>
       <div class="where" role="group" aria-labelledby="lblWhere">
-        <label class="sr" for="venue">Venue</label>
-        <select id="venue"><option value="">All venues</option></select>
+        <label class="sr" for="venue">Search for a venue</label>
+        <input id="venue" class="venue-in" type="text" list="venueList" placeholder="Any venue" autocomplete="off">
+        <datalist id="venueList"></datalist>
         <button class="chip" id="nearBtn" type="button" aria-pressed="false" aria-expanded="false" aria-controls="nearPanel">Near me</button>
       </div>
     </div>
@@ -235,7 +240,7 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
 <script>
 (function () {
   var shows = [], coverage = null, user = null, visible = 40;
-  var F = { q: "", venue: "", cat: "", when: "any" };
+  var F = { q: "", venue: "", region: "", cat: "", when: "any" };
   var $ = function (id) { return document.getElementById(id); };
   var MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
   var MON3 = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
@@ -256,6 +261,9 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
     "Forest Live Cannock Chase": ["Forest Live", "Cannock Chase", 52.7450, -1.9800],
     "Big Top Arena": ["Big Top Arena", "Trentham, Stoke-on-Trent", 52.9560, -2.1840]
   };
+  Object.keys(PLACE).forEach(function (k) { PLACE[k][4] = "Midlands"; });
+  var REGIONS = ["Midlands", "North", "South & East", "London", "Scotland", "Wales", "Northern Ireland"];
+  function regionOf(t) { return PLACE[t] && PLACE[t][4] ? PLACE[t][4] : ""; }
   var WHEN = [["any","Any day"],["today","Today"],["weekend","This weekend"],["week","Next 7 days"],["month","Next 30 days"],["custom","Pick dates"]];
   var CATS = [["theatre","Theatre & drama"],["musical","Musicals"],["comedy","Comedy"],["music","Music"],["dance","Dance"],["family","Family & panto"],["talks","Talks & more"]];
 
@@ -333,12 +341,20 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
     $("catChips").innerHTML = '<button type="button" class="chip" data-cat="" aria-pressed="' + (F.cat === "") + '">All types</button>' +
       CATS.filter(function (c) { return have[c[0]]; }).map(function (c) { return '<button type="button" class="chip" data-cat="' + c[0] + '" aria-pressed="' + (F.cat === c[0]) + '">' + c[1] + "</button>"; }).join("");
   }
+  var venueNames = [];
   function buildVenues() {
     var counts = {};
     shows.forEach(function (s) { if (s.end >= todayIso) counts[s.theatre] = (counts[s.theatre] || 0) + 1; });
-    var names = Object.keys(counts).sort(function (a, b) { return label(a).localeCompare(label(b)); });
-    $("venue").innerHTML = '<option value="">All venues</option>' + names.map(function (n) { return '<option value="' + esc(n) + '">' + esc(label(n)) + "</option>"; }).join("");
-    $("lede").textContent = "Shows, comedy, music and pantomime at " + names.length + " venues across the UK, all in one place.";
+    venueNames = Object.keys(counts).sort(function (a, b) { return label(a).localeCompare(label(b)); });
+    var haveR = {}; venueNames.forEach(function (n) { haveR[regionOf(n)] = true; });
+    var regs = REGIONS.filter(function (r) { return haveR[r]; });
+    $("regionChips").innerHTML = regs.length > 1 ? '<button type="button" class="chip" data-region="" aria-pressed="' + (F.region === "") + '">All UK</button>' + regs.map(function (r) { return '<button type="button" class="chip" data-region="' + esc(r) + '" aria-pressed="' + (F.region === r) + '">' + esc(r) + "</button>"; }).join("") : "";
+    fillVenueList();
+    $("lede").textContent = "Shows, comedy, music and pantomime at " + venueNames.length + " venues across the UK, all in one place.";
+  }
+  function venueLabel(n) { return label(n); }
+  function fillVenueList() {
+    $("venueList").innerHTML = venueNames.filter(function (n) { return !F.region || regionOf(n) === F.region; }).map(function (n) { return '<option value="' + esc(venueLabel(n)) + '"></option>'; }).join("");
   }
   function buildAbout() {
     var none = (coverage && coverage.none) || [], part = (coverage && coverage.partial) || {}, old = [], inc = [];
@@ -357,6 +373,7 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
       if (s.end < todayIso) return false;
       if (r && (s.end < r[0] || s.start > r[1])) return false;
       if (F.venue && s.theatre !== F.venue) return false;
+      if (F.region && regionOf(s.theatre) !== F.region) return false;
       if (F.cat && bucket(s) !== F.cat) return false;
       if (user) { var dd = dist(s.theatre); if (dd == null || dd > radius) return false; }
       if (q && (s.title + " " + label(s.theatre) + " " + (s.genre || "")).toLowerCase().indexOf(q) < 0) return false;
@@ -369,7 +386,7 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
     });
     return { rows: rows, byNear: byNear };
   }
-  function anyFilter() { return F.q || F.venue || F.cat || F.when !== "any" || user; }
+  function anyFilter() { return F.q || F.venue || F.region || F.cat || F.when !== "any" || user; }
   function render() {
     var res = filtered(), rows = res.rows, n = rows.length;
     $("count").innerHTML = n + (n === 1 ? " show" : " shows") + (user ? "<small>within " + $("radius").value + " miles</small>" : "");
@@ -398,8 +415,8 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
   }
   function refresh() { visible = 40; render(); }
   function clearAll() {
-    F = { q: "", venue: "", cat: "", when: "any" };
-    $("q").value = ""; $("venue").value = ""; $("from").value = ""; $("to").value = ""; $("dates").hidden = true;
+    F = { q: "", venue: "", region: "", cat: "", when: "any" };
+    $("q").value = ""; $("venue").value = ""; buildVenues(); $("from").value = ""; $("to").value = ""; $("dates").hidden = true;
     clearUser(true); buildChips(); refresh();
   }
 
@@ -443,7 +460,17 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
     F.cat = b.getAttribute("data-cat"); buildChips(); refresh();
   });
   $("q").addEventListener("input", function () { F.q = $("q").value; refresh(); });
-  $("venue").addEventListener("change", function () { F.venue = $("venue").value; refresh(); });
+  $("venue").addEventListener("input", function () {
+    var v = $("venue").value.trim().toLowerCase(), hit = "";
+    if (v) venueNames.forEach(function (n) { if (venueLabel(n).toLowerCase() === v || label(n).toLowerCase() === v) hit = n; });
+    if (hit !== F.venue) { F.venue = hit; refresh(); }
+  });
+  $("regionChips").addEventListener("click", function (e) {
+    var b = e.target.closest("[data-region]"); if (!b) return;
+    F.region = b.getAttribute("data-region");
+    if (F.venue && F.region && regionOf(F.venue) !== F.region) { F.venue = ""; $("venue").value = ""; }
+    buildVenues(); refresh();
+  });
   $("from").addEventListener("input", refresh); $("to").addEventListener("input", refresh);
   $("nearBtn").addEventListener("click", function () {
     var open = $("nearPanel").hidden; $("nearPanel").hidden = !open; $("nearBtn").setAttribute("aria-expanded", open ? "true" : "false");
@@ -533,7 +560,7 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
     .then(function (r) { if (!r.ok) throw new Error("status " + r.status); return r.json(); })
     .then(function (data) {
       shows = Array.isArray(data.shows) ? data.shows : []; coverage = data.coverage || null;
-      if (data.places) Object.keys(data.places).forEach(function (k) { if (!PLACE[k]) PLACE[k] = [k, data.places[k][0], data.places[k][1], data.places[k][2]]; });
+      if (data.places) Object.keys(data.places).forEach(function (k) { if (!PLACE[k]) PLACE[k] = [k, data.places[k][0], data.places[k][1], data.places[k][2], data.places[k][3] || ""]; });
       buildChips(); buildVenues(); buildAbout(); render();
       var d = new Date(data.updated);
       $("stamp").textContent = isNaN(d) ? "" : "Listings last checked " + d.getDate() + " " + MONTHS[d.getMonth()] + " at " + String(d.getHours()).padStart(2, "0") + ":" + String(d.getMinutes()).padStart(2, "0") + ".";

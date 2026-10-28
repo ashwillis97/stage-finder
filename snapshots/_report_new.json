@@ -1,20 +1,263 @@
 [
  {
-  "venue": "New Theatre Cardiff",
-  "url": "https://trafalgartickets.com/new-theatre-cardiff/en-GB/whats-on",
-  "file": "new-theatre-cardiff-cardiff-1.html",
+  "venue": "P&J Live",
+  "url": "https://www.pandjlive.com/events/entertainment/",
+  "file": "p-j-live-aberdeen-1.html",
   "status": 200,
   "error": null,
-  "bytes": 108499,
-  "final_url": "https://trafalgartickets.com/new-theatre-cardiff/en-GB/whats-on"
+  "bytes": 77200,
+  "final_url": "https://www.pandjlive.com/events/entertainment/"
  },
  {
-  "venue": "Adelphi Theatre",
-  "url": "https://lwtheatres.co.uk/whats-on/?event-venue=adelphi-theatre",
-  "file": "adelphi-theatre-london-1.html",
+  "venue": "Utilita Arena Birmingham",
+  "url": "https://www.utilitaarenabham.co.uk/events-tickets",
+  "file": "utilita-arena-birmingham-birmingham-1.html",
   "status": 200,
   "error": null,
-  "bytes": 115740,
-  "final_url": "https://lwtheatres.co.uk/whats-on/?event-venue=adelphi-theatre"
+  "bytes": 200660,
+  "final_url": "https://www.utilitaarenabham.co.uk/events-tickets"
+ },
+ {
+  "venue": "bp pulse LIVE",
+  "url": "https://www.bppulselive.co.uk/events-tickets",
+  "file": "bp-pulse-live-birmingham-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 209442,
+  "final_url": "https://www.bppulselive.co.uk/events-tickets"
+ },
+ {
+  "venue": "Blackburn King George's Hall",
+  "url": "https://bwdvenues.com/whats-on/",
+  "file": "blackburn-king-george-s-hall-blackburn-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 96638,
+  "final_url": "https://bwdvenues.com/whats-on/"
+ },
+ {
+  "venue": "Bradford Live",
+  "url": "https://trafalgartickets.com/bradford-live-bradford/en-GB/whats-on",
+  "file": "bradford-live-bradford-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 93535,
+  "final_url": "https://trafalgartickets.com/bradford-live-bradford/en-GB/whats-on"
+ },
+ {
+  "venue": "Theatr Brycheiniog",
+  "url": "https://www.brycheiniog.co.uk/en/whats-on",
+  "file": "theatr-brycheiniog-brecon-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 228140,
+  "final_url": "https://www.brycheiniog.co.uk/en/whats-on"
+ },
+ {
+  "venue": "Churchill Theatre",
+  "url": "https://trafalgartickets.com/churchill-theatre-bromley/en-GB/whats-on",
+  "file": "churchill-theatre-bromley-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 109713,
+  "final_url": "https://trafalgartickets.com/churchill-theatre-bromley/en-GB/whats-on"
+ },
+ {
+  "venue": "The Apex",
+  "url": "https://www.theapex.co.uk/whats-on/",
+  "file": "the-apex-bury-st-edmunds-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 48072,
+  "final_url": "https://www.theapex.co.uk/whats-on/"
+ },
+ {
+  "venue": "Cambridge Corn Exchange",
+  "url": "https://www.cornex.co.uk/events",
+  "file": "cambridge-corn-exchange-cambridge-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 110308,
+  "final_url": "https://www.cornex.co.uk/events"
+ },
+ {
+  "venue": "Coventry Building Society Arena",
+  "url": "https://www.coventrybuildingsocietyarena.co.uk/whats-on-main",
+  "file": "coventry-building-society-arena-coventry-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 258237,
+  "final_url": "https://www.coventrybuildingsocietyarena.co.uk/whats-on-main"
+ },
+ {
+  "venue": "The Hawth",
+  "url": "https://www.parkwoodtheatres.co.uk/the-hawth/whats-on",
+  "file": "the-hawth-crawley-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 71537,
+  "final_url": "https://www.parkwoodtheatres.co.uk/the-hawth/whats-on"
+ },
+ {
+  "venue": "Doncaster Dome",
+  "url": "https://www.dclt.co.uk/the-dome/live-events/",
+  "file": "doncaster-dome-doncaster-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 162834,
+  "final_url": "https://www.dclt.co.uk/the-dome/live-events/"
+ },
+ {
+  "venue": "Caird Hall",
+  "url": "https://www.leisureandculturedundee.com/events/venue/37",
+  "file": "caird-hall-dundee-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 81320,
+  "final_url": "https://www.leisureandculturedundee.com/events/venue/37"
+ },
+ {
+  "venue": "Edinburgh Corn Exchange",
+  "url": "https://www.edinburghcornexchange.co.uk/whats-on",
+  "file": "edinburgh-corn-exchange-edinburgh-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 185282,
+  "final_url": "https://www.edinburghcornexchange.co.uk/whats-on"
+ },
+ {
+  "venue": "Leas Cliff Hall",
+  "url": "https://www.atgtickets.com/venues/leas-cliff-hall/whats-on/",
+  "file": "leas-cliff-hall-folkestone-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 222408,
+  "final_url": "https://www.atgtickets.com/venues/leas-cliff-hall/whats-on/"
+ },
+ {
+  "venue": "Glasgow Royal Concert Hall",
+  "url": "https://www.glasgowlife.org.uk/whats-on?venue=Glasgow%20Royal%20Concert%20Hall&channel=All",
+  "file": "glasgow-royal-concert-hall-glasgow-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 102766,
+  "final_url": "https://www.glasgowlife.org.uk/whats-on?venue=Glasgow%20Royal%20Concert%20Hall&channel=All"
+ },
+ {
+  "venue": "The Piece Hall",
+  "url": "https://www.thepiecehall.co.uk/culture/",
+  "file": "the-piece-hall-halifax-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 72301,
+  "final_url": "https://www.thepiecehall.co.uk/culture/"
+ },
+ {
+  "venue": "First Direct Arena",
+  "url": "https://www.firstdirectbankarena.com/events",
+  "file": "first-direct-arena-leeds-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 101391,
+  "final_url": "https://www.firstdirectbankarena.com/events"
+ },
+ {
+  "venue": "Eventim Apollo",
+  "url": "https://www.eventimapollo.com/events/",
+  "file": "eventim-apollo-london-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 573747,
+  "final_url": "https://www.eventimapollo.com/events/"
+ },
+ {
+  "venue": "The Old Vic",
+  "url": "https://www.oldvictheatre.com/stage/",
+  "file": "the-old-vic-london-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 161192,
+  "final_url": "https://www.oldvictheatre.com/stage/"
+ },
+ {
+  "venue": "AO Arena",
+  "url": "https://www.ao-arena.com/events",
+  "file": "ao-arena-manchester-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 122977,
+  "final_url": "https://www.ao-arena.com/events"
+ },
+ {
+  "venue": "Manchester Central",
+  "url": "https://www.manchestercentral.co.uk/events",
+  "file": "manchester-central-manchester-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 113995,
+  "final_url": "https://www.manchestercentral.co.uk/events"
+ },
+ {
+  "venue": "Middlesbrough Town Hall",
+  "url": "https://boxoffice.middlesbrough.gov.uk",
+  "file": "middlesbrough-town-hall-middlesbrough-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 80422,
+  "final_url": "https://boxoffice.middlesbrough.gov.uk/"
+ },
+ {
+  "venue": "Winter Gardens",
+  "url": "https://morecambewintergardens.com/whats-on/",
+  "file": "winter-gardens-morecambe-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 104451,
+  "final_url": "https://morecambewintergardens.com/whats-on/"
+ },
+ {
+  "venue": "Newcastle Utilita Arena",
+  "url": "https://www.utilitaarena.co.uk/events",
+  "file": "newcastle-utilita-arena-newcastle-upon-tyne-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 93094,
+  "final_url": "https://www.utilitaarena.co.uk/events"
+ },
+ {
+  "venue": "Preston Guild Hall",
+  "url": "https://www.guildhallpreston.co.uk/article/8839/What-s-On",
+  "file": "preston-guild-hall-preston-1.html",
+  "status": 403,
+  "error": null,
+  "bytes": 2494,
+  "final_url": "https://www.guildhallpreston.co.uk/article/8839/What-s-On"
+ },
+ {
+  "venue": "Sheffield City Hall",
+  "url": "https://www.sheffieldcityhall.co.uk/events/",
+  "file": "sheffield-city-hall-sheffield-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 322845,
+  "final_url": "https://www.sheffieldcityhall.co.uk/events/"
+ },
+ {
+  "venue": "Watford Colosseum",
+  "url": "https://www.watfordcolosseum.co.uk/events/",
+  "file": "watford-colosseum-watford-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 204886,
+  "final_url": "https://www.watfordcolosseum.co.uk/events/"
+ },
+ {
+  "venue": "The Civic at The Halls",
+  "url": "https://www.thehallswolverhampton.co.uk/events/",
+  "file": "the-civic-at-the-halls-wolverhampton-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 413055,
+  "final_url": "https://www.thehallswolverhampton.co.uk/events/"
  }
 ]

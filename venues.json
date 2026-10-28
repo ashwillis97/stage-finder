@@ -1532,6 +1532,157 @@
     "https://boxoffice.middlesbrough.gov.uk"
    ],
    "reader": "generic"
+  },
+  {
+   "name": "bp pulse LIVE",
+   "city": "Birmingham",
+   "postcode": "B40 1NT",
+   "slug": "bp-pulse-live-birmingham",
+   "urls": [
+    "https://www.bppulselive.co.uk/events-tickets"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "St George's Hall",
+   "city": "Bradford",
+   "postcode": "BD1 1HY",
+   "slug": "st-george-s-hall-bradford",
+   "urls": [
+    "https://www.bradford-theatres.co.uk/whats-on"
+   ],
+   "reader": "generic",
+   "match": "St George"
+  },
+  {
+   "name": "Wales Millennium Centre",
+   "city": "Cardiff",
+   "postcode": "CF10 5AL",
+   "slug": "wales-millennium-centre-cardiff",
+   "urls": [
+    "https://www.wmc.org.uk/en/whats-on"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "Westpoint Exeter",
+   "city": "Exeter",
+   "postcode": "EX5 1DJ",
+   "slug": "westpoint-exeter-exeter",
+   "urls": [
+    "https://www.westpointexeter.co.uk/whats-on/"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "Connexin Live",
+   "city": "Hull",
+   "postcode": "HU3 4DL",
+   "slug": "connexin-live-hull",
+   "urls": [
+    "https://www.connexinlivehull.com/whats-on/"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "First Direct Arena",
+   "city": "Leeds",
+   "postcode": "LS2 8BY",
+   "slug": "first-direct-arena-leeds",
+   "urls": [
+    "https://www.firstdirectbankarena.com/events"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "ExCeL London",
+   "city": "London",
+   "postcode": "E16 1XL",
+   "slug": "excel-london-london",
+   "urls": [
+    "https://www.excel.london/whats-on"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "AO Arena",
+   "city": "Manchester",
+   "postcode": "M3 1AR",
+   "slug": "ao-arena-manchester",
+   "urls": [
+    "https://www.ao-arena.com/events"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "Newcastle Utilita Arena",
+   "city": "Newcastle upon Tyne",
+   "postcode": "NE4 7NA",
+   "slug": "newcastle-utilita-arena-newcastle-upon-tyne",
+   "urls": [
+    "https://www.utilitaarena.co.uk/events"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "The Baths Hall",
+   "city": "Scunthorpe",
+   "postcode": "DN15 7RG",
+   "slug": "the-baths-hall-scunthorpe",
+   "urls": [
+    "https://www.scunthorpetheatres.co.uk/whats-on"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "Sheffield City Hall",
+   "city": "Sheffield",
+   "postcode": "S1 2JA",
+   "slug": "sheffield-city-hall-sheffield",
+   "urls": [
+    "https://www.sheffieldcityhall.co.uk/events/"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "Utilita Arena Sheffield",
+   "city": "Sheffield",
+   "postcode": "S9 2DF",
+   "slug": "utilita-arena-sheffield-sheffield",
+   "urls": [
+    "https://www.utilitaarenasheffield.co.uk/whats-on/"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "Watford Colosseum",
+   "city": "Watford",
+   "postcode": "WD17 3JN",
+   "slug": "watford-colosseum-watford",
+   "urls": [
+    "https://www.watfordcolosseum.co.uk/events/"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "The Civic at The Halls",
+   "city": "Wolverhampton",
+   "postcode": "WV1 1RD",
+   "slug": "the-civic-at-the-halls-wolverhampton",
+   "urls": [
+    "https://www.thehallswolverhampton.co.uk/events/"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "Winter Gardens",
+   "city": "Morecambe",
+   "postcode": "LA4 4BU",
+   "slug": "winter-gardens-morecambe",
+   "urls": [
+    "https://morecambewintergardens.com/whats-on/"
+   ],
+   "reader": "generic"
   }
  ]
 }

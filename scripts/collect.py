@@ -486,55 +486,84 @@ for _v in _venue_files():
 from urllib.parse import urljoin
 
 DAY=r"(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?,?\s*"
-DATE_RX=re.compile(r"(?:"+DAY+r")?\d{1,2}(?:st|nd|rd|th)?(?:\s*(?:&|-|–|to)\s*(?:"+DAY+r")?\d{1,2}(?:st|nd|rd|th)?)?\s+(?:"+MONTH_RE+r")[a-z]*\.?(?:,?\s+20\d\d)?(?:\s*(?:-|–|to)\s*(?:"+DAY+r")?\d{1,2}(?:st|nd|rd|th)?\s+(?:"+MONTH_RE+r")[a-z]*\.?(?:,?\s+20\d\d)?)?",re.I)
-NOISE=re.compile(r"^(book tickets|contact us|buy now|enquire.*|(mon|tue|wed|thu|fri|sat|sun)[a-z]*\.?,?\s+\d{1,2}[:.]\d{2}.*|more times|\d+ more.*|up next|the|view all|see all|load more|show more|what.?s on|christmas|pantomime|panto|halloween|music|comedy|theatre|family|dance|talks?|film|musical|kids|children|classical|opera|ballet|events?|tickets? (&|and) info|tickets? & info|on sale.*|\d{1,2}[:.]\d{2}\s*(am|pm)?|sold out|low availability|selling fast|last tickets|few tickets left|new|on sale now|just announced|book now|buy tickets?|more info(rmation)?|find out more|view (event|show|details)|read more|tickets?|book|from|£.*|free|cancelled|postponed|moved|rescheduled|learn more|info|details|\d+|[|,-])$",re.I)
+_DM = r"(?:"+DAY+r")?\d{1,2}(?:st|nd|rd|th)?\s+(?:"+MONTH_RE+r")[a-z]*\.?(?:\s*,?\s+20\d\d)?"
+_MD = r"(?:"+DAY+r")?(?:"+MONTH_RE+r")[a-z]*\.?\s+\d{1,2}(?:st|nd|rd|th)?(?!\d)(?:\s*,?\s+20\d\d)?"
+_DM0 = r"(?:"+DAY+r")?\d{1,2}(?:st|nd|rd|th)?(?:\s*(?:&|-|–|to)\s*(?:"+DAY+r")?\d{1,2}(?:st|nd|rd|th)?)?\s+(?:"+MONTH_RE+r")[a-z]*\.?(?:\s*,?\s+20\d\d)?"
+DATE_RX=re.compile(r"(?:"+_DM0+r"(?:\s*(?:-|–|to)\s*"+_DM+r")?|"+_MD+r"(?:\s*(?:-|–|to)\s*"+_MD+r")?)",re.I)
+NOISE=re.compile(r"^(show info|buy premium.*|contact our sales team|book tickets|contact us|buy now|enquire.*|(mon|tue|wed|thu|fri|sat|sun)[a-z]*\.?,?\s+\d{1,2}[:.]\d{2}.*|more times|\d+ more.*|up next|the|view all|see all|load more|show more|what.?s on|christmas|pantomime|panto|halloween|music|comedy|theatre|family|dance|talks?|film|musical|kids|children|classical|opera|ballet|events?|tickets? (&|and) info|tickets? & info|on sale.*|\d{1,2}[:.]\d{2}\s*(am|pm)?|sold out|low availability|selling fast|last tickets|few tickets left|new|on sale now|just announced|book now|buy tickets?|more info(rmation)?|find out more|view (event|show|details)|read more|tickets?|book|from|£.*|free|cancelled|postponed|moved|rescheduled|learn more|info|details|\d+|[|,-])$",re.I)
 def card_for(el):
-    c=el
-    for _ in range(6):
-        c=c.parent
-        if c is None or c.name in("body","html","main"): return None
-        links={a["href"] for a in c.find_all("a",href=True) if not a["href"].startswith(("#","mailto","tel","javascript"))}
-        if links and len(c.get_text(" ",strip=True))<700:
+    c = el
+    for _ in range(7):
+        c = c.parent
+        if c is None or c.name in ("body", "html", "main"):
+            return None
+        links = {a["href"] for a in c.find_all("a", href=True) if not a["href"].startswith(("#", "mailto", "tel", "javascript"))}
+        if c.name == "a" and c.get("href"):
+            links.add(c["href"])
+        n = len(c.get_text(" ", strip=True))
+        if links and 30 < n < 700:
             return c
     return None
-def read_generic(prefix,theatre,base,match=None):
-    out=[];seen=set()
+
+
+def _jt(el):
+    return re.sub(r"\s+,", ",", re.sub(r"\s+", " ", el.get_text(" ", strip=True)))
+
+
+def read_generic(prefix, theatre, base, match=None):
+    out, seen = [], set()
     for s in each(prefix):
-        for tag in ("nav","header","footer","script","style"):
-            for t in s.find_all(tag): t.decompose()
-        for node in s.find_all(string=DATE_RX):
-            el=node.parent
-            c=card_for(el)
-            if c is None: continue
-            if id(c) in seen: continue
+        for tag in ("nav", "header", "footer", "script", "style"):
+            for t in s.find_all(tag):
+                t.decompose()
+        for el in s.find_all(True):
+            tx = _jt(el)
+            if len(tx) > 90 or not DATE_RX.search(tx):
+                continue
+            if any(len(_jt(ch)) <= 90 and DATE_RX.search(_jt(ch)) for ch in el.find_all(True)):
+                continue
+            c = card_for(el)
+            if c is None or id(c) in seen:
+                continue
             seen.add(id(c))
-            txt=c.get_text("|",strip=True)
-            if match and match.lower() not in txt.lower(): continue
-            m=DATE_RX.search(txt)
-            if not m: continue
-            rng=parse_dates(m.group(0))
-            if not rng: continue
-            # title: heading, else first non-noise text part that is not date
-            t=None
+            txt = c.get_text("|", strip=True)
+            if match and match.lower() not in txt.lower():
+                continue
+            rng = parse_dates(DATE_RX.search(tx).group(0))
+            if not rng:
+                continue
+            t = None
             for h in c.find_all(re.compile("^h[1-6]$")):
-                tt=text(h)
-                if tt and not DATE_RX.fullmatch(tt) and not NOISE.match(tt): t=tt;break
+                tt = text(h)
+                if tt and not DATE_RX.fullmatch(tt) and not NOISE.match(tt):
+                    t = tt
+                    break
             if not t:
-                for p in [x.strip() for x in txt.split("|")]:
-                    if p and not NOISE.match(p) and not DATE_RX.search(p) and len(p)>2: t=p;break
-            if not t or len(t) < 4: continue
-            href=None
-            for a in c.find_all("a",href=True):
-                h=a["href"]
-                if h.startswith(("#","mailto","tel","javascript")): continue
-                href=h
-                if text(a) and not NOISE.match(text(a)): break
-            if not href: continue
-            if GENERIC_SKIP.search(t) or t.lower() in (theatre.lower(), (match or '').lower()): continue
-            seen2=(t,rng)
-            if seen2 in seen: continue
-            seen.add(seen2)
-            out.append(row(t,theatre,rng,urljoin(base,href)))
+                for p_ in [x.strip() for x in txt.split("|")]:
+                    if p_ and not NOISE.match(p_) and not DATE_RX.search(p_) and len(p_) > 2:
+                        t = p_
+                        break
+            if not t or len(t) < 4:
+                continue
+            href = None
+            anc = c if c.name == "a" else c.find_parent("a", href=True)
+            cand = ([anc] if anc else []) + c.find_all("a", href=True)
+            for a_ in cand:
+                h_ = a_["href"]
+                if h_.startswith(("#", "mailto", "tel", "javascript")):
+                    continue
+                href = h_
+                if text(a_) and not NOISE.match(text(a_)):
+                    break
+            if not href:
+                continue
+            if GENERIC_SKIP.search(t) or t.lower() in (theatre.lower(), (match or "").lower()):
+                continue
+            key = (t, rng)
+            if key in seen:
+                continue
+            seen.add(key)
+            out.append(row(t, theatre, rng, urljoin(base, href)))
     return merge_runs([r for r in out if r])
 
 

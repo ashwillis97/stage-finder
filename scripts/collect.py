@@ -451,6 +451,67 @@ def read_nimax(prefix, theatre, match=None):
     return merge_runs(out)
 
 
+def _canon(s, fallback):
+    for sel, attr in (('link[rel="canonical"]', "href"), ('meta[property="og:url"]', "content")):
+        el = s.select_one(sel)
+        if el and el.get(attr):
+            return el[attr]
+    return fallback
+
+
+def read_atg_show(prefix, theatre):
+    """ATG West End theatres: one page per show with 'Until 14 Mar 2027'."""
+    out = []
+    for f in files(prefix):
+        if f.endswith("-1.html"):
+            continue
+        s = soup(f)
+        if s is None or not s.title:
+            continue
+        title = re.sub(r"\s*Tickets\s*\|.*$", "", s.title.get_text()).strip()
+        m = re.search(r"(?:until|booking until)\s+(?:\w{3}\s+)?(\d{1,2}\s+\w{3,9}\s+20\d\d)", s.get_text(" ", strip=True), re.I)
+        rng = parse_dates(m.group(1)) if m else None
+        if rng and title:
+            out.append(row(title, theatre, (min(TODAY, rng[1]), rng[1]), _canon(s, "https://www.atgtickets.com/")))
+    return out
+
+
+DELFONT_VENUES = ["Aldwych", "Cambridge Theatre", "Gillian Lynne", "His Majesty", "Lyceum", "Novello", "Noël Coward", "Prince Edward", "Sondheim", "Wyndham"]
+DELFONT_NAMES = {"wyndham's theatre": "Wyndham's Theatre", "his majesty's theatre": "His Majesty's Theatre", "noël coward theatre": "Noël Coward Theatre", "prince edward theatre": "Prince Edward Theatre", "sondheim theatre": "Sondheim Theatre", "novello theatre": "Novello Theatre", "lyceum theatre": "Lyceum Theatre", "aldwych theatre": "Aldwych Theatre", "cambridge theatre": "Cambridge Theatre", "gillian lynne theatre": "Gillian Lynne Theatre"}
+
+
+def read_delfont(prefix, theatre):
+    """delfontmackintosh.co.uk show pages: '<dates> | <theatre> | <type> | <title>'."""
+    out = []
+    for f in files(prefix):
+        if f.endswith("-1.html"):
+            continue
+        s = soup(f)
+        if s is None or not s.title:
+            continue
+        title = s.title.get_text().split("|")[0].strip()
+        for t in s(["script", "style", "nav", "header", "footer"]):
+            t.decompose()
+        parts = [x.strip() for x in s.get_text("|", strip=True).split("|") if x.strip()]
+        venue = next((x for x in parts[:80] if any(v.lower() in x.lower() and len(x) < 40 for v in DELFONT_VENUES)), None)
+        if not venue:
+            continue
+        venue = DELFONT_NAMES.get(venue.lower(), venue)
+        rng = None
+        for x in parts[:80]:
+            m = re.match(r"booking until\s+(\d{1,2}\s+\w+\s+20\d\d)", x, re.I)
+            if m:
+                end = parse_dates(m.group(1))
+                rng = (min(TODAY, end[1]), end[1]) if end else None
+                break
+            if DATE_RX.search(x) and len(x) < 40 and not re.search(r"group|booking", x, re.I):
+                rng = parse_dates(DATE_RX.search(x).group(0))
+                break
+        if rng:
+            out.append(row(title, venue, rng, _canon(s, "https://www.delfontmackintosh.co.uk/")))
+    return out
+
+
 def _ld_date(s):
     if not s:
         return None
@@ -504,8 +565,8 @@ def read_jsonld(prefix, theatre, match=None, fallback_url=""):
 
 
 for _v in _venue_files():
-    if _v.get("reader") in ("lw", "trafalgar", "nimax") and _v["name"] not in READERS:
-        _fn = {"lw": read_lw, "trafalgar": read_trafalgar, "nimax": read_nimax}[_v["reader"]]
+    if _v.get("reader") in ("lw", "trafalgar", "nimax", "atgshow", "delfont") and _v["name"] not in READERS:
+        _fn = {"lw": read_lw, "trafalgar": read_trafalgar, "nimax": read_nimax, "atgshow": read_atg_show, "delfont": read_delfont}[_v["reader"]]
         READERS[_v["name"]] = (lambda f=_fn, s=_v["slug"], n=_v["name"], m=_v.get("match"): f(s, n, m) if f in (read_lw, read_nimax) else f(s, n))
 
 for _v in _venue_files():

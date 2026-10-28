@@ -1683,6 +1683,52 @@
     "https://morecambewintergardens.com/whats-on/"
    ],
    "reader": "generic"
+  },
+  {
+   "name": "Duke of York's Theatre",
+   "city": "London",
+   "postcode": "WC2N 4BG",
+   "reader": "atgshow",
+   "slug": "duke-of-york-s-theatre-london",
+   "urls": [
+    "https://www.atgtickets.com/venues/duke-of-yorks-theatre/whats-on/"
+   ],
+   "follow": "atgtickets\\.com/shows/[^/]+/[^/]+/?$",
+   "max": 8
+  },
+  {
+   "name": "Gielgud Theatre",
+   "city": "London",
+   "postcode": "W1D 6AR",
+   "reader": "atgshow",
+   "slug": "gielgud-theatre-london",
+   "urls": [
+    "https://www.atgtickets.com/venues/gielgud-theatre/whats-on/"
+   ],
+   "follow": "atgtickets\\.com/shows/[^/]+/[^/]+/?$",
+   "max": 8
+  },
+  {
+   "name": "Prince of Wales Theatre",
+   "city": "London",
+   "postcode": "W1D 6AS",
+   "reader": "atgshow",
+   "slug": "prince-of-wales-theatre-london",
+   "urls": [
+    "https://www.atgtickets.com/venues/prince-of-wales-theatre/whats-on/"
+   ],
+   "follow": "atgtickets\\.com/shows/[^/]+/[^/]+/?$",
+   "max": 8
+  },
+  {
+   "name": "Delfont Mackintosh shows",
+   "slug": "delfont-mackintosh",
+   "urls": [
+    "https://www.delfontmackintosh.co.uk/whats-on"
+   ],
+   "reader": "delfont",
+   "follow": "delfontmackintosh\\.co\\.uk/whats-on/[^/]+/?$",
+   "max": 30
   }
  ]
 }

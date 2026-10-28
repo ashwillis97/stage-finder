@@ -149,7 +149,7 @@
    "city": "London",
    "postcode": "SW1V 1LG",
    "guess": true,
-   "reader": "atg",
+   "reader": "atgshow",
    "slug": "apollo-victoria-theatre-london",
    "urls": [
     "https://www.atgtickets.com/venues/apollo-victoria-theatre/whats-on/"
@@ -191,20 +191,6 @@
    "reader": "generic"
   },
   {
-   "name": "Duke of York's Theatre",
-   "city": "London",
-   "postcode": "WC2N 4BG",
-   "guess": true,
-   "reader": "atg",
-   "slug": "duke-of-york-s-theatre-london",
-   "urls": [
-    "https://www.atgtickets.com/venues/duke-of-yorks-theatre/whats-on/"
-   ],
-   "follow": "atgtickets\\.com/shows/[^/]+/[^/]+/?$",
-   "max": 8,
-   "retry": true
-  },
-  {
    "name": "Fortune Theatre",
    "city": "London",
    "postcode": "WC2B 5HH",
@@ -215,20 +201,6 @@
    ],
    "reader": "jsonld",
    "match": "Fortune Theatre"
-  },
-  {
-   "name": "Gielgud Theatre",
-   "city": "London",
-   "postcode": "W1D 6AR",
-   "guess": true,
-   "reader": "atg",
-   "slug": "gielgud-theatre-london",
-   "urls": [
-    "https://www.atgtickets.com/venues/gielgud-theatre/whats-on/"
-   ],
-   "follow": "atgtickets\\.com/shows/[^/]+/[^/]+/?$",
-   "max": 8,
-   "retry": true
   },
   {
    "name": "Gillian Lynne Theatre",
@@ -326,20 +298,6 @@
    ]
   },
   {
-   "name": "Prince of Wales Theatre",
-   "city": "London",
-   "postcode": "W1D 6AS",
-   "guess": true,
-   "reader": "atg",
-   "slug": "prince-of-wales-theatre-london",
-   "urls": [
-    "https://www.atgtickets.com/venues/prince-of-wales-theatre/whats-on/"
-   ],
-   "follow": "atgtickets\\.com/shows/[^/]+/[^/]+/?$",
-   "max": 8,
-   "retry": true
-  },
-  {
    "name": "Royal Albert Hall",
    "city": "London",
    "postcode": "SW7 2AP",
@@ -411,7 +369,7 @@
    "city": "London",
    "postcode": "SW1E 5EA",
    "guess": true,
-   "reader": "atg",
+   "reader": "atgshow",
    "slug": "victoria-palace-theatre-london",
    "urls": [
     "https://www.atgtickets.com/venues/victoria-palace-theatre/whats-on/"
@@ -562,18 +520,6 @@
     "https://www.pandjlive.com/events/entertainment/"
    ],
    "reader": "generic",
-   "guess": true
-  },
-  {
-   "name": "Delfont Mackintosh shows",
-   "slug": "delfont-mackintosh",
-   "urls": [
-    "https://www.delfontmackintosh.co.uk/whats-on"
-   ],
-   "reader": "delfont",
-   "follow": "delfontmackintosh\\.co\\.uk/whats-on/[^/]+/?$",
-   "max": 30,
-   "retry": true,
    "guess": true
   }
  ]

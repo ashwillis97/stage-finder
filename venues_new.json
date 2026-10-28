@@ -332,17 +332,6 @@
    ]
   },
   {
-   "name": "New Theatre Cardiff",
-   "city": "Cardiff",
-   "postcode": "CF10 1FA",
-   "guess": true,
-   "slug": "new-theatre-cardiff-cardiff",
-   "urls": [
-    "https://trafalgartickets.com/new-theatre-cardiff/en-GB/whats-on"
-   ],
-   "retry": true
-  },
-  {
    "name": "Wales Millennium Centre",
    "city": "Cardiff",
    "postcode": "CF10 5AL",
@@ -781,17 +770,6 @@
    "urls": [
     "https://www.abbaarena.com/"
    ]
-  },
-  {
-   "name": "Adelphi Theatre",
-   "city": "London",
-   "postcode": "WC2R 0NS",
-   "guess": true,
-   "slug": "adelphi-theatre-london",
-   "urls": [
-    "https://lwtheatres.co.uk/whats-on/?event-venue=adelphi-theatre"
-   ],
-   "retry": true
   },
   {
    "name": "Aldwych Theatre",

@@ -379,6 +379,44 @@ for _v in _venue_files():  # venues flagged reader=atg need no custom code
         READERS[_v["name"]] = (lambda s=_v["slug"], n=_v["name"]: read_atg(s, n))
 
 
+def read_lw(prefix, theatre):
+    """lwtheatres.co.uk cards: title | date range | venue."""
+    out, seen = [], set()
+    for s in each(prefix):
+        for a in s.find_all("a", href=True):
+            if "/whats-on/" not in a["href"] or a["href"].rstrip("/").endswith(("whats-on", "?all")):
+                continue
+            parts = [x.strip() for x in a.get_text("|", strip=True).split("|") if x.strip()]
+            if len(parts) < 3 or theatre.lower() not in parts[-1].lower():
+                continue
+            rng = parse_dates(parts[1])
+            key = (parts[0], parts[1])
+            if rng and key not in seen:
+                seen.add(key)
+                out.append(row(parts[0], theatre, rng, absu("https://lwtheatres.co.uk", a["href"])))
+    return out
+
+
+def read_trafalgar(prefix, theatre):
+    """trafalgartickets.com venue pages: [badge] | category | title | date parts | from | price."""
+    out = []
+    for s in each(prefix):
+        for a in s.find_all("a", href=True):
+            if "/event/" not in a["href"]:
+                continue
+            parts = [x.strip() for x in a.get_text("|", strip=True).split("|") if x.strip() and not BADGE.match(x.strip())]
+            if "from" not in parts or len(parts) < 4:
+                continue
+            parts = parts[:parts.index("from")]
+            m = next((i for i, x in enumerate(parts) if re.match(r"(Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?,?\s+\d{1,2}\b", x)), None)
+            if not m or m < 1:
+                continue
+            title = parts[m - 1]
+            genre = parts[m - 2] if m >= 2 else ""
+            out.append(row(title, theatre, parse_dates(" ".join(parts[m:])), absu("https://trafalgartickets.com", a["href"]), genre))
+    return out
+
+
 def _ld_date(s):
     if not s:
         return None
@@ -430,6 +468,11 @@ def read_jsonld(prefix, theatre, match=None, fallback_url=""):
         g["url"] = g["url"] or o.get("url") or ""
     return [row(t, theatre, (g["a"], max(g["a"], g["b"])), g["url"] or fallback_url) for t, g in groups.items()]
 
+
+for _v in _venue_files():
+    if _v.get("reader") in ("lw", "trafalgar") and _v["name"] not in READERS:
+        _fn = read_lw if _v["reader"] == "lw" else read_trafalgar
+        READERS[_v["name"]] = (lambda f=_fn, s=_v["slug"], n=_v["name"]: f(s, n))
 
 for _v in _venue_files():
     if _v.get("reader") == "jsonld" and _v["name"] not in READERS:

@@ -512,6 +512,26 @@
    "urls": [
     "https://www.atgtickets.com/venues/woking-theatre/whats-on/"
    ]
+  },
+  {
+   "name": "Adelphi Theatre",
+   "city": "London",
+   "postcode": "WC2R 0NS",
+   "slug": "adelphi-theatre-london",
+   "urls": [
+    "https://lwtheatres.co.uk/whats-on/?event-venue=adelphi-theatre"
+   ],
+   "reader": "lw"
+  },
+  {
+   "name": "New Theatre Cardiff",
+   "city": "Cardiff",
+   "postcode": "CF10 1FA",
+   "slug": "new-theatre-cardiff-cardiff",
+   "urls": [
+    "https://trafalgartickets.com/new-theatre-cardiff/en-GB/whats-on"
+   ],
+   "reader": "trafalgar"
   }
  ]
 }

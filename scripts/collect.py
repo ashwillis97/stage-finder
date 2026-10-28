@@ -417,6 +417,40 @@ def read_trafalgar(prefix, theatre):
     return out
 
 
+def read_nimax(prefix, theatre, match=None):
+    """nimaxtheatres.com: cards carry the run dates, the page's schema.org data says which theatre each show is at."""
+    out, venue_of = [], {}
+    for s in each(prefix):
+        for tag in s.find_all("script", type="application/ld+json"):
+            try:
+                data = json.loads(tag.string or "")
+            except ValueError:
+                continue
+            stack = [data]
+            while stack:
+                o = stack.pop()
+                if isinstance(o, list):
+                    stack.extend(o)
+                elif isinstance(o, dict):
+                    loc = o.get("location")
+                    if o.get("url") and isinstance(loc, dict) and loc.get("name"):
+                        venue_of[o["url"].rstrip("/")] = loc["name"]
+                    stack.extend(v for v in o.values() if isinstance(v, (list, dict)))
+    for s in each(prefix):
+        for a in s.find_all("a", href=True):
+            if "/shows/" not in a["href"]:
+                continue
+            parts = [x.strip() for x in a.get_text("|", strip=True).split("|") if x.strip()]
+            if len(parts) < 4 or parts[2] not in ("–", "-"):
+                continue
+            url = absu("https://nimaxtheatres.com", a["href"])
+            ven = venue_of.get(url.rstrip("/"), "")
+            if (match or theatre).lower() not in ven.lower():
+                continue
+            out.append(row(parts[0], theatre, parse_dates(parts[1] + " – " + parts[3]), url))
+    return merge_runs(out)
+
+
 def _ld_date(s):
     if not s:
         return None
@@ -470,9 +504,9 @@ def read_jsonld(prefix, theatre, match=None, fallback_url=""):
 
 
 for _v in _venue_files():
-    if _v.get("reader") in ("lw", "trafalgar") and _v["name"] not in READERS:
-        _fn = read_lw if _v["reader"] == "lw" else read_trafalgar
-        READERS[_v["name"]] = (lambda f=_fn, s=_v["slug"], n=_v["name"], m=_v.get("match"): f(s, n, m) if f is read_lw else f(s, n))
+    if _v.get("reader") in ("lw", "trafalgar", "nimax") and _v["name"] not in READERS:
+        _fn = {"lw": read_lw, "trafalgar": read_trafalgar, "nimax": read_nimax}[_v["reader"]]
+        READERS[_v["name"]] = (lambda f=_fn, s=_v["slug"], n=_v["name"], m=_v.get("match"): f(s, n, m) if f in (read_lw, read_nimax) else f(s, n))
 
 for _v in _venue_files():
     if _v.get("reader") == "generic" and _v["name"] not in READERS:

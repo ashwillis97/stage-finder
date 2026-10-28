@@ -78,6 +78,29 @@ with sync_playwright() as p:
                 name = f"{v['slug']}-{i}.html"
                 (out / name).write_text(html, encoding="utf-8")
                 entry["file"] = name
+                if v.get("follow") and i == 1:
+                    # also save the pages the listing links to (e.g. each show's own page, which has the venue and dates)
+                    from urllib.parse import urljoin
+                    raw = page.content()
+                    links = []
+                    for m in re.finditer(r'href="([^"#]+)"', raw):
+                        u = urljoin(page.url, m.group(1).replace("&amp;", "&"))
+                        if re.search(v["follow"], u) and u not in links:
+                            links.append(u)
+                    for n_, u in enumerate(links[: v.get("max", 30)], 2):
+                        try:
+                            pg2 = ctx.new_page()
+                            pg2.goto(u, wait_until="domcontentloaded", timeout=30000)
+                            try:
+                                pg2.wait_for_load_state("networkidle", timeout=6000)
+                            except Exception:
+                                pass
+                            hh = pg2.content()
+                            (out / f"{v['slug']}-{n_}.html").write_text(slim(hh) if NEW else hh, encoding="utf-8")
+                            report.append({"venue": v["name"], "url": u, "file": f"{v['slug']}-{n_}.html", "status": 200, "error": None, "bytes": len(hh)})
+                            pg2.close()
+                        except Exception as e:
+                            print("  follow failed", u, str(e)[:80], flush=True)
                 entry["bytes"] = len(html)
                 entry["final_url"] = page.url
             except Exception as e:

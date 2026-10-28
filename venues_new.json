@@ -8,9 +8,9 @@
    "guess": true,
    "slug": "p-j-live-aberdeen",
    "urls": [
-    "https://www.pandjlive.com/whats-on/"
+    "https://www.pandjlive.com/events/entertainment/"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "Aberystwyth Arts Centre",
@@ -30,9 +30,9 @@
    "guess": true,
    "slug": "utilita-arena-birmingham-birmingham",
    "urls": [
-    "https://www.utilitaarenabirmingham.co.uk/whats-on/"
+    "https://www.utilitaarenabham.co.uk/events-tickets"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "bp pulse LIVE",
@@ -41,9 +41,9 @@
    "guess": true,
    "slug": "bp-pulse-live-birmingham",
    "urls": [
-    "https://www.bppulselive.co.uk/whats-on/"
+    "https://www.bppulselive.co.uk/events-tickets"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "Blackburn King George's Hall",
@@ -107,9 +107,10 @@
    "guess": true,
    "slug": "bradford-live-bradford",
    "urls": [
-    "https://bradford-live.co.uk/whats-on/"
+    "https://trafalgartickets.com/bradford-live-bradford/en-GB/whats-on"
    ],
-   "reader": "generic"
+   "retry": true,
+   "reader": "trafalgar"
   },
   {
    "name": "St George's Hall",
@@ -130,9 +131,9 @@
    "guess": true,
    "slug": "theatr-brycheiniog-brecon",
    "urls": [
-    "https://brycheiniog.co.uk/whats-on/"
+    "https://www.brycheiniog.co.uk/en/whats-on"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "Churchill Theatre",
@@ -141,9 +142,10 @@
    "guess": true,
    "slug": "churchill-theatre-bromley",
    "urls": [
-    "https://www.bromleytogether.co.uk/"
+    "https://trafalgartickets.com/churchill-theatre-bromley/en-GB/whats-on"
    ],
-   "reader": "generic"
+   "retry": true,
+   "reader": "trafalgar"
   },
   {
    "name": "The Apex",
@@ -152,9 +154,9 @@
    "guess": true,
    "slug": "the-apex-bury-st-edmunds",
    "urls": [
-    "https://theapex.co.uk/whats-on/"
+    "https://www.theapex.co.uk/whats-on/"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "Cambridge Corn Exchange",
@@ -163,9 +165,9 @@
    "guess": true,
    "slug": "cambridge-corn-exchange-cambridge",
    "urls": [
-    "https://www.cornexchangenew.com/whats-on"
+    "https://www.cornex.co.uk/events"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "Wales Millennium Centre",
@@ -196,9 +198,9 @@
    "guess": true,
    "slug": "coventry-building-society-arena-coventry",
    "urls": [
-    "https://www.cbsarena.co.uk/whats-on/"
+    "https://www.coventrybuildingsocietyarena.co.uk/whats-on-main"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "The Hawth",
@@ -207,9 +209,9 @@
    "guess": true,
    "slug": "the-hawth-crawley",
    "urls": [
-    "https://www.hawth.co.uk/whats-on/"
+    "https://www.parkwoodtheatres.co.uk/the-hawth/whats-on"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "Doncaster Dome",
@@ -218,9 +220,9 @@
    "guess": true,
    "slug": "doncaster-dome-doncaster",
    "urls": [
-    "https://www.dclt.co.uk/venues/doncaster-dome/"
+    "https://www.dclt.co.uk/the-dome/live-events/"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "Caird Hall",
@@ -229,9 +231,9 @@
    "guess": true,
    "slug": "caird-hall-dundee",
    "urls": [
-    "https://www.dundeecity.gov.uk/caird-hall"
+    "https://www.leisureandculturedundee.com/events/venue/37"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "Dunfermline Alhambra Theatre",
@@ -251,20 +253,9 @@
    "guess": true,
    "slug": "edinburgh-corn-exchange-edinburgh",
    "urls": [
-    "https://www.ece.uk.com/whats-on/"
+    "https://www.edinburghcornexchange.co.uk/whats-on"
    ],
-   "reader": "generic"
-  },
-  {
-   "name": "O2 Academy Edinburgh",
-   "city": "Edinburgh",
-   "postcode": "EH1 3JT",
-   "guess": true,
-   "slug": "o2-academy-edinburgh-edinburgh",
-   "urls": [
-    "https://www.academymusicgroup.com/o2academyedinburgh/"
-   ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "Westpoint Exeter",
@@ -284,9 +275,10 @@
    "guess": true,
    "slug": "leas-cliff-hall-folkestone",
    "urls": [
-    "https://www.leascliffhall.co.uk/whats-on/"
+    "https://www.atgtickets.com/venues/leas-cliff-hall/whats-on/"
    ],
-   "reader": "generic"
+   "retry": true,
+   "reader": "atg"
   },
   {
    "name": "Glasgow Royal Concert Hall",
@@ -295,9 +287,9 @@
    "guess": true,
    "slug": "glasgow-royal-concert-hall-glasgow",
    "urls": [
-    "https://www.glasgowlife.org.uk/whats-on/venues/glasgow-royal-concert-hall"
+    "https://www.glasgowlife.org.uk/whats-on?venue=Glasgow%20Royal%20Concert%20Hall&channel=All"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "The Piece Hall",
@@ -306,9 +298,9 @@
    "guess": true,
    "slug": "the-piece-hall-halifax",
    "urls": [
-    "https://www.thepiecehall.co.uk/whats-on/"
+    "https://www.thepiecehall.co.uk/culture/"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "Hereford Courtyard",
@@ -361,20 +353,9 @@
    "guess": true,
    "slug": "first-direct-arena-leeds",
    "urls": [
-    "https://www.firstdirectarena.com/whats-on/"
+    "https://www.firstdirectbankarena.com/events"
    ],
-   "reader": "generic"
-  },
-  {
-   "name": "ABBA Arena",
-   "city": "London",
-   "postcode": "E15 2RU",
-   "guess": true,
-   "slug": "abba-arena-london",
-   "urls": [
-    "https://www.abbaarena.com/"
-   ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "Aldwych Theatre",
@@ -458,9 +439,9 @@
    "guess": true,
    "slug": "eventim-apollo-london",
    "urls": [
-    "https://www.eventimapollo.com/whats-on/"
+    "https://www.eventimapollo.com/events/"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "ExCeL London",
@@ -653,9 +634,9 @@
    "guess": true,
    "slug": "the-old-vic-london",
    "urls": [
-    "https://www.oldvictheatre.com/whats-on"
+    "https://www.oldvictheatre.com/stage/"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "Troxy",
@@ -696,9 +677,9 @@
    "guess": true,
    "slug": "ao-arena-manchester",
    "urls": [
-    "https://www.ao-arena.com/whats-on/"
+    "https://www.ao-arena.com/events"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "Manchester Central",
@@ -707,9 +688,9 @@
    "guess": true,
    "slug": "manchester-central-manchester",
    "urls": [
-    "https://www.manchestercentral.com/whats-on/"
+    "https://www.manchestercentral.co.uk/events"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "Middlesbrough Town Hall",
@@ -718,9 +699,9 @@
    "guess": true,
    "slug": "middlesbrough-town-hall-middlesbrough",
    "urls": [
-    "https://www.middlesbroughtownhall.co.uk/whats-on/"
+    "https://boxoffice.middlesbrough.gov.uk"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "Winter Gardens",
@@ -729,9 +710,9 @@
    "guess": true,
    "slug": "winter-gardens-morecambe",
    "urls": [
-    "https://www.morecambewintergardens.co.uk/whats-on/"
+    "https://morecambewintergardens.com/whats-on/"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "Newcastle Utilita Arena",
@@ -740,9 +721,9 @@
    "guess": true,
    "slug": "newcastle-utilita-arena-newcastle-upon-tyne",
    "urls": [
-    "https://www.utilitaarena.co.uk/whats-on/"
+    "https://www.utilitaarena.co.uk/events"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "Theatre at the Mill",
@@ -773,9 +754,9 @@
    "guess": true,
    "slug": "preston-guild-hall-preston",
    "urls": [
-    "https://www.prestonguildhall.co.uk/whats-on/"
+    "https://www.guildhallpreston.co.uk/article/8839/What-s-On"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "The Baths Hall",
@@ -795,9 +776,9 @@
    "guess": true,
    "slug": "sheffield-city-hall-sheffield",
    "urls": [
-    "https://www.sheffieldcityhall.co.uk/whats-on/"
+    "https://www.sheffieldcityhall.co.uk/events/"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "Utilita Arena Sheffield",
@@ -872,9 +853,9 @@
    "guess": true,
    "slug": "watford-colosseum-watford",
    "urls": [
-    "https://www.watfordcolosseum.co.uk/whats-on/"
+    "https://www.watfordcolosseum.co.uk/events/"
    ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "Theatre Royal Winchester",
@@ -894,20 +875,9 @@
    "guess": true,
    "slug": "the-civic-at-the-halls-wolverhampton",
    "urls": [
-    "https://www.wolvescivic.co.uk/whats-on/"
+    "https://www.thehallswolverhampton.co.uk/events/"
    ],
-   "reader": "generic"
-  },
-  {
-   "name": "Worcester Arena",
-   "city": "Worcester",
-   "postcode": "WR2 4QQ",
-   "guess": true,
-   "slug": "worcester-arena-worcester",
-   "urls": [
-    "https://www.haloleisure.org.uk/centres/worcester-arena"
-   ],
-   "reader": "generic"
+   "retry": true
   },
   {
    "name": "Roundhouse",

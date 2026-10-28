@@ -1381,6 +1381,157 @@
     "https://www.yorkbarbican.co.uk/whats-on/"
    ],
    "reader": "generic"
+  },
+  {
+   "name": "Blackburn King George's Hall",
+   "city": "Blackburn",
+   "postcode": "BB2 2DH",
+   "slug": "blackburn-king-george-s-hall-blackburn",
+   "urls": [
+    "https://bwdvenues.com/whats-on/"
+   ],
+   "reader": "generic",
+   "match": "King George"
+  },
+  {
+   "name": "Bradford Live",
+   "city": "Bradford",
+   "postcode": "BD1 2EP",
+   "slug": "bradford-live-bradford",
+   "urls": [
+    "https://trafalgartickets.com/bradford-live-bradford/en-GB/whats-on"
+   ],
+   "reader": "trafalgar"
+  },
+  {
+   "name": "Theatr Brycheiniog",
+   "city": "Brecon",
+   "postcode": "LD3 7EW",
+   "slug": "theatr-brycheiniog-brecon",
+   "urls": [
+    "https://www.brycheiniog.co.uk/en/whats-on"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "Churchill Theatre",
+   "city": "Bromley",
+   "postcode": "BR1 1HA",
+   "slug": "churchill-theatre-bromley",
+   "urls": [
+    "https://trafalgartickets.com/churchill-theatre-bromley/en-GB/whats-on"
+   ],
+   "reader": "trafalgar"
+  },
+  {
+   "name": "The Apex",
+   "city": "Bury St Edmunds",
+   "postcode": "IP33 3FD",
+   "slug": "the-apex-bury-st-edmunds",
+   "urls": [
+    "https://www.theapex.co.uk/whats-on/"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "Cambridge Corn Exchange",
+   "city": "Cambridge",
+   "postcode": "CB2 3QB",
+   "slug": "cambridge-corn-exchange-cambridge",
+   "urls": [
+    "https://www.cornex.co.uk/events"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "Coventry Building Society Arena",
+   "city": "Coventry",
+   "postcode": "CV6 6GE",
+   "slug": "coventry-building-society-arena-coventry",
+   "urls": [
+    "https://www.coventrybuildingsocietyarena.co.uk/whats-on-main"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "The Hawth",
+   "city": "Crawley",
+   "postcode": "RH10 6YZ",
+   "slug": "the-hawth-crawley",
+   "urls": [
+    "https://www.parkwoodtheatres.co.uk/the-hawth/whats-on"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "Doncaster Dome",
+   "city": "Doncaster",
+   "postcode": "DN4 7PD",
+   "slug": "doncaster-dome-doncaster",
+   "urls": [
+    "https://www.dclt.co.uk/the-dome/live-events/"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "Caird Hall",
+   "city": "Dundee",
+   "postcode": "DD1 3BB",
+   "slug": "caird-hall-dundee",
+   "urls": [
+    "https://www.leisureandculturedundee.com/events/venue/37"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "Leas Cliff Hall",
+   "city": "Folkestone",
+   "postcode": "CT20 2DZ",
+   "slug": "leas-cliff-hall-folkestone",
+   "urls": [
+    "https://www.atgtickets.com/venues/leas-cliff-hall/whats-on/"
+   ],
+   "reader": "atg"
+  },
+  {
+   "name": "Glasgow Royal Concert Hall",
+   "city": "Glasgow",
+   "postcode": "G2 3NY",
+   "slug": "glasgow-royal-concert-hall-glasgow",
+   "urls": [
+    "https://www.glasgowlife.org.uk/whats-on?venue=Glasgow%20Royal%20Concert%20Hall&channel=All"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "The Piece Hall",
+   "city": "Halifax",
+   "postcode": "HX1 1RE",
+   "slug": "the-piece-hall-halifax",
+   "urls": [
+    "https://www.thepiecehall.co.uk/culture/"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "Eventim Apollo",
+   "city": "London",
+   "postcode": "W6 9QH",
+   "slug": "eventim-apollo-london",
+   "urls": [
+    "https://www.eventimapollo.com/events/"
+   ],
+   "reader": "generic"
+  },
+  {
+   "name": "Middlesbrough Town Hall",
+   "city": "Middlesbrough",
+   "postcode": "TS1 2QJ",
+   "slug": "middlesbrough-town-hall-middlesbrough",
+   "urls": [
+    "https://boxoffice.middlesbrough.gov.uk"
+   ],
+   "reader": "generic"
   }
  ]
 }

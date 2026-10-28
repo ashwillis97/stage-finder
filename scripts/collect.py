@@ -487,7 +487,7 @@ from urllib.parse import urljoin
 
 DAY=r"(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?,?\s*"
 DATE_RX=re.compile(r"(?:"+DAY+r")?\d{1,2}(?:st|nd|rd|th)?(?:\s*(?:&|-|–|to)\s*(?:"+DAY+r")?\d{1,2}(?:st|nd|rd|th)?)?\s+(?:"+MONTH_RE+r")[a-z]*\.?(?:,?\s+20\d\d)?(?:\s*(?:-|–|to)\s*(?:"+DAY+r")?\d{1,2}(?:st|nd|rd|th)?\s+(?:"+MONTH_RE+r")[a-z]*\.?(?:,?\s+20\d\d)?)?",re.I)
-NOISE=re.compile(r"^((mon|tue|wed|thu|fri|sat|sun)[a-z]*\.?,?\s+\d{1,2}[:.]\d{2}.*|more times|\d+ more.*|up next|the|view all|see all|load more|show more|what.?s on|christmas|pantomime|panto|halloween|music|comedy|theatre|family|dance|talks?|film|musical|kids|children|classical|opera|ballet|events?|tickets? (&|and) info|tickets? & info|on sale.*|\d{1,2}[:.]\d{2}\s*(am|pm)?|sold out|low availability|selling fast|last tickets|few tickets left|new|on sale now|just announced|book now|buy tickets?|more info(rmation)?|find out more|view (event|show|details)|read more|tickets?|book|from|£.*|free|cancelled|postponed|moved|rescheduled|learn more|info|details|\d+|[|,-])$",re.I)
+NOISE=re.compile(r"^(book tickets|contact us|buy now|enquire.*|(mon|tue|wed|thu|fri|sat|sun)[a-z]*\.?,?\s+\d{1,2}[:.]\d{2}.*|more times|\d+ more.*|up next|the|view all|see all|load more|show more|what.?s on|christmas|pantomime|panto|halloween|music|comedy|theatre|family|dance|talks?|film|musical|kids|children|classical|opera|ballet|events?|tickets? (&|and) info|tickets? & info|on sale.*|\d{1,2}[:.]\d{2}\s*(am|pm)?|sold out|low availability|selling fast|last tickets|few tickets left|new|on sale now|just announced|book now|buy tickets?|more info(rmation)?|find out more|view (event|show|details)|read more|tickets?|book|from|£.*|free|cancelled|postponed|moved|rescheduled|learn more|info|details|\d+|[|,-])$",re.I)
 def card_for(el):
     c=el
     for _ in range(6):
@@ -538,7 +538,7 @@ def read_generic(prefix,theatre,base,match=None):
     return merge_runs([r for r in out if r])
 
 
-GENERIC_SKIP = re.compile(r"workshop|backstage tour|building tour|heritage tour|\btours?\b|voucher|gift card|membership|\bhire\b|youth|\bclass(es)?\b|storytelling session|sensory stories|stay and play|rehearsal|private (hire|event)|open day|donat", re.I)
+GENERIC_SKIP = re.compile(r"private (christmas )?part(y|ies)|workshop|backstage tour|building tour|heritage tour|\btours?\b|voucher|gift card|membership|\bhire\b|youth|\bclass(es)?\b|storytelling session|sensory stories|stay and play|rehearsal|private (hire|event)|open day|donat", re.I)
 
 
 def merge_runs(rows):

@@ -2,17 +2,6 @@
  "note": "new venues awaiting a snapshot and a page reader; run the 'Snapshot venue pages' workflow with 'new', then they are promoted into venues.json",
  "venues": [
   {
-   "name": "P&J Live",
-   "city": "Aberdeen",
-   "postcode": "AB21 9FX",
-   "guess": true,
-   "slug": "p-j-live-aberdeen",
-   "urls": [
-    "https://www.pandjlive.com/events/entertainment/"
-   ],
-   "retry": true
-  },
-  {
    "name": "Aberystwyth Arts Centre",
    "city": "Aberystwyth",
    "postcode": "SY23 3DE",
@@ -32,7 +21,8 @@
    "urls": [
     "https://www.utilitaarenabham.co.uk/events-tickets"
    ],
-   "retry": true
+   "retry": true,
+   "reader": "generic"
   },
   {
    "name": "bp pulse LIVE",
@@ -43,19 +33,8 @@
    "urls": [
     "https://www.bppulselive.co.uk/events-tickets"
    ],
-   "retry": true
-  },
-  {
-   "name": "Blackburn King George's Hall",
-   "city": "Blackburn",
-   "postcode": "BB2 2DH",
-   "guess": true,
-   "slug": "blackburn-king-george-s-hall-blackburn",
-   "urls": [
-    "https://bwdvenues.com/whats-on/"
-   ],
-   "reader": "generic",
-   "retry": true
+   "retry": true,
+   "reader": "generic"
   },
   {
    "name": "Blackpool Grand Theatre",
@@ -102,18 +81,6 @@
    "reader": "generic"
   },
   {
-   "name": "Bradford Live",
-   "city": "Bradford",
-   "postcode": "BD1 2EP",
-   "guess": true,
-   "slug": "bradford-live-bradford",
-   "urls": [
-    "https://trafalgartickets.com/bradford-live-bradford/en-GB/whats-on"
-   ],
-   "retry": true,
-   "reader": "trafalgar"
-  },
-  {
    "name": "St George's Hall",
    "city": "Bradford",
    "postcode": "BD1 1HY",
@@ -124,51 +91,6 @@
    ],
    "reader": "generic",
    "match": "St George"
-  },
-  {
-   "name": "Theatr Brycheiniog",
-   "city": "Brecon",
-   "postcode": "LD3 7EW",
-   "guess": true,
-   "slug": "theatr-brycheiniog-brecon",
-   "urls": [
-    "https://www.brycheiniog.co.uk/en/whats-on"
-   ],
-   "retry": true
-  },
-  {
-   "name": "Churchill Theatre",
-   "city": "Bromley",
-   "postcode": "BR1 1HA",
-   "guess": true,
-   "slug": "churchill-theatre-bromley",
-   "urls": [
-    "https://trafalgartickets.com/churchill-theatre-bromley/en-GB/whats-on"
-   ],
-   "retry": true,
-   "reader": "trafalgar"
-  },
-  {
-   "name": "The Apex",
-   "city": "Bury St Edmunds",
-   "postcode": "IP33 3FD",
-   "guess": true,
-   "slug": "the-apex-bury-st-edmunds",
-   "urls": [
-    "https://www.theapex.co.uk/whats-on/"
-   ],
-   "retry": true
-  },
-  {
-   "name": "Cambridge Corn Exchange",
-   "city": "Cambridge",
-   "postcode": "CB2 3QB",
-   "guess": true,
-   "slug": "cambridge-corn-exchange-cambridge",
-   "urls": [
-    "https://www.cornex.co.uk/events"
-   ],
-   "retry": true
   },
   {
    "name": "Wales Millennium Centre",
@@ -193,50 +115,6 @@
    "reader": "generic"
   },
   {
-   "name": "Coventry Building Society Arena",
-   "city": "Coventry",
-   "postcode": "CV6 6GE",
-   "guess": true,
-   "slug": "coventry-building-society-arena-coventry",
-   "urls": [
-    "https://www.coventrybuildingsocietyarena.co.uk/whats-on-main"
-   ],
-   "retry": true
-  },
-  {
-   "name": "The Hawth",
-   "city": "Crawley",
-   "postcode": "RH10 6YZ",
-   "guess": true,
-   "slug": "the-hawth-crawley",
-   "urls": [
-    "https://www.parkwoodtheatres.co.uk/the-hawth/whats-on"
-   ],
-   "retry": true
-  },
-  {
-   "name": "Doncaster Dome",
-   "city": "Doncaster",
-   "postcode": "DN4 7PD",
-   "guess": true,
-   "slug": "doncaster-dome-doncaster",
-   "urls": [
-    "https://www.dclt.co.uk/the-dome/live-events/"
-   ],
-   "retry": true
-  },
-  {
-   "name": "Caird Hall",
-   "city": "Dundee",
-   "postcode": "DD1 3BB",
-   "guess": true,
-   "slug": "caird-hall-dundee",
-   "urls": [
-    "https://www.leisureandculturedundee.com/events/venue/37"
-   ],
-   "retry": true
-  },
-  {
    "name": "Dunfermline Alhambra Theatre",
    "city": "Dunfermline",
    "postcode": "KY12 7JA",
@@ -256,7 +134,8 @@
    "urls": [
     "https://www.edinburghcornexchange.co.uk/whats-on"
    ],
-   "retry": true
+   "retry": true,
+   "reader": "generic"
   },
   {
    "name": "Westpoint Exeter",
@@ -268,40 +147,6 @@
     "https://www.westpointexeter.co.uk/whats-on/"
    ],
    "reader": "generic"
-  },
-  {
-   "name": "Leas Cliff Hall",
-   "city": "Folkestone",
-   "postcode": "CT20 2DZ",
-   "guess": true,
-   "slug": "leas-cliff-hall-folkestone",
-   "urls": [
-    "https://www.atgtickets.com/venues/leas-cliff-hall/whats-on/"
-   ],
-   "retry": true,
-   "reader": "atg"
-  },
-  {
-   "name": "Glasgow Royal Concert Hall",
-   "city": "Glasgow",
-   "postcode": "G2 3NY",
-   "guess": true,
-   "slug": "glasgow-royal-concert-hall-glasgow",
-   "urls": [
-    "https://www.glasgowlife.org.uk/whats-on?venue=Glasgow%20Royal%20Concert%20Hall&channel=All"
-   ],
-   "retry": true
-  },
-  {
-   "name": "The Piece Hall",
-   "city": "Halifax",
-   "postcode": "HX1 1RE",
-   "guess": true,
-   "slug": "the-piece-hall-halifax",
-   "urls": [
-    "https://www.thepiecehall.co.uk/culture/"
-   ],
-   "retry": true
   },
   {
    "name": "Hereford Courtyard",
@@ -356,7 +201,8 @@
    "urls": [
     "https://www.firstdirectbankarena.com/events"
    ],
-   "retry": true
+   "retry": true,
+   "reader": "generic"
   },
   {
    "name": "Aldwych Theatre",
@@ -432,17 +278,6 @@
    "urls": [
     "https://www.atgtickets.com/venues/duke-of-yorks-theatre/whats-on/"
    ]
-  },
-  {
-   "name": "Eventim Apollo",
-   "city": "London",
-   "postcode": "W6 9QH",
-   "guess": true,
-   "slug": "eventim-apollo-london",
-   "urls": [
-    "https://www.eventimapollo.com/events/"
-   ],
-   "retry": true
   },
   {
    "name": "ExCeL London",
@@ -637,7 +472,8 @@
    "urls": [
     "https://www.oldvictheatre.com/stage/"
    ],
-   "retry": true
+   "retry": true,
+   "reader": "generic"
   },
   {
    "name": "Troxy",
@@ -680,7 +516,8 @@
    "urls": [
     "https://www.ao-arena.com/events"
    ],
-   "retry": true
+   "retry": true,
+   "reader": "generic"
   },
   {
    "name": "Manchester Central",
@@ -691,29 +528,8 @@
    "urls": [
     "https://www.manchestercentral.co.uk/events"
    ],
-   "retry": true
-  },
-  {
-   "name": "Middlesbrough Town Hall",
-   "city": "Middlesbrough",
-   "postcode": "TS1 2QJ",
-   "guess": true,
-   "slug": "middlesbrough-town-hall-middlesbrough",
-   "urls": [
-    "https://boxoffice.middlesbrough.gov.uk"
-   ],
-   "retry": true
-  },
-  {
-   "name": "Winter Gardens",
-   "city": "Morecambe",
-   "postcode": "LA4 4BU",
-   "guess": true,
-   "slug": "winter-gardens-morecambe",
-   "urls": [
-    "https://morecambewintergardens.com/whats-on/"
-   ],
-   "retry": true
+   "retry": true,
+   "reader": "generic"
   },
   {
    "name": "Newcastle Utilita Arena",
@@ -724,7 +540,8 @@
    "urls": [
     "https://www.utilitaarena.co.uk/events"
    ],
-   "retry": true
+   "retry": true,
+   "reader": "generic"
   },
   {
    "name": "Theatre at the Mill",
@@ -757,7 +574,8 @@
    "urls": [
     "https://www.guildhallpreston.co.uk/article/8839/What-s-On"
    ],
-   "retry": true
+   "retry": true,
+   "reader": "generic"
   },
   {
    "name": "The Baths Hall",
@@ -779,7 +597,8 @@
    "urls": [
     "https://www.sheffieldcityhall.co.uk/events/"
    ],
-   "retry": true
+   "retry": true,
+   "reader": "generic"
   },
   {
    "name": "Utilita Arena Sheffield",
@@ -856,7 +675,8 @@
    "urls": [
     "https://www.watfordcolosseum.co.uk/events/"
    ],
-   "retry": true
+   "retry": true,
+   "reader": "generic"
   },
   {
    "name": "Theatre Royal Winchester",
@@ -878,7 +698,8 @@
    "urls": [
     "https://www.thehallswolverhampton.co.uk/events/"
    ],
-   "retry": true
+   "retry": true,
+   "reader": "generic"
   },
   {
    "name": "Roundhouse",
@@ -887,6 +708,28 @@
    "slug": "roundhouse-london",
    "urls": [
     "https://www.roundhouse.org.uk/whats-on/"
+   ],
+   "reader": "generic",
+   "guess": true
+  },
+  {
+   "name": "P&J Live",
+   "city": "Aberdeen",
+   "postcode": "AB21 9FX",
+   "slug": "p-j-live-aberdeen",
+   "urls": [
+    "https://www.pandjlive.com/events/entertainment/"
+   ],
+   "reader": "generic",
+   "guess": true
+  },
+  {
+   "name": "Winter Gardens",
+   "city": "Morecambe",
+   "postcode": "LA4 4BU",
+   "slug": "winter-gardens-morecambe",
+   "urls": [
+    "https://morecambewintergardens.com/whats-on/"
    ],
    "reader": "generic",
    "guess": true

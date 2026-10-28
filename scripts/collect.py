@@ -379,7 +379,7 @@ for _v in _venue_files():  # venues flagged reader=atg need no custom code
         READERS[_v["name"]] = (lambda s=_v["slug"], n=_v["name"]: read_atg(s, n))
 
 
-def read_lw(prefix, theatre):
+def read_lw(prefix, theatre, match=None):
     """lwtheatres.co.uk cards: title | date range | venue."""
     out, seen = [], set()
     for s in each(prefix):
@@ -387,7 +387,7 @@ def read_lw(prefix, theatre):
             if "/whats-on/" not in a["href"] or a["href"].rstrip("/").endswith(("whats-on", "?all")):
                 continue
             parts = [x.strip() for x in a.get_text("|", strip=True).split("|") if x.strip()]
-            if len(parts) < 3 or theatre.lower() not in parts[-1].lower():
+            if len(parts) < 3 or (match or theatre).lower() not in parts[-1].lower():
                 continue
             rng = parse_dates(parts[1])
             key = (parts[0], parts[1])
@@ -472,11 +472,93 @@ def read_jsonld(prefix, theatre, match=None, fallback_url=""):
 for _v in _venue_files():
     if _v.get("reader") in ("lw", "trafalgar") and _v["name"] not in READERS:
         _fn = read_lw if _v["reader"] == "lw" else read_trafalgar
-        READERS[_v["name"]] = (lambda f=_fn, s=_v["slug"], n=_v["name"]: f(s, n))
+        READERS[_v["name"]] = (lambda f=_fn, s=_v["slug"], n=_v["name"], m=_v.get("match"): f(s, n, m) if f is read_lw else f(s, n))
+
+for _v in _venue_files():
+    if _v.get("reader") == "generic" and _v["name"] not in READERS:
+        READERS[_v["name"]] = (lambda s=_v["slug"], n=_v["name"], u=_v["urls"][0], m=_v.get("match"): read_generic(s, n, u, m))
 
 for _v in _venue_files():
     if _v.get("reader") == "jsonld" and _v["name"] not in READERS:
         READERS[_v["name"]] = (lambda s=_v["slug"], n=_v["name"], m=_v.get("match"), u=_v["urls"][0]: read_jsonld(s, n, m, u))
+
+
+from urllib.parse import urljoin
+
+DAY=r"(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?,?\s*"
+DATE_RX=re.compile(r"(?:"+DAY+r")?\d{1,2}(?:st|nd|rd|th)?(?:\s*(?:&|-|–|to)\s*(?:"+DAY+r")?\d{1,2}(?:st|nd|rd|th)?)?\s+(?:"+MONTH_RE+r")[a-z]*\.?(?:,?\s+20\d\d)?(?:\s*(?:-|–|to)\s*(?:"+DAY+r")?\d{1,2}(?:st|nd|rd|th)?\s+(?:"+MONTH_RE+r")[a-z]*\.?(?:,?\s+20\d\d)?)?",re.I)
+NOISE=re.compile(r"^((mon|tue|wed|thu|fri|sat|sun)[a-z]*\.?,?\s+\d{1,2}[:.]\d{2}.*|more times|\d+ more.*|up next|the|view all|see all|load more|show more|what.?s on|christmas|pantomime|panto|halloween|music|comedy|theatre|family|dance|talks?|film|musical|kids|children|classical|opera|ballet|events?|tickets? (&|and) info|tickets? & info|on sale.*|\d{1,2}[:.]\d{2}\s*(am|pm)?|sold out|low availability|selling fast|last tickets|few tickets left|new|on sale now|just announced|book now|buy tickets?|more info(rmation)?|find out more|view (event|show|details)|read more|tickets?|book|from|£.*|free|cancelled|postponed|moved|rescheduled|learn more|info|details|\d+|[|,-])$",re.I)
+def card_for(el):
+    c=el
+    for _ in range(6):
+        c=c.parent
+        if c is None or c.name in("body","html","main"): return None
+        links={a["href"] for a in c.find_all("a",href=True) if not a["href"].startswith(("#","mailto","tel","javascript"))}
+        if links and len(c.get_text(" ",strip=True))<700:
+            return c
+    return None
+def read_generic(prefix,theatre,base,match=None):
+    out=[];seen=set()
+    for s in each(prefix):
+        for tag in ("nav","header","footer","script","style"):
+            for t in s.find_all(tag): t.decompose()
+        for node in s.find_all(string=DATE_RX):
+            el=node.parent
+            c=card_for(el)
+            if c is None: continue
+            if id(c) in seen: continue
+            seen.add(id(c))
+            txt=c.get_text("|",strip=True)
+            if match and match.lower() not in txt.lower(): continue
+            m=DATE_RX.search(txt)
+            if not m: continue
+            rng=parse_dates(m.group(0))
+            if not rng: continue
+            # title: heading, else first non-noise text part that is not date
+            t=None
+            for h in c.find_all(re.compile("^h[1-6]$")):
+                tt=text(h)
+                if tt and not DATE_RX.fullmatch(tt) and not NOISE.match(tt): t=tt;break
+            if not t:
+                for p in [x.strip() for x in txt.split("|")]:
+                    if p and not NOISE.match(p) and not DATE_RX.search(p) and len(p)>2: t=p;break
+            if not t or len(t) < 4: continue
+            href=None
+            for a in c.find_all("a",href=True):
+                h=a["href"]
+                if h.startswith(("#","mailto","tel","javascript")): continue
+                href=h
+                if text(a) and not NOISE.match(text(a)): break
+            if not href: continue
+            if GENERIC_SKIP.search(t) or t.lower() in (theatre.lower(), (match or '').lower()): continue
+            seen2=(t,rng)
+            if seen2 in seen: continue
+            seen.add(seen2)
+            out.append(row(t,theatre,rng,urljoin(base,href)))
+    return merge_runs([r for r in out if r])
+
+
+GENERIC_SKIP = re.compile(r"workshop|backstage tour|building tour|heritage tour|\btours?\b|voucher|gift card|membership|\bhire\b|youth|\bclass(es)?\b|storytelling session|sensory stories|stay and play|rehearsal|private (hire|event)|open day|donat", re.I)
+
+
+def merge_runs(rows):
+    """Daily repeats of one title become a single listing spanning the run (gaps over 14 days stay separate)."""
+    by = {}
+    for r in rows:
+        by.setdefault(r["title"].lower(), []).append(r)
+    out = []
+    for rs in by.values():
+        rs.sort(key=lambda r: r["start"])
+        cur = dict(rs[0])
+        for r in rs[1:]:
+            if (dt.date.fromisoformat(r["start"]) - dt.date.fromisoformat(cur["end"])).days <= 14:
+                cur["end"] = max(cur["end"], r["end"])
+            else:
+                out.append(cur)
+                cur = dict(r)
+        out.append(cur)
+    return out
+
 
 
 def geocode_places():

@@ -2,16 +2,6 @@
  "note": "new venues awaiting a snapshot and a page reader; run the 'Snapshot venue pages' workflow with 'new', then they are promoted into venues.json",
  "venues": [
   {
-   "name": "Aberdeen Music Hall",
-   "city": "Aberdeen",
-   "postcode": "AB10 1QS",
-   "guess": true,
-   "slug": "aberdeen-music-hall-aberdeen",
-   "urls": [
-    "https://www.aberdeenperformingarts.com/whats-on/"
-   ]
-  },
-  {
    "name": "P&J Live",
    "city": "Aberdeen",
    "postcode": "AB21 9FX",
@@ -19,7 +9,8 @@
    "slug": "p-j-live-aberdeen",
    "urls": [
     "https://www.pandjlive.com/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Aberystwyth Arts Centre",
@@ -29,107 +20,8 @@
    "slug": "aberystwyth-arts-centre-aberystwyth",
    "urls": [
     "https://www.aberystwythartscentre.co.uk/whats-on"
-   ]
-  },
-  {
-   "name": "The Anvil",
-   "city": "Basingstoke",
-   "postcode": "RG21 7QR",
-   "guess": true,
-   "slug": "the-anvil-basingstoke",
-   "urls": [
-    "https://www.anvilarts.org.uk/whats-on"
-   ]
-  },
-  {
-   "name": "Bath Forum",
-   "city": "Bath",
-   "postcode": "BA1 1UG",
-   "guess": true,
-   "slug": "bath-forum-bath",
-   "urls": [
-    "https://www.bathforum.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Theatre Royal Bath",
-   "city": "Bath",
-   "postcode": "BA1 1ET",
-   "guess": true,
-   "slug": "theatre-royal-bath-bath",
-   "urls": [
-    "https://www.theatreroyal.org.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Belfast Waterfront Hall",
-   "city": "Belfast",
-   "postcode": "BT1 3WH",
-   "guess": true,
-   "slug": "belfast-waterfront-hall-belfast",
-   "urls": [
-    "https://www.waterfront.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Grand Opera House Belfast",
-   "city": "Belfast",
-   "postcode": "BT2 7HR",
-   "guess": true,
-   "slug": "grand-opera-house-belfast-belfast",
-   "urls": [
-    "https://www.goh.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "SSE Arena Belfast",
-   "city": "Belfast",
-   "postcode": "BT3 9QQ",
-   "guess": true,
-   "slug": "sse-arena-belfast-belfast",
-   "urls": [
-    "https://www.ssearenabelfast.com/whats-on/"
-   ]
-  },
-  {
-   "name": "De La Warr Pavilion",
-   "city": "Bexhill-on-Sea",
-   "postcode": "TN40 1DP",
-   "guess": true,
-   "slug": "de-la-warr-pavilion-bexhill-on-sea",
-   "urls": [
-    "https://www.dlwp.com/whats-on/"
-   ]
-  },
-  {
-   "name": "NEC Birmingham",
-   "city": "Birmingham",
-   "postcode": "B40 1NT",
-   "guess": true,
-   "slug": "nec-birmingham-birmingham",
-   "urls": [
-    "https://www.thenec.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "O2 Academy Birmingham",
-   "city": "Birmingham",
-   "postcode": "B1 2DY",
-   "guess": true,
-   "slug": "o2-academy-birmingham-birmingham",
-   "urls": [
-    "https://www.academymusicgroup.com/o2academybirmingham/"
-   ]
-  },
-  {
-   "name": "Symphony Hall",
-   "city": "Birmingham",
-   "postcode": "B1 2EA",
-   "guess": true,
-   "slug": "symphony-hall-birmingham",
-   "urls": [
-    "https://www.thsh.co.uk/whats-on"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Utilita Arena Birmingham",
@@ -139,7 +31,8 @@
    "slug": "utilita-arena-birmingham-birmingham",
    "urls": [
     "https://www.utilitaarenabirmingham.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "bp pulse LIVE",
@@ -149,7 +42,8 @@
    "slug": "bp-pulse-live-birmingham",
    "urls": [
     "https://www.bppulselive.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Blackburn King George's Hall",
@@ -159,7 +53,8 @@
    "slug": "blackburn-king-george-s-hall-blackburn",
    "urls": [
     "https://www.blackburn.gov.uk/king-georges-hall"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Blackpool Grand Theatre",
@@ -169,7 +64,8 @@
    "slug": "blackpool-grand-theatre-blackpool",
    "urls": [
     "https://www.blackpoolgrand.co.uk/whats-on"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Blackpool Winter Gardens",
@@ -179,17 +75,8 @@
    "slug": "blackpool-winter-gardens-blackpool",
    "urls": [
     "https://www.wintergardensblackpool.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "The Octagon Theatre",
-   "city": "Bolton",
-   "postcode": "BL1 1SB",
-   "guess": true,
-   "slug": "the-octagon-theatre-bolton",
-   "urls": [
-    "https://octagonbolton.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Bournemouth International Centre",
@@ -199,7 +86,8 @@
    "slug": "bournemouth-international-centre-bournemouth",
    "urls": [
     "https://www.bic.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Bournemouth Pavilion",
@@ -209,17 +97,8 @@
    "slug": "bournemouth-pavilion-bournemouth",
    "urls": [
     "https://www.bournemouthpavilion.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Alhambra Theatre",
-   "city": "Bradford",
-   "postcode": "BD1 1SD",
-   "guess": true,
-   "slug": "alhambra-theatre-bradford",
-   "urls": [
-    "https://www.bradford-theatres.co.uk/whats-on"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Bradford Live",
@@ -229,7 +108,8 @@
    "slug": "bradford-live-bradford",
    "urls": [
     "https://bradford-live.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "St George's Hall",
@@ -239,7 +119,9 @@
    "slug": "st-george-s-hall-bradford",
    "urls": [
     "https://www.bradford-theatres.co.uk/whats-on"
-   ]
+   ],
+   "reader": "generic",
+   "match": "St George"
   },
   {
    "name": "Theatr Brycheiniog",
@@ -249,47 +131,8 @@
    "slug": "theatr-brycheiniog-brecon",
    "urls": [
     "https://brycheiniog.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Brighton Centre",
-   "city": "Brighton",
-   "postcode": "BN1 2GR",
-   "guess": true,
-   "slug": "brighton-centre-brighton",
-   "urls": [
-    "https://brightoncentre.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Brighton Dome",
-   "city": "Brighton",
-   "postcode": "BN1 1UE",
-   "guess": true,
-   "slug": "brighton-dome-brighton",
-   "urls": [
-    "https://brightondome.org/whats-on/"
-   ]
-  },
-  {
-   "name": "Bristol Beacon",
-   "city": "Bristol",
-   "postcode": "BS1 5AR",
-   "guess": true,
-   "slug": "bristol-beacon-bristol",
-   "urls": [
-    "https://bristolbeacon.org/whats-on/"
-   ]
-  },
-  {
-   "name": "O2 Academy Bristol",
-   "city": "Bristol",
-   "postcode": "BS1 5NA",
-   "guess": true,
-   "slug": "o2-academy-bristol-bristol",
-   "urls": [
-    "https://www.academymusicgroup.com/o2academybristol/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Churchill Theatre",
@@ -299,17 +142,8 @@
    "slug": "churchill-theatre-bromley",
    "urls": [
     "https://www.bromleytogether.co.uk/"
-   ]
-  },
-  {
-   "name": "The Met",
-   "city": "Bury",
-   "postcode": "BL9 0BW",
-   "guess": true,
-   "slug": "the-met-bury",
-   "urls": [
-    "https://themet.org.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "The Apex",
@@ -319,7 +153,8 @@
    "slug": "the-apex-bury-st-edmunds",
    "urls": [
     "https://theapex.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Cambridge Corn Exchange",
@@ -329,7 +164,8 @@
    "slug": "cambridge-corn-exchange-cambridge",
    "urls": [
     "https://www.cornexchangenew.com/whats-on"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Wales Millennium Centre",
@@ -339,7 +175,8 @@
    "slug": "wales-millennium-centre-cardiff",
    "urls": [
     "https://www.wmc.org.uk/en/whats-on"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "The Central Theatre",
@@ -349,7 +186,8 @@
    "slug": "the-central-theatre-chatham",
    "urls": [
     "https://www.medway.gov.uk/centraltheatre"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Coventry Building Society Arena",
@@ -359,7 +197,8 @@
    "slug": "coventry-building-society-arena-coventry",
    "urls": [
     "https://www.cbsarena.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "The Hawth",
@@ -369,37 +208,8 @@
    "slug": "the-hawth-crawley",
    "urls": [
     "https://www.hawth.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "The Orchard Theatre",
-   "city": "Dartford",
-   "postcode": "DA1 1ED",
-   "guess": true,
-   "slug": "the-orchard-theatre-dartford",
-   "urls": [
-    "https://www.orchardtheatre.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Derby Arena",
-   "city": "Derby",
-   "postcode": "DE24 8JB",
-   "guess": true,
-   "slug": "derby-arena-derby",
-   "urls": [
-    "https://www.derbyarena.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Millennium Forum",
-   "city": "Derry",
-   "postcode": "BT48 6EB",
-   "guess": true,
-   "slug": "millennium-forum-derry",
-   "urls": [
-    "https://www.millenniumforum.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Doncaster Dome",
@@ -409,7 +219,8 @@
    "slug": "doncaster-dome-doncaster",
    "urls": [
     "https://www.dclt.co.uk/venues/doncaster-dome/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Caird Hall",
@@ -419,17 +230,8 @@
    "slug": "caird-hall-dundee",
    "urls": [
     "https://www.dundeecity.gov.uk/caird-hall"
-   ]
-  },
-  {
-   "name": "Dundee Rep Theatre",
-   "city": "Dundee",
-   "postcode": "DD1 1PB",
-   "guess": true,
-   "slug": "dundee-rep-theatre-dundee",
-   "urls": [
-    "https://dundeerep.co.uk/whats-on"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Dunfermline Alhambra Theatre",
@@ -439,27 +241,8 @@
    "slug": "dunfermline-alhambra-theatre-dunfermline",
    "urls": [
     "https://www.alhambradunfermline.com/whats-on/"
-   ]
-  },
-  {
-   "name": "Congress Theatre",
-   "city": "Eastbourne",
-   "postcode": "BN21 4BP",
-   "guess": true,
-   "slug": "congress-theatre-eastbourne",
-   "urls": [
-    "https://www.eastbournetheatres.co.uk/whats-on"
-   ]
-  },
-  {
-   "name": "Devonshire Park Theatre",
-   "city": "Eastbourne",
-   "postcode": "BN21 4BW",
-   "guess": true,
-   "slug": "devonshire-park-theatre-eastbourne",
-   "urls": [
-    "https://www.eastbournetheatres.co.uk/whats-on"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Edinburgh Corn Exchange",
@@ -469,17 +252,8 @@
    "slug": "edinburgh-corn-exchange-edinburgh",
    "urls": [
     "https://www.ece.uk.com/whats-on/"
-   ]
-  },
-  {
-   "name": "Edinburgh Festival Theatre",
-   "city": "Edinburgh",
-   "postcode": "EH8 9AG",
-   "guess": true,
-   "slug": "edinburgh-festival-theatre-edinburgh",
-   "urls": [
-    "https://www.capitaltheatres.com/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "O2 Academy Edinburgh",
@@ -489,47 +263,8 @@
    "slug": "o2-academy-edinburgh-edinburgh",
    "urls": [
     "https://www.academymusicgroup.com/o2academyedinburgh/"
-   ]
-  },
-  {
-   "name": "The Queen's Hall",
-   "city": "Edinburgh",
-   "postcode": "EH8 9JG",
-   "guess": true,
-   "slug": "the-queen-s-hall-edinburgh",
-   "urls": [
-    "https://www.thequeenshall.net/whats-on/"
-   ]
-  },
-  {
-   "name": "Usher Hall",
-   "city": "Edinburgh",
-   "postcode": "EH1 2EA",
-   "guess": true,
-   "slug": "usher-hall-edinburgh",
-   "urls": [
-    "https://www.usherhall.co.uk/whats-on"
-   ]
-  },
-  {
-   "name": "Exeter Corn Exchange",
-   "city": "Exeter",
-   "postcode": "EX1 1BW",
-   "guess": true,
-   "slug": "exeter-corn-exchange-exeter",
-   "urls": [
-    "https://exetercornexchange.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Exeter Northcott Theatre",
-   "city": "Exeter",
-   "postcode": "EX4 4QB",
-   "guess": true,
-   "slug": "exeter-northcott-theatre-exeter",
-   "urls": [
-    "https://www.exeternorthcott.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Westpoint Exeter",
@@ -539,7 +274,8 @@
    "slug": "westpoint-exeter-exeter",
    "urls": [
     "https://www.westpointexeter.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Leas Cliff Hall",
@@ -549,17 +285,8 @@
    "slug": "leas-cliff-hall-folkestone",
    "urls": [
     "https://www.leascliffhall.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "The Glasshouse, Gateshead",
-   "city": "Gateshead",
-   "postcode": "NE8 2JR",
-   "guess": true,
-   "slug": "the-glasshouse-gateshead-gateshead",
-   "urls": [
-    "https://theglasshouseicm.org/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Glasgow Royal Concert Hall",
@@ -569,17 +296,8 @@
    "slug": "glasgow-royal-concert-hall-glasgow",
    "urls": [
     "https://www.glasgowlife.org.uk/whats-on/venues/glasgow-royal-concert-hall"
-   ]
-  },
-  {
-   "name": "Guildford G Live",
-   "city": "Guildford",
-   "postcode": "GU1 2AA",
-   "guess": true,
-   "slug": "guildford-g-live-guildford",
-   "urls": [
-    "https://glive.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "The Piece Hall",
@@ -589,27 +307,8 @@
    "slug": "the-piece-hall-halifax",
    "urls": [
     "https://www.thepiecehall.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Harrogate Convention Centre",
-   "city": "Harrogate",
-   "postcode": "HG1 5LA",
-   "guess": true,
-   "slug": "harrogate-convention-centre-harrogate",
-   "urls": [
-    "https://www.harrogateconventioncentre.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "White Rock Theatre",
-   "city": "Hastings",
-   "postcode": "TN34 1JX",
-   "guess": true,
-   "slug": "white-rock-theatre-hastings",
-   "urls": [
-    "https://www.whiterocktheatre.org.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Hereford Courtyard",
@@ -619,17 +318,8 @@
    "slug": "hereford-courtyard-hereford",
    "urls": [
     "https://www.courtyard.org.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Wycombe Swan",
-   "city": "High Wycombe",
-   "postcode": "HP11 2XE",
-   "guess": true,
-   "slug": "wycombe-swan-high-wycombe",
-   "urls": [
-    "https://www.wycombeswan.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Huddersfield Town Hall",
@@ -639,7 +329,8 @@
    "slug": "huddersfield-town-hall-huddersfield",
    "urls": [
     "https://www.kirklees.gov.uk/beta/town-halls-and-venues/huddersfield-town-hall.aspx"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Connexin Live",
@@ -649,7 +340,8 @@
    "slug": "connexin-live-hull",
    "urls": [
     "https://www.connexinlivehull.com/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Hull New Theatre",
@@ -659,27 +351,8 @@
    "slug": "hull-new-theatre-hull",
    "urls": [
     "https://www.hulltheatres.co.uk/whats-on"
-   ]
-  },
-  {
-   "name": "Eden Court Theatre",
-   "city": "Inverness",
-   "postcode": "IV3 5SA",
-   "guess": true,
-   "slug": "eden-court-theatre-inverness",
-   "urls": [
-    "https://eden-court.co.uk/whats-on"
-   ]
-  },
-  {
-   "name": "Ipswich Regent Theatre",
-   "city": "Ipswich",
-   "postcode": "IP1 2LZ",
-   "guess": true,
-   "slug": "ipswich-regent-theatre-ipswich",
-   "urls": [
-    "https://www.ipswichtheatres.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "First Direct Arena",
@@ -689,77 +362,8 @@
    "slug": "first-direct-arena-leeds",
    "urls": [
     "https://www.firstdirectarena.com/whats-on/"
-   ]
-  },
-  {
-   "name": "Leeds Grand Theatre",
-   "city": "Leeds",
-   "postcode": "LS1 6NU",
-   "guess": true,
-   "slug": "leeds-grand-theatre-leeds",
-   "urls": [
-    "https://leedsheritagetheatres.com/whats-on/"
-   ]
-  },
-  {
-   "name": "Leeds Playhouse",
-   "city": "Leeds",
-   "postcode": "LS2 7UP",
-   "guess": true,
-   "slug": "leeds-playhouse-leeds",
-   "urls": [
-    "https://www.leedsplayhouse.org.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "O2 Academy Leeds",
-   "city": "Leeds",
-   "postcode": "LS2 7NZ",
-   "guess": true,
-   "slug": "o2-academy-leeds-leeds",
-   "urls": [
-    "https://www.academymusicgroup.com/o2academyleeds/"
-   ]
-  },
-  {
-   "name": "Leicester O2 Academy",
-   "city": "Leicester",
-   "postcode": "LE1 6LP",
-   "guess": true,
-   "slug": "leicester-o2-academy-leicester",
-   "urls": [
-    "https://www.academymusicgroup.com/o2academyleicester/"
-   ]
-  },
-  {
-   "name": "Everyman Theatre",
-   "city": "Liverpool",
-   "postcode": "L1 9BH",
-   "guess": true,
-   "slug": "everyman-theatre-liverpool",
-   "urls": [
-    "https://www.everymanplayhouse.com/whats-on"
-   ]
-  },
-  {
-   "name": "M&S Bank Arena",
-   "city": "Liverpool",
-   "postcode": "L3 4FP",
-   "guess": true,
-   "slug": "m-s-bank-arena-liverpool",
-   "urls": [
-    "https://www.mandsbankarena.com/whats-on/"
-   ]
-  },
-  {
-   "name": "Venue Cymru",
-   "city": "Llandudno",
-   "postcode": "LL30 1BB",
-   "guess": true,
-   "slug": "venue-cymru-llandudno",
-   "urls": [
-    "https://www.venuecymru.co.uk/whats-on"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "ABBA Arena",
@@ -769,7 +373,8 @@
    "slug": "abba-arena-london",
    "urls": [
     "https://www.abbaarena.com/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Aldwych Theatre",
@@ -789,17 +394,8 @@
    "slug": "alexandra-palace-london",
    "urls": [
     "https://www.alexandrapalace.com/whats-on/"
-   ]
-  },
-  {
-   "name": "Ambassadors Theatre",
-   "city": "London",
-   "postcode": "WC2H 9ND",
-   "guess": true,
-   "slug": "ambassadors-theatre-london",
-   "urls": [
-    "https://www.theambassadorstheatre.co.uk/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Apollo Victoria Theatre",
@@ -820,17 +416,8 @@
    "slug": "barbican-centre-london",
    "urls": [
     "https://www.barbican.org.uk/whats-on"
-   ]
-  },
-  {
-   "name": "Bridge Theatre",
-   "city": "London",
-   "postcode": "SE1 2SG",
-   "guess": true,
-   "slug": "bridge-theatre-london",
-   "urls": [
-    "https://bridgetheatre.co.uk/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Cambridge Theatre",
@@ -850,27 +437,8 @@
    "slug": "copper-box-arena-london",
    "urls": [
     "https://www.queenelizabetholympicpark.co.uk/whats-on"
-   ]
-  },
-  {
-   "name": "Criterion Theatre",
-   "city": "London",
-   "postcode": "W1J 9HP",
-   "guess": true,
-   "slug": "criterion-theatre-london",
-   "urls": [
-    "https://criterion-theatre.co.uk/"
-   ]
-  },
-  {
-   "name": "Dominion Theatre",
-   "city": "London",
-   "postcode": "W1T 7AQ",
-   "guess": true,
-   "slug": "dominion-theatre-london",
-   "urls": [
-    "https://www.dominiontheatre.com/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Duke of York's Theatre",
@@ -891,7 +459,8 @@
    "slug": "eventim-apollo-london",
    "urls": [
     "https://www.eventimapollo.com/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "ExCeL London",
@@ -901,7 +470,8 @@
    "slug": "excel-london-london",
    "urls": [
     "https://www.excel.london/whats-on"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Fortune Theatre",
@@ -937,16 +507,6 @@
    ]
   },
   {
-   "name": "Hackney Empire",
-   "city": "London",
-   "postcode": "E8 1EJ",
-   "guess": true,
-   "slug": "hackney-empire-london",
-   "urls": [
-    "https://www.hackneyempire.co.uk/whats-on"
-   ]
-  },
-  {
    "name": "His Majesty's Theatre",
    "city": "London",
    "postcode": "SW1Y 4QL",
@@ -957,26 +517,6 @@
    ]
   },
   {
-   "name": "London Coliseum",
-   "city": "London",
-   "postcode": "WC2N 4ES",
-   "guess": true,
-   "slug": "london-coliseum-london",
-   "urls": [
-    "https://www.eno.org/whats-on/"
-   ]
-  },
-  {
-   "name": "London Palladium",
-   "city": "London",
-   "postcode": "W1F 7TF",
-   "guess": true,
-   "slug": "london-palladium-london",
-   "urls": [
-    "https://lwtheatres.co.uk/whats-on/"
-   ]
-  },
-  {
    "name": "Lyceum Theatre",
    "city": "London",
    "postcode": "WC2E 7RQ",
@@ -984,16 +524,6 @@
    "slug": "lyceum-theatre-london",
    "urls": [
     "https://www.delfontmackintosh.co.uk/"
-   ]
-  },
-  {
-   "name": "Lyric Hammersmith Theatre",
-   "city": "London",
-   "postcode": "W6 0QL",
-   "guess": true,
-   "slug": "lyric-hammersmith-theatre-london",
-   "urls": [
-    "https://lyric.co.uk/whats-on/"
    ]
   },
   {
@@ -1017,36 +547,6 @@
    ]
   },
   {
-   "name": "O2 Academy Brixton",
-   "city": "London",
-   "postcode": "SW9 9SL",
-   "guess": true,
-   "slug": "o2-academy-brixton-london",
-   "urls": [
-    "https://www.academymusicgroup.com/o2academybrixton/"
-   ]
-  },
-  {
-   "name": "O2 Forum Kentish Town",
-   "city": "London",
-   "postcode": "NW5 1JY",
-   "guess": true,
-   "slug": "o2-forum-kentish-town-london",
-   "urls": [
-    "https://www.academymusicgroup.com/o2forumkentishtown/"
-   ]
-  },
-  {
-   "name": "O2 Shepherd's Bush Empire",
-   "city": "London",
-   "postcode": "W12 8TT",
-   "guess": true,
-   "slug": "o2-shepherd-s-bush-empire-london",
-   "urls": [
-    "https://www.academymusicgroup.com/o2shepherdsbushempire/"
-   ]
-  },
-  {
    "name": "OVO Arena Wembley",
    "city": "London",
    "postcode": "HA9 0AA",
@@ -1054,17 +554,8 @@
    "slug": "ovo-arena-wembley-london",
    "urls": [
     "https://www.ovoarena.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Peacock Theatre",
-   "city": "London",
-   "postcode": "WC2A 2HT",
-   "guess": true,
-   "slug": "peacock-theatre-london",
-   "urls": [
-    "https://www.sadlerswells.com/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Phoenix Theatre",
@@ -1112,26 +603,6 @@
    ]
   },
   {
-   "name": "Queen Elizabeth Hall",
-   "city": "London",
-   "postcode": "SE1 8XX",
-   "guess": true,
-   "slug": "queen-elizabeth-hall-london",
-   "urls": [
-    "https://www.southbankcentre.co.uk/whats-on"
-   ]
-  },
-  {
-   "name": "Roundhouse",
-   "city": "London",
-   "postcode": "NW1 8EH",
-   "guess": true,
-   "slug": "roundhouse-london",
-   "urls": [
-    "https://www.roundhouse.org.uk/whats-on/"
-   ]
-  },
-  {
    "name": "Royal Albert Hall",
    "city": "London",
    "postcode": "SW7 2AP",
@@ -1139,27 +610,8 @@
    "slug": "royal-albert-hall-london",
    "urls": [
     "https://www.royalalberthall.com/tickets/"
-   ]
-  },
-  {
-   "name": "Royal Festival Hall",
-   "city": "London",
-   "postcode": "SE1 8XX",
-   "guess": true,
-   "slug": "royal-festival-hall-london",
-   "urls": [
-    "https://www.southbankcentre.co.uk/whats-on"
-   ]
-  },
-  {
-   "name": "Sadler's Wells Theatre",
-   "city": "London",
-   "postcode": "EC1R 4TN",
-   "guess": true,
-   "slug": "sadler-s-wells-theatre-london",
-   "urls": [
-    "https://www.sadlerswells.com/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Shaftesbury Theatre",
@@ -1169,7 +621,8 @@
    "slug": "shaftesbury-theatre-london",
    "urls": [
     "https://www.shaftesburytheatre.com/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Sondheim Theatre",
@@ -1201,27 +654,8 @@
    "slug": "the-old-vic-london",
    "urls": [
     "https://www.oldvictheatre.com/whats-on"
-   ]
-  },
-  {
-   "name": "Theatre Royal Drury Lane",
-   "city": "London",
-   "postcode": "WC2B 5JF",
-   "guess": true,
-   "slug": "theatre-royal-drury-lane-london",
-   "urls": [
-    "https://lwtheatres.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Troubadour Wembley Park Theatre",
-   "city": "London",
-   "postcode": "HA9 0SP",
-   "guess": true,
-   "slug": "troubadour-wembley-park-theatre-london",
-   "urls": [
-    "https://www.troubadourtheatres.com/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Troxy",
@@ -1231,7 +665,8 @@
    "slug": "troxy-london",
    "urls": [
     "https://troxy.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Victoria Palace Theatre",
@@ -1262,37 +697,8 @@
    "slug": "ao-arena-manchester",
    "urls": [
     "https://www.ao-arena.com/whats-on/"
-   ]
-  },
-  {
-   "name": "Bridgewater Hall",
-   "city": "Manchester",
-   "postcode": "M2 3WS",
-   "guess": true,
-   "slug": "bridgewater-hall-manchester",
-   "urls": [
-    "https://www.bridgewater-hall.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Co-op Live",
-   "city": "Manchester",
-   "postcode": "M11 3FF",
-   "guess": true,
-   "slug": "co-op-live-manchester",
-   "urls": [
-    "https://www.cooplive.com/"
-   ]
-  },
-  {
-   "name": "Manchester Academy",
-   "city": "Manchester",
-   "postcode": "M13 9PR",
-   "guess": true,
-   "slug": "manchester-academy-manchester",
-   "urls": [
-    "https://www.manchesteracademy.net/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Manchester Central",
@@ -1302,17 +708,8 @@
    "slug": "manchester-central-manchester",
    "urls": [
     "https://www.manchestercentral.com/whats-on/"
-   ]
-  },
-  {
-   "name": "O2 Apollo Manchester",
-   "city": "Manchester",
-   "postcode": "M12 6AP",
-   "guess": true,
-   "slug": "o2-apollo-manchester-manchester",
-   "urls": [
-    "https://www.academymusicgroup.com/o2apollomanchester/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Middlesbrough Town Hall",
@@ -1322,17 +719,8 @@
    "slug": "middlesbrough-town-hall-middlesbrough",
    "urls": [
     "https://www.middlesbroughtownhall.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Theatr Clwyd",
-   "city": "Mold",
-   "postcode": "CH7 1YA",
-   "guess": true,
-   "slug": "theatr-clwyd-mold",
-   "urls": [
-    "https://www.theatrclwyd.com/whats-on"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Winter Gardens",
@@ -1342,7 +730,8 @@
    "slug": "winter-gardens-morecambe",
    "urls": [
     "https://www.morecambewintergardens.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Newcastle Utilita Arena",
@@ -1352,27 +741,8 @@
    "slug": "newcastle-utilita-arena-newcastle-upon-tyne",
    "urls": [
     "https://www.utilitaarena.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "O2 City Hall Newcastle",
-   "city": "Newcastle upon Tyne",
-   "postcode": "NE1 8SF",
-   "guess": true,
-   "slug": "o2-city-hall-newcastle-newcastle-upon-tyne",
-   "urls": [
-    "https://www.academymusicgroup.com/o2cityhallnewcastle/"
-   ]
-  },
-  {
-   "name": "Theatre Royal Newcastle",
-   "city": "Newcastle upon Tyne",
-   "postcode": "NE1 6BR",
-   "guess": true,
-   "slug": "theatre-royal-newcastle-newcastle-upon-tyne",
-   "urls": [
-    "https://www.theatreroyal.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Theatre at the Mill",
@@ -1382,47 +752,8 @@
    "slug": "theatre-at-the-mill-newtownabbey",
    "urls": [
     "https://www.theatreatthemill.com/whats-on/"
-   ]
-  },
-  {
-   "name": "Norwich Theatre Royal",
-   "city": "Norwich",
-   "postcode": "NR2 1RL",
-   "guess": true,
-   "slug": "norwich-theatre-royal-norwich",
-   "urls": [
-    "https://norwichtheatre.org/whats-on/"
-   ]
-  },
-  {
-   "name": "Perth Theatre and Concert Hall",
-   "city": "Perth",
-   "postcode": "PH1 5HZ",
-   "guess": true,
-   "slug": "perth-theatre-and-concert-hall-perth",
-   "urls": [
-    "https://www.perththeatreandconcerthall.com/whats-on/"
-   ]
-  },
-  {
-   "name": "Plymouth Pavilions",
-   "city": "Plymouth",
-   "postcode": "PL1 2AA",
-   "guess": true,
-   "slug": "plymouth-pavilions-plymouth",
-   "urls": [
-    "https://www.plymouthpavilions.com/whats-on/"
-   ]
-  },
-  {
-   "name": "Theatre Royal Plymouth",
-   "city": "Plymouth",
-   "postcode": "PL1 2TR",
-   "guess": true,
-   "slug": "theatre-royal-plymouth-plymouth",
-   "urls": [
-    "https://theatreroyal.com/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "New Theatre Royal",
@@ -1432,17 +763,8 @@
    "slug": "new-theatre-royal-portsmouth",
    "urls": [
     "https://www.newtheatreroyal.com/whats-on/"
-   ]
-  },
-  {
-   "name": "Portsmouth Guildhall",
-   "city": "Portsmouth",
-   "postcode": "PO1 2AB",
-   "guess": true,
-   "slug": "portsmouth-guildhall-portsmouth",
-   "urls": [
-    "https://portsmouthguildhall.org.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Preston Guild Hall",
@@ -1452,27 +774,8 @@
    "slug": "preston-guild-hall-preston",
    "urls": [
     "https://www.prestonguildhall.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Scarborough Open Air Theatre",
-   "city": "Scarborough",
-   "postcode": "YO12 7TN",
-   "guess": true,
-   "slug": "scarborough-open-air-theatre-scarborough",
-   "urls": [
-    "https://scarboroughopenairtheatre.com/"
-   ]
-  },
-  {
-   "name": "Scarborough Spa",
-   "city": "Scarborough",
-   "postcode": "YO11 2HD",
-   "guess": true,
-   "slug": "scarborough-spa-scarborough",
-   "urls": [
-    "https://www.scarboroughspa.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "The Baths Hall",
@@ -1482,17 +785,8 @@
    "slug": "the-baths-hall-scunthorpe",
    "urls": [
     "https://www.scunthorpetheatres.co.uk/whats-on"
-   ]
-  },
-  {
-   "name": "Lyceum Theatre Sheffield",
-   "city": "Sheffield",
-   "postcode": "S1 1DA",
-   "guess": true,
-   "slug": "lyceum-theatre-sheffield-sheffield",
-   "urls": [
-    "https://www.sheffieldtheatres.co.uk/whats-on"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Sheffield City Hall",
@@ -1502,7 +796,8 @@
    "slug": "sheffield-city-hall-sheffield",
    "urls": [
     "https://www.sheffieldcityhall.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Utilita Arena Sheffield",
@@ -1512,37 +807,8 @@
    "slug": "utilita-arena-sheffield-sheffield",
    "urls": [
     "https://www.utilitaarenasheffield.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Shrewsbury Theatre Severn",
-   "city": "Shrewsbury",
-   "postcode": "SY3 8FT",
-   "guess": true,
-   "slug": "shrewsbury-theatre-severn-shrewsbury",
-   "urls": [
-    "https://www.theatresevern.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Mayflower Theatre",
-   "city": "Southampton",
-   "postcode": "SO15 1GE",
-   "guess": true,
-   "slug": "mayflower-theatre-southampton",
-   "urls": [
-    "https://www.mayflower.org.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "O2 Guildhall Southampton",
-   "city": "Southampton",
-   "postcode": "SO14 7LP",
-   "guess": true,
-   "slug": "o2-guildhall-southampton-southampton",
-   "urls": [
-    "https://www.academymusicgroup.com/o2guildhallsouthampton/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Utilita Bowl",
@@ -1552,17 +818,8 @@
    "slug": "utilita-bowl-southampton",
    "urls": [
     "https://www.utilitabowl.com/"
-   ]
-  },
-  {
-   "name": "Cliffs Pavilion",
-   "city": "Southend-on-Sea",
-   "postcode": "SS0 7RA",
-   "guess": true,
-   "slug": "cliffs-pavilion-southend-on-sea",
-   "urls": [
-    "https://southendtheatres.org.uk/whats-on"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "The Alban Arena",
@@ -1572,17 +829,8 @@
    "slug": "the-alban-arena-st-albans",
    "urls": [
     "https://www.alban-arena.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Stockton Globe",
-   "city": "Stockton-on-Tees",
-   "postcode": "TS18 1LL",
-   "guess": true,
-   "slug": "stockton-globe-stockton-on-tees",
-   "urls": [
-    "https://stocktonglobe.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Brangwyn Hall",
@@ -1592,7 +840,8 @@
    "slug": "brangwyn-hall-swansea",
    "urls": [
     "https://www.swansea.gov.uk/brangwynhall"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Swansea Arena",
@@ -1602,7 +851,8 @@
    "slug": "swansea-arena-swansea",
    "urls": [
     "https://www.swansea-arena.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Swansea Grand Theatre",
@@ -1612,37 +862,8 @@
    "slug": "swansea-grand-theatre-swansea",
    "urls": [
     "https://www.swanseagrand.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Truro Hall for Cornwall",
-   "city": "Truro",
-   "postcode": "TR1 2LL",
-   "guess": true,
-   "slug": "truro-hall-for-cornwall-truro",
-   "urls": [
-    "https://hallforcornwall.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Assembly Hall Theatre",
-   "city": "Tunbridge Wells",
-   "postcode": "TN1 2LU",
-   "guess": true,
-   "slug": "assembly-hall-theatre-tunbridge-wells",
-   "urls": [
-    "https://www.assemblyhalltheatre.co.uk/whats-on/"
-   ]
-  },
-  {
-   "name": "Theatre Royal",
-   "city": "Wakefield",
-   "postcode": "WF1 2TE",
-   "guess": true,
-   "slug": "theatre-royal-wakefield",
-   "urls": [
-    "https://www.theatreroyalwakefield.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Watford Colosseum",
@@ -1652,7 +873,8 @@
    "slug": "watford-colosseum-watford",
    "urls": [
     "https://www.watfordcolosseum.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Theatre Royal Winchester",
@@ -1662,7 +884,8 @@
    "slug": "theatre-royal-winchester-winchester",
    "urls": [
     "https://www.theatreroyalwinchester.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "The Civic at The Halls",
@@ -1672,7 +895,8 @@
    "slug": "the-civic-at-the-halls-wolverhampton",
    "urls": [
     "https://www.wolvescivic.co.uk/whats-on/"
-   ]
+   ],
+   "reader": "generic"
   },
   {
    "name": "Worcester Arena",
@@ -1682,17 +906,19 @@
    "slug": "worcester-arena-worcester",
    "urls": [
     "https://www.haloleisure.org.uk/centres/worcester-arena"
-   ]
+   ],
+   "reader": "generic"
   },
   {
-   "name": "York Barbican",
-   "city": "York",
-   "postcode": "YO10 4AH",
-   "guess": true,
-   "slug": "york-barbican-york",
+   "name": "Roundhouse",
+   "city": "London",
+   "postcode": "NW1 8EH",
+   "slug": "roundhouse-london",
    "urls": [
-    "https://www.yorkbarbican.co.uk/whats-on/"
-   ]
+    "https://www.roundhouse.org.uk/whats-on/"
+   ],
+   "reader": "generic",
+   "guess": true
   }
  ]
 }

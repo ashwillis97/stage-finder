@@ -3,22 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Curtain Call | What's on at theatres across the UK</title>
-<meta name="description" content="Search theatre shows, comedy, music and pantomime at venues across the UK. Find something on near you and go straight to the tickets.">
+<title>Find a Show | Live shows, all in one place</title>
+<meta name="description" content="Find theatre, comedy, music, pantomime and more at venues across the UK. See what's on near you and go straight to the tickets.">
 <meta name="theme-color" content="#150d21">
-<meta property="og:title" content="Curtain Call | What's on at theatres across the UK">
-<meta property="og:description" content="Search theatre shows, comedy, music and pantomime at venues across the UK, all in one place.">
+<meta property="og:title" content="Find a Show | Live shows, all in one place">
+<meta property="og:description" content="Find theatre, comedy, music, pantomime and more at venues across the UK, all in one place.">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Curtain Call">
+<meta property="og:site_name" content="Find a Show">
 <meta property="og:locale" content="en_GB">
 <meta property="og:url" content="https://findashow.co.uk/">
 <meta property="og:image" content="https://findashow.co.uk/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Curtain Call: what's on at the theatre?">
+<meta property="og:image:alt" content="Find a Show: live shows, all in one place">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Curtain Call | What's on at theatres across the UK">
-<meta name="twitter:description" content="Search theatre shows, comedy, music and pantomime at venues across the UK, all in one place.">
+<meta name="twitter:title" content="Find a Show | Live shows, all in one place">
+<meta name="twitter:description" content="Find theatre, comedy, music, pantomime and more at venues across the UK, all in one place.">
 <meta name="twitter:image" content="https://findashow.co.uk/og.png">
 <link rel="canonical" href="https://findashow.co.uk/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23150d21'/%3E%3Cpath d='M20 14h24l-6 16h-12z' fill='%23ffb547'/%3E%3Cpath d='M24 34h16l10 18H14z' fill='%23ffb547' opacity='.45'/%3E%3C/svg%3E">
@@ -37,6 +37,13 @@
   --accent: #ffb547;
   --accent-fg: #2b1700;
   --rose: #ff8fb0;
+  --accent-rgb: 255, 181, 71;
+  --rose-rgb: 255, 143, 176;
+  --glow-1: rgba(132, 56, 176, .42);
+  --glow-2: rgba(255, 181, 71, .13);
+  --focus: #ffd28a;
+  --shadow: rgba(0, 0, 0, .45);
+  --backdrop: rgba(10, 5, 18, .75);
   --font-display: "Bebas Neue", "Oswald", "Arial Narrow", Impact, sans-serif;
   --font-body: "Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
   --font-small: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
@@ -47,7 +54,7 @@ html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0; color: var(--fg); font-family: var(--font-body); font-size: 16px; line-height: 1.5;
   background-color: var(--bg);
-  background-image: radial-gradient(900px 420px at 12% -8%, rgba(132, 56, 176, .42), transparent 62%), radial-gradient(700px 360px at 92% 0%, rgba(255, 181, 71, .13), transparent 60%);
+  background-image: radial-gradient(900px 420px at 12% -8%, var(--glow-1), transparent 62%), radial-gradient(700px 360px at 92% 0%, var(--glow-2), transparent 60%);
   background-repeat: no-repeat;
   padding-block: 0 48px;
   padding-left: max(16px, env(safe-area-inset-left, 0px));
@@ -56,11 +63,11 @@ body {
 .wrap { max-width: 880px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
 button, input, select { font: inherit; color: inherit; }
 button { cursor: pointer; }
-:focus-visible { outline: 3px solid #ffd28a; outline-offset: 2px; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 .brand { display: flex; align-items: center; gap: 10px; padding-top: max(18px, env(safe-area-inset-top, 0px)); font-family: var(--font-display); font-size: 26px; letter-spacing: .06em; }
-.brand svg { width: 28px; height: 28px; flex: none; }
+.brand svg { width: 28px; height: 28px; flex: none; color: var(--accent); }
 .hero { display: flex; flex-direction: column; gap: 10px; padding-top: 14px; }
 h1 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: clamp(46px, 9vw, 76px); line-height: .94; letter-spacing: .015em; text-wrap: balance; }
 h1 em { font-style: normal; color: var(--accent); }
@@ -70,7 +77,7 @@ h1 em { font-style: normal; color: var(--accent); }
 .search svg { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px; color: var(--muted); pointer-events: none; }
 .search input { width: 100%; min-height: 56px; padding: 0 16px 0 46px; font-size: 17px; border: 2px solid var(--line); border-radius: 14px; background: var(--surface); color: var(--fg); }
 .search input::placeholder { color: var(--muted); }
-.search input:focus { border-color: var(--accent); outline: none; box-shadow: 0 0 0 4px rgba(255, 181, 71, .2); }
+.search input:focus { border-color: var(--accent); outline: none; box-shadow: 0 0 0 4px rgba(var(--accent-rgb), .2); }
 
 .filters { display: flex; flex-direction: column; gap: 14px; }
 .group-label { font-family: var(--font-small); font-weight: 600; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
@@ -78,7 +85,7 @@ h1 em { font-style: normal; color: var(--accent); }
 .chips::-webkit-scrollbar { display: none; }
 .chip { flex: none; min-height: 42px; padding: 0 16px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--surface); color: var(--fg); font-weight: 500; font-size: 15px; white-space: nowrap; }
 .vbox { position: relative; flex: 1 1 180px; min-width: 0; }
-.vsug { position: absolute; z-index: 20; left: 0; right: 0; top: calc(100% + 6px); margin: 0; padding: 6px; list-style: none; max-height: 280px; overflow: auto; background: var(--surface-2); border: 1.5px solid var(--line); border-radius: 14px; box-shadow: 0 12px 30px rgba(0,0,0,.45); }
+.vsug { position: absolute; z-index: 20; left: 0; right: 0; top: calc(100% + 6px); margin: 0; padding: 6px; list-style: none; max-height: 280px; overflow: auto; background: var(--surface-2); border: 1.5px solid var(--line); border-radius: 14px; box-shadow: 0 12px 30px var(--shadow); }
 .vsug li { padding: 11px 12px; border-radius: 10px; font-size: 16px; cursor: pointer; }
 .vsug li:hover, .vsug li[aria-selected="true"] { background: var(--line); }
 .vsug .none { color: var(--muted); cursor: default; }
@@ -127,8 +134,8 @@ h2 { margin: 14px 0 0; font-family: var(--font-display); font-weight: 400; font-
 .when { font-size: 15px; color: var(--muted); }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
 .tag { font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: var(--surface-2); color: var(--muted); }
-.tag.live { background: rgba(255, 143, 176, .16); color: var(--rose); }
-.tag.near { background: rgba(255, 181, 71, .16); color: var(--accent); }
+.tag.live { background: rgba(var(--rose-rgb), .16); color: var(--rose); }
+.tag.near { background: rgba(var(--accent-rgb), .16); color: var(--accent); }
 .act { display: flex; align-items: center; padding: 14px 16px 14px 0; }
 .more { align-self: center; margin-top: 8px; min-height: 50px; padding: 0 28px; }
 .empty { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 36px 20px; text-align: center; color: var(--muted); display: flex; flex-direction: column; align-items: center; gap: 10px; }
@@ -159,7 +166,7 @@ footer details div { padding-bottom: 14px; display: flex; flex-direction: column
 .suggest p { margin: 2px 0 0; color: var(--muted); font-size: 15px; max-width: 46ch; }
 .suggest .btns { display: flex; flex-wrap: wrap; gap: 8px; }
 dialog { background: var(--surface); color: var(--fg); border: 1px solid var(--line); border-radius: 16px; padding: 0; width: min(520px, calc(100% - 32px)); max-height: calc(100% - 32px); overflow: auto; }
-dialog::backdrop { background: rgba(10, 5, 18, .75); }
+dialog::backdrop { background: var(--backdrop); }
 .dlg { padding: 22px; display: flex; flex-direction: column; gap: 16px; }
 .dlg-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
 .dlg h2 { margin: 0; font-size: 34px; letter-spacing: .05em; color: var(--fg); }
@@ -169,7 +176,7 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
 .field { display: flex; flex-direction: column; gap: 5px; }
 .field label { font-size: 14px; font-weight: 600; }
 .field input { min-height: 48px; padding: 0 12px; font-size: 16px; border: 1.5px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--fg); }
-.field input:focus { border-color: var(--accent); outline: none; box-shadow: 0 0 0 4px rgba(255, 181, 71, .2); }
+.field input:focus { border-color: var(--accent); outline: none; box-shadow: 0 0 0 4px rgba(var(--accent-rgb), .2); }
 .field .err { color: var(--rose); font-size: 13px; min-height: 0; }
 .field .err:empty { display: none; }
 .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
@@ -181,15 +188,15 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
 </head>
 <body>
 <div class="wrap">
-  <div class="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M20 14h24l-6 16h-12z" fill="#ffb547"/><path d="M24 34h16l10 18H14z" fill="#ffb547" opacity=".45"/></svg><span>Curtain Call</span></div>
+  <div class="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M20 14h24l-6 16h-12z" fill="currentColor"/><path d="M24 34h16l10 18H14z" fill="currentColor" opacity=".45"/></svg><span>Find a Show</span></div>
 
   <header class="hero">
-    <h1>What's on at the <em>theatre?</em></h1>
-    <p class="lede" id="lede">Shows, comedy, music and pantomime at venues across the UK, all in one place.</p>
+    <h1>Live shows, all in <em>one place</em></h1>
+    <p class="lede" id="lede">Theatre, comedy, music, pantomime and more at venues across the UK.</p>
   </header>
 
   <section class="suggest" aria-labelledby="sgTitle">
-    <div><strong id="sgTitle">Something missing?</strong><p>Help us grow Curtain Call. Tell us about a venue or show we don't list yet.</p></div>
+    <div><strong id="sgTitle">Something missing?</strong><p>Help us grow Find a Show. Tell us about a venue or show we don't list yet.</p></div>
     <div class="btns" id="sgBtns"></div>
   </section>
 
@@ -249,7 +256,7 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
   <footer>
     <p>Listings are collected from each venue's own website and checked several times a day. Dates, times and availability can change, so please confirm with the venue before you book or travel.</p>
     <details id="privacy"><summary>Privacy and about</summary><div>
-      <p><strong>Curtain Call is an independent listings guide.</strong> It is not run by or affiliated with the theatres and venues listed. Each "View show" button takes you to the venue's own page, where you can book.</p>
+      <p><strong>Find a Show is an independent listings guide.</strong> It is not run by or affiliated with the theatres and venues listed. Each "View show" button takes you to the venue's own page, where you can book.</p>
       <p><strong>No accounts or tracking.</strong> We don't ask you to sign up and we don't use advertising or analytics cookies.</p>
       <p><strong>Your location.</strong> If you use "Near me", your location or postcode is used in your browser to work out distances. A postcode is looked up with postcodes.io, and your location is never stored by us.</p>
       <p><strong>Suggestions.</strong> If you suggest a venue or show, the text you type is sent to us through Google Forms. We don't ask for your name or email. This page also loads its fonts from Google Fonts.</p>
@@ -258,7 +265,7 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
     <p id="stamp"></p>
   </footer>
 </div>
-<noscript><p style="padding:24px;text-align:center">Curtain Call needs JavaScript to show listings. Please turn it on and reload the page.</p></noscript>
+<noscript><p style="padding:24px;text-align:center">Find a Show needs JavaScript to show listings. Please turn it on and reload the page.</p></noscript>
 
 <script>
 (function () {
@@ -373,7 +380,7 @@ dialog::backdrop { background: rgba(10, 5, 18, .75); }
     var regs = REGIONS.filter(function (r) { return haveR[r]; });
     $("regionChips").innerHTML = regs.length > 1 ? '<button type="button" class="chip" data-region="" aria-pressed="' + (F.region === "") + '">All UK</button>' + regs.map(function (r) { return '<button type="button" class="chip" data-region="' + esc(r) + '" aria-pressed="' + (F.region === r) + '">' + esc(r) + "</button>"; }).join("") : "";
     fillVenueList();
-    $("lede").textContent = "Shows, comedy, music and pantomime at " + venueNames.length + " venues across the UK, all in one place.";
+    $("lede").textContent = "Theatre, comedy, music, pantomime and more at " + venueNames.length + " venues across the UK.";
   }
   function venueLabel(n) { return label(n); }
   function fillVenueList() { showSug(false); }

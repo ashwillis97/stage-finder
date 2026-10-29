@@ -491,8 +491,13 @@ dialog::backdrop { background: var(--backdrop); }
   var AFF = { base: "https://ticketmaster.evyy.net/c/8068961/264167/4272", prop: "9082472" };
   function tmButton(s) {
     if (!s.tm) return "";
-    try { if (!/(^|\.)ticketmaster\.co\.uk$/.test(new URL(s.tm).hostname)) return ""; } catch (e) { return ""; }
-    return '<a class="btn ghost" href="' + esc(AFF.base + "?u=" + encodeURIComponent(s.tm) + "&partnerpropertyid=" + AFF.prop) + '" target="_blank" rel="sponsored noopener noreferrer" aria-label="Buy tickets for ' + esc(s.title) + ' on Ticketmaster">Buy on Ticketmaster</a>';
+    var page = s.tm;
+    try {
+      var u = new URL(s.tm);
+      if (/(^|\.)evyy\.net$/.test(u.hostname) && u.searchParams.get("u")) page = u.searchParams.get("u");
+      if (!/(^|\.)ticketmaster\.co\.uk$/.test(new URL(page).hostname)) return "";
+    } catch (e) { return ""; }
+    return '<a class="btn ghost" href="' + esc(AFF.base + "?u=" + encodeURIComponent(page) + "&partnerpropertyid=" + AFF.prop) + '" target="_blank" rel="sponsored noopener noreferrer" aria-label="Buy tickets for ' + esc(s.title) + ' on Ticketmaster">Buy on Ticketmaster</a>';
   }
   function refresh() { visible = 40; render(); updTriggers(); }
 

@@ -37,6 +37,19 @@ def venue_score(ours, theirs):
     return len(ta & tb) / len(ta | tb) if ta and tb else 0
 
 
+def plain_url(u):
+    """The API may hand back a ready-made affiliate link; keep only the Ticketmaster page inside it."""
+    try:
+        p = urllib.parse.urlparse(u)
+        if p.hostname and p.hostname.endswith("evyy.net"):
+            inner = urllib.parse.parse_qs(p.query).get("u")
+            if inner:
+                return inner[0]
+    except ValueError:
+        pass
+    return u
+
+
 def call(path, params, key):
     q = urllib.parse.urlencode(dict(params, apikey=key))
     with urllib.request.urlopen(f"{API}{path}?{q}", timeout=30) as r:
@@ -65,7 +78,7 @@ def venue_events(vid, key):
         for e in (data.get("_embedded") or {}).get("events", []):
             d = ((e.get("dates") or {}).get("start") or {}).get("localDate")
             if d and e.get("url") and e.get("name"):
-                out.append({"name": e["name"], "date": d, "url": e["url"]})
+                out.append({"name": e["name"], "date": d, "url": plain_url(e["url"])})
         if page + 1 >= ((data.get("page") or {}).get("totalPages") or 1):
             break
     return out

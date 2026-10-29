@@ -27,11 +27,16 @@ jobs:
         run: python scripts/snapshot.py
       - name: Read the pages and update shows.json
         run: python scripts/collect.py
+      - name: Add Ticketmaster links
+        env:
+          TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
+        run: python scripts/ticketmaster.py
       - name: Save the new listings
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add shows.json health.json
+          git add tm_venues.json || true
           git commit -m "Update listings" || echo "no changes"
           git pull --rebase --autostash origin main
           git push

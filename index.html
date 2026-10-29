@@ -137,7 +137,9 @@ h2 { margin: 14px 0 0; font-family: var(--font-display); font-weight: 400; font-
 .tag { font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: var(--surface-2); color: var(--muted); }
 .tag.live { background: rgba(var(--rose-rgb), .16); color: var(--rose); }
 .tag.near { background: rgba(var(--accent-rgb), .16); color: var(--accent); }
-.act { display: flex; align-items: center; padding: 14px 16px 14px 0; }
+.act { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 14px 16px 14px 0; }
+.aff { margin: 0 0 12px; font-size: 14px; color: var(--muted); max-width: 70ch; }
+.aff[hidden] { display: none; }
 .more { align-self: center; margin-top: 8px; min-height: 50px; padding: 0 28px; }
 .empty { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 36px 20px; text-align: center; color: var(--muted); display: flex; flex-direction: column; align-items: center; gap: 10px; }
 .empty strong { font-family: var(--font-display); font-weight: 400; font-size: 32px; letter-spacing: .04em; color: var(--fg); }
@@ -282,6 +284,7 @@ dialog::backdrop { background: var(--backdrop); }
     <button class="linkbtn" id="clear" type="button" hidden>Clear all filters</button>
   </div>
 
+  <p class="aff" id="aff" hidden>Some shows have a Ticketmaster button. These are affiliate links, so if you buy a ticket we may earn a commission at no extra cost to you.</p>
   <main class="list" id="list"><div class="empty"><strong>Loading shows</strong>One moment please.</div></main>
 
   <dialog id="dlg" aria-labelledby="dlgTitle"><div class="dlg" id="dlgBody"></div></dialog>
@@ -290,8 +293,9 @@ dialog::backdrop { background: var(--backdrop); }
     <p>Listings are collected from each venue's own website and checked several times a day. Dates, times and availability can change, so please confirm with the venue before you book or travel.</p>
     <details id="privacy"><summary>Privacy and about</summary><div>
       <p><strong>Find a Show is an independent listings guide.</strong> It is not run by or affiliated with the theatres and venues listed. Each "View show" button takes you to the venue's own page, where you can book.</p>
-      <p><strong>No accounts or tracking.</strong> We don't ask you to sign up and we don't use advertising or analytics cookies.</p>
+      <p><strong>No accounts or tracking.</strong> We don't ask you to sign up and we don't use advertising or analytics cookies on this site.</p>
       <p><strong>Your location.</strong> If you use "Near me", your location or postcode is used in your browser to work out distances. A postcode is looked up with postcodes.io, and your location is never stored by us.</p>
+      <p><strong>Affiliate links.</strong> "Buy on Ticketmaster" buttons are affiliate links. If you buy, we may earn a commission at no extra cost to you, and Ticketmaster and its partners may set cookies when you click through.</p>
       <p><strong>Suggestions.</strong> If you suggest a venue or show, the text you type is sent to us through Google Forms. We don't ask for your name or email. This page also loads its fonts from Google Fonts.</p>
     </div></details>
     <details id="about" hidden><summary>About these listings</summary><div id="aboutBody"></div></details>
@@ -458,6 +462,7 @@ dialog::backdrop { background: var(--backdrop); }
   function anyFilter() { return F.q || F.venue || F.region || F.cat || F.when !== "any" || user; }
   function render() {
     var res = filtered(), rows = res.rows, n = rows.length;
+    $("aff").hidden = !rows.some(function (r) { return !!r.tm; });
     $("count").innerHTML = n + (n === 1 ? " show" : " shows") + (user ? "<small>within " + $("radius").value + " miles</small>" : "");
     $("clear").hidden = !anyFilter();
     if (!n) {
@@ -475,12 +480,19 @@ dialog::backdrop { background: var(--backdrop); }
       html += '<article class="card"><div class="stub"><span class="dow">' + (until ? "Until" : DOW3[sd.getDay()]) + '</span><span class="day">' + sd.getDate() + '</span><span class="mon">' + MON3[sd.getMonth()] + "</span></div>" +
         '<div class="info"><h3>' + esc(s.title) + '</h3><div class="venue">' + esc(nameOf(s.theatre)) + (city ? ", <span>" + esc(city) + "</span>" : "") + '</div><div class="when">' + esc(whenText(s)) + "</div>" +
         '<div class="tags">' + (cat ? '<span class="tag">' + esc(cat) + "</span>" : "") + (running && s.start !== s.end ? '<span class="tag live">On now</span>' : "") + (dm != null ? '<span class="tag near">' + Math.round(dm) + " miles away</span>" : "") + "</div></div>" +
-        '<div class="act"><a class="btn" href="' + esc(safeUrl(s.url)) + '" target="_blank" rel="noopener noreferrer" aria-label="Tickets and info for ' + esc(s.title) + '">Tickets &amp; info</a></div></article>';
+        '<div class="act"><a class="btn" href="' + esc(safeUrl(s.url)) + '" target="_blank" rel="noopener noreferrer" aria-label="Tickets and info for ' + esc(s.title) + '">Tickets &amp; info</a>' + tmButton(s) + '</div></article>';
     });
     html += "</div>";
     if (n > shown.length) html += '<button class="btn ghost more" id="more" type="button">Show more (' + (n - shown.length) + " left)</button>";
     $("list").innerHTML = html;
     var m = $("more"); if (m) m.addEventListener("click", function () { visible += 40; render(); });
+  }
+  /* Ticketmaster affiliate link: wraps a ticketmaster.co.uk event page in the partner tracking link */
+  var AFF = { base: "https://ticketmaster.evyy.net/c/8068961/264167/4272", prop: "9082472" };
+  function tmButton(s) {
+    if (!s.tm) return "";
+    try { if (!/(^|\.)ticketmaster\.co\.uk$/.test(new URL(s.tm).hostname)) return ""; } catch (e) { return ""; }
+    return '<a class="btn ghost" href="' + esc(AFF.base + "?u=" + encodeURIComponent(s.tm) + "&partnerpropertyid=" + AFF.prop) + '" target="_blank" rel="sponsored noopener noreferrer" aria-label="Buy tickets for ' + esc(s.title) + ' on Ticketmaster">Buy on Ticketmaster</a>';
   }
   function refresh() { visible = 40; render(); updTriggers(); }
 

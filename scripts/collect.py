@@ -3,7 +3,7 @@
 Each venue has a reader below. A venue's old rows are replaced only when its
 reader finds at least one show, so a broken page never wipes the listings.
 """
-import datetime as dt, json, pathlib, re, sys
+import datetime as dt, json, os, pathlib, re, sys
 from zoneinfo import ZoneInfo
 from bs4 import BeautifulSoup
 
@@ -367,14 +367,14 @@ READERS = {
     "TRCH": read_trch, "The Alexandra Theatre": read_alexandra, "Regent Theatre Stoke": read_regent, "New Vic Theatre": read_newvic, "Winding Wheel Theatre": read_winding_wheel, "Forest Live Cannock Chase": read_forest_live, "Big Top Arena": read_big_top, "Motorpoint Arena Nottingham": read_motorpoint, "Bonington Theatre": read_bonington, "Vaillant Live": read_vaillant,
 }
 
-def _venue_files():
-    for f in ("venues.json", "venues_new.json"):
+def _venue_files(live_only=False):
+    for f in (("venues.json",) if live_only else ("venues.json", "venues_new.json")):
         fp = ROOT / f
         if fp.exists():
             yield from json.loads(fp.read_text(encoding="utf-8"))["venues"]
 
 
-for _v in _venue_files():  # venues flagged reader=atg need no custom code
+for _v in _venue_files(live_only=True):  # venues flagged reader=atg need no custom code
     if _v.get("reader") == "atg" and _v["name"] not in READERS:
         READERS[_v["name"]] = (lambda s=_v["slug"], n=_v["name"]: read_atg(s, n))
 
@@ -564,16 +564,16 @@ def read_jsonld(prefix, theatre, match=None, fallback_url=""):
     return [row(t, theatre, (g["a"], max(g["a"], g["b"])), g["url"] or fallback_url) for t, g in groups.items()]
 
 
-for _v in _venue_files():
+for _v in _venue_files(live_only=True):
     if _v.get("reader") in ("lw", "trafalgar", "nimax", "atgshow", "delfont") and _v["name"] not in READERS:
         _fn = {"lw": read_lw, "trafalgar": read_trafalgar, "nimax": read_nimax, "atgshow": read_atg_show, "delfont": read_delfont}[_v["reader"]]
         READERS[_v["name"]] = (lambda f=_fn, s=_v["slug"], n=_v["name"], m=_v.get("match"): f(s, n, m) if f in (read_lw, read_nimax) else f(s, n))
 
-for _v in _venue_files():
+for _v in _venue_files(live_only=True):
     if _v.get("reader") == "generic" and _v["name"] not in READERS:
         READERS[_v["name"]] = (lambda s=_v["slug"], n=_v["name"], u=_v["urls"][0], m=_v.get("match"): read_generic(s, n, u, m))
 
-for _v in _venue_files():
+for _v in _venue_files(live_only=True):
     if _v.get("reader") == "jsonld" and _v["name"] not in READERS:
         READERS[_v["name"]] = (lambda s=_v["slug"], n=_v["name"], m=_v.get("match"), u=_v["urls"][0]: read_jsonld(s, n, m, u))
 
@@ -731,7 +731,8 @@ GENRE_HINTS = [(r"tribute|story of|legends|experience", "Tribute"), (r"orchestra
 def main():
     path = ROOT / "shows.json"
     data = json.loads(path.read_text(encoding="utf-8"))
-    old = [r for r in data["shows"] if r["theatre"] not in REMOVED]
+    pending = {v["name"] for v in json.loads((ROOT / "venues_new.json").read_text(encoding="utf-8"))["venues"]}
+    old = [r for r in data["shows"] if r["theatre"] not in REMOVED and r["theatre"] not in pending]  # pending venues are not published yet
     old_genre = {(r["title"].lower(), r["theatre"]): r.get("genre", "") for r in old}
     fresh, stale = {}, []
     for name, fn in READERS.items():
@@ -770,8 +771,19 @@ def main():
             del part[t]
     for t in {r["theatre"] for r in merged} - scraped:
         part[t] = auto_note
-    for t in stale:
-        pass
+    old_live = [r for r in old if r["end"] >= TODAY.isoformat()]
+    had = {r["theatre"] for r in old_live}
+    broken = sorted(n for n in stale if n in had)
+    never = sorted(n for n in stale if n not in had)
+    health = {"readers": len(READERS), "shows_before": len(old_live), "shows_now": len(merged),
+              "broken": broken, "never_worked": never}
+    (ROOT / "health.json").write_text(json.dumps(health, indent=1, ensure_ascii=False), encoding="utf-8")
+    summ = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summ:
+        with open(summ, "a", encoding="utf-8") as fh:
+            fh.write(f"### Listings health\n{len(merged)} shows now (was {len(old_live)}) from {len(READERS)} readers.\n\n")
+            fh.write("**Stopped working (had shows last time, none now):** " + (", ".join(broken) or "none") + "\n\n")
+            fh.write("**Never produced shows:** " + (", ".join(never) or "none") + "\n")
     cov["none"] = [n for n in cov.get("none", []) if n not in scraped and n not in REMOVED]
     for t in REMOVED:
         part.pop(t, None)

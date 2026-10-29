@@ -148,6 +148,29 @@ footer details { background: var(--surface); border: 1px solid var(--line); bord
 footer summary { min-height: 46px; display: flex; align-items: center; cursor: pointer; color: var(--fg); font-weight: 600; }
 footer details div { padding-bottom: 14px; display: flex; flex-direction: column; gap: 8px; }
 
+/* Filters: stacked on phones; on desktop three dropdown buttons side by side that open a panel */
+.ftrig { display: none; }
+@media (min-width: 761px) {
+  .filters { flex-direction: row; align-items: flex-start; gap: 12px; position: relative; }
+  .fg { position: relative; flex: 1 1 0; min-width: 0; }
+  .ftrig { display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%; min-height: 54px; padding: 0 18px; text-align: left; border: 1.5px solid var(--line); border-radius: 14px; background: var(--surface); color: var(--fg); font-size: 16px; }
+  .ftrig::after { content: ""; flex: none; width: 8px; height: 8px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(45deg) translateY(-2px); }
+  .ftrig[aria-expanded="true"]::after { transform: rotate(225deg) translateY(-2px); }
+  .ftrig:hover, .ftrig[aria-expanded="true"] { border-color: var(--accent); }
+  .ftrig.on { border-color: var(--accent); }
+  .fk { font-family: var(--font-small); font-weight: 600; font-size: 14px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .fv { flex: 1; min-width: 0; text-align: right; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .fpanel { display: none; position: absolute; z-index: 30; top: calc(100% + 8px); left: 0; width: 440px; max-width: calc(100vw - 48px); padding: 16px; background: var(--surface); border: 1.5px solid var(--line); border-radius: 16px; box-shadow: 0 16px 40px var(--shadow); }
+  .fg:last-child .fpanel { left: auto; right: 0; }
+  .fpanel.open { display: block; }
+  .fpanel.fwide { width: 560px; }
+  .fpanel .group-label { display: none; }
+  .fpanel .chips { flex-wrap: wrap; overflow: visible; }
+  .fpanel .dates { margin-top: 12px; }
+  .fpanel .where { margin-top: 12px; }
+  .fpanel .panel { margin-top: 12px; }
+  .vsug { position: static; margin-top: 6px; box-shadow: none; }
+}
 @media (max-width: 600px) {
   .brand { font-size: 24px; }
   .lede { font-size: 16px; }
@@ -207,41 +230,50 @@ dialog::backdrop { background: var(--backdrop); }
     <input id="q" type="search" placeholder="Search shows, artists or venues" autocomplete="off" enterkeyhint="search">
   </div>
 
-  <section class="filters" aria-label="Filter shows">
-    <div>
-      <p class="group-label" id="lblWhen">When</p>
-      <div class="chips" id="whenChips" role="group" aria-labelledby="lblWhen"></div>
-    </div>
-    <div class="dates" id="dates" hidden>
-      <div><label for="from">From</label><input id="from" type="date"></div>
-      <div><label for="to">To</label><input id="to" type="date"></div>
-    </div>
-    <div>
-      <p class="group-label" id="lblWhat">What</p>
-      <div class="chips" id="catChips" role="group" aria-labelledby="lblWhat"></div>
-    </div>
-    <div>
-      <p class="group-label" id="lblWhere">Where</p>
-      <div class="chips" id="regionChips" role="group" aria-label="Region"></div>
-      <div class="where" role="group" aria-labelledby="lblWhere">
-        <label class="sr" for="venue">Search for a venue</label>
-        <div class="vbox"><input id="venue" class="venue-in" type="text" placeholder="Any venue" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="venueSug" aria-autocomplete="list"><button type="button" class="vclear" id="vclear" aria-label="Clear venue" hidden>&times;</button><ul id="venueSug" class="vsug" role="listbox" hidden></ul></div>
-        <button class="chip" id="nearBtn" type="button" aria-pressed="false" aria-expanded="false" aria-controls="nearPanel">Near me</button>
+  <section class="filters" id="filters" aria-label="Filter shows">
+    <div class="fg" id="fgWhen">
+      <button type="button" class="ftrig" id="tWhen" aria-expanded="false" aria-controls="pWhen"><span class="fk">When</span><span class="fv" id="vWhen">Any day</span></button>
+      <div class="fpanel" id="pWhen">
+        <p class="group-label" id="lblWhen">When</p>
+        <div class="chips" id="whenChips" role="group" aria-labelledby="lblWhen"></div>
+        <div class="dates" id="dates" hidden>
+          <div><label for="from">From</label><input id="from" type="date"></div>
+          <div><label for="to">To</label><input id="to" type="date"></div>
+        </div>
       </div>
     </div>
-    <div class="panel" id="nearPanel" hidden>
-      <p>Enter your postcode or share your location to see shows close to you.</p>
-      <div class="pcrow">
-        <label class="sr" for="pc">Your postcode</label>
-        <input id="pc" type="text" placeholder="Your postcode, e.g. DE1 3NF" autocomplete="postal-code" enterkeyhint="go">
-        <button class="btn" id="pcgo" type="button">Find</button>
+    <div class="fg" id="fgWhat">
+      <button type="button" class="ftrig" id="tWhat" aria-expanded="false" aria-controls="pWhat"><span class="fk">What</span><span class="fv" id="vWhat">All types</span></button>
+      <div class="fpanel" id="pWhat">
+        <p class="group-label" id="lblWhat">What</p>
+        <div class="chips" id="catChips" role="group" aria-labelledby="lblWhat"></div>
       </div>
-      <button class="btn ghost" id="locate" type="button">Use my current location</button>
-      <div class="opts" id="opts" hidden>
-        <div><label for="radius">Show venues within <strong id="radiusVal">25 miles</strong></label><input id="radius" type="range" min="5" max="100" step="5" value="25"></div>
-        <div><label for="sort">Order by</label><select id="sort"><option value="date">Date</option><option value="near">Distance</option></select></div>
+    </div>
+    <div class="fg" id="fgWhere">
+      <button type="button" class="ftrig" id="tWhere" aria-expanded="false" aria-controls="pWhere"><span class="fk">Where</span><span class="fv" id="vWhere">All UK</span></button>
+      <div class="fpanel fwide" id="pWhere">
+        <p class="group-label" id="lblWhere">Where</p>
+        <div class="chips" id="regionChips" role="group" aria-label="Region"></div>
+        <div class="where" role="group" aria-labelledby="lblWhere">
+          <label class="sr" for="venue">Search for a venue</label>
+          <div class="vbox"><input id="venue" class="venue-in" type="text" placeholder="Any venue" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="venueSug" aria-autocomplete="list"><button type="button" class="vclear" id="vclear" aria-label="Clear venue" hidden>&times;</button><ul id="venueSug" class="vsug" role="listbox" hidden></ul></div>
+          <button class="chip" id="nearBtn" type="button" aria-pressed="false" aria-expanded="false" aria-controls="nearPanel">Near me</button>
+        </div>
+        <div class="panel" id="nearPanel" hidden>
+          <p>Enter your postcode or share your location to see shows close to you.</p>
+          <div class="pcrow">
+            <label class="sr" for="pc">Your postcode</label>
+            <input id="pc" type="text" placeholder="Your postcode, e.g. DE1 3NF" autocomplete="postal-code" enterkeyhint="go">
+            <button class="btn" id="pcgo" type="button">Find</button>
+          </div>
+          <button class="btn ghost" id="locate" type="button">Use my current location</button>
+          <div class="opts" id="opts" hidden>
+            <div><label for="radius">Show venues within <strong id="radiusVal">25 miles</strong></label><input id="radius" type="range" min="5" max="100" step="5" value="25"></div>
+            <div><label for="sort">Order by</label><select id="sort"><option value="date">Date</option><option value="near">Distance</option></select></div>
+          </div>
+          <p id="nearMsg" aria-live="polite"></p>
+        </div>
       </div>
-      <p id="nearMsg" aria-live="polite"></p>
     </div>
   </section>
 
@@ -450,7 +482,30 @@ dialog::backdrop { background: var(--backdrop); }
     $("list").innerHTML = html;
     var m = $("more"); if (m) m.addEventListener("click", function () { visible += 40; render(); });
   }
-  function refresh() { visible = 40; render(); }
+  function refresh() { visible = 40; render(); updTriggers(); }
+
+  /* ---- desktop filter dropdowns ---- */
+  var FG = [["tWhen", "pWhen"], ["tWhat", "pWhat"], ["tWhere", "pWhere"]];
+  function closePanels(except) {
+    FG.forEach(function (g) { if (g[1] !== except) { $(g[1]).classList.remove("open"); $(g[0]).setAttribute("aria-expanded", "false"); } });
+  }
+  function togglePanel(t, p) {
+    var open = !$(p).classList.contains("open");
+    closePanels(open ? p : null);
+    $(p).classList.toggle("open", open); $(t).setAttribute("aria-expanded", open ? "true" : "false");
+  }
+  FG.forEach(function (g) { $(g[0]).addEventListener("click", function (e) { e.stopPropagation(); togglePanel(g[0], g[1]); }); });
+  document.addEventListener("click", function (e) { if (!e.composedPath().some(function (n) { return n.classList && n.classList.contains("fg"); })) closePanels(null); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") closePanels(null); });
+  function updTriggers() {
+    var w = WHEN.filter(function (x) { return x[0] === F.when; })[0], c = CATS.filter(function (x) { return x[0] === F.cat; })[0];
+    var whenTxt = w ? w[1] : "Any day";
+    if (F.when === "custom" && ($("from").value || $("to").value)) whenTxt = ($("from").value || "…") + " to " + ($("to").value || "…");
+    var whereTxt = user ? $("nearBtn").textContent : F.venue ? nameOf(F.venue) : F.region || "All UK";
+    $("vWhen").textContent = whenTxt; $("vWhat").textContent = c ? c[1] : "All types"; $("vWhere").textContent = whereTxt;
+    $("tWhen").classList.toggle("on", F.when !== "any"); $("tWhat").classList.toggle("on", !!F.cat); $("tWhere").classList.toggle("on", !!(user || F.venue || F.region));
+  }
+
   function clearAll() {
     F = { q: "", venue: "", region: "", cat: "", when: "any" };
     $("q").value = ""; $("venue").value = ""; $("vclear").hidden = true; buildVenues(); $("from").value = ""; $("to").value = ""; $("dates").hidden = true;
@@ -490,11 +545,11 @@ dialog::backdrop { background: var(--backdrop); }
   /* ---- events ---- */
   $("whenChips").addEventListener("click", function (e) {
     var b = e.target.closest("[data-when]"); if (!b) return;
-    F.when = b.getAttribute("data-when"); $("dates").hidden = F.when !== "custom"; buildChips(); refresh();
+    F.when = b.getAttribute("data-when"); $("dates").hidden = F.when !== "custom"; buildChips(); refresh(); if (F.when !== "custom") closePanels(null);
   });
   $("catChips").addEventListener("click", function (e) {
     var b = e.target.closest(".chip"); if (!b) return;
-    F.cat = b.getAttribute("data-cat"); buildChips(); refresh();
+    F.cat = b.getAttribute("data-cat"); buildChips(); refresh(); closePanels(null);
   });
   $("q").addEventListener("input", function () { F.q = $("q").value; refresh(); });
   $("venue").addEventListener("input", function () {
@@ -606,7 +661,7 @@ dialog::backdrop { background: var(--backdrop); }
     .then(function (data) {
       shows = Array.isArray(data.shows) ? data.shows : []; coverage = data.coverage || null;
       if (data.places) Object.keys(data.places).forEach(function (k) { if (!PLACE[k]) PLACE[k] = [k, data.places[k][0], data.places[k][1], data.places[k][2], data.places[k][3] || ""]; });
-      buildChips(); buildVenues(); buildAbout(); render();
+      buildChips(); buildVenues(); buildAbout(); render(); updTriggers();
       var d = new Date(data.updated);
       $("stamp").textContent = isNaN(d) ? "" : "Listings last checked " + d.getDate() + " " + MONTHS[d.getMonth()] + " at " + String(d.getHours()).padStart(2, "0") + ":" + String(d.getMinutes()).padStart(2, "0") + ".";
     })

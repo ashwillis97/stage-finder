@@ -142,8 +142,6 @@ h2 { margin: 14px 0 0; font-family: var(--font-display); font-weight: 400; font-
 .tag.live { background: rgba(var(--rose-rgb), .16); color: var(--rose); }
 .tag.near { background: rgba(var(--accent-rgb), .16); color: var(--accent); }
 .act { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 14px 16px 14px 0; }
-.aff { margin: 0 0 12px; font-size: 14px; color: var(--muted); max-width: 70ch; }
-.aff[hidden] { display: none; }
 .more { align-self: center; margin-top: 8px; min-height: 50px; padding: 0 28px; }
 .empty { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 36px 20px; text-align: center; color: var(--muted); display: flex; flex-direction: column; align-items: center; gap: 10px; }
 .empty strong { font-family: var(--font-display); font-weight: 400; font-size: 32px; letter-spacing: .04em; color: var(--fg); }
@@ -218,7 +216,6 @@ footer details div { padding-bottom: 14px; display: flex; flex-direction: column
   .suggest .btn { min-height: 34px; padding: 0 14px; border-radius: 999px; font-size: 14px; white-space: nowrap; }
   .resultbar { grid-column: 1; grid-row: 3; border-top: 0; padding-top: 4px; white-space: nowrap; }
   .count { font-size: 24px; }
-  .aff { grid-column: 2 / -1; grid-row: 3; margin: 0; padding-top: 4px; font-size: 13px; max-width: none; text-align: right; }
   h2 { margin: 0; font-size: 24px; }
   .tag.live { display: none; }
   .tags { margin-top: 3px; }
@@ -279,7 +276,7 @@ dialog::backdrop { background: var(--backdrop); }
   .hero { padding: 26px 0 0; }
   .hero h1 { font-size: 58px; text-shadow: 0 2px 24px rgba(0,0,0,.45); }
   .wrap.main { padding-top: 0; }
-  .resultbar, .aff { grid-row: 1; }
+  .resultbar { grid-row: 1; }
   .group { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; align-items: stretch; }
   .group > h2 { grid-column: 1 / -1; }
   .card { grid-template-columns: 70px minmax(0, 1fr); }
@@ -441,19 +438,19 @@ dialog::backdrop { background: var(--backdrop); }
     <button class="linkbtn" id="clear" type="button" hidden>Clear all filters</button>
   </div>
 
-  <p class="aff" id="aff" hidden>Some shows have a Ticketmaster button. These are affiliate links, so if you buy a ticket we may earn a commission at no extra cost to you.</p>
   <main class="list" id="list"><div class="empty"><strong>Loading shows</strong>One moment please.</div></main>
 
   <dialog id="dlg" aria-labelledby="dlgTitle"><div class="dlg" id="dlgBody"></div></dialog>
 
   <footer>
     <p>Listings are collected from each venue's own website and checked several times a day. Dates, times and availability can change, so please confirm with the venue before you book or travel.</p>
+    <p>Some ticket buttons are affiliate links. If you buy a ticket through one, we may earn a commission at no extra cost to you.</p>
     <p class="browse" style="margin:0 0 14px;font-size:14px;color:var(--muted)">Browse: <a href="/cities/">shows by city</a> &middot; <a href="/venues/">all venues</a> &middot; <a href="/categories/">shows by type</a></p>
     <details id="privacy"><summary>Privacy and about</summary><div>
       <p><strong>Find a Show is an independent listings guide.</strong> It is not run by or affiliated with the theatres and venues listed. Each "View show" button takes you to the venue's own page, where you can book.</p>
       <p><strong>No accounts or tracking.</strong> We don't ask you to sign up and we don't use advertising or analytics cookies on this site.</p>
       <p><strong>Your location.</strong> If you use "Near me", your location or postcode is used in your browser to work out distances. A postcode is looked up with postcodes.io, and your location is never stored by us.</p>
-      <p><strong>Affiliate links.</strong> "Buy on Ticketmaster" buttons are affiliate links. If you buy, we may earn a commission at no extra cost to you, and Ticketmaster and its partners may set cookies when you click through.</p>
+      <p><strong>Affiliate links.</strong> Some ticket buttons, such as "Buy on Ticketmaster", are affiliate links. If you buy, we may earn a commission at no extra cost to you, and the ticket seller and its partners may set cookies when you click through.</p>
       <p><strong>Suggestions.</strong> If you suggest a venue or show, the text you type is sent to us through Google Forms. We don't ask for your name or email. This page also loads its fonts from Google Fonts.</p>
     </div></details>
     <details id="about" hidden><summary>About these listings</summary><div id="aboutBody"></div></details>
@@ -620,7 +617,6 @@ dialog::backdrop { background: var(--backdrop); }
   function anyFilter() { return F.q || F.venue || F.region || F.cat || F.when !== "any" || user; }
   function render() {
     var res = filtered(), rows = res.rows, n = rows.length;
-    $("aff").hidden = !rows.some(function (r) { return !!r.tm; });
     $("count").innerHTML = n + (n === 1 ? " show" : " shows") + (user ? "<small>within " + $("radius").value + " miles</small>" : "");
     $("clear").hidden = !anyFilter();
     if (!n) {

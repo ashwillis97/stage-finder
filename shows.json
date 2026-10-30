@@ -1,6 +1,6 @@
 {
  "sample": false,
- "updated": "2026-10-30T07:52+00:00",
+ "updated": "2026-10-30T09:51+00:00",
  "coverage": {
   "none": [],
   "partial": {
@@ -11,7 +11,7 @@
    "Palace Theatre Mansfield": "Not updated automatically yet, so these listings may be out of date.",
    "Brewhouse Arts Centre": "Not updated automatically yet, so these listings may be out of date.",
    "Queen Elizabeth Hall": "Not updated automatically yet, so these listings may be out of date.",
-   "Vaillant Live": "Not updated automatically yet, so these listings may be out of date."
+   "Grand Opera House York": "Not updated automatically yet, so these listings may be out of date."
   }
  },
  "shows": [
@@ -140,7 +140,7 @@
    "theatre": "ExCeL London",
    "genre": "",
    "start": "2026-07-01",
-   "end": "2026-11-30",
+   "end": "2027-01-31",
    "url": "https://www.excel.london/whats-on/house-of-dreamers-london"
   },
   {
@@ -626,14 +626,6 @@
    "url": "https://norwichtheatre.org/whats-on/celya-ab-we-must-stop-meeting-like-this/"
   },
   {
-   "title": "Children's Theatre Trails",
-   "theatre": "Mayflower Theatre",
-   "genre": "",
-   "start": "2026-10-30",
-   "end": "2027-02-19",
-   "url": "https://www.mayflower.org.uk/whats-on/childrens-theatre-trail-autumn-2026/"
-  },
-  {
    "title": "Christmas Carol Goes Wrong",
    "theatre": "Churchill Theatre",
    "genre": "Play",
@@ -954,7 +946,7 @@
    "start": "2026-10-30",
    "end": "2026-10-30",
    "url": "https://southendtheatres.org.uk/southend-theatres/en-GB/event/music/jools-holland-and-his-rhythm-and-blues-orchestra-tickets",
-   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-and-southendonsea-30-10-2026/event/1F00642CC08A36D9"
+   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-blues-southendonsea-30-10-2026/event/1F00642CC08A36D9"
   },
   {
    "title": "Korn",
@@ -2170,7 +2162,7 @@
    "start": "2026-10-31",
    "end": "2026-10-31",
    "url": "https://www.ipswichtheatres.co.uk/whats-on/jools-holland-and-his-rhythm-and-blues-orchestra/",
-   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-and-ipswich-31-10-2026/event/1F00642CA9A61EB6"
+   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-blues-ipswich-31-10-2026/event/1F00642CA9A61EB6"
   },
   {
    "title": "KPop Fantasy: Halloween Special",
@@ -2910,7 +2902,7 @@
    "start": "2026-11-01",
    "end": "2026-11-01",
    "url": "https://www.cornex.co.uk/events/jools-holland-and-his-rhythm-and-blues-orchestra",
-   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-and-cambridge-01-11-2026/event/1F00642CDEFB3FF2"
+   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-blues-cambridge-01-11-2026/event/1F00642CDEFB3FF2"
   },
   {
    "title": "James Bond Themed Concert Spectacular",
@@ -5482,7 +5474,7 @@
    "start": "2026-11-06",
    "end": "2026-11-06",
    "url": "https://www.watfordcolosseum.co.uk/events/jools-holland-and-his-rhythm-and-blues-orchestra",
-   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-and-watford-06-11-2026/event/3700642CBB8A2492"
+   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-blues-watford-06-11-2026/event/3700642CBB8A2492"
   },
   {
    "title": "Legend: The Music of Bob Marley",
@@ -6802,7 +6794,7 @@
    "start": "2026-11-08",
    "end": "2026-11-08",
    "url": "https://www.atgtickets.com/shows/jools-holland-and-his-rhythm-and-blues-orchestra/new-theatre-oxford/",
-   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-and-oxford-08-11-2026/event/3600642CB136351D"
+   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-blues-oxford-08-11-2026/event/3600642CB136351D"
   },
   {
    "title": "Josh Pugh",
@@ -6966,15 +6958,6 @@
    "start": "2026-11-08",
    "end": "2026-11-08",
    "url": "https://www.oldrep.co.uk/event-details/355931ABNBGLTVDMRHPMBGTQVNTVMGNTC/shine-on-stage/"
-  },
-  {
-   "title": "Stevie Wonder",
-   "theatre": "Co-op Live",
-   "genre": "",
-   "start": "2026-11-08",
-   "end": "2026-11-08",
-   "url": "https://www.cooplive.com/events/stevie-wonder-thvc",
-   "tm": "https://www.ticketmaster.co.uk/stevie-wonder-songs-in-the-key-manchester-08-11-2026/event/3700651AD8C07B99"
   },
   {
    "title": "Stories - The Tap Dance Sensation",
@@ -8012,6 +7995,14 @@
    "url": "https://www.capitaltheatres.com/shows/turandot/"
   },
   {
+   "title": "WNO Schools Concert",
+   "theatre": "Mayflower Theatre",
+   "genre": "Classical",
+   "start": "2026-11-11",
+   "end": "2026-11-11",
+   "url": "https://www.mayflower.org.uk/whats-on/wno-schools-concert-2026/"
+  },
+  {
    "title": "WWOS - Joseph And The Amazing Technicolour Dreamcoat",
    "theatre": "Churchill Theatre",
    "genre": "Musical",
@@ -8561,7 +8552,7 @@
    "start": "2026-11-13",
    "end": "2026-11-13",
    "url": "https://www.mandsbankarena.com/whats-on/courteeners/",
-   "tm": "https://www.ticketmaster.co.uk/courteeners-liverpool-13-11-2026/event/37006482B53F2A34"
+   "tm": "https://www.ticketmaster.co.uk/the-courteeners-liverpool-13-11-2026/event/37006482B53F2A34"
   },
   {
    "title": "ELO Again",
@@ -10744,7 +10735,7 @@
    "start": "2026-11-19",
    "end": "2026-11-19",
    "url": "https://www.atgtickets.com/shows/jools-holland-and-his-rhythm-and-blues-orchestra/victoria-hall/",
-   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-and-stokeontrent-19-11-2026/event/3700642CA8281CA2"
+   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-blues-stokeontrent-19-11-2026/event/3700642CA8281CA2"
   },
   {
    "title": "Kevin Bridges",
@@ -12055,6 +12046,15 @@
    "url": "https://www.atgtickets.com/shows/the-princess-proms/leas-cliff-hall/"
   },
   {
+   "title": "The Stylistics Plus Support",
+   "theatre": "Cliffs Pavilion",
+   "genre": "",
+   "start": "2026-11-22",
+   "end": "2026-11-22",
+   "url": "https://southendtheatres.org.uk/southend-theatres/en-GB/event/music/the-stylistics-plus-support-tickets",
+   "tm": "https://www.ticketmaster.co.uk/the-stylistics-southendonsea-22-11-2026/event/1F006450A86833C1"
+  },
+  {
    "title": "Theatre School of the Absurd",
    "theatre": "Theatre Royal Bath",
    "genre": "",
@@ -12601,7 +12601,7 @@
    "start": "2026-11-25",
    "end": "2026-11-25",
    "url": "https://www.trch.co.uk/whats-on/jools-holland-z9w4",
-   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-and-nottingham-25-11-2026/event/1F00642CC87C3AFA"
+   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-blues-nottingham-25-11-2026/event/1F00642CC87C3AFA"
   },
   {
    "title": "Lets Disko! Movember Edition!",
@@ -12864,7 +12864,7 @@
    "start": "2026-11-26",
    "end": "2026-11-26",
    "url": "https://www.demontforthall.co.uk/event/jools-holland",
-   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-and-leicester-26-11-2026/event/1F00642CD67B3DAA"
+   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-blues-leicester-26-11-2026/event/1F00642CD67B3DAA"
   },
   {
    "title": "José González",
@@ -14349,7 +14349,7 @@
    "start": "2026-12-02",
    "end": "2026-12-02",
    "url": "https://www.stocktonglobe.co.uk/shows/jools-holland-and-his-rhythm-and-blues-orchestra",
-   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-and-stocktonontees-02-12-2026/event/1F00642CAD3A2053"
+   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-blues-stocktonontees-02-12-2026/event/1F00642CAD3A2053"
   },
   {
    "title": "Kevin Bridges",
@@ -16099,7 +16099,7 @@
    "start": "2026-12-11",
    "end": "2026-12-11",
    "url": "https://bristolbeacon.org/whats-on/jools-holland-2026/",
-   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-and-bristol-11-12-2026/event/3700642FB3CB2CAD"
+   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-blues-bristol-11-12-2026/event/3700642FB3CB2CAD"
   },
   {
    "title": "Kasabian",
@@ -16790,7 +16790,7 @@
    "start": "2026-12-16",
    "end": "2026-12-16",
    "url": "https://www.yorkbarbican.co.uk/whats-on/jools-holland-2026/",
-   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-and-york-16-12-2026/event/3600642CC96E4388"
+   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-blues-york-16-12-2026/event/3600642CC96E4388"
   },
   {
    "title": "Scrooge Cirque Extravaganza",
@@ -17386,7 +17386,7 @@
    "start": "2026-12-21",
    "end": "2026-12-21",
    "url": "https://brightoncentre.co.uk/whats-on/2026/love-actually-in-concert/",
-   "tm": "https://www.ticketmaster.co.uk/love-actually-in-concert-the-film-brighton-21-12-2026/event/3E00637BB39A685A"
+   "tm": "https://www.ticketmaster.co.uk/love-actually-live-in-concert-brighton-21-12-2026/event/3E00637BB39A685A"
   },
   {
    "title": "Robyn & the Book Monster",
@@ -17885,14 +17885,6 @@
    "url": "https://themet.org.uk/event/marquee-square-heroes/"
   },
   {
-   "title": "On sale Fri 30 Oct 2026",
-   "theatre": "Sunderland Empire",
-   "genre": "Joanne McNally: Pinotphile",
-   "start": "2027-01-08",
-   "end": "2027-01-08",
-   "url": "https://www.atgtickets.com/shows/joanne-mcnally-pinotphile/sunderland-empire/"
-  },
-  {
    "title": "One Night of Elvis - Lee Memphis King",
    "theatre": "Woking Theatre",
    "genre": "Concert",
@@ -17901,13 +17893,20 @@
    "url": "https://www.atgtickets.com/shows/one-night-of-elvis-lee-memphis-king/woking-theatre/"
   },
   {
+   "title": "Pre-sale",
+   "theatre": "Sunderland Empire",
+   "genre": "Joanne McNally: Pinotphile",
+   "start": "2027-01-08",
+   "end": "2027-01-08",
+   "url": "https://www.atgtickets.com/shows/joanne-mcnally-pinotphile/sunderland-empire/"
+  },
+  {
    "title": "Queen of the Night – A Tribute to Whitney Houston",
    "theatre": "Truro Hall for Cornwall",
    "genre": "Tribute",
    "start": "2027-01-08",
    "end": "2027-01-08",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/queen-of-the-night-a-tribute-to-whitney-houston//",
-   "tm": "https://www.ticketmaster.co.uk/queen-of-the-night-a-tribute-truro-08-01-2027/event/1F006464A2A829A4"
+   "url": "https://www.hallforcornwall.co.uk/whats-on/queen-of-the-night-a-tribute-to-whitney-houston//"
   },
   {
    "title": "Rob Lamberti Presents Perfectly George",
@@ -21306,20 +21305,20 @@
    "tm": "https://www.ticketmaster.co.uk/marvel-studios-infinity-saga-concert-experience-london-11-02-2027/event/360064D7E863D8DA"
   },
   {
-   "title": "On sale Fri 30 Oct 2026",
-   "theatre": "Edinburgh Playhouse",
-   "genre": "Joanne McNally: Pinotphile",
-   "start": "2027-02-11",
-   "end": "2027-02-11",
-   "url": "https://www.atgtickets.com/shows/joanne-mcnally-pinotphile/edinburgh-playhouse/"
-  },
-  {
    "title": "Pagrav Dance Company presents Aunusthan – a celebration of Kathak in diaspora",
    "theatre": "New Vic Theatre",
    "genre": "",
    "start": "2027-02-11",
    "end": "2027-02-11",
    "url": "https://www.newvictheatre.org.uk/productions/aunusthan-a-celebration-of-neo-classical-indian-dance-and-music/"
+  },
+  {
+   "title": "Pre-sale",
+   "theatre": "Edinburgh Playhouse",
+   "genre": "Joanne McNally: Pinotphile",
+   "start": "2027-02-11",
+   "end": "2027-02-11",
+   "url": "https://www.atgtickets.com/shows/joanne-mcnally-pinotphile/edinburgh-playhouse/"
   },
   {
    "title": "QUEENZ: Battle of the Divas!",
@@ -26059,6 +26058,15 @@
    "url": "https://nottinghamplayhouse.co.uk/events/jon-culshaw-me-myself-others/"
   },
   {
+   "title": "Michael Starring Ben: The Magic of Michael Jackson",
+   "theatre": "London Palladium",
+   "genre": "",
+   "start": "2027-04-01",
+   "end": "2027-04-01",
+   "url": "https://lwtheatres.co.uk/whats-on/michael-starring-ben-tlp/",
+   "tm": "https://www.ticketmaster.co.uk/michael-starring-ben-london-01-04-2027/event/3700655BA44260F7"
+  },
+  {
    "title": "Morgan Jay",
    "theatre": "NEC Birmingham",
    "genre": "",
@@ -28250,6 +28258,15 @@
    "url": "https://www.utilitaarenabham.co.uk/events/detail/rod-stewart"
   },
   {
+   "title": "Tim Vine: Sillypun Valley",
+   "theatre": "Guildford G Live",
+   "genre": "",
+   "start": "2027-05-04",
+   "end": "2027-05-04",
+   "url": "https://glive.co.uk/g-live-guildford/en-GB/event/comedy/tim-vine-sillypun-valley-tickets",
+   "tm": "https://www.ticketmaster.co.uk/tim-vine-sillypun-valley-guildford-04-05-2027/event/3700655B26AC086F"
+  },
+  {
    "title": "Tindersticks",
    "theatre": "London Palladium",
    "genre": "",
@@ -29438,8 +29455,7 @@
    "genre": "Tribute",
    "start": "2027-05-30",
    "end": "2027-05-30",
-   "url": "https://www.grandtheatre.co.uk/whats-on/queen-of-the-night-2/",
-   "tm": "https://www.ticketmaster.co.uk/queen-of-the-night-a-tribute-wolverhampton-30-05-2027/event/3700655093E42494"
+   "url": "https://www.grandtheatre.co.uk/whats-on/queen-of-the-night-2/"
   },
   {
    "title": "The MacDonald Room Private Bar May 2027",
@@ -29664,14 +29680,6 @@
    "start": "2027-06-06",
    "end": "2027-06-06",
    "url": "https://www.grandtheatre.co.uk/whats-on/absolute-amy/"
-  },
-  {
-   "title": "Chris Hadfield: Exploring the New Space Age",
-   "theatre": "Theatre Royal Drury Lane",
-   "genre": "",
-   "start": "2027-06-06",
-   "end": "2027-06-06",
-   "url": "https://lwtheatres.co.uk/whats-on/chris-hadfield-exploring-the-new-space-age/"
   },
   {
    "title": "Automechanika Birmingham",
@@ -30833,6 +30841,15 @@
    "url": "https://www.atgtickets.com/shows/operation-mincemeat-a-new-musical/the-alexandra-theatre-birmingham/"
   },
   {
+   "title": "Jimmy Carr: Killing Jokes",
+   "theatre": "Wycombe Swan",
+   "genre": "",
+   "start": "2027-08-25",
+   "end": "2027-08-25",
+   "url": "https://www.wycombeswan.co.uk/wycombe-swan-theatre/en-GB/event/comedy/jimmy-carr-killing-jokes-tickets",
+   "tm": "https://www.ticketmaster.co.uk/jimmy-carr-killing-jokes-high-wycombe-25-08-2027/event/3700654EF92A7545"
+  },
+  {
    "title": "Dinosaur World Live",
    "theatre": "The Orchard Theatre",
    "genre": "",
@@ -30908,6 +30925,15 @@
    "start": "2027-09-03",
    "end": "2027-09-05",
    "url": "https://octagonbolton.co.uk/events/family-saturdays-ages-3-5#dates-and-times"
+  },
+  {
+   "title": "Marti Pellow: No Marti No Party",
+   "theatre": "Cliffs Pavilion",
+   "genre": "",
+   "start": "2027-09-03",
+   "end": "2027-09-03",
+   "url": "https://southendtheatres.org.uk/southend-theatres/en-GB/event/music/marti-pellow-no-marti-no-party-tickets",
+   "tm": "https://www.ticketmaster.co.uk/marti-pellow-no-marti-no-party-southendonsea-03-09-2027/event/1F00655638A8C4CC"
   },
   {
    "title": "Paul Smith",
@@ -31513,6 +31539,15 @@
    "tm": "https://www.ticketmaster.co.uk/deacon-blue-venue-premium-tickets-hull-12-10-2027/event/3600652AE8E1B4F0"
   },
   {
+   "title": "S Club",
+   "theatre": "Motorpoint Arena Nottingham",
+   "genre": "",
+   "start": "2027-10-12",
+   "end": "2027-10-12",
+   "url": "https://tickets.motorpointarenanottingham.com/shows/show.aspx?sh=SCLUBMP27",
+   "tm": "https://www.ticketmaster.co.uk/s-club-nottingham-12-10-2027/event/3500655DA680791A"
+  },
+  {
    "title": "WET WET WET - Celebrating 40 Years of Popped In Souled Out",
    "theatre": "London Palladium",
    "genre": "",
@@ -31680,6 +31715,22 @@
    "end": "2027-10-21",
    "url": "https://www.stocktonglobe.co.uk/shows/michael-starring-ben",
    "tm": "https://www.ticketmaster.co.uk/michael-starring-ben-stocktonontees-21-10-2027/event/1F00650733DB0834"
+  },
+  {
+   "title": "S Club",
+   "theatre": "NEC Birmingham",
+   "genre": "",
+   "start": "2027-10-21",
+   "end": "2027-10-21",
+   "url": "https://www.utilitaarenabham.co.uk/events/detail/s-club"
+  },
+  {
+   "title": "S Club",
+   "theatre": "bp pulse LIVE",
+   "genre": "",
+   "start": "2027-10-21",
+   "end": "2027-10-21",
+   "url": "https://www.utilitaarenabham.co.uk/events/detail/s-club"
   },
   {
    "title": "Till Lindemann",
@@ -32127,7 +32178,7 @@
    "genre": "",
    "start": "2027-12-04",
    "end": "2027-12-04",
-   "url": "https://www.o2.co.uk/priority/tickets/b01b1989-b4f6-4127-9c23-fc807ca4b293",
+   "url": "https://www.academymusicgroup.com/o2academyleeds/events/lightning-seeds-tickets-ae35497",
    "tm": "https://www.ticketmaster.co.uk/lightning-seeds-leeds-04-12-2027/event/3E006557E3658992"
   },
   {
@@ -32152,7 +32203,7 @@
    "genre": "",
    "start": "2027-12-11",
    "end": "2027-12-11",
-   "url": "https://www.o2.co.uk/priority/tickets/4a3af468-d3df-4df6-aa7c-ad443dbdd70a",
+   "url": "https://www.academymusicgroup.com/o2academybristol/events/lightning-seeds-tickets-ae35497",
    "tm": "https://www.ticketmaster.co.uk/lightning-seeds-bristol-11-12-2027/event/3E006557B6965EBA"
   },
   {

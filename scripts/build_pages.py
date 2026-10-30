@@ -24,14 +24,12 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://findashow.co.uk"
 AFF_BASE = "https://ticketmaster.evyy.net/c/8068961/264167/4272"
 AFF_PROP = "9082472"
-GEN_DIRS = ["venues", "cities", "categories"]
+GEN_DIRS = ["venues", "cities", "categories", "pantomime", "christmas-shows"]
 
 # Raw genre labels from the venue sites -> a tidy category page.
 CATEGORIES = {
     "comedy": ("Comedy", "Comedy", {"comedy"}),
-    "pantomime": ("Pantomime", "Pantomime", {"pantomime"}),
     "musicals": ("Musicals", "Musical", {"musical", "musicals"}),
-    "christmas": ("Christmas shows", "Christmas", {"christmas"}),
     "tribute-acts": ("Tribute acts", "Tribute", {"tribute"}),
     "classical": ("Classical and orchestral", "Classical", {"classical"}),
     "family": ("Family shows", "Family", {"family"}),
@@ -70,6 +68,9 @@ h2 a{color:inherit;text-decoration:none}
 .note{font-size:13px;color:var(--muted);margin-top:26px}
 footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
 footer a{color:var(--muted)}
+.faq h3{margin:20px 0 4px;font-size:17px}
+.faq p{margin:0;color:var(--muted)}
+.intro{margin:14px 0 0;max-width:68ch}
 """
 
 
@@ -85,6 +86,53 @@ def midlands_places():
         city = m.group(2).split(",")[-1].strip()
         out[m.group(1)] = [city, float(m.group(3)), float(m.group(4)), "Midlands"]
     return out
+
+
+PANTO_TITLE = re.compile(r"\b(cinderella|aladdin|peter pan|jack and the beanstalk|snow white|sleeping beauty|dick whittington|mother goose|beauty and the beast|robin hood|puss in boots|goldilocks|babes in the wood|pinocchio|wizard of oz|little mermaid|panto|pantomime)\b", re.I)
+NOT_PANTO = re.compile(r"ballet|bourne|rehearsal|set tour|\btalk\b|mixer|workshop|\bjr\b|opera|\bice\b|concert|dance|jazz|school|youth|junior|livestream|easter", re.I)
+XMAS_TITLE = re.compile(r"\b(christmas|xmas|festive|nativity|nutcracker|carols|scrooge|snowman|grinch|polar express|winter wonderland|elf)\b", re.I)
+NOT_XMAS = re.compile(r"part(y|ies)|shopping|fayre|livestream|primary school|wassail|afternoon tea|gift fair|good food|market|paint|dining|dinner|disco|workshop", re.I)
+
+SEASONS = {
+    "pantomime": {
+        "label": "Pantomime", "one": "pantomime", "many": "pantomimes", "min_city": 2, "other": "christmas-shows",
+        "faq": [
+            ("When does pantomime season start?", "Most pantomimes open in late November or early December and run until early January. Some start earlier and a few run into February, so check the dates for each show."),
+            ("How do I find a pantomime near me?", "Pick your city from the list on this page, or use the search and Where filter on the Find a Show homepage to see pantomimes at venues near you."),
+            ("Are there relaxed or accessible performances?", "Many venues add relaxed, signed or accessible performances to their pantomime run. They usually appear as separate listings or on the show's own page, so check with the venue."),
+            ("How do I book tickets?", "Use the button on each listing. It takes you to the venue or its ticket partner, where you can pick a date and seats."),
+        ],
+    },
+    "christmas-shows": {
+        "label": "Christmas shows", "one": "Christmas show", "many": "Christmas shows", "min_city": 3, "other": "pantomime",
+        "faq": [
+            ("What kinds of Christmas shows are there?", "Carol and choral concerts, Christmas musicals, festive comedy, ballet, family shows and tribute acts all appear here, alongside well-known stories such as A Christmas Carol."),
+            ("How do I find Christmas shows near me?", "Pick your city from the list on this page, or use the search and Where filter on the Find a Show homepage."),
+            ("When should I book?", "Popular Christmas dates, especially weekends in December, can sell out. If a date you want is available, booking early is the safest option."),
+            ("Where do the dates come from?", "Dates are taken from each venue's own website and refreshed every day. Always check with the venue before you travel."),
+        ],
+    },
+}
+
+
+def season_year(today):
+    return today.year if today.month >= 6 else today.year - 1
+
+
+def is_panto(s, y):
+    if NOT_PANTO.search(s["title"]):
+        return False
+    if (s.get("genre") or "").strip().lower() == "pantomime":
+        return True
+    a, b = d(s["start"]), d(s["end"])
+    return bool(PANTO_TITLE.search(s["title"])) and (b - a).days <= 75 and a <= date(y + 1, 1, 31) and b >= date(y, 11, 15)
+
+
+def is_xmas(s, y):
+    if is_panto(s, y) or NOT_XMAS.search(s["title"]):
+        return False
+    a = d(s["start"])
+    return ((s.get("genre") or "").strip().lower() == "christmas" or bool(XMAS_TITLE.search(s["title"]))) and a <= date(y, 12, 31)
 
 
 def slug(s):
@@ -245,6 +293,17 @@ def main():
     today = date.today()
     shows = [s for s in data["shows"] if s.get("title") and s.get("theatre") and s.get("start") and s.get("end") and d(s["end"]) >= today]
     shows.sort(key=sort_key(today))
+    sy = season_year(today)
+    seasonal = {}
+    for key, cfg in SEASONS.items():
+        pick = is_panto if key == "pantomime" else is_xmas
+        lst = [s for s in shows if pick(s, sy)]
+        bc = defaultdict(list)
+        for s in lst:
+            c = (places.get(s["theatre"]) or [None])[0]
+            if c:
+                bc[c].append(s)
+        seasonal[key] = {"cfg": cfg, "shows": lst, "by_city": bc, "cities": {c for c, v in bc.items() if len(v) >= cfg["min_city"]}}
 
     for g in GEN_DIRS:
         shutil.rmtree(ROOT / g, ignore_errors=True)
@@ -310,6 +369,10 @@ def main():
     for city, lst in by_city.items():
         lst = sorted(lst, key=sort_key(today))
         path = f"/cities/{cslug[city]}/"
+        def seasonal_links(c):
+            items = [(f"/{k}/{slug(c)}/", f"{v['cfg']['label']} in {c}", len(v['by_city'][c])) for k, v in seasonal.items() if c in v["cities"]]
+            return ("<h2>Seasonal</h2>" + chips(items)) if items else ""
+
         vs = sorted({s["theatre"] for s in lst})
         sections = ""
         for v in vs:
@@ -320,6 +383,7 @@ def main():
 <p class="lede">{plural(len(lst), 'show')} across {plural(len(vs), 'venue')} in {esc(city)}, including theatre, comedy, music and more. Refreshed daily from the venues' own websites.</p>
 <h2>Venues in {esc(city)}</h2>
 {chips((f"/venues/{vslug[v]}/", v, len([s for s in lst if s['theatre'] == v])) for v in vs)}
+{seasonal_links(city)}
 {sections}
 <div class="cta"><p>Want to filter by date or type of show?</p><a class="btn" href="/">Search all shows</a></div>"""
         title = f"What's on in {city}: live shows, theatre, comedy and music | Find a Show"
@@ -348,6 +412,62 @@ def main():
         urls.append((path, "daily"))
         cats.append((f"/categories/{key}/", label, len(lst)))
 
+
+    # ---- seasonal pages (pantomime, Christmas)
+    season_hub = []
+    for key, sd in seasonal.items():
+        cfg, lst = sd["cfg"], sd["shows"]
+        if len(lst) < 5:
+            continue
+        label, many, other = cfg["label"], cfg["many"], seasonal[cfg["other"]]
+        yr = f"{sy}"
+        vcount = len({s["theatre"] for s in lst})
+        path = f"/{key}/"
+        city_list = sorted(c for c, v in sd["by_city"].items() if v)
+        jump = chips((f"#{slug(c)}", c, len(sd["by_city"][c])) for c in city_list)
+        sections = ""
+        for c in city_list:
+            more = f' <a href="/{key}/{slug(c)}/" style="font-size:14px;font-family:var(--font-body);letter-spacing:0">All in {esc(c)}</a>' if c in sd["cities"] else ""
+            sections += f'<h2 id="{slug(c)}">{esc(c)}{more}</h2>' + "".join(show_card(s, today, True, c) for s in sd["by_city"][c])
+        nocity = [s for s in lst if not (places.get(s["theatre"]) or [None])[0]]
+        if nocity:
+            sections += "<h2>Other venues</h2>" + "".join(show_card(s, today, True, None) for s in nocity)
+        faq = "".join(f"<h3>{esc(q)}</h3><p>{esc(a)}</p>" for q, a in cfg["faq"])
+        if key == "pantomime":
+            intro = "Pantomime is Britain's great festive tradition: fairytale stories, a booming dame, topical jokes and plenty of audience taking part. Whether you want a family outing or a night out with friends, find a pantomime near you below."
+        else:
+            intro = "From carol concerts and festive musicals to Christmas comedy, ballet and family shows, find something to enjoy this Christmas at venues across the UK."
+        other_link = f'<a href="/{cfg["other"]}/">{esc(other["cfg"]["label"])}</a>'
+        body = f"""<p class="crumbs"><a href="/">Home</a></p>
+<h1>{esc(label)} {yr} across the UK</h1>
+<p class="lede">{plural(len(lst), cfg['one'])} at {plural(vcount, 'venue')}. Dates come from each venue's own website and are refreshed daily.</p>
+<p class="intro">{esc(intro)}</p>
+<h2>Jump to your city</h2>
+{jump}
+{sections}
+<h2>Questions</h2>
+<div class="faq">{faq}</div>
+<div class="cta"><p>Also see {other_link}, or search every show and venue.</p><a class="btn" href="/">Search all shows</a></div>"""
+        ld = events_ld(lst, places, today)
+        ld["@graph"].append({"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in cfg["faq"]]})
+        title = f"{label} {yr}: {len(lst)} shows across the UK, dates and tickets | Find a Show"
+        desc = f"{plural(len(lst), cfg['one'])} at {plural(vcount, 'venue')} across the UK. Find {many} near you with dates and links to book."
+        write(path, page(title, desc, path, body, ld))
+        urls.append((path, "daily"))
+        season_hub.append((path, f"{label} {yr}", len(lst)))
+        for c in sorted(sd["cities"]):
+            cl = sd["by_city"][c]
+            cpath = f"/{key}/{slug(c)}/"
+            cv = len({s["theatre"] for s in cl})
+            cbody = f"""<p class="crumbs"><a href="/">Home</a> / <a href="/{key}/">{esc(label)}</a> / {esc(c)}</p>
+<h1>{esc(label)} in {esc(c)} {yr}</h1>
+<p class="lede">{plural(len(cl), cfg['one'])} at {plural(cv, 'venue')} in {esc(c)}. Dates come from each venue's own website and are refreshed daily.</p>
+{"".join(show_card(s, today, True, c) for s in cl)}
+<div class="cta"><p>See {esc(label.lower())} <a href="/{key}/">across the UK</a>, everything on in <a href="/cities/{slug(c)}/">{esc(c)}</a>, or search every show.</p><a class="btn" href="/">Search all shows</a></div>"""
+            cld = events_ld(cl, places, today)
+            write(cpath, page(f"{label} in {c} {yr}: dates and tickets | Find a Show", f"{plural(len(cl), cfg['one'])} in {c}. See dates and book tickets.", cpath, cbody, cld))
+            urls.append((cpath, "daily"))
+
     # ---- hubs
     cities = sorted(by_city)
     write("/cities/", page("Live shows by city | Find a Show", "Browse what's on in cities across the UK.", "/cities/",
@@ -359,7 +479,7 @@ def main():
         + chips((f"/venues/{vslug[v]}/", v, len(by_venue[v])) for v in sorted(by_venue))))
     urls.append(("/venues/", "daily"))
     write("/categories/", page("Browse shows by type | Find a Show", "Comedy, pantomime, musicals, concerts and more across the UK.", "/categories/",
-        '<p class="crumbs"><a href="/">Home</a></p><h1>Browse shows by type</h1><p class="lede">Pick a type of show.</p>' + chips(cats)))
+        '<p class="crumbs"><a href="/">Home</a></p><h1>Browse shows by type</h1><p class="lede">Pick a type of show.</p>' + chips(season_hub + cats)))
     urls.append(("/categories/", "daily"))
 
     # ---- sitemap

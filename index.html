@@ -334,6 +334,23 @@ dialog::backdrop { background: var(--backdrop); }
   .beam { width: 240px; }
   .stage { overflow: hidden; }
 }
+@media (max-width: 760px) {
+  .filters { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; padding-top: 16px; }
+  .fg { display: contents; }
+  .ftrig { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 1px; position: relative; min-width: 0; min-height: 54px; padding: 6px 28px 6px 12px; text-align: left; border: 1.5px solid var(--line); border-radius: 14px; background: var(--surface); color: var(--fg); }
+  .ftrig::after { content: ""; position: absolute; right: 11px; top: 50%; width: 7px; height: 7px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: translateY(-70%) rotate(45deg); }
+  .ftrig[aria-expanded="true"]::after { transform: translateY(-20%) rotate(225deg); }
+  .ftrig[aria-expanded="true"], .ftrig.on { border-color: var(--accent); }
+  .fk { font-family: var(--font-small); font-weight: 600; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .fv { max-width: 100%; font-weight: 700; font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #tWhen { grid-column: 1; grid-row: 1; } #tWhat { grid-column: 2; grid-row: 1; } #tWhere { grid-column: 3; grid-row: 1; }
+  .fpanel { display: none; grid-column: 1 / -1; grid-row: 2; padding: 14px; background: var(--surface); border: 1.5px solid var(--line); border-radius: 16px; }
+  .fpanel.open { display: block; }
+  .fpanel .group-label { display: none; }
+  .fpanel .chips { flex-wrap: wrap; overflow: visible; padding-bottom: 0; }
+  .fpanel .dates, .fpanel .where, .fpanel .panel { margin-top: 12px; }
+  .vsug { position: static; margin-top: 6px; box-shadow: none; }
+}
 @keyframes sway { from { transform: scaleX(1); } to { transform: scaleX(.93); } }
 @keyframes swing1 { from { transform: rotate(-16deg); } to { transform: rotate(9deg); } }
 @keyframes swing2 { from { transform: rotate(14deg); } to { transform: rotate(-8deg); } }

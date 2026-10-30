@@ -249,10 +249,71 @@ dialog::backdrop { background: var(--backdrop); }
 .thanks { text-align: center; padding: 18px 0 6px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
 .thanks strong { font-family: var(--font-display); font-weight: 400; font-size: 34px; letter-spacing: .04em; color: var(--accent); }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+
+/* Desktop hero: an animated stage scene behind the header (curtains, moving spotlights, dust) */
+.stage { display: none; }
+.wrap.top { margin-bottom: 22px; }
+@media (min-width: 761px) {
+  .wrap.top { margin-bottom: 0; }
+  body { padding-inline: 0; padding-top: 0; }
+  .stagewrap { position: relative; background: #1a0b14; margin-bottom: 18px; isolation: isolate; }
+  .stagewrap::after { content: ""; position: absolute; inset: auto 0 0 0; height: 3px; background: linear-gradient(90deg, transparent, #e4572e, #b8185a, #e4572e, transparent); opacity: .8; }
+  .wrap { padding-inline: 24px; width: 100%; box-sizing: border-box; max-width: 1248px; }
+  .wrap.top { position: relative; z-index: 2; padding-top: 14px; padding-bottom: 34px; }
+  .stage { display: block; position: absolute; inset: 0; z-index: 0; overflow: hidden; background: radial-gradient(900px 260px at 50% 115%, #5b1630 0%, rgba(91,22,48,0) 70%), linear-gradient(180deg, #2b1020 0%, #160a12 100%); }
+  .cur { position: absolute; top: 0; bottom: 0; width: min(19vw, 300px); background: repeating-linear-gradient(90deg, #7c1233 0 26px, #5a0d27 26px 44px, #911a3e 44px 68px); box-shadow: inset 0 0 60px rgba(0,0,0,.55); animation: sway 9s ease-in-out infinite alternate; }
+  .cl { left: 0; transform-origin: left center; clip-path: polygon(0 0, 100% 0, 62% 100%, 0 100%); }
+  .cr { right: 0; transform-origin: right center; clip-path: polygon(0 0, 100% 0, 100% 100%, 38% 100%); animation-delay: -4s; }
+  .beam { position: absolute; top: -30px; width: 380px; height: 150%; transform-origin: 50% 0; mix-blend-mode: screen; clip-path: polygon(46% 0, 54% 0, 100% 100%, 0 100%); filter: blur(3px); opacity: .9; }
+  .b1 { left: 22%; background: linear-gradient(180deg, rgba(255,214,160,.62), rgba(255,214,160,0) 80%); animation: swing1 8s ease-in-out infinite alternate; }
+  .b2 { left: 54%; background: linear-gradient(180deg, rgba(255,120,160,.5), rgba(255,120,160,0) 80%); animation: swing2 10s ease-in-out infinite alternate; }
+  .b3 { left: 38%; width: 300px; background: linear-gradient(180deg, rgba(255,255,255,.3), rgba(255,255,255,0) 70%); animation: swing3 12s ease-in-out infinite alternate; }
+  .floor { position: absolute; left: 10%; right: 10%; bottom: -60px; height: 120px; border-radius: 50%; background: radial-gradient(closest-side, rgba(255,190,130,.45), rgba(255,190,130,0)); }
+  .dust i { position: absolute; bottom: -10px; left: var(--x); width: var(--s); height: var(--s); border-radius: 50%; background: #ffe2c0; opacity: 0; animation: rise var(--t) linear infinite; animation-delay: var(--d); }
+  .brand, .hero h1 { color: #fff; }
+  .hero h1 em { color: #ff8a5c; }
+  .lede { color: rgba(255,255,255,.82); }
+  .suggest strong { color: rgba(255,255,255,.78); }
+  .suggest .btn { background: #cf4a22; border-color: #cf4a22; color: #fff; }
+  .suggest .btn.ghost { background: transparent; border-color: rgba(255,255,255,.75); color: #fff; }
+  .hero { padding: 26px 0 0; }
+  .hero h1 { font-size: 58px; text-shadow: 0 2px 24px rgba(0,0,0,.45); }
+  .wrap.main { padding-top: 0; }
+  .resultbar, .aff { grid-row: 1; }
+  .group { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; align-items: stretch; }
+  .group > h2 { grid-column: 1 / -1; }
+  .card { grid-template-columns: 70px minmax(0, 1fr); }
+  .stub { grid-row: 1 / span 2; }
+  .act { grid-column: 2; padding: 0 14px 14px 14px; align-self: end; }
+  .info { padding: 12px 14px 8px; }
+  .info h3 { font-size: 25px; }
+}
+@media (min-width: 761px) and (max-width: 1040px) { .group { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 761px) and (max-width: 1100px) {
+  .brand { grid-column: 1; grid-row: 1; }
+  .filters { grid-column: 2 / -1; grid-row: 1; justify-self: end; }
+  .search { grid-column: 1 / -1; grid-row: 2; }
+  .hero { grid-column: 1 / -1; grid-row: 3; }
+  .suggest { grid-column: 1 / -1; grid-row: 4; justify-content: flex-start; margin-top: 0; }
+  .wrap.top { padding-bottom: 24px; }
+}
+@keyframes sway { from { transform: scaleX(1); } to { transform: scaleX(.93); } }
+@keyframes swing1 { from { transform: rotate(-16deg); } to { transform: rotate(9deg); } }
+@keyframes swing2 { from { transform: rotate(14deg); } to { transform: rotate(-8deg); } }
+@keyframes swing3 { from { transform: rotate(-6deg); } to { transform: rotate(12deg); } }
+@keyframes rise { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: .75; } 100% { transform: translateY(-260px); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .cur, .beam, .dust i { animation: none !important; } .dust { display: none; } }
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="stagewrap">
+<div class="stage" aria-hidden="true">
+  <span class="cur cl"></span><span class="cur cr"></span>
+  <span class="beam b1"></span><span class="beam b2"></span><span class="beam b3"></span>
+  <span class="floor"></span>
+  <span class="dust"><i style="--x:8%;--s:3px;--t:11s;--d:-1s"></i><i style="--x:15%;--s:2px;--t:14s;--d:-6s"></i><i style="--x:23%;--s:4px;--t:12s;--d:-3s"></i><i style="--x:31%;--s:2px;--t:16s;--d:-9s"></i><i style="--x:39%;--s:3px;--t:13s;--d:-2s"></i><i style="--x:47%;--s:2px;--t:15s;--d:-7s"></i><i style="--x:55%;--s:4px;--t:11s;--d:-5s"></i><i style="--x:62%;--s:2px;--t:17s;--d:-10s"></i><i style="--x:70%;--s:3px;--t:12s;--d:-4s"></i><i style="--x:77%;--s:2px;--t:14s;--d:-8s"></i><i style="--x:84%;--s:4px;--t:13s;--d:-0s"></i><i style="--x:91%;--s:3px;--t:15s;--d:-6s"></i><i style="--x:96%;--s:2px;--t:12s;--d:-11s"></i><i style="--x:43%;--s:3px;--t:18s;--d:-12s"></i></span>
+</div>
+<div class="wrap top">
   <div class="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M20 14h24l-6 16h-12z" fill="currentColor"/><path d="M24 34h16l10 18H14z" fill="currentColor" opacity=".45"/></svg><span>Find a Show</span></div>
 
   <header class="hero">
@@ -318,6 +379,9 @@ dialog::backdrop { background: var(--backdrop); }
     </div>
   </section>
 
+</div>
+</div>
+<div class="wrap main">
   <div class="resultbar">
     <div class="count" id="count" aria-live="polite"></div>
     <button class="linkbtn" id="clear" type="button" hidden>Clear all filters</button>

@@ -40,7 +40,13 @@ jobs:
           git add -A shows.json health.json venues cities categories assets sitemap.xml
           git add tm_venues.json || true
           git commit -m "Update listings" || echo "no changes"
-          git pull --rebase --autostash origin main
-          git push
+          # If someone pushed a site change while this ~40 minute run was going, the generated
+          # files (listings and pages) can clash. Our freshly built copies win, then retry the push.
+          for i in 1 2 3; do
+            git pull --rebase --autostash -X theirs origin main && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep 5
+          done
+          echo "Could not push after 3 tries"; exit 1
       - name: Check the listings are healthy
         run: python scripts/health_check.py

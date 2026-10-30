@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://findashow.co.uk"
 AFF_BASE = "https://ticketmaster.evyy.net/c/8068961/264167/4272"
 AFF_PROP = "9082472"
-GEN_DIRS = ["venues", "cities", "categories", "pantomime", "christmas-shows"]
+GEN_DIRS = ["venues", "cities", "categories", "pantomime", "christmas-shows", "new"]
 
 # Raw genre labels from the venue sites -> a tidy category page.
 CATEGORIES = {
@@ -187,7 +187,7 @@ def plural(n, word):
     return f"{n} {word}{'' if n == 1 else 's'}"
 
 
-def page(title, desc, path, body, ld=None):
+def page(title, desc, path, body, ld=None, noindex=False):
     url = f"{SITE}{path}"
     ldtag = ""
     if ld:
@@ -200,6 +200,7 @@ def page(title, desc, path, body, ld=None):
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 <meta name="theme-color" content="#faf6ef">
+{'<meta name="robots" content="noindex">' if noindex else ""}
 <link rel="canonical" href="{url}">
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(desc)}">
@@ -467,6 +468,35 @@ def main():
             cld = events_ld(cl, places, today)
             write(cpath, page(f"{label} in {c} {yr}: dates and tickets | Find a Show", f"{plural(len(cl), cfg['one'])} in {c}. See dates and book tickets.", cpath, cbody, cld))
             urls.append((cpath, "daily"))
+
+
+    # ---- newly added shows and venues
+    cutoff = date.fromordinal(today.toordinal() - 14).isoformat()
+    nv = {v: dd for v, dd in (data.get("new_venues") or {}).items() if dd >= cutoff and v in by_venue}
+    fresh_shows = sorted((s for s in shows if s.get("added", "") >= cutoff and s["theatre"] not in nv), key=lambda s: (s["added"], s["title"].lower()), reverse=True)
+    parts = ""
+    if nv:
+        parts += "<h2>New venues</h2>" + chips((f"/venues/{vslug[v]}/", v, len(by_venue[v])) for v in sorted(nv, key=lambda k: nv[k], reverse=True))
+    if fresh_shows:
+        cur, sec = None, ""
+        for s in fresh_shows[:200]:
+            if s["added"] != cur:
+                cur = s["added"]
+                dd = d(cur)
+                sec += f"<h2>Added {dd.day} {dd.strftime('%b')}</h2>"
+            sec += show_card(s, today, True, (places.get(s["theatre"]) or [None])[0])
+        parts += sec
+    if not parts:
+        parts = '<p class="intro">Nothing new in the last two weeks yet. New shows and venues will appear here as they are announced.</p>'
+    body = f"""<p class="crumbs"><a href="/">Home</a></p>
+<h1>Newly added shows</h1>
+<p class="lede">Shows and venues added to Find a Show in the last two weeks, newest first.</p>
+{parts}
+<div class="cta"><p>Looking for something specific? Search every show and venue.</p><a class="btn" href="/">Search all shows</a></div>"""
+    write("/new/", page("Newly added shows | Find a Show", "The latest shows and venues added to Find a Show, newest first.", "/new/", body,
+                        events_ld(fresh_shows[:60], places, today) if fresh_shows else None, noindex=not (fresh_shows or nv)))
+    if fresh_shows or nv:
+        urls.append(("/new/", "daily"))
 
     # ---- hubs
     cities = sorted(by_city)

@@ -38,7 +38,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A shows.json health.json venues cities categories assets sitemap.xml
-          git add tm_venues.json || true
+          git add tm_venues.json seen.json || true
           git commit -m "Update listings" || echo "no changes"
           # If someone pushed a site change while this ~40 minute run was going, the generated
           # files (listings and pages) can clash. Our freshly built copies win, then retry the push.

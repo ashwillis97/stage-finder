@@ -728,6 +728,33 @@ GENRE_HINTS = [(r"tribute|story of|legends|experience", "Tribute"), (r"orchestra
                (r"christmas|carol", "Christmas")]
 
 
+def track_new(data, merged):
+    """Remember when each show and venue was first seen so the site can show what is new.
+
+    The first run after this was added records everything as "0" (already there), so only shows
+    that appear later count as new. Shows get an "added" date; venues go in data["new_venues"].
+    """
+    sp = ROOT / "seen.json"
+    first_run = not sp.exists()
+    seen = json.loads(sp.read_text(encoding="utf-8")) if not first_run else {"shows": {}, "venues": {}}
+    today = TODAY.isoformat()
+    stamp = "0" if first_run else today
+    for r in merged:
+        v = r["theatre"]
+        if v not in seen["venues"]:
+            seen["venues"][v] = stamp
+        k = f"{v}|{r['title'].lower()}"
+        if k not in seen["shows"]:
+            seen["shows"][k] = stamp
+        d0 = seen["shows"][k]
+        r.pop("added", None)
+        if d0 != "0":
+            r["added"] = d0
+    cutoff = (TODAY - dt.timedelta(days=30)).isoformat()
+    data["new_venues"] = {v: d0 for v, d0 in seen["venues"].items() if d0 != "0" and d0 >= cutoff}
+    sp.write_text(json.dumps(seen, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
+
+
 def main():
     path = ROOT / "shows.json"
     data = json.loads(path.read_text(encoding="utf-8"))
@@ -760,6 +787,7 @@ def main():
             seen.add(k)
             merged.append(r)
     merged.sort(key=lambda r: (r["start"], r["title"]))
+    track_new(data, merged)
     data["shows"] = merged
     cov = data.setdefault("coverage", {"none": [], "partial": {}})
     part = cov.setdefault("partial", {})

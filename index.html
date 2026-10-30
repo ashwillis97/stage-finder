@@ -435,6 +435,7 @@ dialog::backdrop { background: var(--backdrop); }
 <div class="wrap main">
   <div class="resultbar">
     <div class="count" id="count" aria-live="polite"></div>
+    <a class="linkbtn" id="newLink" href="/new/" hidden></a>
     <button class="linkbtn" id="clear" type="button" hidden>Clear all filters</button>
   </div>
 
@@ -837,6 +838,11 @@ dialog::backdrop { background: var(--backdrop); }
     .then(function (r) { if (!r.ok) throw new Error("status " + r.status); return r.json(); })
     .then(function (data) {
       shows = Array.isArray(data.shows) ? data.shows : []; coverage = data.coverage || null;
+      (function () {
+        var cut = new Date(); cut.setDate(cut.getDate() - 14); var c = iso(cut), nv = data.new_venues || {};
+        var n = shows.filter(function (s) { return s.added && s.added >= c && !nv[s.theatre]; }).length, v = Object.keys(nv).filter(function (k) { return nv[k] >= c; }).length;
+        if (n || v) { var el = $("newLink"); el.textContent = (n ? n + " new show" + (n === 1 ? "" : "s") : "") + (n && v ? " and " : "") + (v ? v + " new venue" + (v === 1 ? "" : "s") : "") + " this fortnight"; el.hidden = false; }
+      })();
       if (data.places) Object.keys(data.places).forEach(function (k) { if (!PLACE[k]) PLACE[k] = [k, data.places[k][0], data.places[k][1], data.places[k][2], data.places[k][3] || ""]; });
       buildChips(); buildVenues(); buildAbout(); render(); updTriggers();
       var d = new Date(data.updated);

@@ -189,10 +189,13 @@ def show_card(s, today, show_venue=False, show_city=None):
         meta = f"{esc(s['theatre'])}" + (f", {esc(show_city)}" if show_city else "") + f" &middot; {esc(meta)}"
     else:
         meta = esc(meta)
-    acts = f'<a class="btn" href="{esc(s["url"])}" target="_blank" rel="noopener noreferrer">View show</a>' if s.get("url") else ""
     tm = tm_link(s.get("tm"))
     if tm:
-        acts += f' <a class="btn ghost" href="{esc(tm)}" target="_blank" rel="sponsored noopener noreferrer">Buy on Ticketmaster</a>'
+        acts = f'<a class="btn" href="{esc(tm)}" target="_blank" rel="sponsored noopener noreferrer">Buy on Ticketmaster</a>'
+    elif s.get("url"):
+        acts = f'<a class="btn" href="{esc(s["url"])}" target="_blank" rel="noopener noreferrer">Tickets &amp; info</a>'
+    else:
+        acts = ""
     return f'<div class="card"><div><h3>{esc(s["title"])}</h3><p class="meta">{meta}</p></div><div class="act">{acts}</div></div>'
 
 

@@ -621,7 +621,7 @@ dialog::backdrop { background: var(--backdrop); }
       html += '<article class="card"><div class="stub"><span class="dow">' + (until ? "Until" : DOW3[sd.getDay()]) + '</span><span class="day">' + sd.getDate() + '</span><span class="mon">' + MON3[sd.getMonth()] + "</span></div>" +
         '<div class="info"><h3>' + esc(s.title) + '</h3><div class="venue">' + esc(nameOf(s.theatre)) + (city ? ", <span>" + esc(city) + "</span>" : "") + '</div><div class="when">' + esc(whenText(s)) + "</div>" +
         '<div class="tags">' + (cat ? '<span class="tag">' + esc(cat) + "</span>" : "") + (running && s.start !== s.end ? '<span class="tag live">On now</span>' : "") + (dm != null ? '<span class="tag near">' + Math.round(dm) + " miles away</span>" : "") + "</div></div>" +
-        '<div class="act"><a class="btn" href="' + esc(safeUrl(s.url)) + '" target="_blank" rel="noopener noreferrer" aria-label="Tickets and info for ' + esc(s.title) + '">Tickets &amp; info</a>' + tmButton(s) + '</div></article>';
+        '<div class="act">' + mainButton(s) + '</div></article>';
     });
     html += "</div>";
     if (n > shown.length) html += '<button class="btn ghost more" id="more" type="button">Show more (' + (n - shown.length) + " left)</button>";
@@ -630,7 +630,7 @@ dialog::backdrop { background: var(--backdrop); }
   }
   /* Ticketmaster affiliate link: wraps a ticketmaster.co.uk event page in the partner tracking link */
   var AFF = { base: "https://ticketmaster.evyy.net/c/8068961/264167/4272", prop: "9082472" };
-  function tmButton(s) {
+  function tmHref(s) {
     if (!s.tm) return "";
     var page = s.tm;
     try {
@@ -638,7 +638,13 @@ dialog::backdrop { background: var(--backdrop); }
       if (/(^|\.)evyy\.net$/.test(u.hostname) && u.searchParams.get("u")) page = u.searchParams.get("u");
       if (!/(^|\.)ticketmaster\.co\.uk$/.test(new URL(page).hostname)) return "";
     } catch (e) { return ""; }
-    return '<a class="btn ghost" href="' + esc(AFF.base + "?u=" + encodeURIComponent(page) + "&partnerpropertyid=" + AFF.prop) + '" target="_blank" rel="sponsored noopener noreferrer" aria-label="Buy tickets for ' + esc(s.title) + ' on Ticketmaster">Buy on Ticketmaster</a>';
+    return AFF.base + "?u=" + encodeURIComponent(page) + "&partnerpropertyid=" + AFF.prop;
+  }
+  /* One button per show: Ticketmaster (affiliate) when we have a match, otherwise the venue's own page */
+  function mainButton(s) {
+    var tm = tmHref(s);
+    if (tm) return '<a class="btn" href="' + esc(tm) + '" target="_blank" rel="sponsored noopener noreferrer" aria-label="Buy tickets for ' + esc(s.title) + ' on Ticketmaster">Buy on Ticketmaster</a>';
+    return '<a class="btn" href="' + esc(safeUrl(s.url)) + '" target="_blank" rel="noopener noreferrer" aria-label="Tickets and info for ' + esc(s.title) + '">Tickets &amp; info</a>';
   }
   function refresh() { visible = 40; render(); updTriggers(); }
 

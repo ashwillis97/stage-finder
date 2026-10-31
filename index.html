@@ -373,6 +373,27 @@ h2 { font-weight: 700; letter-spacing: -.01em; font-size: 22px; }
 .resultbar { flex-wrap: wrap; row-gap: 4px; }
 .count { white-space: nowrap; }
 #newLink, #clear { font-size: 14px; }
+
+/* Polish pass: sentence-case labels, quiet tags, calmer shapes, hairline edges */
+h2 { font-size: 20px; font-weight: 600; letter-spacing: 0; color: var(--muted); text-transform: none; }
+.group-label, .fk, .stub .dow, .stub .mon { text-transform: none; letter-spacing: 0; font-size: 13px; font-weight: 500; }
+.stub .mon { color: #a8391a; font-weight: 600; }
+.stub { border-right: 1px dashed rgba(31,26,22,.18); }
+.stub .day { font-weight: 700; letter-spacing: 0; font-variant-numeric: tabular-nums; }
+.card { border-radius: 16px; border-color: rgba(31,26,22,.1); }
+.tag { background: none; padding: 0; border-radius: 0; font-size: 13px; font-weight: 400; }
+.tag.live { display: none; }
+.btn, .suggest .btn { border-radius: 10px; }
+.search input { border-radius: 12px; }
+.ftrig { border-radius: 12px; }
+#newLink { color: #a8391a; }
+@media (min-width: 761px) { .stagewrap::after { height: 1px; background: rgba(255,255,255,.14); opacity: 1; } }
+@media (max-width: 760px) {
+  .search input { border-radius: 12px; }
+  .ftrig { border-radius: 12px; }
+  .stagewrap::after { height: 1px; background: rgba(255,255,255,.14); opacity: 1; }
+}
+.lede { color: #fff; text-shadow: 0 1px 12px rgba(22,10,18,.7); }
 </style>
 </head>
 <body>
@@ -399,7 +420,7 @@ h2 { font-weight: 700; letter-spacing: -.01em; font-size: 22px; }
   <div class="search">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
     <label class="sr" for="q">Search shows, artists or venues</label>
-    <input id="q" type="search" placeholder="Search shows, artists or venues" autocomplete="off" enterkeyhint="search">
+    <input id="q" type="search" placeholder="Search" autocomplete="off" enterkeyhint="search">
   </div>
 
   <section class="filters" id="filters" aria-label="Filter shows">
@@ -571,7 +592,7 @@ h2 { font-weight: 700; letter-spacing: -.01em; font-size: 22px; }
   function whenText(s) {
     var a = parse(s.start), b = parse(s.end), yr = b.getFullYear() !== todayD.getFullYear() ? " " + b.getFullYear() : "";
     if (s.start === s.end) return s.start === todayIso ? "Today" : dayText(a) + yr;
-    if (s.start <= todayIso) return "On now, until " + dayText(b) + yr;
+    if (s.start <= todayIso) return "Until " + dayText(b) + yr;
     if (a.getMonth() === b.getMonth() && a.getFullYear() === b.getFullYear()) return DOW3[a.getDay()] + " " + a.getDate() + " to " + dayText(b) + yr;
     return dayText(a) + " to " + dayText(b) + yr;
   }
@@ -638,7 +659,7 @@ h2 { font-weight: 700; letter-spacing: -.01em; font-size: 22px; }
   function anyFilter() { return F.q || F.venue || F.region || F.cat || F.when !== "any" || user; }
   function render() {
     var res = filtered(), rows = res.rows, n = rows.length;
-    $("count").innerHTML = n + (n === 1 ? " show" : " shows") + (user ? "<small>within " + $("radius").value + " miles</small>" : "");
+    $("count").innerHTML = n.toLocaleString("en-GB") + (n === 1 ? " show" : " shows") + (user ? "<small>within " + $("radius").value + " miles</small>" : "");
     $("clear").hidden = !anyFilter();
     if (!n) {
       $("list").innerHTML = '<div class="empty"><strong>Nothing matches yet</strong>Try a different day or type of show' + (user ? ", or increase the distance" : "") + ".<button class=\"btn ghost\" id=\"clear2\" type=\"button\">Clear all filters</button></div>";
@@ -649,7 +670,7 @@ h2 { font-weight: 700; letter-spacing: -.01em; font-size: 22px; }
     shown.forEach(function (s) {
       var d = parse(s.start), running = s.start <= todayIso;
       var key = res.byNear ? "Nearest first" : running ? "On now" : MONTHS[d.getMonth()] + " " + d.getFullYear();
-      if (key !== lastKey) { if (lastKey) html += "</div>"; html += '<div class="group"><h2>' + esc(key.toUpperCase()) + "</h2>"; lastKey = key; }
+      if (key !== lastKey) { if (lastKey) html += "</div>"; html += '<div class="group"><h2>' + esc(key) + "</h2>"; lastKey = key; }
       var city = cityOf(s.theatre), dm = dist(s.theatre), cat = catName(bucket(s, true));
       var sd = running && s.start !== s.end ? parse(s.end) : d, until = sd !== d;
       html += '<article class="card"><div class="stub"><span class="dow">' + (until ? "Until" : DOW3[sd.getDay()]) + '</span><span class="day">' + sd.getDate() + '</span><span class="mon">' + MON3[sd.getMonth()] + "</span></div>" +

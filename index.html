@@ -488,7 +488,7 @@ dialog::backdrop { background: var(--backdrop); }
   var REGIONS = ["Midlands", "North", "South & East", "London", "Scotland", "Wales", "Northern Ireland"];
   function regionOf(t) { return PLACE[t] && PLACE[t][4] ? PLACE[t][4] : ""; }
   var WHEN = [["any","Any day"],["today","Today"],["weekend","This weekend"],["week","Next 7 days"],["month","Next 30 days"],["custom","Pick dates"]];
-  var CATS = [["theatre","Theatre & drama"],["musical","Musicals"],["comedy","Comedy"],["music","Music"],["dance","Dance"],["family","Family & panto"],["talks","Talks & more"]];
+  var CATS = [["theatre","Theatre & drama"],["musical","Musicals"],["comedy","Comedy"],["music","Music"],["dance","Dance"],["family","Family & panto"],["talks","Events & more"]];
 
   function parse(s) { var p = s.split("-"); return new Date(+p[0], +p[1] - 1, +p[2]); }
   function iso(d) { return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); }
@@ -508,12 +508,13 @@ dialog::backdrop { background: var(--backdrop); }
   function dist(t) { return user && PLACE[t] && PLACE[t][2] != null ? miles(user.lat, user.lng, PLACE[t][2], PLACE[t][3]) : null; }
 
   /* ---- categories: the venues label shows in many different ways, so group them into a few clear types ---- */
-  function bucket(s) {
+  function bucket(s, strict) {
     var g = (s.genre || "").toLowerCase(), t = (s.title || "").toLowerCase();
     function test(x) {
-      if (/panto|family|children|kids/.test(x)) return "family";
+      if (/panto/.test(x)) return "family";
       if (/drama & musical/.test(x)) return "theatre";
       if (/musical/.test(x)) return "musical";
+      if (/family|children|kids/.test(x)) return "family";
       if (/comedy|cabaret|variety|magic|stand.?up/.test(x)) return "comedy";
       if (/dance|ballet/.test(x)) return "dance";
       if (/music|concert|tribute|classical|orchestra|opera|choral|christmas|band|live in concert/.test(x)) return "music";
@@ -526,7 +527,7 @@ dialog::backdrop { background: var(--backdrop); }
     if (!b && /beauty and the beast|cinderella|aladdin|jack and the beanstalk|puss in boots|goldilocks|treasure island|sleeping beauty|peter pan|snow white|robin hood|dick whittington|mother goose|mamma mia|blood brothers|we will rock you|hairspray|chitty|jersey boys|dirty dancing|elf/.test(t)) {
       b = /mamma mia|blood brothers|we will rock you|hairspray|chitty|jersey boys|dirty dancing|elf/.test(t) ? "musical" : "family";
     }
-    return b || "talks";
+    return b || (strict ? "" : "talks");
   }
   function catName(k) { for (var i = 0; i < CATS.length; i++) if (CATS[i][0] === k) return CATS[i][1]; return ""; }
 
@@ -630,7 +631,7 @@ dialog::backdrop { background: var(--backdrop); }
       var d = parse(s.start), running = s.start <= todayIso;
       var key = res.byNear ? "Nearest first" : running ? "On now" : MONTHS[d.getMonth()] + " " + d.getFullYear();
       if (key !== lastKey) { if (lastKey) html += "</div>"; html += '<div class="group"><h2>' + esc(key.toUpperCase()) + "</h2>"; lastKey = key; }
-      var city = cityOf(s.theatre), dm = dist(s.theatre), cat = catName(bucket(s));
+      var city = cityOf(s.theatre), dm = dist(s.theatre), cat = catName(bucket(s, true));
       var sd = running && s.start !== s.end ? parse(s.end) : d, until = sd !== d;
       html += '<article class="card"><div class="stub"><span class="dow">' + (until ? "Until" : DOW3[sd.getDay()]) + '</span><span class="day">' + sd.getDate() + '</span><span class="mon">' + MON3[sd.getMonth()] + "</span></div>" +
         '<div class="info"><h3>' + esc(s.title) + '</h3><div class="venue">' + esc(nameOf(s.theatre)) + (city ? ", <span>" + esc(city) + "</span>" : "") + '</div><div class="when">' + esc(whenText(s)) + "</div>" +

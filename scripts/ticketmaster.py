@@ -5,6 +5,8 @@ Each venue is looked up once (cached in tm_venues.json), then its events are mat
 listings by date and title. Nothing here can break the update: any failure just leaves "tm" off.
 """
 import datetime as dt, json, os, pathlib, re, sys, time, urllib.parse, urllib.request
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from genre import from_ticketmaster
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 API = "https://app.ticketmaster.com/discovery/v2/"
@@ -78,7 +80,7 @@ def venue_events(vid, key):
         for e in (data.get("_embedded") or {}).get("events", []):
             d = ((e.get("dates") or {}).get("start") or {}).get("localDate")
             if d and e.get("url") and e.get("name"):
-                out.append({"name": e["name"], "date": d, "url": plain_url(e["url"])})
+                out.append({"name": e["name"], "date": d, "url": plain_url(e["url"]), "genre": from_ticketmaster((e.get("classifications") or [{}])[0])})
         if page + 1 >= ((data.get("page") or {}).get("totalPages") or 1):
             break
     return out
@@ -87,7 +89,7 @@ def venue_events(vid, key):
 def match_show(show, events):
     """Earliest Ticketmaster performance inside the show's dates with a matching title."""
     hits = [e for e in events if show["start"] <= e["date"] <= show["end"] and title_match(show["title"], e["name"])]
-    return min(hits, key=lambda e: e["date"])["url"] if hits else None
+    return min(hits, key=lambda e: e["date"]) if hits else None
 
 
 def main():
@@ -125,10 +127,13 @@ def main():
         venues_used += 1
         for r in data["shows"]:
             if r["theatre"] == theatre:
-                url = match_show(r, events)
-                if url:
-                    r["tm"] = url
+                hit = match_show(r, events)
+                if hit:
+                    r["tm"] = hit["url"]
                     matched += 1
+                    # Ticketmaster knows what type of show it is: use that unless the venue gave its own label
+                    if hit.get("genre") and (not r.get("genre") or r.get("gsrc")):
+                        r["genre"], r["gsrc"] = hit["genre"], "tm"
     cache_path.write_text(json.dumps(cache, indent=1, ensure_ascii=False, sort_keys=True), encoding="utf-8")
     shows_path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     hp = ROOT / "health.json"

@@ -4,6 +4,8 @@ Each venue has a reader below. A venue's old rows are replaced only when its
 reader finds at least one show, so a broken page never wipes the listings.
 """
 import datetime as dt, json, os, pathlib, re, sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from genre import guess_genre
 from zoneinfo import ZoneInfo
 from bs4 import BeautifulSoup
 
@@ -760,7 +762,7 @@ def main():
     data = json.loads(path.read_text(encoding="utf-8"))
     pending = {v["name"] for v in json.loads((ROOT / "venues_new.json").read_text(encoding="utf-8"))["venues"]}
     old = [r for r in data["shows"] if r["theatre"] not in REMOVED and r["theatre"] not in pending]  # pending venues are not published yet
-    old_genre = {(r["title"].lower(), r["theatre"]): r.get("genre", "") for r in old}
+    old_genre = {(r["title"].lower(), r["theatre"]): (r.get("genre", ""), r.get("gsrc", "")) for r in old}
     fresh, stale = {}, []
     for name, fn in READERS.items():
         try:
@@ -774,10 +776,15 @@ def main():
             stale.append(name)
             continue
         for r in rows:
+            r.pop("gsrc", None)
             if not r["genre"]:
-                r["genre"] = old_genre.get((r["title"].lower(), r["theatre"]), "")
+                r["genre"], src = old_genre.get((r["title"].lower(), r["theatre"]), ("", ""))
+                if src:
+                    r["gsrc"] = src  # label we worked out ourselves, not one the venue gave
             if not r["genre"]:
-                r["genre"] = next((g for rx, g in GENRE_HINTS if re.search(rx, r["title"], re.I)), "")
+                r["genre"] = guess_genre(r["title"])
+                if r["genre"]:
+                    r["gsrc"] = "guess"
             fresh.setdefault(r["theatre"], []).append(r)
     kept = [r for r in old if r["theatre"] not in fresh and r["end"] >= TODAY.isoformat()]
     merged, seen = [], set()

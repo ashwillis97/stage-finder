@@ -258,8 +258,10 @@ def events_ld(shows, places, today, limit=60):
         ev = {
             "@type": "Event",
             "name": s["title"],
-            "startDate": max(d(s["start"]), today).isoformat(),
+            "description": f"{s['title']} at {s['theatre']}" + (f", {city}" if city else "") + ". Dates and tickets via Find a Show.",
+            "startDate": s["start"],
             "endDate": s["end"],
+            "eventStatus": "https://schema.org/EventScheduled",
             "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
             "location": loc,
         }

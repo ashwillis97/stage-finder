@@ -37,15 +37,21 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A shows.json health.json venues cities categories assets sitemap.xml
-          git add tm_venues.json seen.json || true
-          git commit -m "Update listings" || echo "no changes"
-          # If someone pushed a site change while this ~40 minute run was going, the generated
-          # files (listings and pages) can clash. Our freshly built copies win, then retry the push.
+          GEN="shows.json health.json tm_venues.json seen.json sitemap.xml assets venues cities categories pantomime christmas-shows new"
+          save() { git add -A $(for f in $GEN; do [ -e "$f" ] && echo "$f"; done); git commit -m "Update listings" || echo "no changes"; }
+          save
+          # This run takes ~40 minutes. If a site change was pushed meanwhile, do not try to merge the
+          # generated files: keep our freshly built copies, start again from the newest code, and push.
           for i in 1 2 3; do
-            git pull --rebase --autostash -X theirs origin main && git push && exit 0
-            git rebase --abort 2>/dev/null || true
-            sleep 5
+            git push && exit 0
+            git fetch origin main
+            rm -f /tmp/gen.tar
+            tar -cf /tmp/gen.tar $(for f in $GEN; do [ -e "$f" ] && echo "$f"; done)
+            git reset --hard origin/main
+            rm -rf venues cities categories pantomime christmas-shows new
+            tar -xf /tmp/gen.tar
+            save
+            sleep 3
           done
           echo "Could not push after 3 tries"; exit 1
       - name: Check the listings are healthy

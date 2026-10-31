@@ -1,6 +1,6 @@
 {
  "sample": false,
- "updated": "2026-10-31T01:50+00:00",
+ "updated": "2026-10-31T08:28+00:00",
  "coverage": {
   "none": [],
   "partial": {
@@ -10,7 +10,8 @@
    "Lichfield Garrick": "Not updated automatically yet, so these listings may be out of date.",
    "Palace Theatre Mansfield": "Not updated automatically yet, so these listings may be out of date.",
    "Brewhouse Arts Centre": "Not updated automatically yet, so these listings may be out of date.",
-   "Queen Elizabeth Hall": "Not updated automatically yet, so these listings may be out of date."
+   "Queen Elizabeth Hall": "Not updated automatically yet, so these listings may be out of date.",
+   "Royal Festival Hall": "Not updated automatically yet, so these listings may be out of date."
   }
  },
  "shows": [
@@ -493,14 +494,6 @@
    "start": "2026-10-30",
    "end": "2026-10-31",
    "url": "https://www.sadlerswells.com/whats-on/stories-the-tap-dance-sensation-2026/"
-  },
-  {
-   "title": "The Addams Family Young@Part",
-   "theatre": "Shrewsbury Theatre Severn",
-   "genre": "",
-   "start": "2026-10-30",
-   "end": "2026-10-31",
-   "url": "https://www.theatresevern.co.uk/whats-on/the-addams-family-young-at-part//"
   },
   {
    "title": "Van Morrison",
@@ -1525,6 +1518,15 @@
    "url": "https://www.usherhall.co.uk/events/sinfonia-of-london-"
   },
   {
+   "title": "Spooks in Space",
+   "theatre": "Venue Cymru",
+   "genre": "",
+   "start": "2026-10-31",
+   "end": "2026-10-31",
+   "url": "https://www.venuecymru.co.uk/shows/spooks-in-space",
+   "added": "2026-10-31"
+  },
+  {
    "title": "Steelers v Panthers",
    "theatre": "Utilita Arena Sheffield",
    "genre": "",
@@ -1590,6 +1592,14 @@
    "start": "2026-10-31",
    "end": "2026-10-31",
    "url": "https://www.theatresevern.co.uk/whats-on/the-haunting-of-blaine-manor//"
+  },
+  {
+   "title": "The Addams Family Young@Part",
+   "theatre": "Shrewsbury Theatre Severn",
+   "genre": "",
+   "start": "2026-10-31",
+   "end": "2026-10-31",
+   "url": "https://www.theatresevern.co.uk/whats-on/the-addams-family-young-at-part//"
   },
   {
    "title": "The Australian Pink Floyd",
@@ -1688,7 +1698,7 @@
    "genre": "",
    "start": "2026-10-31",
    "end": "2026-10-31",
-   "url": "https://www.theapex.co.uk/whats-on/details.cfm?id=1160747&ins=1984803"
+   "url": "https://www.theapex.co.uk/whats-on/details.cfm?id=1160747&ins=1984816"
   },
   {
    "title": "The Mousetrap",
@@ -3536,6 +3546,15 @@
    "url": "https://www.theatresevern.co.uk/whats-on/dead-mens-eyes//"
   },
   {
+   "title": "Elevate Festival – An Introduction to National Lottery Project Grants",
+   "theatre": "Exeter Northcott Theatre",
+   "genre": "",
+   "start": "2026-11-04",
+   "end": "2026-11-04",
+   "url": "https://exeternorthcott.co.uk/events/elevate-festival-an-introduction-to-national-lottery-project-grants/",
+   "added": "2026-10-31"
+  },
+  {
    "title": "Elevate Festival – The Necromancer!",
    "theatre": "Exeter Northcott Theatre",
    "genre": "",
@@ -4820,7 +4839,7 @@
    "start": "2026-11-06",
    "end": "2026-11-06",
    "url": "https://www.watfordcolosseum.co.uk/events/jools-holland-and-his-rhythm-and-blues-orchestra",
-   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-blues-watford-06-11-2026/event/3700642CBB8A2492"
+   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-and-watford-06-11-2026/event/3700642CBB8A2492"
   },
   {
    "title": "Legend: The Music of Bob Marley",
@@ -6999,6 +7018,15 @@
    "start": "2026-11-10",
    "end": "2026-11-10",
    "url": "https://www.ipswichtheatres.co.uk/whats-on/saxons-badminton-vs-manchester-hive/"
+  },
+  {
+   "title": "Six The Musical",
+   "theatre": "Venue Cymru",
+   "genre": "Musical",
+   "start": "2026-11-10",
+   "end": "2026-11-10",
+   "url": "https://www.venuecymru.co.uk/shows/six-the-musical",
+   "added": "2026-10-31"
   },
   {
    "title": "Steven Osborne (Piano) &#8211; CMS",
@@ -9575,6 +9603,15 @@
    "tm": "https://www.ticketmaster.co.uk/beabadoobee-the-powerlines-tour-cardiff-16-11-2026/event/360064D6E00CAA4C"
   },
   {
+   "title": "A Christmas Carol",
+   "theatre": "Middlesbrough Town Hall",
+   "genre": "Christmas",
+   "start": "2026-11-17",
+   "end": "2026-11-19",
+   "url": "https://boxoffice.middlesbrough.gov.uk/event/a-christmas-carol/",
+   "added": "2026-10-31"
+  },
+  {
    "title": "Agatha Christie's The Hollow",
    "theatre": "New Theatre Cardiff",
    "genre": "Play",
@@ -10150,6 +10187,15 @@
    "start": "2026-11-19",
    "end": "2026-11-22",
    "url": "https://www.atgtickets.com/shows/bost-musicals-presents-elf-the-musical/liverpool-empire/"
+  },
+  {
+   "title": "Big Country",
+   "theatre": "Middlesbrough Town Hall",
+   "genre": "",
+   "start": "2026-11-19",
+   "end": "2026-11-19",
+   "url": "https://boxoffice.middlesbrough.gov.uk/event/big-country/",
+   "added": "2026-10-31"
   },
   {
    "title": "Bob Fox & Stu Luckley",
@@ -15330,6 +15376,15 @@
    "url": "https://www.theatreroyal.org.uk/events/a-childs-christmas-in-wales/"
   },
   {
+   "title": "A Choral Christmas 2026",
+   "theatre": "Doncaster Dome",
+   "genre": "Christmas",
+   "start": "2026-12-09",
+   "end": "2026-12-09",
+   "url": "https://www.dclt.co.uk/tickets/?EventInstanceId=469202&iframe=chooseseats",
+   "added": "2026-10-31"
+  },
+  {
    "title": "All Killa No Filla: Live At Christmas!",
    "theatre": "The Alexandra Theatre",
    "genre": "Comedy",
@@ -18102,6 +18157,15 @@
    "url": "https://www.atgtickets.com/shows/before-i-go-to-sleep/richmond-theatre/"
   },
   {
+   "title": "Country Roads",
+   "theatre": "Truro Hall for Cornwall",
+   "genre": "",
+   "start": "2027-01-15",
+   "end": "2027-01-15",
+   "url": "https://www.hallforcornwall.co.uk/whats-on/country-roads//",
+   "added": "2026-10-31"
+  },
+  {
    "title": "Edwina Hayes",
    "theatre": "The Met",
    "genre": "",
@@ -18280,6 +18344,15 @@
    "url": "https://www.thenec.co.uk/events/sim-global-expo-2027/"
   },
   {
+   "title": "Sky Full of Stars: A Tribute to Coldplay",
+   "theatre": "Truro Hall for Cornwall",
+   "genre": "Tribute",
+   "start": "2027-01-16",
+   "end": "2027-01-16",
+   "url": "https://www.hallforcornwall.co.uk/whats-on/sky-full-of-stars-a-tribute-to-coldplay//",
+   "added": "2026-10-31"
+  },
+  {
    "title": "Solve-Along-A-Murder-She-Wrote",
    "theatre": "Theatre Royal Nottingham",
    "genre": "Comedy",
@@ -18352,6 +18425,15 @@
    "start": "2027-01-17",
    "end": "2027-01-17",
    "url": "https://www.wycombeswan.co.uk/wycombe-swan-theatre/en-GB/event/music/legend-the-music-of-bob-marley-tickets"
+  },
+  {
+   "title": "Money for Nothing",
+   "theatre": "Truro Hall for Cornwall",
+   "genre": "",
+   "start": "2027-01-17",
+   "end": "2027-01-17",
+   "url": "https://www.hallforcornwall.co.uk/whats-on/money-for-nothing//",
+   "added": "2026-10-31"
   },
   {
    "title": "NORTHERN CARD SHOW",
@@ -18532,6 +18614,15 @@
    "start": "2027-01-19",
    "end": "2027-01-23",
    "url": "https://everymanplayhouse.com/event/the-signalman/"
+  },
+  {
+   "title": "Twelve Angry Men",
+   "theatre": "Truro Hall for Cornwall",
+   "genre": "",
+   "start": "2027-01-19",
+   "end": "2027-01-23",
+   "url": "https://www.hallforcornwall.co.uk/whats-on/twelve-angry-men//",
+   "added": "2026-10-31"
   },
   {
    "title": "Wearing the Trousers",
@@ -19131,6 +19222,15 @@
    "url": "https://www.atgtickets.com/shows/matthew-bournes-cinderella/milton-keynes-theatre/"
   },
   {
+   "title": "Murder, She Didn’t Write",
+   "theatre": "Truro Hall for Cornwall",
+   "genre": "",
+   "start": "2027-01-26",
+   "end": "2027-01-26",
+   "url": "https://www.hallforcornwall.co.uk/whats-on/murder-she-didnt-write//",
+   "added": "2026-10-31"
+  },
+  {
    "title": "Nottingham Forest Legends",
    "theatre": "Royal Concert Hall",
    "genre": "Talks",
@@ -19195,6 +19295,15 @@
    "end": "2027-01-27",
    "url": "https://tickets.motorpointarenanottingham.com/shows/show.aspx?sh=DONNYMP27",
    "tm": "https://www.ticketmaster.co.uk/donny-osmond-viva-uk-nottingham-27-01-2027/event/350064AEC01E4E36"
+  },
+  {
+   "title": "HfC Schools Showcase 2027",
+   "theatre": "Truro Hall for Cornwall",
+   "genre": "",
+   "start": "2027-01-27",
+   "end": "2027-01-28",
+   "url": "https://www.hallforcornwall.co.uk/whats-on/hfc-schools-showcase-2027//",
+   "added": "2026-10-31"
   },
   {
    "title": "MANIFEST LOVE: LIVE with Roxie Nafousi",
@@ -19416,6 +19525,15 @@
    "url": "https://www.theatresevern.co.uk/whats-on/tommy-j//"
   },
   {
+   "title": "The Drifters",
+   "theatre": "Truro Hall for Cornwall",
+   "genre": "",
+   "start": "2027-01-29",
+   "end": "2027-01-29",
+   "url": "https://www.hallforcornwall.co.uk/whats-on/the-drifters//",
+   "added": "2026-10-31"
+  },
+  {
    "title": "The Umbrella Man",
    "theatre": "Brewhouse Arts Centre",
    "genre": "Entertainment",
@@ -19431,6 +19549,15 @@
    "end": "2027-01-30",
    "url": "https://nottinghamplayhouse.co.uk/events/abi-clarke-just-tell-me-when-its-over/",
    "tm": "https://www.ticketmaster.co.uk/abi-clarke-just-tell-me-when-nottingham-30-01-2027/event/37006545DA536C3E"
+  },
+  {
+   "title": "An Evening with Sir David Jason",
+   "theatre": "Truro Hall for Cornwall",
+   "genre": "",
+   "start": "2027-01-30",
+   "end": "2027-01-30",
+   "url": "https://www.hallforcornwall.co.uk/whats-on/an-evening-with-sir-david-jason//",
+   "added": "2026-10-31"
   },
   {
    "title": "Ben Portsmouth: This is Elvis",
@@ -19761,6 +19888,15 @@
    "url": "http://www.stocktonglobe.co.uk/shows/the-night-sky-show"
   },
   {
+   "title": "The Simon & Garfunkel Story",
+   "theatre": "Truro Hall for Cornwall",
+   "genre": "",
+   "start": "2027-01-31",
+   "end": "2027-01-31",
+   "url": "https://www.hallforcornwall.co.uk/whats-on/the-simon-garfunkel-story//",
+   "added": "2026-10-31"
+  },
+  {
    "title": "Burlesque The Musical",
    "theatre": "Theatre Royal Nottingham",
    "genre": "Musical Theatre",
@@ -20062,6 +20198,15 @@
    "url": "https://themet.org.uk/event/first-thursday-2027-02/"
   },
   {
+   "title": "Gorilla Circus: RPM",
+   "theatre": "Truro Hall for Cornwall",
+   "genre": "",
+   "start": "2027-02-04",
+   "end": "2027-02-04",
+   "url": "https://www.hallforcornwall.co.uk/whats-on/gorilla-circus-rpm//",
+   "added": "2026-10-31"
+  },
+  {
    "title": "HOWL QUARTET",
    "theatre": "Wales Millennium Centre",
    "genre": "",
@@ -20269,6 +20414,15 @@
    "url": "https://www.atgtickets.com/shows/the-illegal-eagles/victoria-hall/"
   },
   {
+   "title": "The Magic of Motown",
+   "theatre": "Truro Hall for Cornwall",
+   "genre": "",
+   "start": "2027-02-05",
+   "end": "2027-02-05",
+   "url": "https://www.hallforcornwall.co.uk/whats-on/the-magic-of-motown//",
+   "added": "2026-10-31"
+  },
+  {
    "title": "Varna Ballet - Swan Lake",
    "theatre": "Wolverhampton Grand Theatre",
    "genre": "",
@@ -20392,6 +20546,16 @@
    "end": "2027-02-06",
    "url": "https://lwtheatres.co.uk/whats-on/judy-collins-friends-farewell-concert/",
    "tm": "https://www.ticketmaster.co.uk/judy-collins-friends-farewell-concert-london-06-02-2027/event/37006541D53262B0"
+  },
+  {
+   "title": "Michael Starring Ben – The Magic of Michael Jackson",
+   "theatre": "Truro Hall for Cornwall",
+   "genre": "",
+   "start": "2027-02-06",
+   "end": "2027-02-06",
+   "url": "https://www.hallforcornwall.co.uk/whats-on/michael-starring-ben-the-magic-of-michael-jackson//",
+   "added": "2026-10-31",
+   "tm": "https://www.ticketmaster.co.uk/michael-starring-ben-truro-06-02-2027/event/1F00650EC506A1D3"
   },
   {
    "title": "Murder Trial Tonight V: Death in the Family",
@@ -23755,14 +23919,6 @@
    "url": "https://bristolbeacon.org/whats-on/jon-boden-2027/"
   },
   {
-   "title": "Luther Live & Velvet Voices 2027",
-   "theatre": "Doncaster Dome",
-   "genre": "",
-   "start": "2027-03-06",
-   "end": "2027-03-06",
-   "url": "https://www.dclt.co.uk/tickets/?EventInstanceId=457602&iframe=chooseseats"
-  },
-  {
    "title": "Man In The Mirror - A Tribute to Michael Jackson",
    "theatre": "York Barbican",
    "genre": "Tribute",
@@ -25345,6 +25501,14 @@
    "url": "https://www.atgtickets.com/shows/chicago-the-musical/liverpool-empire/"
   },
   {
+   "title": "Disney’s Frozen the Musical",
+   "theatre": "Shrewsbury Theatre Severn",
+   "genre": "Musical",
+   "start": "2027-03-24",
+   "end": "2027-03-27",
+   "url": "https://www.theatresevern.co.uk/whats-on/disneys-frozen-the-musical//"
+  },
+  {
    "title": "Graveyard & Blues Pills",
    "theatre": "O2 Academy Bristol",
    "genre": "",
@@ -25376,14 +25540,6 @@
    "start": "2027-03-25",
    "end": "2027-03-25",
    "url": "http://www.stocktonglobe.co.uk/shows/10cc"
-  },
-  {
-   "title": "Disney’s Frozen the Musical",
-   "theatre": "Shrewsbury Theatre Severn",
-   "genre": "Musical",
-   "start": "2027-03-25",
-   "end": "2027-03-27",
-   "url": "https://www.theatresevern.co.uk/whats-on/disneys-frozen-the-musical//"
   },
   {
    "title": "Lighthouse Family: CELEBRATING THE ICONIC ALBUM OCEAN DRIVE AND ALL THEIR GREATEST HITS",

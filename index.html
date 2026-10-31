@@ -452,7 +452,7 @@ dialog::backdrop { background: var(--backdrop); }
       <p><strong>No accounts or tracking.</strong> We don't ask you to sign up and we don't use advertising or analytics cookies on this site.</p>
       <p><strong>Your location.</strong> If you use "Near me", your location or postcode is used in your browser to work out distances. A postcode is looked up with postcodes.io, and your location is never stored by us.</p>
       <p><strong>Affiliate links.</strong> Some ticket buttons, such as "Buy on Ticketmaster", are affiliate links. If you buy, we may earn a commission at no extra cost to you, and the ticket seller and its partners may set cookies when you click through.</p>
-      <p><strong>Suggestions.</strong> If you suggest a venue or show, the text you type is sent to us through Google Forms. We don't ask for your name or email. This page also loads its fonts from Google Fonts.</p>
+      <p><strong>Adding venues and shows.</strong> If you add a venue or show, the text you type is sent to us through Google Forms. We don't ask for your name or email. This page also loads its fonts from Google Fonts.</p>
     </div></details>
     <details id="about" hidden><summary>About these listings</summary><div id="aboutBody"></div></details>
     <p id="stamp"></p>
@@ -765,8 +765,8 @@ dialog::backdrop { background: var(--backdrop); }
   /* ---- "something's missing" forms: our own styled form that sends answers to a Google Form ---- */
   var SUGGEST = {
     venue: {
-      tab: "A missing venue", title: "Suggest a venue",
-      intro: "Know a theatre or venue we don't cover? Give us the basics and we'll look into adding it.",
+      tab: "A missing venue", title: "Add a venue",
+      intro: "Know a theatre or venue we don't cover? Give us the basics and we'll check it and add it.",
       formId: "1FAIpQLSffB1YzxIds5XE-BzIcZzvN4byMo-1IKdD9mQEWEfex7JIp1w",
       fields: [
         { id: "name", label: "Venue name", entry: "entry.2062760536", placeholder: "e.g. The Old Rep Theatre", required: true },
@@ -775,8 +775,8 @@ dialog::backdrop { background: var(--backdrop); }
       ]
     },
     show: {
-      tab: "A missing show", title: "Suggest a show",
-      intro: "Know of a show that isn't listed? Tell us where and when and we'll look into adding it.",
+      tab: "A missing show", title: "Add a show",
+      intro: "Know of a show that isn't listed? Tell us where and when and we'll check it and add it.",
       formId: "1FAIpQLSdLqPYyG-J3eVZR2ERSlwnNvwSXMjVuVhRijdVT-TOd3WXR-g",
       fields: [
         { id: "name", label: "Show name", entry: "entry.2062760536", placeholder: "e.g. The Mousetrap", required: true },
@@ -793,13 +793,13 @@ dialog::backdrop { background: var(--backdrop); }
 
   function sgRender(done) {
     var cfg = SUGGEST[sgCur], h = '<div class="dlg-head"><h2 id="dlgTitle">' + esc(cfg.title) + '</h2><button class="dlg-x" id="dlgX" type="button" aria-label="Close">&times;</button></div>';
-    if (sgKeys.length > 1) h += '<div class="tabs" role="group" aria-label="What are you suggesting?">' + sgKeys.map(function (k) { return '<button type="button" class="chip" data-sg="' + k + '" aria-pressed="' + (k === sgCur) + '">' + esc(SUGGEST[k].tab) + "</button>"; }).join("") + "</div>";
+    if (sgKeys.length > 1) h += '<div class="tabs" role="group" aria-label="What are you adding?">' + sgKeys.map(function (k) { return '<button type="button" class="chip" data-sg="' + k + '" aria-pressed="' + (k === sgCur) + '">' + esc(SUGGEST[k].tab) + "</button>"; }).join("") + "</div>";
     if (done) {
-      h += '<div class="thanks"><strong>Thank you!</strong><p>We have your suggestion and will take a look. New venues and shows are added by hand, so it may take a little while.</p><button class="btn" id="sgClose" type="button">Close</button></div>';
+      h += '<div class="thanks"><strong>Thank you!</strong><p>We have your submission and will check it. New venues and shows are added by hand, so it may take a little while before they appear.</p><button class="btn" id="sgClose" type="button">Close</button></div>';
     } else {
       h += "<p>" + esc(cfg.intro) + '</p><form id="sgForm" novalidate>' + cfg.fields.map(function (f) {
         return '<div class="field"><label for="sg-' + f.id + '">' + esc(f.label) + (f.required ? "" : " (optional)") + '</label><input id="sg-' + f.id + '" type="text" placeholder="' + esc(f.placeholder || "") + '" autocomplete="off"' + (f.url ? ' inputmode="url" autocapitalize="off"' : "") + '><div class="err" id="err-' + f.id + '" role="alert"></div></div>';
-      }).join("") + '<div class="hp" aria-hidden="true"><label for="sg-website">Leave this empty</label><input id="sg-website" type="text" tabindex="-1" autocomplete="off"></div><p class="fine">We only use what you type here to decide what to add. We don\'t ask for your name or email.</p><button class="btn" id="sgSend" type="submit">Send suggestion</button><p id="sgMsg" aria-live="polite"></p></form>';
+      }).join("") + '<div class="hp" aria-hidden="true"><label for="sg-website">Leave this empty</label><input id="sg-website" type="text" tabindex="-1" autocomplete="off"></div><p class="fine">We only use what you type here to decide what to add. We don\'t ask for your name or email.</p><button class="btn" id="sgSend" type="submit">Send</button><p id="sgMsg" aria-live="polite"></p></form>';
     }
     $("dlgBody").innerHTML = h;
     $("dlgX").addEventListener("click", sgClose);
@@ -829,7 +829,7 @@ dialog::backdrop { background: var(--backdrop); }
     var body = new URLSearchParams(vals);
     fetch("https://docs.google.com/forms/d/e/" + cfg.formId + "/formResponse", { method: "POST", mode: "no-cors", body: body })
       .then(function () { sgBump(); sgRender(true); })
-      .catch(function () { $("sgSend").disabled = false; $("sgSend").textContent = "Send suggestion"; $("sgMsg").textContent = "Sorry, that didn't send. Please check your connection and try again."; });
+      .catch(function () { $("sgSend").disabled = false; $("sgSend").textContent = "Send"; $("sgMsg").textContent = "Sorry, that didn't send. Please check your connection and try again."; });
   }
   $("sgBtns").innerHTML = sgKeys.map(function (k, i) { return '<button type="button" class="btn ' + (i ? "ghost" : "") + '" data-open="' + k + '">' + esc(SUGGEST[k].title) + "</button>"; }).join("");
   $("sgBtns").addEventListener("click", function (e) { var b = e.target.closest("[data-open]"); if (b) sgOpen(b.getAttribute("data-open"), b); });

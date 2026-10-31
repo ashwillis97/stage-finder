@@ -38,23 +38,23 @@ CATEGORIES = {
 
 CSS = """
 :root{--bg:#faf6ef;--surface:#fff;--surface-2:#f1eadf;--line:#ded3c2;--fg:#1f1a16;--muted:#6a5f54;--accent:#e4572e;--accent-fg:#fff;--rose:#b8185a;
---font-display:"Bebas Neue","Oswald","Arial Narrow",Impact,sans-serif;--font-body:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;--font-small:"Barlow Condensed","Arial Narrow",Arial,sans-serif;color-scheme:light}
+--font-display:"Outfit","Helvetica Neue",Arial,sans-serif;--font-body:"Outfit","Helvetica Neue",Arial,sans-serif;--font-small:"Outfit","Helvetica Neue",Arial,sans-serif;color-scheme:light}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 var(--font-body);-webkit-text-size-adjust:100%}
 a{color:var(--rose)}
 .wrap{max-width:860px;margin:0 auto;padding:0 16px 56px}
 .top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0 6px}
-.brand{font-family:var(--font-display);font-size:26px;letter-spacing:.06em;color:var(--fg);text-decoration:none}
+.brand{font-family:var(--font-display);font-weight:800;font-size:26px;letter-spacing:-.02em;color:var(--fg);text-decoration:none}
 .brand b{color:var(--accent);font-weight:400}
-.top a.home{font-family:var(--font-small);font-weight:600;font-size:15px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--fg);border:1.5px solid var(--fg);padding:7px 12px;border-radius:999px}
+.top a.home{font-family:var(--font-small);font-weight:600;font-size:15px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--fg);border:1.5px solid var(--fg);padding:7px 12px;border-radius:999px}
 .crumbs{font-size:14px;color:var(--muted);margin:14px 0 0}
 .crumbs a{color:var(--muted)}
-h1{margin:6px 0 0;font-family:var(--font-display);font-weight:400;font-size:clamp(38px,8vw,62px);line-height:.98;letter-spacing:.015em;text-wrap:balance}
+h1{margin:6px 0 0;font-family:var(--font-display);font-weight:800;font-size:clamp(34px,7vw,54px);line-height:1.05;letter-spacing:-.03em;text-wrap:balance}
 .lede{color:var(--muted);margin:10px 0 0;max-width:62ch}
-h2{margin:30px 0 8px;font-family:var(--font-display);font-weight:400;font-size:28px;letter-spacing:.08em;color:var(--accent)}
+h2{margin:30px 0 8px;font-family:var(--font-display);font-weight:700;font-size:22px;letter-spacing:-.01em;color:var(--accent)}
 h2 a{color:inherit;text-decoration:none}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0;display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-.card h3{margin:0;font-size:18px;line-height:1.25}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px 16px;margin:10px 0;display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.card h3{margin:0;font-size:19px;font-weight:700;line-height:1.25;letter-spacing:-.01em}
 .meta{margin:2px 0 0;color:var(--muted);font-size:14px}
 .act{display:flex;gap:8px;flex-wrap:wrap}
 .btn{display:inline-block;font-family:var(--font-small);font-weight:600;font-size:15px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:8px 14px;border-radius:999px;background:var(--accent);color:var(--accent-fg)}
@@ -213,7 +213,7 @@ def page(title, desc, path, body, ld=None, noindex=False):
 <link rel="icon" href="/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@500;600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap">
 <link rel="stylesheet" href="/assets/pages.css">
 {ldtag}
 </head>

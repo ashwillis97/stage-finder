@@ -29,7 +29,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23faf6ef'/%3E%3Cpath d='M20 14h24l-6 16h-12z' fill='%23e4572e'/%3E%3Cpath d='M24 34h16l10 18H14z' fill='%23e4572e' opacity='.45'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@500;600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap">
 <style>
 /* Bright and warm: cream background, vermilion accent. Hero with search, quick filters, then a list of ticket-stub cards. */
 :root {
@@ -49,9 +49,9 @@
   --focus: #1f1a16;
   --shadow: rgba(60, 40, 20, .18);
   --backdrop: rgba(30, 20, 10, .55);
-  --font-display: "Bebas Neue", "Oswald", "Arial Narrow", Impact, sans-serif;
-  --font-body: "Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
-  --font-small: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Outfit", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Outfit", "Helvetica Neue", Arial, sans-serif;
+  --font-small: "Outfit", "Helvetica Neue", Arial, sans-serif;
   color-scheme: light;
 }
 * { box-sizing: border-box; }
@@ -354,6 +354,25 @@ dialog::backdrop { background: var(--backdrop); }
 @keyframes swing3 { from { transform: rotate(-6deg); } to { transform: rotate(12deg); } }
 @keyframes rise { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: .75; } 100% { transform: translateY(-260px); opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .cur, .beam, .dust i { animation: none !important; } .dust { display: none; } }
+
+/* Type: Outfit throughout (friendly, modern). These sit last so they win over the earlier display-font styling. */
+.brand { font-weight: 800; letter-spacing: -.02em; }
+.brand-s { color: #ff8a5c; font-weight: 800; }
+h1 { font-weight: 800; letter-spacing: -.03em; line-height: 1.02; font-size: clamp(40px, 9vw, 66px); }
+h2 { font-weight: 700; letter-spacing: -.01em; font-size: 22px; }
+.count { font-weight: 700; letter-spacing: -.01em; }
+.group-label, .stub .dow, .stub .mon { font-weight: 600; letter-spacing: .08em; font-size: 12px; }
+.stub .day { font-weight: 800; letter-spacing: -.02em; }
+.info h3 { font-weight: 700; letter-spacing: -.01em; font-size: 22px; line-height: 1.15; }
+.empty strong, .thanks strong { font-weight: 700; letter-spacing: -.01em; font-size: 26px; }
+.suggest strong { font-weight: 700; letter-spacing: -.01em; font-size: 22px; }
+.dlg h2 { font-size: 26px; letter-spacing: -.01em; }
+.btn { border-radius: 999px; font-weight: 600; }
+.card { border-radius: 18px; }
+.stub { border-right: 0; }
+.resultbar { flex-wrap: wrap; row-gap: 4px; }
+.count { white-space: nowrap; }
+#newLink, #clear { font-size: 14px; }
 </style>
 </head>
 <body>
@@ -365,7 +384,7 @@ dialog::backdrop { background: var(--backdrop); }
   <span class="dust"><i style="--x:8%;--s:3px;--t:11s;--d:-1s"></i><i style="--x:15%;--s:2px;--t:14s;--d:-6s"></i><i style="--x:23%;--s:4px;--t:12s;--d:-3s"></i><i style="--x:31%;--s:2px;--t:16s;--d:-9s"></i><i style="--x:39%;--s:3px;--t:13s;--d:-2s"></i><i style="--x:47%;--s:2px;--t:15s;--d:-7s"></i><i style="--x:55%;--s:4px;--t:11s;--d:-5s"></i><i style="--x:62%;--s:2px;--t:17s;--d:-10s"></i><i style="--x:70%;--s:3px;--t:12s;--d:-4s"></i><i style="--x:77%;--s:2px;--t:14s;--d:-8s"></i><i style="--x:84%;--s:4px;--t:13s;--d:-0s"></i><i style="--x:91%;--s:3px;--t:15s;--d:-6s"></i><i style="--x:96%;--s:2px;--t:12s;--d:-11s"></i><i style="--x:43%;--s:3px;--t:18s;--d:-12s"></i></span>
 </div>
 <div class="wrap top">
-  <div class="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M20 14h24l-6 16h-12z" fill="currentColor"/><path d="M24 34h16l10 18H14z" fill="currentColor" opacity=".45"/></svg><span>Find a Show</span></div>
+  <div class="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M20 14h24l-6 16h-12z" fill="currentColor"/><path d="M24 34h16l10 18H14z" fill="currentColor" opacity=".45"/></svg><span>Find a <b class="brand-s">Show</b></span></div>
 
   <header class="hero">
     <h1>Live shows, all in <em>one place</em></h1>

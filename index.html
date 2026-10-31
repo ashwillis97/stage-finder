@@ -393,7 +393,13 @@ h2 { font-size: 20px; font-weight: 600; letter-spacing: 0; color: var(--muted); 
   .ftrig { border-radius: 12px; }
   .stagewrap::after { height: 1px; background: rgba(255,255,255,.14); opacity: 1; }
 }
-.lede { color: #fff; text-shadow: 0 1px 12px rgba(22,10,18,.7); }
+.lede { color: #fff; }
+
+/* Hero photo: real auditorium replaces the drawn stage */
+.stage .cur, .stage .beam, .stage .floor, .stage .dust { display: none !important; }
+.stage { background: linear-gradient(90deg, rgba(22,10,18,.78) 0%, rgba(22,10,18,.4) 50%, rgba(22,10,18,.1) 100%), linear-gradient(180deg, rgba(22,10,18,.45) 0%, rgba(22,10,18,0) 40%, rgba(22,10,18,.6) 100%), url(/assets/hero.jpg) center 30% / cover no-repeat, #160a12 !important; }
+@media (max-width: 760px) { .stage { background: linear-gradient(180deg, rgba(22,10,18,.7) 0%, rgba(22,10,18,.5) 55%, rgba(22,10,18,.75) 100%), url(/assets/hero-m.jpg) 30% 40% / cover no-repeat, #160a12 !important; } }
+.lede { text-shadow: none; }
 </style>
 </head>
 <body>

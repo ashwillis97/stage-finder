@@ -1,12 +1,120 @@
 [
  {
+  "venue": "Aberystwyth Arts Centre",
+  "url": "https://www.aberystwythartscentre.co.uk/whats-on",
+  "file": "aberystwyth-arts-centre-aberystwyth-1.html",
+  "status": 403,
+  "error": null,
+  "bytes": 2509,
+  "final_url": "https://www.aberystwythartscentre.co.uk/whats-on"
+ },
+ {
+  "venue": "Blackpool Grand Theatre",
+  "url": "https://www.blackpoolgrand.co.uk/whats-on",
+  "file": "blackpool-grand-theatre-blackpool-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 197784,
+  "final_url": "https://www.blackpoolgrand.co.uk/whats-on-in-blackpool-music"
+ },
+ {
+  "venue": "Blackpool Winter Gardens",
+  "url": "https://www.wintergardensblackpool.co.uk/whats-on/",
+  "file": "blackpool-winter-gardens-blackpool-1.html",
+  "status": 403,
+  "error": null,
+  "bytes": 1271,
+  "final_url": "https://www.wintergardensblackpool.co.uk/whats-on/"
+ },
+ {
+  "venue": "Bournemouth International Centre",
+  "url": "https://www.bic.co.uk/whats-on/",
+  "file": "bournemouth-international-centre-bournemouth-1.html",
+  "status": 403,
+  "error": null,
+  "bytes": 1227,
+  "final_url": "https://www.bic.co.uk/whats-on/"
+ },
+ {
+  "venue": "Bournemouth Pavilion",
+  "url": "https://www.bournemouthpavilion.co.uk/whats-on/",
+  "file": "bournemouth-pavilion-bournemouth-1.html",
+  "status": 403,
+  "error": null,
+  "bytes": 1046,
+  "final_url": "https://www.bournemouthpavilion.co.uk/whats-on/"
+ },
+ {
+  "venue": "The Central Theatre",
+  "url": "https://www.medway.gov.uk/centraltheatre",
+  "file": "the-central-theatre-chatham-1.html",
+  "status": 403,
+  "error": null,
+  "bytes": 117,
+  "final_url": "https://www.medway.gov.uk/centraltheatre"
+ },
+ {
+  "venue": "Dunfermline Alhambra Theatre",
+  "url": "https://www.alhambradunfermline.com/whats-on/",
+  "file": "dunfermline-alhambra-theatre-dunfermline-1.html",
+  "status": 401,
+  "error": null,
+  "bytes": 2524,
+  "final_url": "https://www.alhambradunfermline.com/whats-on/"
+ },
+ {
   "venue": "Edinburgh Corn Exchange",
   "url": "https://www.edinburghcornexchange.co.uk/whats-on",
   "file": "edinburgh-corn-exchange-edinburgh-1.html",
   "status": 200,
   "error": null,
-  "bytes": 176578,
+  "bytes": 185683,
   "final_url": "https://www.edinburghcornexchange.co.uk/whats-on"
+ },
+ {
+  "venue": "Hereford Courtyard",
+  "url": "https://www.courtyard.org.uk/whats-on/",
+  "file": "hereford-courtyard-hereford-1.html",
+  "status": 403,
+  "error": null,
+  "bytes": 144,
+  "final_url": "https://www.courtyard.org.uk/whats-on/"
+ },
+ {
+  "venue": "Huddersfield Town Hall",
+  "url": "https://www.kirklees.gov.uk/beta/town-halls-and-venues/huddersfield-town-hall.aspx",
+  "file": "huddersfield-town-hall-huddersfield-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 33899,
+  "final_url": "https://www.kirklees.gov.uk/error/pagenotfound.html?aspxerrorpath=/beta/town-halls-and-venues/huddersfield-town-hall.aspx"
+ },
+ {
+  "venue": "Hull New Theatre",
+  "url": "https://www.hulltheatres.co.uk/whats-on",
+  "file": "hull-new-theatre-hull-1.html",
+  "status": 403,
+  "error": null,
+  "bytes": 39,
+  "final_url": "https://www.hulltheatres.co.uk/whats-on"
+ },
+ {
+  "venue": "Aldwych Theatre",
+  "url": "https://www.delfontmackintosh.co.uk/",
+  "file": "aldwych-theatre-london-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 219289,
+  "final_url": "https://www.delfontmackintosh.co.uk/"
+ },
+ {
+  "venue": "Alexandra Palace",
+  "url": "https://www.alexandrapalace.com/whats-on/",
+  "file": "alexandra-palace-london-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 224013,
+  "final_url": "https://www.alexandrapalace.com/whats-on/"
  },
  {
   "venue": "Apollo Victoria Theatre",
@@ -14,7 +122,7 @@
   "file": "apollo-victoria-theatre-london-2.html",
   "status": 200,
   "error": null,
-  "bytes": 429853
+  "bytes": 427106
  },
  {
   "venue": "Apollo Victoria Theatre",
@@ -22,59 +130,161 @@
   "file": "apollo-victoria-theatre-london-1.html",
   "status": 200,
   "error": null,
-  "bytes": 74321,
+  "bytes": 73872,
   "final_url": "https://www.atgtickets.com/venues/apollo-victoria-theatre/whats-on/"
  },
  {
-  "venue": "Duke of York's Theatre",
-  "url": "https://www.atgtickets.com/shows/rent/tom-stoppard-theatre/",
-  "file": "duke-of-york-s-theatre-london-2.html",
+  "venue": "Barbican Centre",
+  "url": "https://www.barbican.org.uk/whats-on",
+  "file": "barbican-centre-london-1.html",
   "status": 200,
   "error": null,
-  "bytes": 417393
+  "bytes": 205433,
+  "final_url": "https://www.barbican.org.uk/whats-on"
  },
  {
-  "venue": "Duke of York's Theatre",
-  "url": "https://www.atgtickets.com/venues/duke-of-yorks-theatre/whats-on/",
-  "file": "duke-of-york-s-theatre-london-1.html",
+  "venue": "Cambridge Theatre",
+  "url": "https://www.delfontmackintosh.co.uk/",
+  "file": "cambridge-theatre-london-1.html",
   "status": 200,
   "error": null,
-  "bytes": 74438,
-  "final_url": "https://www.atgtickets.com/venues/tom-stoppard-theatre/whats-on/"
+  "bytes": 219289,
+  "final_url": "https://www.delfontmackintosh.co.uk/"
  },
  {
-  "venue": "Gielgud Theatre",
-  "url": "https://www.atgtickets.com/shows/oliver/gielgud-theatre/",
-  "file": "gielgud-theatre-london-2.html",
+  "venue": "Copper Box Arena",
+  "url": "https://www.queenelizabetholympicpark.co.uk/whats-on",
+  "file": "copper-box-arena-london-1.html",
   "status": 200,
   "error": null,
-  "bytes": 300777
+  "bytes": 156637,
+  "final_url": "https://www.queenelizabetholympicpark.co.uk/whats-on?conditions[]=see-all&free-to-enter=false"
  },
  {
-  "venue": "Gielgud Theatre",
-  "url": "https://www.atgtickets.com/venues/gielgud-theatre/whats-on/",
-  "file": "gielgud-theatre-london-1.html",
+  "venue": "Fortune Theatre",
+  "url": "https://www.nimaxtheatres.com/",
+  "file": "fortune-theatre-london-1.html",
   "status": 200,
   "error": null,
-  "bytes": 60773,
-  "final_url": "https://www.atgtickets.com/venues/gielgud-theatre/whats-on/"
+  "bytes": 143430,
+  "final_url": "https://nimaxtheatres.com/"
  },
  {
-  "venue": "Prince of Wales Theatre",
-  "url": "https://www.atgtickets.com/shows/the-book-of-mormon/prince-of-wales-theatre/",
-  "file": "prince-of-wales-theatre-london-2.html",
+  "venue": "Gillian Lynne Theatre",
+  "url": "https://www.delfontmackintosh.co.uk/",
+  "file": "gillian-lynne-theatre-london-1.html",
   "status": 200,
   "error": null,
-  "bytes": 312933
+  "bytes": 219289,
+  "final_url": "https://www.delfontmackintosh.co.uk/"
  },
  {
-  "venue": "Prince of Wales Theatre",
-  "url": "https://www.atgtickets.com/venues/prince-of-wales-theatre/whats-on/",
-  "file": "prince-of-wales-theatre-london-1.html",
+  "venue": "His Majesty's Theatre",
+  "url": "https://www.delfontmackintosh.co.uk/",
+  "file": "his-majesty-s-theatre-london-1.html",
   "status": 200,
   "error": null,
-  "bytes": 60648,
-  "final_url": "https://www.atgtickets.com/venues/prince-of-wales-theatre/whats-on/"
+  "bytes": 219278,
+  "final_url": "https://www.delfontmackintosh.co.uk/"
+ },
+ {
+  "venue": "Lyceum Theatre",
+  "url": "https://www.delfontmackintosh.co.uk/",
+  "file": "lyceum-theatre-london-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 219278,
+  "final_url": "https://www.delfontmackintosh.co.uk/"
+ },
+ {
+  "venue": "Novello Theatre",
+  "url": "https://www.delfontmackintosh.co.uk/",
+  "file": "novello-theatre-london-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 219278,
+  "final_url": "https://www.delfontmackintosh.co.uk/"
+ },
+ {
+  "venue": "No\u00ebl Coward Theatre",
+  "url": "https://www.delfontmackintosh.co.uk/",
+  "file": "no-l-coward-theatre-london-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 219278,
+  "final_url": "https://www.delfontmackintosh.co.uk/"
+ },
+ {
+  "venue": "OVO Arena Wembley",
+  "url": "https://www.ovoarena.co.uk/whats-on/",
+  "file": "ovo-arena-wembley-london-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 29563,
+  "final_url": "https://www.ovoarena.co.uk/whats-on"
+ },
+ {
+  "venue": "Phoenix Theatre",
+  "url": "https://www.nimaxtheatres.com/",
+  "file": "phoenix-theatre-london-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 143362,
+  "final_url": "https://nimaxtheatres.com/"
+ },
+ {
+  "venue": "Playhouse Theatre",
+  "url": "https://www.nimaxtheatres.com/",
+  "file": "playhouse-theatre-london-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 143362,
+  "final_url": "https://nimaxtheatres.com/"
+ },
+ {
+  "venue": "Prince Edward Theatre",
+  "url": "https://www.delfontmackintosh.co.uk/",
+  "file": "prince-edward-theatre-london-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 219289,
+  "final_url": "https://www.delfontmackintosh.co.uk/"
+ },
+ {
+  "venue": "Royal Albert Hall",
+  "url": "https://www.royalalberthall.com/tickets/",
+  "file": "royal-albert-hall-london-1.html",
+  "status": 403,
+  "error": null,
+  "bytes": 804,
+  "final_url": "https://www.royalalberthall.com/tickets/"
+ },
+ {
+  "venue": "Shaftesbury Theatre",
+  "url": "https://www.shaftesburytheatre.com/",
+  "file": "shaftesbury-theatre-london-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 164195,
+  "final_url": "https://www.shaftesburytheatre.com/"
+ },
+ {
+  "venue": "Sondheim Theatre",
+  "url": "https://www.delfontmackintosh.co.uk/",
+  "file": "sondheim-theatre-london-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 219289,
+  "final_url": "https://www.delfontmackintosh.co.uk/"
+ },
+ {
+  "venue": "St Martin's Theatre",
+  "url": "https://www.nimaxtheatres.com/",
+  "file": "st-martin-s-theatre-london-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 143362,
+  "final_url": "https://nimaxtheatres.com/"
  },
  {
   "venue": "The Old Vic",
@@ -82,8 +292,17 @@
   "file": "the-old-vic-london-1.html",
   "status": 200,
   "error": null,
-  "bytes": 161177,
+  "bytes": 157625,
   "final_url": "https://www.oldvictheatre.com/stage/"
+ },
+ {
+  "venue": "Troxy",
+  "url": "https://troxy.co.uk/whats-on/",
+  "file": "troxy-london-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 82521,
+  "final_url": "https://troxy.co.uk/whats-on/"
  },
  {
   "venue": "Victoria Palace Theatre",
@@ -91,7 +310,7 @@
   "file": "victoria-palace-theatre-london-2.html",
   "status": 200,
   "error": null,
-  "bytes": 305405
+  "bytes": 305960
  },
  {
   "venue": "Victoria Palace Theatre",
@@ -99,8 +318,17 @@
   "file": "victoria-palace-theatre-london-1.html",
   "status": 200,
   "error": null,
-  "bytes": 60810,
+  "bytes": 60726,
   "final_url": "https://www.atgtickets.com/venues/victoria-palace-theatre/whats-on/"
+ },
+ {
+  "venue": "Wyndham's Theatre",
+  "url": "https://www.delfontmackintosh.co.uk/",
+  "file": "wyndham-s-theatre-london-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 219289,
+  "final_url": "https://www.delfontmackintosh.co.uk/"
  },
  {
   "venue": "Manchester Central",
@@ -112,6 +340,24 @@
   "final_url": "https://www.manchestercentral.co.uk/events"
  },
  {
+  "venue": "Theatre at the Mill",
+  "url": "https://www.theatreatthemill.com/whats-on/",
+  "file": "theatre-at-the-mill-newtownabbey-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 21420,
+  "final_url": "https://theatreatthemill.com/whats-on/"
+ },
+ {
+  "venue": "New Theatre Royal",
+  "url": "https://www.newtheatreroyal.com/whats-on/",
+  "file": "new-theatre-royal-portsmouth-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 49553,
+  "final_url": "https://www.newtheatreroyal.com/whats-on/"
+ },
+ {
   "venue": "Preston Guild Hall",
   "url": "https://www.guildhallpreston.co.uk/article/8839/What-s-On",
   "file": "preston-guild-hall-preston-1.html",
@@ -121,140 +367,75 @@
   "final_url": "https://www.guildhallpreston.co.uk/article/8839/What-s-On"
  },
  {
-  "venue": "Delfont Mackintosh shows",
-  "url": "https://www.delfontmackintosh.co.uk/whats-on/beetlejuice",
-  "file": "delfont-mackintosh-2.html",
-  "status": 200,
+  "venue": "Utilita Bowl",
+  "url": "https://www.utilitabowl.com/",
+  "file": "utilita-bowl-southampton-1.html",
+  "status": 403,
   "error": null,
-  "bytes": 340178
+  "bytes": 2473,
+  "final_url": "https://www.utilitabowl.com/"
  },
  {
-  "venue": "Delfont Mackintosh shows",
-  "url": "https://www.delfontmackintosh.co.uk/whats-on/the-book-of-mormon",
-  "file": "delfont-mackintosh-3.html",
+  "venue": "The Alban Arena",
+  "url": "https://www.alban-arena.co.uk/whats-on/",
+  "file": "the-alban-arena-st-albans-1.html",
   "status": 200,
   "error": null,
-  "bytes": 298478
+  "bytes": 100906,
+  "final_url": "https://everyonetheatres.com/theatres/the-alban-arena/"
  },
  {
-  "venue": "Delfont Mackintosh shows",
-  "url": "https://www.delfontmackintosh.co.uk/whats-on/hamilton",
-  "file": "delfont-mackintosh-4.html",
-  "status": 200,
+  "venue": "Brangwyn Hall",
+  "url": "https://www.swansea.gov.uk/brangwynhall",
+  "file": "brangwyn-hall-swansea-1.html",
+  "status": 403,
   "error": null,
-  "bytes": 341644
+  "bytes": 2470,
+  "final_url": "https://www.swansea.gov.uk/brangwynhall"
  },
  {
-  "venue": "Delfont Mackintosh shows",
-  "url": "https://www.delfontmackintosh.co.uk/whats-on/hay-fever",
-  "file": "delfont-mackintosh-5.html",
+  "venue": "Swansea Arena",
+  "url": "https://www.swansea-arena.co.uk/whats-on/",
+  "file": "swansea-arena-swansea-1.html",
   "status": 200,
   "error": null,
-  "bytes": 317779
+  "bytes": 111161,
+  "final_url": "https://www.swansea-arena.co.uk/whats-on"
  },
  {
-  "venue": "Delfont Mackintosh shows",
-  "url": "https://www.delfontmackintosh.co.uk/whats-on/into-the-woods",
-  "file": "delfont-mackintosh-6.html",
-  "status": 200,
+  "venue": "Swansea Grand Theatre",
+  "url": "https://www.swanseagrand.co.uk/whats-on/",
+  "file": "swansea-grand-theatre-swansea-1.html",
+  "status": 403,
   "error": null,
-  "bytes": 327583
+  "bytes": 2482,
+  "final_url": "https://www.swanseagrand.co.uk/whats-on/"
  },
  {
-  "venue": "Delfont Mackintosh shows",
-  "url": "https://www.delfontmackintosh.co.uk/whats-on/les-miserables",
-  "file": "delfont-mackintosh-7.html",
-  "status": 200,
+  "venue": "Theatre Royal Winchester",
+  "url": "https://www.theatreroyalwinchester.co.uk/whats-on/",
+  "file": "theatre-royal-winchester-winchester-1.html",
+  "status": 403,
   "error": null,
-  "bytes": 307197
+  "bytes": 1049,
+  "final_url": "https://www.theatreroyalwinchester.co.uk/whats-on/"
  },
  {
-  "venue": "Delfont Mackintosh shows",
-  "url": "https://www.delfontmackintosh.co.uk/whats-on/mamma-mia",
-  "file": "delfont-mackintosh-8.html",
+  "venue": "Roundhouse",
+  "url": "https://www.roundhouse.org.uk/whats-on/",
+  "file": "roundhouse-london-1.html",
   "status": 200,
   "error": null,
-  "bytes": 351356
+  "bytes": 204381,
+  "final_url": "https://www.roundhouse.org.uk/whats-on/"
  },
  {
-  "venue": "Delfont Mackintosh shows",
-  "url": "https://www.delfontmackintosh.co.uk/whats-on/oliver",
-  "file": "delfont-mackintosh-9.html",
+  "venue": "P&J Live",
+  "url": "https://www.pandjlive.com/events/entertainment/",
+  "file": "p-j-live-aberdeen-1.html",
   "status": 200,
   "error": null,
-  "bytes": 359778
- },
- {
-  "venue": "Delfont Mackintosh shows",
-  "url": "https://www.delfontmackintosh.co.uk/whats-on/amadeus",
-  "file": "delfont-mackintosh-10.html",
-  "status": 200,
-  "error": null,
-  "bytes": 260596
- },
- {
-  "venue": "Delfont Mackintosh shows",
-  "url": "https://www.delfontmackintosh.co.uk/whats-on/august-osage-county",
-  "file": "delfont-mackintosh-11.html",
-  "status": 200,
-  "error": null,
-  "bytes": 235863
- },
- {
-  "venue": "Delfont Mackintosh shows",
-  "url": "https://www.delfontmackintosh.co.uk/whats-on/christmas-carol-goes-wrong",
-  "file": "delfont-mackintosh-12.html",
-  "status": 200,
-  "error": null,
-  "bytes": 294004
- },
- {
-  "venue": "Delfont Mackintosh shows",
-  "url": "https://www.delfontmackintosh.co.uk/whats-on/dirty-dancing-the-classic-story-on-stage",
-  "file": "delfont-mackintosh-13.html",
-  "status": 200,
-  "error": null,
-  "bytes": 250136
- },
- {
-  "venue": "Delfont Mackintosh shows",
-  "url": "https://www.delfontmackintosh.co.uk/whats-on/john-proctor-is-the-villain",
-  "file": "delfont-mackintosh-14.html",
-  "status": 200,
-  "error": null,
-  "bytes": 247112
- },
- {
-  "venue": "Delfont Mackintosh shows",
-  "url": "https://www.delfontmackintosh.co.uk/whats-on/miss-saigon",
-  "file": "delfont-mackintosh-15.html",
-  "status": 200,
-  "error": null,
-  "bytes": 282615
- },
- {
-  "venue": "Delfont Mackintosh shows",
-  "url": "https://www.delfontmackintosh.co.uk/whats-on/raise-the-roof",
-  "file": "delfont-mackintosh-16.html",
-  "status": 200,
-  "error": null,
-  "bytes": 207992
- },
- {
-  "venue": "Delfont Mackintosh shows",
-  "url": "https://www.delfontmackintosh.co.uk/whats-on/phantom-of-the-opera",
-  "file": "delfont-mackintosh-17.html",
-  "status": 200,
-  "error": null,
-  "bytes": 266160
- },
- {
-  "venue": "Delfont Mackintosh shows",
-  "url": "https://www.delfontmackintosh.co.uk/whats-on",
-  "file": "delfont-mackintosh-1.html",
-  "status": 200,
-  "error": null,
-  "bytes": 172236,
-  "final_url": "https://www.delfontmackintosh.co.uk/whats-on"
+  "bytes": 73966,
+  "final_url": "https://www.pandjlive.com/events/entertainment/"
  }
 ]

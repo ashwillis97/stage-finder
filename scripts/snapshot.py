@@ -14,6 +14,7 @@ NEW = len(sys.argv) > 1 and sys.argv[1] in ("new", "retry")
 RETRY = len(sys.argv) > 1 and sys.argv[1] == "retry"
 venues = json.loads((root / ("venues_new.json" if NEW else "venues.json")).read_text())["venues"]
 
+venues = [v for v in venues if v.get("reader") != "tm"]  # fed from Ticketmaster, no page to save
 if RETRY:
     venues = [v for v in venues if v.get("retry")]
 

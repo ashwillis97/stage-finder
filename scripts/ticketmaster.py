@@ -80,7 +80,9 @@ def venue_events(vid, key):
         for e in (data.get("_embedded") or {}).get("events", []):
             d = ((e.get("dates") or {}).get("start") or {}).get("localDate")
             if d and e.get("url") and e.get("name"):
-                out.append({"name": e["name"], "date": d, "url": plain_url(e["url"]), "genre": from_ticketmaster((e.get("classifications") or [{}])[0])})
+                cls = (e.get("classifications") or [{}])[0]
+                seg = (((cls or {}).get("segment") or {}).get("name") or "").lower()
+                out.append({"name": e["name"], "date": d, "url": plain_url(e["url"]), "genre": from_ticketmaster(cls), "seg": seg})
         if page + 1 >= ((data.get("page") or {}).get("totalPages") or 1):
             break
     return out
@@ -90,6 +92,30 @@ def match_show(show, events):
     """Earliest Ticketmaster performance inside the show's dates with a matching title."""
     hits = [e for e in events if show["start"] <= e["date"] <= show["end"] and title_match(show["title"], e["name"])]
     return min(hits, key=lambda e: e["date"]) if hits else None
+
+
+TM_NOISE = re.compile(r"parking|\bvip\b|hospitality|package|upgrade|meet (&|and) greet|fast.?track|lounge|premium seat|gift|voucher|camping|coach|shuttle|\btour\b.*\b(guided|backstage)\b", re.I)
+
+
+def rows_from_events(theatre, events):
+    """Venues we can't read ourselves: build one listing per title from its Ticketmaster dates."""
+    groups = {}
+    for e in events:
+        if e.get("seg") == "sports" or TM_NOISE.search(e["name"]):
+            continue
+        key = re.sub(r"\s+", " ", e["name"]).strip().lower()
+        g = groups.setdefault(key, {"title": re.sub(r"\s+", " ", e["name"]).strip(), "dates": [], "hit": e})
+        g["dates"].append(e["date"])
+        if e["date"] < g["hit"]["date"]:
+            g["hit"] = e
+    out = []
+    for g in groups.values():
+        hit = g["hit"]
+        r = {"title": g["title"], "theatre": theatre, "genre": hit.get("genre") or "", "start": min(g["dates"]), "end": max(g["dates"]), "url": hit["url"], "tm": hit["url"]}
+        if r["genre"]:
+            r["gsrc"] = "tm"
+        out.append(r)
+    return out
 
 
 def main():
@@ -108,6 +134,25 @@ def main():
     for r in data["shows"]:
         r.pop("tm", None)
     today = dt.date.today()
+    tm_fed = []
+    if (ROOT / "venues.json").exists():
+        tm_fed = [v for v in json.loads((ROOT / "venues.json").read_text(encoding="utf-8"))["venues"] if v.get("reader") == "tm"]
+    for v in tm_fed:
+        name = v["name"]
+        try:
+            entry = cache.get(name)
+            if entry is None or (entry["id"] is None and (today - dt.date.fromisoformat(entry["checked"])).days >= 14):
+                entry = cache[name] = {"id": find_venue(name, v.get("city", ""), key), "checked": today.isoformat()}
+            if not entry["id"]:
+                continue
+            fresh = [r for r in rows_from_events(name, venue_events(entry["id"], key)) if r["end"] >= today.isoformat()]
+        except Exception as e:
+            print(f"{name}: Ticketmaster listing failed: {e!r}"[:200])
+            continue
+        if fresh:  # only replace the old listings when we actually got new ones
+            data["shows"] = [r for r in data["shows"] if r["theatre"] != name] + fresh
+            print(f"{name}: {len(fresh)} shows from Ticketmaster")
+    data["shows"].sort(key=lambda r: (r["start"], r["title"]))
     matched, venues_used, errors = 0, 0, 0
     for theatre in sorted({r["theatre"] for r in data["shows"]}):
         entry = cache.get(theatre)

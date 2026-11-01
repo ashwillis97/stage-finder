@@ -471,7 +471,7 @@ def read_atg_show(prefix, theatre):
         if s is None or not s.title:
             continue
         title = re.sub(r"\s*Tickets\s*\|.*$", "", s.title.get_text()).strip()
-        m = re.search(r"(?:until|booking until)\s+(?:\w{3}\s+)?(\d{1,2}\s+\w{3,9}\s+20\d\d)", s.get_text(" ", strip=True), re.I)
+        m = re.search(r"(?:until|booking until|booking to)\s+(?:\w{3}\s+)?(\d{1,2}\s+\w{3,9}\s+20\d\d)", s.get_text(" ", strip=True), re.I)
         rng = parse_dates(m.group(1)) if m else None
         if rng and title:
             out.append(row(title, theatre, (min(TODAY, rng[1]), rng[1]), _canon(s, "https://www.atgtickets.com/")))
@@ -804,7 +804,8 @@ def main():
     for t in list(part):
         if t in scraped and t not in keep_notes:
             del part[t]
-    for t in {r["theatre"] for r in merged} - scraped:
+    tm_fed = {v["name"] for v in json.loads((ROOT / "venues.json").read_text(encoding="utf-8"))["venues"] if v.get("reader") == "tm"}
+    for t in {r["theatre"] for r in merged} - scraped - tm_fed:
         part[t] = auto_note
     old_live = [r for r in old if r["end"] >= TODAY.isoformat()]
     had = {r["theatre"] for r in old_live}

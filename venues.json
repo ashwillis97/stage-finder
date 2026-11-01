@@ -1729,6 +1729,469 @@
    "reader": "delfont",
    "follow": "delfontmackintosh\\.co\\.uk/whats-on/[^/]+/?$",
    "max": 30
+  },
+  {
+   "name": "Aberystwyth Arts Centre",
+   "city": "Aberystwyth",
+   "postcode": "SY23 3DE",
+   "slug": "aberystwyth-arts-centre-aberystwyth",
+   "urls": [
+    "https://www.aberystwythartscentre.co.uk/whats-on"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Blackpool Grand Theatre",
+   "city": "Blackpool",
+   "postcode": "FY1 1HT",
+   "slug": "blackpool-grand-theatre-blackpool",
+   "urls": [
+    "https://www.blackpoolgrand.co.uk/whats-on"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Blackpool Winter Gardens",
+   "city": "Blackpool",
+   "postcode": "FY1 1HU",
+   "slug": "blackpool-winter-gardens-blackpool",
+   "urls": [
+    "https://www.wintergardensblackpool.co.uk/whats-on/"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Bournemouth International Centre",
+   "city": "Bournemouth",
+   "postcode": "BH2 5BH",
+   "slug": "bournemouth-international-centre-bournemouth",
+   "urls": [
+    "https://www.bic.co.uk/whats-on/"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Bournemouth Pavilion",
+   "city": "Bournemouth",
+   "postcode": "BH1 2BU",
+   "slug": "bournemouth-pavilion-bournemouth",
+   "urls": [
+    "https://www.bournemouthpavilion.co.uk/whats-on/"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "The Central Theatre",
+   "city": "Chatham",
+   "postcode": "ME4 4EL",
+   "slug": "the-central-theatre-chatham",
+   "urls": [
+    "https://www.medway.gov.uk/centraltheatre"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Dunfermline Alhambra Theatre",
+   "city": "Dunfermline",
+   "postcode": "KY12 7JA",
+   "slug": "dunfermline-alhambra-theatre-dunfermline",
+   "urls": [
+    "https://www.alhambradunfermline.com/whats-on/"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Edinburgh Corn Exchange",
+   "city": "Edinburgh",
+   "postcode": "EH14 1RJ",
+   "slug": "edinburgh-corn-exchange-edinburgh",
+   "urls": [
+    "https://www.edinburghcornexchange.co.uk/whats-on"
+   ],
+   "retry": true,
+   "reader": "tm"
+  },
+  {
+   "name": "Hereford Courtyard",
+   "city": "Hereford",
+   "postcode": "HR4 9JR",
+   "slug": "hereford-courtyard-hereford",
+   "urls": [
+    "https://www.courtyard.org.uk/whats-on/"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Huddersfield Town Hall",
+   "city": "Huddersfield",
+   "postcode": "HD1 2TA",
+   "slug": "huddersfield-town-hall-huddersfield",
+   "urls": [
+    "https://www.kirklees.gov.uk/beta/town-halls-and-venues/huddersfield-town-hall.aspx"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Hull New Theatre",
+   "city": "Hull",
+   "postcode": "HU1 3HF",
+   "slug": "hull-new-theatre-hull",
+   "urls": [
+    "https://www.hulltheatres.co.uk/whats-on"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Aldwych Theatre",
+   "city": "London",
+   "postcode": "WC2B 4DF",
+   "slug": "aldwych-theatre-london",
+   "urls": [
+    "https://www.delfontmackintosh.co.uk/"
+   ]
+  },
+  {
+   "name": "Alexandra Palace",
+   "city": "London",
+   "postcode": "N22 7AY",
+   "slug": "alexandra-palace-london",
+   "urls": [
+    "https://www.alexandrapalace.com/whats-on/"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Apollo Victoria Theatre",
+   "city": "London",
+   "postcode": "SW1V 1LG",
+   "reader": "atgshow",
+   "slug": "apollo-victoria-theatre-london",
+   "urls": [
+    "https://www.atgtickets.com/venues/apollo-victoria-theatre/whats-on/"
+   ],
+   "follow": "atgtickets\\.com/shows/[^/]+/[^/]+/?$",
+   "max": 8,
+   "retry": true
+  },
+  {
+   "name": "Barbican Centre",
+   "city": "London",
+   "postcode": "EC2Y 8DS",
+   "slug": "barbican-centre-london",
+   "urls": [
+    "https://www.barbican.org.uk/whats-on"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Cambridge Theatre",
+   "city": "London",
+   "postcode": "WC2H 9HU",
+   "slug": "cambridge-theatre-london",
+   "urls": [
+    "https://www.delfontmackintosh.co.uk/"
+   ]
+  },
+  {
+   "name": "Copper Box Arena",
+   "city": "London",
+   "postcode": "E20 3HB",
+   "slug": "copper-box-arena-london",
+   "urls": [
+    "https://www.queenelizabetholympicpark.co.uk/whats-on"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Fortune Theatre",
+   "city": "London",
+   "postcode": "WC2B 5HH",
+   "slug": "fortune-theatre-london",
+   "urls": [
+    "https://www.nimaxtheatres.com/"
+   ],
+   "reader": "tm",
+   "match": "Fortune Theatre"
+  },
+  {
+   "name": "Gillian Lynne Theatre",
+   "city": "London",
+   "postcode": "WC2B 5PW",
+   "slug": "gillian-lynne-theatre-london",
+   "urls": [
+    "https://www.delfontmackintosh.co.uk/"
+   ]
+  },
+  {
+   "name": "His Majesty's Theatre",
+   "city": "London",
+   "postcode": "SW1Y 4QL",
+   "slug": "his-majesty-s-theatre-london",
+   "urls": [
+    "https://www.delfontmackintosh.co.uk/"
+   ]
+  },
+  {
+   "name": "Lyceum Theatre",
+   "city": "London",
+   "postcode": "WC2E 7RQ",
+   "slug": "lyceum-theatre-london",
+   "urls": [
+    "https://www.delfontmackintosh.co.uk/"
+   ]
+  },
+  {
+   "name": "Novello Theatre",
+   "city": "London",
+   "postcode": "WC2B 4LD",
+   "slug": "novello-theatre-london",
+   "urls": [
+    "https://www.delfontmackintosh.co.uk/"
+   ]
+  },
+  {
+   "name": "Noël Coward Theatre",
+   "city": "London",
+   "postcode": "WC2N 4AU",
+   "slug": "no-l-coward-theatre-london",
+   "urls": [
+    "https://www.delfontmackintosh.co.uk/"
+   ]
+  },
+  {
+   "name": "OVO Arena Wembley",
+   "city": "London",
+   "postcode": "HA9 0AA",
+   "slug": "ovo-arena-wembley-london",
+   "urls": [
+    "https://www.ovoarena.co.uk/whats-on/"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Phoenix Theatre",
+   "city": "London",
+   "postcode": "WC2H 0JP",
+   "slug": "phoenix-theatre-london",
+   "urls": [
+    "https://www.nimaxtheatres.com/"
+   ],
+   "reader": "tm",
+   "match": "Phoenix Theatre"
+  },
+  {
+   "name": "Playhouse Theatre",
+   "city": "London",
+   "postcode": "WC2N 5DE",
+   "slug": "playhouse-theatre-london",
+   "urls": [
+    "https://www.nimaxtheatres.com/"
+   ],
+   "reader": "tm",
+   "match": "Playhouse Theatre"
+  },
+  {
+   "name": "Prince Edward Theatre",
+   "city": "London",
+   "postcode": "W1D 4HS",
+   "slug": "prince-edward-theatre-london",
+   "urls": [
+    "https://www.delfontmackintosh.co.uk/"
+   ]
+  },
+  {
+   "name": "Royal Albert Hall",
+   "city": "London",
+   "postcode": "SW7 2AP",
+   "slug": "royal-albert-hall-london",
+   "urls": [
+    "https://www.royalalberthall.com/tickets/"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Shaftesbury Theatre",
+   "city": "London",
+   "postcode": "WC2H 8DP",
+   "slug": "shaftesbury-theatre-london",
+   "urls": [
+    "https://www.shaftesburytheatre.com/"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Sondheim Theatre",
+   "city": "London",
+   "postcode": "W1D 6BA",
+   "slug": "sondheim-theatre-london",
+   "urls": [
+    "https://www.delfontmackintosh.co.uk/"
+   ]
+  },
+  {
+   "name": "St Martin's Theatre",
+   "city": "London",
+   "postcode": "WC2H 9NZ",
+   "slug": "st-martin-s-theatre-london",
+   "urls": [
+    "https://www.nimaxtheatres.com/"
+   ],
+   "reader": "tm",
+   "match": "St Martin"
+  },
+  {
+   "name": "The Old Vic",
+   "city": "London",
+   "postcode": "SE1 8NB",
+   "slug": "the-old-vic-london",
+   "urls": [
+    "https://www.oldvictheatre.com/stage/"
+   ],
+   "retry": true,
+   "reader": "tm"
+  },
+  {
+   "name": "Troxy",
+   "city": "London",
+   "postcode": "E1 0HX",
+   "slug": "troxy-london",
+   "urls": [
+    "https://troxy.co.uk/whats-on/"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Victoria Palace Theatre",
+   "city": "London",
+   "postcode": "SW1E 5EA",
+   "reader": "atgshow",
+   "slug": "victoria-palace-theatre-london",
+   "urls": [
+    "https://www.atgtickets.com/venues/victoria-palace-theatre/whats-on/"
+   ],
+   "follow": "atgtickets\\.com/shows/[^/]+/[^/]+/?$",
+   "max": 8,
+   "retry": true
+  },
+  {
+   "name": "Wyndham's Theatre",
+   "city": "London",
+   "postcode": "WC2H 0DA",
+   "slug": "wyndham-s-theatre-london",
+   "urls": [
+    "https://www.delfontmackintosh.co.uk/"
+   ]
+  },
+  {
+   "name": "Theatre at the Mill",
+   "city": "Newtownabbey",
+   "postcode": "BT36 7ER",
+   "slug": "theatre-at-the-mill-newtownabbey",
+   "urls": [
+    "https://www.theatreatthemill.com/whats-on/"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "New Theatre Royal",
+   "city": "Portsmouth",
+   "postcode": "PO1 2DD",
+   "slug": "new-theatre-royal-portsmouth",
+   "urls": [
+    "https://www.newtheatreroyal.com/whats-on/"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Preston Guild Hall",
+   "city": "Preston",
+   "postcode": "PR1 1HT",
+   "slug": "preston-guild-hall-preston",
+   "urls": [
+    "https://www.guildhallpreston.co.uk/article/8839/What-s-On"
+   ],
+   "retry": true,
+   "reader": "tm"
+  },
+  {
+   "name": "Utilita Bowl",
+   "city": "Southampton",
+   "postcode": "SO30 3XH",
+   "slug": "utilita-bowl-southampton",
+   "urls": [
+    "https://www.utilitabowl.com/"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "The Alban Arena",
+   "city": "St Albans",
+   "postcode": "AL1 3LD",
+   "slug": "the-alban-arena-st-albans",
+   "urls": [
+    "https://www.alban-arena.co.uk/whats-on/"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Brangwyn Hall",
+   "city": "Swansea",
+   "postcode": "SA1 4PE",
+   "slug": "brangwyn-hall-swansea",
+   "urls": [
+    "https://www.swansea.gov.uk/brangwynhall"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Swansea Arena",
+   "city": "Swansea",
+   "postcode": "SA1 3BX",
+   "slug": "swansea-arena-swansea",
+   "urls": [
+    "https://www.swansea-arena.co.uk/whats-on/"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Swansea Grand Theatre",
+   "city": "Swansea",
+   "postcode": "SA1 3QJ",
+   "slug": "swansea-grand-theatre-swansea",
+   "urls": [
+    "https://www.swanseagrand.co.uk/whats-on/"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Theatre Royal Winchester",
+   "city": "Winchester",
+   "postcode": "SO23 8SB",
+   "slug": "theatre-royal-winchester-winchester",
+   "urls": [
+    "https://www.theatreroyalwinchester.co.uk/whats-on/"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "Roundhouse",
+   "city": "London",
+   "postcode": "NW1 8EH",
+   "slug": "roundhouse-london",
+   "urls": [
+    "https://www.roundhouse.org.uk/whats-on/"
+   ],
+   "reader": "tm"
+  },
+  {
+   "name": "P&J Live",
+   "city": "Aberdeen",
+   "postcode": "AB21 9FX",
+   "slug": "p-j-live-aberdeen",
+   "urls": [
+    "https://www.pandjlive.com/events/entertainment/"
+   ],
+   "reader": "tm"
   }
  ]
 }

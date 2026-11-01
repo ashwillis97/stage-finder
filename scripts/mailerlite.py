@@ -38,6 +38,9 @@ def check():
             info["subscribers_in_group"] = (g or {}).get("active_count")
         else:
             info["groups_error"] = groups.get("error")
+        for status in ("active", "unconfirmed", "unsubscribed", "bounced", "junk"):
+            st, subs = call("GET", f"/subscribers?limit=100&filter[status]={status}")
+            info["subscribers_" + status] = len(subs.get("data", [])) if st == 200 else f"error {st}"
         st, subs = call("GET", "/subscribers?limit=1")
         info["subscribers_status"] = st
         info["subscribers_total"] = (subs.get("meta") or {}).get("total")

@@ -1,16 +1,17 @@
 {
  "readers": 170,
- "shows_before": 3932,
- "shows_now": 3938,
+ "shows_before": 3812,
+ "shows_now": 3893,
  "broken": [
-  "Royal Festival Hall"
+  "Royal Festival Hall",
+  "Theatre Royal Newcastle"
  ],
  "never_worked": [
   "Queen Elizabeth Hall"
  ],
  "ticketmaster": {
   "venues_found": 164,
-  "shows_matched": 900,
+  "shows_matched": 884,
   "errors": 0
  }
 }

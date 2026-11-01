@@ -1,6 +1,6 @@
 {
  "sample": false,
- "updated": "2026-11-01T07:53+00:00",
+ "updated": "2026-11-01T13:40+00:00",
  "coverage": {
   "none": [],
   "partial": {
@@ -10,7 +10,8 @@
    "Lichfield Garrick": "Not updated automatically yet, so these listings may be out of date.",
    "Palace Theatre Mansfield": "Not updated automatically yet, so these listings may be out of date.",
    "Brewhouse Arts Centre": "Not updated automatically yet, so these listings may be out of date.",
-   "Royal Festival Hall": "Not updated automatically yet, so these listings may be out of date."
+   "Royal Festival Hall": "Not updated automatically yet, so these listings may be out of date.",
+   "Queen Elizabeth Hall": "Not updated automatically yet, so these listings may be out of date."
   }
  },
  "shows": [
@@ -133,14 +134,6 @@
    "gsrc": "guess"
   },
   {
-   "title": "Free Backstage Heritage Trail",
-   "theatre": "Theatr Clwyd",
-   "genre": "",
-   "start": "2026-06-29",
-   "end": "2026-12-31",
-   "url": "https://www.theatrclwyd.com/event/heritage-trail"
-  },
-  {
    "title": "House of Dreamers London",
    "theatre": "ExCeL London",
    "genre": "",
@@ -189,6 +182,15 @@
    "start": "2026-09-14",
    "end": "2027-04-12",
    "url": "https://www.perththeatreandconcerthall.com/whats-on/perth-concert-hall-voices-2627-block"
+  },
+  {
+   "title": "Level 2 Filmmaking: Take the Reins",
+   "theatre": "Theatr Clwyd",
+   "genre": "",
+   "start": "2026-09-17",
+   "end": "2026-11-19",
+   "url": "https://www.theatrclwyd.com/event/film-club-level-2",
+   "added": "2026-11-01"
   },
   {
    "title": "Liverpool Scratch Network",
@@ -290,14 +292,6 @@
    "start": "2026-10-24",
    "end": "2026-12-31",
    "url": "https://www.excel.london/whats-on/balloon-museum-euphoria-art-is-in-the-air"
-  },
-  {
-   "title": "Halloween Trail",
-   "theatre": "Cheltenham Town Hall",
-   "genre": "",
-   "start": "2026-10-24",
-   "end": "2026-11-01",
-   "url": "https://cheltenhamtownhall.org.uk/event/halloween-trail/"
   },
   {
    "title": "Día de Muertos (Day of the Dead)",
@@ -516,14 +510,6 @@
    "url": "https://www.utilitaarenabham.co.uk/events/detail/cody-johnson"
   },
   {
-   "title": "Corpse Bride",
-   "theatre": "Leeds Grand Theatre",
-   "genre": "",
-   "start": "2026-11-01",
-   "end": "2026-11-01",
-   "url": "https://leedsheritagetheatres.com/whats-on/corpse-bride-2026/"
-  },
-  {
    "title": "Daniel Kitson: Thrum",
    "theatre": "Symphony Hall",
    "genre": "",
@@ -645,7 +631,7 @@
    "start": "2026-11-01",
    "end": "2026-11-01",
    "url": "https://www.cornex.co.uk/events/jools-holland-and-his-rhythm-and-blues-orchestra",
-   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-and-cambridge-01-11-2026/event/1F00642CDEFB3FF2"
+   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-blues-cambridge-01-11-2026/event/1F00642CDEFB3FF2"
   },
   {
    "title": "Jalen Ngonda",
@@ -1175,14 +1161,6 @@
    "start": "2026-11-01",
    "end": "2026-11-18",
    "url": "https://leedsheritagetheatres.com/whats-on/wicker-2026/"
-  },
-  {
-   "title": "Wildwood",
-   "theatre": "Leeds Grand Theatre",
-   "genre": "",
-   "start": "2026-11-01",
-   "end": "2026-11-04",
-   "url": "https://leedsheritagetheatres.com/whats-on/wildwood-2026/"
   },
   {
    "title": "Young Driver",
@@ -2788,6 +2766,14 @@
    "url": "https://www.atgtickets.com/shows/weekly-drama-autumn-term/aylesbury-waterside-theatre/"
   },
   {
+   "title": "Wildwood",
+   "theatre": "Leeds Grand Theatre",
+   "genre": "",
+   "start": "2026-11-04",
+   "end": "2026-11-04",
+   "url": "https://leedsheritagetheatres.com/whats-on/wildwood-2026/"
+  },
+  {
    "title": "mor ve ötesi",
    "theatre": "The Queen's Hall",
    "genre": "",
@@ -3720,13 +3706,22 @@
    "tm": "https://www.ticketmaster.co.uk/jonathan-pie-the-end-of-the-hull-06-11-2026/event/36006378BA917ECD"
   },
   {
+   "title": "Jason Byrne: 30 Years Byrning",
+   "theatre": "Leeds Grand Theatre",
+   "genre": "",
+   "start": "2026-11-06",
+   "end": "2026-11-06",
+   "url": "https://leedsheritagetheatres.com/whats-on/jason-byrne-2026/",
+   "added": "2026-11-01"
+  },
+  {
    "title": "Jools Holland and His Rhythm And Blues Orchestra",
    "theatre": "Watford Colosseum",
    "genre": "Classical",
    "start": "2026-11-06",
    "end": "2026-11-06",
    "url": "https://www.watfordcolosseum.co.uk/events/jools-holland-and-his-rhythm-and-blues-orchestra",
-   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-and-watford-06-11-2026/event/3700642CBB8A2492"
+   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-blues-watford-06-11-2026/event/3700642CBB8A2492"
   },
   {
    "title": "Last Laugh Comedy Club",
@@ -5320,7 +5315,7 @@
    "start": "2026-11-08",
    "end": "2026-11-08",
    "url": "https://www.atgtickets.com/shows/jools-holland-and-his-rhythm-and-blues-orchestra/new-theatre-oxford/",
-   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-and-oxford-08-11-2026/event/3600642CB136351D"
+   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-blues-oxford-08-11-2026/event/3600642CB136351D"
   },
   {
    "title": "Josh Pugh",
@@ -6996,7 +6991,7 @@
    "end": "2026-11-12",
    "url": "https://www.bathforum.co.uk/whats-on/jools-holland-c7h1",
    "gsrc": "tm",
-   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-and-bath-12-11-2026/event/37006433A14B1B53"
+   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-blues-bath-12-11-2026/event/37006433A14B1B53"
   },
   {
    "title": "Joseph and the Amazing Technicolor Dreamcoat",
@@ -7446,7 +7441,7 @@
    "end": "2026-11-13",
    "url": "https://www.mandsbankarena.com/whats-on/courteeners/",
    "gsrc": "tm",
-   "tm": "https://www.ticketmaster.co.uk/courteeners-liverpool-13-11-2026/event/37006482B53F2A34"
+   "tm": "https://www.ticketmaster.co.uk/the-courteeners-liverpool-13-11-2026/event/37006482B53F2A34"
   },
   {
    "title": "Critical Care",
@@ -7530,6 +7525,16 @@
    "start": "2026-11-13",
    "end": "2026-11-13",
    "url": "https://www.atgtickets.com/shows/harry-enfield-and-no-chums/victoria-hall/"
+  },
+  {
+   "title": "Hometown Glory: A Candlelight Tribute To Adele",
+   "theatre": "Cheltenham Town Hall",
+   "genre": "Tribute",
+   "start": "2026-11-13",
+   "end": "2026-11-13",
+   "url": "https://cheltenhamtownhall.org.uk/event/hometown-glory-a-candlelight-tribute-to-adele/",
+   "gsrc": "guess",
+   "added": "2026-11-01"
   },
   {
    "title": "Horse: Band & Strings",
@@ -9972,7 +9977,7 @@
    "start": "2026-11-19",
    "end": "2026-11-19",
    "url": "https://www.atgtickets.com/shows/jools-holland-and-his-rhythm-and-blues-orchestra/victoria-hall/",
-   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-and-stokeontrent-19-11-2026/event/3700642CA8281CA2"
+   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-blues-stokeontrent-19-11-2026/event/3700642CA8281CA2"
   },
   {
    "title": "Kevin Bridges",
@@ -12991,6 +12996,14 @@
    "url": "https://www.trch.co.uk/whats-on/jack-and-the-beanstalk-n2df"
   },
   {
+   "title": "Katzeye 2026",
+   "theatre": "Doncaster Dome",
+   "genre": "",
+   "start": "2026-11-28",
+   "end": "2026-11-28",
+   "url": "https://www.dclt.co.uk/tickets/?EventInstanceId=457002&iframe=chooseseats"
+  },
+  {
    "title": "Kneecap",
    "theatre": "O2 Guildhall Southampton",
    "genre": "Music",
@@ -15722,7 +15735,7 @@
    "start": "2026-12-11",
    "end": "2026-12-11",
    "url": "https://bristolbeacon.org/whats-on/jools-holland-2026/",
-   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-and-bristol-11-12-2026/event/3700642FB3CB2CAD"
+   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-blues-bristol-11-12-2026/event/3700642FB3CB2CAD"
   },
   {
    "title": "Kasabian",
@@ -16494,7 +16507,7 @@
    "start": "2026-12-16",
    "end": "2026-12-16",
    "url": "https://www.yorkbarbican.co.uk/whats-on/jools-holland-2026/",
-   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-and-york-16-12-2026/event/3600642CC96E4388"
+   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-blues-york-16-12-2026/event/3600642CC96E4388"
   },
   {
    "title": "Scrooge Cirque Extravaganza",
@@ -17123,7 +17136,7 @@
    "start": "2026-12-21",
    "end": "2026-12-21",
    "url": "https://brightoncentre.co.uk/whats-on/2026/love-actually-in-concert/",
-   "tm": "https://www.ticketmaster.co.uk/love-actually-in-concert-the-film-brighton-21-12-2026/event/3E00637BB39A685A"
+   "tm": "https://www.ticketmaster.co.uk/love-actually-live-in-concert-brighton-21-12-2026/event/3E00637BB39A685A"
   },
   {
    "title": "Robyn & the Book Monster",
@@ -24189,14 +24202,6 @@
    "url": "https://bristolbeacon.org/whats-on/jon-boden-2027/"
   },
   {
-   "title": "Luther Live & Velvet Voices 2027",
-   "theatre": "Doncaster Dome",
-   "genre": "",
-   "start": "2027-03-06",
-   "end": "2027-03-06",
-   "url": "https://www.dclt.co.uk/tickets/?EventInstanceId=457602&iframe=chooseseats"
-  },
-  {
    "title": "Man In The Mirror - A Tribute to Michael Jackson",
    "theatre": "York Barbican",
    "genre": "Tribute",
@@ -24836,15 +24841,6 @@
    "start": "2027-03-12",
    "end": "2027-03-12",
    "url": "https://bwdvenues.com/whats-on/gary-delaney-2027/"
-  },
-  {
-   "title": "Go Your Own Way Fleetwood Mac 2027",
-   "theatre": "Doncaster Dome",
-   "genre": "",
-   "start": "2027-03-12",
-   "end": "2027-03-12",
-   "url": "https://www.dclt.co.uk/tickets/?EventInstanceId=459402&iframe=chooseseats",
-   "added": "2026-11-01"
   },
   {
    "title": "Kim Wilde",
@@ -29933,8 +29929,7 @@
    "genre": "Tribute",
    "start": "2027-05-30",
    "end": "2027-05-30",
-   "url": "https://www.grandtheatre.co.uk/whats-on/queen-of-the-night-2/",
-   "tm": "https://www.ticketmaster.co.uk/queen-of-the-night-a-tribute-wolverhampton-30-05-2027/event/3700655093E42494"
+   "url": "https://www.grandtheatre.co.uk/whats-on/queen-of-the-night-2/"
   },
   {
    "title": "The MacDonald Room Private Bar May 2027",
@@ -32825,7 +32820,7 @@
    "end": "2027-12-04",
    "url": "https://www.academymusicgroup.com/o2academyleeds/events/lightning-seeds-tickets-ae35497",
    "gsrc": "tm",
-   "tm": "https://www.ticketmaster.co.uk/lightning-seeds-leeds-04-12-2027/event/3E006557E3658992"
+   "tm": "https://www.ticketmaster.co.uk/the-lightning-seeds-leeds-04-12-2027/event/3E006557E3658992"
   },
   {
    "title": "Sister Act",

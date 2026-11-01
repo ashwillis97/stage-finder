@@ -1,11 +1,21 @@
 {
  "key_present": true,
  "groups_status": 200,
- "group_create_status": 201,
  "group_id": "202963335481656781",
- "subscribers_in_group": 0,
+ "subscribers_in_group": 1,
+ "subscribers_active": 1,
+ "subscribers_unconfirmed": 0,
+ "subscribers_unsubscribed": 0,
+ "subscribers_bounced": 0,
+ "subscribers_junk": 0,
  "subscribers_status": 200,
  "subscribers_total": null,
  "forms_status": 200,
- "forms": []
+ "forms": [
+  {
+   "id": "202963478294562355",
+   "name": "Find a show alerts",
+   "opted_in": null
+  }
+ ]
 }

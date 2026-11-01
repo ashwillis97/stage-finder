@@ -3,10 +3,12 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: "check = test the key and set up the group"
+        description: "check = test the key; preview = build the email without sending; send = send it now"
         default: check
         type: choice
-        options: [check]
+        options: [check, preview, send]
+  schedule:
+    - cron: "0 9 * * 0"
 permissions:
   contents: write
 jobs:
@@ -17,13 +19,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python scripts/mailerlite.py ${{ inputs.action }}
+      - run: python scripts/mailerlite.py ${{ inputs.action || 'send' }}
         env:
           MAILERLITE_API_KEY: ${{ secrets.MAILERLITE_API_KEY }}
+          MAILERLITE_FROM: ${{ secrets.MAILERLITE_FROM }}
       - name: Save the result
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add mailerlite_info.json
+          git add -f mailerlite_info.json digest_preview.html 2>/dev/null || git add mailerlite_info.json
           git commit -m "MailerLite check" || echo "nothing to commit"
           git pull --rebase origin main && git push

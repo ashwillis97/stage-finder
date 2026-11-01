@@ -374,6 +374,22 @@ h2 { font-weight: 700; letter-spacing: -.01em; font-size: 22px; }
 .count { white-space: nowrap; }
 #newLink, #clear { font-size: 14px; }
 
+/* Email sign-up band */
+.alerts { display: flex; gap: 40px; align-items: center; margin: 40px 0 24px; padding: 28px; background: var(--surface-2); border: 1px solid rgba(31,26,22,.1); border-radius: 16px; }
+.alerts-text { flex: 1; min-width: 0; }
+.alerts h2 { margin: 0; color: var(--fg); font-size: 24px; font-weight: 700; }
+.alerts-text p { margin: 8px 0 0; color: var(--muted); font-size: 16px; line-height: 1.4; }
+.alerts form { flex: 1.2; min-width: 0; }
+.alerts label { display: block; margin-bottom: 4px; font-size: 13px; color: var(--muted); }
+.alerts-row { display: flex; gap: 12px; }
+.alerts-row input[type=email] { flex: 1; min-width: 0; min-height: 44px; padding: 0 14px; font: inherit; font-size: 16px; border: 1px solid rgba(31,26,22,.18); border-radius: 12px; background: #fff; color: var(--fg); }
+.alerts-row input[type=email]:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.alerts-row .btn { min-height: 44px; padding: 0 20px; }
+.alerts-note { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
+.alerts-note.ok { color: #1f6b3a; font-weight: 600; }
+.alerts-note.bad { color: #a8391a; }
+@media (max-width: 760px) { .alerts { flex-direction: column; align-items: stretch; gap: 16px; padding: 20px; margin-top: 32px; } .alerts form { flex: none; } .alerts h2 { font-size: 22px; } }
+
 /* Polish pass: sentence-case labels, quiet tags, calmer shapes, hairline edges */
 h2 { font-size: 20px; font-weight: 600; letter-spacing: 0; color: var(--muted); text-transform: none; }
 .group-label, .fk, .stub .dow, .stub .mon { text-transform: none; letter-spacing: 0; font-size: 13px; font-weight: 500; }
@@ -489,22 +505,54 @@ h2 { font-size: 20px; font-weight: 600; letter-spacing: 0; color: var(--muted); 
 
   <dialog id="dlg" aria-labelledby="dlgTitle"><div class="dlg" id="dlgBody"></div></dialog>
 
+  <section class="alerts" id="alerts" aria-labelledby="alertsTitle">
+    <div class="alerts-text"><h2 id="alertsTitle">Get new shows by email</h2><p>One email a week with shows added across the UK. Unsubscribe whenever you like.</p></div>
+    <form id="alertsForm" action="https://assets.mailerlite.com/jsonp/2760636/forms/202963478294562355/subscribe" method="post" target="_blank">
+      <label for="alertsEmail">Email</label>
+      <div class="alerts-row"><input id="alertsEmail" type="email" name="fields[email]" placeholder="you@example.com" autocomplete="email" required><input type="hidden" name="ml-submit" value="1"><input type="hidden" name="anticsrf" value="true"><button class="btn" type="submit">Sign up</button></div>
+      <p class="alerts-note" id="alertsNote">We'll send a confirmation email first. See the privacy notice below for how we use your address.</p>
+    </form>
+  </section>
+
   <footer>
     <p>Listings are collected from each venue's own website and checked several times a day. Dates, times and availability can change, so please confirm with the venue before you book or travel.</p>
     <p>Some ticket buttons are affiliate links. If you buy a ticket through one, we may earn a commission at no extra cost to you.</p>
     <p class="browse" style="margin:0 0 14px;font-size:14px;color:var(--muted)">Browse: <a href="/cities/">shows by city</a> &middot; <a href="/venues/">all venues</a> &middot; <a href="/categories/">shows by type</a> &middot; <a href="/pantomime/">pantomime</a> &middot; <a href="/christmas-shows/">Christmas shows</a></p>
     <details id="privacy"><summary>Privacy and about</summary><div>
       <p><strong>Find a Show is an independent listings guide.</strong> It is not run by or affiliated with the theatres and venues listed. Each "View show" button takes you to the venue's own page, where you can book.</p>
-      <p><strong>No accounts or tracking.</strong> We don't ask you to sign up and we don't use advertising or analytics cookies on this site.</p>
+      <p><strong>No accounts or tracking.</strong> You don't need an account to use the site, and we don't use advertising or analytics cookies on it.</p>
+      <p><strong>Email alerts.</strong> If you sign up for our weekly email, your address is stored by MailerLite, our email provider, and used only to send you new-show emails. We send a confirmation email first, every email has an unsubscribe link, and you can unsubscribe at any time.</p>
       <p><strong>Your location.</strong> If you use "Near me", your location or postcode is used in your browser to work out distances. A postcode is looked up with postcodes.io, and your location is never stored by us.</p>
       <p><strong>Affiliate links.</strong> Some ticket buttons, such as "Buy on Ticketmaster", are affiliate links. If you buy, we may earn a commission at no extra cost to you, and the ticket seller and its partners may set cookies when you click through.</p>
-      <p><strong>Adding venues and shows.</strong> If you add a venue or show, the text you type is sent to us through Google Forms. We don't ask for your name or email. This page also loads its fonts from Google Fonts.</p>
+      <p><strong>Adding venues and shows.</strong> If you add a venue or show, the text you type is sent to us through Google Forms. We don't ask for your name or email there. This page also loads its fonts from Google Fonts.</p>
     </div></details>
     <details id="about" hidden><summary>About these listings</summary><div id="aboutBody"></div></details>
     <p id="stamp"></p>
   </footer>
 </div>
 <noscript><p style="padding:24px;text-align:center">Find a Show needs JavaScript to show listings. Please turn it on and reload the page.</p></noscript>
+
+<script>
+(function () {
+  var f = document.getElementById("alertsForm"); if (!f) return;
+  var note = document.getElementById("alertsNote"), btn = f.querySelector("button");
+  f.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var em = f.elements["fields[email]"].value.trim();
+    if (!em) return;
+    btn.disabled = true; btn.textContent = "Signing up";
+    var body = new URLSearchParams({ "fields[email]": em, "ml-submit": "1", "anticsrf": "true" });
+    fetch(f.action, { method: "POST", mode: "no-cors", body: body }).then(function () {
+      f.elements["fields[email]"].value = "";
+      note.className = "alerts-note ok"; note.textContent = "Thanks. Check your inbox and click the link in our confirmation email to finish signing up.";
+      btn.textContent = "Sign up"; btn.disabled = false;
+    }).catch(function () {
+      note.className = "alerts-note bad"; note.textContent = "That didn't go through. Please try again in a moment.";
+      btn.textContent = "Sign up"; btn.disabled = false;
+    });
+  });
+})();
+</script>
 
 <script>
 (function () {

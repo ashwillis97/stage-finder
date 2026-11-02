@@ -1,16 +1,18 @@
 {
  "readers": 172,
- "shows_before": 4228,
- "shows_now": 4260,
+ "shows_before": 4260,
+ "shows_now": 4250,
  "broken": [
-  "Royal Festival Hall"
+  "King's Theatre Glasgow",
+  "Motorpoint Arena Nottingham",
+  "Queen Elizabeth Hall"
  ],
  "never_worked": [
   "Victoria Palace Theatre"
  ],
  "ticketmaster": {
   "venues_found": 196,
-  "shows_matched": 1278,
+  "shows_matched": 1277,
   "errors": 0
  }
 }

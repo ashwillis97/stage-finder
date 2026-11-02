@@ -1,0 +1,12 @@
+name: Affiliate link check
+on:
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          U='https://ticketmaster.evyy.net/c/8068961/264167/4272?u=https%3A%2F%2Fwww.ticketmaster.co.uk%2Fparanormal-activity-london-02-11-2026%2Fevent%2FZ3r9uZKbZL4Ze3Lo-Zdj&partnerpropertyid=9082472'
+          curl -s -o /dev/null -L -A "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Safari/604.1" -w "final: %{url_effective}\nstatus: %{http_code}\nredirects: %{num_redirects}\n" "$U" || true
+          echo "--- first hop"
+          curl -sI -A "Mozilla/5.0" "$U" | head -12 | sed 's/\(sid=\|irclickid=\)[^&; ]*/\1…/g'

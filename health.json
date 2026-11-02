@@ -1,9 +1,8 @@
 {
  "readers": 172,
- "shows_before": 4285,
- "shows_now": 4290,
+ "shows_before": 4228,
+ "shows_now": 4260,
  "broken": [
-  "Queen Elizabeth Hall",
   "Royal Festival Hall"
  ],
  "never_worked": [
@@ -11,7 +10,7 @@
  ],
  "ticketmaster": {
   "venues_found": 196,
-  "shows_matched": 1284,
+  "shows_matched": 1278,
   "errors": 0
  }
 }

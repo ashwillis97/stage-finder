@@ -1,16 +1,17 @@
 {
  "readers": 172,
- "shows_before": 5651,
- "shows_now": 5678,
+ "shows_before": 5679,
+ "shows_now": 5675,
  "broken": [
-  "Motorpoint Arena Nottingham"
+  "Motorpoint Arena Nottingham",
+  "Royal Festival Hall"
  ],
  "never_worked": [
   "Victoria Palace Theatre"
  ],
  "ticketmaster": {
   "venues_found": 229,
-  "shows_matched": 2539,
+  "shows_matched": 2550,
   "errors": 0
  }
 }

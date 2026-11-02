@@ -32,3 +32,7 @@ if site:
     out["range"] = [start.isoformat(), end.isoformat()]
 (ROOT / "gsc_report.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
 print(json.dumps({k: v for k, v in out.items() if k not in ("queries", "pages", "days")}, indent=1)[:1500])
+for name in ("queries", "pages"):
+    print("TOP", name.upper())
+    for r in (out.get(name) or [])[:15] if isinstance(out.get(name), list) else []:
+        print(f"  {r['clicks']} clicks, {r['impressions']} impr, pos {r['position']}  {r['key']}")

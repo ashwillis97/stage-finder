@@ -25,7 +25,7 @@
 </head>
 <body>
 <div class="wrap">
-<div class="top"><a class="brand" href="/">Find a <b>Show</b></a><a class="home" href="/">Search all shows</a></div>
+<div class="top"><a class="brand" href="/">Find a <b>Show</b></a><a class="alertlink" href="#alerts">Email alerts</a><a class="home" href="/">Search all shows</a></div>
 <p class="crumbs"><a href="/">Home</a> / <a href="/venues/">Venues</a> / <a href="/cities/swansea/">Swansea</a></p>
 <h1>What's on at Brangwyn Hall</h1>
 <p class="lede">1 show currently listed at Brangwyn Hall, Swansea. Dates are taken from the venue's own website and refreshed every day.</p>
@@ -33,6 +33,14 @@
 <div class="card"><div><h3>Hamza Yassin - My Life Behind the Lens</h3><p class="meta">Tue 19 Jan 2027</p></div><div class="act"><a class="btn" href="https://ticketmaster.evyy.net/c/8068961/264167/4272?u=https%3A%2F%2Fwww.ticketmaster.co.uk%2Fhamza-yassin-my-life-behind-the-swansea-19-01-2027%2Fevent%2F1F0064ACF1987B3A&amp;partnerpropertyid=9082472" target="_blank" rel="sponsored noopener noreferrer">Buy on Ticketmaster</a></div></div>
 <div class="cta"><p>Looking for something else in Swansea? Search every show and venue in one place.</p><a class="btn" href="/">Search all shows</a></div>
 <h2>Other venues in Swansea</h2><ul class="chips"><li><a href="/venues/swansea-grand-theatre/">Swansea Grand Theatre <small>8</small></a></li></ul>
+<section class="alerts" id="alerts" aria-labelledby="alertsTitle">
+<div class="alerts-text"><h2 id="alertsTitle">Get new shows by email</h2><p>One email a week with shows added across the UK. Unsubscribe whenever you like.</p></div>
+<form id="alertsForm" action="https://assets.mailerlite.com/jsonp/2760636/forms/202963478294562355/subscribe" method="post" target="_blank">
+<label for="alertsEmail">Email</label>
+<div class="alerts-row"><input id="alertsEmail" type="email" name="fields[email]" placeholder="you@example.com" autocomplete="email" required><input type="hidden" name="ml-submit" value="1"><input type="hidden" name="anticsrf" value="true"><button class="alerts-btn" type="submit">Sign up</button></div>
+<p class="alerts-note" id="alertsNote">We'll send a confirmation email first. Your address is only used for these emails.</p>
+</form></section>
+<script>(function(){var f=document.getElementById("alertsForm");if(!f)return;var n=document.getElementById("alertsNote"),b=f.querySelector("button");f.addEventListener("submit",function(e){e.preventDefault();var m=f.elements["fields[email]"].value.trim();if(!m)return;b.disabled=true;b.textContent="Signing up";fetch(f.action,{method:"POST",mode:"no-cors",body:new URLSearchParams({"fields[email]":m,"ml-submit":"1","anticsrf":"true"})}).then(function(){f.elements["fields[email]"].value="";n.className="alerts-note ok";n.textContent="Thanks. Check your inbox and click the link in our confirmation email to finish signing up.";b.textContent="Sign up";b.disabled=false}).catch(function(){n.className="alerts-note bad";n.textContent="That didn't go through. Please try again in a moment.";b.textContent="Sign up";b.disabled=false})})})();</script>
 <footer>
 <a href="/">Find a Show</a> &middot; <a href="/cities/">Cities</a> &middot; <a href="/venues/">Venues</a> &middot; <a href="/categories/">Categories</a>
 <p>Find a Show is an independent guide and is not run by any venue. Dates come from the venues' own websites and can change, so check with the venue before you travel.

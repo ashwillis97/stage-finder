@@ -57,7 +57,7 @@ h2 a{color:inherit;text-decoration:none}
 .card h3{margin:0;font-size:19px;font-weight:700;line-height:1.25;letter-spacing:-.01em}
 .meta{margin:2px 0 0;color:var(--muted);font-size:14px}
 .act{display:flex;gap:8px;flex-wrap:wrap}
-.btn{display:inline-block;font-family:var(--font-small);font-weight:600;font-size:15px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:8px 14px;border-radius:999px;background:var(--accent);color:var(--accent-fg)}
+.btn{display:inline-block;font-family:var(--font-small);font-weight:600;font-size:15px;letter-spacing:0;text-transform:none;text-decoration:none;padding:8px 16px;border-radius:10px;background:var(--accent);color:var(--accent-fg)}
 .btn.ghost{background:transparent;color:var(--fg);border:1.5px solid var(--fg)}
 .cta{margin:28px 0 0;padding:16px;border-radius:14px;background:var(--surface-2);border:1px solid var(--line)}
 .cta p{margin:0 0 10px}
@@ -70,6 +70,19 @@ footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line);font-si
 footer a{color:var(--muted)}
 .faq h3{margin:20px 0 4px;font-size:17px}
 .faq p{margin:0;color:var(--muted)}
+.alerts{display:flex;gap:32px;align-items:center;margin:36px 0 0;padding:24px;background:var(--surface-2);border:1px solid var(--line);border-radius:16px}
+.alerts-text{flex:1;min-width:0}
+.alerts h2{margin:0;font-size:22px;font-weight:700;color:var(--fg)}
+.alerts-text p{margin:6px 0 0;color:var(--muted);font-size:15px;line-height:1.4}
+.alerts form{flex:1.2;min-width:0}
+.alerts label{display:block;margin-bottom:4px;font-size:13px;color:var(--muted)}
+.alerts-row{display:flex;gap:12px}
+.alerts-row input[type=email]{flex:1;min-width:0;min-height:44px;padding:0 14px;font:inherit;font-size:16px;border:1px solid rgba(31,26,22,.18);border-radius:12px;background:#fff;color:var(--fg)}
+.alerts-btn{min-height:44px;padding:0 20px;border:0;border-radius:10px;background:var(--accent);color:#fff;font:inherit;font-weight:600;font-size:15px;cursor:pointer}
+.alerts-note{margin:10px 0 0;font-size:13px;color:var(--muted)}
+.alerts-note.ok{color:#1f6b3a;font-weight:600}.alerts-note.bad{color:#a8391a}
+.top .alertlink{margin-left:auto;margin-right:16px;font-size:14px;color:var(--muted)}
+@media(max-width:700px){.alerts{flex-direction:column;align-items:stretch;gap:16px;padding:20px}.alerts form{flex:none}.top .alertlink{display:none}}
 .intro{margin:14px 0 0;max-width:68ch}
 """
 
@@ -187,6 +200,17 @@ def plural(n, word):
     return f"{n} {word}{'' if n == 1 else 's'}"
 
 
+ALERTS = """<section class="alerts" id="alerts" aria-labelledby="alertsTitle">
+<div class="alerts-text"><h2 id="alertsTitle">Get new shows by email</h2><p>One email a week with shows added across the UK. Unsubscribe whenever you like.</p></div>
+<form id="alertsForm" action="https://assets.mailerlite.com/jsonp/2760636/forms/202963478294562355/subscribe" method="post" target="_blank">
+<label for="alertsEmail">Email</label>
+<div class="alerts-row"><input id="alertsEmail" type="email" name="fields[email]" placeholder="you@example.com" autocomplete="email" required><input type="hidden" name="ml-submit" value="1"><input type="hidden" name="anticsrf" value="true"><button class="alerts-btn" type="submit">Sign up</button></div>
+<p class="alerts-note" id="alertsNote">We'll send a confirmation email first. Your address is only used for these emails.</p>
+</form></section>
+<script>(function(){var f=document.getElementById("alertsForm");if(!f)return;var n=document.getElementById("alertsNote"),b=f.querySelector("button");f.addEventListener("submit",function(e){e.preventDefault();var m=f.elements["fields[email]"].value.trim();if(!m)return;b.disabled=true;b.textContent="Signing up";fetch(f.action,{method:"POST",mode:"no-cors",body:new URLSearchParams({"fields[email]":m,"ml-submit":"1","anticsrf":"true"})}).then(function(){f.elements["fields[email]"].value="";n.className="alerts-note ok";n.textContent="Thanks. Check your inbox and click the link in our confirmation email to finish signing up.";b.textContent="Sign up";b.disabled=false}).catch(function(){n.className="alerts-note bad";n.textContent="That didn't go through. Please try again in a moment.";b.textContent="Sign up";b.disabled=false})})})();</script>
+"""
+
+
 def page(title, desc, path, body, ld=None, noindex=False):
     url = f"{SITE}{path}"
     ldtag = ""
@@ -219,9 +243,9 @@ def page(title, desc, path, body, ld=None, noindex=False):
 </head>
 <body>
 <div class="wrap">
-<div class="top"><a class="brand" href="/">Find a <b>Show</b></a><a class="home" href="/">Search all shows</a></div>
+<div class="top"><a class="brand" href="/">Find a <b>Show</b></a><a class="alertlink" href="#alerts">Email alerts</a><a class="home" href="/">Search all shows</a></div>
 {body}
-<footer>
+{ALERTS}<footer>
 <a href="/">Find a Show</a> &middot; <a href="/cities/">Cities</a> &middot; <a href="/venues/">Venues</a> &middot; <a href="/categories/">Categories</a>
 <p>Find a Show is an independent guide and is not run by any venue. Dates come from the venues' own websites and can change, so check with the venue before you travel.
 Some ticket links are affiliate links, which means we may earn a commission if you buy, at no extra cost to you.</p>

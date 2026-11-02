@@ -140,12 +140,17 @@ def main():
     for v in tm_fed:
         name = v["name"]
         try:
-            entry = cache.get(name)
-            if entry is None or (entry["id"] is None and (today - dt.date.fromisoformat(entry["checked"])).days >= 14):
-                entry = cache[name] = {"id": find_venue(name, v.get("city", ""), key), "checked": today.isoformat()}
-            if not entry["id"]:
-                continue
-            fresh = [r for r in rows_from_events(name, venue_events(entry["id"], key)) if r["end"] >= today.isoformat()]
+            if v.get("tm_ids"):
+                ids = v["tm_ids"]
+            else:
+                entry = cache.get(name)
+                if entry is None or (entry["id"] is None and (today - dt.date.fromisoformat(entry["checked"])).days >= 14):
+                    entry = cache[name] = {"id": find_venue(name, v.get("city", ""), key), "checked": today.isoformat()}
+                if not entry["id"]:
+                    continue
+                ids = [entry["id"]]
+            evs = [e for i in ids for e in venue_events(i, key)]
+            fresh = [r for r in rows_from_events(name, evs) if r["end"] >= today.isoformat()]
         except Exception as e:
             print(f"{name}: Ticketmaster listing failed: {e!r}"[:200])
             continue

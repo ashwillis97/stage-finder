@@ -2192,6 +2192,436 @@
     "https://www.pandjlive.com/events/entertainment/"
    ],
    "reader": "tm"
+  },
+  {
+   "name": "Oran Mor",
+   "city": "Glasgow",
+   "postcode": "G12 8QX",
+   "slug": "oran-mor-glasgow",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177c7f"
+   ]
+  },
+  {
+   "name": "O2 Institute Birmingham",
+   "city": "Birmingham",
+   "postcode": "B5 6DY",
+   "slug": "o2-institute-birmingham-birmingham",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ91771HV"
+   ]
+  },
+  {
+   "name": "Electric Bristol",
+   "city": "Bristol",
+   "postcode": "BS12JY",
+   "slug": "electric-bristol-bristol",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZpZAn16tA"
+   ]
+  },
+  {
+   "name": "Royal and Derngate",
+   "city": "Northampton",
+   "postcode": "NN1 1DP",
+   "slug": "royal-and-derngate-northampton",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ91776I0"
+   ]
+  },
+  {
+   "name": "O2 Ritz Manchester",
+   "city": "Manchester",
+   "postcode": "M1 5NQ",
+   "slug": "o2-ritz-manchester-manchester",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177kaf"
+   ]
+  },
+  {
+   "name": "O2 Academy Glasgow",
+   "city": "Glasgow",
+   "postcode": "G59NT",
+   "slug": "o2-academy-glasgow-glasgow",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177aJf"
+   ]
+  },
+  {
+   "name": "O2 Academy Oxford",
+   "city": "Oxford",
+   "postcode": "OX4 1UE",
+   "slug": "o2-academy-oxford-oxford",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177an0"
+   ]
+  },
+  {
+   "name": "Rock City",
+   "city": "Nottingham",
+   "postcode": "NG1 5GG",
+   "slug": "rock-city-nottingham",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177Aq7"
+   ]
+  },
+  {
+   "name": "Utilita Arena Birmingham",
+   "city": "Birmingham",
+   "postcode": "B1 2AA",
+   "slug": "utilita-arena-birmingham-birmingham",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177W00"
+   ]
+  },
+  {
+   "name": "Warwick Arts Centre",
+   "city": "Coventry",
+   "postcode": "CV47AL",
+   "slug": "warwick-arts-centre-coventry",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177aQ7"
+   ]
+  },
+  {
+   "name": "Saint Luke's",
+   "city": "Glasgow",
+   "postcode": "G40 2JZ",
+   "slug": "saint-luke-s-glasgow",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177Vu0"
+   ]
+  },
+  {
+   "name": "O2 Academy Bournemouth",
+   "city": "Bournemouth",
+   "postcode": "BH1 4BH",
+   "slug": "o2-academy-bournemouth-bournemouth",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZpZAn6lJA"
+   ]
+  },
+  {
+   "name": "Liverpool Philharmonic Hall",
+   "city": "Liverpool",
+   "postcode": "L1 9BP",
+   "slug": "liverpool-philharmonic-hall-liverpool",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177a-V"
+   ]
+  },
+  {
+   "name": "The Lowry",
+   "city": "Salford",
+   "postcode": "M502AZ",
+   "slug": "the-lowry-salford",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177F37",
+    "KovZpZAn1dEA"
+   ]
+  },
+  {
+   "name": "Blackpool Opera House",
+   "city": "Blackpool",
+   "postcode": "FY1 1HW",
+   "slug": "blackpool-opera-house-blackpool",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZpZAn6JFA"
+   ]
+  },
+  {
+   "name": "Barrowland Ballroom",
+   "city": "Glasgow",
+   "postcode": "G4 0TT",
+   "slug": "barrowland-ballroom-glasgow",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177m6f"
+   ]
+  },
+  {
+   "name": "Ulster Hall",
+   "city": "Belfast",
+   "postcode": "BT2 7FF",
+   "slug": "ulster-hall-belfast",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ917AdDV"
+   ]
+  },
+  {
+   "name": "City Varieties Music Hall",
+   "city": "Leeds",
+   "postcode": "LS1 6LW",
+   "slug": "city-varieties-music-hall-leeds",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZpZAnJJIA"
+   ]
+  },
+  {
+   "name": "O2 Academy Liverpool",
+   "city": "Liverpool",
+   "postcode": "L3 5UF",
+   "slug": "o2-academy-liverpool-liverpool",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177anf"
+   ]
+  },
+  {
+   "name": "Birmingham Town Hall",
+   "city": "Birmingham",
+   "postcode": "B3 3DQ",
+   "slug": "birmingham-town-hall-birmingham",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZpZAnFFAA"
+   ]
+  },
+  {
+   "name": "Lighthouse Poole",
+   "city": "Poole",
+   "postcode": "BH15 1UG",
+   "slug": "lighthouse-poole-poole",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177kWf"
+   ]
+  },
+  {
+   "name": "O2 Victoria Warehouse Manchester",
+   "city": "Manchester",
+   "postcode": "M17 1AB",
+   "slug": "o2-victoria-warehouse-manchester-manchester",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177A50"
+   ]
+  },
+  {
+   "name": "Wyvern Theatre",
+   "city": "Swindon",
+   "postcode": "SN1 1QN",
+   "slug": "wyvern-theatre-swindon",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177Rqf"
+   ]
+  },
+  {
+   "name": "Hexagon Theatre",
+   "city": "Reading",
+   "postcode": "RG1 7UA",
+   "slug": "hexagon-theatre-reading",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZpZAn6dvA"
+   ]
+  },
+  {
+   "name": "Hull City Hall",
+   "city": "Hull",
+   "postcode": "HU1 3RQ",
+   "slug": "hull-city-hall-hull",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZpZAn1v1A"
+   ]
+  },
+  {
+   "name": "Corn Exchange Ipswich",
+   "city": "Ipswich",
+   "postcode": "IP1 1DH",
+   "slug": "corn-exchange-ipswich-ipswich",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZpZAnFEeA"
+   ]
+  },
+  {
+   "name": "Storyhouse",
+   "city": "Chester",
+   "postcode": "CH1 2AR",
+   "slug": "storyhouse-chester",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ917A8Q7"
+   ]
+  },
+  {
+   "name": "New Theatre Peterborough",
+   "city": "Peterborough",
+   "postcode": "PE1 1RT",
+   "slug": "new-theatre-peterborough-peterborough",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177Bb7"
+   ]
+  },
+  {
+   "name": "Kings Theatre Edinburgh",
+   "city": "Edinburgh",
+   "postcode": "EH3 9LQ",
+   "slug": "kings-theatre-edinburgh-edinburgh",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177zdf"
+   ]
+  },
+  {
+   "name": "Carlisle Sands Centre",
+   "city": "Carlisle",
+   "postcode": "CA1 1JQ",
+   "slug": "carlisle-sands-centre-carlisle",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZpZAn1l7A"
+   ]
+  },
+  {
+   "name": "Cambridge Junction",
+   "city": "Cambridge",
+   "postcode": "CB1 7GX",
+   "slug": "cambridge-junction-cambridge",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177AMV"
+   ]
+  },
+  {
+   "name": "Epic Studios",
+   "city": "Norwich",
+   "postcode": "NR3 1JD",
+   "slug": "epic-studios-norwich",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZpZAlAvlA"
+   ]
+  },
+  {
+   "name": "Pyramid and Parr Hall",
+   "city": "Warrington",
+   "postcode": "WA1 1BL",
+   "slug": "pyramid-and-parr-hall-warrington",
+   "urls": [
+    "https://www.ticketmaster.co.uk/"
+   ],
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177W47"
+   ]
   }
  ]
 }

@@ -12,7 +12,7 @@
   "name": "Southampton 1865",
   "city": "Southampton",
   "postcode": "SO14 3AR",
-  "events": 93,
+  "events": 94,
   "nearest_existing_score": 0.25
  },
  {
@@ -20,48 +20,8 @@
   "name": "The O2 Belfast",
   "city": "Belfast",
   "postcode": "BT39QQ",
-  "events": 85,
+  "events": 83,
   "nearest_existing_score": 0.33
- },
- {
-  "id": "KovZ9177c7f",
-  "name": "Oran Mor",
-  "city": "Glasgow",
-  "postcode": "G12 8QX",
-  "events": 73,
-  "nearest_existing_score": 0.0
- },
- {
-  "id": "KovZ91771HV",
-  "name": "O2 Institute Birmingham",
-  "city": "Birmingham",
-  "postcode": "B5 6DY",
-  "events": 64,
-  "nearest_existing_score": 0.5
- },
- {
-  "id": "KovZpZAn16tA",
-  "name": "Electric Bristol",
-  "city": "Bristol",
-  "postcode": "BS12JY",
-  "events": 59,
-  "nearest_existing_score": 0.33
- },
- {
-  "id": "KovZ91776I0",
-  "name": "Royal and Derngate",
-  "city": "Northampton",
-  "postcode": "NN1 1DP",
-  "events": 59,
-  "nearest_existing_score": 0.33
- },
- {
-  "id": "KovZ9177kaf",
-  "name": "O2 Ritz Manchester",
-  "city": "Manchester",
-  "postcode": "M1 5NQ",
-  "events": 57,
-  "nearest_existing_score": 0.5
  },
  {
   "id": "KovZ917AY7-",
@@ -80,36 +40,12 @@
   "nearest_existing_score": 0.0
  },
  {
-  "id": "KovZpZAlAvlA",
-  "name": "Epic Studios",
-  "city": "Norwich ",
-  "postcode": "NR3 1JD",
-  "events": 55,
-  "nearest_existing_score": 0.0
- },
- {
   "id": "KovZ917AAd0",
   "name": "The Limelight 2",
   "city": "Belfast",
   "postcode": "BT2 8HD",
   "events": 53,
   "nearest_existing_score": 0.0
- },
- {
-  "id": "KovZ9177aJf",
-  "name": "O2 Academy Glasgow",
-  "city": "Glasgow",
-  "postcode": "G59NT",
-  "events": 53,
-  "nearest_existing_score": 0.5
- },
- {
-  "id": "KovZ9177an0",
-  "name": "O2 Academy Oxford",
-  "city": "Oxford",
-  "postcode": "OX4 1UE",
-  "events": 53,
-  "nearest_existing_score": 0.5
  },
  {
   "id": "KovZpZAt6t6A",
@@ -120,14 +56,6 @@
   "nearest_existing_score": 0.0
  },
  {
-  "id": "KovZ9177Aq7",
-  "name": "Rock City",
-  "city": "Nottingham",
-  "postcode": "NG1 5GG",
-  "events": 51,
-  "nearest_existing_score": 0.25
- },
- {
   "id": "KovZpZAtF7EA",
   "name": "The Flowerpot",
   "city": "Derby",
@@ -136,19 +64,11 @@
   "nearest_existing_score": 0.0
  },
  {
-  "id": "KovZ9177W00",
-  "name": "Utilita Arena Birmingham",
-  "city": "Birmingham",
-  "postcode": "B1 2AA",
-  "events": 43,
-  "nearest_existing_score": 0.5
- },
- {
   "id": "KovZ917766V",
   "name": "Foundry, Sheffield",
   "city": "Sheffield",
   "postcode": "S102TG",
-  "events": 43,
+  "events": 44,
   "nearest_existing_score": 0.25
  },
  {
@@ -168,30 +88,6 @@
   "nearest_existing_score": 0.5
  },
  {
-  "id": "KovZpZAn1l7A",
-  "name": "Carlisle Sands Centre",
-  "city": "Carlisle",
-  "postcode": "CA1 1JQ",
-  "events": 42,
-  "nearest_existing_score": 0.25
- },
- {
-  "id": "KovZ9177aQ7",
-  "name": "Warwick Arts Centre, Coventry",
-  "city": "Coventry",
-  "postcode": "CV47AL",
-  "events": 41,
-  "nearest_existing_score": 0.4
- },
- {
-  "id": "KovZ9177Vu0",
-  "name": "Saint Luke's",
-  "city": "Glasgow",
-  "postcode": "G40 2JZ",
-  "events": 41,
-  "nearest_existing_score": 0.2
- },
- {
   "id": "KovZ9177jUf",
   "name": "KK's Steel Mill",
   "city": "Wolverhampton",
@@ -200,44 +96,20 @@
   "nearest_existing_score": 0.2
  },
  {
-  "id": "KovZpZAn6lJA",
-  "name": "O2 Academy Bournemouth",
-  "city": "Bournemouth",
-  "postcode": "BH1 4BH",
-  "events": 39,
-  "nearest_existing_score": 0.5
- },
- {
-  "id": "KovZ9177a-V",
-  "name": "Liverpool Philharmonic Hall",
-  "city": "Liverpool",
-  "postcode": "L1 9BP",
-  "events": 39,
-  "nearest_existing_score": 0.25
+  "id": "KovZpZAn1dEA",
+  "name": "Quays Theatre - The Lowry",
+  "city": "Salford",
+  "postcode": "M503AZ",
+  "events": 38,
+  "nearest_existing_score": 0.33
  },
  {
   "id": "KovZ91776_7",
   "name": "Thekla",
   "city": "Bristol",
   "postcode": "BS1 4RB",
-  "events": 38,
+  "events": 37,
   "nearest_existing_score": 0.0
- },
- {
-  "id": "KovZ9177AMV",
-  "name": "Cambridge Junction",
-  "city": "Cambridge",
-  "postcode": "CB1 7GX",
-  "events": 38,
-  "nearest_existing_score": 0.33
- },
- {
-  "id": "KovZpZAn1dEA",
-  "name": "Quays Theatre - The Lowry",
-  "city": "Salford",
-  "postcode": "M503AZ",
-  "events": 38,
-  "nearest_existing_score": 0.25
  },
  {
   "id": "KovZ9177klf",
@@ -248,28 +120,12 @@
   "nearest_existing_score": 0.5
  },
  {
-  "id": "KovZpZAn6JFA",
-  "name": "Blackpool Opera House",
-  "city": "Blackpool",
-  "postcode": "FY1 1HW",
-  "events": 36,
-  "nearest_existing_score": 0.5
- },
- {
   "id": "KovZ917A7P0",
   "name": "Empire Music Hall",
   "city": "Belfast",
   "postcode": "BT7 1FQ",
   "events": 35,
   "nearest_existing_score": 0.5
- },
- {
-  "id": "KovZ9177m6f",
-  "name": "Barrowland Ballroom",
-  "city": "Glasgow",
-  "postcode": "G4 0TT",
-  "events": 35,
-  "nearest_existing_score": 0.0
  },
  {
   "id": "KovZ9177-G7",
@@ -288,30 +144,6 @@
   "nearest_existing_score": 0.0
  },
  {
-  "id": "KovZ9177anf",
-  "name": "O2 Academy Liverpool",
-  "city": "Liverpool",
-  "postcode": "L3 5UF",
-  "events": 33,
-  "nearest_existing_score": 0.5
- },
- {
-  "id": "KovZ917AdDV",
-  "name": "Ulster Hall Belfast",
-  "city": "Belfast",
-  "postcode": "BT2 7FF",
-  "events": 32,
-  "nearest_existing_score": 0.5
- },
- {
-  "id": "KovZpZAnJJIA",
-  "name": "City Varieties Music Hall",
-  "city": "Leeds",
-  "postcode": "LS1 6LW",
-  "events": 32,
-  "nearest_existing_score": 0.4
- },
- {
   "id": "KovZpZAnFF7A",
   "name": "Glee Club",
   "city": "Birmingham",
@@ -326,6 +158,30 @@
   "postcode": "G2 5RL",
   "events": 31,
   "nearest_existing_score": 0.14
+ },
+ {
+  "id": "KovZ9177Ch0",
+  "name": "Hertford Corn Exchange",
+  "city": "Hertford",
+  "postcode": "SG14 1AL",
+  "events": 31,
+  "nearest_existing_score": 0.5
+ },
+ {
+  "id": "KovZpZAtFIvA",
+  "name": "Queens Hall",
+  "city": "Nuneaton",
+  "postcode": "CV11 5LA",
+  "events": 31,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ91770Qf",
+  "name": "Whitby Pavilion Theatre",
+  "city": "Whitby",
+  "postcode": "YO21 3EN",
+  "events": 31,
+  "nearest_existing_score": 0.25
  },
  {
   "id": "KovZ9177cI0",
@@ -344,27 +200,11 @@
   "nearest_existing_score": 0.33
  },
  {
-  "id": "KovZpZAnFFAA",
-  "name": "Town Hall Birmingham",
-  "city": "Birmingham",
-  "postcode": "B3 3DQ",
-  "events": 28,
-  "nearest_existing_score": 0.5
- },
- {
-  "id": "KovZpZAld1EA",
-  "name": "Wardrobe",
-  "city": "Leeds",
-  "postcode": "LS9 8AH",
-  "events": 28,
-  "nearest_existing_score": 0.0
- },
- {
-  "id": "KovZ9177aw7",
-  "name": "Manchester Gorilla",
-  "city": "Manchester",
-  "postcode": "M1 5WW",
-  "events": 28,
+  "id": "KovZ9177M17",
+  "name": "The Glasshouse International Centre for Music",
+  "city": "Gateshead",
+  "postcode": "NE8 2JR",
+  "events": 30,
   "nearest_existing_score": 0.33
  },
  {
@@ -373,7 +213,7 @@
   "city": "Poole",
   "postcode": "BH15 1UG",
   "events": 28,
-  "nearest_existing_score": 0.0
+  "nearest_existing_score": 0.5
  },
  {
   "id": "KovZ9177197",
@@ -392,12 +232,12 @@
   "nearest_existing_score": 0.33
  },
  {
-  "id": "KovZ9177A50",
-  "name": "O2 Victoria Warehouse Manchester",
-  "city": "Manchester",
-  "postcode": "M17 1AB",
+  "id": "KovZpZAld1EA",
+  "name": "Wardrobe",
+  "city": "Leeds",
+  "postcode": "LS9 8AH",
   "events": 27,
-  "nearest_existing_score": 0.4
+  "nearest_existing_score": 0.0
  },
  {
   "id": "KovZ9177ge0",
@@ -408,20 +248,20 @@
   "nearest_existing_score": 0.2
  },
  {
+  "id": "KovZ9177aw7",
+  "name": "Manchester Gorilla",
+  "city": "Manchester",
+  "postcode": "M1 5WW",
+  "events": 27,
+  "nearest_existing_score": 0.33
+ },
+ {
   "id": "KovZpZAtadFA",
   "name": "The Hairy Dog",
   "city": "Derby",
   "postcode": "DE1 1HT",
   "events": 26,
   "nearest_existing_score": 0.0
- },
- {
-  "id": "KovZ9177Rqf",
-  "name": "Wyvern Theatre",
-  "city": "Swindon",
-  "postcode": "SN1 1QN",
-  "events": 26,
-  "nearest_existing_score": 0.33
  },
  {
   "id": "KovZ917A9A7",
@@ -448,14 +288,6 @@
   "nearest_existing_score": 0.25
  },
  {
-  "id": "KovZpZAn6dvA",
-  "name": "Hexagon Theatre",
-  "city": "Reading",
-  "postcode": "RG1 7UA",
-  "events": 25,
-  "nearest_existing_score": 0.33
- },
- {
   "id": "KovZpZAta7FA",
   "name": "Tramshed",
   "city": "Cardiff",
@@ -477,7 +309,7 @@
   "city": "Oxford",
   "postcode": "OX4 1UE",
   "events": 24,
-  "nearest_existing_score": 0.25
+  "nearest_existing_score": 0.5
  },
  {
   "id": "KovZ9177m9f",
@@ -488,12 +320,20 @@
   "nearest_existing_score": 0.5
  },
  {
+  "id": "KovZ917A7n7",
+  "name": "Mandela Hall",
+  "city": "Belfast",
+  "postcode": "BT7 1NN",
+  "events": 22,
+  "nearest_existing_score": 0.33
+ },
+ {
   "id": "KovZ9177AT0",
   "name": "Electric Studios",
   "city": "Sheffield",
   "postcode": "S14SE",
   "events": 22,
-  "nearest_existing_score": 0.0
+  "nearest_existing_score": 0.33
  },
  {
   "id": "KovZ917ARnA",
@@ -504,12 +344,12 @@
   "nearest_existing_score": 0.0
  },
  {
-  "id": "KovZ917A7n7",
-  "name": "Mandela Hall",
-  "city": "Belfast",
-  "postcode": "BT7 1NN",
+  "id": "KovZpZAnnF7A",
+  "name": "The Prince Albert",
+  "city": "Brighton",
+  "postcode": "BN1 4ED",
   "events": 20,
-  "nearest_existing_score": 0.33
+  "nearest_existing_score": 0.25
  },
  {
   "id": "KovZ9177LS7",
@@ -520,28 +360,12 @@
   "nearest_existing_score": 0.25
  },
  {
-  "id": "KovZ9177kpV",
-  "name": "University of Wolverhampton at The Civic Hall",
-  "city": "Wolverhampton",
-  "postcode": "WV1 1RQ",
-  "events": 20,
-  "nearest_existing_score": 0.2
- },
- {
   "id": "KovZ917AdH0",
   "name": "Waterfront Hall Auditorium",
   "city": "Belfast",
   "postcode": "BT1 3LP",
   "events": 19,
   "nearest_existing_score": 0.5
- },
- {
-  "id": "KovZpZAnnF7A",
-  "name": "The Prince Albert",
-  "city": "Brighton",
-  "postcode": "BN1 4ED",
-  "events": 19,
-  "nearest_existing_score": 0.25
  },
  {
   "id": "KovZpZAtl1tA",
@@ -560,26 +384,26 @@
   "nearest_existing_score": 0.5
  },
  {
+  "id": "KovZ9177kpV",
+  "name": "University of Wolverhampton at The Civic Hall",
+  "city": "Wolverhampton",
+  "postcode": "WV1 1RQ",
+  "events": 19,
+  "nearest_existing_score": 0.2
+ },
+ {
   "id": "KovZ9177YZf",
   "name": "Glasgow Garage",
   "city": "Glasgow",
   "postcode": "G2 3LW",
   "events": 18,
-  "nearest_existing_score": 0.2
+  "nearest_existing_score": 0.25
  },
  {
   "id": "KovZ9177Vqf",
   "name": "Engine Shed",
   "city": "Lincoln",
   "postcode": "LN6 7TS",
-  "events": 18,
-  "nearest_existing_score": 0.0
- },
- {
-  "id": "KovZ9177F37",
-  "name": "The Lowry",
-  "city": "Salford",
-  "postcode": "M502AZ",
   "events": 18,
   "nearest_existing_score": 0.0
  },
@@ -620,14 +444,6 @@
   "name": "Galvanizers SWG3",
   "city": "Glasgow",
   "postcode": "G3 8QG",
-  "events": 17,
-  "nearest_existing_score": 0.0
- },
- {
-  "id": "KovZ9177Do0",
-  "name": "The Abbey",
-  "city": "Manchester",
-  "postcode": "M156SY",
   "events": 17,
   "nearest_existing_score": 0.0
  },
@@ -688,28 +504,20 @@
   "nearest_existing_score": 0.0
  },
  {
-  "id": "KovZ9177LJ0",
-  "name": "Hyde Park Book Club",
-  "city": "Leeds",
-  "postcode": "LS6 1BL",
-  "events": 16,
-  "nearest_existing_score": 0.17
- },
- {
-  "id": "KovZpZAnJv6A",
-  "name": "O2 Academy 2 Liverpool",
-  "city": "Liverpool",
-  "postcode": "L3 5UF",
-  "events": 16,
-  "nearest_existing_score": 0.4
- },
- {
   "id": "KovZpZAnFvdA",
   "name": "Manchester The Deaf Institute.",
   "city": "Manchester",
   "postcode": "M1 7HE",
   "events": 16,
   "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ9177Do0",
+  "name": "The Abbey",
+  "city": "Manchester",
+  "postcode": "M156SY",
+  "events": 16,
+  "nearest_existing_score": 0.0
  },
  {
   "id": "KovZ91770S0",
@@ -720,22 +528,6 @@
   "nearest_existing_score": 0.0
  },
  {
-  "id": "KovZpZAn1v1A",
-  "name": "Hull City Hall",
-  "city": "Hull",
-  "postcode": "HU1 3RQ",
-  "events": 15,
-  "nearest_existing_score": 0.5
- },
- {
-  "id": "KovZpZAnFEeA",
-  "name": "Corn Exchange Ipswich",
-  "city": "Ipswich",
-  "postcode": "IP1 1DH",
-  "events": 15,
-  "nearest_existing_score": 0.5
- },
- {
   "id": "KovZ9177q5V",
   "name": "Project House",
   "city": "Leeds",
@@ -744,19 +536,27 @@
   "nearest_existing_score": 0.25
  },
  {
+  "id": "KovZ9177LJ0",
+  "name": "Hyde Park Book Club",
+  "city": "Leeds",
+  "postcode": "LS6 1BL",
+  "events": 15,
+  "nearest_existing_score": 0.17
+ },
+ {
+  "id": "KovZ91771Nf",
+  "name": "Lincoln Castle",
+  "city": "Lincoln",
+  "postcode": "LN1 3AA",
+  "events": 15,
+  "nearest_existing_score": 0.0
+ },
+ {
   "id": "KovZ917AObU",
   "name": "Depot Mayfield",
   "city": "Manchester",
   "postcode": "M12 6HR",
   "events": 15,
-  "nearest_existing_score": 0.0
- },
- {
-  "id": "KovZ917A7uV",
-  "name": "Voodoo",
-  "city": "Belfast",
-  "postcode": "BT1 5EA",
-  "events": 14,
   "nearest_existing_score": 0.0
  },
  {
@@ -773,21 +573,13 @@
   "city": "Cardiff",
   "postcode": "CF10 1BR",
   "events": 14,
-  "nearest_existing_score": 0.2
+  "nearest_existing_score": 0.25
  },
  {
   "id": "KovZ9177mZV",
   "name": "An Seomar",
   "city": "Inverness",
   "postcode": "IV11DZ",
-  "events": 14,
-  "nearest_existing_score": 0.0
- },
- {
-  "id": "KovZ91771Nf",
-  "name": "Lincoln Castle",
-  "city": "Lincoln",
-  "postcode": "LN1 3AA",
   "events": 14,
   "nearest_existing_score": 0.0
  },
@@ -808,12 +600,20 @@
   "nearest_existing_score": 0.0
  },
  {
+  "id": "KovZ917A7uV",
+  "name": "Voodoo",
+  "city": "Belfast",
+  "postcode": "BT1 5EA",
+  "events": 13,
+  "nearest_existing_score": 0.0
+ },
+ {
   "id": "KovZ917Axpf",
   "name": "Ulster Sports Club",
   "city": "Belfast",
   "postcode": "BT1 2BG",
   "events": 13,
-  "nearest_existing_score": 0.0
+  "nearest_existing_score": 0.25
  },
  {
   "id": "KovZ9177Gaf",
@@ -822,14 +622,6 @@
   "postcode": "BS8 3LE",
   "events": 13,
   "nearest_existing_score": 0.33
- },
- {
-  "id": "KovZ917A8Q7",
-  "name": "Storyhouse",
-  "city": "Chester",
-  "postcode": "CH1 2AR",
-  "events": 13,
-  "nearest_existing_score": 0.0
  },
  {
   "id": "KovZpZAnJ6AA",
@@ -880,6 +672,14 @@
   "nearest_existing_score": 0.0
  },
  {
+  "id": "KovZ9177fp0",
+  "name": "SLAY",
+  "city": "Glasgow",
+  "postcode": "G1 1UL",
+  "events": 12,
+  "nearest_existing_score": 0.0
+ },
+ {
   "id": "KovZ91771a7",
   "name": "Northumbria Students Union",
   "city": "Newcastle",
@@ -896,14 +696,6 @@
   "nearest_existing_score": 0.0
  },
  {
-  "id": "KovZ9177Bb7",
-  "name": "New Theatre Peterborough",
-  "city": "Peterborough",
-  "postcode": "PE1 1RT",
-  "events": 12,
-  "nearest_existing_score": 0.5
- },
- {
   "id": "KovZ91771O7",
   "name": "Octagon",
   "city": "Sheffield",
@@ -912,12 +704,12 @@
   "nearest_existing_score": 0.5
  },
  {
-  "id": "KovZ9177W47",
-  "name": "Pyramid and Parr Hall",
-  "city": "Warrington",
-  "postcode": "WA1 1BL",
+  "id": "KovZ9177Vjf",
+  "name": "Fareham Live",
+  "city": "Fareham",
+  "postcode": "PO16 7DB",
   "events": 12,
-  "nearest_existing_score": 0.25
+  "nearest_existing_score": 0.0
  },
  {
   "id": "KovZ9177p4V",
@@ -944,22 +736,6 @@
   "nearest_existing_score": 0.0
  },
  {
-  "id": "KovZ9177zdf",
-  "name": "Kings Theatre Edinburgh",
-  "city": "Edinburgh",
-  "postcode": "EH3 9LQ",
-  "events": 11,
-  "nearest_existing_score": 0.5
- },
- {
-  "id": "KovZ9177fp0",
-  "name": "SLAY",
-  "city": "Glasgow",
-  "postcode": "G1 1UL",
-  "events": 11,
-  "nearest_existing_score": 0.0
- },
- {
   "id": "KovZ91771JV",
   "name": "The Glee Club Leeds",
   "city": "Leeds",
@@ -974,6 +750,14 @@
   "postcode": "LE1 7RH",
   "events": 11,
   "nearest_existing_score": 0.5
+ },
+ {
+  "id": "KovZpZAnJkkA",
+  "name": "Band On The Wall.",
+  "city": "Manchester",
+  "postcode": "M4 5JZ",
+  "events": 11,
+  "nearest_existing_score": 0.0
  },
  {
   "id": "KovZ91776e7",
@@ -1056,14 +840,6 @@
   "nearest_existing_score": 0.2
  },
  {
-  "id": "KovZ91775t0",
-  "name": "HEADROW HOUSE",
-  "city": "Leeds",
-  "postcode": "LS1 6PU",
-  "events": 10,
-  "nearest_existing_score": 0.25
- },
- {
   "id": "KovZ9177r77",
   "name": "The Attic",
   "city": "Leeds",
@@ -1080,14 +856,6 @@
   "nearest_existing_score": 0.0
  },
  {
-  "id": "KovZpZAnJkkA",
-  "name": "Band On The Wall.",
-  "city": "Manchester",
-  "postcode": "M4 5JZ",
-  "events": 10,
-  "nearest_existing_score": 0.0
- },
- {
   "id": "KovZ9177VLf",
   "name": "The Stables - Milton Keynes",
   "city": "Milton Keynes",
@@ -1096,20 +864,20 @@
   "nearest_existing_score": 0.5
  },
  {
+  "id": "KovZ9177WkV",
+  "name": "BEAM",
+  "city": "Hertford",
+  "postcode": "SG14 1PS",
+  "events": 10,
+  "nearest_existing_score": 0.0
+ },
+ {
   "id": "KovZ917A760",
   "name": "Oh Yeah music Centre",
   "city": "Belfast",
   "postcode": "BT1 2LG",
   "events": 9,
   "nearest_existing_score": 0.2
- },
- {
-  "id": "KovZ9177Ak0",
-  "name": "The Hope and Ruin",
-  "city": "Brighton",
-  "postcode": "BN1 3WA",
-  "events": 9,
-  "nearest_existing_score": 0.0
  },
  {
   "id": "KovZ9177PWV",
@@ -1165,7 +933,23 @@
   "city": "Glasgow",
   "postcode": "G2 3LW",
   "events": 9,
-  "nearest_existing_score": 0.14
+  "nearest_existing_score": 0.17
+ },
+ {
+  "id": "KovZ9177YV7",
+  "name": "Art School Glasgow",
+  "city": "Glasgow",
+  "postcode": "G3 6PE",
+  "events": 9,
+  "nearest_existing_score": 0.2
+ },
+ {
+  "id": "KovZ91775t0",
+  "name": "HEADROW HOUSE",
+  "city": "Leeds",
+  "postcode": "LS1 6PU",
+  "events": 9,
+  "nearest_existing_score": 0.25
  },
  {
   "id": "KovZ9177Et7",
@@ -1198,6 +982,14 @@
   "postcode": "BT35 8HF",
   "events": 9,
   "nearest_existing_score": 0.2
+ },
+ {
+  "id": "KovZ9177Nmf",
+  "name": "Whitby Pavilion Northern Lights Suite",
+  "city": "Whitby",
+  "postcode": "YO21 3EN",
+  "events": 9,
+  "nearest_existing_score": 0.17
  },
  {
   "id": "KovZ9177DR0",
@@ -1245,15 +1037,7 @@
   "city": "Glasgow",
   "postcode": "G1 1UL",
   "events": 8,
-  "nearest_existing_score": 0.2
- },
- {
-  "id": "KovZ9177YV7",
-  "name": "Art School Glasgow",
-  "city": "Glasgow",
-  "postcode": "G3 6PE",
-  "events": 8,
-  "nearest_existing_score": 0.17
+  "nearest_existing_score": 0.25
  },
  {
   "id": "KovZ9177wG7",
@@ -1296,6 +1080,38 @@
   "nearest_existing_score": 0.0
  },
  {
+  "id": "KovZ9177177",
+  "name": "The Queens Theatre",
+  "city": "Barnstaple",
+  "postcode": "EX31 1SY",
+  "events": 8,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177zH7",
+  "name": "Old Market",
+  "city": "Hove",
+  "postcode": "BN31AS",
+  "events": 8,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177Dr0",
+  "name": "Delamere Forest",
+  "city": "Northwich",
+  "postcode": "CW8 2JD",
+  "events": 8,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ9177WZ7",
+  "name": "The Castle Theatre",
+  "city": "Wellingborough",
+  "postcode": "NN8 1XA",
+  "events": 8,
+  "nearest_existing_score": 0.33
+ },
+ {
   "id": "KovZ917ACLf",
   "name": "Ormeau Park",
   "city": "Belfast",
@@ -1318,6 +1134,14 @@
   "postcode": "BD1 1JS",
   "events": 7,
   "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177Ak0",
+  "name": "The Hope and Ruin",
+  "city": "Brighton",
+  "postcode": "BN1 3WA",
+  "events": 7,
+  "nearest_existing_score": 0.0
  },
  {
   "id": "KovZ9177zqf",
@@ -1456,6 +1280,22 @@
   "nearest_existing_score": 0.2
  },
  {
+  "id": "KovZ91771Rf",
+  "name": "Kidderminster Town Hall",
+  "city": "Kidderminster",
+  "postcode": "dy101db",
+  "events": 7,
+  "nearest_existing_score": 0.5
+ },
+ {
+  "id": "KovZ91771X0",
+  "name": "Newbury Corn Exchange",
+  "city": "Newbury",
+  "postcode": "RG14 5BD",
+  "events": 7,
+  "nearest_existing_score": 0.5
+ },
+ {
   "id": "KovZ9177sDV",
   "name": "The Tunnels",
   "city": "Aberdeen",
@@ -1552,10 +1392,10 @@
   "nearest_existing_score": 0.0
  },
  {
-  "id": "KovZ9177wxf",
-  "name": "Oran Mor Auditorium",
+  "id": "KovZ9177nH7",
+  "name": "Cathouse",
   "city": "Glasgow",
-  "postcode": "G128QX",
+  "postcode": "G1 3RB",
   "events": 6,
   "nearest_existing_score": 0.0
  },
@@ -1565,7 +1405,7 @@
   "city": "Glasgow",
   "postcode": "G2 3LW",
   "events": 6,
-  "nearest_existing_score": 0.17
+  "nearest_existing_score": 0.2
  },
  {
   "id": "KovZ9177wqf",
@@ -1573,7 +1413,7 @@
   "city": "Glasgow",
   "postcode": "G3 8QG",
   "events": 6,
-  "nearest_existing_score": 0.0
+  "nearest_existing_score": 0.2
  },
  {
   "id": "KovZ9177HS7",
@@ -1605,7 +1445,7 @@
   "city": "Manchester",
   "postcode": "M3 4JQ",
   "events": 6,
-  "nearest_existing_score": 0.0
+  "nearest_existing_score": 0.25
  },
  {
   "id": "KovZ9177AT7",
@@ -1662,5 +1502,1029 @@
   "postcode": "ST1 1DR",
   "events": 6,
   "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177lp7",
+  "name": "Grimsby Auditorium",
+  "city": "Grimsby",
+  "postcode": "DN31 2BH",
+  "events": 6,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177Bg7",
+  "name": "Worthing Assembly Hall",
+  "city": "Worthing",
+  "postcode": "BN11 1HQ",
+  "events": 6,
+  "nearest_existing_score": 0.5
+ },
+ {
+  "id": "KovZ91771WV",
+  "name": "Birmingham Flapper",
+  "city": "Birmingham",
+  "postcode": "B1 2NU",
+  "events": 5,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ91771VV",
+  "name": "The Victoria, Birmingham",
+  "city": "Birmingham",
+  "postcode": "B1 1BN",
+  "events": 5,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177GYV",
+  "name": "Rough Trade Bristol",
+  "city": "Bristol",
+  "postcode": "BS1 2QD",
+  "events": 5,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZpZAlv7IA",
+  "name": "The Gate",
+  "city": "Cardiff",
+  "postcode": "CF24 3JW",
+  "events": 5,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177Sf7",
+  "name": "Whitehall Theatre",
+  "city": "Dundee",
+  "postcode": "DD1 5JA",
+  "events": 5,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177wE0",
+  "name": "Assembly Rooms",
+  "city": "Edinburgh",
+  "postcode": "EH2 2LR",
+  "events": 5,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZpZAl7edA",
+  "name": "EICC",
+  "city": "Edinburgh",
+  "postcode": "EH38EE",
+  "events": 5,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZpZAnklkA",
+  "name": "The Great Hall, Exeter",
+  "city": "Exeter",
+  "postcode": "EX4 6TG",
+  "events": 5,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ9177Plf",
+  "name": "Celtic Park",
+  "city": "Glasgow",
+  "postcode": "G40 3RE",
+  "events": 5,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ9177l9V",
+  "name": "Stereo",
+  "city": "Glasgow",
+  "postcode": "G2 6PH",
+  "events": 5,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177h1f",
+  "name": "Glad Cafe",
+  "city": "Glasgow",
+  "postcode": "G41 2HG",
+  "events": 5,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177zEV",
+  "name": "Bellerby Studio",
+  "city": "Guildford",
+  "postcode": "GU1 2AA",
+  "events": 5,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177XZf",
+  "name": "Lawrence Batley Theatre",
+  "city": "Huddersfield",
+  "postcode": "HD1 2SP",
+  "events": 5,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ9177tk0",
+  "name": "Leeds Irish Centre",
+  "city": "Leeds",
+  "postcode": "LS9 9NT",
+  "events": 5,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ91775xV",
+  "name": "Camp and Furnace",
+  "city": "Liverpool",
+  "postcode": "L1 0BY",
+  "events": 5,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ91771P0",
+  "name": "Arts Club Liverpool - Theatre",
+  "city": "Liverpool",
+  "postcode": "L1 4BH",
+  "events": 5,
+  "nearest_existing_score": 0.2
+ },
+ {
+  "id": "KovZ9177UA0",
+  "name": "Hazlitt Theatre",
+  "city": "Maidstone",
+  "postcode": "ME14 1PL",
+  "events": 5,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177_df",
+  "name": "The Blues Kitchen Manchester",
+  "city": "Manchester",
+  "postcode": "M3 3HN",
+  "events": 5,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ9177ay0",
+  "name": "The Lodge, Manchester",
+  "city": "Manchester",
+  "postcode": "M1 7HE",
+  "events": 5,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZpZAn17dA",
+  "name": "Nottingham, The Level",
+  "city": "Nottingham",
+  "postcode": "NG14GH",
+  "events": 5,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177Gl7",
+  "name": "Nottingham Arts Theatre",
+  "city": "Nottingham",
+  "postcode": "NG1 3BE",
+  "events": 5,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZpZAn6IeA",
+  "name": "The Bullingdon ",
+  "city": "Oxford ",
+  "postcode": "OX4 1UE",
+  "events": 5,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177yi7",
+  "name": "The Cresset",
+  "city": "Peterborough",
+  "postcode": "PE3 8DX",
+  "events": 5,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ917A3gV",
+  "name": "Walker Theatre",
+  "city": "Shrewsbury",
+  "postcode": "SY3 8FT",
+  "events": 5,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177Llf",
+  "name": "The Attic",
+  "city": "Southampton",
+  "postcode": "SO40 9HQ",
+  "events": 5,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177047",
+  "name": "The Fire Station",
+  "city": "Sunderland",
+  "postcode": "SR1 3HA",
+  "events": 5,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177zWf",
+  "name": "Princes Hall Aldershot",
+  "city": "Aldershot",
+  "postcode": "GU11 1NX",
+  "events": 5,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZpZAn6e6A",
+  "name": "Embassy Theatre",
+  "city": "Skegness",
+  "postcode": "PE25 2UG",
+  "events": 5,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177W90",
+  "name": "Stafford Gatehouse Theatre",
+  "city": "Stafford",
+  "postcode": "ST16 2LT",
+  "events": 5,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ9177SXV",
+  "name": "The Tivoli Theatre",
+  "city": "Aberdeen",
+  "postcode": "AB11 6NB",
+  "events": 4,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177whV",
+  "name": "Krakatoa",
+  "city": "Aberdeen",
+  "postcode": "AB11 5AA",
+  "events": 4,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177A6V",
+  "name": "Hare and Hounds",
+  "city": "Birmingham",
+  "postcode": "B14 7JZ",
+  "events": 4,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZpZAtav7A",
+  "name": "Hare & Hounds",
+  "city": "Birmingham",
+  "postcode": "B14 7JZ",
+  "events": 4,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ917769V",
+  "name": "Blackweir Fields, Cardiff",
+  "city": "Cardiff",
+  "postcode": "CF103EA",
+  "events": 4,
+  "nearest_existing_score": 0.2
+ },
+ {
+  "id": "KovZ91777X7",
+  "name": "Hylands Park Chelmsford",
+  "city": "Chelmsford",
+  "postcode": "CM2 8WQ",
+  "events": 4,
+  "nearest_existing_score": 0.2
+ },
+ {
+  "id": "KovZ9177P9f",
+  "name": "Colchester Town Hall",
+  "city": "Colchester",
+  "postcode": "CO11PJ",
+  "events": 4,
+  "nearest_existing_score": 0.5
+ },
+ {
+  "id": "KovZ9177uvV",
+  "name": "hmv Empire",
+  "city": "Coventry",
+  "postcode": "CV1 1LF",
+  "events": 4,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZpZAn1J7A",
+  "name": "The Albany Theatre",
+  "city": "Coventry",
+  "postcode": "CV1 3BH",
+  "events": 4,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177i_V",
+  "name": "Sneaky Pete's.",
+  "city": "Edinburgh",
+  "postcode": "EH1 1JW",
+  "events": 4,
+  "nearest_existing_score": 0.2
+ },
+ {
+  "id": "KovZ9177Ynf",
+  "name": "The Old Fruitmarket",
+  "city": "Glasgow",
+  "postcode": "G1 1NQ",
+  "events": 4,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177YJf",
+  "name": "Queen Margaret Union",
+  "city": "Glasgow",
+  "postcode": "G12 8QN",
+  "events": 4,
+  "nearest_existing_score": 0.2
+ },
+ {
+  "id": "KovZ9177jN7",
+  "name": "Audio",
+  "city": "Glasgow",
+  "postcode": "G1 4PP",
+  "events": 4,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177wY0",
+  "name": "Cottiers Theatre",
+  "city": "Glasgow",
+  "postcode": "G11 5PU",
+  "events": 4,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177RAV",
+  "name": "The Classic Grand",
+  "city": "Glasgow",
+  "postcode": "G1 4QD",
+  "events": 4,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ9177Sb0",
+  "name": "Ivory Blacks",
+  "city": "Glasgow",
+  "postcode": "G1 4PL",
+  "events": 4,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZpZAna7EA",
+  "name": "Harrogate Theatre",
+  "city": "Harrogate",
+  "postcode": "HG1 1QF",
+  "events": 4,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177wv7",
+  "name": "Social",
+  "city": "Hull",
+  "postcode": "HU1 1TU",
+  "events": 4,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ91771rf",
+  "name": "Asylum Hull University Union",
+  "city": "Hull",
+  "postcode": "HU6 7RX",
+  "events": 4,
+  "nearest_existing_score": 0.17
+ },
+ {
+  "id": "KovZ9177OyV",
+  "name": "The Drill",
+  "city": "Lincoln",
+  "postcode": "LN2 1EY",
+  "events": 4,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ917AiVH",
+  "name": "LIVERPOOL GUILD OF STUDENTS MOUNTFORD HALL",
+  "city": "Liverpool",
+  "postcode": "L3 5TR",
+  "events": 4,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177Bp0",
+  "name": "The Auditorium, Liverpool",
+  "city": "Liverpool",
+  "postcode": "L3 4FP",
+  "events": 4,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177Os7",
+  "name": "Liverpool Olympia",
+  "city": "Liverpool",
+  "postcode": "L6 9BY",
+  "events": 4,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ917AQVY",
+  "name": "Hot Water Comedy Club at Blackstock Market",
+  "city": "Liverpool",
+  "postcode": "L36ER",
+  "events": 4,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177W10",
+  "name": "Hazlitt Arts Centre",
+  "city": "Maidstone",
+  "postcode": "ME14 1PL",
+  "events": 4,
+  "nearest_existing_score": 0.5
+ },
+ {
+  "id": "KovZ9177kX0",
+  "name": "Manchester Stoller Hall",
+  "city": "Manchester",
+  "postcode": "M3 1DA",
+  "events": 4,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZpZAn6A7A",
+  "name": "Night and Day",
+  "city": "Manchester",
+  "postcode": "M1 1JN",
+  "events": 4,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177g17",
+  "name": "Manchester Fairfield Social Club",
+  "city": "Manchester",
+  "postcode": "M44JT",
+  "events": 4,
+  "nearest_existing_score": 0.2
+ },
+ {
+  "id": "KovZ9177I60",
+  "name": "Middlesbrough Theatre",
+  "city": "Middlesbrough",
+  "postcode": "TS5 6SA",
+  "events": 4,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177pAf",
+  "name": "Digital",
+  "city": "Newcastle",
+  "postcode": "NE1 4EP",
+  "events": 4,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZpZAnFJIA",
+  "name": "Rough Trade Nottingham",
+  "city": "Nottingham",
+  "postcode": "NG1 3AJ",
+  "events": 4,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ9177Yl0",
+  "name": "Southampton Joiners",
+  "city": "Southampton",
+  "postcode": "SO14 1NS",
+  "events": 4,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ9177Ab0",
+  "name": "Stevenage Concert Hall",
+  "city": "Stevenage",
+  "postcode": "SG1 1LZ",
+  "events": 4,
+  "nearest_existing_score": 0.4
+ },
+ {
+  "id": "KovZ9177Ge0",
+  "name": "Swindon Arts Centre",
+  "city": "Swindon",
+  "postcode": "SN1 4BJ",
+  "events": 4,
+  "nearest_existing_score": 0.5
+ },
+ {
+  "id": "KovZ9177Oi0",
+  "name": "Arena Torquay",
+  "city": "Torquay",
+  "postcode": "TQ11DZ",
+  "events": 4,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZpZAnFFIA",
+  "name": "Huntingdon Hall",
+  "city": "Worcester",
+  "postcode": "WR1 3LD",
+  "events": 4,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZpZAnakeA",
+  "name": "Fulford Arms",
+  "city": "York",
+  "postcode": "YO10 4EX",
+  "events": 4,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZpZAleldA",
+  "name": "The Basement, City Screen Picturehouse",
+  "city": "York",
+  "postcode": "YO1 9QP",
+  "events": 4,
+  "nearest_existing_score": 0.2
+ },
+ {
+  "id": "KovZ9177kI7",
+  "name": "Fairfield Halls",
+  "city": "Croydon",
+  "postcode": "CR9 9DG",
+  "events": 4,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177YeV",
+  "name": "The Beck Theatre",
+  "city": "Hayes",
+  "postcode": "UB3 2UE",
+  "events": 4,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZpZAnklAA",
+  "name": "Bridlington Spa Centre",
+  "city": "Bridlington",
+  "postcode": "YO15 3JH",
+  "events": 4,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZpZAnJAtA",
+  "name": "Epsom Playhouse",
+  "city": "Epsom",
+  "postcode": "KT18 5AL",
+  "events": 4,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZpZAlAdeA",
+  "name": "Docks Academy",
+  "city": "Grimsby",
+  "postcode": "DN31 3JD",
+  "events": 4,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZpZAn1t1A",
+  "name": "Pavilion Theatre, Worthing",
+  "city": "Worthing",
+  "postcode": "BN113PX",
+  "events": 4,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ9177fqV",
+  "name": "Cafe Drummond",
+  "city": "Aberdeen",
+  "postcode": "AB10 1JR",
+  "events": 3,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177RP7",
+  "name": "Beach Ballroom",
+  "city": "Aberdeen",
+  "postcode": "AB24 5NR",
+  "events": 3,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177fm7",
+  "name": "Dead Wax",
+  "city": "Birmingham",
+  "postcode": "B9 4ED",
+  "events": 3,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177kZ7",
+  "name": "Forum Digbeth",
+  "city": "Birmingham",
+  "postcode": "B94EL",
+  "events": 3,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZpZAta6EA",
+  "name": "The Castle & Falcon",
+  "city": "Birmingham",
+  "postcode": "B12 9AT",
+  "events": 3,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177J2f",
+  "name": "The Crossing",
+  "city": "Birmingham",
+  "postcode": "B5 5SU",
+  "events": 3,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177a5f",
+  "name": "Hare & Hounds 2",
+  "city": "Birmingham",
+  "postcode": "B147JZ",
+  "events": 3,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ91776B7",
+  "name": "Birmingham Dead Wax",
+  "city": "Birmingham",
+  "postcode": "B9 4ED",
+  "events": 3,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ9177_uV",
+  "name": "The Folklore Rooms",
+  "city": "Brighton",
+  "postcode": "BN1 3GJ",
+  "events": 3,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZpZAn16IA",
+  "name": "Brighton Prince Albert",
+  "city": "Brighton",
+  "postcode": "BN1 4ED",
+  "events": 3,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ917758V",
+  "name": "Canon's Marsh Amphitheatre",
+  "city": "Bristol",
+  "postcode": "BS15LL",
+  "events": 3,
+  "nearest_existing_score": 0.17
+ },
+ {
+  "id": "KovZ9177Bif",
+  "name": "Trinity Arts Centre",
+  "city": "Bristol",
+  "postcode": "BS2 0NW",
+  "events": 3,
+  "nearest_existing_score": 0.5
+ },
+ {
+  "id": "KovZ9177Fq7",
+  "name": "1532 Performing Arts Centre",
+  "city": "Bristol",
+  "postcode": "BS8 1SJ",
+  "events": 3,
+  "nearest_existing_score": 0.4
+ },
+ {
+  "id": "KovZpZAl7laA",
+  "name": "MASH",
+  "city": "Cambridge ",
+  "postcode": "CB2 3PF",
+  "events": 3,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZpZAnJ6vA",
+  "name": "Gulbenkian Theatre",
+  "city": "Canterbury",
+  "postcode": "CT2 7NB",
+  "events": 3,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177y5V",
+  "name": "Sherman Theatre",
+  "city": "Cardiff",
+  "postcode": "CF24 4YE",
+  "events": 3,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZpZAt1llA",
+  "name": "The Forum Music Centre",
+  "city": "Darlington",
+  "postcode": "DL1 1SG",
+  "events": 3,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ9177VfV",
+  "name": "Cast Doncaster",
+  "city": "Doncaster",
+  "postcode": "DN1 3BU",
+  "events": 3,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177S27",
+  "name": "Pleasance Theatre, Edinburgh",
+  "city": "Edinburgh",
+  "postcode": "EH8 9TJ",
+  "events": 3,
+  "nearest_existing_score": 0.5
+ },
+ {
+  "id": "KovZ9177K4f",
+  "name": "Traverse Theatre",
+  "city": "Edinburgh",
+  "postcode": "EH1 2ED",
+  "events": 3,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177ntf",
+  "name": "Edinburgh Castle Esplanade",
+  "city": "Edinburgh",
+  "postcode": "EH1 2NG",
+  "events": 3,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ9177g50",
+  "name": "Kings Theatre Glasgow",
+  "city": "Glasgow",
+  "postcode": "G2 4JN",
+  "events": 3,
+  "nearest_existing_score": 0.5
+ },
+ {
+  "id": "KovZ9177wRV",
+  "name": "SWG3",
+  "city": "Glasgow",
+  "postcode": "G3 8QG",
+  "events": 3,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177s8f",
+  "name": "Nice n Sleazy",
+  "city": "Glasgow",
+  "postcode": "G2 3LG",
+  "events": 3,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177bB0",
+  "name": "Star Inn",
+  "city": "Guildford",
+  "postcode": "GU1 3TY",
+  "events": 3,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177Dl0",
+  "name": "Hull Welly Club",
+  "city": "Hull",
+  "postcode": "HU31TS",
+  "events": 3,
+  "nearest_existing_score": 0.2
+ },
+ {
+  "id": "KovZpZAn1vlA",
+  "name": "Lending Rooms",
+  "city": "Leeds",
+  "postcode": "LS2 3AP",
+  "events": 3,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177aNf",
+  "name": "Arts Club Liverpool - Loft",
+  "city": "Liverpool",
+  "postcode": "L1 4BH",
+  "events": 3,
+  "nearest_existing_score": 0.2
+ },
+ {
+  "id": "KovZ917ARgd",
+  "name": "Heaton Park",
+  "city": "Manchester",
+  "postcode": "M250EQ",
+  "events": 3,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ9177U0V",
+  "name": "Anarchy Brew Co",
+  "city": "Newcastle",
+  "postcode": "NE64NQ",
+  "events": 3,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZpZAnJe6A",
+  "name": "Just The Tonic at Metronome",
+  "city": "Nottingham",
+  "postcode": "NG11AP",
+  "events": 3,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177kUV",
+  "name": "Glee Club Oxford",
+  "city": "Oxford",
+  "postcode": "OX4 1UE",
+  "events": 3,
+  "nearest_existing_score": 0.2
+ },
+ {
+  "id": "KovZ9177Fz0",
+  "name": "Kings Theatre Portsmouth",
+  "city": "Portsmouth",
+  "postcode": "PO5 2SH",
+  "events": 3,
+  "nearest_existing_score": 0.5
+ },
+ {
+  "id": "KovZ91779mf",
+  "name": "Network",
+  "city": "Sheffield",
+  "postcode": "S1 4QD",
+  "events": 3,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177kl7",
+  "name": "O2 Academy2 Sheffield",
+  "city": "Sheffield",
+  "postcode": "S1 2PN",
+  "events": 3,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZpZAlFE1A",
+  "name": "Papillon",
+  "city": "Southampton",
+  "postcode": "SO15 1GG",
+  "events": 3,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ91776C0",
+  "name": "Mast Mayflower Studios",
+  "city": "Southampton",
+  "postcode": "SO147DU",
+  "events": 3,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ9177I67",
+  "name": "Central Hall, Southampton",
+  "city": "Southampton",
+  "postcode": "SO14 1NF",
+  "events": 3,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ9177nFV",
+  "name": "The Atkinson",
+  "city": "Southport",
+  "postcode": "PR8 1DB",
+  "events": 3,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177110",
+  "name": "Gordon Craig Theatre",
+  "city": "Stevenage",
+  "postcode": "SG1 1LZ",
+  "events": 3,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ9177_DV",
+  "name": "The Strines Nightingale",
+  "city": "Stockport",
+  "postcode": "SK6 7GE",
+  "events": 3,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177z_f",
+  "name": "Victoria Park",
+  "city": "Warrington",
+  "postcode": "WA4 1DG",
+  "events": 3,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ91770R7",
+  "name": "Wolverhampton Arts Centre",
+  "city": "Wolverhampton",
+  "postcode": "WV14AN",
+  "events": 3,
+  "nearest_existing_score": 0.5
+ },
+ {
+  "id": "KovZ9177Db7",
+  "name": "Bedford Park",
+  "city": "Bedford",
+  "postcode": "MK40 2PF",
+  "events": 3,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ9177I87",
+  "name": "Esquires",
+  "city": "Bedford",
+  "postcode": "MK40 2QG",
+  "events": 3,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ9177FjV",
+  "name": "The Mill Arts Centre",
+  "city": "Banbury",
+  "postcode": "OX16 5QE",
+  "events": 3,
+  "nearest_existing_score": 0.5
+ },
+ {
+  "id": "KovZ9177O67",
+  "name": "Dudley Town Hall",
+  "city": "Dudley",
+  "postcode": "DY1 1HP",
+  "events": 3,
+  "nearest_existing_score": 0.5
+ },
+ {
+  "id": "KovZ9177V1f",
+  "name": "Easterbrook Hall",
+  "city": "Dumfries",
+  "postcode": "DG1 4ZE",
+  "events": 3,
+  "nearest_existing_score": 0.33
+ },
+ {
+  "id": "KovZ9177180",
+  "name": "Quarterhouse",
+  "city": "Folkestone",
+  "postcode": "CT20 1BN",
+  "events": 3,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ91771yV",
+  "name": "The Capitol Horsham",
+  "city": "Horsham",
+  "postcode": "RH12 1RG",
+  "events": 3,
+  "nearest_existing_score": 0.0
+ },
+ {
+  "id": "KovZ91771z7",
+  "name": "Adam Smith Theatre",
+  "city": "Kirkcaldy",
+  "postcode": "KY1 1ET",
+  "events": 3,
+  "nearest_existing_score": 0.25
+ },
+ {
+  "id": "KovZ9177MXV",
+  "name": "Loughborough Town Hall",
+  "city": "Loughborough",
+  "postcode": "LE11 3EB",
+  "events": 3,
+  "nearest_existing_score": 0.5
+ },
+ {
+  "id": "KovZ9177Oef",
+  "name": "Norden Farm Centre",
+  "city": "Maidenhead ",
+  "postcode": "SL6 4PF",
+  "events": 3,
+  "nearest_existing_score": 0.25
  }
 ]

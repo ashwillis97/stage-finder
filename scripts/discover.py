@@ -11,6 +11,10 @@ CITIES = """Aberdeen Aberystwyth Barnsley Basildon Bath Belfast Birmingham Black
 CITIES = [c for c in CITIES if c not in ("Milton", "Keynes", "St", "Albans", "Stoke")] + ["Milton Keynes", "St Albans", "Stoke-on-Trent"]
 
 
+EXTRA = """Accrington Aldershot Alloa Andover Ayr Banbury Barnstaple Basingstoke Bedford Berwick Beverley Bideford Bishop-Auckland Bognor Boston Bracknell Bridgwater Bridlington Burton Bury-St-Edmunds Camberley Cannock Chatham Chesham Chichester Chippenham Clacton Colwyn Crewe Cromer Cwmbran Dartford Daventry Dorchester Dudley Dumfries Dunfermline Eastleigh Ely Epsom Evesham Fareham Farnham Folkestone Gateshead Gillingham Gosport Grantham Grimsby Hartlepool Harlow Hemel Hertford Hinckley Horsham Hove Ilkley Keighley Kettering Kidderminster Kilmarnock Kirkcaldy Knutsford Lancing Leamington Leatherhead Lichfield Loughborough Lowestoft Macclesfield Maidenhead Malvern Mansfield Newbury Newquay Northwich Nuneaton Oldham Penzance Pontypridd Rochdale Rotherham Rugby Runcorn Salisbury Sevenoaks Skegness Slough Solihull Southwold Stafford Stirling Stratford Sudbury Sutton Tamworth Telford Tewkesbury Tunbridge Wakefield Walsall Warwick Wellingborough Weston Weymouth Whitby Whitehaven Widnes Worthing Wrexham Yarmouth""".split()
+CITIES = CITIES + [c.replace("-", " ") for c in EXTRA]
+
+
 def call(path, params):
     q = urllib.parse.urlencode(dict(params, apikey=KEY))
     for attempt in range(3):
@@ -52,8 +56,12 @@ for v in found.values():
     best = max((venue_score(v["name"], h) for h in have), default=0)
     rows.append({"id": v["id"], "name": v["name"], "city": v["city"], "postcode": v["postcode"], "events": n, "nearest_existing_score": round(best, 2)})
 rows.sort(key=lambda r: -r["events"])
-new = [r for r in rows if r["nearest_existing_score"] < 0.6 and r["events"] >= 6]
+new = [r for r in rows if r["nearest_existing_score"] < 0.6 and r["events"] >= 3]
 (ROOT / "discovered_venues.json").write_text(json.dumps(new, indent=1, ensure_ascii=False), encoding="utf-8")
-print(f"{len(found)} venues seen, {len(new)} not in our list with 6+ events")
-for r in new[:120]:
+import re
+KW = re.compile(r"theatre|theater|hall|arena|centre|center|playhouse|opera|auditorium|assembly|corn exchange|pavilion|dome|palace|empire|forum|guildhall|civic|concert|arts|academy|lyceum|apollo|regent|royal|grand|rep\b|studio|amphitheatre|castle|park|cathedral|abbey|church|college|university", re.I)
+BAD = re.compile(r"pub\b|bar\b|club\b|inn\b|tavern|union|social|arms|hotel|stadium|racecourse|golf|rugby|football|cricket|fc\b|school|ice|sports|snooker", re.I)
+new = [r for r in new if KW.search(r["name"]) and not BAD.search(r["name"])]
+print(f"{len(found)} venues seen, {len(new)} candidate theatres/halls not in our list")
+for r in new[:200]:
     print(f"  {r['events']:3d}  {r['name']} | {r['city']} | {r['postcode']} | {r['id']}")

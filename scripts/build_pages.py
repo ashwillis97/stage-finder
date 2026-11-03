@@ -53,7 +53,11 @@ h1{margin:6px 0 0;font-family:var(--font-display);font-weight:800;font-size:clam
 .lede{color:var(--muted);margin:10px 0 0;max-width:62ch}
 h2{margin:30px 0 8px;font-family:var(--font-display);font-weight:700;font-size:22px;letter-spacing:-.01em;color:var(--accent)}
 h2 a{color:inherit;text-decoration:none}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px 16px;margin:10px 0;display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px 16px;margin:10px 0;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center}
+.card .act{flex-wrap:nowrap;justify-content:flex-end}
+.card .btn{min-width:172px}
+.btn{white-space:nowrap;text-align:center}
+@media(max-width:560px){.card{grid-template-columns:1fr}.card .act{justify-content:flex-start}}
 .card h3{margin:0;font-size:19px;font-weight:700;line-height:1.25;letter-spacing:-.01em}
 .meta{margin:2px 0 0;color:var(--muted);font-size:14px}
 .act{display:flex;gap:8px;flex-wrap:wrap}
@@ -497,7 +501,7 @@ def main():
 
 
     # ---- newly added shows and venues
-    cutoff = date.fromordinal(today.toordinal() - 14).isoformat()
+    cutoff = date.fromordinal(today.toordinal() - 7).isoformat()
     nv = {v: dd for v, dd in (data.get("new_venues") or {}).items() if dd >= cutoff and v in by_venue}
     fresh_shows = sorted((s for s in shows if s.get("added", "") >= cutoff and s["theatre"] not in nv), key=lambda s: (s["added"], s["title"].lower()), reverse=True)
     parts = ""
@@ -513,10 +517,10 @@ def main():
             sec += show_card(s, today, True, (places.get(s["theatre"]) or [None])[0])
         parts += sec
     if not parts:
-        parts = '<p class="intro">Nothing new in the last two weeks yet. New shows and venues will appear here as they are announced.</p>'
+        parts = '<p class="intro">Nothing new in the last 7 days yet. New shows and venues will appear here as they are announced.</p>'
     body = f"""<p class="crumbs"><a href="/">Home</a></p>
 <h1>Newly added shows</h1>
-<p class="lede">Shows and venues added to Find a Show in the last two weeks, newest first.</p>
+<p class="lede">Shows and venues added to Find a Show in the last 7 days, newest first.</p>
 {parts}
 <div class="cta"><p>Looking for something specific? Search every show and venue.</p><a class="btn" href="/">Search all shows</a></div>"""
     write("/new/", page("Newly added shows | Find a Show", "The latest shows and venues added to Find a Show, newest first.", "/new/", body,

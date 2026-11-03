@@ -373,6 +373,8 @@ h2 { font-weight: 700; letter-spacing: -.01em; font-size: 22px; }
 .resultbar { flex-wrap: wrap; row-gap: 4px; }
 .count { white-space: nowrap; }
 #newLink, #clear { font-size: 14px; }
+#alertLink { display: inline-block; text-decoration: none; background: #c4411d; color: #fff; font-weight: 600; font-size: 14px; padding: 6px 14px; border-radius: 999px; }
+#alertLink:hover { background: #a8391a; }
 
 /* Email sign-up band */
 .alerts { display: flex; gap: 40px; align-items: center; margin: 40px 0 24px; padding: 28px; background: var(--surface-2); border: 1px solid rgba(31,26,22,.1); border-radius: 16px; }
@@ -935,9 +937,9 @@ h2 { font-size: 20px; font-weight: 600; letter-spacing: 0; color: var(--muted); 
     .then(function (data) {
       shows = Array.isArray(data.shows) ? data.shows : []; coverage = data.coverage || null;
       (function () {
-        var cut = new Date(); cut.setDate(cut.getDate() - 14); var c = iso(cut), nv = data.new_venues || {};
+        var cut = new Date(); cut.setDate(cut.getDate() - 7); var c = iso(cut), nv = data.new_venues || {};
         var n = shows.filter(function (s) { return s.added && s.added >= c && !nv[s.theatre]; }).length, v = Object.keys(nv).filter(function (k) { return nv[k] >= c; }).length;
-        if (n || v) { var el = $("newLink"); el.textContent = (n ? n + " new show" + (n === 1 ? "" : "s") : "") + (n && v ? " and " : "") + (v ? v + " new venue" + (v === 1 ? "" : "s") : "") + " this fortnight"; el.hidden = false; }
+        if (n || v) { var el = $("newLink"); el.textContent = (n ? n + " new show" + (n === 1 ? "" : "s") : "") + (n && v ? " and " : "") + (v ? v + " new venue" + (v === 1 ? "" : "s") : "") + " this week"; el.hidden = false; }
       })();
       if (data.places) Object.keys(data.places).forEach(function (k) { if (!PLACE[k]) PLACE[k] = [k, data.places[k][0], data.places[k][1], data.places[k][2], data.places[k][3] || ""]; });
       buildChips(); buildVenues(); buildAbout(); render(); updTriggers();

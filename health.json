@@ -1,16 +1,14 @@
 {
  "readers": 170,
  "shows_before": 6401,
- "shows_now": 6402,
- "broken": [
-  "Venue Cymru"
- ],
+ "shows_now": 6398,
+ "broken": [],
  "never_worked": [
   "Victoria Palace Theatre"
  ],
  "ticketmaster": {
   "venues_found": 299,
-  "shows_matched": 3279,
+  "shows_matched": 3277,
   "errors": 0
  }
 }

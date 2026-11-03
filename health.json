@@ -1,14 +1,15 @@
 {
- "readers": 170,
- "shows_before": 6401,
- "shows_now": 6398,
- "broken": [],
- "never_worked": [
-  "Victoria Palace Theatre"
+ "readers": 169,
+ "shows_before": 6405,
+ "shows_now": 6413,
+ "broken": [
+  "Milton Keynes Theatre",
+  "Opera House Manchester"
  ],
+ "never_worked": [],
  "ticketmaster": {
-  "venues_found": 299,
-  "shows_matched": 3277,
+  "venues_found": 300,
+  "shows_matched": 3281,
   "errors": 0
  }
 }

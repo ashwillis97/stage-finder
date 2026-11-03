@@ -240,7 +240,10 @@ def page(title, desc, path, body, ld=None, noindex=False):
 <meta property="og:url" content="{url}">
 <meta property="og:image" content="{SITE}/og.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/og.png">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap">

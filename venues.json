@@ -179,9 +179,14 @@
    "name": "Motorpoint Arena Nottingham",
    "slug": "motorpoint-arena",
    "urls": [
-    "https://www.motorpointarenanottingham.com/whats-on/"
+    "https://www.ticketmaster.co.uk/"
    ],
-   "js": true
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177tQ7"
+   ],
+   "city": "Nottingham",
+   "postcode": "NG1 1WA"
   },
   {
    "name": "Forest Live Cannock Chase",
@@ -1094,10 +1099,12 @@
    "postcode": "SE1 8XX",
    "slug": "queen-elizabeth-hall-london",
    "urls": [
-    "https://www.southbankcentre.co.uk/whats-on"
+    "https://www.ticketmaster.co.uk/"
    ],
-   "reader": "generic",
-   "match": "Queen Elizabeth Hall"
+   "reader": "tm",
+   "tm_ids": [
+    "KovZ9177AQ0"
+   ]
   },
   {
    "name": "Royal Festival Hall",
@@ -1105,10 +1112,12 @@
    "postcode": "SE1 8XX",
    "slug": "royal-festival-hall-london",
    "urls": [
-    "https://www.southbankcentre.co.uk/whats-on"
+    "https://www.ticketmaster.co.uk/"
    ],
-   "reader": "generic",
-   "match": "Royal Festival Hall"
+   "reader": "tm",
+   "tm_ids": [
+    "KovZpZAnFvlA"
+   ]
   },
   {
    "name": "Sadler's Wells Theatre",

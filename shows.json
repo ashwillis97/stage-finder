@@ -1,6 +1,6 @@
 {
  "sample": false,
- "updated": "2026-11-03T02:01+00:00",
+ "updated": "2026-11-03T08:09+00:00",
  "coverage": {
   "none": [],
   "partial": {
@@ -10,9 +10,7 @@
    "Lichfield Garrick": "Not updated automatically yet, so these listings may be out of date.",
    "Palace Theatre Mansfield": "Not updated automatically yet, so these listings may be out of date.",
    "Brewhouse Arts Centre": "Not updated automatically yet, so these listings may be out of date.",
-   "Motorpoint Arena Nottingham": "Not updated automatically yet, so these listings may be out of date.",
-   "Royal Festival Hall": "Not updated automatically yet, so these listings may be out of date.",
-   "Queen Elizabeth Hall": "Not updated automatically yet, so these listings may be out of date."
+   "Motorpoint Arena Nottingham": "Not updated automatically yet, so these listings may be out of date."
   }
  },
  "shows": [
@@ -1610,9 +1608,9 @@
    "start": "2026-11-04",
    "end": "2026-11-04",
    "url": "https://www.waterfront.co.uk/what-s-on/leslie-odom-jr/",
+   "gsrc": "tm",
    "added": "2026-11-03",
-   "tm": "https://www.ticketmaster.ie/leslie-odom-jr-belfast-04-11-2026/event/380064FEE1A22314",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.ie/leslie-odom-jr-belfast-04-11-2026/event/380064FEE1A22314"
   },
   {
    "title": "Life Drawing",
@@ -3716,9 +3714,9 @@
    "start": "2026-11-06",
    "end": "2026-11-06",
    "url": "https://www.academymusicgroup.com/o2apollomanchester/events/the-jacksons-tickets-ae338884",
+   "gsrc": "tm",
    "added": "2026-11-03",
-   "tm": "https://www.ticketmaster.co.uk/the-jacksons-manchester-06-11-2026/event/360064B60D5DE293",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/the-jacksons-manchester-06-11-2026/event/360064B60D5DE293"
   },
   {
    "title": "The Proclaimers",
@@ -7030,6 +7028,14 @@
    "gsrc": "tm"
   },
   {
+   "title": "Richard Ayoade",
+   "theatre": "Bath Forum",
+   "genre": "",
+   "start": "2026-11-11",
+   "end": "2026-11-11",
+   "url": "https://www.bathforum.co.uk/whats-on/richard-ayoade-jx1y"
+  },
+  {
    "title": "Romesh Ranganathan Will Change Your Life",
    "theatre": "Assembly Hall Theatre",
    "genre": "",
@@ -7521,6 +7527,16 @@
    "end": "2026-11-12",
    "url": "https://www.ticketmaster.co.uk/joe-wells-daddy-autism-cambridge-12-11-2026/event/1F006472D4D86EFB",
    "tm": "https://www.ticketmaster.co.uk/joe-wells-daddy-autism-cambridge-12-11-2026/event/1F006472D4D86EFB",
+   "gsrc": "tm"
+  },
+  {
+   "title": "Jools Holland",
+   "theatre": "Bath Forum",
+   "genre": "Music",
+   "start": "2026-11-12",
+   "end": "2026-11-12",
+   "url": "https://www.bathforum.co.uk/whats-on/jools-holland-c7h1",
+   "tm": "https://www.ticketmaster.co.uk/jools-holland-and-his-rhythm-and-bath-12-11-2026/event/37006433A14B1B53",
    "gsrc": "tm"
   },
   {
@@ -8658,6 +8674,17 @@
    "url": "https://bwdvenues.com/whats-on/tez-ilyas-2026/"
   },
   {
+   "title": "The Amy Winehouse Band",
+   "theatre": "Bath Forum",
+   "genre": "Music",
+   "start": "2026-11-13",
+   "end": "2026-11-13",
+   "url": "https://www.bathforum.co.uk/whats-on/the-amy-winehouse-band-sg52",
+   "added": "2026-11-01",
+   "tm": "https://www.ticketmaster.co.uk/the-amy-winehouse-band-back-to-bath-13-11-2026/event/37006443D57034D1",
+   "gsrc": "tm"
+  },
+  {
    "title": "The Australian Pink Floyd",
    "theatre": "O2 Apollo Manchester",
    "genre": "Music",
@@ -8761,9 +8788,9 @@
    "start": "2026-11-13",
    "end": "2026-11-13",
    "url": "https://www.ovohydro.com/events/detail/the-script-2026",
+   "gsrc": "tm",
    "added": "2026-11-03",
-   "tm": "https://www.ticketmaster.co.uk/the-script-the-man-in-the-glasgow-13-11-2026/event/360064B3D88D8B5E",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/the-script-the-man-in-the-glasgow-13-11-2026/event/360064B3D88D8B5E"
   },
   {
    "title": "The Script",
@@ -9490,6 +9517,17 @@
    "end": "2026-11-14",
    "url": "https://www.ticketmaster.co.uk/shrek-rave-london-14-11-2026/event/3E0064A5DC945CB8",
    "tm": "https://www.ticketmaster.co.uk/shrek-rave-london-14-11-2026/event/3E0064A5DC945CB8",
+   "gsrc": "tm"
+  },
+  {
+   "title": "Simon Brodkin",
+   "theatre": "Bath Forum",
+   "genre": "Comedy",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "url": "https://www.bathforum.co.uk/whats-on/simon-brodkin-flgq",
+   "added": "2026-11-02",
+   "tm": "https://www.ticketmaster.co.uk/simon-brodkin-unleashed-bath-14-11-2026/event/370064919272297E",
    "gsrc": "tm"
   },
   {
@@ -15922,9 +15960,9 @@
    "start": "2026-11-27",
    "end": "2026-11-27",
    "url": "https://www.utilitaarenacardiff.co.uk/whats-on/",
+   "gsrc": "tm",
    "added": "2026-11-03",
-   "tm": "https://www.ticketmaster.co.uk/squeeze-cardiff-27-11-2026/event/36006375B8C589E6",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/squeeze-cardiff-27-11-2026/event/36006375B8C589E6"
   },
   {
    "title": "Step Into Christmas",
@@ -17502,9 +17540,9 @@
    "start": "2026-12-01",
    "end": "2026-12-01",
    "url": "https://www.glasgowlife.org.uk/event/1/the-big-christmas-sing-a-long-with-aled-jones-and-alexander-armstrong",
+   "gsrc": "tm",
    "added": "2026-11-03",
-   "tm": "https://www.ticketmaster.co.uk/the-big-christmas-sing-along-with-glasgow-01-12-2026/event/3600647BE06A9FEB",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/the-big-christmas-sing-along-with-glasgow-01-12-2026/event/3600647BE06A9FEB"
   },
   {
    "title": "The Choir of Man",
@@ -26413,6 +26451,16 @@
    "url": "https://www.eventimapollo.com/events/first-aid-kit",
    "gsrc": "tm",
    "tm": "https://www.ticketmaster.co.uk/first-aid-kit-london-28-01-2027/event/36006541F4E3C205"
+  },
+  {
+   "title": "Hannah East: Express Yourself",
+   "theatre": "Wyvern Theatre",
+   "genre": "Comedy",
+   "start": "2027-01-28",
+   "end": "2027-01-28",
+   "url": "https://www.ticketmaster.co.uk/hannah-east-express-yourself-swindon-28-01-2027/event/360065636BDF132F",
+   "tm": "https://www.ticketmaster.co.uk/hannah-east-express-yourself-swindon-28-01-2027/event/360065636BDF132F",
+   "gsrc": "tm"
   },
   {
    "title": "Jack Whitehall",
@@ -37039,6 +37087,16 @@
    "url": "https://www.theatresevern.co.uk/whats-on/thats-so-90s//"
   },
   {
+   "title": "The 39 Steps",
+   "theatre": "New Vic Theatre",
+   "genre": "Play",
+   "start": "2027-03-20",
+   "end": "2027-04-17",
+   "url": "https://www.newvictheatre.org.uk/productions/the-39-steps-3/",
+   "gsrc": "guess",
+   "added": "2026-11-03"
+  },
+  {
    "title": "The Amy Winehouse Band: Back to Black 20th Anniversary Tour",
    "theatre": "Royal and Derngate",
    "genre": "Music",
@@ -41203,6 +41261,15 @@
    "url": "https://www.theatresevern.co.uk/whats-on/the-lindisfarne-story//"
   },
   {
+   "title": "This Is The Life",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2027-04-21",
+   "end": "2027-04-24",
+   "url": "https://www.newvictheatre.org.uk/productions/this-is-the-life/",
+   "added": "2026-11-03"
+  },
+  {
    "title": "Alan Carr: Have I Said Too Much?",
    "theatre": "Bournemouth International Centre",
    "genre": "Comedy",
@@ -43168,6 +43235,15 @@
    "gsrc": "tm"
   },
   {
+   "title": "Folk",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2027-05-07",
+   "end": "2027-05-29",
+   "url": "https://www.newvictheatre.org.uk/productions/folk/",
+   "added": "2026-11-03"
+  },
+  {
    "title": "Jo Whiley’s 90s Anthems",
    "theatre": "O2 Institute Birmingham",
    "genre": "Music",
@@ -44891,9 +44967,9 @@
    "start": "2027-05-22",
    "end": "2027-05-22",
    "url": "https://bristolbeacon.org/whats-on/kings-of-convenience/",
+   "gsrc": "tm",
    "added": "2026-11-03",
-   "tm": "https://www.ticketmaster.co.uk/kings-of-convenience-bristol-22-05-2027/event/370064AEFA3D2D7D",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/kings-of-convenience-bristol-22-05-2027/event/370064AEFA3D2D7D"
   },
   {
    "title": "LOVE with Johnny Echols: 60th Anniversary of Forever Changes",
@@ -45014,14 +45090,6 @@
    "start": "2027-05-24",
    "end": "2027-05-29",
    "url": "https://www.atgtickets.com/shows/grease/regent-theatre/"
-  },
-  {
-   "title": "Madula",
-   "theatre": "New Vic Theatre",
-   "genre": "",
-   "start": "2027-05-24",
-   "end": "2027-05-24",
-   "url": "https://www.newvictheatre.org.uk/productions/madula/"
   },
   {
    "title": "Before I Go To Sleep",
@@ -45164,14 +45232,6 @@
    "url": "https://www.ticketmaster.co.uk/flo-joan-with-feeling-winchester-27-05-2027/event/1F00655CA9863AA4",
    "tm": "https://www.ticketmaster.co.uk/flo-joan-with-feeling-winchester-27-05-2027/event/1F00655CA9863AA4",
    "gsrc": "tm"
-  },
-  {
-   "title": "Jack Dee: Jack’s Joke Show",
-   "theatre": "New Vic Theatre",
-   "genre": "",
-   "start": "2027-05-27",
-   "end": "2027-05-27",
-   "url": "https://www.newvictheatre.org.uk/productions/jack-dee-jacks-joke-show/"
   },
   {
    "title": "Johannes Radebe: Finally Home",

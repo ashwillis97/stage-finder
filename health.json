@@ -1,9 +1,10 @@
 {
  "readers": 172,
- "shows_before": 5679,
- "shows_now": 5675,
+ "shows_before": 5647,
+ "shows_now": 5654,
  "broken": [
   "Motorpoint Arena Nottingham",
+  "Queen Elizabeth Hall",
   "Royal Festival Hall"
  ],
  "never_worked": [
@@ -11,7 +12,7 @@
  ],
  "ticketmaster": {
   "venues_found": 229,
-  "shows_matched": 2550,
+  "shows_matched": 2535,
   "errors": 0
  }
 }

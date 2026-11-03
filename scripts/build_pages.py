@@ -260,6 +260,7 @@ def page(title, desc, path, body, ld=None, noindex=False):
 Some ticket links are affiliate links, which means we may earn a commission if you buy, at no extra cost to you.</p>
 </footer>
 </div>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "8386717571e94d43ae043733aa4dc407"}}'></script>
 </body>
 </html>
 """

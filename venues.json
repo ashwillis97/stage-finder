@@ -2073,14 +2073,10 @@
    "name": "Victoria Palace Theatre",
    "city": "London",
    "postcode": "SW1E 5EA",
-   "reader": "atgshow",
    "slug": "victoria-palace-theatre-london",
    "urls": [
-    "https://www.atgtickets.com/venues/victoria-palace-theatre/whats-on/"
-   ],
-   "follow": "atgtickets\\.com/shows/[^/]+/[^/]+/?$",
-   "max": 8,
-   "retry": true
+    "https://www.delfontmackintosh.co.uk/"
+   ]
   },
   {
    "name": "Wyndham's Theatre",

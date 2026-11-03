@@ -478,8 +478,8 @@ def read_atg_show(prefix, theatre):
     return out
 
 
-DELFONT_VENUES = ["Aldwych", "Cambridge Theatre", "Gillian Lynne", "His Majesty", "Lyceum", "Novello", "Noël Coward", "Prince Edward", "Sondheim", "Wyndham"]
-DELFONT_NAMES = {"wyndham's theatre": "Wyndham's Theatre", "his majesty's theatre": "His Majesty's Theatre", "noël coward theatre": "Noël Coward Theatre", "prince edward theatre": "Prince Edward Theatre", "sondheim theatre": "Sondheim Theatre", "novello theatre": "Novello Theatre", "lyceum theatre": "Lyceum Theatre", "aldwych theatre": "Aldwych Theatre", "cambridge theatre": "Cambridge Theatre", "gillian lynne theatre": "Gillian Lynne Theatre"}
+DELFONT_VENUES = ["Aldwych", "Cambridge Theatre", "Gillian Lynne", "His Majesty", "Lyceum", "Novello", "Noël Coward", "Prince Edward", "Sondheim", "Victoria Palace", "Wyndham"]
+DELFONT_NAMES = {"wyndham's theatre": "Wyndham's Theatre", "his majesty's theatre": "His Majesty's Theatre", "noël coward theatre": "Noël Coward Theatre", "prince edward theatre": "Prince Edward Theatre", "sondheim theatre": "Sondheim Theatre", "novello theatre": "Novello Theatre", "lyceum theatre": "Lyceum Theatre", "aldwych theatre": "Aldwych Theatre", "cambridge theatre": "Cambridge Theatre", "gillian lynne theatre": "Gillian Lynne Theatre", "victoria palace theatre": "Victoria Palace Theatre"}
 
 
 def read_delfont(prefix, theatre):

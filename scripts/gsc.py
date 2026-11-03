@@ -18,7 +18,7 @@ print("visible properties:", sites, r.text[:200] if not r.ok else "")
 site = next((s for s in sites if "findashow" in s), None)
 out = {"properties": sites, "site": site}
 if site:
-    end = dt.date.today() - dt.timedelta(days=2)  # Search Console data lags about two days
+    end = dt.date.today() - dt.timedelta(days=1)  # Search Console data lags about two days
     start = end - dt.timedelta(days=27)
     import urllib.parse
     q = lambda body: sess.post(f"{BASE}/sites/{urllib.parse.quote(site, safe='')}/searchAnalytics/query", json=dict(body, startDate=start.isoformat(), endDate=end.isoformat()))
@@ -32,6 +32,9 @@ if site:
     out["range"] = [start.isoformat(), end.isoformat()]
 (ROOT / "gsc_report.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
 print(json.dumps({k: v for k, v in out.items() if k not in ("queries", "pages", "days")}, indent=1)[:1500])
+print("TOP DAYS")
+for r in sorted(out.get("days") or [], key=lambda r: r["key"]) if isinstance(out.get("days"), list) else []:
+    print(f"  {r['key']}: {r['clicks']} clicks, {r['impressions']} impr")
 for name in ("queries", "pages"):
     print("TOP", name.upper())
     for r in (out.get(name) or [])[:15] if isinstance(out.get(name), list) else []:

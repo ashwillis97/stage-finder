@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://findashow.co.uk"
 AFF_BASE = "https://ticketmaster.evyy.net/c/8068961/264167/4272"
 AFF_PROP = "9082472"
-GEN_DIRS = ["venues", "cities", "categories", "pantomime", "christmas-shows", "new"]
+GEN_DIRS = ["west-end-shows", "venues", "cities", "categories", "pantomime", "christmas-shows", "new"]
 
 # Raw genre labels from the venue sites -> a tidy category page.
 CATEGORIES = {
@@ -32,9 +32,11 @@ CATEGORIES = {
     "musicals": ("Musicals", "Musical", {"musical", "musicals"}),
     "tribute-acts": ("Tribute acts", "Tribute", {"tribute"}),
     "classical": ("Classical and orchestral", "Classical", {"classical"}),
-    "family": ("Family shows", "Family", {"family"}),
+    "family": ("Family and kids shows", "Family", {"family"}),
     "concerts": ("Concerts and live music", "Music", {"music", "concert", "concerts"}),
 }
+
+WEST_END = {"Adelphi Theatre","London Palladium","Dominion Theatre","Theatre Royal Drury Lane","Apollo Theatre","Prince Edward Theatre","Wyndham's Theatre","Noël Coward Theatre","Criterion Theatre","Vaudeville Theatre","St Martin's Theatre","Ambassadors Theatre","Palace Theatre","Playhouse Theatre","Sondheim Theatre","Novello Theatre","Gielgud Theatre","His Majesty's Theatre","Duke of York's Theatre","Phoenix Theatre","Prince of Wales Theatre","Apollo Victoria Theatre","Trafalgar Theatre","Garrick Theatre","Harold Pinter Theatre","Savoy Theatre","Piccadilly Theatre","London Coliseum","Peacock Theatre","Aldwych Theatre","Cambridge Theatre","Gillian Lynne Theatre","Lyceum Theatre","Victoria Palace Theatre","Fortune Theatre","Shaftesbury Theatre","Theatre Royal Haymarket","Sadler's Wells Theatre","The Old Vic"}
 
 CSS = """
 :root{--bg:#faf6ef;--surface:#fff;--surface-2:#f1eadf;--line:#ded3c2;--fg:#1f1a16;--muted:#6a5f54;--accent:#e4572e;--accent-fg:#fff;--rose:#b8185a;
@@ -397,6 +399,20 @@ def main():
         urls.append((path, "daily"))
 
     # ---- city pages
+    catcity = {}
+    for key, (label, _g, raw) in CATEGORIES.items():
+        bcc = defaultdict(list)
+        for s in shows:
+            if (s.get("genre") or "").strip().lower() in raw:
+                c = (places.get(s["theatre"]) or [None])[0]
+                if c:
+                    bcc[c].append(s)
+        catcity[key] = {c: v for c, v in bcc.items() if len(v) >= 5}
+
+    def catcity_links(c):
+        items = [(f"/categories/{k}/{slug(c)}/", f"{CATEGORIES[k][0]} in {c}", len(v[c])) for k, v in catcity.items() if c in v]
+        return ("<h2>By type</h2>" + chips(items)) if items else ""
+
     for city, lst in by_city.items():
         lst = sorted(lst, key=sort_key(today))
         path = f"/cities/{cslug[city]}/"
@@ -410,14 +426,15 @@ def main():
             sub = [s for s in lst if s["theatre"] == v]
             sections += f'<h2><a href="/venues/{vslug[v]}/">{esc(v)}</a></h2>' + "".join(show_card(s, today) for s in sub)
         body = f"""<p class="crumbs"><a href="/">Home</a> / <a href="/cities/">Cities</a></p>
-<h1>What's on in {esc(city)}</h1>
+<h1>Shows in {esc(city)}: what's on</h1>
 <p class="lede">{plural(len(lst), 'show')} across {plural(len(vs), 'venue')} in {esc(city)}, including theatre, comedy, music and more. Refreshed daily from the venues' own websites.</p>
 <h2>Venues in {esc(city)}</h2>
 {chips((f"/venues/{vslug[v]}/", v, len([s for s in lst if s['theatre'] == v])) for v in vs)}
 {seasonal_links(city)}
+{catcity_links(city)}
 {sections}
 <div class="cta"><p>Want to filter by date or type of show?</p><a class="btn" href="/">Search all shows</a></div>"""
-        title = f"What's on in {city}: live shows, theatre, comedy and music | Find a Show"
+        title = (f"Shows in London: West End, theatre, comedy and music | Find a Show" if city == "London" else f"Shows in {city}: what's on, theatre, comedy and music | Find a Show")
         desc = f"{plural(len(lst), 'live show')} at {plural(len(vs), 'venue')} in {city}. See dates and book tickets."
         write(path, page(title, desc, path, body, events_ld(lst, places, today)))
         urls.append((path, "daily"))
@@ -431,10 +448,12 @@ def main():
         path = f"/categories/{key}/"
         shown = lst[:150]
         cards = "".join(show_card(s, today, True, (places.get(s["theatre"]) or [None])[0]) for s in shown)
+        bycity = ("<h2>By city</h2>" + chips((f"/categories/{key}/{slug(c)}/", c, len(v)) for c, v in sorted(catcity.get(key, {}).items()))) if catcity.get(key) else ""
         more = f'<p class="note">Showing the first {len(shown)} of {len(lst)}. <a href="/">Search all shows</a> to see the rest.</p>' if len(lst) > len(shown) else ""
         body = f"""<p class="crumbs"><a href="/">Home</a> / <a href="/categories/">Categories</a></p>
 <h1>{esc(label)} across the UK</h1>
 <p class="lede">{plural(len(lst), 'listing')} at venues around the UK, in date order. Refreshed daily.</p>
+{bycity}
 {cards}{more}
 <div class="cta"><p>Filter by city and date on the main search.</p><a class="btn" href="/">Search all shows</a></div>"""
         title = f"{label} across the UK: dates and tickets | Find a Show"
@@ -442,6 +461,19 @@ def main():
         write(path, page(title, desc, path, body, events_ld(shown, places, today)))
         urls.append((path, "daily"))
         cats.append((f"/categories/{key}/", label, len(lst)))
+        cc = catcity.get(key, {})
+        for c, cl in sorted(cc.items()):
+            cpath = f"/categories/{key}/{slug(c)}/"
+            cv = len({s["theatre"] for s in cl})
+            kids = " (kids and family)" if key == "family" else ""
+            h1 = f"Kids and family shows in {c}" if key == "family" else f"{label} in {c}"
+            cbody = f"""<p class="crumbs"><a href="/">Home</a> / <a href="/categories/{key}/">{esc(label)}</a> / {esc(c)}</p>
+<h1>{esc(h1)}</h1>
+<p class="lede">{plural(len(cl), 'listing')} at {plural(cv, 'venue')} in {esc(c)}, in date order. Dates come from each venue's own website and are refreshed daily.</p>
+{"".join(show_card(s, today, True, c) for s in cl[:150])}
+<div class="cta"><p>See {esc(label.lower())} <a href="/categories/{key}/">across the UK</a>, everything on in <a href="/cities/{slug(c)}/">{esc(c)}</a>, or search every show.</p><a class="btn" href="/">Search all shows</a></div>"""
+            write(cpath, page(f"{h1}: dates and tickets | Find a Show", f"{h1}: {plural(len(cl), 'listing')} at {plural(cv, 'venue')} with dates and links to book. Updated daily.", cpath, cbody, events_ld(cl[:60], places, today)))
+            urls.append((cpath, "daily"))
 
 
     # ---- seasonal pages (pantomime, Christmas)
@@ -528,6 +560,21 @@ def main():
     if fresh_shows or nv:
         urls.append(("/new/", "daily"))
 
+    # ---- West End page
+    we = [s for s in shows if s["theatre"] in WEST_END]
+    if len(we) >= 5:
+        wv = sorted({s["theatre"] for s in we})
+        wbody = f"""<p class="crumbs"><a href="/">Home</a> / <a href="/cities/london/">London</a></p>
+<h1>West End shows</h1>
+<p class="lede">{plural(len(we), 'listing')} at {plural(len(wv), 'West End theatre')}, in date order. Dates come from each venue's own website and are refreshed daily.</p>
+<h2>West End theatres</h2>
+{chips((f"/venues/{vslug[v]}/", v, len([s for s in we if s['theatre'] == v])) for v in wv if v in vslug)}
+<h2>What's on</h2>
+{"".join(show_card(s, today, True, "London") for s in we[:150])}
+<div class="cta"><p>See everything on in <a href="/cities/london/">London</a>, including concerts and comedy, or search every show.</p><a class="btn" href="/">Search all shows</a></div>"""
+        write("/west-end-shows/", page("West End shows: theatre, musicals and tickets in London | Find a Show", f"{plural(len(we), 'West End listing')} across {plural(len(wv), 'theatre')}. See dates and book tickets for London theatre shows.", "/west-end-shows/", wbody, events_ld(we[:60], places, today)))
+        urls.append(("/west-end-shows/", "daily"))
+
     # ---- hubs
     cities = sorted(by_city)
     write("/cities/", page("Live shows by city | Find a Show", "Browse what's on in cities across the UK.", "/cities/",
@@ -539,7 +586,7 @@ def main():
         + chips((f"/venues/{vslug[v]}/", v, len(by_venue[v])) for v in sorted(by_venue))))
     urls.append(("/venues/", "daily"))
     write("/categories/", page("Browse shows by type | Find a Show", "Comedy, pantomime, musicals, concerts and more across the UK.", "/categories/",
-        '<p class="crumbs"><a href="/">Home</a></p><h1>Browse shows by type</h1><p class="lede">Pick a type of show.</p>' + chips(season_hub + cats)))
+        '<p class="crumbs"><a href="/">Home</a></p><h1>Browse shows by type</h1><p class="lede">Pick a type of show.</p>' + chips(season_hub + cats + ([("/west-end-shows/", "West End shows", len(we))] if len(we) >= 5 else []))))
     urls.append(("/categories/", "daily"))
 
     # ---- sitemap

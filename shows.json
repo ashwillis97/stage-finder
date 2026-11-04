@@ -1,6 +1,6 @@
 {
  "sample": false,
- "updated": "2026-11-04T02:00+00:00",
+ "updated": "2026-11-04T08:09+00:00",
  "coverage": {
   "none": [],
   "partial": {
@@ -419,14 +419,6 @@
    "start": "2026-11-03",
    "end": "2026-11-04",
    "url": "https://www.thehallswolverhampton.co.uk/events/skye-newman"
-  },
-  {
-   "title": "The Brown Suite",
-   "theatre": "Theatre Royal Brighton",
-   "genre": "Dance",
-   "start": "2026-11-03",
-   "end": "2026-11-04",
-   "url": "https://www.atgtickets.com/shows/the-brown-suite/theatre-royal-brighton/"
   },
   {
    "title": "The Car Man",
@@ -1278,6 +1270,14 @@
    "url": "https://www.atgtickets.com/shows/the-book-of-mormon/prince-of-wales-theatre/",
    "gsrc": "tm",
    "tm": "https://theatre.ticketmaster.co.uk/book/1GZHW-the-book-of-mormon/#perf=1GZHW-20D&date=2026-11-04&time=7.30PM"
+  },
+  {
+   "title": "The Brown Suite",
+   "theatre": "Theatre Royal Brighton",
+   "genre": "Dance",
+   "start": "2026-11-04",
+   "end": "2026-11-04",
+   "url": "https://www.atgtickets.com/shows/the-brown-suite/theatre-royal-brighton/"
   },
   {
    "title": "The Choir of Man",
@@ -6530,9 +6530,9 @@
    "start": "2026-11-10",
    "end": "2026-11-10",
    "url": "https://southendtheatres.org.uk/southend-theatres/en-GB/event/music/the-proclaimers-plus-support-tickets",
+   "gsrc": "tm",
    "added": "2026-11-04",
-   "tm": "https://www.ticketmaster.co.uk/the-proclaimers-southendonsea-10-11-2026/event/1F0063752478C799",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/the-proclaimers-southendonsea-10-11-2026/event/1F0063752478C799"
   },
   {
    "title": "The Royal Opera: Carmen (Cert TBC)",
@@ -8272,9 +8272,9 @@
    "start": "2026-11-13",
    "end": "2026-11-13",
    "url": "https://brightondome.org/whats-on/LzJ-chris-ramsey-here-man/",
+   "gsrc": "tm",
    "added": "2026-11-04",
-   "tm": "https://www.ticketmaster.co.uk/chris-ramsey-here-man-brighton-13-11-2026/event/1F006489EDD25B87",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/chris-ramsey-here-man-brighton-13-11-2026/event/1F006489EDD25B87"
   },
   {
    "title": "Christmas Memories",
@@ -11171,9 +11171,9 @@
    "start": "2026-11-17",
    "end": "2026-11-17",
    "url": "https://www.ipswichtheatres.co.uk/whats-on/bill-bailey-vaudevillean/",
+   "gsrc": "tm",
    "added": "2026-11-04",
-   "tm": "https://www.ticketmaster.co.uk/bill-bailey-vaudevillean-ipswich-17-11-2026/event/1F0064D3E421383A",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/bill-bailey-vaudevillean-ipswich-17-11-2026/event/1F0064D3E421383A"
   },
   {
    "title": "Burlesque The Musical",
@@ -12858,6 +12858,15 @@
    "url": "https://www.leedsplayhouse.org.uk/event/dyke-systems-ltd/"
   },
   {
+   "title": "David Essex",
+   "theatre": "Millennium Forum",
+   "genre": "",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "url": "https://millenniumforum.co.uk/whats-on/david-essex-2",
+   "added": "2026-11-03"
+  },
+  {
    "title": "Disco for Grown Ups",
    "theatre": "White Rock Theatre",
    "genre": "Event",
@@ -12914,15 +12923,6 @@
    "end": "2026-11-20",
    "url": "https://www.atgtickets.com/shows/fin-taylor-the-pre-emptive-comeback-special/leas-cliff-hall/",
    "tm": "https://www.ticketmaster.co.uk/fin-taylor-folkestone-20-11-2026/event/36006381A7288087"
-  },
-  {
-   "title": "Fintan Harvey - Flightmares",
-   "theatre": "Millennium Forum",
-   "genre": "",
-   "start": "2026-11-20",
-   "end": "2026-11-20",
-   "url": "https://millenniumforum.co.uk/whats-on/fintan-harvey-flightmares",
-   "added": "2026-11-03"
   },
   {
    "title": "Flo & Joan: With Feeling",
@@ -15663,6 +15663,14 @@
    "gsrc": "tm"
   },
   {
+   "title": "Gift Ticket",
+   "theatre": "Doncaster Dome",
+   "genre": "",
+   "start": "2026-11-25",
+   "end": "2027-04-24",
+   "url": "https://www.dclt.co.uk/tickets/?EventId=135801"
+  },
+  {
    "title": "Gotts Street Park & Friends",
    "theatre": "Roundhouse",
    "genre": "Music",
@@ -17779,9 +17787,9 @@
    "start": "2026-11-28",
    "end": "2026-11-28",
    "url": "https://www.utilitaarenacardiff.co.uk/whats-on/",
+   "gsrc": "tm",
    "added": "2026-11-04",
-   "tm": "https://www.ticketmaster.co.uk/the-australian-pink-floyd-cardiff-28-11-2026/event/3600637B820B33F4",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/the-australian-pink-floyd-cardiff-28-11-2026/event/3600637B820B33F4"
   },
   {
    "title": "The Bon Jovi Experience",
@@ -37849,14 +37857,6 @@
    "url": "https://www.theatresevern.co.uk/whats-on/pierre-novellie//"
   },
   {
-   "title": "Perfectly George - Rob Lamberti 2027",
-   "theatre": "Doncaster Dome",
-   "genre": "",
-   "start": "2027-03-05",
-   "end": "2027-03-05",
-   "url": "https://www.dclt.co.uk/tickets/?EventInstanceId=471402&iframe=chooseseats"
-  },
-  {
    "title": "Pierre Novellie: Okay, One More Then Bedtime",
    "theatre": "Walker Theatre",
    "genre": "Comedy",
@@ -40375,16 +40375,6 @@
    "url": "https://everymanplayhouse.com/event/savage/"
   },
   {
-   "title": "Stiff Little Fingers",
-   "theatre": "Barrowland Ballroom",
-   "genre": "Music",
-   "start": "2027-03-16",
-   "end": "2027-03-17",
-   "url": "https://www.ticketmaster.co.uk/stiff-little-fingers-glasgow-16-03-2027/event/3600655EEBF4C9E5",
-   "tm": "https://www.ticketmaster.co.uk/stiff-little-fingers-glasgow-16-03-2027/event/3600655EEBF4C9E5",
-   "gsrc": "tm"
-  },
-  {
    "title": "Sugababes",
    "theatre": "O2 Institute Birmingham",
    "genre": "Music",
@@ -40537,6 +40527,16 @@
    "end": "2027-03-17",
    "url": "https://www.ticketmaster.co.uk/scott-bennett-stuff-maidstone-17-03-2027/event/370064D2D09B90E7",
    "tm": "https://www.ticketmaster.co.uk/scott-bennett-stuff-maidstone-17-03-2027/event/370064D2D09B90E7",
+   "gsrc": "tm"
+  },
+  {
+   "title": "Stiff Little Fingers",
+   "theatre": "Barrowland Ballroom",
+   "genre": "Music",
+   "start": "2027-03-17",
+   "end": "2027-03-17",
+   "url": "https://www.ticketmaster.co.uk/stiff-little-fingers-glasgow-17-03-2027/event/3600655EED5ACBA3",
+   "tm": "https://www.ticketmaster.co.uk/stiff-little-fingers-glasgow-17-03-2027/event/3600655EED5ACBA3",
    "gsrc": "tm"
   },
   {
@@ -50915,17 +50915,6 @@
    "url": "https://www.ticketmaster.co.uk/professor-green-bournemouth-23-05-2027/event/3E00653CD54D68B5",
    "tm": "https://www.ticketmaster.co.uk/professor-green-bournemouth-23-05-2027/event/3E00653CD54D68B5",
    "gsrc": "tm"
-  },
-  {
-   "title": "William Hanson",
-   "theatre": "Adelphi Theatre",
-   "genre": "Play",
-   "start": "2027-05-23",
-   "end": "2027-05-23",
-   "url": "https://lwtheatres.co.uk/whats-on/william-hanson/",
-   "gsrc": "tm",
-   "added": "2026-11-03",
-   "tm": "https://www.ticketmaster.co.uk/william-hanson-london-23-05-2027/event/3700655E925E3E2D"
   },
   {
    "title": "Grease",

@@ -1,15 +1,12 @@
 {
  "readers": 169,
- "shows_before": 6405,
- "shows_now": 6413,
- "broken": [
-  "Milton Keynes Theatre",
-  "Opera House Manchester"
- ],
+ "shows_before": 6384,
+ "shows_now": 6388,
+ "broken": [],
  "never_worked": [],
  "ticketmaster": {
   "venues_found": 300,
-  "shows_matched": 3281,
+  "shows_matched": 3273,
   "errors": 0
  }
 }

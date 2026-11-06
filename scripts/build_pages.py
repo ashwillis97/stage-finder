@@ -67,6 +67,14 @@ h2 a{color:inherit;text-decoration:none}
 .act{display:flex;gap:8px;flex-wrap:wrap}
 .btn{display:inline-block;font-family:var(--font-small);font-weight:600;font-size:15px;letter-spacing:0;text-transform:none;text-decoration:underline;text-underline-offset:3px;padding:0;border-radius:0;background:none;color:#a8391a}
 .btn.ghost{background:transparent;color:var(--fg);border:1.5px solid var(--fg)}
+.nfilter{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;margin:20px 0 4px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.nfilter label{font-size:15px;color:var(--muted)}
+.nfilter select{font:inherit;font-weight:600;color:var(--fg);background:transparent;border:0;border-bottom:1.5px solid rgba(31,26,22,.35);border-radius:0;padding:4px 20px 4px 4px;max-width:70vw}
+.ncount{font-size:15px;color:var(--muted)}
+.nrow[hidden],.nday[hidden],.nvc[hidden],.nvwrap[hidden]{display:none}
+.nvc{color:var(--fg);text-decoration:none;font-size:15px;font-weight:500}
+.nvc small{color:var(--muted);font-size:13px}
+.nvc:hover{color:#a8391a;text-decoration:underline}
 .cta{margin:28px 0 0;padding:20px 0 0;border-top:1.5px solid var(--fg)}
 .cta p{margin:0 0 10px}
 .chips{display:flex;flex-wrap:wrap;gap:6px 22px;list-style:none;margin:8px 0 0;padding:0}
@@ -543,17 +551,43 @@ def main():
     nv = {v: dd for v, dd in (data.get("new_venues") or {}).items() if dd >= cutoff and v in by_venue}
     fresh_shows = sorted((s for s in shows if s.get("added", "") >= cutoff and s["theatre"] not in nv), key=lambda s: (s["added"], s["title"].lower()), reverse=True)
     parts = ""
+    parts_nv = ""
     if nv:
-        parts += "<h2>New venues</h2>" + chips((f"/venues/{vslug[v]}/", v, len(by_venue[v])) for v in sorted(nv, key=lambda k: nv[k], reverse=True))
+        nvhtml = "".join(f'<a class="nvc" data-city="{esc((places.get(v) or [""])[0])}" data-venue="{esc(v)}" href="/venues/{vslug[v]}/">{esc(v)} <small>{len(by_venue[v])}</small></a>' for v in sorted(nv, key=lambda k: nv[k], reverse=True))
+        parts_nv = '<div class="nvwrap"><h2>New venues</h2><div class="chips nvlist">' + nvhtml + "</div></div>"
     if fresh_shows:
         cur, sec = None, ""
-        for s in fresh_shows[:200]:
+        cnt_city, cnt_ven = {}, {}
+        for s in fresh_shows[:600]:
+            c0 = (places.get(s["theatre"]) or [""])[0]
+            cnt_city[c0] = cnt_city.get(c0, 0) + 1
+            cnt_ven[s["theatre"]] = (c0, cnt_ven.get(s["theatre"], ("", 0))[1] + 1)
             if s["added"] != cur:
+                if cur is not None:
+                    sec += "</section>"
                 cur = s["added"]
                 dd = d(cur)
-                sec += f"<h2>Added {dd.day} {dd.strftime('%b')}</h2>"
-            sec += show_card(s, today, True, (places.get(s["theatre"]) or [None])[0])
-        parts += sec
+                sec += f'<section class="nday"><h2>Added {dd.day} {dd.strftime("%b")}</h2>'
+            sec += f'<div class="nrow" data-city="{esc(c0)}" data-venue="{esc(s["theatre"])}">' + show_card(s, today, True, c0 or None) + "</div>"
+        sec += "</section>"
+        for v in nv:
+            c0 = (places.get(v) or [""])[0]
+            n0 = len(by_venue[v])
+            cnt_city[c0] = cnt_city.get(c0, 0) + n0
+            cnt_ven[v] = (c0, n0)
+        copts = "".join(f'<option value="{esc(c)}">{esc(c)} ({n})</option>' for c, n in sorted(cnt_city.items()) if c)
+        vopts = "".join(f'<option value="{esc(v)}" data-city="{esc(c)}">{esc(v)} ({n})</option>' for v, (c, n) in sorted(cnt_ven.items()))
+        filt = f'''<div class="nfilter"><label>Where <select id="nCity"><option value="">All UK</option>{copts}</select></label><label>Venue <select id="nVen"><option value="">All venues</option>{vopts}</select></label><span id="nCount" class="ncount"></span></div>
+<script>(function(){{var c=document.getElementById("nCity"),v=document.getElementById("nVen"),n=document.getElementById("nCount");if(!c||!v)return;var vo=[].slice.call(v.options).slice(1);
+function run(){{var city=c.value,ven=v.value,k=0;vo.forEach(function(o){{o.hidden=!!city&&o.getAttribute("data-city")!==city;}});if(ven&&city){{var cur=vo.filter(function(o){{return o.value===ven}})[0];if(cur&&cur.hidden){{v.value="";ven="";}}}}
+[].slice.call(document.querySelectorAll(".nrow")).forEach(function(r){{var ok=(!city||r.getAttribute("data-city")===city)&&(!ven||r.getAttribute("data-venue")===ven);r.hidden=!ok;if(ok)k++;}});
+[].slice.call(document.querySelectorAll(".nvc")).forEach(function(a){{var ok=(!city||a.getAttribute("data-city")===city)&&(!ven||a.getAttribute("data-venue")===ven);a.hidden=!ok;}});var w=document.querySelector(".nvwrap");if(w)w.hidden=!w.querySelector(".nvc:not([hidden])");
+[].slice.call(document.querySelectorAll(".nday")).forEach(function(d){{d.hidden=!d.querySelector(".nrow:not([hidden])");}});
+n.textContent=(city||ven)?k+(k===1?" show":" shows"):"";}}
+c.addEventListener("change",run);v.addEventListener("change",run);}})();</script>'''
+        parts += filt + parts_nv + sec
+    if parts_nv and not fresh_shows:
+        parts = parts_nv
     if not parts:
         parts = '<p class="intro">Nothing new in the last 7 days yet. New shows and venues will appear here as they are announced.</p>'
     body = f"""<p class="crumbs"><a href="/">Home</a></p>

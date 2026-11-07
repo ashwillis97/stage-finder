@@ -271,6 +271,7 @@ Some ticket links are affiliate links, which means we may earn a commission if y
 </footer>
 </div>
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "8386717571e94d43ae043733aa4dc407"}}'></script>
+<script defer src="/assets/clicks.js"></script>
 </body>
 </html>
 """
@@ -284,9 +285,9 @@ def show_card(s, today, show_venue=False, show_city=None):
         meta = esc(meta)
     tm = tm_link(s.get("tm"))
     if tm:
-        acts = f'<a class="btn" href="{esc(tm)}" target="_blank" rel="sponsored noopener noreferrer">Buy on Ticketmaster</a>'
+        acts = f'<a class="btn" data-v="{esc(s["theatre"])}" data-s="{esc(s["title"])}" data-k="tm" href="{esc(tm)}" target="_blank" rel="sponsored noopener noreferrer">Buy on Ticketmaster</a>'
     elif s.get("url"):
-        acts = f'<a class="btn" href="{esc(s["url"])}" target="_blank" rel="noopener noreferrer">Tickets &amp; info</a>'
+        acts = f'<a class="btn" data-v="{esc(s["theatre"])}" data-s="{esc(s["title"])}" data-k="venue" href="{esc(s["url"])}" target="_blank" rel="noopener noreferrer">Tickets &amp; info</a>'
     else:
         acts = ""
     return f'<div class="card"><div><h3>{esc(s["title"])}</h3><p class="meta">{meta}</p></div><div class="act">{acts}</div></div>'

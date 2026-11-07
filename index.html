@@ -572,7 +572,7 @@ h2 { font-size: 20px; font-weight: 600; letter-spacing: 0; color: var(--muted); 
     <p class="browse" style="margin:0 0 14px;font-size:14px;color:var(--muted)">Browse: <a href="/cities/">shows by city</a> &middot; <a href="/venues/">all venues</a> &middot; <a href="/categories/">shows by type</a> &middot; <a href="/pantomime/">pantomime</a> &middot; <a href="/christmas-shows/">Christmas shows</a></p>
     <details id="privacy"><summary>Privacy and about</summary><div>
       <p><strong>Find a Show is an independent listings guide.</strong> It is not run by or affiliated with the theatres and venues listed. Each "View show" button takes you to the venue's own page, where you can book.</p>
-      <p><strong>No accounts or tracking cookies.</strong> You don't need an account to use the site, and we don't use advertising cookies. We use Cloudflare Web Analytics to count visits and popular pages. It sets no cookies and does not track you across sites or build a profile of you.</p>
+      <p><strong>No accounts or tracking cookies.</strong> You don't need an account to use the site, and we don't use advertising cookies. We use Cloudflare Web Analytics to count visits and popular pages. It sets no cookies and does not track you across sites or build a profile of you. We also count how many times each ticket link is clicked, with the venue and show name only, so we can tell venues how many people we send them. No personal data is stored.</p>
       <p><strong>Email alerts.</strong> If you sign up for our weekly email, your address is stored by MailerLite, our email provider, and used only to send you new-show emails. We send a confirmation email first, every email has an unsubscribe link, and you can unsubscribe at any time.</p>
       <p><strong>Your location.</strong> If you use "Near me", your location or postcode is used in your browser to work out distances. A postcode is looked up with postcodes.io, and your location is never stored by us.</p>
       <p><strong>Affiliate links.</strong> Some ticket buttons, such as "Buy on Ticketmaster", are affiliate links. If you buy, we may earn a commission at no extra cost to you, and the ticket seller and its partners may set cookies when you click through.</p>
@@ -804,8 +804,8 @@ h2 { font-size: 20px; font-weight: 600; letter-spacing: 0; color: var(--muted); 
   /* One button per show: Ticketmaster (affiliate) when we have a match, otherwise the venue's own page */
   function mainButton(s) {
     var tm = tmHref(s);
-    if (tm) return '<a class="btn" href="' + esc(tm) + '" target="_blank" rel="sponsored noopener noreferrer" aria-label="Buy tickets for ' + esc(s.title) + ' on Ticketmaster">Buy on Ticketmaster</a>';
-    return '<a class="btn" href="' + esc(safeUrl(s.url)) + '" target="_blank" rel="noopener noreferrer" aria-label="Tickets and info for ' + esc(s.title) + '">Tickets &amp; info</a>';
+    if (tm) return '<a class="btn" data-v="' + esc(s.theatre) + '" data-s="' + esc(s.title) + '" data-k="tm" href="' + esc(tm) + '" target="_blank" rel="sponsored noopener noreferrer" aria-label="Buy tickets for ' + esc(s.title) + ' on Ticketmaster">Buy on Ticketmaster</a>';
+    return '<a class="btn" data-v="' + esc(s.theatre) + '" data-s="' + esc(s.title) + '" data-k="venue" href="' + esc(safeUrl(s.url)) + '" target="_blank" rel="noopener noreferrer" aria-label="Tickets and info for ' + esc(s.title) + '">Tickets &amp; info</a>';
   }
   function refresh() { visible = 40; render(); updTriggers(); }
 
@@ -1002,5 +1002,6 @@ h2 { font-size: 20px; font-weight: 600; letter-spacing: 0; color: var(--muted); 
 })();
 </script>
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "8386717571e94d43ae043733aa4dc407"}'></script>
+<script defer src="/assets/clicks.js"></script>
 </body>
 </html>

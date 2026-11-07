@@ -1,0 +1,7 @@
+name = "findashow-clicks"
+main = "index.js"
+compatibility_date = "2026-01-01"
+
+[[analytics_engine_datasets]]
+binding = "CLICKS"
+dataset = "findashow_clicks"

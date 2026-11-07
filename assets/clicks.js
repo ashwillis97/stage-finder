@@ -1,5 +1,5 @@
 (function () {
-  var ENDPOINT = "";
+  var ENDPOINT = "https://findashow-clicks.ashwillis.workers.dev/c";
   if (!ENDPOINT) return;
   function send(e) {
     var a = e.target && e.target.closest && e.target.closest("a[data-v]");

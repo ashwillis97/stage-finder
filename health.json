@@ -1,12 +1,15 @@
 {
  "readers": 169,
- "shows_before": 6466,
- "shows_now": 6484,
- "broken": [],
+ "shows_before": 6391,
+ "shows_now": 6426,
+ "broken": [
+  "Caird Hall",
+  "Theatre Royal Newcastle"
+ ],
  "never_worked": [],
  "ticketmaster": {
   "venues_found": 300,
-  "shows_matched": 3312,
+  "shows_matched": 3288,
   "errors": 0
  }
 }

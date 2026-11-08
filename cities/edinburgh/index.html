@@ -28,7 +28,7 @@
 </head>
 <body>
 <div class="wrap">
-<div class="top"><a class="brand" href="/">Find a <b>Show</b></a><a class="alertlink" href="#alerts">Email alerts</a><a class="home" href="/">Search all shows</a></div>
+<div class="top"><a class="brand" href="/">Find a <b>Show</b></a><a class="alertlink" href="/email-alerts/">Email alerts</a><a class="home" href="/">Search all shows</a></div>
 <p class="crumbs"><a href="/">Home</a> / <a href="/cities/">Cities</a></p>
 <h1>Shows in Edinburgh: what's on</h1>
 <p class="lede">156 shows across 8 venues in Edinburgh, including theatre, comedy, music and more. Refreshed daily from the venues' own websites.</p>
@@ -47,7 +47,7 @@
 </form></section>
 <script>(function(){var f=document.getElementById("alertsForm");if(!f)return;var n=document.getElementById("alertsNote"),b=f.querySelector("button");f.addEventListener("submit",function(e){e.preventDefault();var m=f.elements["fields[email]"].value.trim();if(!m)return;b.disabled=true;b.textContent="Signing up";fetch(f.action,{method:"POST",mode:"no-cors",body:new URLSearchParams({"fields[email]":m,"ml-submit":"1","anticsrf":"true"})}).then(function(){f.elements["fields[email]"].value="";n.className="alerts-note ok";n.textContent="Thanks. Check your inbox and click the link in our confirmation email to finish signing up.";b.textContent="Sign up";b.disabled=false}).catch(function(){n.className="alerts-note bad";n.textContent="That didn't go through. Please try again in a moment.";b.textContent="Sign up";b.disabled=false})})})();</script>
 <footer>
-<a href="/">Find a Show</a> &middot; <a href="/cities/">Cities</a> &middot; <a href="/venues/">Venues</a> &middot; <a href="/categories/">Categories</a>
+<a href="/">Find a Show</a> &middot; <a href="/cities/">Cities</a> &middot; <a href="/venues/">Venues</a> &middot; <a href="/categories/">Categories</a> &middot; <a href="/email-alerts/">Email alerts</a>
 <p>Find a Show is an independent guide and is not run by any venue. Dates come from the venues' own websites and can change, so check with the venue before you travel.
 Some ticket links are affiliate links, which means we may earn a commission if you buy, at no extra cost to you.</p>
 </footer>

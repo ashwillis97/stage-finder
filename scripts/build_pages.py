@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://findashow.co.uk"
 AFF_BASE = "https://ticketmaster.evyy.net/c/8068961/264167/4272"
 AFF_PROP = "9082472"
-GEN_DIRS = ["west-end-shows", "venues", "cities", "categories", "pantomime", "christmas-shows", "new"]
+GEN_DIRS = ["email-alerts", "west-end-shows", "venues", "cities", "categories", "pantomime", "christmas-shows", "new"]
 
 # Raw genre labels from the venue sites -> a tidy category page.
 CATEGORIES = {
@@ -262,10 +262,10 @@ def page(title, desc, path, body, ld=None, noindex=False):
 </head>
 <body>
 <div class="wrap">
-<div class="top"><a class="brand" href="/">Find a <b>Show</b></a><a class="alertlink" href="#alerts">Email alerts</a><a class="home" href="/">Search all shows</a></div>
+<div class="top"><a class="brand" href="/">Find a <b>Show</b></a><a class="alertlink" href="/email-alerts/">Email alerts</a><a class="home" href="/">Search all shows</a></div>
 {body}
 {ALERTS}<footer>
-<a href="/">Find a Show</a> &middot; <a href="/cities/">Cities</a> &middot; <a href="/venues/">Venues</a> &middot; <a href="/categories/">Categories</a>
+<a href="/">Find a Show</a> &middot; <a href="/cities/">Cities</a> &middot; <a href="/venues/">Venues</a> &middot; <a href="/categories/">Categories</a> &middot; <a href="/email-alerts/">Email alerts</a>
 <p>Find a Show is an independent guide and is not run by any venue. Dates come from the venues' own websites and can change, so check with the venue before you travel.
 Some ticket links are affiliate links, which means we may earn a commission if you buy, at no extra cost to you.</p>
 </footer>
@@ -602,6 +602,13 @@ c.addEventListener("change",run);v.addEventListener("change",run);}})();</script
     if fresh_shows or nv:
         urls.append(("/new/", "daily"))
 
+    # ---- Email alerts page (the sign-up band is added by page())
+    abody = """<p class="crumbs"><a href="/">Home</a></p>
+<h1>Email alerts</h1>
+<p class="lede">One short email a week with the newest shows added to Find a Show. No spam, and you can unsubscribe in one click.</p>"""
+    write("/email-alerts/", page("Email alerts: new shows each week | Find a Show", "Sign up for a weekly email of newly listed shows and venues across the UK from Find a Show.", "/email-alerts/", abody))
+    urls.append(("/email-alerts/", "monthly"))
+
     # ---- West End page
     we = [s for s in shows if s["theatre"] in WEST_END]
     if len(we) >= 5:
@@ -619,7 +626,7 @@ c.addEventListener("change",run);v.addEventListener("change",run);}})();</script
 
     # ---- mobile menu data
     menu = {
-        "main": [["/", "Search all shows"], ["/new/", "New this week"], ["/#alerts", "Email alerts"]],
+        "main": [["/", "Search all shows"], ["/new/", "New this week"], ["/email-alerts/", "Email alerts"]],
         "types": [[p_, l_] for p_, l_, _n in season_hub] + [["/west-end-shows/", "West End shows"]] * (len(we) >= 5) + [[p_, l_] for p_, l_, _n in cats],
         "cities": [[f"/cities/{slug(c_)}/", c_] for c_, n_ in sorted(((c, len(l)) for c, l in by_city.items()), key=lambda t: -t[1])[:30]],
         "more": [["/venues/", "All venues"], ["/#sgTitle", "Add a venue or show"]],

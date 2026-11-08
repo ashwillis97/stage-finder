@@ -82,10 +82,25 @@ def venue_events(vid, key):
             if d and e.get("url") and e.get("name"):
                 cls = (e.get("classifications") or [{}])[0]
                 seg = (((cls or {}).get("segment") or {}).get("name") or "").lower()
-                out.append({"name": e["name"], "date": d, "url": plain_url(e["url"]), "genre": from_ticketmaster(cls), "seg": seg})
+                code = (((e.get("dates") or {}).get("status") or {}).get("code") or "").lower()
+                sale0 = (((e.get("sales") or {}).get("public") or {}).get("startDateTime") or "")
+                started = bool(sale0) and sale0 <= dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+                far = d >= (dt.date.today() + dt.timedelta(days=2)).isoformat()
+                out.append({"name": e["name"], "date": d, "url": plain_url(e["url"]), "genre": from_ticketmaster(cls), "seg": seg,
+                            "sold": code == "offsale" and started and far, "cancelled": code in ("cancelled", "canceled")})
         if page + 1 >= ((data.get("page") or {}).get("totalPages") or 1):
             break
     return out
+
+
+def flag(r, evs):
+    """Mark a listing sold out or cancelled only when every Ticketmaster performance of it is."""
+    r.pop("soldout", None)
+    r.pop("cancelled", None)
+    if evs and all(e.get("cancelled") for e in evs):
+        r["cancelled"] = True
+    elif evs and all(e.get("sold") or e.get("cancelled") for e in evs):
+        r["soldout"] = True
 
 
 def match_show(show, events):
@@ -104,7 +119,8 @@ def rows_from_events(theatre, events):
         if e.get("seg") == "sports" or TM_NOISE.search(e["name"]):
             continue
         key = re.sub(r"\s+", " ", e["name"]).strip().lower()
-        g = groups.setdefault(key, {"title": re.sub(r"\s+", " ", e["name"]).strip(), "dates": [], "hit": e})
+        g = groups.setdefault(key, {"title": re.sub(r"\s+", " ", e["name"]).strip(), "dates": [], "hit": e, "evs": []})
+        g["evs"].append(e)
         g["dates"].append(e["date"])
         if e["date"] < g["hit"]["date"]:
             g["hit"] = e
@@ -114,6 +130,7 @@ def rows_from_events(theatre, events):
         r = {"title": g["title"], "theatre": theatre, "genre": hit.get("genre") or "", "start": min(g["dates"]), "end": max(g["dates"]), "url": hit["url"], "tm": hit["url"]}
         if r["genre"]:
             r["gsrc"] = "tm"
+        flag(r, g["evs"])
         out.append(r)
     return out
 
@@ -133,6 +150,8 @@ def main():
                 cities[v["name"]] = v.get("city", "")
     for r in data["shows"]:
         r.pop("tm", None)
+        r.pop("soldout", None)
+        r.pop("cancelled", None)
     today = dt.date.today()
     tm_fed = []
     if (ROOT / "venues.json").exists():
@@ -195,11 +214,15 @@ def main():
             if r["theatre"] == theatre:
                 hit = match_show(r, events)
                 if hit:
+                    flag(r, [e for e in events if r["start"] <= e["date"] <= r["end"] and title_match(r["title"], e["name"])])
                     r["tm"] = hit["url"]
                     matched += 1
                     # Ticketmaster knows what type of show it is: use that unless the venue gave its own label
                     if hit.get("genre") and (not r.get("genre") or r.get("gsrc")):
                         r["genre"], r["gsrc"] = hit["genre"], "tm"
+    so = [r for r in data["shows"] if r.get("soldout")]
+    ca = [r for r in data["shows"] if r.get("cancelled")]
+    print(f"Sold out: {len(so)}, cancelled: {len(ca)}; samples: " + "; ".join(f"{r['title']} ({r['theatre']}, {r['start']})" for r in so[:12]))
     cache_path.write_text(json.dumps(cache, indent=1, ensure_ascii=False, sort_keys=True), encoding="utf-8")
     shows_path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     hp = ROOT / "health.json"

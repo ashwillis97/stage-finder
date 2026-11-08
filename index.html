@@ -416,6 +416,7 @@ h2 { font-size: 20px; font-weight: 600; letter-spacing: 0; color: var(--muted); 
 }
 .lede { color: #fff; }
 
+.flag { display: inline-block; vertical-align: middle; margin-left: 6px; font-size: 13px; font-weight: 600; letter-spacing: 0; color: #7d2a12; border-bottom: 1.5px solid #c4411d; line-height: 1.3; }
 /* Hero photo: real auditorium replaces the drawn stage */
 .stage .cur, .stage .beam, .stage .floor, .stage .dust { display: none !important; }
 .stage { background: linear-gradient(90deg, rgba(22,10,18,.78) 0%, rgba(22,10,18,.4) 50%, rgba(22,10,18,.1) 100%), linear-gradient(180deg, rgba(22,10,18,.45) 0%, rgba(22,10,18,0) 40%, rgba(22,10,18,.6) 100%), url(/assets/hero.jpg) center 30% / cover no-repeat, #160a12 !important; }
@@ -780,7 +781,7 @@ h2 { font-size: 20px; font-weight: 600; letter-spacing: 0; color: var(--muted); 
       var city = cityOf(s.theatre), dm = dist(s.theatre), cat = catName(bucket(s, true));
       var sd = running && s.start !== s.end ? parse(s.end) : d, until = sd !== d;
       html += '<article class="card"><div class="stub"><span class="dow">' + (until ? "Until" : DOW3[sd.getDay()]) + '</span><span class="day">' + sd.getDate() + '</span><span class="mon">' + MON3[sd.getMonth()] + "</span></div>" +
-        '<div class="info"><h3>' + esc(s.title) + '</h3><div class="venue">' + esc(nameOf(s.theatre)) + (city ? ", <span>" + esc(city) + "</span>" : "") + '</div><div class="when">' + esc(whenText(s)) + "</div>" +
+        '<div class="info"><h3>' + esc(s.title) + (s.soldout ? ' <span class="flag">Sold out</span>' : s.cancelled ? ' <span class="flag">Cancelled</span>' : "") + '</h3><div class="venue">' + esc(nameOf(s.theatre)) + (city ? ", <span>" + esc(city) + "</span>" : "") + '</div><div class="when">' + esc(whenText(s)) + "</div>" +
         '<div class="tags">' + (cat ? '<span class="tag">' + esc(cat) + "</span>" : "") + (running && s.start !== s.end ? '<span class="tag live">On now</span>' : "") + (dm != null ? '<span class="tag near">' + Math.round(dm) + " miles away</span>" : "") + "</div></div>" +
         '<div class="act">' + mainButton(s) + '</div></article>';
     });

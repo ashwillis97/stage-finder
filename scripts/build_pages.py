@@ -75,6 +75,7 @@ h2 a{color:inherit;text-decoration:none}
 .nvc{color:var(--fg);text-decoration:none;font-size:15px;font-weight:500}
 .nvc small{color:var(--muted);font-size:13px}
 .nvc:hover{color:#a8391a;text-decoration:underline}
+.flag{display:inline-block;vertical-align:middle;margin-left:6px;font-size:13px;font-weight:600;letter-spacing:0;color:#7d2a12;border-bottom:1.5px solid #c4411d;line-height:1.3}
 .cta{margin:28px 0 0;padding:20px 0 0;border-top:1.5px solid var(--fg)}
 .cta p{margin:0 0 10px}
 .chips{display:flex;flex-wrap:wrap;gap:6px 22px;list-style:none;margin:8px 0 0;padding:0}
@@ -278,6 +279,14 @@ Some ticket links are affiliate links, which means we may earn a commission if y
 """
 
 
+def flag_html(s):
+    if s.get("soldout"):
+        return ' <span class="flag">Sold out</span>'
+    if s.get("cancelled"):
+        return ' <span class="flag">Cancelled</span>'
+    return ""
+
+
 def show_card(s, today, show_venue=False, show_city=None):
     meta = dates_text(s, today)
     if show_venue:
@@ -291,7 +300,7 @@ def show_card(s, today, show_venue=False, show_city=None):
         acts = f'<a class="btn" data-v="{esc(s["theatre"])}" data-s="{esc(s["title"])}" data-k="venue" href="{esc(s["url"])}" target="_blank" rel="noopener noreferrer">Tickets &amp; info</a>'
     else:
         acts = ""
-    return f'<div class="card"><div><h3>{esc(s["title"])}</h3><p class="meta">{meta}</p></div><div class="act">{acts}</div></div>'
+    return f'<div class="card"><div><h3>{esc(s["title"])}{flag_html(s)}</h3><p class="meta">{meta}</p></div><div class="act">{acts}</div></div>'
 
 
 def events_ld(shows, places, today, limit=60):
@@ -311,6 +320,8 @@ def events_ld(shows, places, today, limit=60):
             "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
             "location": loc,
         }
+        if s.get("cancelled"):
+            ev["eventStatus"] = "https://schema.org/EventCancelled"
         if s.get("url"):
             ev["url"] = s["url"]
         items.append(ev)

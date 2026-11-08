@@ -272,6 +272,7 @@ Some ticket links are affiliate links, which means we may earn a commission if y
 </div>
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "8386717571e94d43ae043733aa4dc407"}}'></script>
 <script defer src="/assets/clicks.js"></script>
+<script defer src="/assets/menu.js"></script>
 </body>
 </html>
 """
@@ -615,6 +616,16 @@ c.addEventListener("change",run);v.addEventListener("change",run);}})();</script
 <div class="cta"><p>See everything on in <a href="/cities/london/">London</a>, including concerts and comedy, or search every show.</p><a class="btn" href="/">Search all shows</a></div>"""
         write("/west-end-shows/", page("West End shows: theatre, musicals and tickets in London | Find a Show", f"{plural(len(we), 'West End listing')} across {plural(len(wv), 'theatre')}. See dates and book tickets for London theatre shows.", "/west-end-shows/", wbody, events_ld(we[:60], places, today)))
         urls.append(("/west-end-shows/", "daily"))
+
+    # ---- mobile menu data
+    menu = {
+        "main": [["/", "Search all shows"], ["/new/", "New this week"], ["/#alerts", "Email alerts"]],
+        "types": [[p_, l_] for p_, l_, _n in season_hub] + [["/west-end-shows/", "West End shows"]] * (len(we) >= 5) + [[p_, l_] for p_, l_, _n in cats],
+        "cities": [[f"/cities/{slug(c_)}/", c_] for c_, n_ in sorted(((c, len(l)) for c, l in by_city.items()), key=lambda t: -t[1])[:30]],
+        "more": [["/venues/", "All venues"], ["/#sgTitle", "Add a venue or show"]],
+    }
+    tpl = open("assets/menu.tpl.js").read()
+    open("assets/menu.js", "w").write(tpl.replace("/*DATA*/null", json.dumps(menu, ensure_ascii=False)))
 
     # ---- hubs
     cities = sorted(by_city)

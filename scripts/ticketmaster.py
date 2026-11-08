@@ -136,7 +136,10 @@ def main():
     today = dt.date.today()
     tm_fed = []
     if (ROOT / "venues.json").exists():
-        tm_fed = [v for v in json.loads((ROOT / "venues.json").read_text(encoding="utf-8"))["venues"] if v.get("reader") == "tm"]
+        tm_fed = [v for v in json.loads((ROOT / "venues.json").read_text(encoding="utf-8"))["venues"] if v.get("reader") == "tm" or v.get("tm_fill")]
+    cov = data.setdefault("coverage", {"none": [], "partial": {}}).setdefault("partial", {})
+    AUTO = "Not updated automatically yet, so these listings may be out of date."
+    FILL = "Shows here come from Ticketmaster, so ones sold only through the venue may be missing."
     for v in tm_fed:
         name = v["name"]
         try:
@@ -154,9 +157,22 @@ def main():
         except Exception as e:
             print(f"{name}: Ticketmaster listing failed: {e!r}"[:200])
             continue
-        if fresh:  # only replace the old listings when we actually got new ones
+        if fresh and v.get("reader") == "tm":  # only replace the old listings when we actually got new ones
             data["shows"] = [r for r in data["shows"] if r["theatre"] != name] + fresh
+            cov.pop(name, None)
             print(f"{name}: {len(fresh)} shows from Ticketmaster")
+        elif fresh:  # venue has its own reader; Ticketmaster fills the gaps or replaces a reader that is failing
+            if cov.get(name) == AUTO:  # own reader is failing: Ticketmaster is the source
+                data["shows"] = [r for r in data["shows"] if r["theatre"] != name] + fresh
+                cov[name] = FILL
+                print(f"{name}: {len(fresh)} shows from Ticketmaster (own reader failing)")
+            else:  # own reader works but is incomplete: add Ticketmaster shows we don't already have
+                def key_of(r):
+                    return (r["start"], "".join(re.findall(r"[a-z0-9]+", r["title"].lower()))[:10])
+                have = {key_of(r) for r in data["shows"] if r["theatre"] == name}
+                add = [r for r in fresh if key_of(r) not in have]
+                data["shows"] += add
+                print(f"{name}: {len(add)} extra shows from Ticketmaster")
     data["shows"].sort(key=lambda r: (r["start"], r["title"]))
     matched, venues_used, errors = 0, 0, 0
     for theatre in sorted({r["theatre"] for r in data["shows"]}):

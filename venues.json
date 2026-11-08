@@ -30,7 +30,11 @@
    "urls": [
     "https://www.lichfieldgarrick.com/whats-on/"
    ],
-   "guess": true
+   "guess": true,
+   "tm_ids": [
+    "KovZ9177WEf"
+   ],
+   "tm_fill": true
   },
   {
    "name": "Buxton Opera House",
@@ -38,7 +42,11 @@
    "urls": [
     "https://www.buxtonoperahouse.org.uk/whats-on/"
    ],
-   "guess": true
+   "guess": true,
+   "tm_ids": [
+    "KovZ9177rJV"
+   ],
+   "tm_fill": true
   },
   {
    "name": "Theatre Royal Nottingham / Royal Concert Hall",
@@ -49,7 +57,15 @@
     "https://www.trch.co.uk/whats-on?p54_page=3",
     "https://www.trch.co.uk/whats-on?p54_page=4",
     "https://www.trch.co.uk/whats-on?p54_page=5",
-    "https://www.trch.co.uk/whats-on?p54_page=6"
+    "https://www.trch.co.uk/whats-on?p54_page=6",
+    "https://www.trch.co.uk/whats-on?p54_page=7",
+    "https://www.trch.co.uk/whats-on?p54_page=8",
+    "https://www.trch.co.uk/whats-on?p54_page=9",
+    "https://www.trch.co.uk/whats-on?p54_page=10",
+    "https://www.trch.co.uk/whats-on?p54_page=11",
+    "https://www.trch.co.uk/whats-on?p54_page=12",
+    "https://www.trch.co.uk/whats-on?p54_page=13",
+    "https://www.trch.co.uk/whats-on?p54_page=14"
    ]
   },
   {
@@ -99,7 +115,11 @@
     "https://www.mansfield.gov.uk/palacetheatre/events?filter%5B10%5D=Theatre",
     "https://www.mansfield.gov.uk/palacetheatre/events?filter%5B10%5D=Theatre&page=2",
     "https://www.mansfield.gov.uk/palacetheatre/events?filter%5B10%5D=Theatre&page=3"
-   ]
+   ],
+   "tm_ids": [
+    "KovZ9177XaV"
+   ],
+   "tm_fill": true
   },
   {
    "name": "Birmingham Hippodrome",
@@ -1219,7 +1239,11 @@
    "urls": [
     "https://www.theatreroyal.co.uk/whats-on/"
    ],
-   "reader": "generic"
+   "reader": "generic",
+   "tm_ids": [
+    "KovZ91770-V"
+   ],
+   "tm_fill": true
   },
   {
    "name": "Norwich Theatre Royal",
@@ -1490,7 +1514,11 @@
    "urls": [
     "https://www.leisureandculturedundee.com/events/venue/37"
    ],
-   "reader": "generic"
+   "reader": "generic",
+   "tm_ids": [
+    "KovZ9177YS0"
+   ],
+   "tm_fill": true
   },
   {
    "name": "Leas Cliff Hall",

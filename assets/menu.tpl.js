@@ -9,6 +9,7 @@
   css.textContent =
     ".mbtn{display:none;position:absolute;right:12px;top:50%;transform:translateY(-50%);width:44px;height:44px;border:0;background:none;color:inherit;cursor:pointer;padding:0;align-items:center;justify-content:center}" +
     ".mbtn svg{width:26px;height:26px}" +
+    ".mbtn:focus:not(:focus-visible){outline:none}" +
     ".mpanel{position:fixed;inset:0;z-index:1000;background:#faf6ef;color:#1f1a16;overflow-y:auto;font-family:'Outfit',Arial,sans-serif;padding:0 20px 40px;display:none}" +
     ".mpanel.open{display:block}" +
     ".mhead{display:flex;align-items:center;justify-content:space-between;padding:max(14px,env(safe-area-inset-top,0px)) 0 8px}" +
@@ -22,7 +23,7 @@
     ".mpanel .mcities a{display:inline-block;padding:9px 0;font-size:17px;font-weight:500;color:#1f1a16;text-decoration:none}" +
     ".mpanel a:hover,.mpanel a:focus-visible{color:#a8391a}" +
     ".mpanel .mall{display:inline-block;margin-top:8px;font-size:16px;font-weight:600;color:#a8391a;text-decoration:underline;text-underline-offset:3px}" +
-    "@media(max-width:760px){.mbtn{display:flex}.top{position:relative;padding-right:52px}.top a.home{display:none}}" +
+    "@media(max-width:760px){.mbtn{display:flex}.top{position:relative}.top:not(.hashero){padding-right:52px}.top a.home{display:none}}" +
     "@media(min-width:761px){.mpanel{display:none!important}}";
   document.head.appendChild(css);
   var btn = document.createElement("button");
@@ -30,7 +31,7 @@
   btn.style.color = color;
   btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
   top.appendChild(btn);
-  if (top.querySelector(".hero")) { btn.style.top = "max(6px, env(safe-area-inset-top, 0px))"; btn.style.transform = "none"; }
+  if (top.querySelector(".hero")) { top.classList.add("hashero"); btn.style.top = "max(6px, env(safe-area-inset-top, 0px))"; btn.style.transform = "none"; }
   function list(items) { return "<ul>" + items.map(function (i) { return '<li><a href="' + i[0] + '">' + i[1] + "</a></li>"; }).join("") + "</ul>"; }
   var p = document.createElement("div");
   p.id = "mpanel"; p.className = "mpanel"; p.setAttribute("role", "dialog"); p.setAttribute("aria-modal", "true"); p.setAttribute("aria-label", "Menu");

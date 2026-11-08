@@ -1,14 +1,15 @@
 {
  "readers": 169,
- "shows_before": 6421,
- "shows_now": 6423,
+ "shows_before": 6279,
+ "shows_now": 6365,
  "broken": [
-  "Caird Hall"
+  "Bristol Hippodrome",
+  "Theatre Royal Newcastle"
  ],
  "never_worked": [],
  "ticketmaster": {
   "venues_found": 300,
-  "shows_matched": 3287,
+  "shows_matched": 3259,
   "errors": 0
  }
 }

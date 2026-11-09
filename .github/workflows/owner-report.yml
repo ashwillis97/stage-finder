@@ -1,0 +1,27 @@
+name: Weekly owner report
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 7 * * 1"
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install google-auth requests
+      - name: Search Console
+        continue-on-error: true
+        run: python scripts/gsc.py
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+      - name: Email the report
+        run: python scripts/owner_report.py
+        env:
+          MAILERLITE_API_KEY: ${{ secrets.MAILERLITE_API_KEY }}
+          MAILERLITE_FROM: ${{ secrets.MAILERLITE_FROM }}
+          OWNER_EMAIL: ashwillis@live.co.uk
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

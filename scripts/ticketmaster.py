@@ -4,7 +4,7 @@ Runs after collect.py. Needs the TICKETMASTER_API_KEY secret; without it this do
 Each venue is looked up once (cached in tm_venues.json), then its events are matched to our
 listings by date and title. Nothing here can break the update: any failure just leaves "tm" off.
 """
-import datetime as dt, json, os, pathlib, re, sys, time, urllib.parse, urllib.request
+import datetime as dt, json, os, pathlib, re, sys, time, urllib.error, urllib.parse, urllib.request
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from genre import from_ticketmaster
 
@@ -54,8 +54,15 @@ def plain_url(u):
 
 def call(path, params, key):
     q = urllib.parse.urlencode(dict(params, apikey=key))
-    with urllib.request.urlopen(f"{API}{path}?{q}", timeout=30) as r:
-        data = json.loads(r.read())
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(f"{API}{path}?{q}", timeout=30) as r:
+                data = json.loads(r.read())
+            break
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or attempt == 2:
+                raise
+            time.sleep(3 * (attempt + 1))
     time.sleep(0.25)  # stay well inside the rate limit
     return data
 
@@ -148,6 +155,7 @@ def main():
         if (ROOT / f).exists():
             for v in json.loads((ROOT / f).read_text(encoding="utf-8"))["venues"]:
                 cities[v["name"]] = v.get("city", "")
+    prev = {(r["theatre"], r["title"], r["start"]): {k: r[k] for k in ("tm", "soldout", "cancelled") if k in r} for r in data["shows"]}
     for r in data["shows"]:
         r.pop("tm", None)
         r.pop("soldout", None)
@@ -220,6 +228,14 @@ def main():
                     # Ticketmaster knows what type of show it is: use that unless the venue gave its own label
                     if hit.get("genre") and (not r.get("genre") or r.get("gsrc")):
                         r["genre"], r["gsrc"] = hit["genre"], "tm"
+    if errors >= 10:  # the run was cut short (e.g. rate limit): keep last run's links rather than losing them all
+        kept = 0
+        for r in data["shows"]:
+            old = prev.get((r["theatre"], r["title"], r["start"]))
+            if old and "tm" not in r:
+                r.update(old)
+                kept += 1
+        print(f"Run cut short: kept {kept} Ticketmaster links from the previous run")
     so = [r for r in data["shows"] if r.get("soldout")]
     ca = [r for r in data["shows"] if r.get("cancelled")]
     print(f"Sold out: {len(so)}, cancelled: {len(ca)}; samples: " + "; ".join(f"{r['title']} ({r['theatre']}, {r['start']})" for r in so[:12]))

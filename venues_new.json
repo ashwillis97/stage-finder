@@ -2,16 +2,24 @@
  "note": "new venues awaiting a snapshot and a page reader; run the 'Snapshot venue pages' workflow with 'new', then they are promoted into venues.json",
  "venues": [
   {
-   "name": "Manchester Central",
-   "city": "Manchester",
-   "postcode": "M2 3GX",
-   "guess": true,
-   "slug": "manchester-central-manchester",
+   "name": "Dubrek Studios",
+   "city": "Derby",
+   "postcode": "DE1 3LB",
+   "slug": "dubrek-studios-derby",
    "urls": [
-    "https://www.manchestercentral.co.uk/events"
+    "https://dubrek.co.uk/events/",
+    "https://dubrek.co.uk/events/list/page/2/"
    ],
-   "retry": true,
-   "reader": "generic"
+   "reader": "jsonld"
+  },
+  {
+   "name": "The Derby Conference Centre",
+   "city": "Derby",
+   "postcode": "DE24 8UX",
+   "slug": "derby-conference-centre",
+   "urls": [
+    "https://www.thederbyconferencecentre.com/whats-on-in-derby/"
+   ]
   }
  ]
 }

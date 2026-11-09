@@ -1,14 +1,11 @@
 {
- "readers": 169,
- "shows_before": 6420,
- "shows_now": 6449,
- "broken": [
-  "Aylesbury Waterside Theatre",
-  "Caird Hall"
- ],
+ "readers": 170,
+ "shows_before": 6444,
+ "shows_now": 6463,
+ "broken": [],
  "never_worked": [],
  "ticketmaster": {
-  "venues_found": 300,
+  "venues_found": 301,
   "shows_matched": 3288,
   "errors": 0
  }

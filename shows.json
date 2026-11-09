@@ -1,15 +1,13 @@
 {
  "sample": false,
- "updated": "2026-11-09T02:03+00:00",
+ "updated": "2026-11-09T08:04+00:00",
  "coverage": {
   "none": [],
   "partial": {
    "Buxton Opera House": "Not updated automatically yet, so these listings may be out of date.",
    "Lichfield Garrick": "Shows here come from Ticketmaster, so ones sold only through the venue may be missing.",
    "Palace Theatre Mansfield": "Shows here come from Ticketmaster, so ones sold only through the venue may be missing.",
-   "Brewhouse Arts Centre": "Not updated automatically yet, so these listings may be out of date.",
-   "Caird Hall": "Not updated automatically yet, so these listings may be out of date.",
-   "Aylesbury Waterside Theatre": "Not updated automatically yet, so these listings may be out of date."
+   "Brewhouse Arts Centre": "Not updated automatically yet, so these listings may be out of date."
   }
  },
  "shows": [
@@ -304,12 +302,20 @@
    "url": "https://www.excel.london/whats-on/balloon-museum-euphoria-art-is-in-the-air"
   },
   {
-   "title": "THORPE PARK: THROUGH THE EYES OF CREATIVE SIDLEY",
+   "title": "School Exhibition Visits and Activities",
    "theatre": "De La Warr Pavilion",
    "genre": "",
-   "start": "2026-10-26",
-   "end": "2026-11-30",
-   "url": "https://www.dlwp.com/event/thorpe-park-through-the-eyes-of-creative-sidley/"
+   "start": "2026-11-03",
+   "end": "2026-12-15",
+   "url": "https://www.dlwp.com/event/school-exhibition-visits-and-activities/"
+  },
+  {
+   "title": "College Exhibition Visits and Activities",
+   "theatre": "De La Warr Pavilion",
+   "genre": "",
+   "start": "2026-11-04",
+   "end": "2026-12-16",
+   "url": "https://www.dlwp.com/event/autumn-2026-exhibition-college-visits-and-activities/"
   },
   {
    "title": "Owain and Henry",
@@ -334,16 +340,6 @@
    "start": "2026-11-08",
    "end": "2027-01-03",
    "url": "https://www.dlwp.com/artsundays/"
-  },
-  {
-   "title": "Maisie Adam: Whatsherface",
-   "theatre": "Epic Studios",
-   "genre": "Comedy",
-   "start": "2026-11-08",
-   "end": "2027-02-18",
-   "url": "https://www.universe.com/events/maisie-adam-whatsherface-tickets-7J1YXN?ref=ticketmaster",
-   "tm": "https://www.universe.com/events/maisie-adam-whatsherface-tickets-7J1YXN?ref=ticketmaster",
-   "gsrc": "tm"
   },
   {
    "title": "A Night With Brian Cox & Neil Forsyth",
@@ -1226,6 +1222,16 @@
    "added": "2026-11-08"
   },
   {
+   "title": "Happy Tuesdays Comedy Night with Jacob Nussey",
+   "theatre": "Dubrek Studios",
+   "genre": "Comedy",
+   "start": "2026-11-10",
+   "end": "2026-11-10",
+   "url": "https://dubrek.co.uk/event/happy-tuesdays-comedy-night-pamela-tracey-rachel-baker-more/",
+   "gsrc": "guess",
+   "added": "2026-11-09"
+  },
+  {
    "title": "Harry Enfield and No Chums",
    "theatre": "London Palladium",
    "genre": "",
@@ -1528,14 +1534,6 @@
    "url": "https://www.ipswichtheatres.co.uk/whats-on/saxons-badminton-vs-manchester-hive/"
   },
   {
-   "title": "School Exhibition Visits and Activities",
-   "theatre": "De La Warr Pavilion",
-   "genre": "",
-   "start": "2026-11-10",
-   "end": "2026-12-15",
-   "url": "https://www.dlwp.com/event/school-exhibition-visits-and-activities/"
-  },
-  {
    "title": "Session A9 Still Alive @ 25",
    "theatre": "Eden Court Theatre",
    "genre": "",
@@ -1575,12 +1573,13 @@
    "gsrc": "tm"
   },
   {
-   "title": "Steven Osborne (Piano) &#8211; CMS",
+   "title": "Steven Osborne (Piano) – CMS",
    "theatre": "Cheltenham Town Hall",
    "genre": "",
    "start": "2026-11-10",
    "end": "2026-11-10",
-   "url": "https://cheltenhamtownhall.org.uk/event/steven-osborne-piano-cms/"
+   "url": "https://cheltenhamtownhall.org.uk/event/steven-osborne-piano-cms/",
+   "added": "2026-11-09"
   },
   {
    "title": "That’ll Be Christmas",
@@ -1885,12 +1884,13 @@
    "url": "https://www.atgtickets.com/shows/cody-dahler-the-state-of-this/theatre-royal-brighton/"
   },
   {
-   "title": "College Exhibition Visits and Activities",
-   "theatre": "De La Warr Pavilion",
+   "title": "Derby Jazz Presents: The Derby Jazz Jam",
+   "theatre": "Dubrek Studios",
    "genre": "",
    "start": "2026-11-11",
-   "end": "2026-12-16",
-   "url": "https://www.dlwp.com/event/autumn-2026-exhibition-college-visits-and-activities/"
+   "end": "2026-11-11",
+   "url": "https://dubrek.co.uk/event/derby-jazz-presents-the-derby-jazz-jam-25/",
+   "added": "2026-11-09"
   },
   {
    "title": "Disney On Ice Presents Discover The Magic",
@@ -3154,6 +3154,16 @@
    "added": "2026-11-08"
   },
   {
+   "title": "Real Talk – Poetry, Spoken Word + More",
+   "theatre": "Dubrek Studios",
+   "genre": "Talk",
+   "start": "2026-11-12",
+   "end": "2026-11-12",
+   "url": "https://dubrek.co.uk/event/real-talk-poetry-spoken-word-more-24/",
+   "gsrc": "guess",
+   "added": "2026-11-09"
+  },
+  {
    "title": "Relaxed Morning Exhibition Visits",
    "theatre": "De La Warr Pavilion",
    "genre": "",
@@ -3336,9 +3346,9 @@
    "start": "2026-11-12",
    "end": "2026-11-12",
    "url": "https://www.academymusicgroup.com/o2forumkentishtown/events/swae-lee-tickets-ae1679417",
+   "gsrc": "tm",
    "added": "2026-11-09",
-   "tm": "https://www.ticketmaster.co.uk/swae-lee-london-12-11-2026/event/3E006535C49C507F",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/swae-lee-london-12-11-2026/event/3E006535C49C507F"
   },
   {
    "title": "The Amy Winehouse Band",
@@ -4297,6 +4307,15 @@
    "start": "2026-11-13",
    "end": "2026-11-13",
    "url": "https://www.venuecymru.co.uk/shows/street-fighter-12a"
+  },
+  {
+   "title": "Sunwheel + Sons of the City + Remand to Vegas",
+   "theatre": "Dubrek Studios",
+   "genre": "",
+   "start": "2026-11-13",
+   "end": "2026-11-13",
+   "url": "https://dubrek.co.uk/event/sunwheel-sons-of-the-city-remand-to-vegas/",
+   "added": "2026-11-09"
   },
   {
    "title": "Susan Calman: Tall Tales",
@@ -5803,15 +5822,15 @@
    "tm": "https://www.ticketmaster.co.uk/absolute-radio-live-london-15-11-2026/event/370064BBF2ED423E"
   },
   {
-   "title": "Alasdair Beckett-King &#8211; King of Crumbs",
+   "title": "Alasdair Beckett-King – King of Crumbs",
    "theatre": "Cheltenham Town Hall",
    "genre": "Comedy",
    "start": "2026-11-15",
    "end": "2026-11-15",
    "url": "https://cheltenhamtownhall.org.uk/event/alasdair-beckett-king-king-of-crumbs/",
-   "gsrc": "tm",
-   "added": "2026-11-08",
-   "tm": "https://www.ticketmaster.co.uk/alasdair-beckettking-king-of-crumbs-cheltenham-15-11-2026/event/370064B296CB157C"
+   "added": "2026-11-09",
+   "tm": "https://www.ticketmaster.co.uk/alasdair-beckettking-king-of-crumbs-cheltenham-15-11-2026/event/370064B296CB157C",
+   "gsrc": "tm"
   },
   {
    "title": "An Evening With Nigel Owens MBE",
@@ -6085,6 +6104,14 @@
    "start": "2026-11-15",
    "end": "2026-11-26",
    "url": "https://www.sec.co.uk/events/detail/kevin-bridges-here-if-you-need-me"
+  },
+  {
+   "title": "Landscape: Watercolour for Beginners",
+   "theatre": "The Apex",
+   "genre": "",
+   "start": "2026-11-15",
+   "end": "2026-11-15",
+   "url": "https://www.theapex.co.uk/whats-on/details.cfm?id=1085747&ins=1818791"
   },
   {
    "title": "Leicester Symphony Orchestra: Lord Mayor Of Leicester'S Concert Rhapsody In Blue",
@@ -7130,6 +7157,15 @@
    "end": "2026-11-17",
    "url": "https://www.thsh.co.uk/events/dylan-moran-looking-for-trouble",
    "added": "2026-11-08"
+  },
+  {
+   "title": "Déda Poets: Poetry & Spoken Word",
+   "theatre": "Dubrek Studios",
+   "genre": "",
+   "start": "2026-11-17",
+   "end": "2026-11-27",
+   "url": "https://dubrek.co.uk/event/deda-poets-poetry-spoken-word-10/",
+   "added": "2026-11-09"
   },
   {
    "title": "Eagles of Death Metal",
@@ -9744,6 +9780,15 @@
    "gsrc": "tm"
   },
   {
+   "title": "University of Derby Music + Band Society: Multi Genre Band Night",
+   "theatre": "Dubrek Studios",
+   "genre": "",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "url": "https://dubrek.co.uk/event/university-of-derby-music-band-society-multi-genre-band-night/",
+   "added": "2026-11-09"
+  },
+  {
    "title": "Walrws",
    "theatre": "Theatr Clwyd",
    "genre": "",
@@ -10238,6 +10283,16 @@
    "start": "2026-11-21",
    "end": "2026-11-21",
    "url": "https://www.hackneyempire.co.uk/events/jack-and-the-beanstalk#dates-and-times"
+  },
+  {
+   "title": "Jemma Johnson + Molly Warburton + Solow Choir",
+   "theatre": "Dubrek Studios",
+   "genre": "Classical",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "url": "https://dubrek.co.uk/event/jemma-johnson-molly-warburton-solow-choir/",
+   "gsrc": "guess",
+   "added": "2026-11-09"
   },
   {
    "title": "Jonathan Pie",
@@ -10943,6 +10998,15 @@
    "added": "2026-11-07"
   },
   {
+   "title": "Billy Fury Paradise",
+   "theatre": "The Apex",
+   "genre": "",
+   "start": "2026-11-22",
+   "end": "2026-11-22",
+   "url": "https://www.theapex.co.uk/whats-on/details.cfm?id=1126347&ins=1908790",
+   "added": "2026-11-09"
+  },
+  {
    "title": "Boyzlife",
    "theatre": "Aylesbury Waterside Theatre",
    "genre": "Concert",
@@ -11111,6 +11175,15 @@
    "start": "2026-11-22",
    "end": "2026-11-22",
    "url": "https://themet.org.uk/event/gary-stewarts-graceland-2026/"
+  },
+  {
+   "title": "Good Vibrations",
+   "theatre": "The Apex",
+   "genre": "",
+   "start": "2026-11-22",
+   "end": "2026-11-22",
+   "url": "https://www.theapex.co.uk/whats-on/details.cfm?id=1126747&ins=1909390",
+   "added": "2026-11-09"
   },
   {
    "title": "Hannah East: Express Yourself",
@@ -11587,6 +11660,15 @@
    "gsrc": "tm"
   },
   {
+   "title": "Hand Made Man with Patrick Grant",
+   "theatre": "The Apex",
+   "genre": "",
+   "start": "2026-11-23",
+   "end": "2026-11-23",
+   "url": "https://www.theapex.co.uk/whats-on/details.cfm?id=1127747&ins=1910390",
+   "added": "2026-11-09"
+  },
+  {
    "title": "Jersey Boys",
    "theatre": "Mayflower Theatre",
    "genre": "Musical",
@@ -11624,12 +11706,13 @@
    "url": "https://www.atgtickets.com/shows/musical-makers-showcase/edinburgh-playhouse/"
   },
   {
-   "title": "Next Wave: Backstage Pass",
+   "title": "New Wave: Backstage Pass",
    "theatre": "De La Warr Pavilion",
    "genre": "",
    "start": "2026-11-23",
    "end": "2026-11-23",
-   "url": "https://www.dlwp.com/event/new-wave-backstage-pass/"
+   "url": "https://www.dlwp.com/event/new-wave-backstage-pass/",
+   "added": "2026-11-09"
   },
   {
    "title": "Operation Mincemeat",
@@ -11712,9 +11795,9 @@
    "start": "2026-11-23",
    "end": "2026-11-23",
    "url": "https://www.eastbournetheatres.co.uk/eastbourne-theatres-eastbourne/en-GB/event/music/the-australian-pink-floyd-tickets",
+   "gsrc": "tm",
    "added": "2026-11-09",
-   "tm": "https://www.ticketmaster.co.uk/the-australian-pink-floyd-eastbourne-23-11-2026/event/1F006382CC827B7D",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/the-australian-pink-floyd-eastbourne-23-11-2026/event/1F006382CC827B7D"
   },
   {
    "title": "The Band of His Majesty's RM Plymouth",
@@ -12067,6 +12150,15 @@
    "url": "https://www.atgtickets.com/shows/pick-me-up-presents-we-will-rock-you/grand-opera-house-york/"
   },
   {
+   "title": "Premier Education: The Carnival of the Animals",
+   "theatre": "Exeter Northcott Theatre",
+   "genre": "",
+   "start": "2026-11-24",
+   "end": "2026-11-24",
+   "url": "https://exeternorthcott.co.uk/events/premier-education-the-carnival-of-the-animals/",
+   "added": "2026-11-09"
+  },
+  {
    "title": "Prof Alice Roberts - From Cell to Civilisation",
    "theatre": "Richmond Theatre",
    "genre": "Talk",
@@ -12100,6 +12192,15 @@
    "start": "2026-11-24",
    "end": "2026-11-28",
    "url": "https://www.atgtickets.com/shows/six/milton-keynes-theatre/"
+  },
+  {
+   "title": "Steve Knightley & The Winter Yards Band",
+   "theatre": "The Apex",
+   "genre": "",
+   "start": "2026-11-24",
+   "end": "2026-11-24",
+   "url": "https://www.theapex.co.uk/whats-on/details.cfm?id=1109947&ins=1870390",
+   "added": "2026-11-09"
   },
   {
    "title": "That'll Be The Day - That'll Be Christmas",
@@ -12303,6 +12404,15 @@
    "url": "https://www.assemblyhalltheatre.co.uk/whats-on/chris-ramsey.html#event-datesTimes"
   },
   {
+   "title": "Christmas Booze & Brushes: Snowman Wreath",
+   "theatre": "The Apex",
+   "genre": "",
+   "start": "2026-11-25",
+   "end": "2026-11-25",
+   "url": "https://www.theapex.co.uk/whats-on/details.cfm?id=940347&ins=1976590",
+   "added": "2026-11-09"
+  },
+  {
    "title": "Christmas Sale",
    "theatre": "NEC Birmingham",
    "genre": "",
@@ -12409,6 +12519,15 @@
    "url": "https://www.ticketmaster.co.uk/fin-taylor-exeter-25-11-2026/event/1F00644D0821A47D",
    "tm": "https://www.ticketmaster.co.uk/fin-taylor-exeter-25-11-2026/event/1F00644D0821A47D",
    "gsrc": "tm"
+  },
+  {
+   "title": "Fin Taylor: The Pre-emptive Comeback Special",
+   "theatre": "Exeter Northcott Theatre",
+   "genre": "",
+   "start": "2026-11-25",
+   "end": "2026-11-25",
+   "url": "https://exeternorthcott.co.uk/events/fin-taylor-the-pre-emptive-comeback-special/",
+   "added": "2026-11-09"
   },
   {
    "title": "Fishies Week 10",
@@ -12607,6 +12726,15 @@
    "url": "https://www.dclt.co.uk/tickets/?EventInstanceId=442002&iframe=chooseseats"
   },
   {
+   "title": "Moon Bullet + Ken Evans (Music & Poetry)",
+   "theatre": "Dubrek Studios",
+   "genre": "",
+   "start": "2026-11-25",
+   "end": "2026-11-25",
+   "url": "https://dubrek.co.uk/event/moon-bullet-ken-evans-music-poetry/",
+   "added": "2026-11-09"
+  },
+  {
    "title": "Mystery Jets",
    "theatre": "O2 Forum Kentish Town",
    "genre": "Music",
@@ -12640,6 +12768,16 @@
    "start": "2026-11-25",
    "end": "2026-11-26",
    "url": "https://www.thenec.co.uk/events/occupational-therapy/"
+  },
+  {
+   "title": "Premier Education: The Nutcracker",
+   "theatre": "Exeter Northcott Theatre",
+   "genre": "Dance",
+   "start": "2026-11-25",
+   "end": "2026-11-25",
+   "url": "https://exeternorthcott.co.uk/events/premier-education-the-nutcracker/",
+   "gsrc": "guess",
+   "added": "2026-11-09"
   },
   {
    "title": "Prof Alice Roberts – From Cell to Civilisation",
@@ -14058,6 +14196,16 @@
    "gsrc": "tm"
   },
   {
+   "title": "The Comedy Store 2026",
+   "theatre": "Exeter Northcott Theatre",
+   "genre": "Comedy",
+   "start": "2026-11-27",
+   "end": "2026-11-27",
+   "url": "https://exeternorthcott.co.uk/events/the-comedy-store-2026/",
+   "gsrc": "guess",
+   "added": "2026-11-09"
+  },
+  {
    "title": "The Hunna Final Tour",
    "theatre": "O2 Academy Glasgow",
    "genre": "Music",
@@ -14129,6 +14277,15 @@
    "url": "https://www.ticketmaster.co.uk/the-stylistics-liverpool-27-11-2026/event/1F006450AB16350D",
    "tm": "https://www.ticketmaster.co.uk/the-stylistics-liverpool-27-11-2026/event/1F006450AB16350D",
    "gsrc": "tm"
+  },
+  {
+   "title": "This Feeling Presents Tom Hewitt + More TBC",
+   "theatre": "Dubrek Studios",
+   "genre": "",
+   "start": "2026-11-27",
+   "end": "2026-11-27",
+   "url": "https://dubrek.co.uk/event/this-feeling-presents-tom-hewitt-more-tbc/",
+   "added": "2026-11-09"
   },
   {
    "title": "Tide Lines",
@@ -14736,6 +14893,15 @@
    "added": "2026-11-08"
   },
   {
+   "title": "Rockrek: Agent Utah + Livingstone + Lola W + Flagg",
+   "theatre": "Dubrek Studios",
+   "genre": "",
+   "start": "2026-11-28",
+   "end": "2026-11-28",
+   "url": "https://dubrek.co.uk/event/rockrek-agent-utah-livingstone-lola-w-flagg/",
+   "added": "2026-11-09"
+  },
+  {
    "title": "Royal Blood",
    "theatre": "Barrowland Ballroom",
    "genre": "Music",
@@ -14990,6 +15156,15 @@
    "end": "2026-12-19",
    "url": "https://www.parkwoodtheatres.co.uk/the-hawth/whats-on/ukulele-improvers",
    "gsrc": "guess"
+  },
+  {
+   "title": "Word Wise X Poetry Praise Sandwich Presents Leanne Moden",
+   "theatre": "Dubrek Studios",
+   "genre": "",
+   "start": "2026-11-28",
+   "end": "2026-11-28",
+   "url": "https://dubrek.co.uk/event/word-wise-x-poetry-praise-sandwich-presents-the-word-wise-10th-year-birthday-party/",
+   "added": "2026-11-09"
   },
   {
    "title": "Adam Rowe: Fashionism",
@@ -25745,9 +25920,9 @@
    "start": "2027-01-23",
    "end": "2027-01-23",
    "url": "https://www.mandsbankarena.com/whats-on/donny-osmond/",
+   "gsrc": "tm",
    "added": "2026-11-09",
-   "tm": "https://www.ticketmaster.co.uk/donny-osmond-viva-uk-liverpool-23-01-2027/event/370064AE8D0711D5",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/donny-osmond-viva-uk-liverpool-23-01-2027/event/370064AE8D0711D5"
   },
   {
    "title": "Elvis: As It Was",
@@ -26459,15 +26634,6 @@
    "url": "https://www.excel.london/whats-on/the-festival-of-genomics-biodata-2027"
   },
   {
-   "title": "The New Cut",
-   "theatre": "De La Warr Pavilion",
-   "genre": "",
-   "start": "2027-01-27",
-   "end": "2027-01-27",
-   "url": "https://www.dlwp.com/event/the-new-cut/",
-   "added": "2026-11-05"
-  },
-  {
    "title": "The Sharon Shannon Big Band with very special guests",
    "theatre": "O2 Academy Glasgow",
    "genre": "Music",
@@ -26811,14 +26977,6 @@
    "url": "https://www.ticketmaster.co.uk/connor-burns-flow-northampton-29-01-2027/event/1F006547CF3E4967",
    "tm": "https://www.ticketmaster.co.uk/connor-burns-flow-northampton-29-01-2027/event/1F006547CF3E4967",
    "gsrc": "tm"
-  },
-  {
-   "title": "De La Roar Comedy Club",
-   "theatre": "De La Warr Pavilion",
-   "genre": "Comedy",
-   "start": "2027-01-29",
-   "end": "2027-01-29",
-   "url": "https://www.dlwp.com/event/delaroar/"
   },
   {
    "title": "Definitely Mightbe - (A Tribute To Oasis)",
@@ -32076,6 +32234,16 @@
    "start": "2027-02-18",
    "end": "2027-02-19",
    "url": "https://www.theatresevern.co.uk/whats-on/les-miserables-school-edition//"
+  },
+  {
+   "title": "Maisie Adam: Whatsherface",
+   "theatre": "Epic Studios",
+   "genre": "Comedy",
+   "start": "2027-02-18",
+   "end": "2027-02-18",
+   "url": "https://www.universe.com/events/maisie-adam-whatsherface-tickets-XNSGY4?ref=ticketmaster",
+   "tm": "https://www.universe.com/events/maisie-adam-whatsherface-tickets-XNSGY4?ref=ticketmaster",
+   "gsrc": "tm"
   },
   {
    "title": "Murderous Minds with Emma Kenny",
@@ -38473,14 +38641,6 @@
    "gsrc": "tm"
   },
   {
-   "title": "Chimer",
-   "theatre": "De La Warr Pavilion",
-   "genre": "",
-   "start": "2027-03-13",
-   "end": "2027-03-13",
-   "url": "https://www.dlwp.com/event/chimer/"
-  },
-  {
    "title": "Cirque Enchantment",
    "theatre": "Royal Concert Hall",
    "genre": "Family",
@@ -39922,14 +40082,6 @@
    "url": "https://www.hackneyempire.co.uk/book/instance/293001"
   },
   {
-   "title": "Kate Garner’s Vintage Songbook",
-   "theatre": "De La Warr Pavilion",
-   "genre": "",
-   "start": "2027-03-19",
-   "end": "2027-03-19",
-   "url": "https://www.dlwp.com/event/kate-garner/"
-  },
-  {
    "title": "Layton Williams: Layton Live",
    "theatre": "Wyvern Theatre",
    "genre": "Dance",
@@ -41209,15 +41361,6 @@
    "url": "https://www.ticketmaster.co.uk/the-jacksons-venue-premium-tickets-london-25-03-2027/event/3700655C8D3149E9",
    "tm": "https://www.ticketmaster.co.uk/the-jacksons-venue-premium-tickets-london-25-03-2027/event/3700655C8D3149E9",
    "gsrc": "tm"
-  },
-  {
-   "title": "The Music Of Trees",
-   "theatre": "De La Warr Pavilion",
-   "genre": "Tribute",
-   "start": "2027-03-25",
-   "end": "2027-03-25",
-   "url": "https://www.dlwp.com/event/the-music-of-trees/",
-   "gsrc": "guess"
   },
   {
    "title": "Tom Lawrinson: Speak of the Devil",
@@ -46790,15 +46933,6 @@
    "end": "2027-04-28",
    "url": "https://www.academymusicgroup.com/o2forumkentishtown/events/ider-tickets-ae855625",
    "added": "2026-11-06"
-  },
-  {
-   "title": "Johnny Dowd & Mark Lotterman",
-   "theatre": "De La Warr Pavilion",
-   "genre": "",
-   "start": "2027-04-28",
-   "end": "2027-04-28",
-   "url": "https://www.dlwp.com/event/johnny-dowd-mark-lotterman/",
-   "added": "2026-11-02"
   },
   {
    "title": "Midsomer Murders: The Killings at Badger's Drift",
@@ -55182,9 +55316,9 @@
    "start": "2027-09-16",
    "end": "2027-09-16",
    "url": "https://bristolbeacon.org/whats-on/fishermans-friends/book/824202",
+   "gsrc": "tm",
    "added": "2026-11-09",
-   "tm": "https://www.ticketmaster.co.uk/fishermans-friends-bristol-16-09-2027/event/370064B4B60626E9",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/fishermans-friends-bristol-16-09-2027/event/370064B4B60626E9"
   },
   {
    "title": "Ahir Shah: Golden",
@@ -61027,11 +61161,17 @@
    -2.256,
    "North"
   ],
-  "Manchester Central": [
-   "Manchester",
-   53.4762,
-   -2.2473,
-   "North"
+  "Dubrek Studios": [
+   "Derby",
+   52.9267,
+   -1.4863,
+   "Midlands"
+  ],
+  "The Derby Conference Centre": [
+   "Derby",
+   52.9037,
+   -1.4483,
+   "Midlands"
   ]
  },
  "new_venues": {
@@ -61167,6 +61307,7 @@
   "William Aston Hall": "2026-11-03",
   "Wolverhampton Arts Centre": "2026-11-03",
   "Worthing Assembly Hall": "2026-11-03",
-  "Wyvern Theatre": "2026-11-02"
+  "Wyvern Theatre": "2026-11-02",
+  "Dubrek Studios": "2026-11-09"
  }
 }

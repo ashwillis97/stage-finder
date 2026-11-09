@@ -31,6 +31,10 @@ jobs:
         env:
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
         run: python scripts/ticketmaster.py
+      - name: Add Skiddle listings
+        env:
+          SKIDDLE_API_KEY: ${{ secrets.SKIDDLE_API_KEY }}
+        run: python scripts/skiddle.py
       - name: Build venue, city and category pages
         run: python scripts/build_pages.py
       - name: Save the new listings

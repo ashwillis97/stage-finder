@@ -2,17 +2,6 @@
  "note": "new venues awaiting a snapshot and a page reader; run the 'Snapshot venue pages' workflow with 'new', then they are promoted into venues.json",
  "venues": [
   {
-   "name": "Dubrek Studios",
-   "city": "Derby",
-   "postcode": "DE1 3LB",
-   "slug": "dubrek-studios-derby",
-   "urls": [
-    "https://dubrek.co.uk/events/",
-    "https://dubrek.co.uk/events/list/page/2/"
-   ],
-   "reader": "jsonld"
-  },
-  {
    "name": "The Derby Conference Centre",
    "city": "Derby",
    "postcode": "DE24 8UX",

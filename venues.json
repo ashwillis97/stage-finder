@@ -3567,6 +3567,19 @@
    "tm_ids": [
     "KovZ9177Li7"
    ]
+  },
+  {
+   "name": "Dubrek Studios",
+   "city": "Derby",
+   "postcode": "DE1 3LB",
+   "slug": "dubrek-studios-derby",
+   "urls": [
+    "https://dubrek.co.uk/events/",
+    "https://dubrek.co.uk/events/list/page/2/",
+    "https://dubrek.co.uk/events/list/page/3/"
+   ],
+   "reader": "jsonld",
+   "skip": "assembly|book ?club|booksquad|social\\b|networking|drink (&|and) draw|drawing swords|art event"
   }
  ]
 }

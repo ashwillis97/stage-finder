@@ -3,6 +3,7 @@
 Each venue has a reader below. A venue's old rows are replaced only when its
 reader finds at least one show, so a broken page never wipes the listings.
 """
+import html as html_lib
 import datetime as dt, json, os, pathlib, re, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from genre import guess_genre
@@ -530,7 +531,7 @@ def _ld_date(s):
     return None
 
 
-def read_jsonld(prefix, theatre, match=None, fallback_url=""):
+def read_jsonld(prefix, theatre, match=None, fallback_url="", skip=None):
     """Venues that publish schema.org Event data: one row per title, spanning its first to last date."""
     found = []
     for f in files(prefix):
@@ -560,7 +561,11 @@ def read_jsonld(prefix, theatre, match=None, fallback_url=""):
         b = _ld_date(o.get("endDate")) or a
         if not a:
             continue
-        g = groups.setdefault(re.sub(r"\s+", " ", o["name"]).strip(), {"a": a, "b": b, "url": o.get("url") or ""})
+        nm = html_lib.unescape(str(o["name"]))
+        nm = re.sub(r"\s+", " ", nm.split("<")[0]).strip()
+        if not nm or (skip and re.search(skip, nm, re.I)):
+            continue
+        g = groups.setdefault(nm, {"a": a, "b": b, "url": o.get("url") or ""})
         g["a"], g["b"] = min(g["a"], a), max(g["b"], b or a)
         g["url"] = g["url"] or o.get("url") or ""
     return [row(t, theatre, (g["a"], max(g["a"], g["b"])), g["url"] or fallback_url) for t, g in groups.items()]
@@ -577,7 +582,7 @@ for _v in _venue_files(live_only=True):
 
 for _v in _venue_files(live_only=True):
     if _v.get("reader") == "jsonld" and _v["name"] not in READERS:
-        READERS[_v["name"]] = (lambda s=_v["slug"], n=_v["name"], m=_v.get("match"), u=_v["urls"][0]: read_jsonld(s, n, m, u))
+        READERS[_v["name"]] = (lambda s=_v["slug"], n=_v["name"], m=_v.get("match"), u=_v["urls"][0], k=_v.get("skip"): read_jsonld(s, n, m, u, k))
 
 
 from urllib.parse import urljoin

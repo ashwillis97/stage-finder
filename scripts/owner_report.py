@@ -16,7 +16,7 @@ SITE_TAG = "8386717571e94d43ae043733aa4dc407"
 
 
 def http(method, url, body=None, headers=None, raw=False):
-    data = body if raw else (json.dumps(body).encode() if body is not None else None)
+    data = (body.encode() if isinstance(body, str) else body) if raw else (json.dumps(body).encode() if body is not None else None)
     h = {"Accept": "application/json", "User-Agent": "FindAShow/1.0"}
     h.update(headers or {})
     if body is not None and not raw:
@@ -59,8 +59,8 @@ def visitors():
     end = dt.datetime.utcnow()
     out = {}
     for label, days in (("Last 7 days", 7), ("Last 28 days", 28)):
-        q = ('{ viewer { accounts(filter:{accountTag:"%s"}) { t: rumPageloadEventsAdaptiveGroups(limit:1, filter:{siteTag:"%s", datetime_geq:"%s", datetime_leq:"%s"}) { count sum { visits } } } } }'
-             % (CF_ACCT, SITE_TAG, (end - dt.timedelta(days=days)).strftime("%Y-%m-%dT%H:%M:%SZ"), end.strftime("%Y-%m-%dT%H:%M:%SZ")))
+        q = ('{ viewer { accounts(filter:{accountTag:"%s"}) { t: rumPageloadEventsAdaptiveGroups(limit:1, filter:{datetime_geq:"%s", datetime_leq:"%s"}) { count sum { visits } } } } }'
+             % (CF_ACCT, (end - dt.timedelta(days=days)).strftime("%Y-%m-%dT%H:%M:%SZ"), end.strftime("%Y-%m-%dT%H:%M:%SZ")))
         st, txt = http("POST", "https://api.cloudflare.com/client/v4/graphql", {"query": q}, {"Authorization": f"Bearer {CF_TOK}"})
         try:
             g = json.loads(txt)["data"]["viewer"]["accounts"][0]["t"][0]

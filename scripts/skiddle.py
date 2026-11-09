@@ -12,6 +12,7 @@ CODES = {"LIVE": "Music", "COMEDY": "Comedy", "THEATRE": "Play", "KIDS": "Family
 PAGES = 10          # 100 events per page per category
 MIN_EVENTS = 2      # venues with fewer upcoming events get no page of their own
 MAX_VENUES = 400
+ADDRESSY = re.compile(r"^\d|\b[A-Z]{1,2}\d[A-Z\d]? ?\d[A-Z]{2}\b|\b(road|street|lane|avenue)\b.*\b(road|street|lane|avenue|london|uk)\b", re.I)
 NOISE = re.compile(r"\b(open mic|quiz|karaoke|brunch|bingo|dj set|club night|rave|vip upgrade|parking|camping|travel|coach|shuttle|locker)\b", re.I)
 
 
@@ -100,7 +101,7 @@ def main():
     by_venue = {}
     for g in groups.values():
         by_venue.setdefault(g["venue"]["name"].strip(), []).append(g)
-    keep = sorted((v for v, l in by_venue.items() if len(l) >= MIN_EVENTS), key=lambda v: -len(by_venue[v]))[:MAX_VENUES]
+    keep = sorted((v for v, l in by_venue.items() if len(l) >= MIN_EVENTS and not ADDRESSY.search(v)), key=lambda v: -len(by_venue[v]))[:MAX_VENUES]
     rows, places = [], {}
     reg = regions({(by_venue[v][0]["venue"].get("postcode") or "").strip().upper() for v in keep})
     for v in keep:

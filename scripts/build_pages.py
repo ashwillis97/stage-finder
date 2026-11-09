@@ -197,6 +197,17 @@ def x_day(a):
     return a.strftime("%a")
 
 
+def skid(url):
+    """Add our Skiddle affiliate tag to skiddle.com links."""
+    try:
+        u = urlparse(url)
+        if re.search(r"(^|\.)skiddle\.com$", u.hostname or "") and "sktag=" not in u.query:
+            return url + ("&" if u.query else "?") + "sktag=15961"
+    except Exception:
+        pass
+    return url
+
+
 def tm_link(url):
     """Our own affiliate wrap around a plain ticketmaster.co.uk page."""
     if not url:
@@ -297,7 +308,7 @@ def show_card(s, today, show_venue=False, show_city=None):
     if tm:
         acts = f'<a class="btn" data-v="{esc(s["theatre"])}" data-s="{esc(s["title"])}" data-k="tm" href="{esc(tm)}" target="_blank" rel="sponsored noopener noreferrer">Buy on Ticketmaster</a>'
     elif s.get("url"):
-        acts = f'<a class="btn" data-v="{esc(s["theatre"])}" data-s="{esc(s["title"])}" data-k="venue" href="{esc(s["url"])}" target="_blank" rel="noopener noreferrer">Tickets &amp; info</a>'
+        acts = f'<a class="btn" data-v="{esc(s["theatre"])}" data-s="{esc(s["title"])}" data-k="venue" href="{esc(skid(s["url"]))}" target="_blank" rel="{"sponsored " if "skiddle.com" in s["url"] else ""}noopener noreferrer">Tickets &amp; info</a>'
     else:
         acts = ""
     return f'<div class="card"><div><h3>{esc(s["title"])}{flag_html(s)}</h3><p class="meta">{meta}</p></div><div class="act">{acts}</div></div>'

@@ -641,7 +641,12 @@ h2 { font-size: 20px; font-weight: 600; letter-spacing: 0; color: var(--muted); 
   function iso(d) { return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); }
   function addDays(d, n) { var x = new Date(d.getFullYear(), d.getMonth(), d.getDate() + n); return x; }
   function esc(s) { var d = document.createElement("div"); d.textContent = s == null ? "" : String(s); return d.innerHTML.replace(/"/g, "&quot;"); }
-  function safeUrl(u) { return /^https?:\/\//i.test(u || "") ? u : "#"; }
+  function safeUrl(u) { return /^https?:\/\//i.test(u || "") ? skid(u) : "#"; }
+  /* Skiddle affiliate tag on any skiddle.com ticket link */
+  function skid(u) {
+    try { var x = new URL(u); if (/(^|\.)skiddle\.com$/.test(x.hostname) && !x.searchParams.has("sktag")) { x.searchParams.set("sktag", "15961"); return x.toString(); } } catch (e) {}
+    return u;
+  }
   function nameOf(t) { return PLACE[t] ? PLACE[t][0] : t; }
   function cityOf(t) { return PLACE[t] ? PLACE[t][1] : ""; }
   function label(t) { return cityOf(t) ? nameOf(t) + ", " + cityOf(t) : nameOf(t); }
@@ -806,7 +811,7 @@ h2 { font-size: 20px; font-weight: 600; letter-spacing: 0; color: var(--muted); 
   function mainButton(s) {
     var tm = tmHref(s);
     if (tm) return '<a class="btn" data-v="' + esc(s.theatre) + '" data-s="' + esc(s.title) + '" data-k="tm" href="' + esc(tm) + '" target="_blank" rel="sponsored noopener noreferrer" aria-label="Buy tickets for ' + esc(s.title) + ' on Ticketmaster">Buy on Ticketmaster</a>';
-    return '<a class="btn" data-v="' + esc(s.theatre) + '" data-s="' + esc(s.title) + '" data-k="venue" href="' + esc(safeUrl(s.url)) + '" target="_blank" rel="noopener noreferrer" aria-label="Tickets and info for ' + esc(s.title) + '">Tickets &amp; info</a>';
+    return '<a class="btn" data-v="' + esc(s.theatre) + '" data-s="' + esc(s.title) + '" data-k="venue" href="' + esc(safeUrl(s.url)) + '" target="_blank" rel="' + (/skiddle\.com/.test(s.url || "") ? "sponsored " : "") + 'noopener noreferrer" aria-label="Tickets and info for ' + esc(s.title) + '">Tickets &amp; info</a>';
   }
   function refresh() { visible = 40; render(); updTriggers(); }
 

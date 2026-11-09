@@ -1,23 +1,5 @@
 [
  {
-  "venue": "Dubrek Studios",
-  "url": "https://dubrek.co.uk/events/",
-  "file": "dubrek-studios-derby-1.html",
-  "status": 200,
-  "error": null,
-  "bytes": 93740,
-  "final_url": "https://dubrek.co.uk/events/"
- },
- {
-  "venue": "Dubrek Studios",
-  "url": "https://dubrek.co.uk/events/list/page/2/",
-  "file": "dubrek-studios-derby-2.html",
-  "status": 200,
-  "error": null,
-  "bytes": 33164,
-  "final_url": "https://dubrek.co.uk/events/list/page/2/"
- },
- {
   "venue": "The Derby Conference Centre",
   "url": "https://www.thederbyconferencecentre.com/whats-on-in-derby/",
   "file": "derby-conference-centre-1.html",
@@ -25,5 +7,97 @@
   "error": null,
   "bytes": 2524,
   "final_url": "https://www.thederbyconferencecentre.com/whats-on-in-derby/"
+ },
+ {
+  "venue": "Lyceum Theatre",
+  "url": "https://www.atgtickets.com/shows/class-act-autumn-winter-term/lyceum-theatre/",
+  "file": "lyceum-theatre-london-2.html",
+  "status": 200,
+  "error": null,
+  "bytes": 339870
+ },
+ {
+  "venue": "Lyceum Theatre",
+  "url": "https://www.atgtickets.com/shows/disneys-the-lion-king/lyceum-theatre/",
+  "file": "lyceum-theatre-london-3.html",
+  "status": 200,
+  "error": null,
+  "bytes": 360111
+ },
+ {
+  "venue": "Lyceum Theatre",
+  "url": "https://www.atgtickets.com/shows/venue-tour/lyceum-theatre/",
+  "file": "lyceum-theatre-london-4.html",
+  "status": 200,
+  "error": null,
+  "bytes": 342411
+ },
+ {
+  "venue": "Lyceum Theatre",
+  "url": "https://www.atgtickets.com/shows/anton-at-christmas/lyceum-theatre/",
+  "file": "lyceum-theatre-london-5.html",
+  "status": 200,
+  "error": null,
+  "bytes": 329561
+ },
+ {
+  "venue": "Lyceum Theatre",
+  "url": "https://www.atgtickets.com/shows/damien-rice-o-25th-anniversary-tour/lyceum-theatre/",
+  "file": "lyceum-theatre-london-6.html",
+  "status": 200,
+  "error": null,
+  "bytes": 332780
+ },
+ {
+  "venue": "Lyceum Theatre",
+  "url": "https://www.atgtickets.com/shows/disneys-the-lion-king-relaxed-performance/lyceum-theatre/",
+  "file": "lyceum-theatre-london-7.html",
+  "status": 200,
+  "error": null,
+  "bytes": 341625
+ },
+ {
+  "venue": "Lyceum Theatre",
+  "url": "https://www.atgtickets.com/venues/lyceum-theatre/whats-on/",
+  "file": "lyceum-theatre-london-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 105154,
+  "final_url": "https://www.atgtickets.com/venues/lyceum-theatre/whats-on/"
+ },
+ {
+  "venue": "Fortune Theatre",
+  "url": "https://www.atgtickets.com/shows/operation-mincemeat-a-new-musical/fortune-theatre/",
+  "file": "fortune-theatre-london-2.html",
+  "status": 200,
+  "error": null,
+  "bytes": 357508
+ },
+ {
+  "venue": "Fortune Theatre",
+  "url": "https://www.atgtickets.com/venues/fortune-theatre/whats-on/",
+  "file": "fortune-theatre-london-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 69369,
+  "final_url": "https://www.atgtickets.com/venues/fortune-theatre/whats-on/"
+ },
+ {
+  "venue": "Gillian Lynne Theatre",
+  "url": "https://lwtheatres.co.uk/whats-on/?event-venue=gillian-lynne-theatre",
+  "file": "gillian-lynne-theatre-london-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 107388,
+  "final_url": "https://lwtheatres.co.uk/whats-on/?event-venue=gillian-lynne-theatre"
+ },
+ {
+  "venue": "Shaftesbury Theatre",
+  "url": "https://www.shaftesburytheatre.com/",
+  "file": "shaftesbury-theatre-london-1.html",
+  "status": 200,
+  "error": null,
+  "bytes": 164195,
+  "final_url": "https://www.shaftesburytheatre.com/"
  }
 ]

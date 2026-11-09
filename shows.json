@@ -1,13 +1,14 @@
 {
  "sample": false,
- "updated": "2026-11-09T08:04+00:00",
+ "updated": "2026-11-09T08:48+00:00",
  "coverage": {
   "none": [],
   "partial": {
    "Buxton Opera House": "Not updated automatically yet, so these listings may be out of date.",
    "Lichfield Garrick": "Shows here come from Ticketmaster, so ones sold only through the venue may be missing.",
    "Palace Theatre Mansfield": "Shows here come from Ticketmaster, so ones sold only through the venue may be missing.",
-   "Brewhouse Arts Centre": "Not updated automatically yet, so these listings may be out of date."
+   "Brewhouse Arts Centre": "Not updated automatically yet, so these listings may be out of date.",
+   "Theatre Royal Newcastle": "Not updated automatically yet, so these listings may be out of date."
   }
  },
  "shows": [
@@ -302,20 +303,12 @@
    "url": "https://www.excel.london/whats-on/balloon-museum-euphoria-art-is-in-the-air"
   },
   {
-   "title": "School Exhibition Visits and Activities",
+   "title": "THORPE PARK: THROUGH THE EYES OF CREATIVE SIDLEY",
    "theatre": "De La Warr Pavilion",
    "genre": "",
-   "start": "2026-11-03",
-   "end": "2026-12-15",
-   "url": "https://www.dlwp.com/event/school-exhibition-visits-and-activities/"
-  },
-  {
-   "title": "College Exhibition Visits and Activities",
-   "theatre": "De La Warr Pavilion",
-   "genre": "",
-   "start": "2026-11-04",
-   "end": "2026-12-16",
-   "url": "https://www.dlwp.com/event/autumn-2026-exhibition-college-visits-and-activities/"
+   "start": "2026-10-26",
+   "end": "2026-11-30",
+   "url": "https://www.dlwp.com/event/thorpe-park-through-the-eyes-of-creative-sidley/"
   },
   {
    "title": "Owain and Henry",
@@ -1534,6 +1527,14 @@
    "url": "https://www.ipswichtheatres.co.uk/whats-on/saxons-badminton-vs-manchester-hive/"
   },
   {
+   "title": "School Exhibition Visits and Activities",
+   "theatre": "De La Warr Pavilion",
+   "genre": "",
+   "start": "2026-11-10",
+   "end": "2026-12-15",
+   "url": "https://www.dlwp.com/event/school-exhibition-visits-and-activities/"
+  },
+  {
    "title": "Session A9 Still Alive @ 25",
    "theatre": "Eden Court Theatre",
    "genre": "",
@@ -1882,6 +1883,14 @@
    "start": "2026-11-11",
    "end": "2026-11-11",
    "url": "https://www.atgtickets.com/shows/cody-dahler-the-state-of-this/theatre-royal-brighton/"
+  },
+  {
+   "title": "College Exhibition Visits and Activities",
+   "theatre": "De La Warr Pavilion",
+   "genre": "",
+   "start": "2026-11-11",
+   "end": "2026-12-16",
+   "url": "https://www.dlwp.com/event/autumn-2026-exhibition-college-visits-and-activities/"
   },
   {
    "title": "Derby Jazz Presents: The Derby Jazz Jam",
@@ -11706,13 +11715,12 @@
    "url": "https://www.atgtickets.com/shows/musical-makers-showcase/edinburgh-playhouse/"
   },
   {
-   "title": "New Wave: Backstage Pass",
+   "title": "Next Wave: Backstage Pass",
    "theatre": "De La Warr Pavilion",
    "genre": "",
    "start": "2026-11-23",
    "end": "2026-11-23",
-   "url": "https://www.dlwp.com/event/new-wave-backstage-pass/",
-   "added": "2026-11-09"
+   "url": "https://www.dlwp.com/event/new-wave-backstage-pass/"
   },
   {
    "title": "Operation Mincemeat",
@@ -26634,6 +26642,15 @@
    "url": "https://www.excel.london/whats-on/the-festival-of-genomics-biodata-2027"
   },
   {
+   "title": "The New Cut",
+   "theatre": "De La Warr Pavilion",
+   "genre": "",
+   "start": "2027-01-27",
+   "end": "2027-01-27",
+   "url": "https://www.dlwp.com/event/the-new-cut/",
+   "added": "2026-11-05"
+  },
+  {
    "title": "The Sharon Shannon Big Band with very special guests",
    "theatre": "O2 Academy Glasgow",
    "genre": "Music",
@@ -26979,6 +26996,14 @@
    "gsrc": "tm"
   },
   {
+   "title": "De La Roar Comedy Club",
+   "theatre": "De La Warr Pavilion",
+   "genre": "Comedy",
+   "start": "2027-01-29",
+   "end": "2027-01-29",
+   "url": "https://www.dlwp.com/event/delaroar/"
+  },
+  {
    "title": "Definitely Mightbe - (A Tribute To Oasis)",
    "theatre": "O2 Academy Bournemouth",
    "genre": "Music",
@@ -27115,15 +27140,6 @@
    "gsrc": "tm"
   },
   {
-   "title": "The Drifters",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "",
-   "start": "2027-01-29",
-   "end": "2027-01-29",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/the-drifters//",
-   "added": "2026-10-31"
-  },
-  {
    "title": "The Umbrella Man",
    "theatre": "Brewhouse Arts Centre",
    "genre": "Entertainment",
@@ -27158,16 +27174,6 @@
    "end": "2027-01-30",
    "url": "https://nottinghamplayhouse.co.uk/events/abi-clarke-just-tell-me-when-its-over/",
    "tm": "https://www.ticketmaster.co.uk/abi-clarke-just-tell-me-when-nottingham-30-01-2027/event/37006545DA536C3E"
-  },
-  {
-   "title": "An Evening with Sir David Jason",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "Talk",
-   "start": "2027-01-30",
-   "end": "2027-01-30",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/an-evening-with-sir-david-jason//",
-   "gsrc": "guess",
-   "added": "2026-10-31"
   },
   {
    "title": "Andy Zaltzman - The Certifiable History 2026",
@@ -27806,15 +27812,6 @@
    "url": "http://www.stocktonglobe.co.uk/shows/the-night-sky-show"
   },
   {
-   "title": "The Simon & Garfunkel Story",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "",
-   "start": "2027-01-31",
-   "end": "2027-01-31",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/the-simon-garfunkel-story//",
-   "added": "2026-10-31"
-  },
-  {
    "title": "Write a Complete Story January 27",
    "theatre": "Theatre Royal Bath",
    "genre": "",
@@ -28396,15 +28393,6 @@
    "url": "https://themet.org.uk/event/first-thursday-2027-02/"
   },
   {
-   "title": "Gorilla Circus: RPM",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "",
-   "start": "2027-02-04",
-   "end": "2027-02-04",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/gorilla-circus-rpm//",
-   "added": "2026-10-31"
-  },
-  {
    "title": "HOWL QUARTET",
    "theatre": "Wales Millennium Centre",
    "genre": "",
@@ -28798,15 +28786,6 @@
    "url": "https://www.atgtickets.com/shows/the-illegal-eagles/victoria-hall/"
   },
   {
-   "title": "The Magic of Motown",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "",
-   "start": "2027-02-05",
-   "end": "2027-02-05",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/the-magic-of-motown//",
-   "added": "2026-10-31"
-  },
-  {
    "title": "The Roar of the Roses featuring Terrorvision and Massive Wagons",
    "theatre": "O2 Victoria Warehouse Manchester",
    "genre": "Music",
@@ -29126,17 +29105,6 @@
    "gsrc": "tm"
   },
   {
-   "title": "Michael Starring Ben – The Magic of Michael Jackson",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "Music",
-   "start": "2027-02-06",
-   "end": "2027-02-06",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/michael-starring-ben-the-magic-of-michael-jackson//",
-   "gsrc": "tm",
-   "added": "2026-10-31",
-   "tm": "https://www.ticketmaster.co.uk/michael-starring-ben-truro-06-02-2027/event/1F00650EC506A1D3"
-  },
-  {
    "title": "Murder Trial Tonight V: Death in the Family",
    "theatre": "Vaillant Live",
    "genre": "",
@@ -29403,17 +29371,6 @@
    "url": "https://www.ticketmaster.co.uk/epic-movie-musicals-whitby-07-02-2027/event/35006518B5A750E7",
    "tm": "https://www.ticketmaster.co.uk/epic-movie-musicals-whitby-07-02-2027/event/35006518B5A750E7",
    "gsrc": "tm"
-  },
-  {
-   "title": "Hamza Yassin – My Life Behind the Lens",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "Family",
-   "start": "2027-02-07",
-   "end": "2027-02-07",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/hamza-yassin-my-life-behind-the-lens//",
-   "gsrc": "tm",
-   "added": "2026-11-01",
-   "tm": "https://www.ticketmaster.co.uk/hamza-yassin-my-life-behind-the-truro-07-02-2027/event/1F006531F29B4D23"
   },
   {
    "title": "Martyn Joseph",
@@ -29740,16 +29697,6 @@
    "end": "2027-02-27",
    "url": "https://www.atgtickets.com/shows/back-to-the-future-the-musical/milton-keynes-theatre/",
    "tm": "https://theatre.ticketmaster.co.uk/book/1J68N-back-to-the-future-the-musical/#perf=1J68N-2&date=2027-02-09&time=7.30PM"
-  },
-  {
-   "title": "Before I Go To Sleep",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "Play",
-   "start": "2027-02-09",
-   "end": "2027-02-13",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/before-i-go-to-sleep//",
-   "gsrc": "guess",
-   "added": "2026-11-02"
   },
   {
    "title": "Carl Palmer And An Evening With Emerson Lake & Palmer",
@@ -30781,16 +30728,6 @@
    "tm": "https://www.ticketmaster.co.uk/bkfc-99-sheffield-sheffield-13-02-2027/event/3500656582C23E41"
   },
   {
-   "title": "BKFC 99 Sheffield : Venue Premium Tickets",
-   "theatre": "Utilita Arena Sheffield",
-   "genre": "",
-   "start": "2027-02-13",
-   "end": "2027-02-13",
-   "url": "https://www.utilitaarenasheffield.co.uk/event/bkfc-99-sheffield-%3a-venue-premium-tickets/tm_1agzk4pgkd975vx/",
-   "added": "2026-11-07",
-   "tm": "https://www.ticketmaster.co.uk/bkfc-99-sheffield-sheffield-13-02-2027/event/3500656582C23E41"
-  },
-  {
    "title": "Basement",
    "theatre": "O2 Institute Birmingham",
    "genre": "Music",
@@ -31702,16 +31639,6 @@
    "url": "https://www.ticketmaster.co.uk/countess-luann-love-cabaret-tour-bournemouth-16-02-2027/event/3E0064E3B80634FB",
    "tm": "https://www.ticketmaster.co.uk/countess-luann-love-cabaret-tour-bournemouth-16-02-2027/event/3E0064E3B80634FB",
    "gsrc": "tm"
-  },
-  {
-   "title": "Dirty Dancing",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "Musical",
-   "start": "2027-02-16",
-   "end": "2027-02-20",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/dirty-dancing//",
-   "gsrc": "guess",
-   "added": "2026-11-07"
   },
   {
    "title": "Everybody's Talking About Jamie",
@@ -33440,15 +33367,6 @@
    "url": "https://www.newvictheatre.org.uk/productions/hejira-celebrating-joni-mitchell/"
   },
   {
-   "title": "Richard Ayoade: Afterthoughts (2027)",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "",
-   "start": "2027-02-22",
-   "end": "2027-02-22",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/richard-ayoade-2027//",
-   "added": "2026-11-09"
-  },
-  {
    "title": "SIENNA SPIRO",
    "theatre": "Edinburgh Corn Exchange",
    "genre": "Music",
@@ -33780,15 +33698,6 @@
    "url": "https://www.ticketmaster.ie/gary-delaney-gary-on-laughing-belfast-24-02-2027/event/38006474DA4025BE",
    "tm": "https://www.ticketmaster.ie/gary-delaney-gary-on-laughing-belfast-24-02-2027/event/38006474DA4025BE",
    "gsrc": "tm"
-  },
-  {
-   "title": "Giovanni – Unstoppable",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "",
-   "start": "2027-02-24",
-   "end": "2027-02-24",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/giovanni-unstoppable//",
-   "added": "2026-11-09"
   },
   {
    "title": "Hannah East: Express Yourself",
@@ -38641,6 +38550,14 @@
    "gsrc": "tm"
   },
   {
+   "title": "Chimer",
+   "theatre": "De La Warr Pavilion",
+   "genre": "",
+   "start": "2027-03-13",
+   "end": "2027-03-13",
+   "url": "https://www.dlwp.com/event/chimer/"
+  },
+  {
    "title": "Cirque Enchantment",
    "theatre": "Royal Concert Hall",
    "genre": "Family",
@@ -40082,6 +39999,14 @@
    "url": "https://www.hackneyempire.co.uk/book/instance/293001"
   },
   {
+   "title": "Kate Garner’s Vintage Songbook",
+   "theatre": "De La Warr Pavilion",
+   "genre": "",
+   "start": "2027-03-19",
+   "end": "2027-03-19",
+   "url": "https://www.dlwp.com/event/kate-garner/"
+  },
+  {
    "title": "Layton Williams: Layton Live",
    "theatre": "Wyvern Theatre",
    "genre": "Dance",
@@ -41361,6 +41286,15 @@
    "url": "https://www.ticketmaster.co.uk/the-jacksons-venue-premium-tickets-london-25-03-2027/event/3700655C8D3149E9",
    "tm": "https://www.ticketmaster.co.uk/the-jacksons-venue-premium-tickets-london-25-03-2027/event/3700655C8D3149E9",
    "gsrc": "tm"
+  },
+  {
+   "title": "The Music Of Trees",
+   "theatre": "De La Warr Pavilion",
+   "genre": "Tribute",
+   "start": "2027-03-25",
+   "end": "2027-03-25",
+   "url": "https://www.dlwp.com/event/the-music-of-trees/",
+   "gsrc": "guess"
   },
   {
    "title": "Tom Lawrinson: Speak of the Devil",
@@ -46933,6 +46867,15 @@
    "end": "2027-04-28",
    "url": "https://www.academymusicgroup.com/o2forumkentishtown/events/ider-tickets-ae855625",
    "added": "2026-11-06"
+  },
+  {
+   "title": "Johnny Dowd & Mark Lotterman",
+   "theatre": "De La Warr Pavilion",
+   "genre": "",
+   "start": "2027-04-28",
+   "end": "2027-04-28",
+   "url": "https://www.dlwp.com/event/johnny-dowd-mark-lotterman/",
+   "added": "2026-11-02"
   },
   {
    "title": "Midsomer Murders: The Killings at Badger's Drift",
@@ -53805,6 +53748,28 @@
    "end": "2027-07-04",
    "url": "https://www.ticketmaster.co.uk/mc-hammersmith-ice-ice-nepo-baby-salford-03-07-2027/event/1F0064BB8E7D3317",
    "tm": "https://www.ticketmaster.co.uk/mc-hammersmith-ice-ice-nepo-baby-salford-03-07-2027/event/1F0064BB8E7D3317",
+   "gsrc": "tm"
+  },
+  {
+   "title": "Mariah Carey",
+   "theatre": "Scarborough Open Air Theatre",
+   "genre": "Music",
+   "start": "2027-07-03",
+   "end": "2027-07-03",
+   "url": "https://scarboroughopenairtheatre.com/mariahcarey",
+   "added": "2026-11-09",
+   "tm": "https://www.ticketmaster.co.uk/mariah-carey-scarborough-03-07-2027/event/35006557D2F1A63F",
+   "gsrc": "tm"
+  },
+  {
+   "title": "Mariah Carey with special guests Eternal",
+   "theatre": "Scarborough Open Air Theatre",
+   "genre": "Music",
+   "start": "2027-07-03",
+   "end": "2027-07-03",
+   "url": "https://scarboroughopenairtheatre.com/mariahcarey",
+   "added": "2026-11-09",
+   "tm": "https://www.ticketmaster.co.uk/mariah-carey-scarborough-03-07-2027/event/35006557D2F1A63F",
    "gsrc": "tm"
   },
   {

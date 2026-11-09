@@ -9,51 +9,6 @@
    "urls": [
     "https://www.thederbyconferencecentre.com/whats-on-in-derby/"
    ]
-  },
-  {
-   "name": "Lyceum Theatre",
-   "city": "London",
-   "postcode": "WC2E 7RQ",
-   "slug": "lyceum-theatre-london",
-   "urls": [
-    "https://www.atgtickets.com/venues/lyceum-theatre/whats-on/"
-   ],
-   "reader": "atgshow",
-   "follow": "atgtickets\\.com/shows/[^/]+/[^/]+/?$",
-   "max": 8
-  },
-  {
-   "name": "Fortune Theatre",
-   "city": "London",
-   "postcode": "WC2B 5HH",
-   "slug": "fortune-theatre-london",
-   "urls": [
-    "https://www.atgtickets.com/venues/fortune-theatre/whats-on/"
-   ],
-   "reader": "atgshow",
-   "match": "Fortune Theatre",
-   "follow": "atgtickets\\.com/shows/[^/]+/[^/]+/?$",
-   "max": 8
-  },
-  {
-   "name": "Gillian Lynne Theatre",
-   "city": "London",
-   "postcode": "WC2B 5PW",
-   "slug": "gillian-lynne-theatre-london",
-   "urls": [
-    "https://lwtheatres.co.uk/whats-on/?event-venue=gillian-lynne-theatre"
-   ],
-   "reader": "lw"
-  },
-  {
-   "name": "Shaftesbury Theatre",
-   "city": "London",
-   "postcode": "WC2H 8DP",
-   "slug": "shaftesbury-theatre-london",
-   "urls": [
-    "https://www.shaftesburytheatre.com/"
-   ],
-   "reader": "generic"
   }
  ]
 }

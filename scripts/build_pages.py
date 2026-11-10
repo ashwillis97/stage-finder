@@ -247,6 +247,7 @@ def page(title, desc, path, body, ld=None, noindex=False):
     return f"""<!doctype html>
 <html lang="en-GB">
 <head>
+<meta name="google-adsense-account" content="ca-pub-6057981338040118">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>{esc(title)}</title>

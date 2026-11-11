@@ -1,12 +1,14 @@
 {
  "readers": 173,
- "shows_before": 7553,
- "shows_now": 7580,
- "broken": [],
+ "shows_before": 7613,
+ "shows_now": 7606,
+ "broken": [
+  "Princess Theatre"
+ ],
  "never_worked": [],
  "ticketmaster": {
-  "venues_found": 481,
-  "shows_matched": 3401,
+  "venues_found": 483,
+  "shows_matched": 3404,
   "errors": 0
  }
 }

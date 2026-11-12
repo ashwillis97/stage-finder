@@ -1,14 +1,12 @@
 {
  "readers": 173,
- "shows_before": 7541,
- "shows_now": 7584,
- "broken": [
-  "Theatre Royal Newcastle"
- ],
+ "shows_before": 7591,
+ "shows_now": 7599,
+ "broken": [],
  "never_worked": [],
  "ticketmaster": {
-  "venues_found": 485,
-  "shows_matched": 3377,
+  "venues_found": 488,
+  "shows_matched": 3380,
   "errors": 0
  }
 }

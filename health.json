@@ -1,14 +1,12 @@
 {
  "readers": 173,
- "shows_before": 7629,
- "shows_now": 7624,
- "broken": [
-  "Sheffield City Hall"
- ],
+ "shows_before": 7530,
+ "shows_now": 7586,
+ "broken": [],
  "never_worked": [],
  "ticketmaster": {
-  "venues_found": 489,
-  "shows_matched": 3387,
+  "venues_found": 498,
+  "shows_matched": 3368,
   "errors": 0
  }
 }

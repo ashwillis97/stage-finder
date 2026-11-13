@@ -1,14 +1,16 @@
 {
  "readers": 173,
- "shows_before": 7628,
- "shows_now": 7639,
+ "shows_before": 7640,
+ "shows_now": 7637,
  "broken": [
-  "Theatre Royal Newcastle"
+  "Theatre Royal Newcastle",
+  "Victoria Hall",
+  "Woking Theatre"
  ],
  "never_worked": [],
  "ticketmaster": {
   "venues_found": 501,
-  "shows_matched": 3391,
+  "shows_matched": 3395,
   "errors": 0
  }
 }

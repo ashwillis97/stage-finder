@@ -1,8 +1,19 @@
 {
  "readers": 173,
- "shows_before": 7513,
- "shows_now": 7545,
- "broken": [],
+ "shows_before": 7544,
+ "shows_now": 7547,
+ "broken": [
+  "Derby Arena",
+  "Exeter Northcott Theatre",
+  "Ipswich Regent Theatre",
+  "Lancaster Grand Theatre",
+  "Middlesbrough Town Hall",
+  "The Anvil",
+  "The Old Rep Theatre",
+  "Theatr Brycheiniog",
+  "Theatre Royal",
+  "Theatre Royal Newcastle"
+ ],
  "never_worked": [
   "Trafalgar Theatre"
  ],

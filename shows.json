@@ -1,6 +1,6 @@
 {
  "sample": false,
- "updated": "2026-11-17T02:10+00:00",
+ "updated": "2026-11-17T08:18+00:00",
  "coverage": {
   "none": [],
   "partial": {
@@ -403,7 +403,17 @@
    "Yr Aelwyd": "Not updated automatically yet, so these listings may be out of date.",
    "Walton Hall And Gardens": "Not updated automatically yet, so these listings may be out of date.",
    "Silverstone Circuit": "Not updated automatically yet, so these listings may be out of date.",
-   "Haigh Hall": "Not updated automatically yet, so these listings may be out of date."
+   "Haigh Hall": "Not updated automatically yet, so these listings may be out of date.",
+   "The Old Rep Theatre": "Not updated automatically yet, so these listings may be out of date.",
+   "Ipswich Regent Theatre": "Not updated automatically yet, so these listings may be out of date.",
+   "Exeter Northcott Theatre": "Not updated automatically yet, so these listings may be out of date.",
+   "Theatr Brycheiniog": "Not updated automatically yet, so these listings may be out of date.",
+   "Middlesbrough Town Hall": "Not updated automatically yet, so these listings may be out of date.",
+   "Theatre Royal": "Not updated automatically yet, so these listings may be out of date.",
+   "Derby Arena": "Not updated automatically yet, so these listings may be out of date.",
+   "Theatre Royal Newcastle": "Not updated automatically yet, so these listings may be out of date.",
+   "The Anvil": "Not updated automatically yet, so these listings may be out of date.",
+   "Lancaster Grand Theatre": "Not updated automatically yet, so these listings may be out of date."
   }
  },
  "shows": [
@@ -818,16 +828,6 @@
    "url": "https://www.skiddle.com/whats-on/London/The-Playhouse/Cabaret/42672118/",
    "src": "skiddle",
    "added": "2026-11-14"
-  },
-  {
-   "title": "Errols Hot Wax presents: Life Without Buildings",
-   "theatre": "Saint Luke's",
-   "genre": "Music",
-   "start": "2026-11-16",
-   "end": "2026-11-17",
-   "url": "https://www.universe.com/events/errols-hot-wax-presents-life-without-buildings-tickets-X0Y5NW?ref=ticketmaster",
-   "tm": "https://www.universe.com/events/errols-hot-wax-presents-life-without-buildings-tickets-X0Y5NW?ref=ticketmaster",
-   "gsrc": "tm"
   },
   {
    "title": "Hatched|| Creatures Comedy Club",
@@ -1299,6 +1299,16 @@
    "gsrc": "tm",
    "added": "2026-11-08",
    "tm": "https://www.universe.com/events/embrace-tickets-98WVTG?ref=ticketmaster"
+  },
+  {
+   "title": "Errols Hot Wax presents: Life Without Buildings",
+   "theatre": "Saint Luke's",
+   "genre": "Music",
+   "start": "2026-11-17",
+   "end": "2026-11-17",
+   "url": "https://www.universe.com/events/errols-hot-wax-presents-life-without-buildings-tickets-WSCB0P?ref=ticketmaster",
+   "tm": "https://www.ticketweb.uk/event/life-without-buildings-saint-lukes-tickets/14113674?REFERRAL_ID=tmfeed",
+   "gsrc": "tm"
   },
   {
    "title": "Eyehategod",
@@ -7570,9 +7580,9 @@
    "start": "2026-11-21",
    "end": "2026-11-21",
    "url": "https://www.wycombeswan.co.uk/wycombe-swan-theatre/en-GB/event/other/gareth-malone-sing-a-long-a-gareth-at-the-movies-tickets",
+   "gsrc": "tm",
    "added": "2026-11-17",
-   "tm": "https://www.ticketmaster.co.uk/gareth-malone-singalongagareth-at-the-movies-high-wycombe-21-11-2026/event/370064C9F50D468A",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/gareth-malone-singalongagareth-at-the-movies-high-wycombe-21-11-2026/event/370064C9F50D468A"
   },
   {
    "title": "Gentleman's Dub Club 20th Anniversary",
@@ -14766,9 +14776,9 @@
    "start": "2026-11-27",
    "end": "2026-11-27",
    "url": "https://www.ovohydro.com/events/detail/phoebe-bridgers",
+   "gsrc": "tm",
    "added": "2026-11-17",
-   "tm": "https://www.ticketmaster.co.uk/venue-premium-phoebe-bridgers-glasgow-27-11-2026/event/360064C57C9C3F78",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/venue-premium-phoebe-bridgers-glasgow-27-11-2026/event/360064C57C9C3F78"
   },
   {
    "title": "Piri",
@@ -17827,9 +17837,9 @@
    "start": "2026-11-29",
    "end": "2026-11-29",
    "url": "https://www.thsh.co.uk/events/josh-pugh-ha-ha-yeah-sound",
+   "gsrc": "tm",
    "added": "2026-11-17",
-   "tm": "https://www.ticketmaster.co.uk/josh-pugh-ha-ha-yeah-sound-birmingham-29-11-2026/event/1F0064570CF09714",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/josh-pugh-ha-ha-yeah-sound-birmingham-29-11-2026/event/1F0064570CF09714"
   },
   {
    "title": "KBOP Idolz - 29th November",
@@ -26136,15 +26146,6 @@
    "start": "2026-12-16",
    "end": "2026-12-16",
    "url": "https://www.trch.co.uk/whats-on/the-halle-christmas-concert-26-4tt3"
-  },
-  {
-   "title": "The Human League: Venue Premium Tickets",
-   "theatre": "Utilita Arena Sheffield",
-   "genre": "",
-   "start": "2026-12-16",
-   "end": "2026-12-16",
-   "url": "https://www.utilitaarenasheffield.co.uk/event/the-human-league%3a-venue-premium-tickets/tm_1adfz_pgks8apqg/",
-   "added": "2026-11-16"
   },
   {
    "title": "The Massed Bands of His Majesty’s Royal Marines – A Christmas Spectacular",
@@ -43505,6 +43506,14 @@
    "url": "https://www.theatresevern.co.uk/whats-on/pierre-novellie//"
   },
   {
+   "title": "Perfectly George - Rob Lamberti 2027",
+   "theatre": "Doncaster Dome",
+   "genre": "",
+   "start": "2027-03-05",
+   "end": "2027-03-05",
+   "url": "https://www.dclt.co.uk/tickets/?EventInstanceId=471402&iframe=chooseseats"
+  },
+  {
    "title": "Pierre Novellie: Okay, One More Then Bedtime",
    "theatre": "Walker Theatre",
    "genre": "Comedy",
@@ -43727,14 +43736,6 @@
    "url": "https://www.ticketmaster.co.uk/josh-pugh-ha-ha-yeah-sound-middlesbrough-06-03-2027/event/3500655C6C550EEC",
    "tm": "https://www.ticketmaster.co.uk/josh-pugh-ha-ha-yeah-sound-middlesbrough-06-03-2027/event/3500655C6C550EEC",
    "gsrc": "tm"
-  },
-  {
-   "title": "Luther Live & Velvet Voices 2027",
-   "theatre": "Doncaster Dome",
-   "genre": "",
-   "start": "2027-03-06",
-   "end": "2027-03-06",
-   "url": "https://www.dclt.co.uk/tickets/?EventInstanceId=457602&iframe=chooseseats"
   },
   {
    "title": "Man In The Mirror - A Tribute to Michael Jackson",
@@ -49393,9 +49394,9 @@
    "start": "2027-03-30",
    "end": "2027-03-30",
    "url": "https://www.demontforthall.co.uk/event/garden-rescue-live",
+   "gsrc": "tm",
    "added": "2026-11-17",
-   "tm": "https://www.ticketmaster.co.uk/garden-rescue-live-leicester-30-03-2027/event/1F006557F2BA9B39",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/garden-rescue-live-leicester-30-03-2027/event/1F006557F2BA9B39"
   },
   {
    "title": "Goldilocks",
@@ -58284,6 +58285,15 @@
    "start": "2027-05-17",
    "end": "2027-05-22",
    "url": "https://www.grandtheatre.co.uk/whats-on/grease-the-musical-2/"
+  },
+  {
+   "title": "History",
+   "theatre": "Wyndham's Theatre",
+   "genre": "",
+   "start": "2027-05-17",
+   "end": "2027-08-07",
+   "url": "https://www.delfontmackintosh.co.uk/whats-on/history",
+   "added": "2026-11-17"
   },
   {
    "title": "New Dawn Fades - A Play About Joy Division and Manchester",
@@ -73039,6 +73049,7 @@
   "Gulbenkian Theatre": "2026-11-03",
   "HMV EMPIRE COVENTRY": "2026-11-09",
   "HORNSEA FLORAL HALL": "2026-11-15",
+  "Haigh Hall": "2026-11-17",
   "Hall By The Sea, Dreamland Margate": "2026-11-03",
   "Hangar 34": "2026-11-09",
   "Hare And Hounds Kings Heath": "2026-11-09",
@@ -73398,7 +73409,6 @@
   "Wyvern Theatre": "2026-11-02",
   "YES Basement": "2026-11-09",
   "YES Pink Room": "2026-11-09",
-  "Yr Aelwyd": "2026-11-16",
-  "Haigh Hall": "2026-11-17"
+  "Yr Aelwyd": "2026-11-16"
  }
 }

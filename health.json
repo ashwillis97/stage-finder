@@ -1,8 +1,22 @@
 {
  "readers": 173,
- "shows_before": 7583,
- "shows_now": 7582,
+ "shows_before": 7613,
+ "shows_now": 7612,
  "broken": [
+  "Derby Arena",
+  "Exeter Northcott Theatre",
+  "Hackney Empire",
+  "Ipswich Regent Theatre",
+  "Lancaster Grand Theatre",
+  "Lyceum Theatre Sheffield",
+  "Middlesbrough Town Hall",
+  "Symphony Hall",
+  "The Anvil",
+  "The Octagon Theatre",
+  "The Old Rep Theatre",
+  "Theatr Brycheiniog",
+  "Theatr Clwyd",
+  "Theatre Royal",
   "Theatre Royal Newcastle"
  ],
  "never_worked": [
@@ -10,7 +24,7 @@
  ],
  "ticketmaster": {
   "venues_found": 533,
-  "shows_matched": 3365,
+  "shows_matched": 3371,
   "errors": 0
  }
 }

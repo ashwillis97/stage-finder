@@ -1,16 +1,14 @@
 {
  "readers": 173,
- "shows_before": 7591,
- "shows_now": 7564,
- "broken": [
-  "Truro Hall for Cornwall"
- ],
+ "shows_before": 7497,
+ "shows_now": 7569,
+ "broken": [],
  "never_worked": [
   "Trafalgar Theatre"
  ],
  "ticketmaster": {
   "venues_found": 532,
-  "shows_matched": 3356,
+  "shows_matched": 3352,
   "errors": 0
  }
 }

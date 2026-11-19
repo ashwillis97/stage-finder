@@ -1,9 +1,8 @@
 {
  "readers": 173,
- "shows_before": 7544,
- "shows_now": 7565,
+ "shows_before": 7563,
+ "shows_now": 7578,
  "broken": [
-  "The Anvil",
   "The O2 Arena",
   "Theatre Royal Newcastle"
  ],
@@ -12,7 +11,7 @@
  ],
  "ticketmaster": {
   "venues_found": 533,
-  "shows_matched": 3351,
+  "shows_matched": 3353,
   "errors": 0
  }
 }

@@ -1,6 +1,6 @@
 {
  "sample": false,
- "updated": "2026-11-19T19:55+00:00",
+ "updated": "2026-11-20T02:10+00:00",
  "coverage": {
   "none": [],
   "partial": {
@@ -418,9 +418,13 @@
    "Y Not Festival": "Not updated automatically yet, so these listings may be out of date.",
    "The Compasses, 44 High Street": "Not updated automatically yet, so these listings may be out of date.",
    "THIRTEEN": "Not updated automatically yet, so these listings may be out of date.",
-   "Vaillant Live": "Not updated automatically yet, so these listings may be out of date.",
-   "Sheffield City Hall": "Not updated automatically yet, so these listings may be out of date.",
-   "Utilita Arena Sheffield": "Not updated automatically yet, so these listings may be out of date."
+   "Symphony Hall": "Not updated automatically yet, so these listings may be out of date.",
+   "Theatr Clwyd": "Not updated automatically yet, so these listings may be out of date.",
+   "Theatre Royal": "Not updated automatically yet, so these listings may be out of date.",
+   "Hackney Empire": "Not updated automatically yet, so these listings may be out of date.",
+   "The Octagon Theatre": "Not updated automatically yet, so these listings may be out of date.",
+   "The Anvil": "Not updated automatically yet, so these listings may be out of date.",
+   "Lyceum Theatre Sheffield": "Not updated automatically yet, so these listings may be out of date."
   }
  },
  "shows": [
@@ -490,14 +494,6 @@
    "end": "2027-01-09",
    "url": "https://cheltenhamtownhall.org.uk/event/practical-fine-art-for-children-course-2026/",
    "gsrc": "guess"
-  },
-  {
-   "title": "Moves and Melodies",
-   "theatre": "Millennium Forum",
-   "genre": "",
-   "start": "2026-01-22",
-   "end": "2026-11-19",
-   "url": "https://millenniumforum.co.uk/whats-on/moves-and-melodies"
   },
   {
    "title": "Dementia Friendly Tea Dance",
@@ -573,7 +569,7 @@
    "end": "2027-02-27",
    "url": "http://www.theambassadorstheatre.co.uk/shows/paranormal-activity",
    "gsrc": "tm",
-   "tm": "https://www.ticketmaster.co.uk/paranormal-activity-london-19-11-2026/event/Z3r9uZKbZL4Ze3Lo-Z75"
+   "tm": "https://www.ticketmaster.co.uk/paranormal-activity-london-20-11-2026/event/Z3r9uZKbZL4Ze3Lo-Z7G"
   },
   {
    "title": "Perth Concert Hall Voices",
@@ -623,7 +619,7 @@
    "end": "2027-09-05",
    "url": "https://nimaxtheatres.com/shows/harry-potter-cursed-child/",
    "gsrc": "tm",
-   "tm": "https://theatre.ticketmaster.co.uk/book/1J44R-harry-potter-and-the-cursed-child-one-part/#perf=1J44R-1C&date=2026-11-19&time=7.00PM"
+   "tm": "https://theatre.ticketmaster.co.uk/book/1J44R-harry-potter-and-the-cursed-child-one-part/#perf=1J44R-1D&date=2026-11-20&time=7.00PM"
   },
   {
    "title": "The Long Ryders",
@@ -643,7 +639,7 @@
    "end": "2027-01-30",
    "url": "https://nimaxtheatres.com/shows/derren-brown-only-human/",
    "gsrc": "tm",
-   "tm": "https://theatre.ticketmaster.co.uk/book/1J21U-derren-brown-only-human/#perf=1J21U-14&date=2026-11-19&time=7.30PM"
+   "tm": "https://theatre.ticketmaster.co.uk/book/1J21U-derren-brown-only-human/#perf=1J21U-15&date=2026-11-20&time=7.30PM"
   },
   {
    "title": "Gordon Matta-Clark: Discrete Violations",
@@ -668,7 +664,7 @@
    "start": "2026-10-12",
    "end": "2027-01-03",
    "url": "https://www.troubadourtheatres.com/whats-on/high-school-musical",
-   "tm": "https://theatre.ticketmaster.co.uk/book/1J3BU-high-school-musical/#perf=1J3BU-18&date=2026-11-19&time=2.30PM"
+   "tm": "https://theatre.ticketmaster.co.uk/book/1J3BU-high-school-musical/#perf=1J3BU-1A&date=2026-11-20&time=7.30PM"
   },
   {
    "title": "Balloon Museum",
@@ -766,6 +762,15 @@
    "url": "https://www.capitaltheatres.com/shows/turandot/"
   },
   {
+   "title": "The Borrowers.",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2026-11-13",
+   "end": "2027-01-23",
+   "url": "https://www.newvictheatre.org.uk/productions/the-borrowers-2/",
+   "added": "2026-11-02"
+  },
+  {
    "title": "Christmas at the Everyman 2026",
    "theatre": "Everyman Theatre",
    "genre": "Christmas",
@@ -780,7 +785,7 @@
    "start": "2026-11-14",
    "end": "2027-01-03",
    "url": "https://lyric.co.uk/shows/cinderella-2026/#event-booking",
-   "tm": "https://www.ticketmaster.co.uk/cinderella-2026-london-19-11-2026/event/Zor9uZKbZL4ZefeNfZ7"
+   "tm": "https://www.ticketmaster.co.uk/cinderella-2026-london-20-11-2026/event/Zor9uZKbZL4ZefeNfZA"
   },
   {
    "title": "The Rock ‘n’ Roll Panto 2026: Beauty and the Beast",
@@ -806,15 +811,6 @@
    "end": "2026-12-31",
    "url": "https://www.dlwp.com/christmas/",
    "added": "2026-11-17"
-  },
-  {
-   "title": "A Christmas Carol",
-   "theatre": "Middlesbrough Town Hall",
-   "genre": "Christmas",
-   "start": "2026-11-17",
-   "end": "2026-11-19",
-   "url": "https://boxoffice.middlesbrough.gov.uk/event/a-christmas-carol/",
-   "added": "2026-10-31"
   },
   {
    "title": "Déda Poets: Poetry & Spoken Word",
@@ -849,15 +845,7 @@
    "start": "2026-11-17",
    "end": "2027-03-14",
    "url": "https://nimaxtheatres.com/shows/one-day-the-musical/",
-   "tm": "https://www.ticketmaster.co.uk/one-day-the-musical-london-19-11-2026/event/Zor9uZKbZL4ZefkudZA"
-  },
-  {
-   "title": "Private Peaceful",
-   "theatre": "Curve Theatre",
-   "genre": "Theatre",
-   "start": "2026-11-17",
-   "end": "2026-11-19",
-   "url": "https://www.curveonline.co.uk/whats-on/shows/private-peaceful-2/"
+   "tm": "https://www.ticketmaster.co.uk/one-day-the-musical-london-20-11-2026/event/Zor9uZKbZL4ZefkudZk"
   },
   {
    "title": "School Exhibition Visits and Activities",
@@ -888,52 +876,12 @@
    "added": "2026-11-09"
   },
   {
-   "title": "B2B Marketing Live",
-   "theatre": "ExCeL London",
-   "genre": "",
-   "start": "2026-11-18",
-   "end": "2026-11-19",
-   "url": "https://www.excel.london/whats-on/b2b-marketing-live"
-  },
-  {
    "title": "College Exhibition Visits and Activities",
    "theatre": "De La Warr Pavilion",
    "genre": "",
    "start": "2026-11-18",
    "end": "2026-12-16",
    "url": "https://www.dlwp.com/event/autumn-2026-exhibition-college-visits-and-activities/"
-  },
-  {
-   "title": "Contact Centre & Customer Experience Expo",
-   "theatre": "ExCeL London",
-   "genre": "Tribute",
-   "start": "2026-11-18",
-   "end": "2026-11-19",
-   "url": "https://www.excel.london/whats-on/contact-centre-customer-experience-expo"
-  },
-  {
-   "title": "London Biotechnology Show",
-   "theatre": "ExCeL London",
-   "genre": "",
-   "start": "2026-11-18",
-   "end": "2026-11-19",
-   "url": "https://www.excel.london/whats-on/london-biotechnology-show-2026"
-  },
-  {
-   "title": "London EV Show",
-   "theatre": "ExCeL London",
-   "genre": "",
-   "start": "2026-11-18",
-   "end": "2026-11-19",
-   "url": "https://www.excel.london/whats-on/london-ev-show-2026"
-  },
-  {
-   "title": "PFS Festival of Financial Planning",
-   "theatre": "NEC Birmingham",
-   "genre": "",
-   "start": "2026-11-18",
-   "end": "2026-11-19",
-   "url": "https://www.thenec.co.uk/events/pfs-festival-of-financial-planning/"
   },
   {
    "title": "Raymond Briggs’ Father Christmas",
@@ -954,22 +902,6 @@
    "gsrc": "guess"
   },
   {
-   "title": "The European Pizza Show",
-   "theatre": "ExCeL London",
-   "genre": "",
-   "start": "2026-11-18",
-   "end": "2026-11-19",
-   "url": "https://www.excel.london/whats-on/the-european-pizza-show"
-  },
-  {
-   "title": "The Schools & Academies Show",
-   "theatre": "NEC Birmingham",
-   "genre": "",
-   "start": "2026-11-18",
-   "end": "2026-11-19",
-   "url": "https://www.thenec.co.uk/events/the-schools-academies-show/"
-  },
-  {
    "title": "3 Minutes Of Fame",
    "theatre": "Hot Water Comedy Club At Blackstock Market",
    "genre": "Comedy",
@@ -980,78 +912,12 @@
    "added": "2026-11-09"
   },
   {
-   "title": "A Christmas Carol",
-   "theatre": "The Old Vic",
-   "genre": "Play",
-   "start": "2026-11-19",
-   "end": "2027-01-09",
-   "url": "https://www.ticketmaster.co.uk/a-christmas-carol-london-19-11-2026/event/Zor9uZKbZL4ZefdrdZa",
-   "tm": "https://www.ticketmaster.co.uk/a-christmas-carol-london-19-11-2026/event/Zor9uZKbZL4ZefdrdZa",
-   "gsrc": "tm"
-  },
-  {
-   "title": "A Man For All Seasons",
-   "theatre": "Churchill Theatre",
-   "genre": "Play",
-   "start": "2026-11-19",
-   "end": "2026-11-21",
-   "url": "https://trafalgartickets.com/churchill-theatre-bromley/en-GB/event/play/a-man-for-all-seasons-tickets"
-  },
-  {
-   "title": "A Night at the Musicals (2026)",
-   "theatre": "Aberdeen Music Hall",
-   "genre": "Musical",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.aberdeenperformingarts.com/whats-on/a-night-at-the-musicals-2026/book/1371203",
-   "gsrc": "guess",
-   "added": "2026-11-13"
-  },
-  {
    "title": "A Noble Night Of Jazz with Steve Clark",
    "theatre": "The Noble Public House Glasgow",
    "genre": "Music",
    "start": "2026-11-19",
    "end": "2026-11-26",
    "url": "https://www.skiddle.com/whats-on/Glasgow/The-Noble-Public-House-Glasgow/A-Noble-Night-Of-Jazz-with-Steve-Clark/43019675/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "A Play, A Pie and A Pint: Parasocial Activity",
-   "theatre": "Oran Mor",
-   "genre": "Play",
-   "start": "2026-11-19",
-   "end": "2026-11-21",
-   "url": "https://www.universe.com/events/a-play-a-pie-and-a-pint-parasocial-activity-tickets-KSZ478?ref=ticketmaster",
-   "tm": "https://www.universe.com/events/a-play-a-pie-and-a-pint-parasocial-activity-tickets-KSZ478?ref=ticketmaster",
-   "gsrc": "tm"
-  },
-  {
-   "title": "A Very Special Evening with Anna KiaRa & Piano Black",
-   "theatre": "The Sound House",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Ireland/The-Sound-House-/A-Very-Special-Evening-with-Anna-KiaRa--Piano-Black/42603140/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "ANYTHING FOR LOVE",
-   "theatre": "Shrewsbury Theatre Severn",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.theatresevern.co.uk/whats-on/anything-for-love//"
-  },
-  {
-   "title": "Abba Merry Christmas",
-   "theatre": "The Old Savoy   Home Of The Deco Theatre",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Northampton/The-Old-Savoy---Home-Of-The-Deco-Theatre-/Abba-Merry-Christmas/42260084/",
    "src": "skiddle",
    "added": "2026-11-09"
   },
@@ -1066,78 +932,12 @@
    "added": "2026-11-19"
   },
   {
-   "title": "Adam Rowe: Fashionism",
-   "theatre": "York Barbican",
-   "genre": "Comedy",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.yorkbarbican.co.uk/whats-on/adam-rowe/",
-   "gsrc": "tm",
-   "tm": "https://www.ticketmaster.co.uk/adam-rowe-fashionism-york-19-11-2026/event/36006358826747C3"
-  },
-  {
-   "title": "Agatha Christie's The Hollow",
-   "theatre": "New Theatre Cardiff",
-   "genre": "Play",
-   "start": "2026-11-19",
-   "end": "2026-11-21",
-   "url": "https://trafalgartickets.com/new-theatre-cardiff/en-GB/event/play/agatha-christies-the-hollow-tickets"
-  },
-  {
-   "title": "Aidan Connell, Not Always Not Never, James MacDonald",
-   "theatre": "The Bungalow Bar",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Paisley/The-Bungalow-Bar/Aidan-Connell-Not-Always-Not-Never-James-MacDonald/42720631/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Alasdair Beckett-King at The Attic in Southampton",
-   "theatre": "The Attic Southampton",
-   "genre": "Comedy",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Southampton/The-Attic-Southampton/Alasdair-Beckett-King-at-The-Attic-in-Southampton/42437557/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "An Audience with Lucy Worsley",
-   "theatre": "Ipswich Regent Theatre",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ipswichtheatres.co.uk/whats-on/an-audience-with-lucy-worsley/",
-   "added": "2026-11-05"
-  },
-  {
-   "title": "Andy Parsons: Please #@!$ off to Mars",
-   "theatre": "Exeter Northcott Theatre",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://exeternorthcott.co.uk/events/andy-parsons-please-off-to-mars/",
-   "added": "2026-11-08"
-  },
-  {
    "title": "Arthur",
    "theatre": "Theatre Royal Bath",
    "genre": "",
    "start": "2026-11-19",
    "end": "2027-01-03",
    "url": "https://www.theatreroyal.org.uk/events/arthur/"
-  },
-  {
-   "title": "Ask My Bull + guests",
-   "theatre": "The Ferret",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Preston/The-Ferret/Ask-My-Bull--guests/43189935/",
-   "src": "skiddle",
-   "added": "2026-11-16"
   },
   {
    "title": "BalletBoyz - Six Lethargies",
@@ -1147,73 +947,6 @@
    "end": "2026-11-21",
    "url": "https://www.sadlerswells.com/whats-on/balletboyz-six-lethargies/",
    "added": "2026-11-15"
-  },
-  {
-   "title": "Beat the Drum: The Runrig Experience",
-   "theatre": "Dunfermline Alhambra Theatre",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ticketmaster.co.uk/beat-the-drum-the-runrig-experience-dunfermline-19-11-2026/event/360064CDDE99CB1C",
-   "tm": "https://www.ticketmaster.co.uk/beat-the-drum-the-runrig-experience-dunfermline-19-11-2026/event/360064CDDE99CB1C",
-   "gsrc": "tm"
-  },
-  {
-   "title": "Beetlejuice",
-   "theatre": "Prince Edward Theatre",
-   "genre": "Musical",
-   "start": "2026-11-19",
-   "end": "2027-01-02",
-   "url": "https://www.delfontmackintosh.co.uk/whats-on/beetlejuice",
-   "gsrc": "tm",
-   "tm": "https://theatre.ticketmaster.co.uk/book/1HM82-beetlejuice/#perf=1HM82-5T&date=2026-11-19&time=7.30PM"
-  },
-  {
-   "title": "Bicurious",
-   "theatre": "Ulster Sports Club",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Belfast/Ulster-Sports-Club/Bicurious/42569289/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Big Country",
-   "theatre": "Middlesbrough Town Hall",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://boxoffice.middlesbrough.gov.uk/event/big-country/",
-   "added": "2026-10-31"
-  },
-  {
-   "title": "Bobby Davro at House of Stand Up",
-   "theatre": "Coulsdon Club",
-   "genre": "Comedy",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Croydon/Coulsdon-Club/Bobby-Davro-at-House-of-Stand-Up/42512332/",
-   "src": "skiddle",
-   "added": "2026-11-10"
-  },
-  {
-   "title": "Bournemouth Symphony Orchestra: Imperial Majesty",
-   "theatre": "Portsmouth Guildhall",
-   "genre": "Classical",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://portsmouthguildhall.org.uk/whats-on/event/bso-imperial-majesty/"
-  },
-  {
-   "title": "CONVERGE",
-   "theatre": "Electric Bristol",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.universe.com/events/converge-tickets-38T70Y?ref=ticketmaster",
-   "tm": "https://www.universe.com/events/converge-tickets-38T70Y?ref=ticketmaster",
-   "gsrc": "tm"
   },
   {
    "title": "Cabaret",
@@ -1226,220 +959,12 @@
    "added": "2026-11-14"
   },
   {
-   "title": "Cabaret At The Kit Kat Club",
-   "theatre": "Playhouse Theatre",
-   "genre": "Musical",
-   "start": "2026-11-19",
-   "end": "2027-09-18",
-   "url": "https://theatre.ticketmaster.co.uk/book/1H9ZU-cabaret/#perf=1H9ZU-15Y&date=2026-11-19&time=7.30PM",
-   "tm": "https://theatre.ticketmaster.co.uk/book/1H9ZU-cabaret/#perf=1H9ZU-15Y&date=2026-11-19&time=7.30PM",
-   "gsrc": "tm"
-  },
-  {
-   "title": "Chelmsford Comedy Club Live - Josh Baulf, Alistair Barrie & More",
-   "theatre": "The Lion Inn.",
-   "genre": "Comedy",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Chelmsford/The-Lion-Inn./Chelmsford-Comedy-Club-Live---Josh-Baulf-Alistair-Barrie--More/43122699/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Christmas in Ireland",
-   "theatre": "The Baths Hall",
-   "genre": "Christmas",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.scunthorpetheatres.co.uk/whats-on/christmas-in-ireland/"
-  },
-  {
-   "title": "Cinderella",
-   "theatre": "Norwich Theatre Royal",
-   "genre": "Pantomime",
-   "start": "2026-11-19",
-   "end": "2026-11-21",
-   "url": "https://norwichtheatre.org/whats-on/cinderella-2/",
-   "gsrc": "guess",
-   "added": "2026-11-06"
-  },
-  {
-   "title": "Courtney Hadwin",
-   "theatre": "Hertford Corn Exchange",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.universe.com/events/courtney-hadwin-tickets-P8V5Y4?ref=ticketmaster",
-   "tm": "https://www.universe.com/events/courtney-hadwin-tickets-P8V5Y4?ref=ticketmaster",
-   "gsrc": "tm"
-  },
-  {
-   "title": "Courtney Pine presents Out of the Ghetto: A Modern Day Jazz Story",
-   "theatre": "The Queen's Hall",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.thequeenshall.net/whats-on/courtney-pine-jazz-tickets-edinburgh",
-   "added": "2026-11-02"
-  },
-  {
-   "title": "DF Concerts Presents: The Guest List",
-   "theatre": "Saint Luke's",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.universe.com/events/df-concerts-presents-the-guest-list-tickets-921SRL?ref=ticketmaster",
-   "tm": "https://www.ticketmaster.co.uk/the-guest-list-glasgow-19-11-2026/event/36006497C7B66957",
-   "gsrc": "tm"
-  },
-  {
-   "title": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
-   "theatre": "Utilita Arena Birmingham",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ticketmaster.co.uk/don-toliver-nitrous-octane-world-tour-birmingham-19-11-2026/event/230064CFC395BD26",
-   "tm": "https://www.ticketmaster.co.uk/don-toliver-nitrous-octane-world-tour-birmingham-19-11-2026/event/230064CFC395BD26",
-   "gsrc": "tm"
-  },
-  {
-   "title": "Dan Schreiber: This Changes Everything",
-   "theatre": "White Rock Theatre",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.whiterocktheatre.org.uk/whats-on/event/dan-schreiber-2026/"
-  },
-  {
-   "title": "Daniel Foxx: How Lovely 2026 Tour",
-   "theatre": "Derby Theatre",
-   "genre": "Comedy",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://derbytheatre.co.uk/event/daniel-foxx-how-lovely/",
-   "added": "2026-11-12"
-  },
-  {
-   "title": "Daniel Kitson: Thrum – extra date",
-   "theatre": "Everyman Theatre",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://everymanplayhouse.com/event/daniel-kitson-thrum-extra-date/"
-  },
-  {
-   "title": "Dave McCabe (The Zutons)",
-   "theatre": "The Flowerpot",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Derby/The-Flowerpot/Dave-McCabe-The-Zutons/42427600/",
-   "src": "skiddle",
-   "added": "2026-11-09",
-   "tm": "https://www.universe.com/events/dave-mccabe-the-zutons-tickets-2L9W1M?ref=ticketmaster"
-  },
-  {
-   "title": "Dean T. Beirne - Diary of a Foster Kid",
-   "theatre": "Blackfriars Basement",
-   "genre": "Comedy",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Glasgow/Blackfriars-Basement/Dean-T-Beirne---Diary-of-a-Foster-Kid/42570298/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Disney On Ice presents Discover the Magic",
-   "theatre": "Motorpoint Arena Nottingham",
-   "genre": "Event",
-   "start": "2026-11-19",
-   "end": "2026-11-22",
-   "url": "https://www.ticketmaster.co.uk/disney-on-ice-presents-discover-the-nottingham-19-11-2026/event/350064CAB0BE93BB",
-   "tm": "https://www.ticketmaster.co.uk/disney-on-ice-presents-discover-the-nottingham-19-11-2026/event/350064CAB0BE93BB",
-   "gsrc": "tm"
-  },
-  {
-   "title": "Disney's The Lion King",
-   "theatre": "Lyceum Theatre",
-   "genre": "Musical",
-   "start": "2026-11-19",
-   "end": "2027-07-25",
-   "url": "https://www.atgtickets.com/shows/disneys-the-lion-king/lyceum-theatre/",
-   "gsrc": "tm",
-   "added": "2026-11-09",
-   "tm": "https://theatre.ticketmaster.co.uk/book/1DR6R-lyceum-theatre-london-disneys-the-lion-king/#perf=1DR6R-618&date=2026-11-19&time=7.30PM"
-  },
-  {
-   "title": "Don Toliver",
-   "theatre": "NEC Birmingham",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.utilitaarenabham.co.uk/events/detail/don-toliver"
-  },
-  {
-   "title": "Don Toliver",
-   "theatre": "bp pulse LIVE",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.utilitaarenabham.co.uk/events/detail/don-toliver"
-  },
-  {
    "title": "Dr Seuss’s How The Grinch Stole Christmas! The Musical",
    "theatre": "Leeds Playhouse",
    "genre": "Musical",
    "start": "2026-11-19",
    "end": "2027-01-16",
    "url": "https://www.leedsplayhouse.org.uk/event/dr-seuss-how-the-grinch-stole-christmas-the-musical/"
-  },
-  {
-   "title": "Dylan Moran: Looking for Trouble",
-   "theatre": "Sheffield City Hall",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.sheffieldcityhall.co.uk/event/dylan-moran%3a-looking-for-trouble/tm_1agzkofgke-k7ay/"
-  },
-  {
-   "title": "Eagles of Death Metal - CELEBRATING 20 YEARS OF \"DEATH BY SEXY...\"",
-   "theatre": "O2 Institute Birmingham",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ticketmaster.co.uk/eagles-of-death-metal-celebrating-20-birmingham-19-11-2026/event/3E006451D5CF4F5E",
-   "tm": "https://www.ticketmaster.co.uk/eagles-of-death-metal-celebrating-20-birmingham-19-11-2026/event/3E006451D5CF4F5E",
-   "gsrc": "tm"
-  },
-  {
-   "title": "East 17 With Special Guest Blazin’ Squad",
-   "theatre": "Bath Forum",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.bathforum.co.uk/whats-on/east-17-and-blazin-squad-mcgx",
-   "added": "2026-11-06"
-  },
-  {
-   "title": "Ed Tudor Pole",
-   "theatre": "New Cross Inn",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/London/New-Cross-Inn/Ed-Tudor-Pole/42517640/",
-   "src": "skiddle",
-   "added": "2026-11-09",
-   "tm": "https://www.universe.com/events/ed-tudor-pole-tickets-25HJCM?ref=ticketmaster"
-  },
-  {
-   "title": "Embrace",
-   "theatre": "Bristol Beacon",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://bristolbeacon.org/whats-on/embrace/",
-   "gsrc": "tm",
-   "tm": "https://www.ticketmaster.co.uk/embrace-bristol-19-11-2026/event/3700643DCEEF38B7"
   },
   {
    "title": "Engage Elders: Dance",
@@ -1451,26 +976,6 @@
    "gsrc": "guess"
   },
   {
-   "title": "Evolution",
-   "theatre": "Troxy",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ticketmaster.co.uk/evolution-london-19-11-2026/event/3E0064CF950618F3",
-   "tm": "https://www.ticketmaster.co.uk/evolution-london-19-11-2026/event/3E0064CF950618F3",
-   "gsrc": "tm"
-  },
-  {
-   "title": "Fat Dog",
-   "theatre": "Whelans Dublin",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Ireland/Whelans-Dublin/Fat-Dog/42438034/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
    "title": "Festive Gift Fair",
    "theatre": "NEC Birmingham",
    "genre": "Event",
@@ -1480,168 +985,6 @@
    "gsrc": "guess"
   },
   {
-   "title": "Fin Taylor",
-   "theatre": "Eventim Apollo",
-   "genre": "Comedy",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.eventimapollo.com/events/fin-taylor",
-   "gsrc": "tm",
-   "tm": "https://www.ticketmaster.co.uk/fin-taylor-london-19-11-2026/event/3600644D3F0CFD28"
-  },
-  {
-   "title": "Fleetwood Shack",
-   "theatre": "Theatr Brycheiniog",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://theatrbrycheiniog.ticketsolve.com/shows/873662005/events/128642988/seats"
-  },
-  {
-   "title": "Florian Henckel von Donnersmarck’s The Lives of Others",
-   "theatre": "Adelphi Theatre",
-   "genre": "Play",
-   "start": "2026-11-19",
-   "end": "2027-01-09",
-   "url": "https://lwtheatres.co.uk/whats-on/the-lives-of-others/",
-   "gsrc": "tm",
-   "tm": "https://www.ticketmaster.co.uk/florian-henckel-von-donnersmarcks-the-lives-london-19-11-2026/event/Z3r9uZKbZL4Zef7a5Zek"
-  },
-  {
-   "title": "Gareth Malone Sing-A-Long-A-Gareth: At The Movies",
-   "theatre": "Symphony Hall",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.thsh.co.uk/events/gareth-malone-sing-a-long-a-gareth-at-the-movies",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Good Charlotte",
-   "theatre": "The O2 Arena",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.theo2.co.uk/events/detail/good-charlotte",
-   "added": "2026-11-16"
-  },
-  {
-   "title": "HORSE w/ full band",
-   "theatre": "Hare And Hounds Kings Heath",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Birmingham/Hare-And-Hounds-Kings-Heath/HORSE-w-full-band/42527881/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Hamilton",
-   "theatre": "Victoria Palace Theatre",
-   "genre": "Musical",
-   "start": "2026-11-19",
-   "end": "2027-10-02",
-   "url": "https://www.delfontmackintosh.co.uk/whats-on/hamilton",
-   "gsrc": "tm",
-   "added": "2026-11-03",
-   "tm": "https://theatre.ticketmaster.co.uk/book/1H1YN-hamilton/#perf=1H1YN-202&date=2026-11-19&time=2.30PM"
-  },
-  {
-   "title": "Hannah East: Express Yourself",
-   "theatre": "Royal and Derngate",
-   "genre": "Comedy",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ticketmaster.co.uk/hannah-east-express-yourself-northampton-19-11-2026/event/1F0063298487089A",
-   "tm": "https://www.ticketmaster.co.uk/hannah-east-express-yourself-northampton-19-11-2026/event/1F0063298487089A",
-   "gsrc": "tm"
-  },
-  {
-   "title": "Hannah Jones Headlines | Creatures Tour Show",
-   "theatre": "Creatures Comedy Club",
-   "genre": "Comedy",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Manchester/Creatures-Comedy-Club/Hannah-Jones-Headlines--Creatures-Tour-Show/42603946/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Harriet Kemsley – Floozy",
-   "theatre": "Portsmouth Guildhall",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://portsmouthguildhall.org.uk/whats-on/event/harriet-kemsley-floozy/"
-  },
-  {
-   "title": "Hay Fever",
-   "theatre": "Wyndham's Theatre",
-   "genre": "Play",
-   "start": "2026-11-19",
-   "end": "2026-12-12",
-   "url": "https://www.delfontmackintosh.co.uk/whats-on/hay-fever",
-   "gsrc": "tm",
-   "tm": "https://www.ticketmaster.co.uk/hay-fever-london-19-11-2026/event/Z3r9uZKbZL4ZefkovZeL"
-  },
-  {
-   "title": "Indie Thursdays",
-   "theatre": "O2 Academy Leeds",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.academymusicgroup.com/o2academyleeds/events/indie-thursdays-tickets-ae1193600",
-   "gsrc": "tm",
-   "added": "2026-11-05",
-   "tm": "https://www.ticketmaster.co.uk/indie-thursdays-leeds-19-11-2026/event/3E0064FDEC192A6B"
-  },
-  {
-   "title": "Into The Woods",
-   "theatre": "Noël Coward Theatre",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2027-01-09",
-   "url": "https://www.delfontmackintosh.co.uk/whats-on/into-the-woods"
-  },
-  {
-   "title": "JAZZ AT St LEONARD'S - AN EVENING OF LIVE MUSIC",
-   "theatre": "St Leonards Church, Watlington",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Oxford/St-Leonards-Church%2C-Watlington/JAZZ-AT-St-LEONARDS---AN-EVENING-OF-LIVE-MUSIC/43021752/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Jazz Steps: Andrew Wood’s Hammerhead",
-   "theatre": "Bonington Theatre",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.boningtontheatre.co.uk/whatson-event/jazz-steps-andrew-woods-hammerhead/"
-  },
-  {
-   "title": "Jeff Tweedy (Solo)",
-   "theatre": "Live At St. Lukes",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Ireland/Live-At-St.-Lukes/Jeff-Tweedy-Solo/42724006/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Jenna Raine",
-   "theatre": "Oran Mor",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.universe.com/events/jenna-raine-tickets-NQX6VT?ref=ticketmaster",
-   "tm": "https://www.universe.com/events/jenna-raine-tickets-NQX6VT?ref=ticketmaster",
-   "gsrc": "tm"
-  },
-  {
    "title": "Jesus Christ Superstar",
    "theatre": "Theatre Royal Drury Lane",
    "genre": "Musical",
@@ -1649,25 +992,7 @@
    "end": "2027-01-09",
    "url": "https://lwtheatres.co.uk/whats-on/jesus-christ-superstar-trdl/",
    "gsrc": "tm",
-   "tm": "https://theatre.ticketmaster.co.uk/book/1JA9W-jesus-christ-superstar/#perf=1JA9W-13&date=2026-11-19&time=2.30PM"
-  },
-  {
-   "title": "Johnsysshots Presents",
-   "theatre": "Kaz Stockroom",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Liverpool/Kaz-Stockroom/Johnsysshots-Presents/42837281/",
-   "src": "skiddle",
-   "added": "2026-11-12"
-  },
-  {
-   "title": "Jonathan Pie",
-   "theatre": "Vaillant Live",
-   "genre": "Comedy",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://vaillantlive.co.uk/event/jonathan-pie/113/"
+   "tm": "https://theatre.ticketmaster.co.uk/book/1JA9W-jesus-christ-superstar/#perf=1JA9W-15&date=2026-11-21&time=2.30PM"
   },
   {
    "title": "Julius Caesar 2027",
@@ -1680,227 +1005,12 @@
    "added": "2026-11-14"
   },
   {
-   "title": "Kevin Bridges",
-   "theatre": "First Direct Arena",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.firstdirectbankarena.com/events/detail/kevin-bridges-2026"
-  },
-  {
-   "title": "Kid Kapichi",
-   "theatre": "Manchester New Century Hall",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ticketmaster.co.uk/kid-kapichi-manchester-19-11-2026/event/3700647AA8E62CE2",
-   "tm": "https://www.ticketmaster.co.uk/kid-kapichi-manchester-19-11-2026/event/3700647AA8E62CE2",
-   "gsrc": "tm"
-  },
-  {
-   "title": "Laura Smyth – Born Aggy",
-   "theatre": "Nottingham Playhouse",
-   "genre": "Comedy",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://nottinghamplayhouse.co.uk/events/laura-smyth/",
-   "cancelled": true,
-   "tm": "https://www.ticketmaster.co.uk/laura-smyth-born-aggy-nottingham-19-11-2026/event/370063360241CDFE"
-  },
-  {
-   "title": "Les Misérables",
-   "theatre": "Sondheim Theatre",
-   "genre": "Musical",
-   "start": "2026-11-19",
-   "end": "2027-10-02",
-   "url": "https://www.delfontmackintosh.co.uk/whats-on/les-miserables",
-   "gsrc": "guess"
-  },
-  {
-   "title": "Levellers",
-   "theatre": "Rock City",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ticketmaster.co.uk/levellers-nottingham-19-11-2026/event/1F006451E76460DC",
-   "tm": "https://www.ticketmaster.co.uk/levellers-nottingham-19-11-2026/event/1F006451E76460DC",
-   "gsrc": "tm"
-  },
-  {
-   "title": "Little Angels Big Bad and Back Tour",
-   "theatre": "O2 Academy Oxford",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ticketmaster.co.uk/little-angels-big-bad-and-back-oxford-19-11-2026/event/3E006436E50E5884",
-   "tm": "https://www.ticketmaster.co.uk/little-angels-big-bad-and-back-oxford-19-11-2026/event/3E006436E50E5884",
-   "gsrc": "tm"
-  },
-  {
-   "title": "Live Soundtracks To Silent Films",
-   "theatre": "Future Yard",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Birkenhead/Future-Yard/Live-Soundtracks-To-Silent-Films/42426868/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "London Calling Play The Clash",
-   "theatre": "Cavern Club",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Liverpool/Cavern-Club/London-Calling-Play-The-Clash/42457361/",
-   "src": "skiddle",
-   "added": "2026-11-09",
-   "tm": "https://www.universe.com/events/london-calling-play-the-clash-tickets-R4SXWP?ref=ticketmaster"
-  },
-  {
    "title": "London Vet Show 2026",
    "theatre": "ExCeL London",
    "genre": "",
    "start": "2026-11-19",
    "end": "2026-11-20",
    "url": "https://www.excel.london/whats-on/london-vet-show-2026"
-  },
-  {
-   "title": "MAMMA MIA!",
-   "theatre": "Novello Theatre",
-   "genre": "Musical",
-   "start": "2026-11-19",
-   "end": "2027-10-02",
-   "url": "https://www.delfontmackintosh.co.uk/whats-on/mamma-mia",
-   "gsrc": "tm",
-   "tm": "https://theatre.ticketmaster.co.uk/book/1H4KU-mamma-mia-sept-25/#perf=1H4KU-19I&date=2026-11-19&time=3.00PM"
-  },
-  {
-   "title": "Mammoth",
-   "theatre": "EngineRooms",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Southampton/EngineRooms/Mammoth/43167829/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Marina Josephina + Kate Bond + Frannie Mac",
-   "theatre": "PILGRIM",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Newcastle-on-Tyne/PILGRIM/Marina-Josephina--Kate-Bond--Frannie-Mac/42699928/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Minotaur",
-   "theatre": "Eden Court Theatre",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://eden-court.co.uk/event/minotaur",
-   "added": "2026-11-13"
-  },
-  {
-   "title": "Mozart and Moonlight by Candlelight",
-   "theatre": "St Mary Le Strand",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/London/St-Mary-Le-Strand/Mozart-and-Moonlight-by-Candlelight/42508022/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Mrs. Doubtfire",
-   "theatre": "Leeds Grand Theatre",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-29",
-   "url": "https://leedsheritagetheatres.com/whats-on/mrs-doubtfire-2026/",
-   "added": "2026-11-05"
-  },
-  {
-   "title": "My Neighbour Totoro",
-   "theatre": "Gillian Lynne Theatre",
-   "genre": "Play",
-   "start": "2026-11-19",
-   "end": "2027-01-03",
-   "url": "https://lwtheatres.co.uk/whats-on/my-neighbour-totoro/",
-   "gsrc": "tm",
-   "added": "2026-11-16",
-   "tm": "https://theatre.ticketmaster.co.uk/book/1G7HA-my-neighbour-totoro/#perf=1G7HA-19O&date=2026-11-19&time=2.00PM"
-  },
-  {
-   "title": "Myles Smith: My Mess, My Heart, My Life.",
-   "theatre": "Utilita Arena Cardiff",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.utilitaarenacardiff.co.uk/whats-on/",
-   "gsrc": "tm",
-   "tm": "https://www.ticketmaster.co.uk/myles-smith-my-mess-my-heart-cardiff-19-11-2026/event/3600647484632AFF"
-  },
-  {
-   "title": "Nish Kumar: Angry Humour From a Really Nice Guy",
-   "theatre": "Royal Concert Hall",
-   "genre": "Comedy",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.trch.co.uk/whats-on/nish-kumar-hdbz"
-  },
-  {
-   "title": "Nutcracker Suite and Rachmaninov at Christmas by Candlelight",
-   "theatre": "St Paul's Church Covent Garden",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/London/St-Paul%27s-Church-Covent-Garden/Nutcracker-Suite-and-Rachmaninov-at-Christmas-by-Candlelight/42489197/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Of Mice and Men",
-   "theatre": "Norden Farm Centre For The Arts",
-   "genre": "Play",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Maidenhead/Norden-Farm-Centre-For-The-Arts/Of-Mice-and-Men/42746426/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Oliver!",
-   "theatre": "Gielgud Theatre",
-   "genre": "Musical",
-   "start": "2026-11-19",
-   "end": "2027-03-14",
-   "url": "https://www.atgtickets.com/shows/oliver/gielgud-theatre/",
-   "gsrc": "tm",
-   "tm": "https://theatre.ticketmaster.co.uk/book/1H4KN-oliver/#perf=1H4KN-19A&date=2026-11-19&time=7.30PM"
-  },
-  {
-   "title": "Operation Mincemeat: A New Musical",
-   "theatre": "Fortune Theatre",
-   "genre": "Musical",
-   "start": "2026-11-19",
-   "end": "2027-05-29",
-   "url": "https://www.atgtickets.com/shows/operation-mincemeat-a-new-musical/fortune-theatre/",
-   "gsrc": "guess",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "PRESIDENT - Blood of Your Empire: United Kingdom Campaign 2026",
-   "theatre": "O2 Academy Glasgow",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ticketmaster.co.uk/president-blood-of-your-empire-united-glasgow-19-11-2026/event/3E0064ADB5B445A2",
-   "tm": "https://www.ticketmaster.co.uk/president-blood-of-your-empire-united-glasgow-19-11-2026/event/3E0064ADB5B445A2",
-   "gsrc": "tm"
   },
   {
    "title": "Paul Gallagher",
@@ -1913,241 +1023,12 @@
    "added": "2026-11-09"
   },
   {
-   "title": "Perth Film Society: I Swear",
-   "theatre": "Perth Theatre and Concert Hall",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.perththeatreandconcerthall.com/whats-on/perth-film-society-i-swear"
-  },
-  {
    "title": "Peter Pan",
    "theatre": "The Rep",
    "genre": "Panto",
    "start": "2026-11-19",
    "end": "2027-01-17",
    "url": "https://www.birmingham-rep.co.uk/whats-on/peter-pan/"
-  },
-  {
-   "title": "Phantom of the Opera",
-   "theatre": "His Majesty's Theatre",
-   "genre": "Musical",
-   "start": "2026-11-19",
-   "end": "2027-10-02",
-   "url": "https://www.delfontmackintosh.co.uk/whats-on/phantom-of-the-opera",
-   "gsrc": "tm",
-   "tm": "https://theatre.ticketmaster.co.uk/book/1FU7R-the-phantom-of-the-opera/#perf=1FU7R-378&date=2026-11-19&time=7.30PM"
-  },
-  {
-   "title": "Picture This",
-   "theatre": "O2 Forum Kentish Town",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.academymusicgroup.com/o2forumkentishtown/events/picture-this-tickets-ae911503",
-   "gsrc": "tm",
-   "added": "2026-11-18",
-   "tm": "https://www.ticketmaster.co.uk/picture-this-london-19-11-2026/event/3E00636E086251DC"
-  },
-  {
-   "title": "Pollinate: Greater Manchester Independent Music Video Awards",
-   "theatre": "Niamos",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Manchester/Niamos/Pollinate-Greater-Manchester-Independent-Music-Video-Awards/43055091/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Postponed - Deep Purple",
-   "theatre": "OVO Hydro",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ovohydro.com/events/detail/deep-purple-2026",
-   "added": "2026-11-12"
-  },
-  {
-   "title": "Postponed - Deep Purple",
-   "theatre": "SEC Armadillo",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.sec.co.uk/events/detail/deep-purple-2026",
-   "added": "2026-11-14"
-  },
-  {
-   "title": "Prof Alice Roberts – From Cell to Civilisation",
-   "theatre": "Wycombe Swan",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.wycombeswan.co.uk/wycombe-swan-theatre/en-GB/event/other/prof-alice-roberts-from-cell-to-civilisation-tickets",
-   "added": "2026-11-17"
-  },
-  {
-   "title": "RENT",
-   "theatre": "Duke of York's Theatre",
-   "genre": "Musical",
-   "start": "2026-11-19",
-   "end": "2027-05-29",
-   "url": "https://www.atgtickets.com/shows/rent/tom-stoppard-theatre/",
-   "gsrc": "guess"
-  },
-  {
-   "title": "Radio Free Alice: Stripped Back Performance + Signing",
-   "theatre": "The Jacaranda Club",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Liverpool/The-Jacaranda-Club/Radio-Free-Alice-Stripped-Back-Performance--Signing/43117301/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Rhapsody in Blue at Christmas by Candlelight",
-   "theatre": "St Paul's Church Covent Garden",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/London/St-Paul%27s-Church-Covent-Garden/Rhapsody-in-Blue-at-Christmas-by-Candlelight/42489199/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Rizzle Kicks",
-   "theatre": "O2 Academy Brixton",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.academymusicgroup.com/o2academybrixton/events/rizzle-kicks-tickets-ae191017",
-   "gsrc": "tm",
-   "tm": "https://www.ticketmaster.co.uk/rizzle-kicks-london-19-11-2026/event/3E00647FBDB36DD6"
-  },
-  {
-   "title": "Rizzle Kicks ** MOVED TO O2 ACADEMY BRIXTON",
-   "theatre": "Alexandra Palace",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ticketmaster.co.uk/rizzle-kicks-moved-to-o2-academy-london-19-11-2026/event/1F006358851050F7",
-   "tm": "https://www.ticketmaster.co.uk/rizzle-kicks-moved-to-o2-academy-london-19-11-2026/event/1F006358851050F7",
-   "gsrc": "tm"
-  },
-  {
-   "title": "SQUEEZE PLUS VERY SPECIAL GUEST BILLY BRAGG",
-   "theatre": "Connexin Live",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.connexinlivehull.com/whats-on/squeeze-2026/",
-   "gsrc": "tm",
-   "tm": "https://www.ticketmaster.co.uk/squeeze-plus-very-special-guest-billy-hull-19-11-2026/event/36006375DFC8B606"
-  },
-  {
-   "title": "Scott Matthews",
-   "theatre": "Bristol Beacon",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://bristolbeacon.org/whats-on/scott-matthews-2026/"
-  },
-  {
-   "title": "Sheffield International Concert Season 26 / 27 - Stuttgart Philharmonic",
-   "theatre": "Sheffield City Hall",
-   "genre": "Classical",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.sheffieldcityhall.co.uk/event/sheffield-international-concert-season-26-27-stuttgart-philharmonic/tm_17u8v0g61udj04b/"
-  },
-  {
-   "title": "Shinedown - Venue Premium Tickets",
-   "theatre": "OVO Arena Wembley",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ticketmaster.co.uk/shinedown-venue-premium-tickets-london-19-11-2026/event/37006452B30A7764",
-   "tm": "https://www.ticketmaster.co.uk/shinedown-venue-premium-tickets-london-19-11-2026/event/37006452B30A7764",
-   "gsrc": "tm"
-  },
-  {
-   "title": "Shinedown: Dance, Kid, Dance Act II",
-   "theatre": "OVO Arena Wembley",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ticketmaster.co.uk/shinedown-dance-kid-dance-act-ii-london-19-11-2026/event/37006446B62F41AF",
-   "tm": "https://www.ticketmaster.co.uk/shinedown-dance-kid-dance-act-ii-london-19-11-2026/event/37006446B62F41AF",
-   "gsrc": "tm"
-  },
-  {
-   "title": "Sing-a-long-a The Greatest Showman",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/sing-a-long-a-the-greatest-showman//"
-  },
-  {
-   "title": "Single File Traffic",
-   "theatre": "Cafe Blah",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Manchester/Cafe-Blah/Single-File-Traffic/42830188/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Singular Artists Presents: No Cigar",
-   "theatre": "The Grand Social",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Ireland/The-Grand-Social/Singular-Artists-Presents-No-Cigar/42512361/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Skids + Theatre Of Hate",
-   "theatre": "Corporation Sheffield",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Sheffield/Corporation-Sheffield/Skids--Theatre-Of-Hate/42497934/",
-   "src": "skiddle",
-   "added": "2026-11-09",
-   "tm": "https://www.universe.com/events/skids-theatre-of-hate-tickets-JRKX5D?ref=ticketmaster"
-  },
-  {
-   "title": "Skye Newman",
-   "theatre": "O2 Victoria Warehouse Manchester",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ticketmaster.co.uk/skye-newman-manchester-19-11-2026/event/3E00653DA5313EA1",
-   "tm": "https://www.ticketmaster.co.uk/skye-newman-manchester-19-11-2026/event/3E00653DA5313EA1",
-   "gsrc": "tm"
-  },
-  {
-   "title": "Slam Dunk Presents Teenage Bottlerocket",
-   "theatre": "The Castle And Falcon",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Birmingham/The-Castle-And-Falcon/Slam-Dunk-Presents-Teenage-Bottlerocket/42672136/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Sounds from the City: Underground",
-   "theatre": "Brighton Dome",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://brightondome.org/whats-on/LB3-sounds-from-the-city-underground/",
-   "added": "2026-11-09"
   },
   {
    "title": "St. Patrick's Drama Group Westport Presents - Closing Limbo",
@@ -2160,16 +1041,6 @@
    "added": "2026-11-18"
   },
   {
-   "title": "Stranger Things: The First Shadow",
-   "theatre": "Phoenix Theatre",
-   "genre": "Play",
-   "start": "2026-11-19",
-   "end": "2026-12-20",
-   "url": "https://theatre.ticketmaster.co.uk/book/1FHDY-stranger-things-the-first-shadow/#perf=1FHDY-24Q&date=2026-11-19&time=7.00PM",
-   "tm": "https://theatre.ticketmaster.co.uk/book/1FHDY-stranger-things-the-first-shadow/#perf=1FHDY-24Q&date=2026-11-19&time=7.00PM",
-   "gsrc": "tm"
-  },
-  {
    "title": "THU 7:30PM: (Includes free drink)",
    "theatre": "City Comedy CLub | Trapeze Bar",
    "genre": "Comedy",
@@ -2180,50 +1051,12 @@
    "added": "2026-11-09"
   },
   {
-   "title": "Tea With Me",
-   "theatre": "Millennium Forum",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://millenniumforum.co.uk/whats-on/tea-with-me"
-  },
-  {
    "title": "The Adult Panto",
    "theatre": "The Baths Hall",
    "genre": "Pantomime",
    "start": "2026-11-19",
    "end": "2026-11-20",
    "url": "https://www.scunthorpetheatres.co.uk/whats-on/the-adult-panto/"
-  },
-  {
-   "title": "The Amy Winehouse Band: Back to Black 20th Anniversary Tour",
-   "theatre": "The Alban Arena",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ticketmaster.co.uk/the-amy-winehouse-band-back-to-st-albans-19-11-2026/event/3E006444881C24B0",
-   "tm": "https://www.ticketmaster.co.uk/the-amy-winehouse-band-back-to-st-albans-19-11-2026/event/3E006444881C24B0",
-   "gsrc": "tm"
-  },
-  {
-   "title": "The Black Feathers",
-   "theatre": "Norden Farm Centre For The Arts",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Maidenhead/Norden-Farm-Centre-For-The-Arts/The-Black-Feathers/42747073/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "The Book of Mormon",
-   "theatre": "Prince of Wales Theatre",
-   "genre": "Musical",
-   "start": "2026-11-19",
-   "end": "2027-03-29",
-   "url": "https://www.atgtickets.com/shows/the-book-of-mormon/prince-of-wales-theatre/",
-   "gsrc": "tm",
-   "tm": "https://theatre.ticketmaster.co.uk/book/1GZHW-the-book-of-mormon/#perf=1GZHW-20T&date=2026-11-19&time=7.30PM"
   },
   {
    "title": "The Brown Suite",
@@ -2234,94 +1067,6 @@
    "url": "https://www.atgtickets.com/shows/the-brown-suite/grand-opera-house-york/"
   },
   {
-   "title": "The Debut",
-   "theatre": "Eden Court Theatre",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://eden-court.co.uk/event/the-debut",
-   "added": "2026-11-18"
-  },
-  {
-   "title": "The Guest List",
-   "theatre": "Saint Luke's",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ticketmaster.co.uk/the-guest-list-glasgow-19-11-2026/event/36006497C7B66957",
-   "tm": "https://www.ticketmaster.co.uk/the-guest-list-glasgow-19-11-2026/event/36006497C7B66957",
-   "gsrc": "tm"
-  },
-  {
-   "title": "The Hanging Stars",
-   "theatre": "Heebies Tunnel",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Liverpool/Heebies-Tunnel/The-Hanging-Stars/42594283/",
-   "src": "skiddle",
-   "added": "2026-11-18"
-  },
-  {
-   "title": "The Mersey Beatles",
-   "theatre": "Blackpool Opera House",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ticketmaster.co.uk/the-mersey-beatles-blackpool-19-11-2026/event/1F006371D63675F0",
-   "tm": "https://www.ticketmaster.co.uk/the-mersey-beatles-blackpool-19-11-2026/event/1F006371D63675F0",
-   "gsrc": "tm"
-  },
-  {
-   "title": "The Mousetrap",
-   "theatre": "St Martin's Theatre",
-   "genre": "Play",
-   "start": "2026-11-19",
-   "end": "2027-07-17",
-   "url": "https://theatre.ticketmaster.co.uk/book/1J3DY-the-mousetrap/#perf=1J3DY-6N&date=2026-11-19&time=3.00PM",
-   "tm": "https://theatre.ticketmaster.co.uk/book/1J3DY-the-mousetrap/#perf=1J3DY-6N&date=2026-11-19&time=3.00PM",
-   "gsrc": "tm"
-  },
-  {
-   "title": "The Other Side of Murder",
-   "theatre": "Mayflower Theatre",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-21",
-   "url": "https://www.mayflower.org.uk/whats-on/the-other-side-of-murder-2026/",
-   "added": "2026-11-07"
-  },
-  {
-   "title": "The Rifles",
-   "theatre": "O2 Ritz Manchester",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ticketmaster.co.uk/the-rifles-manchester-19-11-2026/event/3E006474C97D4AD9",
-   "tm": "https://www.ticketmaster.co.uk/the-rifles-manchester-19-11-2026/event/3E006474C97D4AD9",
-   "gsrc": "tm"
-  },
-  {
-   "title": "The Script",
-   "theatre": "M&S Bank Arena",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.mandsbankarena.com/whats-on/the-script/",
-   "gsrc": "tm",
-   "tm": "https://www.ticketmaster.co.uk/the-script-liverpool-19-11-2026/event/370064B494171792"
-  },
-  {
-   "title": "The Shires",
-   "theatre": "Bedford Corn Exchange",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ticketmaster.co.uk/the-shires-bedford-19-11-2026/event/36006466BA2A5C65",
-   "tm": "https://www.ticketmaster.co.uk/the-shires-bedford-19-11-2026/event/36006466BA2A5C65",
-   "gsrc": "tm"
-  },
-  {
    "title": "The Standard Of Living",
    "theatre": "Theatre Royal Haymarket",
    "genre": "Play",
@@ -2330,17 +1075,7 @@
    "url": "https://www.skiddle.com/whats-on/London/Theatre-Royal-Haymarket/The-Standard-Of-Living/42582584/",
    "src": "skiddle",
    "added": "2026-11-09",
-   "tm": "https://www.ticketmaster.co.uk/the-standard-of-living-london-19-11-2026/event/Z3r9uZKbZL4ZefAN5ZeO"
-  },
-  {
-   "title": "The Temperance Movement",
-   "theatre": "Barrowland Ballroom",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.ticketmaster.co.uk/the-temperance-movement-glasgow-19-11-2026/event/3600648EEA70ADC3",
-   "tm": "https://www.ticketmaster.co.uk/the-temperance-movement-glasgow-19-11-2026/event/3600648EEA70ADC3",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/the-standard-of-living-london-20-11-2026/event/Z3r9uZKbZL4ZefAN5Zex"
   },
   {
    "title": "Thursday Night Comedy!",
@@ -2393,83 +1128,6 @@
    "added": "2026-11-09"
   },
   {
-   "title": "Titaníque",
-   "theatre": "Criterion Theatre",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2027-01-03",
-   "url": "https://www.criterion-theatre.co.uk/titanique?eventid=11601"
-  },
-  {
-   "title": "Trainspotting the Musical",
-   "theatre": "Hull New Theatre",
-   "genre": "Musical",
-   "start": "2026-11-19",
-   "end": "2026-11-21",
-   "url": "https://www.ticketmaster.co.uk/trainspotting-the-musical-hull-19-11-2026/event/350064A77ED0154F",
-   "tm": "https://www.ticketmaster.co.uk/trainspotting-the-musical-hull-19-11-2026/event/350064A77ED0154F",
-   "gsrc": "tm",
-   "cancelled": true
-  },
-  {
-   "title": "Venue Tour",
-   "theatre": "Lyceum Theatre",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2027-12-11",
-   "url": "https://www.atgtickets.com/shows/venue-tour/lyceum-theatre/",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "W*Nkernomics – Show_V4.1_Final _Usethis",
-   "theatre": "De Montfort Hall",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.demontforthall.co.uk/event/wnkernomics"
-  },
-  {
-   "title": "Wicked",
-   "theatre": "Apollo Victoria Theatre",
-   "genre": "Musical",
-   "start": "2026-11-19",
-   "end": "2027-05-30",
-   "url": "https://www.atgtickets.com/shows/wicked/apollo-victoria-theatre/",
-   "gsrc": "tm",
-   "added": "2026-11-01",
-   "tm": "https://theatre.ticketmaster.co.uk/book/1DU1L-apollo-victoria-london-wicked/#perf=1DU1L-616&date=2026-11-19&time=7.30PM"
-  },
-  {
-   "title": "Wild Horse Nine",
-   "theatre": "Leeds Grand Theatre",
-   "genre": "",
-   "start": "2026-11-19",
-   "end": "2026-12-02",
-   "url": "https://leedsheritagetheatres.com/whats-on/wild-horse-nine-2026/",
-   "added": "2026-11-16"
-  },
-  {
-   "title": "Young Knives Voices of Animals and Men 20th Anniversary",
-   "theatre": "The Brickyard",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/Carlisle/The-Brickyard/Young-Knives-Voices-of-Animals-and-Men-20th-Anniversary/42145573/",
-   "src": "skiddle",
-   "added": "2026-11-09"
-  },
-  {
-   "title": "Youth of Today",
-   "theatre": "The Dome",
-   "genre": "Music",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "url": "https://www.skiddle.com/whats-on/London/The-Dome/Youth-of-Today/42510962/",
-   "src": "skiddle",
-   "added": "2026-11-09",
-   "tm": "https://www.universe.com/events/youth-of-today-tickets-YLMDKG?ref=ticketmaster"
-  },
-  {
    "title": "£5 Comedy Show with Scotland's Best Comedians Doing New Jokes!",
    "theatre": "Dragonfly",
    "genre": "Comedy",
@@ -2506,6 +1164,24 @@
    "url": "https://www.connexinlivehull.com/whats-on/3156-promotions-strap-season/"
   },
   {
+   "title": "A Christmas Carol",
+   "theatre": "The Old Vic",
+   "genre": "Play",
+   "start": "2026-11-20",
+   "end": "2027-01-09",
+   "url": "https://www.ticketmaster.co.uk/a-christmas-carol-london-20-11-2026/event/Zor9uZKbZL4ZefdrdZ1",
+   "tm": "https://www.ticketmaster.co.uk/a-christmas-carol-london-20-11-2026/event/Zor9uZKbZL4ZefdrdZ1",
+   "gsrc": "tm"
+  },
+  {
+   "title": "A Man For All Seasons",
+   "theatre": "Churchill Theatre",
+   "genre": "Play",
+   "start": "2026-11-20",
+   "end": "2026-11-21",
+   "url": "https://trafalgartickets.com/churchill-theatre-bromley/en-GB/event/play/a-man-for-all-seasons-tickets"
+  },
+  {
    "title": "A Night at the Opera",
    "theatre": "Eden Court Theatre",
    "genre": "Classical",
@@ -2526,15 +1202,25 @@
    "added": "2026-11-09"
   },
   {
+   "title": "A Play, A Pie and A Pint: Parasocial Activity",
+   "theatre": "Oran Mor",
+   "genre": "Play",
+   "start": "2026-11-20",
+   "end": "2026-11-21",
+   "url": "https://www.universe.com/events/a-play-a-pie-and-a-pint-parasocial-activity-tickets-KSZ478?ref=ticketmaster",
+   "tm": "https://www.universe.com/events/a-play-a-pie-and-a-pint-parasocial-activity-tickets-KSZ478?ref=ticketmaster",
+   "gsrc": "tm"
+  },
+  {
    "title": "Aaron McCann",
    "theatre": "Belfast Waterfront Hall",
    "genre": "Comedy",
    "start": "2026-11-20",
    "end": "2026-11-20",
    "url": "https://www.waterfront.co.uk/what-s-on/aaron-mccann-3/",
+   "gsrc": "tm",
    "added": "2026-11-19",
-   "tm": "https://www.ticketmaster.ie/aaron-mccann-momentum-belfast-20-11-2026/event/380064DEB64F3616",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.ie/aaron-mccann-momentum-belfast-20-11-2026/event/380064DEB64F3616"
   },
   {
    "title": "Aaron McCann: Momentum",
@@ -2563,6 +1249,14 @@
    "start": "2026-11-20",
    "end": "2026-11-21",
    "url": "https://www.goh.co.uk/whats-on/adam-garcias-emerald-storm"
+  },
+  {
+   "title": "Agatha Christie's The Hollow",
+   "theatre": "New Theatre Cardiff",
+   "genre": "Play",
+   "start": "2026-11-20",
+   "end": "2026-11-21",
+   "url": "https://trafalgartickets.com/new-theatre-cardiff/en-GB/event/play/agatha-christies-the-hollow-tickets"
   },
   {
    "title": "Age is a Stage",
@@ -2618,6 +1312,16 @@
    "url": "https://www.skiddle.com/whats-on/Southampton/EngineRooms/Beatles-Complete---A-Tribute-To-The-Fab-Four/41785925/",
    "src": "skiddle",
    "added": "2026-11-09"
+  },
+  {
+   "title": "Beetlejuice",
+   "theatre": "Prince Edward Theatre",
+   "genre": "Musical",
+   "start": "2026-11-20",
+   "end": "2027-01-02",
+   "url": "https://www.delfontmackintosh.co.uk/whats-on/beetlejuice",
+   "gsrc": "tm",
+   "tm": "https://theatre.ticketmaster.co.uk/book/1HM82-beetlejuice/#perf=1HM82-5U&date=2026-11-20&time=3.00PM"
   },
   {
    "title": "Bellowhead Burlesque 20th Anniversary Tour",
@@ -2809,6 +1513,16 @@
    "added": "2026-11-09"
   },
   {
+   "title": "Cabaret At The Kit Kat Club",
+   "theatre": "Playhouse Theatre",
+   "genre": "Musical",
+   "start": "2026-11-20",
+   "end": "2027-09-18",
+   "url": "https://theatre.ticketmaster.co.uk/book/1H9ZU-cabaret/#perf=1H9ZU-25W&date=2026-11-20&time=7.30PM",
+   "tm": "https://theatre.ticketmaster.co.uk/book/1H9ZU-cabaret/#perf=1H9ZU-25W&date=2026-11-20&time=7.30PM",
+   "gsrc": "tm"
+  },
+  {
    "title": "Chapterhouse",
    "theatre": "Empire Music Hall",
    "genre": "Music",
@@ -2863,6 +1577,16 @@
    "start": "2026-11-20",
    "end": "2026-11-20",
    "url": "https://www.demontforthall.co.uk/event/christmas-in-ireland"
+  },
+  {
+   "title": "Cinderella",
+   "theatre": "Norwich Theatre Royal",
+   "genre": "Pantomime",
+   "start": "2026-11-20",
+   "end": "2026-11-21",
+   "url": "https://norwichtheatre.org/whats-on/cinderella-2/",
+   "gsrc": "guess",
+   "added": "2026-11-06"
   },
   {
    "title": "Cinderella: A Fairytale",
@@ -3036,6 +1760,27 @@
    "end": "2026-11-20",
    "url": "https://www.whiterocktheatre.org.uk/whats-on/event/disco-for-grown-ups-2026/",
    "gsrc": "guess"
+  },
+  {
+   "title": "Disney On Ice presents Discover the Magic",
+   "theatre": "Motorpoint Arena Nottingham",
+   "genre": "Event",
+   "start": "2026-11-20",
+   "end": "2026-11-22",
+   "url": "https://www.ticketmaster.co.uk/disney-on-ice-presents-discover-the-nottingham-20-11-2026/event/350064CAB0C093C1",
+   "tm": "https://www.ticketmaster.co.uk/disney-on-ice-presents-discover-the-nottingham-20-11-2026/event/350064CAB0C093C1",
+   "gsrc": "tm"
+  },
+  {
+   "title": "Disney's The Lion King",
+   "theatre": "Lyceum Theatre",
+   "genre": "Musical",
+   "start": "2026-11-20",
+   "end": "2027-07-25",
+   "url": "https://www.atgtickets.com/shows/disneys-the-lion-king/lyceum-theatre/",
+   "gsrc": "tm",
+   "added": "2026-11-09",
+   "tm": "https://theatre.ticketmaster.co.uk/book/1DR6R-lyceum-theatre-london-disneys-the-lion-king/#perf=1DR6R-619&date=2026-11-20&time=7.30PM"
   },
   {
    "title": "Drake Milligan",
@@ -3232,6 +1977,16 @@
    "url": "https://www.ticketmaster.co.uk/flo-joan-with-feeling-coventry-20-11-2026/event/1F006445CD7751A9",
    "tm": "https://www.ticketmaster.co.uk/flo-joan-with-feeling-coventry-20-11-2026/event/1F006445CD7751A9",
    "gsrc": "tm"
+  },
+  {
+   "title": "Florian Henckel von Donnersmarck’s The Lives of Others",
+   "theatre": "Adelphi Theatre",
+   "genre": "Play",
+   "start": "2026-11-20",
+   "end": "2027-01-09",
+   "url": "https://lwtheatres.co.uk/whats-on/the-lives-of-others/",
+   "gsrc": "tm",
+   "tm": "https://www.ticketmaster.co.uk/florian-henckel-von-donnersmarcks-the-lives-london-20-11-2026/event/Z3r9uZKbZL4Zef7a5Ze6"
   },
   {
    "title": "Fontaines D.C.",
@@ -3433,6 +2188,17 @@
    "added": "2026-11-08"
   },
   {
+   "title": "Hamilton",
+   "theatre": "Victoria Palace Theatre",
+   "genre": "Musical",
+   "start": "2026-11-20",
+   "end": "2027-10-02",
+   "url": "https://www.delfontmackintosh.co.uk/whats-on/hamilton",
+   "gsrc": "tm",
+   "added": "2026-11-03",
+   "tm": "https://theatre.ticketmaster.co.uk/book/1H1YN-hamilton/#perf=1H1YN-204&date=2026-11-20&time=7.30PM"
+  },
+  {
    "title": "Hay Fever",
    "theatre": "Wyndhams Theatre",
    "genre": "Play",
@@ -3441,6 +2207,16 @@
    "url": "https://www.skiddle.com/whats-on/London/Wyndhams-Theatre/Hay-Fever/43199776/",
    "src": "skiddle",
    "added": "2026-11-11"
+  },
+  {
+   "title": "Hay Fever",
+   "theatre": "Wyndham's Theatre",
+   "genre": "Play",
+   "start": "2026-11-20",
+   "end": "2026-12-12",
+   "url": "https://www.delfontmackintosh.co.uk/whats-on/hay-fever",
+   "gsrc": "tm",
+   "tm": "https://www.ticketmaster.co.uk/hay-fever-london-20-11-2026/event/Z3r9uZKbZL4ZefkovZeO"
   },
   {
    "title": "High Fade",
@@ -3535,6 +2311,14 @@
    "start": "2026-11-20",
    "end": "2026-11-21",
    "url": "https://www.atgtickets.com/shows/impromptu-shakespeare/studio-at-new-wimbledon-theatre/"
+  },
+  {
+   "title": "Into The Woods",
+   "theatre": "Noël Coward Theatre",
+   "genre": "",
+   "start": "2026-11-20",
+   "end": "2027-01-09",
+   "url": "https://www.delfontmackintosh.co.uk/whats-on/into-the-woods"
   },
   {
    "title": "Irish Chamber Orchestra: Mozart Illuminated",
@@ -3688,6 +2472,15 @@
    "cancelled": true
   },
   {
+   "title": "Les Misérables",
+   "theatre": "Sondheim Theatre",
+   "genre": "Musical",
+   "start": "2026-11-20",
+   "end": "2027-10-02",
+   "url": "https://www.delfontmackintosh.co.uk/whats-on/les-miserables",
+   "gsrc": "guess"
+  },
+  {
    "title": "Let The Music Play: The Legend of Barry White",
    "theatre": "Lyceum Theatre Sheffield",
    "genre": "",
@@ -3761,6 +2554,16 @@
    "url": "https://www.skiddle.com/whats-on/Inverness/Upstairs-Inverness/Lucid-Liars/42723135/",
    "src": "skiddle",
    "added": "2026-11-17"
+  },
+  {
+   "title": "MAMMA MIA!",
+   "theatre": "Novello Theatre",
+   "genre": "Musical",
+   "start": "2026-11-20",
+   "end": "2027-10-02",
+   "url": "https://www.delfontmackintosh.co.uk/whats-on/mamma-mia",
+   "gsrc": "tm",
+   "tm": "https://theatre.ticketmaster.co.uk/book/1H4KU-mamma-mia-sept-25/#perf=1H4KU-19K&date=2026-11-20&time=7.30PM"
   },
   {
    "title": "MANIA - The Abba Tribute",
@@ -3873,6 +2676,26 @@
    "added": "2026-11-09"
   },
   {
+   "title": "Mrs. Doubtfire",
+   "theatre": "Leeds Grand Theatre",
+   "genre": "",
+   "start": "2026-11-20",
+   "end": "2026-11-29",
+   "url": "https://leedsheritagetheatres.com/whats-on/mrs-doubtfire-2026/",
+   "added": "2026-11-05"
+  },
+  {
+   "title": "My Neighbour Totoro",
+   "theatre": "Gillian Lynne Theatre",
+   "genre": "Play",
+   "start": "2026-11-20",
+   "end": "2027-01-03",
+   "url": "https://lwtheatres.co.uk/whats-on/my-neighbour-totoro/",
+   "gsrc": "tm",
+   "added": "2026-11-16",
+   "tm": "https://theatre.ticketmaster.co.uk/book/1G7HA-my-neighbour-totoro/#perf=1G7HA-19Q&date=2026-11-20&time=7.00PM"
+  },
+  {
    "title": "Myles Smith",
    "theatre": "The O2 Arena",
    "genre": "",
@@ -3912,6 +2735,16 @@
    "added": "2026-11-09"
   },
   {
+   "title": "Oliver!",
+   "theatre": "Gielgud Theatre",
+   "genre": "Musical",
+   "start": "2026-11-20",
+   "end": "2027-03-14",
+   "url": "https://www.atgtickets.com/shows/oliver/gielgud-theatre/",
+   "gsrc": "tm",
+   "tm": "https://theatre.ticketmaster.co.uk/book/1H4KN-oliver/#perf=1H4KN-19B&date=2026-11-20&time=7.30PM"
+  },
+  {
    "title": "One Pound Comedy: Friday| Creatures Comedy Club",
    "theatre": "Creatures Comedy Club",
    "genre": "Comedy",
@@ -3939,6 +2772,16 @@
    "gsrc": "tm",
    "added": "2026-11-08",
    "tm": "https://www.ticketmaster.co.uk/operation-mincemeat-a-new-musical-southampton-20-11-2026/event/1F0062C4B57D22CE"
+  },
+  {
+   "title": "Operation Mincemeat: A New Musical",
+   "theatre": "Fortune Theatre",
+   "genre": "Musical",
+   "start": "2026-11-20",
+   "end": "2027-05-29",
+   "url": "https://www.atgtickets.com/shows/operation-mincemeat-a-new-musical/fortune-theatre/",
+   "gsrc": "guess",
+   "added": "2026-11-09"
   },
   {
    "title": "Pa Sheehy: Magic We Found",
@@ -3979,6 +2822,16 @@
    "url": "https://portsmouthguildhall.org.uk/whats-on/event/paul-smith-happy/"
   },
   {
+   "title": "Phantom of the Opera",
+   "theatre": "His Majesty's Theatre",
+   "genre": "Musical",
+   "start": "2026-11-20",
+   "end": "2027-10-02",
+   "url": "https://www.delfontmackintosh.co.uk/whats-on/phantom-of-the-opera",
+   "gsrc": "tm",
+   "tm": "https://theatre.ticketmaster.co.uk/book/1FU7R-the-phantom-of-the-opera/#perf=1FU7R-379&date=2026-11-20&time=7.30PM"
+  },
+  {
    "title": "Philharmonia Orchestra: Mahler’s Sixth Symphony - More Info",
    "theatre": "The Glasshouse, Gateshead",
    "genre": "Classical",
@@ -3987,6 +2840,17 @@
    "url": "https://theglasshouseicm.org/whats-on/philharmonia-orchestra-mahlers-sixth-symphony/",
    "gsrc": "guess",
    "added": "2026-11-07"
+  },
+  {
+   "title": "Picture This",
+   "theatre": "O2 Forum Kentish Town",
+   "genre": "Music",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "url": "https://www.academymusicgroup.com/o2forumkentishtown/events/picture-this-tickets-ae911503",
+   "gsrc": "tm",
+   "added": "2026-11-18",
+   "tm": "https://www.ticketmaster.co.uk/picture-this-london-20-11-2026/event/3E00637191E43936"
   },
   {
    "title": "Portrayal of Guilt",
@@ -4007,6 +2871,15 @@
    "gsrc": "tm",
    "added": "2026-11-01",
    "tm": "https://www.ticketmaster.co.uk/professor-alice-roberts-from-cell-to-southampton-20-11-2026/event/3600646B97F73CEC"
+  },
+  {
+   "title": "RENT",
+   "theatre": "Duke of York's Theatre",
+   "genre": "Musical",
+   "start": "2026-11-20",
+   "end": "2027-05-29",
+   "url": "https://www.atgtickets.com/shows/rent/tom-stoppard-theatre/",
+   "gsrc": "guess"
   },
   {
    "title": "Radio Free Alice",
@@ -4203,6 +3076,16 @@
    "added": "2026-11-13"
   },
   {
+   "title": "Stranger Things: The First Shadow",
+   "theatre": "Phoenix Theatre",
+   "genre": "Play",
+   "start": "2026-11-20",
+   "end": "2026-12-20",
+   "url": "https://theatre.ticketmaster.co.uk/book/1FHDY-stranger-things-the-first-shadow/#perf=1FHDY-24R&date=2026-11-20&time=1.00PM",
+   "tm": "https://theatre.ticketmaster.co.uk/book/1FHDY-stranger-things-the-first-shadow/#perf=1FHDY-24R&date=2026-11-20&time=1.00PM",
+   "gsrc": "tm"
+  },
+  {
    "title": "Stuttgart Philharmonic",
    "theatre": "Bridgewater Hall",
    "genre": "Classical",
@@ -4293,6 +3176,16 @@
    "url": "https://www.ticketmaster.co.uk/the-big-moon-glasgow-20-11-2026/event/360064D895B78236",
    "tm": "https://www.ticketmaster.co.uk/the-big-moon-glasgow-20-11-2026/event/360064D895B78236",
    "gsrc": "tm"
+  },
+  {
+   "title": "The Book of Mormon",
+   "theatre": "Prince of Wales Theatre",
+   "genre": "Musical",
+   "start": "2026-11-20",
+   "end": "2027-03-29",
+   "url": "https://www.atgtickets.com/shows/the-book-of-mormon/prince-of-wales-theatre/",
+   "gsrc": "tm",
+   "tm": "https://theatre.ticketmaster.co.uk/book/1GZHW-the-book-of-mormon/#perf=1GZHW-20U&date=2026-11-20&time=2.30PM"
   },
   {
    "title": "The Busted Experience + Simple Plan UK + Me You at Six",
@@ -4452,6 +3345,16 @@
    "added": "2026-11-15"
   },
   {
+   "title": "The Mousetrap",
+   "theatre": "St Martin's Theatre",
+   "genre": "Play",
+   "start": "2026-11-20",
+   "end": "2027-07-17",
+   "url": "https://theatre.ticketmaster.co.uk/book/1J3DY-the-mousetrap/#perf=1J3DY-6P&date=2026-11-20&time=7.30PM",
+   "tm": "https://theatre.ticketmaster.co.uk/book/1J3DY-the-mousetrap/#perf=1J3DY-6P&date=2026-11-20&time=7.30PM",
+   "gsrc": "tm"
+  },
+  {
    "title": "The Nutcracker",
    "theatre": "The Hawth",
    "genre": "Dance",
@@ -4489,6 +3392,15 @@
    "tm": "https://www.ticketmaster.co.uk/the-orb-the-ozric-tentacles-liverpool-20-11-2026/event/3E00642CD7AC3C46",
    "gsrc": "tm",
    "cancelled": true
+  },
+  {
+   "title": "The Other Side of Murder",
+   "theatre": "Mayflower Theatre",
+   "genre": "",
+   "start": "2026-11-20",
+   "end": "2026-11-21",
+   "url": "https://www.mayflower.org.uk/whats-on/the-other-side-of-murder-2026/",
+   "added": "2026-11-07"
   },
   {
    "title": "The Piece Hall Christmas Market",
@@ -4625,6 +3537,14 @@
    "gsrc": "tm"
   },
   {
+   "title": "Titaníque",
+   "theatre": "Criterion Theatre",
+   "genre": "",
+   "start": "2026-11-20",
+   "end": "2027-01-03",
+   "url": "https://www.criterion-theatre.co.uk/titanique?eventid=11601"
+  },
+  {
    "title": "Tony & The Kiki",
    "theatre": "The Sound House",
    "genre": "Music",
@@ -4643,6 +3563,17 @@
    "url": "https://www.skiddle.com/whats-on/Glasgow/Blackfriars-Of-Bell-Street/Trad-Friday-Sessions--Blackfriars/42514577/",
    "src": "skiddle",
    "added": "2026-11-09"
+  },
+  {
+   "title": "Trainspotting the Musical",
+   "theatre": "Hull New Theatre",
+   "genre": "Musical",
+   "start": "2026-11-20",
+   "end": "2026-11-21",
+   "url": "https://www.ticketmaster.co.uk/trainspotting-the-musical-hull-20-11-2026/event/350064A77ED6155B",
+   "tm": "https://www.ticketmaster.co.uk/trainspotting-the-musical-hull-20-11-2026/event/350064A77ED6155B",
+   "gsrc": "tm",
+   "cancelled": true
   },
   {
    "title": "Tropicana Nights - The Ultimate 80's Party Night!",
@@ -4711,6 +3642,15 @@
    "added": "2026-11-09"
   },
   {
+   "title": "Venue Tour",
+   "theatre": "Lyceum Theatre",
+   "genre": "",
+   "start": "2026-11-20",
+   "end": "2027-12-11",
+   "url": "https://www.atgtickets.com/shows/venue-tour/lyceum-theatre/",
+   "added": "2026-11-09"
+  },
+  {
    "title": "Walrws",
    "theatre": "Theatr Clwyd",
    "genre": "",
@@ -4757,6 +3697,17 @@
    "tm": "https://www.ticketmaster.co.uk/whats-love-got-to-do-with-truro-20-11-2026/event/1F006342FC27A40C"
   },
   {
+   "title": "Wicked",
+   "theatre": "Apollo Victoria Theatre",
+   "genre": "Musical",
+   "start": "2026-11-20",
+   "end": "2027-05-30",
+   "url": "https://www.atgtickets.com/shows/wicked/apollo-victoria-theatre/",
+   "gsrc": "tm",
+   "added": "2026-11-01",
+   "tm": "https://theatre.ticketmaster.co.uk/book/1DU1L-apollo-victoria-london-wicked/#perf=1DU1L-617&date=2026-11-20&time=7.30PM"
+  },
+  {
    "title": "Wicker",
    "theatre": "Eden Court Theatre",
    "genre": "",
@@ -4764,6 +3715,15 @@
    "end": "2026-11-20",
    "url": "https://eden-court.co.uk/event/wicker",
    "added": "2026-11-18"
+  },
+  {
+   "title": "Wild Horse Nine",
+   "theatre": "Leeds Grand Theatre",
+   "genre": "",
+   "start": "2026-11-20",
+   "end": "2026-12-02",
+   "url": "https://leedsheritagetheatres.com/whats-on/wild-horse-nine-2026/",
+   "added": "2026-11-16"
   },
   {
    "title": "Yard Act",
@@ -4780,7 +3740,7 @@
    "theatre": "Leeds Grand Theatre",
    "genre": "",
    "start": "2026-11-20",
-   "end": "2026-11-30",
+   "end": "2026-12-03",
    "url": "https://leedsheritagetheatres.com/whats-on/you-can-see-everything-2026/",
    "added": "2026-11-09"
   },
@@ -5066,6 +4026,15 @@
    "src": "skiddle",
    "added": "2026-11-09",
    "tm": "https://www.universe.com/events/bodega-tickets-SK9W2L?ref=ticketmaster"
+  },
+  {
+   "title": "Bongo's Bingo",
+   "theatre": "O2 Academy Leeds",
+   "genre": "Event",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "url": "https://www.academymusicgroup.com/o2academyleeds/events/bongo-s-bingo-tickets-ae1081875",
+   "gsrc": "guess"
   },
   {
    "title": "Bongo’s Bingo – Christmas Special",
@@ -6701,6 +5670,17 @@
    "added": "2026-11-14"
   },
   {
+   "title": "Skye Newman",
+   "theatre": "O2 Academy Brixton",
+   "genre": "Music",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "url": "https://www.academymusicgroup.com/o2academybrixton/events/skye-newman-tickets-ae1563589",
+   "added": "2026-11-10",
+   "tm": "https://www.ticketmaster.co.uk/skye-newman-london-21-11-2026/event/3E00653EF514885F",
+   "gsrc": "tm"
+  },
+  {
    "title": "Small Fakers Live plus support from The Kinks Experience",
    "theatre": "The Classic Grand",
    "genre": "Music",
@@ -7562,6 +6542,15 @@
    "url": "https://www.skiddle.com/whats-on/Birmingham/Austin-Sports-And-Social-Club/Comedy-with-mick-Miller---Longbridge/42321440/",
    "src": "skiddle",
    "added": "2026-11-09"
+  },
+  {
+   "title": "Comédie-Française",
+   "theatre": "Eden Court Theatre",
+   "genre": "",
+   "start": "2026-11-22",
+   "end": "2026-11-22",
+   "url": "https://eden-court.co.uk/event/comedie-francaise",
+   "added": "2026-11-20"
   },
   {
    "title": "Crafty Kids: Make A Keepsake Box!",
@@ -9211,6 +8200,17 @@
    "added": "2026-11-08"
   },
   {
+   "title": "Bill Bailey",
+   "theatre": "SEC Armadillo",
+   "genre": "Comedy",
+   "start": "2026-11-24",
+   "end": "2026-11-24",
+   "url": "https://www.sec.co.uk/events/detail/bill-bailey-2026",
+   "added": "2026-11-20",
+   "tm": "https://www.ticketmaster.co.uk/bill-bailey-vaudevillean-glasgow-24-11-2026/event/360063756E061EC1",
+   "gsrc": "tm"
+  },
+  {
    "title": "Books and Boogie",
    "theatre": "Aylesbury Waterside Theatre",
    "genre": "Events",
@@ -9722,9 +8722,9 @@
    "start": "2026-11-24",
    "end": "2026-11-25",
    "url": "https://www.aberdeenperformingarts.com/whats-on/romesh-ranganathan-will-change-your-life-2026/",
+   "gsrc": "tm",
    "added": "2026-11-19",
-   "tm": "https://www.ticketmaster.co.uk/romesh-ranganathan-will-change-your-life-aberdeen-24-11-2026/event/36006473EA0178EB",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/romesh-ranganathan-will-change-your-life-aberdeen-24-11-2026/event/36006473EA0178EB"
   },
   {
    "title": "Round Midnight presents corto.alto",
@@ -10367,6 +9367,15 @@
    "gsrc": "tm"
   },
   {
+   "title": "Flo & Joan: With Feeling",
+   "theatre": "Aberdeen Music Hall",
+   "genre": "",
+   "start": "2026-11-25",
+   "end": "2026-11-25",
+   "url": "https://www.aberdeenperformingarts.com/whats-on/flo-joan-with-feeling/",
+   "added": "2026-11-20"
+  },
+  {
    "title": "Floodex",
    "theatre": "ExCeL London",
    "genre": "",
@@ -10866,6 +9875,15 @@
    "start": "2026-11-25",
    "end": "2026-11-25",
    "url": "https://www.sheffieldtheatres.co.uk/events/spt-audience-singin-in-the-rain"
+  },
+  {
+   "title": "Sindhu Vee: Swanky",
+   "theatre": "Brighton Dome",
+   "genre": "",
+   "start": "2026-11-25",
+   "end": "2026-11-25",
+   "url": "https://brightondome.org/whats-on/Lso-sindhu-vee-swanky/",
+   "added": "2026-11-20"
   },
   {
    "title": "Singular Artist: Adult DVD",
@@ -11551,6 +10569,15 @@
    "url": "https://www.thenec.co.uk/events/festive-good-food-show/"
   },
   {
+   "title": "Film: Baby Friendly Cinema Club - Along Came Polly",
+   "theatre": "Guildford G Live",
+   "genre": "",
+   "start": "2026-11-26",
+   "end": "2026-11-26",
+   "url": "https://glive.co.uk/g-live-guildford/en-GB/event/film/film-baby-friendly-cinema-club-along-came-polly-tickets",
+   "added": "2026-11-19"
+  },
+  {
    "title": "Fin Taylor",
    "theatre": "Birmingham Town Hall",
    "genre": "Comedy",
@@ -11578,14 +10605,6 @@
    "url": "https://www.ticketmaster.co.uk/flo-joan-with-feeling-dundee-26-11-2026/event/36006382D8CFC0D8",
    "tm": "https://www.ticketmaster.co.uk/flo-joan-with-feeling-dundee-26-11-2026/event/36006382D8CFC0D8",
    "gsrc": "tm"
-  },
-  {
-   "title": "Focus",
-   "theatre": "The Met",
-   "genre": "",
-   "start": "2026-11-26",
-   "end": "2026-11-26",
-   "url": "https://themet.org.uk/event/focus-2026/"
   },
   {
    "title": "Garth Marenghi - This Bursted Earth",
@@ -12048,6 +11067,16 @@
    "url": "https://www.perththeatreandconcerthall.com/whats-on/the-holiday-in-concert-film-with-live-orchestra",
    "gsrc": "guess",
    "added": "2026-10-31"
+  },
+  {
+   "title": "The Lost Children of Tuam",
+   "theatre": "Eden Court Theatre",
+   "genre": "Family",
+   "start": "2026-11-26",
+   "end": "2026-11-26",
+   "url": "https://eden-court.co.uk/event/the-lost-children-of-tuam",
+   "gsrc": "guess",
+   "added": "2026-11-20"
   },
   {
    "title": "The Ogretones",
@@ -15956,6 +14985,15 @@
    "added": "2026-11-09"
   },
   {
+   "title": "Tomorrow 9:30 AM",
+   "theatre": "The Met",
+   "genre": "",
+   "start": "2026-11-28",
+   "end": "2026-11-28",
+   "url": "https://themet.org.uk/event/aiming-high/#dates-times",
+   "added": "2026-11-06"
+  },
+  {
    "title": "Treasure Island",
    "theatre": "Wolverhampton Grand Theatre",
    "genre": "Pantomime",
@@ -16187,8 +15225,8 @@
    "start": "2026-11-29",
    "end": "2026-11-29",
    "url": "https://www.academymusicgroup.com/o2academyleicester/events/big-country-tickets-ae3732",
-   "tm": "https://www.ticketmaster.co.uk/big-country-evan-peters-alarm-leicester-29-11-2026/event/3E0064B284EC144F",
-   "gsrc": "tm"
+   "gsrc": "tm",
+   "tm": "https://www.ticketmaster.co.uk/big-country-evan-peters-alarm-leicester-29-11-2026/event/3E0064B284EC144F"
   },
   {
    "title": "Bollywood Mehfil – Wolverhampton",
@@ -17187,6 +16225,17 @@
    "url": "https://www.scunthorpetheatres.co.uk/whats-on/a-christmas-carol/"
   },
   {
+   "title": "Placebo",
+   "theatre": "OVO Hydro",
+   "genre": "Event",
+   "start": "2026-11-30",
+   "end": "2026-11-30",
+   "url": "https://www.ovohydro.com/events/detail/placebo",
+   "added": "2026-11-20",
+   "tm": "https://www.ticketmaster.co.uk/venue-premium-placebo-30th-anniversary-tour-glasgow-30-11-2026/event/36006473DFBF6870",
+   "gsrc": "tm"
+  },
+  {
    "title": "Portsmouth Chamber Music Series – Mozart, Beethoven & Grieg",
    "theatre": "Portsmouth Guildhall",
    "genre": "Classical",
@@ -17242,6 +16291,14 @@
    "end": "2026-11-30",
    "url": "https://www.thsh.co.uk/events/skum",
    "added": "2026-11-17"
+  },
+  {
+   "title": "Spend, Spend, Spend Eric!",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2026-11-30",
+   "end": "2026-12-12",
+   "url": "https://www.newvictheatre.org.uk/productions/spend-spend-spend-eric/"
   },
   {
    "title": "Swamp Eggs Comedy",
@@ -18062,6 +17119,16 @@
    "gsrc": "tm"
   },
   {
+   "title": "Family Big Gig: Rockin’ Christmas",
+   "theatre": "Middlesbrough Town Hall",
+   "genre": "Music",
+   "start": "2026-12-02",
+   "end": "2026-12-02",
+   "url": "https://boxoffice.middlesbrough.gov.uk/event/family-big-gig-rockin-christmas/",
+   "gsrc": "guess",
+   "added": "2026-11-20"
+  },
+  {
    "title": "Fatiha El-Ghorri: Cockney Stacking Doll",
    "theatre": "Norwich Theatre Royal",
    "genre": "",
@@ -18282,6 +17349,16 @@
    "start": "2026-12-02",
    "end": "2026-12-02",
    "url": "https://www.thehallswolverhampton.co.uk/events/royal-blood"
+  },
+  {
+   "title": "Schools Big Gig: Rockin’ Christmas",
+   "theatre": "Middlesbrough Town Hall",
+   "genre": "Music",
+   "start": "2026-12-02",
+   "end": "2026-12-02",
+   "url": "https://boxoffice.middlesbrough.gov.uk/event/schools-big-gig-rockin-christmas/",
+   "gsrc": "guess",
+   "added": "2026-11-20"
   },
   {
    "title": "Solent Writers' Networking Day",
@@ -19065,6 +18142,15 @@
    "added": "2026-11-15"
   },
   {
+   "title": "A Wild Night In: A Celebration of Mountaineering",
+   "theatre": "Perth Theatre and Concert Hall",
+   "genre": "",
+   "start": "2026-12-04",
+   "end": "2026-12-04",
+   "url": "https://www.perththeatreandconcerthall.com/whats-on/a-wild-night-in-a-celebration-of-mountaineering",
+   "added": "2026-11-20"
+  },
+  {
    "title": "A very Jurassic meet & greet - 4th December",
    "theatre": "Tonbridge Castle",
    "genre": "Family",
@@ -19378,6 +18464,16 @@
    "end": "2026-12-04",
    "url": "https://www.atgtickets.com/shows/live-at-christmas/new-theatre-oxford/",
    "tm": "https://www.ticketmaster.co.uk/live-at-christmas-nina-conti-fern-oxford-04-12-2026/event/360064C232F46FD9"
+  },
+  {
+   "title": "Love Actually Live in Concert",
+   "theatre": "Bath Forum",
+   "genre": "Music",
+   "start": "2026-12-04",
+   "end": "2026-12-04",
+   "url": "https://www.bathforum.co.uk/whats-on/love-actually-live-in-concert-mtlx",
+   "gsrc": "guess",
+   "added": "2026-11-20"
   },
   {
    "title": "Mark Watson: Before It Overtakes Us",
@@ -20133,9 +19229,9 @@
    "start": "2026-12-05",
    "end": "2026-12-05",
    "url": "https://www.cooplive.com/events/jessie-ware-yvcl",
+   "gsrc": "tm",
    "added": "2026-11-19",
-   "tm": "https://www.ticketmaster.co.uk/jessie-ware-the-superbloom-tour-2026-manchester-05-12-2026/event/370064909FD2453D",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/jessie-ware-the-superbloom-tour-2026-manchester-05-12-2026/event/370064909FD2453D"
   },
   {
    "title": "KNEECAP",
@@ -20186,6 +19282,15 @@
    "url": "https://www.universe.com/events/kirollus-tickets-J4XD7B?ref=ticketmaster",
    "tm": "https://www.universe.com/events/kirollus-tickets-J4XD7B?ref=ticketmaster",
    "gsrc": "tm"
+  },
+  {
+   "title": "Live at Christmas",
+   "theatre": "Ipswich Regent Theatre",
+   "genre": "",
+   "start": "2026-12-05",
+   "end": "2026-12-05",
+   "url": "https://www.ipswichtheatres.co.uk/whats-on/live-at-christmas/",
+   "added": "2026-11-20"
   },
   {
    "title": "Live at Christmas: Fern Brady & Red Richardson",
@@ -21296,6 +20401,17 @@
    "url": "https://www.atgtickets.com/shows/an-evening-with-joe-lycett-and-friends-with-the-full-fatt-sound/the-alexandra-theatre-birmingham/"
   },
   {
+   "title": "Barenaked Ladies",
+   "theatre": "The Queen's Hall",
+   "genre": "Music",
+   "start": "2026-12-07",
+   "end": "2026-12-07",
+   "url": "https://www.thequeenshall.net/whats-on/barenaked-ladies-tickets-edinburgh-2026",
+   "added": "2026-11-20",
+   "tm": "https://www.ticketmaster.co.uk/barenaked-ladies-edinburgh-07-12-2026/event/360064A606338B66",
+   "gsrc": "tm"
+  },
+  {
    "title": "COBO : Comedy Shutdown - Leeds",
    "theatre": "The Wardrobe",
    "genre": "Comedy",
@@ -21987,6 +21103,15 @@
    "gsrc": "tm"
   },
   {
+   "title": "Foyle School of Speech & Drama Christmas Showcase",
+   "theatre": "Millennium Forum",
+   "genre": "",
+   "start": "2026-12-09",
+   "end": "2026-12-14",
+   "url": "https://millenniumforum.co.uk/whats-on/foyle-school-of-speech-drama-christmas-showcase",
+   "added": "2026-11-20"
+  },
+  {
    "title": "From Turkey to Trifle",
    "theatre": "Theatre Royal Bath",
    "genre": "",
@@ -22175,6 +21300,14 @@
    "url": "https://www.eventimapollo.com/events/streets-of-london",
    "gsrc": "tm",
    "tm": "https://www.ticketmaster.co.uk/streets-of-londons-starry-night-london-09-12-2026/event/36006549D2F794F6"
+  },
+  {
+   "title": "Tale Trail to The Borrowers",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2026-12-09",
+   "end": "2026-12-24",
+   "url": "https://www.newvictheatre.org.uk/productions/tale-trail-to-the-borrowers/"
   },
   {
    "title": "The Big Christmas Sing A-Long",
@@ -23128,6 +22261,15 @@
    "gsrc": "guess"
   },
   {
+   "title": "Rat Pack",
+   "theatre": "Millennium Forum",
+   "genre": "",
+   "start": "2026-12-11",
+   "end": "2026-12-11",
+   "url": "https://millenniumforum.co.uk/whats-on/rat-pack",
+   "added": "2026-11-20"
+  },
+  {
    "title": "Richard Hawley",
    "theatre": "Winter Gardens",
    "genre": "",
@@ -23561,6 +22703,15 @@
    "url": "https://www.skiddle.com/whats-on/Leeds/The-HIFI-Club%2C-Leeds/Comedy-Club-with-Justin-Moorhouse--Guests/43019950/",
    "src": "skiddle",
    "added": "2026-11-09"
+  },
+  {
+   "title": "Culture Club",
+   "theatre": "First Direct Arena",
+   "genre": "",
+   "start": "2026-12-12",
+   "end": "2026-12-12",
+   "url": "https://www.firstdirectbankarena.com/events/detail/culture-club-leeds",
+   "added": "2026-11-20"
   },
   {
    "title": "Dave Hill's Slade",
@@ -24882,6 +24033,14 @@
    "end": "2026-12-14",
    "url": "https://www.cornex.co.uk/events/step-into-christmas-3",
    "added": "2026-11-16"
+  },
+  {
+   "title": "The Albion Christmas Band",
+   "theatre": "New Vic Theatre",
+   "genre": "",
+   "start": "2026-12-14",
+   "end": "2026-12-14",
+   "url": "https://www.newvictheatre.org.uk/productions/the-albion-christmas-band-4/"
   },
   {
    "title": "The Bootleg Beatles In Concert",
@@ -26732,6 +25891,15 @@
    "added": "2026-11-09"
   },
   {
+   "title": "The Froncysyllte Male Voice Choir",
+   "theatre": "New Vic Theatre",
+   "genre": "Classical",
+   "start": "2026-12-19",
+   "end": "2026-12-19",
+   "url": "https://www.newvictheatre.org.uk/productions/the-froncysyllte-male-voice-choir-6/",
+   "gsrc": "guess"
+  },
+  {
    "title": "The Glasgow Comedy Club’s Big Christmas Comedy Bonanza",
    "theatre": "Frostfyr Festival   Spiegeltent",
    "genre": "Comedy",
@@ -27378,7 +26546,7 @@
    "theatre": "Portsmouth Guildhall",
    "genre": "Pantomime",
    "start": "2026-12-21",
-   "end": "2026-12-22",
+   "end": "2026-12-23",
    "url": "https://portsmouthguildhall.org.uk/whats-on/event/snow-white/",
    "gsrc": "guess",
    "added": "2026-11-17"
@@ -27667,6 +26835,15 @@
    "start": "2026-12-23",
    "end": "2026-12-23",
    "url": "https://www.boningtontheatre.co.uk/whatson-event/the-puppet-folk-experience-christmas-show/"
+  },
+  {
+   "title": "The Rat Pack at Christmas",
+   "theatre": "Portsmouth Guildhall",
+   "genre": "",
+   "start": "2026-12-23",
+   "end": "2026-12-23",
+   "url": "https://portsmouthguildhall.org.uk/whats-on/event/the-rat-pack-at-christmas/",
+   "added": "2026-11-20"
   },
   {
    "title": "Upfront Comedy Christmas Special",
@@ -28674,6 +27851,15 @@
    "start": "2027-01-07",
    "end": "2027-01-07",
    "url": "https://www.orchardtheatre.co.uk/orchard-theatre-dartford/en-GB/event/other/the-adult-panto-puss-dick-tickets"
+  },
+  {
+   "title": "The Pasadena Roof Orchestra: Celebrating the Music of The Roaring Twenties & ‘30s",
+   "theatre": "New Vic Theatre",
+   "genre": "Tribute",
+   "start": "2027-01-07",
+   "end": "2027-01-07",
+   "url": "https://www.newvictheatre.org.uk/productions/the-pasadena-roof-orchestra-celebrating-the-music-of-the-roaring-twenties-30s/",
+   "gsrc": "guess"
   },
   {
    "title": "60’S Danceaway",
@@ -29772,6 +28958,17 @@
    "gsrc": "tm"
   },
   {
+   "title": "Paul Smith: Happy",
+   "theatre": "Utilita Arena Cardiff",
+   "genre": "Comedy",
+   "start": "2027-01-15",
+   "end": "2027-01-15",
+   "url": "https://www.utilitaarenacardiff.co.uk/whats-on/",
+   "added": "2026-11-20",
+   "tm": "https://www.ticketmaster.co.uk/paul-smith-happy-cardiff-15-01-2027/event/36006458E0558F72",
+   "gsrc": "tm"
+  },
+  {
    "title": "Peatbog Faeries & Session A9",
    "theatre": "Barrowland Ballroom",
    "genre": "Music",
@@ -29870,6 +29067,15 @@
    "end": "2027-01-15",
    "url": "https://www.atgtickets.com/shows/whats-love-got-to-do-with-it-a-tribute-to-tina-turner/woking-theatre/",
    "tm": "https://www.ticketmaster.co.uk/whats-love-got-to-do-with-woking-15-01-2027/event/3500653EF943C920"
+  },
+  {
+   "title": "1984",
+   "theatre": "Derby Theatre",
+   "genre": "Theatre",
+   "start": "2027-01-16",
+   "end": "2027-01-17",
+   "url": "https://derbytheatre.co.uk/event/1984-ktco/",
+   "added": "2026-11-20"
   },
   {
    "title": "A Vision of Elvis",
@@ -33047,6 +32253,16 @@
    "tm": "https://www.ticketmaster.co.uk/emeli-sande-celebrating-15-years-of-watford-30-01-2027/event/3700653118B18349"
   },
   {
+   "title": "Endless Love: A Tribute To Diana Ross & Lionel Richie",
+   "theatre": "White Rock Theatre",
+   "genre": "Tribute",
+   "start": "2027-01-30",
+   "end": "2027-01-30",
+   "url": "https://www.whiterocktheatre.org.uk/whats-on/event/diana-lionel-endless-love-the-show-2026/",
+   "gsrc": "guess",
+   "added": "2026-11-20"
+  },
+  {
    "title": "Fat Dog",
    "theatre": "O2 Academy Oxford",
    "genre": "Music",
@@ -35760,16 +34976,6 @@
    "tm": "https://theatre.ticketmaster.co.uk/book/1J68N-back-to-the-future-the-musical/#perf=1J68N-2&date=2027-02-09&time=7.30PM"
   },
   {
-   "title": "Before I Go To Sleep",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "Play",
-   "start": "2027-02-09",
-   "end": "2027-02-13",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/before-i-go-to-sleep//",
-   "gsrc": "guess",
-   "added": "2026-11-02"
-  },
-  {
    "title": "Carl Palmer And An Evening With Emerson Lake & Palmer",
    "theatre": "London Palladium",
    "genre": "Talk",
@@ -36559,6 +35765,15 @@
    "added": "2026-11-18"
   },
   {
+   "title": "Liverpool Basketball vs Cheshire Phoenix 2027",
+   "theatre": "M&S Bank Arena",
+   "genre": "",
+   "start": "2027-02-12",
+   "end": "2027-02-12",
+   "url": "https://www.mandsbankarena.com/whats-on/liverpool-basketball-vs-cheshire-phoenix-2027/",
+   "added": "2026-11-20"
+  },
+  {
    "title": "Malevolence",
    "theatre": "Rock City",
    "genre": "Music",
@@ -36976,9 +36191,9 @@
    "start": "2027-02-13",
    "end": "2027-02-13",
    "url": "https://www.academymusicgroup.com/o2cityhallnewcastle/events/hybrid-minds-tickets-ae340801",
+   "gsrc": "tm",
    "added": "2026-11-17",
-   "tm": "https://www.ticketmaster.co.uk/hybrid-minds-newcastle-upon-tyne-13-02-2027/event/3E00656DB65C66F9",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/hybrid-minds-newcastle-upon-tyne-13-02-2027/event/3E00656DB65C66F9"
   },
   {
    "title": "Indiepalooza Killers v Monkeys v Fender v Oasis v Kasabian v Kaiser",
@@ -37828,16 +37043,6 @@
    "gsrc": "tm"
   },
   {
-   "title": "Dirty Dancing",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "Musical",
-   "start": "2027-02-16",
-   "end": "2027-02-20",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/dirty-dancing//",
-   "gsrc": "guess",
-   "added": "2026-11-07"
-  },
-  {
    "title": "Everybody's Talking About Jamie",
    "theatre": "Edinburgh Festival Theatre",
    "genre": "Musical",
@@ -38391,6 +37596,24 @@
    "start": "2027-02-18",
    "end": "2027-02-18",
    "url": "https://www.atgtickets.com/shows/fun-for-little-ones-tribute-to-ms-rachel/opera-house-manchester/"
+  },
+  {
+   "title": "Jake Bugg",
+   "theatre": "Sheffield City Hall",
+   "genre": "",
+   "start": "2027-02-18",
+   "end": "2027-02-18",
+   "url": "https://www.sheffieldcityhall.co.uk/event/jake-bugg/tm_1adfz_ogkmcia05/",
+   "added": "2026-11-20"
+  },
+  {
+   "title": "Jake Bugg: Arches Bar Experience",
+   "theatre": "Sheffield City Hall",
+   "genre": "",
+   "start": "2027-02-18",
+   "end": "2027-02-18",
+   "url": "https://www.sheffieldcityhall.co.uk/event/jake-bugg%3a-arches-bar-experience/tm_1adfz_ogkmhb1lb/",
+   "added": "2026-11-20"
   },
   {
    "title": "Julia Jacklin",
@@ -39656,15 +38879,6 @@
    "url": "https://www.newvictheatre.org.uk/productions/hejira-celebrating-joni-mitchell/"
   },
   {
-   "title": "Richard Ayoade: Afterthoughts (2027)",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "",
-   "start": "2027-02-22",
-   "end": "2027-02-22",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/richard-ayoade-afterthoughts//",
-   "added": "2026-11-09"
-  },
-  {
    "title": "SIENNA SPIRO",
    "theatre": "Edinburgh Corn Exchange",
    "genre": "Music",
@@ -40015,15 +39229,6 @@
    "url": "https://www.ticketmaster.ie/gary-delaney-gary-on-laughing-belfast-24-02-2027/event/38006474DA4025BE",
    "tm": "https://www.ticketmaster.ie/gary-delaney-gary-on-laughing-belfast-24-02-2027/event/38006474DA4025BE",
    "gsrc": "tm"
-  },
-  {
-   "title": "Giovanni – Unstoppable",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "",
-   "start": "2027-02-24",
-   "end": "2027-02-24",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/giovanni-unstoppable//",
-   "added": "2026-11-09"
   },
   {
    "title": "Hollywood Undead: EU/UK 2027",
@@ -40456,15 +39661,6 @@
    "url": "https://www.eventimapollo.com/events/phil-wang",
    "gsrc": "tm",
    "tm": "https://www.ticketmaster.co.uk/phil-wang-uh-oh-london-25-02-2027/event/36006382D27DBB0F"
-  },
-  {
-   "title": "Queenz: Battle of the Divas!",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "",
-   "start": "2027-02-25",
-   "end": "2027-02-25",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/queenz-battle-of-the-divas//",
-   "added": "2026-11-10"
   },
   {
    "title": "Saxon: Gods Of Thunder",
@@ -41045,15 +40241,6 @@
    "end": "2027-02-26",
    "url": "https://www.universe.com/events/the-rasmus-tickets-M8KX0Y?ref=ticketmaster",
    "tm": "https://www.universe.com/events/the-rasmus-tickets-M8KX0Y?ref=ticketmaster"
-  },
-  {
-   "title": "The Very Hungry Caterpillar",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "",
-   "start": "2027-02-26",
-   "end": "2027-02-28",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/the-very-hungry-caterpillar//",
-   "added": "2026-11-11"
   },
   {
    "title": "Wet Wet Wet - Celebrating 40 Years of 'Popped In Souled Out'",
@@ -43001,16 +42188,6 @@
    "gsrc": "tm"
   },
   {
-   "title": "The Ukulele Orchestra of Great Britain",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "Classical",
-   "start": "2027-03-04",
-   "end": "2027-03-04",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/the-ukulele-orchestra-of-great-britain//",
-   "gsrc": "guess",
-   "added": "2026-11-12"
-  },
-  {
    "title": "Trial by Jury & The Zoo",
    "theatre": "London Coliseum",
    "genre": "Classical",
@@ -43330,15 +42507,6 @@
    "added": "2026-11-09"
   },
   {
-   "title": "St Piran’s Day with The Oggymen – A Cornish Celebration",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "",
-   "start": "2027-03-05",
-   "end": "2027-03-05",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/st-pirans-day-with-the-oggymen-a-cornish-celebration//",
-   "added": "2026-11-14"
-  },
-  {
    "title": "The Amy Winehouse Band",
    "theatre": "Stockton Globe",
    "genre": "Music",
@@ -43510,15 +42678,6 @@
    "url": "https://www.dlwp.com/event/emily-portman-and-friends/"
   },
   {
-   "title": "Get It On: The Glam Rock Show",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "",
-   "start": "2027-03-06",
-   "end": "2027-03-06",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/get-it-on-the-glam-rock-show//",
-   "added": "2026-11-15"
-  },
-  {
    "title": "Jon Boden",
    "theatre": "Bristol Beacon",
    "genre": "",
@@ -43634,9 +42793,9 @@
    "start": "2027-03-06",
    "end": "2027-03-06",
    "url": "https://www.academymusicgroup.com/o2academybristol/events/raleigh-ritchie-tickets-ae440539",
+   "gsrc": "tm",
    "added": "2026-11-19",
-   "tm": "https://www.ticketmaster.co.uk/raleigh-ritchie-bristol-06-03-2027/event/3E0065508DD0295B",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/raleigh-ritchie-bristol-06-03-2027/event/3E0065508DD0295B"
   },
   {
    "title": "Romesh Ranganathan",
@@ -43768,17 +42927,6 @@
    "url": "https://www.skiddle.com/whats-on/Harrow/Boxpark-Wembley/U-Fest---Boxpark-Wembley---Saturday-6th-March/42793662/",
    "src": "skiddle",
    "added": "2026-11-09"
-  },
-  {
-   "title": "10cc",
-   "theatre": "Truro Hall for Cornwall",
-   "genre": "Music",
-   "start": "2027-03-07",
-   "end": "2027-03-07",
-   "url": "https://www.hallforcornwall.co.uk/whats-on/10cc//",
-   "gsrc": "tm",
-   "added": "2026-11-18",
-   "tm": "https://www.ticketmaster.co.uk/10cc-truro-07-03-2027/event/1F0064FBA1142993"
   },
   {
    "title": "An Evening with Sir David Jason",
@@ -44235,6 +43383,16 @@
    "url": "https://www.universe.com/events/king-buffalo-tickets-163XBT?ref=ticketmaster",
    "tm": "https://www.universe.com/events/king-buffalo-tickets-163XBT?ref=ticketmaster",
    "gsrc": "tm"
+  },
+  {
+   "title": "King King Acoustic",
+   "theatre": "The Baths Hall",
+   "genre": "Music",
+   "start": "2027-03-09",
+   "end": "2027-03-09",
+   "url": "https://www.scunthorpetheatres.co.uk/whats-on/king-king-acoustic/",
+   "gsrc": "guess",
+   "added": "2026-11-20"
   },
   {
    "title": "King Lear",
@@ -48536,6 +47694,15 @@
    "gsrc": "tm"
   },
   {
+   "title": "Benidorm - The Reunion",
+   "theatre": "Vaillant Live",
+   "genre": "",
+   "start": "2027-03-25",
+   "end": "2027-03-25",
+   "url": "https://vaillantlive.co.uk/event/benidorm-the-reunion/184/",
+   "added": "2026-11-20"
+  },
+  {
    "title": "Disney Princess - The Concert",
    "theatre": "Royal Concert Hall",
    "genre": "Family",
@@ -48733,13 +47900,13 @@
    "url": "https://www.utilitaarenabham.co.uk/events/detail/chase-and-status"
   },
   {
-   "title": "Chase & Status",
+   "title": "Chase and Status",
    "theatre": "Utilita Arena Birmingham",
    "genre": "Music",
    "start": "2027-03-26",
-   "end": "2027-03-26",
-   "url": "https://www.ticketmaster.co.uk/chase-status-birmingham-26-03-2027/event/230065301FD426D7",
-   "tm": "https://www.ticketmaster.co.uk/chase-status-birmingham-26-03-2027/event/230065301FD426D7",
+   "end": "2027-03-27",
+   "url": "https://www.ticketmaster.co.uk/chase-and-status-birmingham-26-03-2027/event/230065301FD426D7",
+   "tm": "https://www.ticketmaster.co.uk/chase-and-status-birmingham-26-03-2027/event/230065301FD426D7",
    "gsrc": "tm"
   },
   {
@@ -48863,16 +48030,6 @@
    "start": "2027-03-27",
    "end": "2027-03-27",
    "url": "https://www.utilitaarenabham.co.uk/events/detail/chase-and-status"
-  },
-  {
-   "title": "Chase and Status",
-   "theatre": "Utilita Arena Birmingham",
-   "genre": "Music",
-   "start": "2027-03-27",
-   "end": "2027-03-27",
-   "url": "https://www.ticketmaster.co.uk/chase-and-status-birmingham-27-03-2027/event/2300653030E928FB",
-   "tm": "https://www.ticketmaster.co.uk/chase-and-status-birmingham-27-03-2027/event/2300653030E928FB",
-   "gsrc": "tm"
   },
   {
    "title": "Cirque: The Greatest Show",
@@ -50175,6 +49332,15 @@
    "url": "https://www.trch.co.uk/whats-on/bianca-del-rio-fwkq",
    "added": "2026-11-08",
    "tm": "https://www.ticketmaster.co.uk/bianca-del-rio-it-gets-bitter-nottingham-03-04-2027/event/1F00651BF2A5B87B"
+  },
+  {
+   "title": "Cirque: The Greatest Show",
+   "theatre": "De Montfort Hall",
+   "genre": "",
+   "start": "2027-04-03",
+   "end": "2027-04-03",
+   "url": "https://www.demontforthall.co.uk/event/cirque-the-greatest-show",
+   "added": "2026-11-20"
   },
   {
    "title": "Community Fair",
@@ -51784,6 +50950,14 @@
    "tm": "https://www.ticketmaster.co.uk/sabaton-the-legendary-tour-the-legendary-birmingham-10-04-2027/event/230064C590D70A76"
   },
   {
+   "title": "Scott Bennett: Stuff",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Comedy",
+   "start": "2027-04-10",
+   "end": "2027-04-10",
+   "url": "https://www.atgtickets.com/shows/scott-bennett-stuff/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "Simon Brodkin: Unleashed",
    "theatre": "Carlisle Sands Centre",
    "genre": "Comedy",
@@ -51964,6 +51138,15 @@
    "url": "https://www.ticketweb.uk/event/cloudbusting-the-music-oran-mor-tickets/14743953?REFERRAL_ID=tmfeed",
    "tm": "https://www.ticketweb.uk/event/cloudbusting-the-music-oran-mor-tickets/14743953?REFERRAL_ID=tmfeed",
    "gsrc": "tm"
+  },
+  {
+   "title": "Dean Z - The Ultimate Elvis",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Concert",
+   "start": "2027-04-11",
+   "end": "2027-04-11",
+   "url": "https://www.atgtickets.com/shows/dean-z-the-ultimate-elvis/the-alexandra-theatre-birmingham/",
+   "added": "2026-11-13"
   },
   {
    "title": "Dianne & Vito - Back in Business",
@@ -52295,6 +51478,14 @@
    "end": "2027-04-13",
    "url": "https://www.atgtickets.com/shows/an-evening-with-gemma-collins/princess-theatre-torquay/",
    "added": "2026-11-19"
+  },
+  {
+   "title": "Before I Go To Sleep",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Plays",
+   "start": "2027-04-13",
+   "end": "2027-04-17",
+   "url": "https://www.atgtickets.com/shows/before-i-go-to-sleep/the-alexandra-theatre-birmingham/"
   },
   {
    "title": "Bianca Del Rio",
@@ -54245,6 +53436,14 @@
    "gsrc": "tm"
   },
   {
+   "title": "Midsomer Murders: The Killings at Badger's Drift",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Plays",
+   "start": "2027-04-23",
+   "end": "2027-04-24",
+   "url": "https://www.atgtickets.com/shows/midsomer-murders-the-killings-at-badgers-drift/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "Myra Dubois: Siren",
    "theatre": "Royal and Derngate",
    "genre": "Variety",
@@ -55019,6 +54218,14 @@
    "start": "2027-04-27",
    "end": "2027-05-01",
    "url": "https://www.birminghamhippodrome.com/calendar/rambert-dance-its-a-sin/"
+  },
+  {
+   "title": "Jeeves and Wooster in Perfect Nonsense",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Plays",
+   "start": "2027-04-27",
+   "end": "2027-05-01",
+   "url": "https://www.atgtickets.com/shows/jeeves-and-wooster-in-perfect-nonsense/the-alexandra-theatre-birmingham/"
   },
   {
    "title": "Mrs Doubtfire",
@@ -56142,6 +55349,14 @@
    "gsrc": "tm"
   },
   {
+   "title": "The Peter Serafinowicz Live Show",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Comedy",
+   "start": "2027-05-02",
+   "end": "2027-05-02",
+   "url": "https://www.atgtickets.com/shows/the-peter-serafinowicz-live-show/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "CandyPop Live TAYLOR SWIFT SPECIAL",
    "theatre": "Steelyard",
    "genre": "Festival",
@@ -56263,6 +55478,14 @@
    "url": "https://www.universe.com/events/penelope-road-tickets-V6TXY9?ref=ticketmaster",
    "tm": "https://www.universe.com/events/penelope-road-tickets-V6TXY9?ref=ticketmaster",
    "gsrc": "tm"
+  },
+  {
+   "title": "Pretty Woman The Musical",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Musicals",
+   "start": "2027-05-04",
+   "end": "2027-05-15",
+   "url": "https://www.atgtickets.com/shows/pretty-woman-the-musical/the-alexandra-theatre-birmingham/"
   },
   {
    "title": "Rod Stewart",
@@ -58595,6 +57818,15 @@
    "gsrc": "tm"
   },
   {
+   "title": "Don McLean",
+   "theatre": "Bristol Beacon",
+   "genre": "",
+   "start": "2027-05-17",
+   "end": "2027-05-17",
+   "url": "https://bristolbeacon.org/whats-on/don-mclean-the-farewell-tour/",
+   "added": "2026-11-03"
+  },
+  {
    "title": "Eric Clapton",
    "theatre": "NEC Birmingham",
    "genre": "",
@@ -58647,6 +57879,14 @@
    "end": "2027-05-22",
    "url": "https://www.theatresevern.co.uk/whats-on/blood-brothers//",
    "gsrc": "guess"
+  },
+  {
+   "title": "Everybody's Talking About Jamie",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Musicals",
+   "start": "2027-05-18",
+   "end": "2027-05-22",
+   "url": "https://www.atgtickets.com/shows/everybodys-talking-about-jamie/the-alexandra-theatre-birmingham/"
   },
   {
    "title": "Jesus Christ Superstar",
@@ -59578,6 +58818,14 @@
    "gsrc": "tm"
   },
   {
+   "title": "Count Arthur Strong",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Comedy",
+   "start": "2027-05-23",
+   "end": "2027-05-23",
+   "url": "https://www.atgtickets.com/shows/count-arthur-strong/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "Fin Taylor: The Pre-Emptive Comeback Special",
    "theatre": "Wolverhampton Grand Theatre",
    "genre": "Comedy",
@@ -59764,6 +59012,14 @@
    "url": "https://www.theatresevern.co.uk/whats-on/midsomer-murders//"
   },
   {
+   "title": "That'll Be The Day",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Concert",
+   "start": "2027-05-25",
+   "end": "2027-05-25",
+   "url": "https://www.atgtickets.com/shows/thatll-be-the-day/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "The Royal Ballet: Romeo & Juliet (Cert TBC)",
    "theatre": "Bonington Theatre",
    "genre": "Dance",
@@ -59811,6 +59067,14 @@
    "url": "https://www.skiddle.com/whats-on/Bristol/Good-Times-At-The-Ridings/Good-Times-Live-Presents-JLS-Example--Special-Guests/43179043/",
    "src": "skiddle",
    "added": "2026-11-12"
+  },
+  {
+   "title": "Jimmy Carr: Killing Jokes",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Comedy",
+   "start": "2027-05-26",
+   "end": "2027-05-26",
+   "url": "https://www.atgtickets.com/shows/jimmy-carr-killing-jokes/the-alexandra-theatre-birmingham/"
   },
   {
    "title": "Joe Lycett",
@@ -62376,6 +61640,14 @@
    "gsrc": "guess"
   },
   {
+   "title": "BMOS presents Shrek The Musical",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Musicals",
+   "start": "2027-06-15",
+   "end": "2027-06-19",
+   "url": "https://www.atgtickets.com/shows/bmos-presents-shrek-the-musical/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "Before I Go to Sleep",
    "theatre": "Theatre Royal Nottingham",
    "genre": "Drama",
@@ -62781,6 +62053,15 @@
    "gsrc": "tm"
   },
   {
+   "title": "Kast Off Kinks",
+   "theatre": "Blackburn King George's Hall",
+   "genre": "",
+   "start": "2027-06-19",
+   "end": "2027-06-19",
+   "url": "https://bwdvenues.com/whats-on/kast-off-kinks-2027/",
+   "added": "2026-11-20"
+  },
+  {
    "title": "Nickelback UK",
    "theatre": "Queens Hall",
    "genre": "Music",
@@ -62915,6 +62196,15 @@
    "added": "2026-11-17"
   },
   {
+   "title": "Pre-sale",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Fin Taylor",
+   "start": "2027-06-20",
+   "end": "2027-06-20",
+   "url": "https://www.atgtickets.com/shows/fin-taylor/the-alexandra-theatre-birmingham/",
+   "added": "2026-11-05"
+  },
+  {
    "title": "Raver Tots Outdoor Festival Richmond",
    "theatre": "Old Deer Park",
    "genre": "Festival",
@@ -62979,6 +62269,14 @@
    "end": "2027-06-24",
    "url": "https://www.thenec.co.uk/events/installershow-2027/",
    "added": "2026-11-18"
+  },
+  {
+   "title": "Just For One Day - The Live Aid Musical",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Musicals",
+   "start": "2027-06-22",
+   "end": "2027-07-03",
+   "url": "https://www.atgtickets.com/shows/just-for-one-day-the-live-aid-musical/the-alexandra-theatre-birmingham/"
   },
   {
    "title": "Kraftwerk",
@@ -64180,6 +63478,15 @@
    "start": "2027-07-07",
    "end": "2027-07-08",
    "url": "https://www.oldrep.co.uk/event-details/356531AHTSGMSLBLCMDRJCDTNKHCVGCPK/loves-labours-lost-selly-manor/"
+  },
+  {
+   "title": "Pre-sale",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Ashes Live: Stuart Broad’s For the Love of Cricket",
+   "start": "2027-07-07",
+   "end": "2027-07-07",
+   "url": "https://www.atgtickets.com/shows/ashes-live-stuart-broads-for-the-love-of-cricket/the-alexandra-theatre-birmingham/",
+   "added": "2026-11-05"
   },
   {
    "title": "Slash featuring Myles Kennedy & The Conspirators",
@@ -66017,6 +65324,14 @@
    "tm": "https://www.ticketmaster.co.uk/haute-freddy-london-24-08-2027/event/3E00656AE4B671B5"
   },
   {
+   "title": "Operation Mincemeat: A New Musical",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Musicals",
+   "start": "2027-08-24",
+   "end": "2027-09-04",
+   "url": "https://www.atgtickets.com/shows/operation-mincemeat-a-new-musical/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "Jimmy Carr: Killing Jokes",
    "theatre": "Wycombe Swan",
    "genre": "Comedy",
@@ -66702,6 +66017,16 @@
    "gsrc": "tm"
   },
   {
+   "title": "Six The Musical",
+   "theatre": "Wycombe Swan",
+   "genre": "Musical",
+   "start": "2027-09-11",
+   "end": "2027-09-11",
+   "url": "https://www.wycombeswan.co.uk/wycombe-swan-theatre/en-GB/event/musical/six-the-musical-tickets",
+   "gsrc": "guess",
+   "added": "2026-11-12"
+  },
+  {
    "title": "Sophie McCartney - Queenage Dirtbag",
    "theatre": "The Queens Theatre",
    "genre": "Comedy",
@@ -67094,6 +66419,15 @@
    "end": "2027-09-21",
    "url": "https://www.trch.co.uk/whats-on/pretty-woman-f38q",
    "added": "2026-11-08"
+  },
+  {
+   "title": "The Housemaid",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Plays",
+   "start": "2027-09-21",
+   "end": "2027-09-25",
+   "url": "https://www.atgtickets.com/shows/the-housemaid/the-alexandra-theatre-birmingham/",
+   "added": "2026-11-06"
   },
   {
    "title": "Urzila Carlson - That's Enough Already",
@@ -68643,9 +67977,9 @@
    "start": "2027-10-16",
    "end": "2027-10-16",
    "url": "https://www.orchardtheatre.co.uk/orchard-theatre-dartford/en-GB/event/musical/only-fools-and-horses-tickets",
+   "gsrc": "tm",
    "added": "2026-11-19",
-   "tm": "https://www.ticketmaster.co.uk/only-fools-and-horses-the-musical-dartford-16-10-2027/event/1F006571CE23890F",
-   "gsrc": "tm"
+   "tm": "https://www.ticketmaster.co.uk/only-fools-and-horses-the-musical-dartford-16-10-2027/event/1F006571CE23890F"
   },
   {
    "title": "Riona O'Connor & Olga Thompson - Middle Rage",
@@ -68734,6 +68068,14 @@
    "url": "https://www.ticketmaster.co.uk/the-chats-nottingham-17-10-2027/event/1F00655E944138AF",
    "tm": "https://www.ticketmaster.co.uk/the-chats-nottingham-17-10-2027/event/1F00655E944138AF",
    "gsrc": "tm"
+  },
+  {
+   "title": "Grease",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Musicals",
+   "start": "2027-10-18",
+   "end": "2027-10-23",
+   "url": "https://www.atgtickets.com/shows/grease/the-alexandra-theatre-birmingham/"
   },
   {
    "title": "JONNY COLE: YAMPLIFIED",
@@ -69216,6 +68558,15 @@
    "url": "https://www.ticketmaster.co.uk/kevin-bloody-wilson-fair-dinkum-funny-grimsby-23-10-2027/event/3600654FDF898F70",
    "tm": "https://www.ticketmaster.co.uk/kevin-bloody-wilson-fair-dinkum-funny-grimsby-23-10-2027/event/3600654FDF898F70",
    "gsrc": "tm"
+  },
+  {
+   "title": "LLOYD GRIFFITH",
+   "theatre": "Shrewsbury Theatre Severn",
+   "genre": "",
+   "start": "2027-10-23",
+   "end": "2027-10-23",
+   "url": "https://www.theatresevern.co.uk/whats-on/lloyd-griffith//",
+   "added": "2026-11-20"
   },
   {
    "title": "Lloyd Griffith: Pardon?",
@@ -69794,6 +69145,14 @@
    "added": "2026-11-19"
   },
   {
+   "title": "The Truth",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Plays",
+   "start": "2027-11-02",
+   "end": "2027-11-06",
+   "url": "https://www.atgtickets.com/shows/the-truth/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "London Symphonic Rock Orchestra",
    "theatre": "The Baths Hall",
    "genre": "Classical",
@@ -70062,6 +69421,15 @@
    "end": "2027-11-13",
    "url": "https://www.curveonline.co.uk/whats-on/shows/hairspray-3/",
    "gsrc": "guess"
+  },
+  {
+   "title": "Hamnet",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Plays",
+   "start": "2027-11-09",
+   "end": "2027-11-13",
+   "url": "https://www.atgtickets.com/shows/hamnet/the-alexandra-theatre-birmingham/",
+   "added": "2026-11-13"
   },
   {
    "title": "Sister Act",
@@ -70539,6 +69907,14 @@
    "added": "2026-11-16"
   },
   {
+   "title": "Joe Lycett",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Comedy",
+   "start": "2027-11-23",
+   "end": "2027-11-26",
+   "url": "https://www.atgtickets.com/shows/joe-lycett/the-alexandra-theatre-birmingham/"
+  },
+  {
    "title": "Six",
    "theatre": "Bristol Hippodrome",
    "genre": "Musicals, Family",
@@ -70928,6 +70304,14 @@
    "url": "https://lyric.co.uk/shows/aladdin-2027/",
    "gsrc": "guess",
    "added": "2026-11-14"
+  },
+  {
+   "title": "Sister Act",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Musicals",
+   "start": "2027-12-07",
+   "end": "2028-01-02",
+   "url": "https://www.atgtickets.com/shows/sister-act/the-alexandra-theatre-birmingham/"
   },
   {
    "title": "Jingle Balls",
@@ -71424,6 +70808,14 @@
    "url": "https://www.trch.co.uk/whats-on/sophie-mccartney-5wln",
    "added": "2026-11-08",
    "tm": "https://www.ticketmaster.co.uk/sophie-mccartney-queenage-dirtbag-nottingham-06-02-2028/event/35006556AD6268CF"
+  },
+  {
+   "title": "An Inspector Calls",
+   "theatre": "The Alexandra Theatre",
+   "genre": "Plays",
+   "start": "2028-02-08",
+   "end": "2028-02-12",
+   "url": "https://www.atgtickets.com/shows/an-inspector-calls/the-alexandra-theatre-birmingham/"
   },
   {
    "title": "Chris McCausland: Waffle",
@@ -74223,6 +73615,7 @@
   "Swindon Arts Centre": "2026-11-03",
   "TAC London": "2026-11-09",
   "TF Royal Hotel And Theatre": "2026-11-09",
+  "THIRTEEN": "2026-11-19",
   "The 1865": "2026-11-09",
   "The Abbey": "2026-11-09",
   "The Adrian Flux Waterfront": "2026-11-14",
@@ -74250,6 +73643,7 @@
   "The Classic Grand": "2026-11-09",
   "The Cluny": "2026-11-13",
   "The Commercial": "2026-11-13",
+  "The Compasses, 44 High Street": "2026-11-19",
   "The Continental": "2026-11-09",
   "The Corn Hall": "2026-11-09",
   "The Crossing": "2026-11-09",
@@ -74404,8 +73798,6 @@
   "Y Not Festival": "2026-11-19",
   "YES Basement": "2026-11-09",
   "YES Pink Room": "2026-11-09",
-  "Yr Aelwyd": "2026-11-16",
-  "THIRTEEN": "2026-11-19",
-  "The Compasses, 44 High Street": "2026-11-19"
+  "Yr Aelwyd": "2026-11-16"
  }
 }

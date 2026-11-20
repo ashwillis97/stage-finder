@@ -1,13 +1,17 @@
 {
  "readers": 173,
- "shows_before": 7654,
- "shows_now": 7634,
+ "shows_before": 7520,
+ "shows_now": 7574,
  "broken": [
-  "Sheffield City Hall",
+  "Hackney Empire",
+  "Lyceum Theatre Sheffield",
+  "Symphony Hall",
+  "The Anvil",
   "The O2 Arena",
+  "The Octagon Theatre",
+  "Theatr Clwyd",
+  "Theatre Royal",
   "Theatre Royal Newcastle",
-  "Utilita Arena Sheffield",
-  "Vaillant Live",
   "Wales Millennium Centre"
  ],
  "never_worked": [
@@ -15,7 +19,7 @@
  ],
  "ticketmaster": {
   "venues_found": 535,
-  "shows_matched": 3365,
+  "shows_matched": 3331,
   "errors": 0
  }
 }

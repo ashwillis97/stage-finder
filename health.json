@@ -1,13 +1,9 @@
 {
  "readers": 173,
- "shows_before": 7623,
- "shows_now": 7627,
+ "shows_before": 7635,
+ "shows_now": 7629,
  "broken": [
-  "Sheffield City Hall",
   "The O2 Arena",
-  "Theatre Royal Newcastle",
-  "Utilita Arena Sheffield",
-  "Vaillant Live",
   "Wales Millennium Centre"
  ],
  "never_worked": [
@@ -15,7 +11,7 @@
  ],
  "ticketmaster": {
   "venues_found": 537,
-  "shows_matched": 3352,
+  "shows_matched": 3348,
   "errors": 0
  }
 }

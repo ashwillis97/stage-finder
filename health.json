@@ -1,18 +1,18 @@
 {
  "readers": 173,
- "shows_before": 7557,
- "shows_now": 7554,
+ "shows_before": 7385,
+ "shows_now": 7423,
  "broken": [
   "Eden Court Theatre",
-  "The O2 Arena",
   "Wales Millennium Centre"
  ],
  "never_worked": [
+  "The O2 Arena",
   "Trafalgar Theatre"
  ],
  "ticketmaster": {
-  "venues_found": 545,
-  "shows_matched": 3308,
+  "venues_found": 546,
+  "shows_matched": 3260,
   "errors": 0
  }
 }

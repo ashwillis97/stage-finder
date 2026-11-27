@@ -1,20 +1,9 @@
 {
  "readers": 173,
- "shows_before": 7445,
- "shows_now": 7471,
+ "shows_before": 7472,
+ "shows_now": 7452,
  "broken": [
   "Curve Theatre",
-  "Derby Arena",
-  "Exeter Northcott Theatre",
-  "Ipswich Regent Theatre",
-  "Lancaster Grand Theatre",
-  "Middlesbrough Town Hall",
-  "Sheffield City Hall",
-  "The Old Rep Theatre",
-  "Theatr Brycheiniog",
-  "Theatre Royal Newcastle",
-  "Utilita Arena Sheffield",
-  "Vaillant Live",
   "Wales Millennium Centre"
  ],
  "never_worked": [
@@ -22,7 +11,7 @@
  ],
  "ticketmaster": {
   "venues_found": 571,
-  "shows_matched": 3262,
+  "shows_matched": 3263,
   "errors": 0
  }
 }
